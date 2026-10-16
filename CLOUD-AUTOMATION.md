@@ -56,7 +56,7 @@ agent worker start --pool --pool-name excalibur-blog --idle-release-timeout 600
 
 ## Secrets / env vars (lireate-news / REG.RU)
 
-Из `.env.example` + Cloud Dashboard. **Только LIREATE_*, без BeGet `FTP_*` / `SFTP_*`.**
+Из `.env.example` + Cloud Dashboard. Для **этого репо** важны только **LIREATE_*** (`FTP_*` / `SFTP_*` в Secrets могут остаться для других проектов).
 
 | Variable | Зачем |
 |----------|-------|

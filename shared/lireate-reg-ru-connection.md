@@ -1,7 +1,7 @@
 # Lireate — подключение REG.RU (единственный хостинг)
 
-Репозиторий **lireate-news** работает только с **REG.RU** (`lireate.ru`).  
-**Не** подключать и **не** документировать здесь учётки **BeGet**, `FTP_*`, `SFTP_*` для других сайтов.
+Репозиторий **lireate-news** в коде и документации использует только **REG.RU** (`LIREATE_*`).  
+Скрипты этого репо **не читают** `FTP_*` / `SFTP_*` (BeGet и др.). Эти переменные могут оставаться в Cloud Secrets для других проектов — **удалять в Dashboard не нужно**.
 
 ## Cloud Secrets (обязательно)
 
@@ -23,12 +23,9 @@
 python3 scripts/lireate_reg_ru_check.py
 ```
 
-## Что удалить из Cloud Secrets для этого репо
+## Другие секреты в Cloud (BeGet, WP, mayai)
 
-Если остались от старого Excalibur/BeGet — **уберите**, чтобы агент не путал хостинги:
-
-- `FTP_HOST`, `FTP_USER`, `FTP_PASSWORD`, `FTP_PORT`
-- `SFTP_HOST`, `SFTP_USER`, `SFTP_PASSWORD`
-- `PUBLIC_SITE_URL` / `WP_*` для **mayai.ru** (другой проект)
+В Dashboard могут одновременно лежать `FTP_*`, `SFTP_*`, `PUBLIC_SITE_URL`, `WP_*` — для **других** репозиториев или автоматизаций.  
+Для **lireate-news** агент должен опираться только на `LIREATE_*`; пути и примеры BeGet в этом репозитории не используются.
 
 Имена `LIREATE_SFTP_*` исторические: для REG.RU это **FTP по порту 21**, не SFTP.

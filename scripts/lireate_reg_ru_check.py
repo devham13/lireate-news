@@ -42,8 +42,8 @@ def main() -> int:
 
     if legacy:
         print(
-            "WARN: обнаружены FTP_*/SFTP_* — для lireate-news используйте только LIREATE_* "
-            f"(см. shared/lireate-reg-ru-connection.md): {', '.join(legacy)}",
+            "INFO: в окружении есть FTP_*/SFTP_* — этот репозиторий их не использует, "
+            f"проверяется только LIREATE_*: {', '.join(legacy)}",
             file=sys.stderr,
         )
 
