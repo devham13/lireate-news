@@ -1,0 +1,32 @@
+{
+  "verdict": "blocker",
+  "topic_id": "L01",
+  "slug": "proverka-tovarnogo-znaka-pered-podachey-v-rospatent",
+  "lireate_category_id": 9,
+  "allow_publish": true,
+  "ftp_data_channel": {
+    "ok": false,
+    "detail": "TimeoutError: timed out"
+  },
+  "admin_http": "not_attempted_no_credentials",
+  "bundle_dir": "/workspace/memory/blog/articles/L01-proverka-tovarnogo-znaka-pered-podachey-v-rospatent/publish-bundle",
+  "canonical_path": "/proverka-tovarnogo-znaka-pered-podachey-v-rospatent",
+  "title": "Проверка товарного знака перед регистрацией: чек-лист по реестрам Роспатента",
+  "h1": "Как проверить товарный знак перед подачей в Роспатент: чек-лист по открытым реестрам",
+  "live_url_http_before": 404,
+  "blocker": "FTP control login works from preflight, but LIST/NLST/STOR on data channel times out (typical for Cursor Cloud egress). Cannot upload files or inspect tree remotely.",
+  "manual_steps": [
+    "1. Откройте ISPmanager REG.RU → WWW-домен сайта → «Менеджер файлов» (или FTP с домашнего/офисного IP, не Cloud Agent).",
+    "2. Загрузите изображения из `<article-dir>/publish-bundle/images/` в `/template/images/blog/` (имена — как в `publish-meta.json` → image_map).",
+    "3. В браузере с офисного IP откройте /admin/ на публичном домене сайта → anti-bot редиректы → вход под учёткой редактора блога.",
+    "4. Создайте материал в разделе «Блог / Новости» (аналог записей на /news):",
+    "   - Рубрика: «Товарный знак» (category_id=9)",
+    "   - ЧПУ (alias): `/proverka-tovarnogo-znaka-pered-podachey-v-rospatent`",
+    "   - Title / H1 / description: из `article.meta.json`",
+    "   - Тело: вставьте HTML из `publish-bundle/article-body.html` (пути к картинкам уже с `/template/images/blog/`).",
+    "   - Обложка: файл cover из bundle/images (*_cover.png).",
+    "5. Опубликуйте, проверьте 200 по URL и карточку в /news?num=2&category=9",
+    "6. При необходимости вставьте JSON-LD из `publish-bundle/schema.jsonld` в SEO-поле темы или шаблон статьи.",
+    "7. После успеха добавьте строку в `shared/published-articles-lireate.md` (date, L01, slug, live URL, category_id=9, published)."
+  ]
+}

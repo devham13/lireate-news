@@ -1,0 +1,86 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-10-16",
+    "today_ru": "16.10.2026",
+    "year": 2026,
+    "month": 10,
+    "month_name_ru": "октябрь",
+    "weekday_ru": "пятница",
+    "freshness_window": {
+      "prefer_sources_after": "2026-07-18",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-10-16 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L01",
+    "priority": "P0",
+    "slug": "proverka-tovarnogo-znaka-pered-podachey-v-rospatent",
+    "h1": "Как проверить товарный знак перед подачей в Роспатент: чек-лист по открытым реестрам",
+    "primary_query": "проверка товарного знака перед регистрацией",
+    "secondary_queries": [
+      "как проверить товарный знак в роспатенте",
+      "поиск товарного знака по названию",
+      "проверка на сходство товарного знака",
+      "свободен ли товарный знак"
+    ],
+    "search_intent": "checklist",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "L01",
+    "status": "PASS",
+    "search_intent": "checklist",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "проверка товарного знака перед регистрацией 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "проверка товарного знака перед регистрацией октябрь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "проверка товарного знака перед регистрацией новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "как проверить товарный знак в роспатенте 2026",
+      "purpose": "вторичный запрос: как проверить товарный знак в роспатенте"
+    },
+    {
+      "id": "secondary_2",
+      "query": "поиск товарного знака по названию 2026",
+      "purpose": "вторичный запрос: поиск товарного знака по названию"
+    },
+    {
+      "id": "secondary_3",
+      "query": "проверка на сходство товарного знака 2026",
+      "purpose": "вторичный запрос: проверка на сходство товарного знака"
+    },
+    {
+      "id": "secondary_4",
+      "query": "свободен ли товарный знак 2026",
+      "purpose": "вторичный запрос: свободен ли товарный знак"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как проверить товарный знак перед подачей в Роспатент: чек-лист по открытым реестрам 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/L01-proverka-tovarnogo-znaka-pered-podachey-v-rospatent",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}
