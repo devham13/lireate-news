@@ -20,7 +20,11 @@
   ],
   "char_count": 8896,
   "article_mode": "B",
+<<<<<<< HEAD
   "site": "lireate.ru",
+=======
+  "site": "lireate",
+>>>>>>> origin/cursor/l01-lireate-publish-cbf9
   "lireate_category_id": 9,
   "lireate_category_name": "Товарный знак",
   "canonical_path": "/proverka-tovarnogo-znaka-pered-podachey-v-rospatent",
