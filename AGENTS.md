@@ -86,7 +86,11 @@ python3 scripts/excalibur_blog_research_start.py --topic-id B01
 
 Только Cloud Secrets / env vars. Не печатать FTP/API ключи в handoff, PR, ответах.
 
-- `FTP_*`, `PUBLIC_SITE_URL`, `EXCALIBUR_BLOG_ALLOW_PUBLISH`
+**lireate-news — только REG.RU:** `LIREATE_SFTP_*`, `LIREATE_REMOTE_SITE_ROOT`, `LIREATE_PUBLIC_SITE_URL`, `LIREATE_ALLOW_PUBLISH`.  
+Не использовать для этого репозитория `FTP_*` / `SFTP_*` (BeGet / другие сайты). См. `shared/lireate-reg-ru-connection.md`.
+
+Проверка FTP: `python3 scripts/lireate_reg_ru_check.py`
+
 - MCP через `${env:...}` в mcp.json
 
 ## Git hygiene
