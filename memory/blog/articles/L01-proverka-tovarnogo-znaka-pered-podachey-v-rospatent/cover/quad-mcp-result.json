@@ -1,0 +1,4 @@
+{
+  "url": "cursor-GenerateImage-fallback",
+  "note": "user-mcp-kv/gpt-image-2 unavailable in Cloud Agent; canvas from Cursor GenerateImage + blog-hero-reference.png, upscaled to 2048x1152, split PASS"
+}
