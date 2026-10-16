@@ -1,0 +1,18 @@
+{
+  "verdict": "pass",
+  "total_slop_hits": 0,
+  "slop_hits": [],
+  "total_over_long_sentences": 1,
+  "over_long_sentences": [
+    {
+      "sentence": "; не полнотекстовый поиск по слову Реестр заявок Тот же раздел ФИПС Поданные, но ещё не зарегистрированные обозначения Нужны номера из платформы TMview страница Роспатента Знаки нескольких ведомств, контекст импорта Не заменяет российскую экспертизу Платная ИПС / предоценка услуги ФИПС Полнотекстовые БД; заключение за 15 раб",
+      "word_count": 43
+    }
+  ],
+  "readability": {
+    "score": 51.2,
+    "level": "Standard (Intellectual editorial/expert text)",
+    "avg_sentence_len": 8.8,
+    "avg_syllables_per_word": 2.4
+  }
+}

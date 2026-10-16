@@ -1,0 +1,66 @@
+{
+  "article": "memory/blog/articles/L01-proverka-tovarnogo-znaka-pered-podachey-v-rospatent/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 8,
+  "verified_facts_count": 5,
+  "unverified_facts_count": 3,
+  "facts": [
+    {
+      "fact": "46 200 руб",
+      "kind": "price_or_currency",
+      "context": "Полнотекстовые БД; заключение за 15 раб. дней От 46 200 руб. словесный знак, 1 класс (с НДС 22%) Платная инфо",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2023",
+      "kind": "date_or_year",
+      "context": "й поиск - Поисковая платформа Роспатента (с 11.12.2023). Добавьте реестр заявок на ФИПС, TMview и оценку",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "К РФ сверены с сайтами Роспатента и ФИПС на 16.10.2026. Показы Яндекс Вордстат в среде подготовки матери",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "5 лет",
+      "kind": "metric_or_duration",
+      "context": "тор на ФИПС. Делайте: заявлять нужные классы на 3-5 лет. Не делайте: раздувать перечень \"про запас\". Отсе",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1499",
+      "kind": "large_number",
+      "context": "пертиза ищет сходство и однородность товаров (ст. 1499 ГК РФ). Мотивацию регистрации не повторяем - см. 7",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "то теряете, если пропустить шаг Отказ по п. 6 ст. 1483 (сходство в однородных товарах) возможен после по",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "46 200",
+      "kind": "large_number",
+      "context": "Полнотекстовые БД; заключение за 15 раб. дней От 46 200 руб. словесный знак, 1 класс (с НДС 22%) Платная и",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "6340",
+      "kind": "large_number",
+      "context": "спорном сходстве. Консультации ФИПС: +7 (495) 531-6340, 10:00-16:00. Лирейт помогает пройти тот же маршр",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
