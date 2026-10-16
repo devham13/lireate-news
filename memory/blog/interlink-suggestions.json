@@ -1,6 +1,6 @@
 {
-  "site_base": "https://mayai.ru",
-  "total_articles": 5,
+  "site_base": "PUBLIC_SITE_URL",
+  "total_articles": 6,
   "opportunities_found": 0,
   "suggestions": []
 }
