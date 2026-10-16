@@ -29,3 +29,8 @@ python3 scripts/lireate_reg_ru_check.py
 Для **lireate-news** агент должен опираться только на `LIREATE_*`; пути и примеры BeGet в этом репозитории не используются.
 
 Имена `LIREATE_SFTP_*` исторические: для REG.RU это **FTP по порту 21**, не SFTP.
+
+## Автопубликация в /news
+
+FTP выкладывает **картинки**; запись в рубрике (например `category_id=9`) — через **админку CMS** или **MySQL**.  
+Чеклист секретов и варианты (админка, worker, БД): **`shared/lireate-autopublish-requirements.md`**.

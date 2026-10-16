@@ -64,9 +64,11 @@ agent worker start --pool --pool-name excalibur-blog --idle-release-timeout 600
 | `LIREATE_REMOTE_SITE_ROOT` | каталог на FTP после login |
 | `LIREATE_PUBLIC_SITE_URL` | публичный URL сайта |
 | `LIREATE_ALLOW_PUBLISH` | `yes` когда готовы выкладывать |
+| `LIREATE_ADMIN_URL` / `LIREATE_ADMIN_USER` / `LIREATE_ADMIN_PASSWORD` | вход в CMS для создания новости (см. autopublish doc) |
 | `EXCALIBUR_PROJECT_ROOT` | корень репо на worker |
 
-Проверка: `python3 scripts/lireate_reg_ru_check.py` — см. `shared/lireate-reg-ru-connection.md`.
+Проверка: `python3 scripts/lireate_reg_ru_check.py` — см. `shared/lireate-reg-ru-connection.md`.  
+Полная автоматизация `/news`: `shared/lireate-autopublish-requirements.md`.
 
 Не коммитить: `memory/site.env.local`, реальные ключи MCP.
 

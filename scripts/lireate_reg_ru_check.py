@@ -19,7 +19,14 @@ def _truthy(name: str) -> bool:
 
 def main() -> int:
     host = (os.environ.get("LIREATE_SFTP_HOST") or "").strip()
-    port = int((os.environ.get("LIREATE_SFTP_PORT") or "21").strip())
+    port_raw = (os.environ.get("LIREATE_SFTP_PORT") or "21").strip()
+    port = int(port_raw)
+    if port == 22:
+        print(
+            "WARN: LIREATE_SFTP_PORT=22 — для REG.RU FTP из панели нужен порт 21; "
+            "22 это SSH, не FTP-клиент",
+            file=sys.stderr,
+        )
     user = (os.environ.get("LIREATE_SFTP_USER") or "").strip()
     password = os.environ.get("LIREATE_SFTP_PASSWORD") or ""
     root = (os.environ.get("LIREATE_REMOTE_SITE_ROOT") or "/").strip() or "/"
@@ -58,21 +65,45 @@ def main() -> int:
             file=sys.stderr,
         )
 
-    try:
-        ftp = ftplib.FTP()
-        ftp.connect(host, port, timeout=30)
-        ftp.login(user, password)
-        ftp.set_pasv(True)
-        report["ftp_login"] = True
-        report["ftp_pwd"] = ftp.pwd()
-        if root not in (".", "/"):
-            ftp.cwd(root.lstrip("/"))
-        report["cwd_root"] = True
-        report["cwd_after"] = ftp.pwd()
-        ftp.quit()
-    except Exception as e:
-        report["ftp_error"] = f"{type(e).__name__}: {e}"
-        print("FAIL: FTP", report["ftp_error"], file=sys.stderr)
+    ports_to_try = [port]
+    if port == 22:
+        ports_to_try.append(21)
+
+    last_error: Exception | None = None
+    for try_port in ports_to_try:
+        try:
+            ftp = ftplib.FTP()
+            ftp.connect(host, try_port, timeout=30)
+            ftp.login(user, password)
+            ftp.set_pasv(True)
+            report["ftp_login"] = True
+            report["port_effective"] = try_port
+            if try_port != port:
+                report["port_auto_retry"] = f"{port} -> {try_port}"
+                print(
+                    f"INFO: FTP OK на порту {try_port} (в Secrets лучше поставить LIREATE_SFTP_PORT=21)",
+                    file=sys.stderr,
+                )
+            report["ftp_pwd"] = ftp.pwd()
+            if root not in (".", "/"):
+                ftp.cwd(root.lstrip("/"))
+            report["cwd_root"] = True
+            report["cwd_after"] = ftp.pwd()
+            ftp.quit()
+            last_error = None
+            break
+        except Exception as e:
+            last_error = e
+            report["ftp_error"] = f"{type(e).__name__}: {e} (port {try_port})"
+
+    if last_error is not None:
+        err = report.get("ftp_error", str(last_error))
+        print("FAIL: FTP", err, file=sys.stderr)
+        if port == 22:
+            print(
+                "HINT: задайте LIREATE_SFTP_PORT=21 в Cloud Secrets (22 — SSH, не FTP-клиент REG.RU)",
+                file=sys.stderr,
+            )
         print(json.dumps(report, ensure_ascii=False, indent=2))
         return 1
 

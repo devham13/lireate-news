@@ -23,13 +23,18 @@ def _truthy(name: str) -> bool:
     return v in ("1", "yes", "true", "on")
 
 
+def _ftp_connect(host: str, port: int, user: str, password: str, root: str) -> ftplib.FTP:
+    ftp = ftplib.FTP()
+    ftp.connect(host, port, timeout=30)
+    ftp.login(user, password)
+    if root and root not in (".", "/"):
+        ftp.cwd(root.lstrip("/"))
+    return ftp
+
+
 def _ftp_probe_data_channel(host: str, port: int, user: str, password: str, root: str) -> tuple[bool, str]:
     try:
-        ftp = ftplib.FTP()
-        ftp.connect(host, port, timeout=25)
-        ftp.login(user, password)
-        if root and root not in (".", "/"):
-            ftp.cwd(root.lstrip("/"))
+        ftp = _ftp_connect(host, port, user, password, root)
         ftp.set_pasv(True)
         names = ftp.nlst()
         ftp.quit()
@@ -40,6 +45,53 @@ def _ftp_probe_data_channel(host: str, port: int, user: str, password: str, root
         except Exception:
             pass
         return False, f"{type(e).__name__}: {e}"
+
+
+def _ftp_upload_images(
+    host: str,
+    port: int,
+    user: str,
+    password: str,
+    root: str,
+    bundle_images: Path,
+    remote_dir: str = "template/images/blog",
+) -> tuple[bool, list[str], str]:
+    """Upload publish-bundle/images/* to remote_dir (relative to FTP root)."""
+    import io
+
+    uploaded: list[str] = []
+    try:
+        ftp = _ftp_connect(host, port, user, password, root)
+        ftp.set_pasv(True)
+        parts = [p for p in remote_dir.split("/") if p]
+        for part in parts:
+            try:
+                ftp.cwd(part)
+            except ftplib.error_perm:
+                try:
+                    ftp.mkd(part)
+                except ftplib.error_perm:
+                    pass
+                ftp.cwd(part)
+        for path in sorted(bundle_images.glob("*")):
+            if not path.is_file():
+                continue
+            with path.open("rb") as f:
+                ftp.storbinary(f"STOR {path.name}", f)
+            uploaded.append(path.name)
+        ftp.quit()
+        return True, uploaded, "ok"
+    except Exception as e:
+        return False, uploaded, f"{type(e).__name__}: {e}"
+
+
+def _missing_autopublish_secrets() -> list[str]:
+    missing = []
+    if not (os.environ.get("LIREATE_ADMIN_USER") or "").strip():
+        missing.append("LIREATE_ADMIN_USER")
+    if not os.environ.get("LIREATE_ADMIN_PASSWORD"):
+        missing.append("LIREATE_ADMIN_PASSWORD")
+    return missing
 
 
 def _transform_html(html: str, image_map: dict[str, str]) -> str:
@@ -84,7 +136,11 @@ def main() -> int:
 
     allow = _truthy("LIREATE_ALLOW_PUBLISH")
     host = (os.environ.get("LIREATE_SFTP_HOST") or "").strip()
-    port = int((os.environ.get("LIREATE_SFTP_PORT") or "21").strip())
+    port_raw = (os.environ.get("LIREATE_SFTP_PORT") or "21").strip()
+    port = int(port_raw)
+    if port == 22:
+        print("WARN: LIREATE_SFTP_PORT=22 — переключаем на 21 (REG.RU FTP)", file=sys.stderr)
+        port = 21
     user = (os.environ.get("LIREATE_SFTP_USER") or "").strip()
     password = os.environ.get("LIREATE_SFTP_PASSWORD") or ""
     root = (os.environ.get("LIREATE_REMOTE_SITE_ROOT") or "/").strip() or "/"
@@ -204,15 +260,44 @@ def main() -> int:
 
     result["live_url_http_before"] = live_status
 
+    upload_ok, uploaded_names, upload_detail = False, [], "skipped"
     if ok:
-        # Full STOR/upload would go here once data channel works from runner environment.
+        upload_ok, uploaded_names, upload_detail = _ftp_upload_images(
+            host, port, user, password, root, img_dest
+        )
+        result["ftp_image_upload"] = {
+            "ok": upload_ok,
+            "files": uploaded_names,
+            "detail": upload_detail,
+        }
+
+    admin_missing = _missing_autopublish_secrets()
+    result["cms_autopublish"] = {
+        "implemented": False,
+        "missing_secrets": admin_missing,
+        "hint": "shared/lireate-autopublish-requirements.md",
+    }
+
+    if upload_ok and not admin_missing:
         result["verdict"] = "blocker"
-        result["blocker"] = "FTP data channel OK but CMS create API not implemented; use admin manual steps"
+        result["blocker"] = (
+            "FTP images uploaded; CMS HTTP publish not implemented yet — "
+            "need one successful admin form capture or DB schema (see lireate-autopublish-requirements.md)"
+        )
+    elif upload_ok:
+        result["verdict"] = "blocker"
+        result["blocker"] = (
+            f"FTP images uploaded ({len(uploaded_names)} files). "
+            f"Add secrets: {', '.join(admin_missing)} for CMS step; or use manual_steps"
+        )
+    elif ok:
+        result["verdict"] = "blocker"
+        result["blocker"] = f"FTP data channel OK but image upload failed: {upload_detail}"
     else:
         result["verdict"] = "blocker"
         result["blocker"] = (
-            "FTP control login works from preflight, but LIST/NLST/STOR on data channel times out "
-            "(typical for Cursor Cloud egress). Cannot upload files or inspect tree remotely."
+            "FTP data channel failed (LIST/STOR timeout — typical on Cursor Cloud). "
+            "Use self-hosted worker or upload images manually; add LIREATE_ADMIN_* for CMS."
         )
 
     result["manual_steps"] = _manual_steps(canonical, category_id, bundle)

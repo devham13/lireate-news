@@ -37,6 +37,8 @@
 
 ## Автоматизация
 
+Полный чеклист секретов: **`shared/lireate-autopublish-requirements.md`**.
+
 ```bash
 python3 scripts/lireate_news_publish.py \
   --article-dir memory/blog/articles/L01-proverka-tovarnogo-znaka-pered-podachey-v-rospatent
@@ -44,10 +46,11 @@ python3 scripts/lireate_news_publish.py \
 
 Скрипт:
 
-1. Проверяет `LIREATE_ALLOW_PUBLISH`.
-2. Собирает `publish-bundle/` (HTML с путями к `/template/images/blog/`, manifest изображений).
-3. Пробует FTP data channel (LIST/STOR). При таймауте — **BLOCKER** и `lireate-publish-result.json`.
-4. При успешной выкладке (локальный runner / ISPmanager File Manager) — обновить `shared/published-articles-lireate.md`.
+1. Проверяет `LIREATE_ALLOW_PUBLISH` и **`LIREATE_SFTP_PORT=21`**.
+2. Собирает `publish-bundle/`.
+3. Загружает картинки по FTP (если data channel доступен).
+4. Создание записи в CMS — после **`LIREATE_ADMIN_*`** (или БД); см. requirements doc.
+5. Журнал: `shared/published-articles-lireate.md`.
 
 ## Журнал
 
