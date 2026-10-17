@@ -70,6 +70,21 @@ def main():
     (out_dir / "login-page.html").write_text(html[:500000], encoding="utf-8")
     report["login_page"] = {"status": status, "forms": parser.forms, "html_len": len(html)}
 
+    login_form = client._pick_login_form(parser.forms)
+    if login_form and client._form_has_captcha(login_form):
+        report["stages"].append(
+            {
+                "login": {
+                    "ok": False,
+                    "stage": "login",
+                    "detail": "captcha on login form — use DB publish on hosting",
+                    "extra": {},
+                }
+            }
+        )
+        print(json.dumps(report, ensure_ascii=False, indent=2))
+        return 1
+
     login_res = client.login(user, password, {})
     report["stages"].append({"login": _res_dict(login_res)})
     if not login_res.ok:

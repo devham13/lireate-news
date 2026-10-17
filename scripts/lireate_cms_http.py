@@ -163,6 +163,25 @@ class LireateCmsClient(object):
             extra={"last_url": url},
         )
 
+    def _form_has_captcha(self, form):
+        for inp in form.get("inputs", []):
+            n = (inp.get("name") or "").lower()
+            if n in ("captcha", "code", "sec_code", "security_code", "verify"):
+                return True
+            if inp.get("type") == "captcha":
+                return True
+        return False
+
+    def _looks_like_login_page(self, html):
+        low = html.lower()
+        if "type=\"password\"" not in low and "type='password'" not in low:
+            return False
+        if "captcha" in low or "login_save" in low or "login.php" in low:
+            return True
+        if "name=\"password\"" in low or "name='password'" in low:
+            return True
+        return False
+
     def _pick_login_form(self, forms):
         for form in forms:
             has_pass = any(i.get("type") == "password" for i in form.get("inputs", []))
@@ -242,6 +261,14 @@ class LireateCmsClient(object):
                 extra={"form": form},
             )
 
+        if self._form_has_captcha(form):
+            return CmsHttpResult(
+                ok=False,
+                stage="login",
+                detail="captcha on admin login — HTTP login not supported; use DB publish on hosting",
+                extra={"form_fields": [i.get("name") for i in form.get("inputs", [])]},
+            )
+
         payload = {}
         for inp in form["inputs"]:
             name = inp.get("name")
@@ -270,20 +297,22 @@ class LireateCmsClient(object):
             headers={"Content-Type": "application/x-www-form-urlencoded"},
         )
 
-        still_login = "password" in html2.lower() and login_path.split("/")[-1] in html2.lower()
         has_sess = any(c.name == "PHPSESSID" for c in self.jar)
+        still_login = self._looks_like_login_page(html2)
         ok = status2 in (200, 302, 303) and not still_login and has_sess
-        if not ok and has_sess and not self._is_rcpc_stub(html2):
-            ok = True
+        detail = "logged in" if ok else "login failed (still login page or captcha)"
+        if still_login and "captcha" in html2.lower():
+            detail = "login failed: captcha still required on response page"
 
         return CmsHttpResult(
             ok=ok,
             stage="login",
-            detail="logged in" if ok else "login failed (check LIREATE_ADMIN_* or form config)",
+            detail=detail,
             extra={
                 "post_url": post_url,
                 "status": status2,
                 "php_sessid": has_sess,
+                "still_login_page": still_login,
                 "user_field": user_field,
                 "pass_field": pass_field,
             },

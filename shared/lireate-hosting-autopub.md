@@ -9,4 +9,4 @@
 - Проверка: `scripts/lireate_hosting_selfcheck.py`
 - Облачный FTP/CMS (Cursor): `scripts/lireate_news_publish.py` + `shared/lireate-worker-setup.md`
 
-Объединяет PR #1–#4: L01, REG.RU check, CMS HTTP, **hosting cron** (локальный docroot + `127.0.0.1` admin).
+Production hosting: **DB publish** (`lireate_db_publish.php` + `data/db.php`), см. `memory/hosting/lireate-reg-ru-production.md`.

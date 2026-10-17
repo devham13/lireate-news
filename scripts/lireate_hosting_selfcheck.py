@@ -10,6 +10,7 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
 
 from lireate_compat import require_python  # noqa: E402
+from lireate_db_invoke import pick_php_executable  # noqa: E402
 from lireate_dotenv import load_dotenv  # noqa: E402
 
 require_python((3, 6))
@@ -20,11 +21,9 @@ def main():
     env_file = Path(os.environ.get("LIREATE_ENV_FILE") or (home / ".env"))
     load_dotenv(env_file, override=False)
 
-    py_path = os.environ.get("LIREATE_PYTHON") or sys.executable
     report = {
         "python": sys.version.split()[0],
         "python_executable": sys.executable,
-        "python_from_env": py_path,
         "python_ok": sys.version_info[:2] >= (3, 6),
         "env_file": str(env_file),
         "env_exists": env_file.is_file(),
@@ -33,14 +32,22 @@ def main():
 
     interpreter_file = home / ".python-interpreter"
     if interpreter_file.is_file():
-        report["stored_interpreter"] = interpreter_file.read_text(encoding="utf-8").strip()
+        report["stored_python"] = interpreter_file.read_text(encoding="utf-8").strip()
+
+    php_file = home / ".php-interpreter"
+    if php_file.is_file():
+        report["stored_php"] = php_file.read_text(encoding="utf-8").strip()
+    try:
+        report["php_executable"] = pick_php_executable()
+        report["php_ok"] = True
+    except Exception as e:
+        report["php_ok"] = False
+        report["php_error"] = str(e)
 
     required = [
         "LIREATE_PUBLIC_SITE_URL",
         "LIREATE_DOCROOT",
         "LIREATE_ALLOW_PUBLISH",
-        "LIREATE_ADMIN_USER",
-        "LIREATE_ADMIN_PASSWORD",
     ]
     missing = [k for k in required if not (os.environ.get(k) or "").strip()]
     report["missing_env_keys"] = missing
@@ -49,6 +56,7 @@ def main():
     if docroot:
         p = Path(docroot).expanduser()
         report["docroot_exists"] = p.is_dir()
+        report["db_php_exists"] = (p / "data" / "db.php").is_file()
         blog = p / "template" / "images" / "blog"
         report["blog_dir_exists"] = blog.is_dir()
         if blog.is_dir():
@@ -60,21 +68,21 @@ def main():
             except OSError:
                 report["blog_dir_writable"] = False
 
-    cms_cfg = home / "cms-config" / "lireate-cms-http-config.json"
-    report["cms_config_path"] = str(cms_cfg)
-    report["cms_config_exists"] = cms_cfg.is_file()
-
     repo = home / "repo"
     report["repo_dir"] = str(repo)
     report["repo_exists"] = (repo / "scripts" / "lireate_hosting_publish.py").is_file()
+    report["db_publish_php_exists"] = (repo / "scripts" / "lireate_db_publish.php").is_file()
 
     ok = (
         report.get("python_ok")
         and report.get("env_exists")
         and not missing
         and report.get("docroot_exists")
+        and report.get("db_php_exists")
         and report.get("blog_dir_writable")
         and report.get("repo_exists")
+        and report.get("db_publish_php_exists")
+        and report.get("php_ok")
     )
     report["verdict"] = "pass" if ok else "fail"
     print(json.dumps(report, ensure_ascii=False, indent=2))

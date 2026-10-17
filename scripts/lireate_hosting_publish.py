@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Cron entry for REG.RU shared hosting: local docroot + CMS HTTP from the same server.
+Cron entry for REG.RU shared hosting: local images + direct MySQL via PHP CLI.
 
-Loads ~/lireate-autopub/.env, file lock, logging, idempotent publish (live URL 200).
+Loads $HOME/lireate-autopub/.env, file lock, logging, idempotent publish (live URL 200).
 """
 
 import argparse
@@ -17,8 +17,8 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
 
-from lireate_cms_http import LireateCmsClient, load_http_config_path  # noqa: E402
 from lireate_compat import require_python  # noqa: E402
+from lireate_db_invoke import build_news_payload, run_publish  # noqa: E402
 from lireate_dotenv import load_dotenv  # noqa: E402
 from lireate_local_deploy import copy_bundle_images  # noqa: E402
 from lireate_publish_bundle import build_publish_bundle  # noqa: E402
@@ -49,10 +49,6 @@ def _setup_logging(log_path):
         format="%(asctime)s %(levelname)s %(message)s",
         handlers=handlers,
     )
-
-
-def _cms_result_dict(res):
-    return {"ok": res.ok, "stage": res.stage, "detail": res.detail, "extra": res.extra}
 
 
 @contextmanager
@@ -107,14 +103,23 @@ def _print_status(code, detail=""):
     logging.info(msg)
 
 
+def _cover_web_path(image_map):
+    for local, remote in image_map.items():
+        if "cover" in local:
+            return remote
+    return None
+
+
+def _short_story_html(meta):
+    desc = meta.get("description") or ""
+    if not desc:
+        return ""
+    return "<p>{0}</p>".format(desc)
+
+
 def main():
     parser = argparse.ArgumentParser(description="Lireate hosting autopublish (REG.RU cron)")
-    parser.add_argument(
-        "--article-dir",
-        type=Path,
-        default=None,
-        help="Article folder (default: LIREATE_ARTICLE_DIR or L01 in repo)",
-    )
+    parser.add_argument("--article-dir", type=Path, default=None)
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--env-file", type=Path, default=None)
     args = parser.parse_args()
@@ -151,7 +156,7 @@ def main():
     allow = _truthy("LIREATE_ALLOW_PUBLISH")
 
     result = {
-        "mode": "hosting",
+        "mode": "hosting_db",
         "verdict": "blocker",
         "python": sys.version.split()[0],
         "python_executable": sys.executable,
@@ -182,11 +187,26 @@ def main():
     )
 
     html = html_path.read_text(encoding="utf-8")
-    bundle, _image_map, transformed = build_publish_bundle(article_dir, meta, html)
+    bundle, image_map, transformed = build_publish_bundle(article_dir, meta, html)
     result["bundle_dir"] = str(bundle)
+
+    payload = build_news_payload(
+        meta,
+        transformed,
+        short_html=_short_story_html(meta),
+        cover_web_path=_cover_web_path(image_map),
+    )
+
+    docroot_path = Path(docroot).expanduser().resolve() if docroot else None
 
     if args.dry_run:
         result["verdict"] = "dry_run"
+        if docroot_path and docroot_path.is_dir():
+            payload["dry_run"] = True
+            result["db"] = run_publish(docroot_path, payload)
+        else:
+            result["db"] = {"ok": True, "skipped": "set LIREATE_DOCROOT for DB dry-run preview"}
+            result["payload_preview"] = payload
         result_path.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         _print_status("DRY_RUN", "bundle at {0}".format(bundle))
         return 0
@@ -214,15 +234,15 @@ def main():
             _print_status("BLOCKER", result["blocker"])
             return 1
 
-        if not docroot:
-            result["blocker"] = "set LIREATE_DOCROOT (absolute path to site public_html)"
+        if not docroot_path or not docroot_path.is_dir():
+            result["blocker"] = "set LIREATE_DOCROOT to site public_html"
             result_path.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
             _print_status("BLOCKER", result["blocker"])
             return 1
 
-        docroot_path = Path(docroot).expanduser().resolve()
-        if not docroot_path.is_dir():
-            result["blocker"] = "LIREATE_DOCROOT not a directory: {0}".format(docroot_path)
+        db_php = docroot_path / "data" / "db.php"
+        if not db_php.is_file():
+            result["blocker"] = "missing {0} (DB credentials stay in site tree)".format(db_php)
             result_path.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
             _print_status("BLOCKER", result["blocker"])
             return 1
@@ -235,38 +255,19 @@ def main():
             _print_status("BLOCKER", result["blocker"])
             return 1
 
-        admin_user = (os.environ.get("LIREATE_ADMIN_USER") or "").strip()
-        admin_pass = os.environ.get("LIREATE_ADMIN_PASSWORD") or ""
-        if not admin_user or not admin_pass:
-            result["blocker"] = "set LIREATE_ADMIN_USER and LIREATE_ADMIN_PASSWORD in .env"
-            result_path.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-            _print_status("BLOCKER", result["blocker"])
-            return 1
-
-        cms_config = load_http_config_path()
-        if not cms_config.is_file():
-            alt = home / "cms-config" / "lireate-cms-http-config.json"
-            if alt.is_file():
-                os.environ["LIREATE_CMS_HTTP_CONFIG"] = str(alt)
-                cms_config = alt
-        if not cms_config.is_file():
-            result["blocker"] = (
-                "missing CMS HTTP config — run lireate_cms_probe.py once, "
-                "copy memory/lireate-cms-http-config.json to ~/lireate-autopub/cms-config/"
-            )
-            result_path.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-            _print_status("BLOCKER", result["blocker"])
-            return 1
-
-        client = LireateCmsClient(site)
-        cms_res = client.publish_news(meta, transformed, skip_if_live=True)
-        result["admin_http"] = _cms_result_dict(cms_res)
-        result["cms_config"] = str(cms_config)
+        db_res = run_publish(docroot_path, payload)
+        result["db"] = db_res
 
         live_after = http_status(target_url) if target_url else None
         result["live_url_http_after"] = live_after
 
-        if cms_res.ok and live_after == 200:
+        db_ok = db_res.get("ok") and (
+            db_res.get("insert_id") or db_res.get("duplicate") or db_res.get("would_insert")
+        )
+        if db_res.get("dry_run"):
+            db_ok = False
+
+        if db_ok and live_after == 200:
             result["verdict"] = "published"
             result["live_url"] = target_url
             record_published(state_file, slug, topic_id, target_url, category_id)
@@ -275,17 +276,15 @@ def main():
             _print_status("PUBLISHED", target_url)
             return 0
 
-        if cms_res.ok and live_after != 200:
-            result["blocker"] = (
-                "CMS step OK ({0}) but live URL still {1} — check news.fields in cms-config JSON".format(
-                    cms_res.detail, live_after
-                )
-            )
+        if db_res.get("ok") and db_res.get("duplicate") and live_after != 200:
+            result["blocker"] = "duplicate in DB but live URL still {0}".format(live_after)
+        elif db_res.get("ok") and live_after != 200:
+            result["blocker"] = "DB insert OK but live URL still {0} — check seo_url/routing".format(live_after)
         else:
-            result["blocker"] = "CMS HTTP failed at {0}: {1}".format(cms_res.stage, cms_res.detail)
+            result["blocker"] = "DB publish failed: {0}".format(db_res.get("error") or db_res)
 
         result_path.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        _print_status("BLOCKER", result["blocker"])
+        _print_status("BLOCKER", str(result["blocker"]))
         return 1
 
 
