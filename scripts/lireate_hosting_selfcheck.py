@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """Self-check after install on REG.RU hosting (no secrets printed)."""
 
-from __future__ import annotations
-
 import json
 import os
 import sys
@@ -11,21 +9,31 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
 
+from lireate_compat import require_python  # noqa: E402
 from lireate_dotenv import load_dotenv  # noqa: E402
 
+require_python((3, 6))
 
-def main() -> int:
+
+def main():
     home = Path(os.environ.get("LIREATE_AUTOPUB_HOME") or (Path.home() / "lireate-autopub"))
     env_file = Path(os.environ.get("LIREATE_ENV_FILE") or (home / ".env"))
     load_dotenv(env_file, override=False)
 
-    report: dict[str, object] = {
+    py_path = os.environ.get("LIREATE_PYTHON") or sys.executable
+    report = {
         "python": sys.version.split()[0],
-        "python_ok": sys.version_info >= (3, 8),
+        "python_executable": sys.executable,
+        "python_from_env": py_path,
+        "python_ok": sys.version_info[:2] >= (3, 6),
         "env_file": str(env_file),
         "env_exists": env_file.is_file(),
         "autopub_home": str(home),
     }
+
+    interpreter_file = home / ".python-interpreter"
+    if interpreter_file.is_file():
+        report["stored_interpreter"] = interpreter_file.read_text(encoding="utf-8").strip()
 
     required = [
         "LIREATE_PUBLIC_SITE_URL",

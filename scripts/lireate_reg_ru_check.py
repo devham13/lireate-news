@@ -1,23 +1,23 @@
 #!/usr/bin/env python3
 """Preflight: REG.RU FTP for lireate.ru (LIREATE_* env only)."""
 
-from __future__ import annotations
-
 import ftplib
 import hashlib
 import json
 import os
 import sys
-import urllib.error
-import urllib.request
+from pathlib import Path
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(REPO_ROOT / "scripts"))
+
+from lireate_compat import require_python  # noqa: E402
+from lireate_publish_live import http_status  # noqa: E402
+
+require_python((3, 6))
 
 
-def _truthy(name: str) -> bool:
-    v = (os.environ.get(name) or "").strip().lower()
-    return v in ("1", "yes", "true", "on")
-
-
-def main() -> int:
+def main():
     host = (os.environ.get("LIREATE_SFTP_HOST") or "").strip()
     port_raw = (os.environ.get("LIREATE_SFTP_PORT") or "21").strip()
     port = int(port_raw)
@@ -33,7 +33,7 @@ def main() -> int:
     site = (os.environ.get("LIREATE_PUBLIC_SITE_URL") or "").strip()
 
     legacy = [k for k in ("FTP_HOST", "SFTP_HOST", "FTP_USER", "SFTP_USER") if os.environ.get(k)]
-    report: dict[str, object] = {
+    report = {
         "host": host,
         "port": port,
         "user": user,
@@ -50,7 +50,7 @@ def main() -> int:
     if legacy:
         print(
             "INFO: в окружении есть FTP_*/SFTP_* — этот репозиторий их не использует, "
-            f"проверяется только LIREATE_*: {', '.join(legacy)}",
+            "проверяется только LIREATE_*: {0}".format(", ".join(legacy)),
             file=sys.stderr,
         )
 
@@ -61,7 +61,7 @@ def main() -> int:
 
     if port != 21:
         print(
-            f"WARN: LIREATE_SFTP_PORT={port}; для REG.RU FTP из панели обычно 21 (не SSH 22)",
+            "WARN: LIREATE_SFTP_PORT={0}; для REG.RU FTP из панели обычно 21 (не SSH 22)".format(port),
             file=sys.stderr,
         )
 
@@ -69,7 +69,7 @@ def main() -> int:
     if port == 22:
         ports_to_try.append(21)
 
-    last_error: Exception | None = None
+    last_error = None
     for try_port in ports_to_try:
         try:
             ftp = ftplib.FTP()
@@ -79,9 +79,11 @@ def main() -> int:
             report["ftp_login"] = True
             report["port_effective"] = try_port
             if try_port != port:
-                report["port_auto_retry"] = f"{port} -> {try_port}"
+                report["port_auto_retry"] = "{0} -> {1}".format(port, try_port)
                 print(
-                    f"INFO: FTP OK на порту {try_port} (в Secrets лучше поставить LIREATE_SFTP_PORT=21)",
+                    "INFO: FTP OK на порту {0} (в Secrets лучше поставить LIREATE_SFTP_PORT=21)".format(
+                        try_port
+                    ),
                     file=sys.stderr,
                 )
             report["ftp_pwd"] = ftp.pwd()
@@ -94,7 +96,7 @@ def main() -> int:
             break
         except Exception as e:
             last_error = e
-            report["ftp_error"] = f"{type(e).__name__}: {e} (port {try_port})"
+            report["ftp_error"] = "{0}: {1} (port {2})".format(type(e).__name__, e, try_port)
 
     if last_error is not None:
         err = report.get("ftp_error", str(last_error))
@@ -108,14 +110,7 @@ def main() -> int:
         return 1
 
     if site:
-        try:
-            req = urllib.request.Request(site, headers={"User-Agent": "lireate_reg_ru_check/1.0"})
-            with urllib.request.urlopen(req, timeout=20) as resp:
-                report["site_http"] = resp.status
-        except urllib.error.HTTPError as e:
-            report["site_http"] = e.code
-        except Exception as e:
-            report["site_http"] = f"{type(e).__name__}: {e}"
+        report["site_http"] = http_status(site, method="GET")
     else:
         report["site_http"] = "skipped (LIREATE_PUBLIC_SITE_URL unset)"
 

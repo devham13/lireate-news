@@ -1,14 +1,10 @@
 #!/usr/bin/env python3
 """Publish Lireate NEWS article via REG.RU FTP + admin bundle (LIREATE_* only)."""
 
-from __future__ import annotations
-
 import argparse
 import ftplib
 import json
 import os
-import re
-import shutil
 import sys
 import urllib.error
 import urllib.request
@@ -18,15 +14,19 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
 from lireate_cms_http import LireateCmsClient, load_http_config_path  # noqa: E402
+from lireate_compat import require_python  # noqa: E402
 from lireate_publish_bundle import build_publish_bundle  # noqa: E402
+from lireate_publish_live import http_status  # noqa: E402
+
+require_python((3, 6))
 
 
-def _truthy(name: str) -> bool:
+def _truthy(name):
     v = (os.environ.get(name) or "").strip().lower()
     return v in ("1", "yes", "true", "on")
 
 
-def _ftp_connect(host: str, port: int, user: str, password: str, root: str) -> ftplib.FTP:
+def _ftp_connect(host, port, user, password, root):
     ftp = ftplib.FTP()
     ftp.connect(host, port, timeout=30)
     ftp.login(user, password)
@@ -35,34 +35,26 @@ def _ftp_connect(host: str, port: int, user: str, password: str, root: str) -> f
     return ftp
 
 
-def _ftp_probe_data_channel(host: str, port: int, user: str, password: str, root: str) -> tuple[bool, str]:
+def _ftp_probe_data_channel(host, port, user, password, root):
+    ftp = None
     try:
         ftp = _ftp_connect(host, port, user, password, root)
         ftp.set_pasv(True)
         names = ftp.nlst()
         ftp.quit()
-        return True, f"nlst_ok count={len(names)}"
+        return True, "nlst_ok count={0}".format(len(names))
     except Exception as e:
-        try:
-            ftp.quit()
-        except Exception:
-            pass
-        return False, f"{type(e).__name__}: {e}"
+        if ftp is not None:
+            try:
+                ftp.quit()
+            except Exception:
+                pass
+        return False, "{0}: {1}".format(type(e).__name__, e)
 
 
-def _ftp_upload_images(
-    host: str,
-    port: int,
-    user: str,
-    password: str,
-    root: str,
-    bundle_images: Path,
-    remote_dir: str = "template/images/blog",
-) -> tuple[bool, list[str], str]:
-    """Upload publish-bundle/images/* to remote_dir (relative to FTP root)."""
-    import io
-
-    uploaded: list[str] = []
+def _ftp_upload_images(host, port, user, password, root, bundle_images, remote_dir="template/images/blog"):
+    uploaded = []
+    ftp = None
     try:
         ftp = _ftp_connect(host, port, user, password, root)
         ftp.set_pasv(True)
@@ -76,19 +68,19 @@ def _ftp_upload_images(
                 except ftplib.error_perm:
                     pass
                 ftp.cwd(part)
-        for path in sorted(bundle_images.glob("*")):
+        for path in sorted(Path(bundle_images).glob("*")):
             if not path.is_file():
                 continue
             with path.open("rb") as f:
-                ftp.storbinary(f"STOR {path.name}", f)
+                ftp.storbinary("STOR {0}".format(path.name), f)
             uploaded.append(path.name)
         ftp.quit()
         return True, uploaded, "ok"
     except Exception as e:
-        return False, uploaded, f"{type(e).__name__}: {e}"
+        return False, uploaded, "{0}: {1}".format(type(e).__name__, e)
 
 
-def _missing_autopublish_secrets() -> list[str]:
+def _missing_autopublish_secrets():
     missing = []
     if not (os.environ.get("LIREATE_ADMIN_USER") or "").strip():
         missing.append("LIREATE_ADMIN_USER")
@@ -97,7 +89,11 @@ def _missing_autopublish_secrets() -> list[str]:
     return missing
 
 
-def main() -> int:
+def _cms_result_dict(res):
+    return {"ok": res.ok, "stage": res.stage, "detail": res.detail, "extra": res.extra}
+
+
+def main():
     parser = argparse.ArgumentParser(description="Lireate NEWS publish (REG.RU)")
     parser.add_argument(
         "--article-dir",
@@ -130,7 +126,7 @@ def main() -> int:
     root = (os.environ.get("LIREATE_REMOTE_SITE_ROOT") or "/").strip() or "/"
     site = (os.environ.get("LIREATE_PUBLIC_SITE_URL") or "").strip().rstrip("/")
 
-    result: dict[str, object] = {
+    result = {
         "verdict": "blocker",
         "topic_id": None,
         "slug": None,
@@ -151,8 +147,8 @@ def main() -> int:
     slug = meta.get("slug") or article_dir.name.split("-", 1)[-1]
     topic_id = meta.get("topic_id")
     category_id = meta.get("lireate_category_id", 9)
-    canonical = meta.get("canonical_path") or f"/{slug}"
-    target_url = f"{site}{canonical}" if site else None
+    canonical = meta.get("canonical_path") or "/{0}".format(slug)
+    target_url = "{0}{1}".format(site, canonical) if site else None
 
     result.update(
         {
@@ -197,19 +193,7 @@ def main() -> int:
         ok, detail = _ftp_probe_data_channel(host, port, user, password, root)
     result["ftp_data_channel"] = {"ok": ok, "detail": detail}
 
-    live_status = None
-    if target_url:
-        try:
-            req = urllib.request.Request(
-                target_url, method="HEAD", headers={"User-Agent": "lireate_news_publish/1"}
-            )
-            with urllib.request.urlopen(req, timeout=20) as resp:
-                live_status = resp.status
-        except urllib.error.HTTPError as e:
-            live_status = e.code
-        except Exception as e:
-            live_status = str(type(e).__name__)
-
+    live_status = http_status(target_url) if target_url else None
     result["live_url_http_before"] = live_status
 
     upload_ok, uploaded_names, upload_detail = False, [], "skipped"
@@ -232,7 +216,7 @@ def main() -> int:
     if not admin_missing and site:
         client = LireateCmsClient(site)
         cms_publish_res = client.publish_news(meta, transformed)
-        result["admin_http"] = cms_publish_res.__dict__
+        result["admin_http"] = _cms_result_dict(cms_publish_res)
 
     result["cms_autopublish"] = {
         "implemented": True,
@@ -242,18 +226,7 @@ def main() -> int:
         "hint": "shared/lireate-worker-setup.md",
     }
 
-    live_after = None
-    if target_url:
-        try:
-            req = urllib.request.Request(
-                target_url, method="HEAD", headers={"User-Agent": "lireate_news_publish/1"}
-            )
-            with urllib.request.urlopen(req, timeout=20) as resp:
-                live_after = resp.status
-        except urllib.error.HTTPError as e:
-            live_after = e.code
-        except Exception as e:
-            live_after = str(type(e).__name__)
+    live_after = http_status(target_url) if target_url else None
     result["live_url_http_after"] = live_after
 
     cms_ok = cms_publish_res is not None and cms_publish_res.ok
@@ -267,24 +240,28 @@ def main() -> int:
     elif cms_ok and not live_ok:
         result["verdict"] = "blocker"
         result["blocker"] = (
-            f"CMS step reported OK but live URL still {live_after} — "
-            "check memory/lireate-cms-http-config.json fields or publish manually"
+            "CMS step reported OK but live URL still {0} — "
+            "check memory/lireate-cms-http-config.json fields or publish manually".format(live_after)
         )
     elif not admin_missing and cms_publish_res and not cms_publish_res.ok:
         result["verdict"] = "blocker"
-        result["blocker"] = f"CMS HTTP failed at {cms_publish_res.stage}: {cms_publish_res.detail}"
+        result["blocker"] = "CMS HTTP failed at {0}: {1}".format(
+            cms_publish_res.stage, cms_publish_res.detail
+        )
     elif upload_ok and admin_missing:
         result["verdict"] = "blocker"
-        result["blocker"] = f"FTP images OK; add {', '.join(admin_missing)}"
+        result["blocker"] = "FTP images OK; add {0}".format(", ".join(admin_missing))
     elif upload_ok:
         result["verdict"] = "blocker"
         result["blocker"] = (
-            f"FTP images uploaded ({len(uploaded_names)} files). "
-            "Run on worker: python3 scripts/lireate_cms_probe.py then publish again"
+            "FTP images uploaded ({0} files). "
+            "Run on worker: python3 scripts/lireate_cms_probe.py then publish again".format(
+                len(uploaded_names)
+            )
         )
     elif ok:
         result["verdict"] = "blocker"
-        result["blocker"] = f"FTP data channel OK but image upload failed: {upload_detail}"
+        result["blocker"] = "FTP data channel OK but image upload failed: {0}".format(upload_detail)
     else:
         result["verdict"] = "blocker"
         result["blocker"] = (
@@ -298,11 +275,17 @@ def main() -> int:
     return 0 if result.get("verdict") == "published" else 1
 
 
-def _append_ledger(topic_id: str | None, slug: str, url: str | None, category_id: int) -> None:
+def _append_ledger(topic_id, slug, url, category_id):
     ledger = REPO_ROOT / "shared" / "published-articles-lireate.md"
     if not ledger.is_file():
         return
-    line = f"| {date.today().isoformat()} | {topic_id or ''} | {slug} | {url or ''} | {category_id} | published |"
+    line = "| {0} | {1} | {2} | {3} | {4} | published |".format(
+        date.today().isoformat(),
+        topic_id or "",
+        slug,
+        url or "",
+        category_id,
+    )
     text = ledger.read_text(encoding="utf-8")
     if slug in text and "published" in text:
         return
@@ -311,18 +294,18 @@ def _append_ledger(topic_id: str | None, slug: str, url: str | None, category_id
     ledger.write_text(text + line + "\n", encoding="utf-8")
 
 
-def _manual_steps(canonical_path: str, category_id: int, bundle: Path) -> list[str]:
+def _manual_steps(canonical_path, category_id, bundle):
     return [
         "1. Откройте ISPmanager REG.RU → WWW-домен сайта → «Менеджер файлов» (или FTP с домашнего/офисного IP, не Cloud Agent).",
-        f"2. Загрузите изображения из `<article-dir>/publish-bundle/images/` в `/template/images/blog/` (имена — как в `publish-meta.json` → image_map).",
+        "2. Загрузите изображения из `<article-dir>/publish-bundle/images/` в `/template/images/blog/` (имена — как в `publish-meta.json` → image_map).",
         "3. В браузере с офисного IP откройте /admin/ на публичном домене сайта → anti-bot редиректы → вход под учёткой редактора блога.",
         "4. Создайте материал в разделе «Блог / Новости» (аналог записей на /news):",
-        f"   - Рубрика: «Товарный знак» (category_id={category_id})",
-        f"   - ЧПУ (alias): `{canonical_path}`",
+        "   - Рубрика: «Товарный знак» (category_id={0})".format(category_id),
+        "   - ЧПУ (alias): `{0}`".format(canonical_path),
         "   - Title / H1 / description: из `article.meta.json`",
         "   - Тело: вставьте HTML из `publish-bundle/article-body.html` (пути к картинкам уже с `/template/images/blog/`).",
         "   - Обложка: файл cover из bundle/images (*_cover.png).",
-        f"5. Опубликуйте, проверьте 200 по URL и карточку в /news?num=2&category={category_id}",
+        "5. Опубликуйте, проверьте 200 по URL и карточку в /news?num=2&category={0}".format(category_id),
         "6. При необходимости вставьте JSON-LD из `publish-bundle/schema.jsonld` в SEO-поле темы или шаблон статьи.",
         "7. После успеха добавьте строку в `shared/published-articles-lireate.md` (date, L01, slug, live URL, category_id=9, published).",
     ]

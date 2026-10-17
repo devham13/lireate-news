@@ -103,10 +103,14 @@ python3 ~/lireate-autopub/repo/scripts/lireate_hosting_publish.py
 
 Если часовой пояс сервера **UTC** (часто на хостинге), 12:00 МСК ≈ 09:00 UTC (летом — 09:00, зимой — 09:00; для точности задайте `TZ`):
 
+Используйте **тот же Python**, что записал установщик в `~/lireate-autopub/.python-interpreter` (на REG.RU это часто не `/usr/bin/python3`):
+
 ```cron
 TZ=Europe/Moscow
-0 12 * * * /usr/bin/python3 $HOME/lireate-autopub/repo/scripts/lireate_hosting_publish.py >> $HOME/lireate-autopub/logs/cron.log 2>&1
+0 12 * * * $(cat $HOME/lireate-autopub/.python-interpreter) $HOME/lireate-autopub/repo/scripts/lireate_hosting_publish.py >> $HOME/lireate-autopub/logs/cron.log 2>&1
 ```
+
+Для вашего пути: `$HOME` = `/var/www/u3249004/data`, каталог = `lireate-autopub`.
 
 Если планировщик **не** понимает `TZ=` в той же строке, задайте время вручную под часовой пояс сервера или добавьте в начало скрипта-обёртки `export TZ=Europe/Moscow`.
 

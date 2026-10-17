@@ -4,13 +4,26 @@
 # Or: bash scripts/lireate_hosting_install.sh
 set -euo pipefail
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PICK_PY="${SCRIPT_DIR}/lireate_pick_python.sh"
+
 LIREATE_AUTOPUB_HOME="${LIREATE_AUTOPUB_HOME:-$HOME/lireate-autopub}"
 REPO_URL="${LIREATE_REPO_URL:-https://github.com/devham13/lireate-news.git}"
 REPO_BRANCH="${LIREATE_REPO_BRANCH:-main}"
 
+if [[ -x "${PICK_PY}" ]]; then
+  LIREATE_PYTHON="$(bash "${PICK_PY}")"
+else
+  LIREATE_PYTHON="${LIREATE_PYTHON:-$(command -v python3.8 || command -v python3.6 || command -v python3)}"
+fi
+
 echo "==> Lireate autopublish install into ${LIREATE_AUTOPUB_HOME}"
+echo "==> Python: ${LIREATE_PYTHON}"
+"${LIREATE_PYTHON}" -c 'import sys; print("==> Python version:", sys.version.replace("\n"," "))'
 
 mkdir -p "${LIREATE_AUTOPUB_HOME}/logs" "${LIREATE_AUTOPUB_HOME}/var" "${LIREATE_AUTOPUB_HOME}/state" "${LIREATE_AUTOPUB_HOME}/cms-config"
+echo "${LIREATE_PYTHON}" > "${LIREATE_AUTOPUB_HOME}/.python-interpreter"
+chmod 600 "${LIREATE_AUTOPUB_HOME}/.python-interpreter"
 
 if [[ ! -d "${LIREATE_AUTOPUB_HOME}/repo/.git" ]]; then
   git clone --depth 1 --branch "${REPO_BRANCH}" "${REPO_URL}" "${LIREATE_AUTOPUB_HOME}/repo"
@@ -23,8 +36,9 @@ ENV_FILE="${LIREATE_AUTOPUB_HOME}/.env"
 if [[ ! -f "${ENV_FILE}" ]]; then
   cat >"${ENV_FILE}" <<'EOF'
 # Lireate autopublish — заполните значения и сохраните. chmod 600 уже выставлен установщиком.
-LIREATE_PUBLIC_SITE_URL=https://example.com
-# Абсолютный путь к public_html сайта (узнайте в ISPmanager → файловый менеджер)
+# Публичный URL сайта (https://…)
+LIREATE_PUBLIC_SITE_URL=
+# Абсолютный путь к public_html (ISPmanager → файловый менеджер)
 LIREATE_DOCROOT=
 LIREATE_ALLOW_PUBLISH=no
 
@@ -60,12 +74,14 @@ chmod +x "${LIREATE_AUTOPUB_HOME}/repo/scripts/lireate_hosting_selfcheck.py" 2>/
 
 export LIREATE_AUTOPUB_HOME
 export LIREATE_ENV_FILE="${ENV_FILE}"
-python3 "${LIREATE_AUTOPUB_HOME}/repo/scripts/lireate_hosting_selfcheck.py" || true
+export LIREATE_PYTHON="${LIREATE_PYTHON}"
+"${LIREATE_PYTHON}" "${LIREATE_AUTOPUB_HOME}/repo/scripts/lireate_hosting_selfcheck.py" || true
 
 echo ""
 echo "Next steps:"
 echo "  1. Edit ${ENV_FILE} (set DOCROOT, admin login, LIREATE_ALLOW_PUBLISH=yes when ready)"
-echo "  2. Dry-run: python3 ${LIREATE_AUTOPUB_HOME}/repo/scripts/lireate_hosting_publish.py --dry-run"
-echo "  3. Probe CMS once: python3 ${LIREATE_AUTOPUB_HOME}/repo/scripts/lireate_cms_probe.py"
+echo "  2. Dry-run: ${LIREATE_PYTHON} ${LIREATE_AUTOPUB_HOME}/repo/scripts/lireate_hosting_publish.py --dry-run"
+echo "  3. Probe CMS once: ${LIREATE_PYTHON} ${LIREATE_AUTOPUB_HOME}/repo/scripts/lireate_cms_probe.py"
 echo "  4. Copy probe config to ${DEST_CFG}"
+echo "Cron: use interpreter from ${LIREATE_AUTOPUB_HOME}/.python-interpreter"
 echo "See docs/lireate-autopub-hosting.ru.md"

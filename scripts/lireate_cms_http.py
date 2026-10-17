@@ -1,7 +1,5 @@
 """HTTP client for Lireate custom CMS (/admin/). Uses only LIREATE_* env."""
 
-from __future__ import annotations
-
 import json
 import os
 import re
@@ -9,11 +7,11 @@ import ssl
 import urllib.error
 import urllib.parse
 import urllib.request
-from dataclasses import dataclass, field
 from html.parser import HTMLParser
 from http.cookiejar import Cookie, CookieJar
 from pathlib import Path
-from typing import Any
+
+from lireate_compat import header_charset, http_response_code
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_CONFIG_PATH = REPO_ROOT / "memory" / "lireate-cms-http-config.json"
@@ -22,14 +20,22 @@ EXAMPLE_CONFIG_PATH = REPO_ROOT / "shared" / "lireate-cms-http-config.json.examp
 USER_AGENT = "lireate_cms_http/1.0 (+worker)"
 
 
+class CmsHttpResult(object):
+    def __init__(self, ok, stage, detail, extra=None):
+        self.ok = ok
+        self.stage = stage
+        self.detail = detail
+        self.extra = extra if extra is not None else {}
+
+
 class _FormCollector(HTMLParser):
-    def __init__(self) -> None:
-        super().__init__()
-        self.forms: list[dict[str, Any]] = []
-        self._form: dict[str, Any] | None = None
+    def __init__(self):
+        HTMLParser.__init__(self)
+        self.forms = []
+        self._form = None
         self._in_form = False
 
-    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+    def handle_starttag(self, tag, attrs):
         ad = {k: (v or "") for k, v in attrs}
         if tag == "form":
             self._in_form = True
@@ -51,23 +57,15 @@ class _FormCollector(HTMLParser):
             elif tag == "textarea":
                 self._form["textareas"].append({"name": ad.get("name", "")})
 
-    def handle_endtag(self, tag: str) -> None:
+    def handle_endtag(self, tag):
         if tag == "form" and self._in_form and self._form is not None:
             self.forms.append(self._form)
             self._form = None
             self._in_form = False
 
 
-@dataclass
-class CmsHttpResult:
-    ok: bool
-    stage: str
-    detail: str
-    extra: dict[str, Any] = field(default_factory=dict)
-
-
-class LireateCmsClient:
-    def __init__(self, site_url: str, admin_base: str | None = None) -> None:
+class LireateCmsClient(object):
+    def __init__(self, site_url, admin_base=None):
         self.site_url = site_url.rstrip("/")
         parsed = urllib.parse.urlparse(self.site_url)
         self.vhost = (parsed.hostname or "").strip()
@@ -75,7 +73,7 @@ class LireateCmsClient:
         self.http_origin = cms_base or self.site_url
         admin = (admin_base or os.environ.get("LIREATE_ADMIN_URL") or "").strip()
         if not admin:
-            admin = f"{self.http_origin}/admin/"
+            admin = "{0}/admin/".format(self.http_origin)
         elif admin.startswith("/"):
             admin = self.http_origin + admin
         self.admin_base = admin.rstrip("/") + "/"
@@ -86,50 +84,49 @@ class LireateCmsClient:
             urllib.request.HTTPSHandler(context=ctx),
         )
 
-    def _request(
-        self,
-        url: str,
-        method: str = "GET",
-        data: bytes | None = None,
-        headers: dict[str, str] | None = None,
-    ) -> tuple[int, str, dict[str, str]]:
+    def _request(self, url, method="GET", data=None, headers=None):
         hdrs = {"User-Agent": USER_AGENT}
         cms_base_env = (os.environ.get("LIREATE_CMS_HTTP_BASE") or "").strip()
         if self.vhost and cms_base_env:
             hdrs.setdefault("Host", self.vhost)
         if headers:
             hdrs.update(headers)
-        req = urllib.request.Request(url, data=data, method=method, headers=hdrs)
+        req = urllib.request.Request(url, data=data, headers=hdrs)
+        if method and method.upper() != "GET":
+            req.get_method = lambda m=method.upper(): m
         try:
-            with self.opener.open(req, timeout=45) as resp:
+            resp = self.opener.open(req, timeout=45)
+            try:
                 body = resp.read()
-                charset = resp.headers.get_content_charset() or "utf-8"
+                charset = header_charset(resp.headers) or "utf-8"
                 try:
                     text = body.decode(charset, errors="replace")
                 except LookupError:
                     text = body.decode("utf-8", errors="replace")
-                return resp.status, text, dict(resp.headers)
+                return http_response_code(resp), text, dict(resp.headers)
+            finally:
+                resp.close()
         except urllib.error.HTTPError as e:
             body = e.read()
-            charset = e.headers.get_content_charset() if e.headers else None
+            charset = header_charset(e.headers) if e.headers else None
             text = body.decode(charset or "utf-8", errors="replace")
             return e.code, text, dict(e.headers or {})
 
-    def _abs(self, path_or_url: str) -> str:
+    def _abs(self, path_or_url):
         if path_or_url.startswith("http://") or path_or_url.startswith("https://"):
             return path_or_url
         if path_or_url.startswith("/"):
             return self.http_origin + path_or_url
         return urllib.parse.urljoin(self.admin_base, path_or_url)
 
-    def _is_rcpc_stub(self, html: str) -> bool:
+    def _is_rcpc_stub(self, html):
         if len(html) < 400 and "Refresh" in html and "attempt=" in html:
             return True
-        if "RCPC" in html and "type=\"password\"" not in html.lower():
+        if "RCPC" in html and 'type="password"' not in html.lower():
             return len(html) < 2000
         return False
 
-    def _meta_refresh_url(self, html: str) -> str | None:
+    def _meta_refresh_url(self, html):
         m = re.search(
             r'URL=([^"\'>\s]+)',
             html,
@@ -139,7 +136,7 @@ class LireateCmsClient:
             return self._abs(m.group(1).strip())
         return None
 
-    def warmup_rcpc(self, start_path: str = "/admin/login.php", max_hops: int = 12) -> CmsHttpResult:
+    def warmup_rcpc(self, start_path="/admin/login.php", max_hops=12):
         url = self._abs(start_path)
         for hop in range(max_hops):
             status, html, _hdr = self._request(url)
@@ -147,7 +144,7 @@ class LireateCmsClient:
                 return CmsHttpResult(
                     ok=True,
                     stage="rcpc_warmup",
-                    detail=f"ready after {hop} hops",
+                    detail="ready after {0} hops".format(hop),
                     extra={"url": url, "status": status, "html_len": len(html)},
                 )
             nxt = self._meta_refresh_url(html)
@@ -162,21 +159,20 @@ class LireateCmsClient:
         return CmsHttpResult(
             ok=False,
             stage="rcpc_warmup",
-            detail=f"RCPC loop exceeded {max_hops} hops",
+            detail="RCPC loop exceeded {0} hops".format(max_hops),
             extra={"last_url": url},
         )
 
-    def _pick_login_form(self, forms: list[dict[str, Any]]) -> dict[str, Any] | None:
+    def _pick_login_form(self, forms):
         for form in forms:
             has_pass = any(i.get("type") == "password" for i in form.get("inputs", []))
             if has_pass:
                 return form
         return forms[0] if forms else None
 
-    def login(self, username: str, password: str, config: dict[str, Any]) -> CmsHttpResult:
+    def login(self, username, password, config):
         cookie_hdr = (os.environ.get("LIREATE_ADMIN_COOKIE") or "").strip()
         if cookie_hdr:
-            # Inject cookies from manual browser session (one-off).
             for part in cookie_hdr.split(";"):
                 part = part.strip()
                 if "=" in part:
@@ -246,7 +242,7 @@ class LireateCmsClient:
                 extra={"form": form},
             )
 
-        payload: dict[str, str] = {}
+        payload = {}
         for inp in form["inputs"]:
             name = inp.get("name")
             if not name:
@@ -293,7 +289,7 @@ class LireateCmsClient:
             },
         )
 
-    def _load_config(self) -> dict[str, Any]:
+    def _load_config(self):
         cfg_path = os.environ.get("LIREATE_CMS_HTTP_CONFIG") or str(DEFAULT_CONFIG_PATH)
         path = Path(cfg_path)
         if path.is_file():
@@ -302,8 +298,8 @@ class LireateCmsClient:
             return json.loads(EXAMPLE_CONFIG_PATH.read_text(encoding="utf-8"))
         return {}
 
-    def _format_fields(self, template: dict[str, str], ctx: dict[str, str]) -> dict[str, str]:
-        out: dict[str, str] = {}
+    def _format_fields(self, template, ctx):
+        out = {}
         for k, v in template.items():
             s = v
             for key, val in ctx.items():
@@ -311,24 +307,22 @@ class LireateCmsClient:
             out[k] = s
         return out
 
-    def publish_news(
-        self,
-        meta: dict[str, Any],
-        body_html: str,
-        skip_if_live: bool = True,
-    ) -> CmsHttpResult:
+    def publish_news(self, meta, body_html, skip_if_live=True):
         slug = meta.get("slug") or ""
-        canonical = meta.get("canonical_path") or f"/{slug}"
+        canonical = meta.get("canonical_path") or "/{0}".format(slug)
         if skip_if_live and self.site_url:
-            live_url = f"{self.site_url}{canonical}"
+            live_url = "{0}{1}".format(self.site_url, canonical)
             try:
                 req = urllib.request.Request(
                     live_url,
-                    method="HEAD",
                     headers={"User-Agent": USER_AGENT},
                 )
-                with self.opener.open(req, timeout=25) as resp:
-                    st = resp.status
+                req.get_method = lambda: "HEAD"
+                resp = self.opener.open(req, timeout=25)
+                try:
+                    st = http_response_code(resp)
+                finally:
+                    resp.close()
             except urllib.error.HTTPError as e:
                 st = e.code
             except Exception:
@@ -368,7 +362,7 @@ class LireateCmsClient:
             "description": meta.get("description") or "",
             "slug": slug,
             "alias": alias,
-            "canonical_path": meta.get("canonical_path") or f"/{slug}",
+            "canonical_path": meta.get("canonical_path") or "/{0}".format(slug),
             "category_id": str(meta.get("lireate_category_id", 9)),
             "body_html": body_html,
         }
@@ -398,7 +392,6 @@ class LireateCmsClient:
         if success_contains:
             ok = ok and all(s in html for s in success_contains)
         if success_url and success_url not in html and status not in (302, 303):
-            # weak check — live verify separately
             pass
 
         return CmsHttpResult(
@@ -409,6 +402,6 @@ class LireateCmsClient:
         )
 
 
-def load_http_config_path() -> Path:
+def load_http_config_path():
     raw = os.environ.get("LIREATE_CMS_HTTP_CONFIG") or str(DEFAULT_CONFIG_PATH)
     return Path(raw)

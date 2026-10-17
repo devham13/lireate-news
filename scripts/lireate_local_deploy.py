@@ -1,25 +1,21 @@
 """Copy publish-bundle images into site docroot (hosting, no FTP)."""
 
-from __future__ import annotations
-
 import shutil
 from pathlib import Path
 
 
-def copy_bundle_images(
-    docroot: Path,
-    bundle_images: Path,
-    remote_dir: str = "template/images/blog",
-) -> tuple[bool, list[str], str]:
+def copy_bundle_images(docroot, bundle_images, remote_dir="template/images/blog"):
+    docroot = Path(docroot)
+    bundle_images = Path(bundle_images)
     dest_root = docroot / remote_dir.strip("/")
     try:
         dest_root.mkdir(parents=True, exist_ok=True)
     except OSError as e:
-        return False, [], f"mkdir {dest_root}: {e}"
+        return False, [], "mkdir {0}: {1}".format(dest_root, e)
 
-    copied: list[str] = []
+    copied = []
     if not bundle_images.is_dir():
-        return False, [], f"missing bundle images dir: {bundle_images}"
+        return False, [], "missing bundle images dir: {0}".format(bundle_images)
 
     for path in sorted(bundle_images.glob("*")):
         if not path.is_file():

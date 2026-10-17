@@ -5,8 +5,6 @@ Cron entry for REG.RU shared hosting: local docroot + CMS HTTP from the same ser
 Loads ~/lireate-autopub/.env, file lock, logging, idempotent publish (live URL 200).
 """
 
-from __future__ import annotations
-
 import argparse
 import json
 import logging
@@ -20,48 +18,59 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
 
 from lireate_cms_http import LireateCmsClient, load_http_config_path  # noqa: E402
+from lireate_compat import require_python  # noqa: E402
 from lireate_dotenv import load_dotenv  # noqa: E402
 from lireate_local_deploy import copy_bundle_images  # noqa: E402
 from lireate_publish_bundle import build_publish_bundle  # noqa: E402
 from lireate_publish_live import http_status, is_already_live, record_published  # noqa: E402
 
+require_python((3, 6))
 
-def _truthy(name: str) -> bool:
+
+def _truthy(name):
     v = (os.environ.get(name) or "").strip().lower()
     return v in ("1", "yes", "true", "on")
 
 
-def _default_autopub_home() -> Path:
+def _default_autopub_home():
     return Path(os.environ.get("LIREATE_AUTOPUB_HOME") or (Path.home() / "lireate-autopub"))
 
 
-def _setup_logging(log_path: Path) -> None:
+def _setup_logging(log_path):
+    log_path = Path(log_path)
     log_path.parent.mkdir(parents=True, exist_ok=True)
+    handlers = [logging.StreamHandler(sys.stdout)]
+    try:
+        handlers.insert(0, logging.FileHandler(str(log_path), encoding="utf-8"))
+    except TypeError:
+        handlers.insert(0, logging.FileHandler(str(log_path)))
     logging.basicConfig(
         level=logging.INFO,
         format="%(asctime)s %(levelname)s %(message)s",
-        handlers=[
-            logging.FileHandler(log_path, encoding="utf-8"),
-            logging.StreamHandler(sys.stdout),
-        ],
+        handlers=handlers,
     )
 
 
+def _cms_result_dict(res):
+    return {"ok": res.ok, "stage": res.stage, "detail": res.detail, "extra": res.extra}
+
+
 @contextmanager
-def _file_lock(lock_path: Path):
+def _file_lock(lock_path):
+    lock_path = Path(lock_path)
     lock_path.parent.mkdir(parents=True, exist_ok=True)
     import fcntl
 
     fh = lock_path.open("a+", encoding="utf-8")
     try:
         fcntl.flock(fh.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
-    except BlockingIOError:
+    except IOError:
         fh.close()
         raise SystemExit("STATUS: BLOCKER another publish run holds the lock")
     try:
         fh.seek(0)
         fh.truncate()
-        fh.write(f"pid={os.getpid()}\n")
+        fh.write("pid={0}\n".format(os.getpid()))
         fh.flush()
         yield
     finally:
@@ -71,13 +80,16 @@ def _file_lock(lock_path: Path):
             fh.close()
 
 
-def _append_repo_ledger(topic_id: str | None, slug: str, url: str | None, category_id: int) -> None:
+def _append_repo_ledger(topic_id, slug, url, category_id):
     ledger = REPO_ROOT / "shared" / "published-articles-lireate.md"
     if not ledger.is_file():
         return
-    line = (
-        f"| {date.today().isoformat()} | {topic_id or ''} | {slug} | {url or ''} | "
-        f"{category_id} | published |"
+    line = "| {0} | {1} | {2} | {3} | {4} | published |".format(
+        date.today().isoformat(),
+        topic_id or "",
+        slug,
+        url or "",
+        category_id,
     )
     text = ledger.read_text(encoding="utf-8")
     if slug in text and "published" in text:
@@ -87,15 +99,15 @@ def _append_repo_ledger(topic_id: str | None, slug: str, url: str | None, catego
     ledger.write_text(text + line + "\n", encoding="utf-8")
 
 
-def _print_status(code: str, detail: str = "") -> None:
-    msg = f"STATUS: {code}"
+def _print_status(code, detail=""):
+    msg = "STATUS: {0}".format(code)
     if detail:
-        msg = f"{msg} — {detail}"
+        msg = "{0} — {1}".format(msg, detail)
     print(msg)
     logging.info(msg)
 
 
-def main() -> int:
+def main():
     parser = argparse.ArgumentParser(description="Lireate hosting autopublish (REG.RU cron)")
     parser.add_argument(
         "--article-dir",
@@ -138,9 +150,11 @@ def main() -> int:
     docroot = (os.environ.get("LIREATE_DOCROOT") or "").strip()
     allow = _truthy("LIREATE_ALLOW_PUBLISH")
 
-    result: dict[str, object] = {
+    result = {
         "mode": "hosting",
         "verdict": "blocker",
+        "python": sys.version.split()[0],
+        "python_executable": sys.executable,
         "env_file": str(env_file),
         "article_dir": str(article_dir),
     }
@@ -155,8 +169,8 @@ def main() -> int:
     slug = meta.get("slug") or article_dir.name.split("-", 1)[-1]
     topic_id = meta.get("topic_id")
     category_id = int(meta.get("lireate_category_id", 9))
-    canonical = meta.get("canonical_path") or f"/{slug}"
-    target_url = f"{site}{canonical}" if site else None
+    canonical = meta.get("canonical_path") or "/{0}".format(slug)
+    target_url = "{0}{1}".format(site, canonical) if site else None
 
     result.update(
         {
@@ -174,7 +188,7 @@ def main() -> int:
     if args.dry_run:
         result["verdict"] = "dry_run"
         result_path.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        _print_status("DRY_RUN", f"bundle at {bundle}")
+        _print_status("DRY_RUN", "bundle at {0}".format(bundle))
         return 0
 
     with _file_lock(lock_file):
@@ -208,7 +222,7 @@ def main() -> int:
 
         docroot_path = Path(docroot).expanduser().resolve()
         if not docroot_path.is_dir():
-            result["blocker"] = f"LIREATE_DOCROOT not a directory: {docroot_path}"
+            result["blocker"] = "LIREATE_DOCROOT not a directory: {0}".format(docroot_path)
             result_path.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
             _print_status("BLOCKER", result["blocker"])
             return 1
@@ -216,7 +230,7 @@ def main() -> int:
         img_ok, copied, img_detail = copy_bundle_images(docroot_path, bundle / "images")
         result["local_image_copy"] = {"ok": img_ok, "files": copied, "detail": img_detail}
         if not img_ok:
-            result["blocker"] = f"image copy failed: {img_detail}"
+            result["blocker"] = "image copy failed: {0}".format(img_detail)
             result_path.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
             _print_status("BLOCKER", result["blocker"])
             return 1
@@ -246,7 +260,7 @@ def main() -> int:
 
         client = LireateCmsClient(site)
         cms_res = client.publish_news(meta, transformed, skip_if_live=True)
-        result["admin_http"] = cms_res.__dict__
+        result["admin_http"] = _cms_result_dict(cms_res)
         result["cms_config"] = str(cms_config)
 
         live_after = http_status(target_url) if target_url else None
@@ -263,11 +277,12 @@ def main() -> int:
 
         if cms_res.ok and live_after != 200:
             result["blocker"] = (
-                f"CMS step OK ({cms_res.detail}) but live URL still {live_after} — "
-                "check news.fields in cms-config JSON"
+                "CMS step OK ({0}) but live URL still {1} — check news.fields in cms-config JSON".format(
+                    cms_res.detail, live_after
+                )
             )
         else:
-            result["blocker"] = f"CMS HTTP failed at {cms_res.stage}: {cms_res.detail}"
+            result["blocker"] = "CMS HTTP failed at {0}: {1}".format(cms_res.stage, cms_res.detail)
 
         result_path.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         _print_status("BLOCKER", result["blocker"])

@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """Probe Lireate /admin/ from worker IP: RCPC, login form, news module links."""
 
-from __future__ import annotations
-
 import json
 import os
 import sys
@@ -12,7 +10,10 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
 
 from lireate_cms_http import LireateCmsClient, _FormCollector  # noqa: E402
+from lireate_compat import require_python  # noqa: E402
 from lireate_dotenv import load_dotenv  # noqa: E402
+
+require_python((3, 6))
 
 load_dotenv(Path(os.environ.get("LIREATE_ENV_FILE") or (Path.home() / "lireate-autopub" / ".env")))
 
@@ -34,7 +35,11 @@ CANDIDATE_PATHS = [
 ]
 
 
-def main() -> int:
+def _res_dict(res):
+    return {"ok": res.ok, "stage": res.stage, "detail": res.detail, "extra": res.extra}
+
+
+def main():
     site = (os.environ.get("LIREATE_PUBLIC_SITE_URL") or "").strip().rstrip("/")
     if not site:
         print("FAIL: set LIREATE_PUBLIC_SITE_URL", file=sys.stderr)
@@ -50,23 +55,23 @@ def main() -> int:
     out_dir.mkdir(parents=True, exist_ok=True)
 
     client = LireateCmsClient(site)
-    report: dict[str, object] = {"site": site, "stages": []}
+    report = {"site": site, "stages": []}
 
     warm = client.warmup_rcpc()
-    report["stages"].append({"rcpc": warm.__dict__})
+    report["stages"].append({"rcpc": _res_dict(warm)})
     if not warm.ok:
         print(json.dumps(report, ensure_ascii=False, indent=2))
         return 1
 
-    login_url = warm.extra.get("url", f"{site}/admin/login.php")
+    login_url = warm.extra.get("url", "{0}/admin/login.php".format(site))
     status, html, _ = client._request(login_url)
     parser = _FormCollector()
     parser.feed(html)
-    (out_dir / "login-page.html").write_text(html[:500_000], encoding="utf-8")
+    (out_dir / "login-page.html").write_text(html[:500000], encoding="utf-8")
     report["login_page"] = {"status": status, "forms": parser.forms, "html_len": len(html)}
 
     login_res = client.login(user, password, {})
-    report["stages"].append({"login": login_res.__dict__})
+    report["stages"].append({"login": _res_dict(login_res)})
     if not login_res.ok:
         print(json.dumps(report, ensure_ascii=False, indent=2))
         return 1
@@ -81,8 +86,9 @@ def main() -> int:
             if kw in low:
                 score += 1
         if score >= 2 or (st == 200 and len(body) > 3000):
-            snippet_path = out_dir / f"hit_{path.strip('/').replace('/', '_') or 'root'}.html"
-            snippet_path.write_text(body[:300_000], encoding="utf-8")
+            safe = path.strip("/").replace("/", "_") or "root"
+            snippet_path = out_dir / ("hit_{0}.html".format(safe))
+            snippet_path.write_text(body[:300000], encoding="utf-8")
         hits.append({"path": path, "status": st, "len": len(body), "score": score})
 
     hits.sort(key=lambda x: (-x["score"], -x["len"]))
@@ -105,7 +111,7 @@ def main() -> int:
     report["wrote_config_draft"] = str(dest)
 
     print(json.dumps(report, ensure_ascii=False, indent=2))
-    print(f"\nOK: draft config → {dest}", file=sys.stderr)
+    print("\nOK: draft config -> {0}".format(dest), file=sys.stderr)
     print("Next: edit news.fields in that JSON, then run lireate_news_publish.py", file=sys.stderr)
     return 0
 

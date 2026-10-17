@@ -1,12 +1,11 @@
-"""Load KEY=VALUE lines from a .env file into os.environ (stdlib, Py3.8)."""
-
-from __future__ import annotations
+"""Load KEY=VALUE lines from a .env file into os.environ (stdlib, Py3.6+)."""
 
 import os
 from pathlib import Path
 
 
-def load_dotenv(path: Path, override: bool = False) -> bool:
+def load_dotenv(path, override=False):
+    path = Path(path)
     if not path.is_file():
         return False
     for raw_line in path.read_text(encoding="utf-8").splitlines():
