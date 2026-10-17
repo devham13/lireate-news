@@ -69,7 +69,15 @@ class CmsHttpResult:
 class LireateCmsClient:
     def __init__(self, site_url: str, admin_base: str | None = None) -> None:
         self.site_url = site_url.rstrip("/")
-        admin = (admin_base or os.environ.get("LIREATE_ADMIN_URL") or f"{self.site_url}/admin/").strip()
+        parsed = urllib.parse.urlparse(self.site_url)
+        self.vhost = (parsed.hostname or "").strip()
+        cms_base = (os.environ.get("LIREATE_CMS_HTTP_BASE") or "").strip().rstrip("/")
+        self.http_origin = cms_base or self.site_url
+        admin = (admin_base or os.environ.get("LIREATE_ADMIN_URL") or "").strip()
+        if not admin:
+            admin = f"{self.http_origin}/admin/"
+        elif admin.startswith("/"):
+            admin = self.http_origin + admin
         self.admin_base = admin.rstrip("/") + "/"
         self.jar = CookieJar()
         ctx = ssl.create_default_context()
@@ -86,6 +94,9 @@ class LireateCmsClient:
         headers: dict[str, str] | None = None,
     ) -> tuple[int, str, dict[str, str]]:
         hdrs = {"User-Agent": USER_AGENT}
+        cms_base_env = (os.environ.get("LIREATE_CMS_HTTP_BASE") or "").strip()
+        if self.vhost and cms_base_env:
+            hdrs.setdefault("Host", self.vhost)
         if headers:
             hdrs.update(headers)
         req = urllib.request.Request(url, data=data, method=method, headers=hdrs)
@@ -108,7 +119,7 @@ class LireateCmsClient:
         if path_or_url.startswith("http://") or path_or_url.startswith("https://"):
             return path_or_url
         if path_or_url.startswith("/"):
-            return self.site_url + path_or_url
+            return self.http_origin + path_or_url
         return urllib.parse.urljoin(self.admin_base, path_or_url)
 
     def _is_rcpc_stub(self, html: str) -> bool:
@@ -300,7 +311,36 @@ class LireateCmsClient:
             out[k] = s
         return out
 
-    def publish_news(self, meta: dict[str, Any], body_html: str) -> CmsHttpResult:
+    def publish_news(
+        self,
+        meta: dict[str, Any],
+        body_html: str,
+        skip_if_live: bool = True,
+    ) -> CmsHttpResult:
+        slug = meta.get("slug") or ""
+        canonical = meta.get("canonical_path") or f"/{slug}"
+        if skip_if_live and self.site_url:
+            live_url = f"{self.site_url}{canonical}"
+            try:
+                req = urllib.request.Request(
+                    live_url,
+                    method="HEAD",
+                    headers={"User-Agent": USER_AGENT},
+                )
+                with self.opener.open(req, timeout=25) as resp:
+                    st = resp.status
+            except urllib.error.HTTPError as e:
+                st = e.code
+            except Exception:
+                st = None
+            if st == 200:
+                return CmsHttpResult(
+                    ok=True,
+                    stage="publish",
+                    detail="already_live_skip_cms",
+                    extra={"live_url": live_url, "http_status": st},
+                )
+
         config = self._load_config()
         news_cfg = config.get("news") or {}
         if not news_cfg.get("create_path"):
@@ -319,8 +359,7 @@ class LireateCmsClient:
         if not login_res.ok:
             return login_res
 
-        slug = meta.get("slug") or ""
-        canonical = (meta.get("canonical_path") or f"/{slug}").strip("/")
+        canonical = canonical.strip("/")
         alias = canonical.split("/")[-1] if canonical else slug.replace("-", "_")
 
         ctx = {

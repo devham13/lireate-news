@@ -12,6 +12,9 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
 
 from lireate_cms_http import LireateCmsClient, _FormCollector  # noqa: E402
+from lireate_dotenv import load_dotenv  # noqa: E402
+
+load_dotenv(Path(os.environ.get("LIREATE_ENV_FILE") or (Path.home() / "lireate-autopub" / ".env")))
 
 CANDIDATE_PATHS = [
     "/admin/",

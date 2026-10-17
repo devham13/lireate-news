@@ -1,0 +1,33 @@
+name: lireate-py38
+
+on:
+  pull_request:
+    paths:
+      - "scripts/lireate_*.py"
+      - ".github/workflows/lireate-py38.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/lireate_*.py"
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.8"
+      - name: Byte-compile Lireate scripts
+        run: |
+          python -m py_compile scripts/lireate_dotenv.py
+          python -m py_compile scripts/lireate_publish_bundle.py
+          python -m py_compile scripts/lireate_publish_live.py
+          python -m py_compile scripts/lireate_local_deploy.py
+          python -m py_compile scripts/lireate_cms_http.py
+          python -m py_compile scripts/lireate_cms_probe.py
+          python -m py_compile scripts/lireate_hosting_publish.py
+          python -m py_compile scripts/lireate_hosting_selfcheck.py
+          python -m py_compile scripts/lireate_news_publish.py
+          python -m py_compile scripts/lireate_reg_ru_check.py
