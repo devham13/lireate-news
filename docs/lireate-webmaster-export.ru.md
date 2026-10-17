@@ -24,8 +24,10 @@ export LIREATE_AUTOPUB_HOME="$HOME/lireate-autopub" && KEY="$(/opt/python/python
 ## Шаг 2. Обновить код репозитория
 
 ```bash
-export LIREATE_AUTOPUB_HOME="$HOME/lireate-autopub" && cd "$LIREATE_AUTOPUB_HOME/repo" && git fetch origin cursor/lireate-hosting-cron-762f && git checkout cursor/lireate-hosting-cron-762f && git pull
+export LIREATE_AUTOPUB_HOME="$HOME/lireate-autopub" && cd "$LIREATE_AUTOPUB_HOME/repo" && git pull origin main
 ```
+
+Автодеплоя PHP на сайт **нет**: после `git pull` снова выполните `--deploy-php` (шаг 3).
 
 ---
 
