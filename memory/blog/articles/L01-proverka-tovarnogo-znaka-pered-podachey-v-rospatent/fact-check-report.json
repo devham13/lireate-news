@@ -2,9 +2,9 @@
   "article": "memory/blog/articles/L01-proverka-tovarnogo-znaka-pered-podachey-v-rospatent/article.html",
   "fact_bank_source": "memory/brief/fact-bank.md",
   "verdict": "pass",
-  "total_extracted_facts": 8,
+  "total_extracted_facts": 10,
   "verified_facts_count": 5,
-  "unverified_facts_count": 3,
+  "unverified_facts_count": 5,
   "facts": [
     {
       "fact": "46 200 руб",
@@ -19,6 +19,13 @@
       "context": "й поиск - Поисковая платформа Роспатента (с 11.12.2023). Добавьте реестр заявок на ФИПС, TMview и оценку",
       "verified": true,
       "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2005 года",
+      "kind": "date_or_year",
+      "context": "заявок RUTMAP на fips.ru пополняется ежедневно с 2005 года - её имеет смысл смотреть вместе с реестром заяво",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
     },
     {
       "fact": "2026",
@@ -44,9 +51,16 @@
     {
       "fact": "1483",
       "kind": "large_number",
-      "context": "то теряете, если пропустить шаг Отказ по п. 6 ст. 1483 (сходство в однородных товарах) возможен после по",
+      "context": "у и лишних затрат на экспертизу Отказ по п. 6 ст. 1483 (сходство в однородных товарах) возможен после по",
       "verified": true,
       "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2005",
+      "kind": "large_number",
+      "context": "заявок RUTMAP на fips.ru пополняется ежедневно с 2005 года - её имеет смысл смотреть вместе с реестром з",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
     },
     {
       "fact": "46 200",
@@ -58,7 +72,7 @@
     {
       "fact": "6340",
       "kind": "large_number",
-      "context": "спорном сходстве. Консультации ФИПС: +7 (495) 531-6340, 10:00-16:00. Лирейт помогает пройти тот же маршр",
+      "context": "спорном сходстве. Консультации ФИПС: +7 (495) 531-6340, 10:00-16:00. Если после чек-листа остаются \"крас",
       "verified": false,
       "reason": "No matching fact or number found in fact-bank"
     }
