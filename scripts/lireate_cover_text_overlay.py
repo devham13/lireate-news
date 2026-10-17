@@ -14,6 +14,7 @@ BLOG_SMALL_SIZE = (350, 163)
 MARGIN_PX = 24
 
 L01_TITLE_LINES = ("Знак занят —", "пошлина сгорела?")
+L01_TITLE_SHORT = ("Знак занят?",)
 
 
 def _font_path():
@@ -37,72 +38,47 @@ def _load_font(size: int):
     return ImageFont.load_default()
 
 
-def _hosting_crop_resize(im, target_w, target_h):
-    from lireate_hosting_images import _center_crop_resize, _pil_image
+def _crop_resize_top_left_bias(im, target_w, target_h):
+    """Crop to aspect keeping top + left (heroine head on left must stay in frame)."""
+    from PIL import Image
 
-    Image = _pil_image()
-    if Image is None:
-        raise RuntimeError("Pillow required")
-    return _center_crop_resize(im, target_w, target_h, Image)
-
-
-def _paper_fill(im, x0, y0, x1, y1):
-    sample = im.crop((
-        max(0, int(im.size[0] * 0.05)),
-        max(0, int(im.size[1] * 0.55)),
-        max(1, int(im.size[0] * 0.12)),
-        min(im.size[1], int(im.size[1] * 0.65)),
-    ))
-    px = sample.resize((1, 1)).getpixel((0, 0))
-    if isinstance(px, tuple) and len(px) >= 3:
-        return px[:3]
-    return (245, 245, 240)
-
-
-def _mask_l01_top_band(im):
-    """Remove ghost model headline from base image."""
-    from PIL import ImageDraw
-
-    im = im.convert("RGBA")
     w, h = im.size
-    band_h = int(h * 0.20)
-    draw = ImageDraw.Draw(im)
-    # Sample paper tone from lower-left (away from face cutout edge)
-    fill = _paper_fill(im, 0, 0, w, band_h)
-    draw.rectangle((0, 0, w, band_h), fill=fill + (255,))
-    return im
+    target_aspect = float(target_w) / float(target_h)
+    src_aspect = float(w) / float(h)
+    if src_aspect > target_aspect:
+        new_w = int(round(h * target_aspect))
+        left = 0
+        box = (left, 0, left + new_w, h)
+    else:
+        new_h = int(round(w / target_aspect))
+        top = 0
+        box = (0, top, w, top + new_h)
+    cropped = im.crop(box)
+    return cropped.resize((target_w, target_h), Image.Resampling.LANCZOS)
 
 
-def _clean_frame_top(im, band_h=None):
-    """Erase residual headline pixels after crop (before PIL title)."""
-    from PIL import ImageDraw
-
-    im = im.convert("RGBA")
-    w, h = im.size
-    if band_h is None:
-        band_h = max(MARGIN_PX + 8, int(h * 0.26))
-    draw = ImageDraw.Draw(im)
-    fill = _paper_fill(im, 0, 0, w, band_h)
-    draw.rectangle((0, 0, w, band_h), fill=fill + (255,))
-    return im
-
-
-def _registry_window_box(w, h):
-    win_x0 = int(w * 0.48)
-    win_y0 = int(h * 0.22)
-    win_x1 = int(w * 0.92)
-    win_y1 = int(h * 0.72)
+def _registry_window_box(w, h, profile="860"):
+    """UI overlays only in the right half (PIL text zone)."""
+    if profile == "350":
+        win_x0 = int(w * 0.55)
+        win_y0 = int(h * 0.46)
+        win_x1 = w - MARGIN_PX
+        win_y1 = int(h * 0.88)
+        return win_x0, win_y0, win_x1, win_y1
+    win_x0 = int(w * 0.45)
+    win_y0 = int(h * 0.30)
+    win_x1 = w - MARGIN_PX
+    win_y1 = int(h * 0.80)
     return win_x0, win_y0, win_x1, win_y1
 
 
-def apply_l01_registry_ui(im, include_title=False):
-    """Registry window + labels. Title only when include_title=False is default (legacy)."""
+def apply_l01_registry_ui(im, profile="860"):
     from PIL import ImageDraw
 
     im = im.convert("RGBA")
     draw = ImageDraw.Draw(im)
     w, h = im.size
-    win_x0, win_y0, win_x1, win_y1 = _registry_window_box(w, h)
+    win_x0, win_y0, win_x1, win_y1 = _registry_window_box(w, h, profile)
 
     badge_font = _load_font(max(18, int(h * 0.052)))
     label_font = _load_font(max(13, int(h * 0.030)))
@@ -110,21 +86,21 @@ def apply_l01_registry_ui(im, include_title=False):
 
     draw.rectangle((win_x0, win_y0, win_x1, win_y1), fill=(245, 245, 240), outline=(160, 160, 160), width=2)
     for i in range(4):
-        row_y = win_y0 + 52 + i * int((win_y1 - win_y0 - 80) / 4)
+        row_y = win_y0 + 48 + i * int((win_y1 - win_y0 - 72) / 4)
         draw.rectangle(
-            (win_x0 + 14, row_y, win_x1 - 14, row_y + 18),
+            (win_x0 + 12, row_y, win_x1 - 12, row_y + 16),
             fill=(230, 230, 225),
             outline=(200, 200, 195),
         )
-    draw.text((win_x0 + 12, win_y0 + 8), "Реестр Роспатента", font=label_font, fill=(40, 40, 40))
+    draw.text((win_x0 + 10, win_y0 + 6), "Реестр Роспатента", font=label_font, fill=(40, 40, 40))
 
     badge_text = "98% схожесть"
     bw = draw.textlength(badge_text, font=badge_font)
     bx = win_x0 + int((win_x1 - win_x0 - bw) / 2)
-    by = win_y0 + int((win_y1 - win_y0) * 0.38)
-    pad = 8
+    by = win_y0 + int((win_y1 - win_y0) * 0.36)
+    pad = 7
     draw.rectangle(
-        (bx - pad, by - pad, bx + bw + pad, by + int(badge_font.size * 1.15) + pad),
+        (bx - pad, by - pad, bx + bw + pad, by + int(badge_font.size * 1.1) + pad),
         fill=(220, 50, 50),
     )
     draw.text((bx, by), badge_text, font=badge_font, fill=(255, 255, 255))
@@ -132,19 +108,16 @@ def apply_l01_registry_ui(im, include_title=False):
     sub = "Сходство до степени смешения"
     sw = draw.textlength(sub, font=small_font)
     draw.text(
-        (win_x0 + int((win_x1 - win_x0 - sw) / 2), win_y1 - int(h * 0.11)),
+        (win_x0 + int((win_x1 - win_x0 - sw) / 2), win_y1 - int(h * 0.10)),
         sub,
         font=small_font,
         fill=(60, 60, 60),
     )
 
-    if include_title:
-        im = draw_l01_headline(im, profile="860")
-
     return im.convert("RGB")
 
 
-def _fit_title_font(draw, lines, max_width, start_size, min_size=14):
+def _fit_title_font(draw, lines, max_width, start_size, min_size=11):
     for size in range(start_size, min_size - 1, -1):
         font = _load_font(size)
         widths = [draw.textlength(line, font=font) for line in lines]
@@ -155,50 +128,46 @@ def _fit_title_font(draw, lines, max_width, start_size, min_size=14):
 
 
 def draw_l01_headline(im, profile="860"):
-    """Two-line title on contrast plate; call AFTER final crop. profile: 860 | 350."""
     from PIL import ImageDraw
 
     im = im.convert("RGBA")
     draw = ImageDraw.Draw(im)
     w, h = im.size
-    win_x0, win_y0, win_x1, _win_y1 = _registry_window_box(w, h)
+    win_x0, win_y0, win_x1, _win_y1 = _registry_window_box(w, h, profile)
 
     if profile == "350":
-        # Right column only — do not cover heroine on the left
-        plate_x0 = int(w * 0.40)
+        plate_x0 = int(w * 0.55)
         plate_x1 = w - MARGIN_PX
-        max_text_w = plate_x1 - plate_x0 - 10
-        start_font = 15
-        line_gap = 1
+        lines = L01_TITLE_SHORT
+        max_text_w = plate_x1 - plate_x0 - 6
+        start_font = 13
+        line_gap = 0
         plate_y0 = MARGIN_PX
+        max_plate_bottom = int(h * 0.34)
     else:
-        plate_x0 = max(MARGIN_PX, win_x0)
-        plate_x1 = min(w - MARGIN_PX, win_x1)
-        max_text_w = plate_x1 - plate_x0 - 16
-        start_font = 30
-        line_gap = 3
+        plate_x0 = win_x0
+        plate_x1 = win_x1
+        lines = L01_TITLE_LINES
+        max_text_w = plate_x1 - plate_x0 - 12
+        start_font = 28
+        line_gap = 2
         plate_y0 = MARGIN_PX
+        max_plate_bottom = win_y0 - 10
 
-    font, widths = _fit_title_font(draw, L01_TITLE_LINES, max_text_w, start_font, min_size=12)
-    line_h = int(font.size * 1.15) + line_gap
-    block_h = line_h * len(L01_TITLE_LINES) + 14
-    plate_y1 = plate_y0 + block_h
-    if profile == "860":
-        plate_y1 = min(plate_y1, win_y0 - 8)
-        if plate_y1 < plate_y0 + line_h * 2:
-            plate_y1 = plate_y0 + block_h
+    font, widths = _fit_title_font(draw, lines, max_text_w, start_font, min_size=10)
+    line_h = int(font.size * 1.12) + line_gap
+    block_h = line_h * len(lines) + 12
+    plate_y1 = min(plate_y0 + block_h, max_plate_bottom)
 
     draw.rectangle(
         (plate_x0, plate_y0, plate_x1, plate_y1),
-        fill=(255, 255, 255, 235),
+        fill=(255, 255, 255, 240),
         outline=(30, 30, 30, 255),
         width=2,
     )
 
-    ty = plate_y0 + 10
-    if ty < MARGIN_PX:
-        ty = MARGIN_PX
-    for i, line in enumerate(L01_TITLE_LINES):
+    ty = plate_y0 + 6
+    for i, line in enumerate(lines):
         tw = widths[i]
         tx = plate_x0 + int((plate_x1 - plate_x0 - tw) / 2)
         draw.text(
@@ -210,35 +179,24 @@ def draw_l01_headline(im, profile="860"):
             stroke_fill=(255, 255, 255),
         )
 
-    _assert_text_in_frame(draw, im.size, MARGIN_PX)
+    if profile == "350" and plate_x0 < int(w * 0.50):
+        raise ValueError("small title must stay in right half")
     return im.convert("RGB")
-
-
-def _assert_text_in_frame(draw, size, margin):
-    w, h = size
-    # bbox of drawn text is not tracked; verify plate fits
-    if margin < MARGIN_PX:
-        raise ValueError("margin below minimum")
-    if w < 2 * margin or h < 2 * margin:
-        raise ValueError("frame too small for title margins")
 
 
 def build_l01_cover_from_base(base_path: Path):
     from PIL import Image
 
-    work = (1200, 675)
     base = Image.open(base_path).convert("RGB")
-    if base.size != work:
-        base = base.resize(work, Image.Resampling.LANCZOS)
+    work = (1290, 600)
+    base_r = base.resize(work, Image.Resampling.LANCZOS)
+    with_ui = apply_l01_registry_ui(base_r, profile="860")
+    frame = _crop_resize_top_left_bias(with_ui, BLOG_COVER_SIZE[0], BLOG_COVER_SIZE[1])
+    cover = draw_l01_headline(frame, profile="860")
 
-    masked = _mask_l01_top_band(base)
-    with_ui = apply_l01_registry_ui(masked, include_title=False)
-    frame = _hosting_crop_resize(with_ui, BLOG_COVER_SIZE[0], BLOG_COVER_SIZE[1])
-    frame_clean = _clean_frame_top(frame)
-    cover = draw_l01_headline(frame_clean, profile="860")
+    from PIL import Image
 
-    small_base = _clean_frame_top(frame.resize(BLOG_SMALL_SIZE, Image.Resampling.LANCZOS), band_h=46)
-    small = draw_l01_headline(small_base, profile="350")
+    small = cover.resize(BLOG_SMALL_SIZE, Image.Resampling.LANCZOS)
     return cover, small
 
 
