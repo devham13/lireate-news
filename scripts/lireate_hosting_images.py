@@ -11,6 +11,7 @@ _HOSTING_INLINE_FILES = (
 )
 
 COVER_SOURCE = "cover/cover.png"
+COVER_SMALL_SOURCE = "cover/cover-small.png"
 BLOG_COVER_SIZE = (860, 400)
 BLOG_SMALL_SIZE = (350, 163)
 
@@ -65,6 +66,10 @@ def list_planned_image_destinations(docroot, seo_url, article_dir):
         large, small = template_blog_paths(docroot, seo_url)
         paths.append(str(large))
         paths.append(str(small))
+    if (article_dir / COVER_SMALL_SOURCE).is_file():
+        _, small = template_blog_paths(docroot, seo_url)
+        if str(small) not in paths:
+            paths.append(str(small))
     for local_rel, suffix in _HOSTING_INLINE_FILES:
         if (article_dir / local_rel).is_file():
             paths.append(str(docroot / "images" / "{0}{1}".format(seo_url, suffix)))
@@ -101,15 +106,10 @@ def _center_crop_resize(im, target_w, target_h, resample):
     return cropped.resize((target_w, target_h), resample_lanczos)
 
 
-def _save_jpeg_variants(src_path, destinations, sizes):
+def _load_rgb(src_path):
     Image = _pil_image()
     if Image is None:
-        for dest in destinations:
-            _assert_owned_dest(dest, dest.stem)
-            dest.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copy2(src_path, dest)
-        return "copy_fallback_no_pillow"
-
+        return None
     im = Image.open(src_path)
     if im.mode in ("RGBA", "LA", "P"):
         im = im.convert("RGBA")
@@ -118,14 +118,24 @@ def _save_jpeg_variants(src_path, destinations, sizes):
         im = bg
     elif im.mode != "RGB":
         im = im.convert("RGB")
+    return im
 
-    resample = Image
-    for dest, size in zip(destinations, sizes):
-        _assert_owned_dest(dest, dest.stem)
-        dest.parent.mkdir(parents=True, exist_ok=True)
-        variant = _center_crop_resize(im, size[0], size[1], resample)
-        variant.save(str(dest), format="JPEG", quality=88, optimize=True)
-    return "jpeg_pillow"
+
+def _save_jpeg_at_size(src_path, dest, size):
+    Image = _pil_image()
+    _assert_owned_dest(dest, dest.stem)
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    if Image is None:
+        shutil.copy2(src_path, dest)
+        return
+    im = _load_rgb(src_path)
+    if im.size == size:
+        out = im
+    elif im.size[0] == size[0] and im.size[1] == size[1]:
+        out = im
+    else:
+        out = _center_crop_resize(im, size[0], size[1], Image)
+    out.save(str(dest), format="JPEG", quality=88, optimize=True)
 
 
 def deploy_hosting_images(docroot, seo_url, article_dir):
@@ -140,13 +150,16 @@ def deploy_hosting_images(docroot, seo_url, article_dir):
 
     images_cover = docroot_images_cover_path(docroot, seo_url)
     large, small = template_blog_paths(docroot, seo_url)
+    small_src = article_dir / COVER_SMALL_SOURCE
     try:
-        mode = _save_jpeg_variants(
-            cover_src,
-            [images_cover, large, small],
-            [BLOG_COVER_SIZE, BLOG_COVER_SIZE, BLOG_SMALL_SIZE],
-        )
-        detail_parts.append("cover:{0}".format(mode))
+        _save_jpeg_at_size(cover_src, images_cover, BLOG_COVER_SIZE)
+        _save_jpeg_at_size(cover_src, large, BLOG_COVER_SIZE)
+        if small_src.is_file():
+            _save_jpeg_at_size(small_src, small, BLOG_SMALL_SIZE)
+            detail_parts.append("cover:large+small_file")
+        else:
+            _save_jpeg_at_size(cover_src, small, BLOG_SMALL_SIZE)
+            detail_parts.append("cover:large+small_resize_fallback")
         copied.extend([str(images_cover), str(large), str(small)])
     except OSError as e:
         return False, copied, "cover deploy failed: {0}".format(e)

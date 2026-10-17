@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 import sys
 from pathlib import Path
 
@@ -11,7 +12,9 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 
 BLOG_COVER_SIZE = (860, 400)
 BLOG_SMALL_SIZE = (350, 163)
+COVER_SMALL_FILENAME = "cover-small.png"
 MARGIN_PX = 24
+SMALL_MARGIN_PX = 8
 
 L01_TITLE_LINES = ("Знак занят —", "пошлина сгорела?")
 L01_TITLE_SHORT = ("Знак занят?",)
@@ -184,6 +187,56 @@ def draw_l01_headline(im, profile="860"):
     return im.convert("RGB")
 
 
+def build_l01_small_thumb(base_path: Path):
+    """News list thumb: same photo crop, minimal PIL on the right only."""
+    from PIL import Image, ImageDraw
+
+    base_r = Image.open(base_path).convert("RGB").resize(
+        (1290, 600), Image.Resampling.LANCZOS
+    )
+    bg = _crop_resize_top_left_bias(base_r, BLOG_SMALL_SIZE[0], BLOG_SMALL_SIZE[1])
+    im = bg.convert("RGBA")
+    draw = ImageDraw.Draw(im)
+    w, h = im.size
+    m = SMALL_MARGIN_PX
+    col_x0 = int(w * 0.48)
+    col_x1 = w - m
+    max_w = col_x1 - col_x0 - 4
+
+    title = L01_TITLE_SHORT[0]
+    title_font, title_widths = _fit_title_font(draw, (title,), max_w, 15, min_size=9)
+    tw = title_widths[0]
+    th = int(title_font.size * 1.2) + 8
+    plate_y1 = m + th
+    draw.rectangle(
+        (col_x0, m, col_x1, plate_y1),
+        fill=(255, 255, 255, 245),
+        outline=(30, 30, 30, 255),
+        width=1,
+    )
+    tx = col_x0 + int((col_x1 - col_x0 - tw) / 2)
+    draw.text((tx, m + 4), title, font=title_font, fill=(20, 20, 20))
+
+    badge = "98% схожесть"
+    badge_font, badge_widths = _fit_title_font(draw, (badge,), max_w - 12, 14, min_size=9)
+    bw = badge_widths[0]
+    pad = 5
+    bh = int(badge_font.size * 1.15) + pad * 2
+    by = plate_y1 + m
+    if by + bh > int(h * 0.62):
+        by = int(h * 0.62) - bh
+    bx = col_x0 + int((col_x1 - col_x0 - bw) / 2)
+    draw.rectangle(
+        (col_x0, by, col_x1, by + bh),
+        fill=(220, 50, 50, 255),
+    )
+    draw.text((bx, by + pad), badge, font=badge_font, fill=(255, 255, 255))
+
+    if col_x1 > w - m or col_x0 < m:
+        raise ValueError("small overlays exceed horizontal margins")
+    return im.convert("RGB")
+
+
 def build_l01_cover_from_base(base_path: Path):
     from PIL import Image
 
@@ -193,10 +246,7 @@ def build_l01_cover_from_base(base_path: Path):
     with_ui = apply_l01_registry_ui(base_r, profile="860")
     frame = _crop_resize_top_left_bias(with_ui, BLOG_COVER_SIZE[0], BLOG_COVER_SIZE[1])
     cover = draw_l01_headline(frame, profile="860")
-
-    from PIL import Image
-
-    small = cover.resize(BLOG_SMALL_SIZE, Image.Resampling.LANCZOS)
+    small = build_l01_small_thumb(base_path)
     return cover, small
 
 
@@ -215,15 +265,32 @@ def main():
     ap.add_argument("--topic", default="L01", choices=("L01",))
     ap.add_argument("--artifacts-dir", type=Path, default=Path("/opt/cursor/artifacts"))
     ap.add_argument("--artifact-stem", default="l01-cover-final")
+    ap.add_argument(
+        "--small-only",
+        action="store_true",
+        help="Regenerate cover-small.png only; do not overwrite cover.png",
+    )
     args = ap.parse_args()
 
     if args.topic != "L01":
         print("unknown topic", file=sys.stderr)
         return 2
 
-    cover, small = build_l01_cover_from_base(args.base)
-    args.out.parent.mkdir(parents=True, exist_ok=True)
-    cover.save(args.out, format="PNG", optimize=True)
+    from PIL import Image
+
+    cover_path = args.out
+    small_path = cover_path.parent / COVER_SMALL_FILENAME
+    skip_large = args.small_only or os.environ.get("LIREATE_COVER_ONLY_SMALL")
+    if skip_large and cover_path.is_file():
+        small = build_l01_small_thumb(args.base)
+        cover = Image.open(cover_path).convert("RGB")
+    else:
+        cover, small = build_l01_cover_from_base(args.base)
+
+    cover_path.parent.mkdir(parents=True, exist_ok=True)
+    if not skip_large and not os.environ.get("LIREATE_COVER_SKIP_LARGE"):
+        cover.save(cover_path, format="PNG", optimize=True)
+    small.save(small_path, format="PNG", optimize=True)
     export_artifacts(cover, small, args.artifacts_dir, args.artifact_stem)
     print("OK out={0} size={1}".format(args.out, cover.size))
     return 0
