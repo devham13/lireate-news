@@ -244,6 +244,8 @@ export LIREATE_ENV_FILE="$LIREATE_AUTOPUB_HOME/.env"
   "$LIREATE_AUTOPUB_HOME/repo/scripts/lireate_hosting_publish.py"
 ```
 
+Картинки: `cover/*.png` → `public_html/images/{seo_url}.jpg` и `{seo_url}_inline_*.jpg`; в `full_story` пути `/images/...`. Если статья уже опубликована, но в тексте остались `cover/inline-*.png` (битые иконки), повторите с **`--update`** (обновит БД и файлы).
+
 ### Обновление кода на сервере
 
 ```bash
