@@ -1,16 +1,16 @@
 {
   "pipeline_version": "split_v2",
   "article_dir": "memory/blog/articles/B01-primer-seo-stati",
-  "reference_url_hosted": "https://files.catbox.moe/yjlmip.png",
+  "reference_url_hosted": "https://lyratetrademark.ru/wp-content/uploads/2025/12/photo_2025-12-24_12-17-06.jpg",
   "jobs": [
     {
       "slot": "cover",
       "output_file": "cover/cover.png",
       "tool": "gpt-image-2",
       "mcp_args": {
-        "prompt": "Russian internet meme collage illustration, ironic humor, cutout stickers, reaction faces, drake-format panels, pepe-adjacent absurdity but original characters, bold Cyrillic meme captions in Impact-style white text with black outline, layered scraps, glitch accents, colors #FAFAF7 #E85D4C #1A1A2E #FFD93D,\nCOVER ONLY — single 16:9 image, not a grid.\nSame recurring blog host character in every panel: man with round black glasses, voluminous ash-blonde quiff hair, salt-and-pepper short beard, charismatic presenter energy. Keep face recognizable; change pose, props, meme costume per panel.\nCRITICAL: preserve EXACT face likeness from reference photo — same glasses, quiff hair, salt-and-pepper beard.\nClickbait hook scene: герой с reference-лицом, шок/ирония SEOшника, Wordstat + ноутбук, крючок на клик.\nLarge readable Cyrillic meme caption: \"15k ключей — 0 прочтений?\".\nHook idea: SEO-текст, который люди дочитают — миф или workflow?.\nRussian internet meme collage, ironic SEO humor, host points at caption or reacts dramatically.\nsingle canvas 2048x1152 pixels, exact\nNegative: English text, Latin letters, watermark, logo, blurry, generic western stock photo, extra fingers, boring corporate infographic, no humor, no text at all, unreadable gibberish text",
+        "prompt": "Russian internet meme collage illustration, ironic humor, cutout stickers, reaction faces, drake-format panels, pepe-adjacent absurdity but original characters, bold Cyrillic meme captions in Impact-style white text with black outline, layered scraps, glitch accents, colors #FAFAF7 #E85D4C #1A1A2E #FFD93D,\nCOVER ONLY — single 16:9 image, not a grid.\nSame recurring blog host character in every panel: young woman IP lawyer expert, long wavy jet-black hair with bangs, brown eyes, charismatic presenter energy. Keep face recognizable from blog-hero reference; change pose, props, meme costume per panel.\nCRITICAL: preserve EXACT face likeness from reference photo — same hair, bangs, brown eyes.\nClickbait hook scene: герой с reference-лицом, шок/ирония SEOшника, Wordstat + ноутбук, крючок на клик.\nLarge readable Cyrillic meme caption: \"15k ключей — 0 прочтений?\".\nHook idea: SEO-текст, который люди дочитают — миф или workflow?.\nRussian internet meme collage, ironic SEO humor, host points at caption or reacts dramatically.\nsingle canvas 2048x1152 pixels, exact\nNegative: English text, Latin letters, watermark, logo, blurry, generic western stock photo, extra fingers, boring corporate infographic, no humor, no text at all, unreadable gibberish text",
         "input_urls": [
-          "https://files.catbox.moe/yjlmip.png"
+          "https://lyratetrademark.ru/wp-content/uploads/2025/12/photo_2025-12-24_12-17-06.jpg"
         ],
         "aspect_ratio": "16:9",
         "resolution": "2K"

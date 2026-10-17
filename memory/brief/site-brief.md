@@ -46,10 +46,10 @@ Excalibur BLOG читает этот файл для получения ключ
 ## Главный герой визуала (обложки и inline)
 
 - **blog_hero_id:** `blog-host`
-- **hero_name:** Эксперт Neurinix (эталон лица — `memory/cover/assets/blog-hero-reference.png`)
-- **reference:** `memory/cover/assets/blog-hero-reference.png`
+- **hero_name:** Героиня бренда — экспертка по ИС (эталон лица — `memory/cover/assets/blog-hero-reference.png`, копия `assets/hero/heroine_ref.jpg`)
+- **reference:** `memory/cover/assets/blog-hero-reference.png` (канон: `memory/cover/blog-hero.json`, `reference_source_url`)
 - **lock:** `memory/cover/blog-hero.json`
-- **правило:** на обложке — узнаваемое **лицо** с reference; **чистый тон кожи**, **дружелюбная улыбка**; жестом **показывает на график/схему/цифру** по теме статьи, если это делает крючок понятнее; **одежду** агент меняет свободно
+- **правило:** на обложке — узнаваемое **лицо героини** с reference (чёрные волнистые волосы, чёлка, карие глаза); **деловой образ юриста по ИС**; жестом **показывает на график/реестр/цифру** по теме статьи
 - **обложка:** обязателен **крючок** (кликбайт-намёк) + **русская meme-подпись**; визуал информативный, не только эмоция
 
 ## Офферы и CTA

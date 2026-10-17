@@ -13,6 +13,8 @@
 
 Подробности сервера: `memory/hosting/lireate-reg-ru-production.md`, установка: `docs/lireate-autopub-hosting.ru.md`.
 
+**Героиня обложек (i2i):** `memory/cover/blog-hero.json` + `memory/cover/assets/blog-hero-reference.png` (копия `assets/hero/heroine_ref.jpg`). Лицо — молодая женщина, чёрные волнистые волосы с чёлкой, карие глаза; на обложке — деловой образ юриста по ИС. Старый мужской reference снят.
+
 ---
 
 ## Текст для Automation (скопировать в промпт)

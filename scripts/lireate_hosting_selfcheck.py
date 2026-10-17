@@ -70,6 +70,18 @@ def main():
         else:
             report["images_dir_writable"] = False
 
+        blog_tpl = p / "template" / "images" / "blog"
+        report["blog_template_dir_exists"] = blog_tpl.is_dir()
+        report["blog_template_dir_writable"] = False
+        if blog_tpl.is_dir():
+            try:
+                test = blog_tpl / ".lireate_write_test"
+                test.write_text("ok", encoding="utf-8")
+                test.unlink()
+                report["blog_template_dir_writable"] = True
+            except OSError:
+                report["blog_template_dir_writable"] = False
+
     repo = home / "repo"
     report["repo_dir"] = str(repo)
     report["repo_exists"] = (repo / "scripts" / "lireate_hosting_publish.py").is_file()
@@ -82,6 +94,7 @@ def main():
         and report.get("docroot_exists")
         and report.get("db_php_exists")
         and report.get("images_dir_writable")
+        and report.get("blog_template_dir_writable")
         and report.get("repo_exists")
         and report.get("db_publish_php_exists")
         and report.get("php_ok")

@@ -38,7 +38,7 @@ def build_cover_prompt(cover: dict, style: dict, hero: dict) -> str:
         style.get("global_prompt_prefix", "").strip(),
         "COVER ONLY — single 16:9 image, not a grid.",
         hero.get("prompt_fragment", "").strip(),
-        "CRITICAL: preserve EXACT face likeness from reference photo — same glasses, quiff hair, salt-and-pepper beard.",
+        "CRITICAL: preserve EXACT face likeness from reference photo — blog heroine (see blog-hero.json prompt_fragment).",
         f'Clickbait hook scene: {cover.get("scene_hint", "")}.',
         f'Large readable Cyrillic meme caption: "{cover.get("meme_caption_ru", "")}".',
         f'Hook idea: {cover.get("hook", "")}.',

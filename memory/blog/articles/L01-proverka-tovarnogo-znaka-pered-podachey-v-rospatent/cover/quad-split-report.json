@@ -5,23 +5,17 @@
   "split": {
     "source_canvas": "memory/blog/articles/L01-proverka-tovarnogo-znaka-pered-podachey-v-rospatent/cover/canvas-quad.png",
     "source_size_px": [
-      2048,
-      1152
+      1280,
+      720
     ],
     "panel_size_px": [
-      1022,
-      574
+      640,
+      360
     ],
     "split_meta": {
-      "split_mode": "gutter_detect",
-      "h_gutter_px": {
-        "start": 574,
-        "end": 579
-      },
-      "v_gutter_px": {
-        "start": 1022,
-        "end": 1026
-      }
+      "split_mode": "mechanical_center",
+      "h_gutter_px": null,
+      "v_gutter_px": null
     },
     "output_size_px": [
       1200,
@@ -34,14 +28,14 @@
         "box_px": {
           "left": 0,
           "top": 0,
-          "right": 1022,
-          "bottom": 574
+          "right": 640,
+          "bottom": 360
         },
         "raw_box_px": {
           "left": 0,
           "top": 0,
-          "right": 1022,
-          "bottom": 574
+          "right": 640,
+          "bottom": 360
         },
         "size_px": [
           1200,
@@ -55,16 +49,16 @@
         "file": "cover/inline-01.png",
         "quadrant": "top_right",
         "box_px": {
-          "left": 1026,
+          "left": 640,
           "top": 0,
-          "right": 2048,
-          "bottom": 574
+          "right": 1280,
+          "bottom": 360
         },
         "raw_box_px": {
-          "left": 1026,
+          "left": 640,
           "top": 0,
-          "right": 2048,
-          "bottom": 574
+          "right": 1280,
+          "bottom": 360
         },
         "size_px": [
           1200,
@@ -79,15 +73,15 @@
         "quadrant": "bottom_left",
         "box_px": {
           "left": 0,
-          "top": 579,
-          "right": 1022,
-          "bottom": 1152
+          "top": 360,
+          "right": 640,
+          "bottom": 720
         },
         "raw_box_px": {
           "left": 0,
-          "top": 579,
-          "right": 1022,
-          "bottom": 1152
+          "top": 360,
+          "right": 640,
+          "bottom": 720
         },
         "size_px": [
           1200,
@@ -101,16 +95,16 @@
         "file": "cover/inline-03.png",
         "quadrant": "bottom_right",
         "box_px": {
-          "left": 1026,
-          "top": 579,
-          "right": 2048,
-          "bottom": 1152
+          "left": 640,
+          "top": 360,
+          "right": 1280,
+          "bottom": 720
         },
         "raw_box_px": {
-          "left": 1026,
-          "top": 579,
-          "right": 2048,
-          "bottom": 1152
+          "left": 640,
+          "top": 360,
+          "right": 1280,
+          "bottom": 720
         },
         "size_px": [
           1200,
@@ -121,10 +115,5 @@
         "h2_anchor": "Пройдите пошаговую проверку на тождество и сходство"
       }
     }
-  },
-  "html_inject": [
-    "injected inline_1 after H2 — Проверьте обозначение до заявки: что теряете, если пропустить шаг",
-    "injected inline_2 after H2 — Соберите карту источников: платформа, реестры, opendata, TMview",
-    "injected inline_3 after H2 — Пройдите пошаговую проверку на тождество и сходство"
-  ]
+  }
 }

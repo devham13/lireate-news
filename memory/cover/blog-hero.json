@@ -1,32 +1,32 @@
 {
   "hero_id": "blog-host",
-  "name_ru": "Эксперт бренда",
+  "name_ru": "Эксперт Лирейт (героиня бренда)",
   "reference_image": "memory/cover/assets/blog-hero-reference.png",
-  "reference_source_url": "https://sun9-6.userapi.com/s/v1/ig2/AKT0pLS5MijU83CAZcLFwc2Sp71oIe2MkfhG51-M5fv2QtyKo4TjwL7qWkG46q6GpnxApjbmqqvyfVIHrn718f5W.jpg?quality=95&as=32x48,48x72,72x108,108x162,160x240,240x360,360x540,480x720,540x810,640x960,720x1080,1080x1621,1280x1921,1440x2161,1706x2560&from=bu&cs=1706x0",
-  "reference_notes": "Reference = узнаваемое лицо (голубые глаза, короткие тёмно-русые волосы, без бороды и очков). На обложке: ретушь кожи — ровный чистый тон без пятен и шума, естественный свет. Выражение — дружелюбная улыбка, не нейтральная серьёзность с reference. Поза реагирует на тему статьи: указывает рукой/жестом на ключевой график, таблицу, схему или цифру на коллаже, если это делает крючок понятнее. Одежду агент меняет свободно — не копировать белую футболку с фото.",
+  "reference_image_alt": "assets/hero/heroine_ref.jpg",
+  "reference_source_url": "http://lyratetrademark.ru/wp-content/uploads/2025/12/photo_2025-12-24_12-17-06.jpg",
+  "reference_notes": "Reference = узнаваемое лицо героини: молодая женщина, длинные волнистые чёрные волосы с прямой чёлкой, карие глаза, овальное лицо, мягкая улыбка. На обложке: деловой образ юриста по ИС (пиджак, блуза, деловой casual) — НЕ копировать летний casual outfit с reference. Ретушь кожи — ровный чистый тон, естественный свет. Поза по теме: жестом на график/таблицу/скрин реестра/чеклист.",
   "visual_lock": {
-    "face": "овальное лицо, открытая дружелюбная улыбка (легкая, искренняя, не карикатурная)",
-    "skin": "чистый ровный тон кожи, мягкий студийный свет, без заметных дефектов, зернистости и красноты — аккуратная ретушь как у экспертного блога",
-    "eyes": "ярко-голубые глаза, живой взгляд в камеру или на объект жеста",
-    "hair": "короткие тёмно-русые волосы, слегка отступающая линия роста",
-    "beard": "без бороды, гладко выбрит",
-    "glasses": "без очков",
-    "energy": "уверенный эксперт B2B, располагающий и энергичный — «объясняю на пальцах», не клоун"
+    "face": "овальное лицо, мягкая дружелюбная улыбка",
+    "skin": "чистый ровный тон кожи, мягкий студийный свет, аккуратная ретушь",
+    "eyes": "карие глаза, живой взгляд в камеру или на объект жеста",
+    "hair": "длинные волнистые чёрные волосы, прямая густая чёлка",
+    "beard": "нет",
+    "glasses": "без очков на обложке (на reference могут быть на голове — не обязательны)",
+    "energy": "уверенная экспертка по товарным знакам и ИС, располагающая, «объясняю на пальцах»"
   },
-  "pose_rule": "Поза и мимика подстраиваются под cover_hook и тему статьи. Если на коллаже есть график, таблица, воронка, дашборд или схема — герой жестом показывает на главный инсайт (стрелка, цифра, pain-point). Если тема про чеклист/шаги — может держать планшет или указывать на список. Взгляд: в камеру ИЛИ на ключевой UI-элемент — что усиливает информативность.",
-  "outfit_rule": "Свободный выбор агента: костюм, casual, мем-костюм, реквизит — по cover_hook и scene_hint. Reference photo outfit is NOT mandatory.",
-  "reference_outfit_hint": "На эталонном фото — белая футболка и серые брюки; на обложке лучше сменить под тему (пиджак, худи, рубашка).",
-  "prompt_fragment": "Blog host on COVER ONLY: preserve EXACT face likeness from reference — bright blue eyes, short dark brown hair, clean-shaven, no glasses. Skin: clean even tone, subtle professional retouch, natural studio lighting, no blemishes or harsh grain. Expression: warm friendly smile, approachable expert — NOT neutral serious portrait from reference. Pose reacts to article topic: point at key chart, graph, funnel, dashboard, table or highlighted number on the collage when it makes the hook clearer; eye contact with camera OR directed gaze at the UI element. Outfit, props: agent's creative choice for the meme hook — do NOT copy reference photo clothing unless scene_hint asks.",
+  "pose_rule": "Поза и мимика подстраиваются под cover_hook и тему статьи. Если на коллаже есть график, таблица, воронка, дашборд или схема — героиня жестом показывает на главный инсайт. Взгляд: в камеру ИЛИ на ключевой UI-элемент.",
+  "outfit_rule": "Свободный выбор агента в рамках делового образа юриста по ИС: пиджак, блуза, рубашка, деловой casual — по cover_hook и scene_hint. Reference photo outfit (off-shoulder top) is NOT mandatory.",
+  "reference_outfit_hint": "На эталонном фото — casual летний образ; на обложке и в статьях Лирейт — деловая одежда под тему ИС.",
+  "prompt_fragment": "Blog host (female IP lawyer expert) on COVER ONLY: preserve EXACT face likeness from reference — young woman, warm brown eyes, long wavy jet-black hair with straight full bangs, oval face, gentle approachable smile. Skin: clean even tone, subtle professional retouch, natural soft lighting. Expression: warm expert energy — NOT copying casual summer outfit from reference. Wear professional business attire suited to trademark/IP topic (blazer, blouse, smart office look). Pose reacts to article topic: point at key chart, graph, registry screenshot, checklist or highlighted number on the collage; eye contact with camera OR directed gaze at the UI element. Hands: anatomically correct, five fingers, no extra limbs.",
   "cover_hook_rules": [
-    "Обложка = крючок + мини-объяснение: герой и визуал должны намекать на решение, не только провоцировать клик",
+    "Обложка = крючок + мини-объяснение: героиня и визуал намекают на решение",
     "Крупный русский meme-caption на обложке (2–6 слов), читаемый",
-    "Герой улыбается, выглядит чисто и ухоженно; кожа ровная, свет мягкий",
-    "Жест по теме: показывает на график/таблицу/схему/цифру, если это усиливает понимание (CRM, n8n, воронка, ROI, чеклист)",
-    "Не спойлерить весь гайд — один главный конфликт или инсайт на обложке",
-    "Одежда героя — на усмотрение агента; лицо с reference обязательно",
-    "Design code: fake скрины (CRM, заявки, дашборды, Wordstat), рваная бумага, скотч, розовый маркер, стрелки к ключевым цифрам — «сделал человек», 16:9"
+    "Героиня улыбается, выглядит чисто и ухоженно; кожа ровная, свет мягкий",
+    "Жест по теме: показывает на график/таблицу/схему/цифру реестра",
+    "Одежда — деловой образ юриста по ИС; лицо с reference обязательно",
+    "Design code: fake скрины (Роспатент, ФИПС, Wordstat), рваная бумага, скотч, розовый маркер — 16:9"
   ],
-  "reference_url_hosted": "https://sun9-6.userapi.com/s/v1/ig2/AKT0pLS5MijU83CAZcLFwc2Sp71oIe2MkfhG51-M5fv2QtyKo4TjwL7qWkG46q6GpnxApjbmqqvyfVIHrn718f5W.jpg?quality=95&as=32x48,48x72,72x108,108x162,160x240,240x360,360x540,480x720,540x810,640x960,720x1080,1080x1621,1280x1921,1440x2161,1706x2560&from=bu&cs=1706x0",
-  "reference_url_source": "vk-userapi",
-  "reference_url_updated_at": "2026-06-18T05:00:00+00:00"
+  "reference_url_hosted": "https://lyratetrademark.ru/wp-content/uploads/2025/12/photo_2025-12-24_12-17-06.jpg",
+  "reference_url_source": "lyratetrademark.ru-wp-uploads",
+  "reference_url_updated_at": "2026-10-17T05:25:00+00:00"
 }

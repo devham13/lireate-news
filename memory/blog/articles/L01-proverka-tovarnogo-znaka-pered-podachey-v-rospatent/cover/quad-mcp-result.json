@@ -1,4 +1,6 @@
 {
-  "url": "cursor-GenerateImage-fallback",
-  "note": "user-mcp-kv/gpt-image-2 unavailable in Cloud Agent; canvas from Cursor GenerateImage + blog-hero-reference.png, upscaled to 2048x1152, split PASS"
+  "url": "local://GenerateImage+l01-canvas-quad-heroine",
+  "note": "Cursor GenerateImage i2i with memory/cover/assets/blog-hero-reference.png; split PASS (Pillow); heroine IP lawyer navy blazer",
+  "canvas": "cover/canvas-quad.png",
+  "artifact": "/opt/cursor/artifacts/l01-cover-quad-heroine.jpg"
 }
