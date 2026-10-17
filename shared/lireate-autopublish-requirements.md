@@ -36,11 +36,14 @@ FTP нужен в основном для **картинок** в `/template/ima
 
 **Ограничение:** с **IP Cursor Cloud** админка часто отдаёт anti-bot (`RCPC` → 403). Тогда используйте **вариант B**.
 
-## Вариант B: self-hosted worker (ваша сеть)
+## Вариант B: self-hosted worker (рекомендуется)
 
-1. В Cursor: **Automations → Worker pool** на машине в РФ / домашнем IP (где FTP `LIST`/`STOR` и `/admin/` открываются).
+Пошагово: **`shared/lireate-worker-setup.md`** (pool `lireate`, probe CMS, publish).
+
+1. Worker на ПК/VPS, где открывается `/admin/login.php`.
 2. Те же секреты `LIREATE_*` + `LIREATE_ADMIN_*`.
-3. Запуск агента на этом worker — публикация без таймаута FTP data channel.
+3. `python3 scripts/lireate_cms_probe.py` → `memory/lireate-cms-http-config.json`.
+4. `python3 scripts/lireate_news_publish.py` или Automation на pool **`lireate`**.
 
 ## Вариант C: прямой доступ к MySQL (максимум автоматики)
 
