@@ -187,19 +187,22 @@ function lireate_cmd_diagnostic($docroot)
     }
     $out['latest_news'] = $rows;
 
-    $story = array();
+    $storySnippets = array();
     $res = $mysqli->query(
-        'SELECT `id`,`short_story`,`full_story` FROM `news` ORDER BY `id` DESC LIMIT 1'
+        'SELECT `id`,`seo_url`,`short_story`,`full_story` FROM `news` ORDER BY `id` DESC LIMIT 3'
     );
-    if ($res && ($row = $res->fetch_assoc())) {
-        $story = array(
-            'id' => $row['id'],
-            'short_story_head' => lireate_snippet($row['short_story'], 400),
-            'full_story_head' => lireate_snippet($row['full_story'], 400),
-        );
+    if ($res) {
+        while ($row = $res->fetch_assoc()) {
+            $storySnippets[] = array(
+                'id' => $row['id'],
+                'seo_url' => $row['seo_url'],
+                'short_story_head' => lireate_snippet($row['short_story'], 400),
+                'full_story_head' => lireate_snippet($row['full_story'], 400),
+            );
+        }
         $res->free();
     }
-    $out['latest_story_snippets'] = $story;
+    $out['latest_story_snippets'] = $storySnippets;
 
     $categories = array();
     foreach (array('category', 'categories', 'news_category') as $tbl) {

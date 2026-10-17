@@ -37,6 +37,7 @@ jobs:
           python -m py_compile scripts/lireate_hosting_db_diagnostic.py
           python -m py_compile scripts/lireate_translit.py
           python -m py_compile scripts/lireate_news_format.py
+          python -m py_compile scripts/lireate_hosting_images.py
       - name: PHP syntax check
         run: |
           php -l scripts/lireate_db_publish.php

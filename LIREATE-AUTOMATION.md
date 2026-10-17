@@ -132,8 +132,8 @@ python3 scripts/lireate_hosting_publish.py \
 - `name`, `seo_url` (translit: пробелы → `_`, ы→yi, х→x, …)
 - `category` = meta `lireate_category_id`
 - `title` = 1, `short_story` = ""
-- `full_story` начинается с `<p style="text-align: justify;"><img … src="/images/{seo_url}.jpg" …`
-- `image_target`: `{DOCROOT}/images/{seo_url}.jpg`
+- `full_story` lead: `/template/images/blog/{seo_url}.jpg` (как в `latest_story_snippets` диагностики)
+- `image_files`: `{DOCROOT}/template/images/blog/{seo_url}.jpg`, `.../small/{seo_url}.jpg`, inline в `/images/`
 
 Закоммитить артефакты статьи в git (без секретов, без handoff).
 
@@ -244,7 +244,7 @@ export LIREATE_ENV_FILE="$LIREATE_AUTOPUB_HOME/.env"
   "$LIREATE_AUTOPUB_HOME/repo/scripts/lireate_hosting_publish.py"
 ```
 
-Картинки: `cover/*.png` → `public_html/images/{seo_url}.jpg` и `{seo_url}_inline_*.jpg`; в `full_story` пути `/images/...`. Если статья уже опубликована, но в тексте остались `cover/inline-*.png` (битые иконки), повторите с **`--update`** (обновит БД и файлы).
+Картинки: обложка → `template/images/blog/{seo_url}.jpg` (860×400) и `template/images/blog/small/{seo_url}.jpg` (350×163); inline → `images/{seo_url}_inline_*.jpg`. Если новость уже в БД — **`--update`** (файлы + `full_story`).
 
 ### Обновление кода на сервере
 

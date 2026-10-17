@@ -71,19 +71,25 @@ export LIREATE_ENV_FILE="$LIREATE_AUTOPUB_HOME/.env"
 
 ### Картинки в статье
 
-Скрипт кладёт файлы из `cover/` статьи в **`$LIREATE_DOCROOT/images/`**:
+Шаблон CMS берёт **обложку списка и `imgBlock`** из `template/images/blog/`, не из `full_story`:
 
-| Файл в репозитории | На сайте |
-|--------------------|----------|
-| `cover/cover.png` | `/images/{seo_url}.jpg` (обложка в начале `full_story`) |
-| `cover/inline-01.png` … `inline-03.png` | `/images/{seo_url}_inline_01.jpg` … |
+| Назначение | Путь на диске | Размер |
+|------------|---------------|--------|
+| Обложка (страница + список `/news`) | `$LIREATE_DOCROOT/template/images/blog/{seo_url}.jpg` | 860×400 |
+| Миниатюра в списке | `$LIREATE_DOCROOT/template/images/blog/small/{seo_url}.jpg` | 350×163 |
+| Дубль обложки (legacy) | `$LIREATE_DOCROOT/images/{seo_url}.jpg` | 860×400 |
+| Inline в тексте | `$LIREATE_DOCROOT/images/{seo_url}_inline_01.jpg` … | из `cover/inline-*.png` |
 
-В MySQL в `full_story` подставляются пути `/images/...`, а не `cover/inline-*.png`.
+Источник: `cover/cover.png`. Если на хостинге нет Pillow — те же пути, **копия** исходника (без ресайза). С Pillow — центральная обрезка и **JPEG RGB**.
+
+В `full_story` lead-картинка как у старых новостей: `src="/template/images/blog/{seo_url}.jpg"` (838×400, не float). Inline: `/images/...`, не `cover/inline-*.png`.
 
 Проверка после публикации:
 
 ```bash
-ls -la "$LIREATE_DOCROOT/images/"*proverka*   # подставьте свой seo_url
+ls -la "$LIREATE_DOCROOT/template/images/blog/"*{seo_url}*
+ls -la "$LIREATE_DOCROOT/template/images/blog/small/"*{seo_url}*
+ls -la "$LIREATE_DOCROOT/images/"*{seo_url}*
 ```
 
 ### Повторная выкладка (битые картинки, правка HTML)

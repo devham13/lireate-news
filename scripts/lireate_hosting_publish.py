@@ -21,6 +21,7 @@ from lireate_dotenv import load_dotenv  # noqa: E402
 from lireate_hosting_images import (  # noqa: E402
     build_hosting_image_map,
     deploy_hosting_images,
+    list_planned_image_destinations,
     transform_html_paths,
 )
 from lireate_news_format import build_news_row  # noqa: E402
@@ -113,7 +114,7 @@ def _print_dry_run_preview(row, docroot_path, image_paths):
     print("category: {0}".format(row.get("category")))
     print("title (int): {0}".format(row.get("title")))
     print("short_story: {0!r}".format(row.get("short_story")))
-    print("image_files (would copy to docroot/images/):")
+    print("image_files (would write under docroot):")
     for p in image_paths:
         print("  - {0}".format(p))
     fs = row.get("full_story") or ""
@@ -207,16 +208,8 @@ def main():
     }
     if args.update:
         payload["force_update"] = True
-    planned_images = [
-        str((docroot_path or Path(".")) / "images" / "{0}{1}".format(seo_url, suffix))
-        for local, suffix in (
-            ("cover/cover.png", ".jpg"),
-            ("cover/inline-01.png", "_inline_01.jpg"),
-            ("cover/inline-02.png", "_inline_02.jpg"),
-            ("cover/inline-03.png", "_inline_03.jpg"),
-        )
-        if (article_dir / local).is_file()
-    ]
+    planned_base = docroot_path if docroot_path and docroot_path.is_dir() else Path(docroot or ".")
+    planned_images = list_planned_image_destinations(planned_base, seo_url, article_dir)
 
     target_url = "{0}/{1}".format(site, row["seo_url"]) if site else None
     result.update(
