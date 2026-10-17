@@ -24,6 +24,10 @@ from urllib.request import Request, urlopen
 API_BASE = "https://api.webmaster.yandex.net/v4"
 DEFAULT_HOST_HINTS = ("lireate.ru",)
 OUTPUT_NAME = "webmaster.json"
+HOSTING_ANALYTICS_REL = Path("hosting") / "lireate-analytics"
+WEBMASTER_TEMPLATE_NAME = "webmaster.php"
+# PHP 7+ markers — must not appear in deployed endpoint (hosting mod_php may be 5.x).
+_LEGACY_PHP7_MARKERS = ("declare(strict_types=1)",)
 TOKEN_RE = re.compile(r"(?i)(oauth|authorization|bearer|token)[^\s]*\s+[\w\-\.~+/]+=*")
 
 
@@ -226,22 +230,101 @@ def _atomic_write_json(path: Path, payload: Dict[str, Any]) -> None:
                 pass
 
 
+def _webmaster_template_in(repo_root: Path) -> Path:
+    return repo_root / HOSTING_ANALYTICS_REL / WEBMASTER_TEMPLATE_NAME
+
+
+def _resolve_repo_root(autopub_home: Path) -> Path:
+    """
+    Canonical git checkout on hosting: $LIREATE_AUTOPUB_HOME/repo.
+    Do not use a stale copy under $LIREATE_AUTOPUB_HOME/hosting/ (outside repo).
+    """
+    env_root = (os.environ.get("LIREATE_REPO_ROOT") or "").strip()
+    candidates: List[Path] = []
+    if env_root:
+        candidates.append(Path(env_root).expanduser())
+    candidates.append(autopub_home / "repo")
+    candidates.append(Path(__file__).resolve().parents[1])
+
+    seen = set()
+    for root in candidates:
+        try:
+            resolved = root.resolve()
+        except OSError:
+            continue
+        if resolved in seen:
+            continue
+        seen.add(resolved)
+        if _webmaster_template_in(resolved).is_file():
+            return resolved
+
+    tried = ", ".join(str(c) for c in candidates)
+    raise FileNotFoundError(
+        "webmaster.php template not found (expected {0} under repo root). Tried: {1}".format(
+            HOSTING_ANALYTICS_REL, tried
+        )
+    )
+
+
+def _assert_php54_compatible_template(text: str, src: Path) -> None:
+    for marker in _LEGACY_PHP7_MARKERS:
+        if marker in text:
+            raise ValueError(
+                "Template {0} still contains PHP 7+ syntax ({1}). "
+                "Run git pull in $LIREATE_AUTOPUB_HOME/repo.".format(src, marker)
+            )
+    if "define('LIREATE_AUTOPUB_HOME'" not in text and 'define("LIREATE_AUTOPUB_HOME"' not in text:
+        raise ValueError(
+            "Template {0} does not look like the PHP 5.4+ endpoint (missing define LIREATE_AUTOPUB_HOME).".format(
+                src
+            )
+        )
+
+
 def _deploy_php_endpoint(docroot: Path, autopub_home: Path) -> List[str]:
-    repo = Path(__file__).resolve().parents[1]
-    src_dir = repo / "hosting" / "lireate-analytics"
+    repo = _resolve_repo_root(autopub_home)
+    src_dir = repo / HOSTING_ANALYTICS_REL
+    stale = autopub_home / HOSTING_ANALYTICS_REL / WEBMASTER_TEMPLATE_NAME
+    if stale.is_file() and stale.resolve() != _webmaster_template_in(repo).resolve():
+        print(
+            "STATUS: WARN stale template outside repo (ignored): {0} — remove or update repo/ only".format(
+                stale
+            )
+        )
+
     dest_dir = docroot / "lireate-analytics"
     dest_dir.mkdir(parents=True, exist_ok=True)
-    written = []
+    try:
+        os.chmod(dest_dir, 0o755)
+    except OSError:
+        pass
+
+    written: List[str] = []
     home_str = str(autopub_home.resolve())
-    for name in ("webmaster.php", ".htaccess"):
+    print("deploy source repo: {0}".format(repo))
+    print("deploy template dir: {0}".format(src_dir))
+
+    for name in (WEBMASTER_TEMPLATE_NAME, ".htaccess"):
         src = src_dir / name
         if not src.is_file():
+            print("STATUS: WARN deploy skip missing: {0}".format(src))
             continue
         text = src.read_text(encoding="utf-8")
+        if name == WEBMASTER_TEMPLATE_NAME:
+            _assert_php54_compatible_template(text, src)
         text = text.replace("{{LIREATE_AUTOPUB_HOME}}", home_str)
+        if name == WEBMASTER_TEMPLATE_NAME:
+            for marker in _LEGACY_PHP7_MARKERS:
+                if marker in text:
+                    raise ValueError("Rendered webmaster.php still contains {0}".format(marker))
         dest = dest_dir / name
         dest.write_text(text, encoding="utf-8")
+        try:
+            os.chmod(dest, 0o644)
+        except OSError:
+            pass
         written.append(str(dest))
+        print("deployed: {0} ({1} bytes, mode 644)".format(dest, dest.stat().st_size))
     return written
 
 
@@ -385,7 +468,12 @@ def main() -> int:
     parser.add_argument(
         "--deploy-php",
         action="store_true",
-        help="Copy webmaster.php + .htaccess into $LIREATE_DOCROOT/lireate-analytics/",
+        help="After export, copy webmaster.php + .htaccess into $LIREATE_DOCROOT/lireate-analytics/",
+    )
+    parser.add_argument(
+        "--deploy-php-only",
+        action="store_true",
+        help="Only deploy PHP from $LIREATE_AUTOPUB_HOME/repo/hosting/ (no Webmaster API export)",
     )
     args = parser.parse_args()
 
@@ -393,45 +481,57 @@ def main() -> int:
     env_file = args.env_file or Path(os.environ.get("LIREATE_ENV_FILE") or (home / ".env"))
     _load_env_file(env_file)
 
-    token = (os.environ.get("YANDEX_WEBMASTER_TOKEN") or "").strip()
-    analytics_key = (os.environ.get("LIREATE_ANALYTICS_KEY") or "").strip()
-    missing = []
-    if not token:
-        missing.append("YANDEX_WEBMASTER_TOKEN")
-    if not analytics_key:
-        missing.append("LIREATE_ANALYTICS_KEY")
-    if missing:
-        print("STATUS: BLOCKER missing env: {0} (in {1})".format(", ".join(missing), env_file))
+    deploy_only = bool(args.deploy_php_only)
+    if deploy_only and args.deploy_php:
+        print("STATUS: BLOCKER use either --deploy-php-only or --deploy-php, not both")
         return 2
 
-    hints = tuple(args.host_hint or DEFAULT_HOST_HINTS)
-    client = WebmasterClient(token)
-    payload = build_export(client, hints, popular_limit=max(1, min(args.popular_limit, 500)))
+    host_id = None
+    if not deploy_only:
+        token = (os.environ.get("YANDEX_WEBMASTER_TOKEN") or "").strip()
+        analytics_key = (os.environ.get("LIREATE_ANALYTICS_KEY") or "").strip()
+        missing = []
+        if not token:
+            missing.append("YANDEX_WEBMASTER_TOKEN")
+        if not analytics_key:
+            missing.append("LIREATE_ANALYTICS_KEY")
+        if missing:
+            print("STATUS: BLOCKER missing env: {0} (in {1})".format(", ".join(missing), env_file))
+            return 2
 
-    out_path = args.output or (home / "analytics" / OUTPUT_NAME)
-    try:
-        _atomic_write_json(out_path, payload)
-    except OSError as e:
-        print("STATUS: BLOCKER write failed: {0}".format(e))
-        return 1
+        hints = tuple(args.host_hint or DEFAULT_HOST_HINTS)
+        client = WebmasterClient(token)
+        payload = build_export(client, hints, popular_limit=max(1, min(args.popular_limit, 500)))
 
-    err_count = len(payload.get("errors") or {})
-    host_id = (payload.get("host") or {}).get("host_id")
-    print(
-        "STATUS: OK written={0} host={1} section_errors={2}".format(
-            out_path, host_id or "none", err_count
+        out_path = args.output or (home / "analytics" / OUTPUT_NAME)
+        try:
+            _atomic_write_json(out_path, payload)
+        except OSError as e:
+            print("STATUS: BLOCKER write failed: {0}".format(e))
+            return 1
+
+        err_count = len(payload.get("errors") or {})
+        host_id = (payload.get("host") or {}).get("host_id")
+        print(
+            "STATUS: OK written={0} host={1} section_errors={2}".format(
+                out_path, host_id or "none", err_count
+            )
         )
-    )
 
-    if args.deploy_php:
+    if args.deploy_php or deploy_only:
         docroot = (os.environ.get("LIREATE_DOCROOT") or "").strip()
         if not docroot:
-            print("STATUS: WARN --deploy-php skipped: LIREATE_DOCROOT not set")
-        else:
-            paths = _deploy_php_endpoint(Path(docroot).expanduser(), home)
-            for p in paths:
-                print("deployed: {0}".format(p))
+            print("STATUS: BLOCKER --deploy-php requires LIREATE_DOCROOT in {0}".format(env_file))
+            return 2
+        try:
+            _deploy_php_endpoint(Path(docroot).expanduser(), home)
+        except (OSError, ValueError, FileNotFoundError) as e:
+            print("STATUS: BLOCKER deploy failed: {0}".format(e))
+            return 1
+        print("STATUS: OK deploy-php")
 
+    if deploy_only:
+        return 0
     return 0 if host_id else 1
 
 

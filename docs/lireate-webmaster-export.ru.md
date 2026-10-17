@@ -33,11 +33,25 @@ export LIREATE_AUTOPUB_HOME="$HOME/lireate-autopub" && cd "$LIREATE_AUTOPUB_HOME
 
 ## Шаг 3. Первый экспорт и PHP-эндпоинт
 
+Шаблон **только** из git: `$LIREATE_AUTOPUB_HOME/repo/hosting/lireate-analytics/webmaster.php` (не копия в `$LIREATE_AUTOPUB_HOME/hosting/` вне `repo/`).
+
 ```bash
 export LIREATE_AUTOPUB_HOME="$HOME/lireate-autopub" LIREATE_ENV_FILE="$LIREATE_AUTOPUB_HOME/.env" && PY="$(cat "$LIREATE_AUTOPUB_HOME/.python-interpreter")" && "$PY" "$LIREATE_AUTOPUB_HOME/repo/scripts/lireate_hosting_webmaster_export.py" --deploy-php && ls -la "$LIREATE_AUTOPUB_HOME/analytics/webmaster.json"
 ```
 
-Ожидаемо в конце: `STATUS: OK written=... host=https:lireate.ru:443 ...`
+Ожидаемо в конце: `STATUS: OK written=... host=https:lireate.ru:443 ...` и строки `deploy source repo: .../repo`, `deployed: ... (≈2500 bytes, mode 644)`.
+
+Только переустановить PHP после `git pull` (без API):
+
+```bash
+export LIREATE_AUTOPUB_HOME="$HOME/lireate-autopub" LIREATE_ENV_FILE="$LIREATE_AUTOPUB_HOME/.env" && PY="$(cat "$LIREATE_AUTOPUB_HOME/.python-interpreter")" && "$PY" "$LIREATE_AUTOPUB_HOME/repo/scripts/lireate_hosting_webmaster_export.py" --deploy-php-only
+```
+
+Проверка синтаксиса тем же PHP CLI, что для публикации (не обязательно совпадает с mod_php сайта, но ловит `declare(strict_types)`):
+
+```bash
+export LIREATE_AUTOPUB_HOME="$HOME/lireate-autopub" LIREATE_ENV_FILE="$LIREATE_AUTOPUB_HOME/.env" && bash "$LIREATE_AUTOPUB_HOME/repo/scripts/lireate_hosting_webmaster_php_lint.sh"
+```
 
 ---
 
@@ -74,6 +88,7 @@ TZ=Europe/Moscow
 |------------|------------|
 | `YANDEX_WEBMASTER_TOKEN` | OAuth-токен Вебмастера (не публиковать) |
 | `LIREATE_ANALYTICS_KEY` | Секрет для заголовка `X-Lireate-Key` |
-| `LIREATE_DOCROOT` | Нужен только для `--deploy-php` (`$HOME/www/public_html`) |
+| `LIREATE_DOCROOT` | Нужен для `--deploy-php` / `--deploy-php-only` (`$HOME/www/public_html`) |
+| `LIREATE_REPO_ROOT` | Опционально: путь к git checkout, если не `$LIREATE_AUTOPUB_HOME/repo` |
 
 Скрипт **никогда** не выводит токен в stdout/логи.
