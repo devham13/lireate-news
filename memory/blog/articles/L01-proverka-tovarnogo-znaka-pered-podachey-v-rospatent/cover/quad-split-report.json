@@ -1,0 +1,119 @@
+{
+  "agent": "excalibur-blog-cover-quad-split",
+  "status": "PASS",
+  "manifest": "cover/quad-manifest.json",
+  "split": {
+    "source_canvas": "memory/blog/articles/L01-proverka-tovarnogo-znaka-pered-podachey-v-rospatent/cover/canvas-quad.png",
+    "source_size_px": [
+      1280,
+      720
+    ],
+    "panel_size_px": [
+      640,
+      360
+    ],
+    "split_meta": {
+      "split_mode": "mechanical_center",
+      "h_gutter_px": null,
+      "v_gutter_px": null
+    },
+    "output_size_px": [
+      1200,
+      675
+    ],
+    "outputs": {
+      "cover": {
+        "file": "cover/cover.png",
+        "quadrant": "top_left",
+        "box_px": {
+          "left": 0,
+          "top": 0,
+          "right": 640,
+          "bottom": 360
+        },
+        "raw_box_px": {
+          "left": 0,
+          "top": 0,
+          "right": 640,
+          "bottom": 360
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Обложка: проверка товарного знака перед Роспатентом — эксперт указывает на совпадение в поисковой платформе",
+        "h2_anchor": null
+      },
+      "inline_1": {
+        "file": "cover/inline-01.png",
+        "quadrant": "top_right",
+        "box_px": {
+          "left": 640,
+          "top": 0,
+          "right": 1280,
+          "bottom": 360
+        },
+        "raw_box_px": {
+          "left": 640,
+          "top": 0,
+          "right": 1280,
+          "bottom": 360
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Схема: что теряете, если не проверить обозначение до заявки в Роспатент",
+        "h2_anchor": "Проверьте обозначение до заявки: что теряете, если пропустить шаг"
+      },
+      "inline_2": {
+        "file": "cover/inline-02.png",
+        "quadrant": "bottom_left",
+        "box_px": {
+          "left": 0,
+          "top": 360,
+          "right": 640,
+          "bottom": 720
+        },
+        "raw_box_px": {
+          "left": 0,
+          "top": 360,
+          "right": 640,
+          "bottom": 720
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Таблица бесплатных источников: платформа Роспатента, ФИПС, TMview",
+        "h2_anchor": "Соберите карту источников: платформа, реестры, opendata, TMview"
+      },
+      "inline_3": {
+        "file": "cover/inline-03.png",
+        "quadrant": "bottom_right",
+        "box_px": {
+          "left": 640,
+          "top": 360,
+          "right": 1280,
+          "bottom": 720
+        },
+        "raw_box_px": {
+          "left": 640,
+          "top": 360,
+          "right": 1280,
+          "bottom": 720
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Чеклист пошаговой проверки товарного знака на тождество и сходство",
+        "h2_anchor": "Пройдите пошаговую проверку на тождество и сходство"
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+name: lireate-python-compat
+
+on:
+  pull_request:
+    paths:
+      - "scripts/lireate_*.py"
+      - "scripts/lireate_*.sh"
+      - ".github/workflows/lireate-py38.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/lireate_*.py"
+
+jobs:
+  compile-36:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.6"
+      - name: Byte-compile Lireate scripts (Python 3.6)
+        run: |
+          python -m py_compile scripts/lireate_compat.py
+          python -m py_compile scripts/lireate_dotenv.py
+          python -m py_compile scripts/lireate_publish_bundle.py
+          python -m py_compile scripts/lireate_publish_live.py
+          python -m py_compile scripts/lireate_local_deploy.py
+          python -m py_compile scripts/lireate_cms_http.py
+          python -m py_compile scripts/lireate_cms_probe.py
+          python -m py_compile scripts/lireate_hosting_publish.py
+          python -m py_compile scripts/lireate_hosting_selfcheck.py
+          python -m py_compile scripts/lireate_news_publish.py
+          python -m py_compile scripts/lireate_reg_ru_check.py
+          python -m py_compile scripts/lireate_db_invoke.py
+          python -m py_compile scripts/lireate_hosting_db_diagnostic.py
+          python -m py_compile scripts/lireate_translit.py
+          python -m py_compile scripts/lireate_news_format.py
+          python -m py_compile scripts/lireate_hosting_images.py
+      - name: PHP syntax check
+        run: |
+          php -l scripts/lireate_db_publish.php
+
+  compile-38:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.8"
+      - name: Byte-compile Lireate scripts (Python 3.8)
+        run: |
+          python -m compileall -q scripts/lireate_*.py
+      - name: PHP syntax check
+        run: php -l scripts/lireate_db_publish.php

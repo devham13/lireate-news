@@ -54,17 +54,22 @@ $env:EXCALIBUR_PROJECT_ROOT="<PROJECT_ROOT>"
 agent worker start --pool --pool-name excalibur-blog --idle-release-timeout 600
 ```
 
-## Secrets / env vars
+## Secrets / env vars (lireate-news / REG.RU)
 
-Из `.env.example` + Cloud Dashboard:
+Из `.env.example` + Cloud Dashboard. Для **этого репо** важны только **LIREATE_*** (`FTP_*` / `SFTP_*` в Secrets могут остаться для других проектов).
 
 | Variable | Зачем |
 |----------|-------|
-| `PUBLIC_SITE_URL` | link verify, recent WP posts |
-| `FTP_*` | `excalibur_blog_wp_publish.py` |
-| `EXCALIBUR_BLOG_ALLOW_PUBLISH` | `yes` только когда готовы публиковать |
-| `EXCALIBUR_TOPIC_ID` | опционально фиксировать тему (иначе today.py предложит P0) |
+| `LIREATE_SFTP_HOST` / `PORT` / `USER` / `PASSWORD` | FTP REG.RU (хост и порт из панели) |
+| `LIREATE_REMOTE_SITE_ROOT` | каталог на FTP после login |
+| `LIREATE_PUBLIC_SITE_URL` | публичный URL сайта |
+| `LIREATE_ALLOW_PUBLISH` | `yes` когда готовы выкладывать |
+| `LIREATE_ADMIN_URL` / `LIREATE_ADMIN_USER` / `LIREATE_ADMIN_PASSWORD` | вход в CMS для создания новости (см. autopublish doc) |
 | `EXCALIBUR_PROJECT_ROOT` | корень репо на worker |
+
+Проверка FTP (legacy): `python3 scripts/lireate_reg_ru_check.py` — см. `shared/lireate-reg-ru-connection.md`.  
+**Каноническая автоматизация Lireate NEWS:** `LIREATE-AUTOMATION.md` (Cloud контент + REG.RU hosting publish).  
+Установка на сервере: `docs/lireate-autopub-hosting.ru.md`.
 
 Не коммитить: `memory/site.env.local`, реальные ключи MCP.
 

@@ -1,0 +1,24 @@
+{
+  "login": {
+    "path": "/admin/login.php",
+    "username_field": "",
+    "password_field": "",
+    "extra_fields": {}
+  },
+  "news": {
+    "create_path": "/admin/news/edit.php",
+    "method": "POST",
+    "fields": {
+      "title": "{title}",
+      "h1": "{h1}",
+      "description": "{description}",
+      "alias": "{alias}",
+      "url": "{canonical_path}",
+      "category_id": "{category_id}",
+      "text": "{body_html}",
+      "published": "1"
+    },
+    "success_html_contains": []
+  },
+  "_comment": "Скопируйте в memory/lireate-cms-http-config.json после lireate_cms_probe.py на worker. Имена полей сверьте с HTML формы в memory/lireate-cms-probe/."
+}

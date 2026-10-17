@@ -1,0 +1,53 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "#lireate-organization",
+      "name": "Лирейт"
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "#article-l01",
+      "headline": "Проверка товарного знака перед регистрацией: чек-лист по реестрам Роспатента",
+      "description": "Пошаговая проверка товарного знака перед подачей в Роспатент: Поисковая платформа, реестр заявок ФИПС, МКТУ, сходство и абсолютные риски ст. 1483.",
+      "datePublished": "2026-10-16",
+      "dateModified": "2026-10-16",
+      "inLanguage": "ru",
+      "url": "/proverka-tovarnogo-znaka-pered-podachey-v-rospatent",
+      "image": "/template/images/blog/l01_proverka_tovarnogo_znaka_pered_podachey_v_rospatent_cover.png",
+      "author": { "@id": "#lireate-organization" },
+      "publisher": { "@id": "#lireate-organization" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "#faq-l01",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Как бесплатно проверить товарный знак?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Используйте Поисковую платформу Роспатента и открытые реестры ФИПС, включая реестр заявок; для международного контура — TMview."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько времени занимает проверка?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для одного знака и 1–2 классов МКТУ — от нескольких часов; при нескольких классах и логотипе — 1–2 рабочих дня."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли зарегистрировать похожий знак?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Зависит от сходства и однородности товаров по п. 6 ст. 1483 ГК РФ; другой класс МКТУ не гарантирует регистрацию."
+          }
+        }
+      ]
+    }
+  ]
+}

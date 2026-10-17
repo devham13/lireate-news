@@ -1,0 +1,6 @@
+{
+  "pipeline": "i2i_base + lireate_cover_text_overlay.py",
+  "base": "cover/cover-base-notext.jpg",
+  "note": "GenerateImage without text; mask UI; Cyrillic via PIL; cover.png 860x400",
+  "artifact": "/opt/cursor/artifacts/l01-cover-final.png"
+}

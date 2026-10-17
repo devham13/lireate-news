@@ -1,0 +1,43 @@
+{
+  "topic_id": "L01",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_mcp",
+  "style_preset": "digital_meme_collage_ru",
+  "style_file": "memory/cover/quad-style-digital-meme-collage-ru.json",
+  "blog_hero": "memory/cover/blog-hero.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "Пошлина ушла — а в реестре уже чужой знак в вашем МКТУ?",
+  "mcp_note": "ONE gpt-image-2 call with input_urls=[reference_url_hosted], then split",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_meme_hero",
+      "alt": "Обложка: проверка товарного знака перед Роспатентом — эксперт указывает на совпадение в поисковой платформе",
+      "scene_hint": "героиня в тёмно-синем пиджаке, указывает на пустой монитор (серые плашки БЕЗ букв); torn paper + скотч, meme cat; весь русский текст — post-process PIL, не в генерации",
+      "meme_caption_ru": "Знак занят — пошлина сгорела?",
+      "text_overlay_script": "scripts/lireate_cover_text_overlay.py"
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "Проверьте обозначение до заявки: что теряете, если пропустить шаг",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "Схема потерь: пропуск проверки → пошлины → отказ экспертизы → переделка бренда; кириллица, стрелки, 4-5 шагов на рваной ленте, розовая стрелка к «отказ по п.6»",
+      "alt": "Схема: что теряете, если не проверить обозначение до заявки в Роспатент"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "Соберите карту источников: платформа, реестры, opendata, TMview",
+      "visual_type": "comparison_table_ui",
+      "scene_hint": "Таблица инструментов: Поисковая платформа / реестр заявок ФИПС / TMview / предоценка — колонки «где открыть», «что ищем», «ограничение DIY»; UI как Google Sheets с уголком скотча",
+      "alt": "Таблица бесплатных источников: платформа Роспатента, ФИПС, TMview"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "Пройдите пошаговую проверку на тождество и сходство",
+      "visual_type": "checklist_board",
+      "scene_hint": "Чеклист на клипборде: 7 пунктов (варианты названия, МКТУ, платформа, реестры, TMview, звук/смысл/графика, вне реестров); красные галочки, ручка, стикер «свободен ли знак?»",
+      "alt": "Чеклист пошаговой проверки товарного знака на тождество и сходство"
+    }
+  }
+}

@@ -7,7 +7,7 @@
   "quad_style_preset": "memory/cover/quad-style-digital-meme-collage-ru.json",
   "secondary_cover_families": [],
   "prompt_assembly_mode": "prefix_scene_suffix",
-  "global_prompt_prefix": "Russian meme collage, blog host hero, Cyrillic Impact captions, ironic SEO humor, no watermark,",
+  "global_prompt_prefix": "Russian meme collage, blog host heroine (IP lawyer expert), Cyrillic Impact captions, ironic SEO humor, no watermark,",
   "global_prompt_suffix": "16:9 panels, consistent hero likeness, readable Russian meme text on each panel, high detail",
   "global_negative_prompt": "English text, Latin letters, watermark, logo, blurry, generic stock photo, no humor, panels without captions, extra fingers",
   "composition_lock": {

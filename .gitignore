@@ -1,3 +1,5 @@
+memory/lireate-cms-probe/
+memory/lireate-cms-http-config.json
 memory/site.env.local
 memory/site.env.local.example
 .cursor/excalibur-blog-handoff.md
