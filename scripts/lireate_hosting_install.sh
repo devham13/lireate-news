@@ -65,6 +65,10 @@ LIREATE_LOG_FILE=
 LIREATE_LOCK_FILE=
 LIREATE_STATE_FILE=
 LIREATE_ENV_FILE=
+
+# Яндекс.Вебмастер (экспорт на хостинге, см. docs/lireate-webmaster-export.ru.md)
+# YANDEX_WEBMASTER_TOKEN=
+# LIREATE_ANALYTICS_KEY=
 EOF
   chmod 600 "${ENV_FILE}"
   echo "==> Created template ${ENV_FILE}"
@@ -75,6 +79,8 @@ fi
 chmod +x "${LIREATE_AUTOPUB_HOME}/repo/scripts/lireate_hosting_publish.py" 2>/dev/null || true
 chmod +x "${LIREATE_AUTOPUB_HOME}/repo/scripts/lireate_hosting_selfcheck.py" 2>/dev/null || true
 chmod +x "${LIREATE_AUTOPUB_HOME}/repo/scripts/lireate_hosting_db_diagnostic.py" 2>/dev/null || true
+chmod +x "${LIREATE_AUTOPUB_HOME}/repo/scripts/lireate_hosting_webmaster_export.py" 2>/dev/null || true
+mkdir -p "${LIREATE_AUTOPUB_HOME}/analytics" "${LIREATE_AUTOPUB_HOME}/logs"
 
 export LIREATE_AUTOPUB_HOME
 export LIREATE_ENV_FILE="${ENV_FILE}"

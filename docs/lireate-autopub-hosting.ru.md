@@ -120,3 +120,7 @@ TZ=Europe/Moscow
 ## Логи
 
 `$HOME/lireate-autopub/logs/publish.log`, состояние: `state/published.json`.
+
+## Яндекс.Вебмастер (экспорт с хостинга)
+
+Инструкция для владельца (OAuth, cron 07:30 МСК, защищённый JSON): [lireate-webmaster-export.ru.md](lireate-webmaster-export.ru.md).
