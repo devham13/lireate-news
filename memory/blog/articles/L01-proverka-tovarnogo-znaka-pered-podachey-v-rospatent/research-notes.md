@@ -5,8 +5,8 @@
 **slug:** proverka-tovarnogo-znaka-pered-podachey-v-rospatent  
 **article_mode:** B (чек-лист / how-to)  
 **search_intent:** checklist  
-**research_date:** 2026-10-16  
-**disclaimer:** Даты, тарифы и процедуры проверены на 16.10.2026.
+**research_date:** 2026-10-17  
+**disclaimer:** Даты, тарифы и процедуры проверены на 17.10.2026.
 
 ---
 
@@ -34,19 +34,20 @@
 
 ---
 
-## 1. SERP-обзор (WebSearch, октябрь 2026)
+## 1. SERP-обзор (WebSearch, 17.10.2026)
 
-**Паттерн выдачи:** доминируют коммерческие «проверки за N дней» (Prilan, Patent24, Первознак, proveritznak.ru) и юридические блоги с CTA на платную экспертизу. Официальные источники (Роспатент FAQ, ФИПС, Поисковая платформа) встречаются, но реже в топе по коммерческому запросу. Пробел: **пошаговый чек-лист только по бесплатным официальным и открытым источникам** с явной границей «что DIY, когда к поверенному».
+**Паттерн выдачи:** доминируют коммерческие «проверки за N дней» (Prilan, Patent24, Первознак, proveritznak.ru) и юридические блоги с CTA на платную экспертизу. В свежей выдаче 2026 заметны практические гайды [Клерк / Patent24](https://www.klerk.ru/blogs/patent24/683176/) и [Selsup](https://selsup.ru/blog/proverka-tovarnogo-znaka/) с акцентом на связку «Поисковая платформа → реестр по номеру». Официальные источники (Роспатент FAQ, ФИПС, Поисковая платформа) встречаются, но реже в топе по коммерческому запросу. Пробел Lireate: **пошаговый чек-лист только по бесплатным официальным и открытым источникам** с явной границей «что DIY, когда к поверенному».
 
 | # | URL | Тип | Сильные стороны | Слабые / пробелы | Не копировать |
 |---|-----|-----|-----------------|------------------|---------------|
-| 1 | [pravo-znanie.ru — пошаговая инструкция](https://pravo-znanie.ru/eto-interesno/kak-proverit-tovarnyj-znak-pered-registracziej-poshagovoe-rukovodstvo-dlya-predprinimatelya.html) | Инфо-статья | Структура «зачем → как» | Смешение реестров и коммерческих баз без иерархии источников | Длинные вводные без чек-листа |
-| 2 | [prilan.ru/trademarks](https://prilan.ru/trademarks) | SaaS-проверка | Упор на скорость и ИИ | Продукт вместо самостоятельного workflow по реестрам | Продажу сервиса как единственный путь |
-| 3 | [patent24.online/proverka](https://patent24.online/proverka/) | Агентство | Акцент на риски отказа | Мало официальных ссылок, прайс в SERP | Копирайт «выберите Prilan» |
-| 4 | [integrolaw.ru/blog/kak-proverit-tovarnyy-znak](https://integrolaw.ru/blog/kak-proverit-tovarnyy-znak) | Юрфирма (май 2026) | Кратко: МКТУ, три вида сходства, риск пошлин | Утверждение «открытые сервисы только полные совпадения» без разбора Поисковой платформы 2023+ | Агрессивный CTA «только специалист» |
-| 5 | [secrets.tbank.ru — проверка в Роспатенте](https://secrets.tbank.ru/blogi-kompanij/proverka-tovarnogo-znaka-v-rospatente/) | Корп. блог | Практика фильтров МКТУ на платформе, пример «Солнышко» | Не чек-лист по всем реестрам; вторичный источник | Кейсы без ссылок на решения Роспатента |
-| 6 | [licensingrussia.ru (дек. 2024)](https://licensingrussia.ru/article/14579-kak-proverit-registriruemyi-tovarnyi-znak-pered-podachei-zaiavki-v-rospatent/) | Отраслевое издание | Упоминание запуска сервиса 11.12.2023 | Устаревший акцент без CSV opendata | Структуру 1:1 |
-| 7 | Официально: [rospatent.gov.ru FAQ поиск](https://rospatent.gov.ru/ru/faq/gde-samostoyatelno-provesti-poisk-tovarnyh-znakov-v-internete), [fips.ru/registers-web](https://www.fips.ru/registers-web/), [searchplatform.rospatent.gov.ru/trademarks](https://searchplatform.rospatent.gov.ru/trademarks) | Гос. | Канон инструментов | Не учат интерпретации сходства | Сухой FAQ без чек-листа предпринимателю |
+| 1 | [klerk.ru — Роспатент, ФИПС, реестр](https://www.klerk.ru/blogs/patent24/683176/) | Корп. блог (2026) | Карта платформы 2023+, МКТУ, фонетика/транслит, платная ИПС | Смешение с продажей экспертизы | CTA агентства вместо чек-листа |
+| 2 | [selsup.ru — проверка в реестре](https://selsup.ru/blog/proverka-tovarnogo-znaka/) | E-com / маркетплейсы | Два шага: платформа по слову, ФИПС по номеру; расшифровка полей (511, 732) | Фокус на закупку чужого бренда, не на подачу своей заявки | Кейсы маркетплейса без МКТУ-матрицы |
+| 3 | [pravo-znanie.ru — пошаговая инструкция](https://pravo-znanie.ru/eto-interesno/kak-proverit-tovarnyj-znak-pered-registracziej-poshagovoe-rukovodstvo-dlya-predprinimatelya.html) | Инфо-статья | Структура «зачем → как» | Смешение реестров и коммерческих баз без иерархии источников | Длинные вводные без чек-листа |
+| 4 | [prilan.ru/trademarks](https://prilan.ru/trademarks) | SaaS-проверка | Упор на скорость и ИИ | Продукт вместо самостоятельного workflow по реестрам | Продажу сервиса как единственный путь |
+| 5 | [patent24.online/proverka](https://patent24.online/proverka/) | Агентство | Акцент на риски отказа | Мало официальных ссылок, прайс в SERP | Копирайт «выберите Prilan» |
+| 6 | [integrolaw.ru/blog/kak-proverit-tovarnyy-znak](https://integrolaw.ru/blog/kak-proverit-tovarnyy-znak) | Юрфирма (май 2026) | Кратко: МКТУ, три вида сходства, риск пошлин | Утверждение «открытые сервисы только полные совпадения» без разбора Поисковой платформы 2023+ | Агрессивный CTA «только специалист» |
+| 7 | [companies.rbc.ru — что проверить до подачи](https://companies.rbc.ru/news/AnbiTTtwYG/registratsiya-tovarnogo-znaka-v-2026-godu-chto-vazhno-proverit-do-podachi/) | Медиа (2026) | Акцент на реформу пошлин и МКТУ 13-й редакции | Мало пошаговой работе с реестрами | Новостной тон без чек-листа |
+| 8 | Официально: [rospatent.gov.ru FAQ поиск](https://rospatent.gov.ru/ru/faq/gde-samostoyatelno-provesti-poisk-tovarnyh-znakov-v-internete), [fips.ru/registers-web](https://www.fips.ru/registers-web/), [searchplatform.rospatent.gov.ru/trademarks](https://searchplatform.rospatent.gov.ru/trademarks), [RUTMAP заявки](https://www.fips.ru/elektronnye-servisy/informatsionno-poiskovaya-sistema/zayavki-na-registratsiyu-tovarnogo-znaka-i-znaka-obsluzhivaniya-rutmap.php) | Гос. | Канон инструментов | Не учат интерпретации сходства | Сухой FAQ без чек-листа предпринимателю |
 
 **Intent:** checklist — пользователь перед оплатой пошлин хочет **сам** пройти открытые базы, отсечь тождество/очевидные конфликты, выбрать классы МКТУ и решить, дорабатывать знак или идти к поверенному.
 
@@ -70,6 +71,8 @@
 | На сайте ФИПС в «Все сервисы» бесплатно: «Поисковая платформа» (ТЗ), бюллетени, открытые реестры, МКТУ, лексико-семантический идентификатор и др.; доступ к полным БД ТЗ РФ — платный | [Роспатент FAQ](https://rospatent.gov.ru/ru/faq/gde-samostoyatelno-provesti-poisk-tovarnyh-znakov-v-internete) | 26.01.2024 | да |
 | Международный поиск — TMview; на ВОИС — БД международных знаков | [Роспатент FAQ](https://rospatent.gov.ru/ru/faq/gde-samostoyatelno-provesti-poisk-tovarnyh-znakov-v-internete) | 26.01.2024 | да |
 | 11.12.2023 запущен бесплатный поиск ТЗ в ИС «Поисковая платформа» (`searchplatform.rospatent.gov.ru/trademarks`), режим 24/7; поиск по тексту, изображению, звучанию/смыслу; данные о ТЗ, знаках обслуживания, общеизвестных и мадридских знаках в РФ | [ГАРАНТ / информация Роспатента](https://base.garant.ru/408182169/) | 11.12.2023 | да |
+| Изобразительный поиск на Поисковой платформе реализован с применением технологий ИИ; доступен поиск по кодам Венской классификации | [Роспатент — новость о запуске сервиса](https://rospatent.gov.ru/ru/news/rospatent-1) | 11.12.2023 | да |
+| БД RUTMAP (заявки на регистрацию ТЗ и знаков обслуживания): ретроспектива с 2005 г., пополнение **ежедневно** | [ФИПС — RUTMAP](https://www.fips.ru/elektronnye-servisy/informatsionno-poiskovaya-sistema/zayavki-na-registratsiyu-tovarnogo-znaka-i-znaka-obsluzhivaniya-rutmap.php) | актуально на 10.2026 | да |
 | Открытые реестры на fips.ru: бесплатный доступ по **номеру** документа; операторы `*`, `?` и арифметические операторы в запросе **не допускаются** | [ФИПС — открытые реестры](https://www.fips.ru/registers-web/) | актуально на 10.2026 | да |
 | В открытых реестрах: реестр ТЗ и знаков обслуживания, общеизвестных, международных (Мадрид), реестр **заявок** | [ФИПС — открытые реестры](https://www.fips.ru/registers-web/) | актуально на 10.2026 | да |
 | Набор открытых данных «Открытый реестр ТЗ и знаков обслуживания РФ» (id `7730176088-tz`), формат CSV, актуализация **ежемесячно**; дата актуальности набора 05.08.2026 | [Роспатент opendata](https://rospatent.gov.ru/opendata/7730176088-tz) | 05.08.2026 | да |
@@ -175,11 +178,22 @@
 | Критерий | Статус |
 |----------|--------|
 | SERP ≥ 3 конкурента | ✅ |
-| Факты с URL (≥10) | ✅ (16) |
+| Факты с URL (≥10) | ✅ (18) |
 | Антиканнибализация | ✅ |
 | action_outline | ✅ (9 шагов) |
 | reader_outcome + utility_verdict | ✅ PASS |
 | FAQ 5–7 | ✅ |
 | Wordstat | ⚠️ MCP недоступен |
 
-**Writer:** вход — этот файл, `research-context.json`, карточка L01, `memory/brief/lireate-site-brief.md`.
+**Writer:** вход — этот файл, `research-context.json`, карточка L01 в `memory/topics/blog-topics.md`, контекст Lireate NEWS (рубрика «Товарный знак», `category_id=9`).
+
+---
+
+=== EXCALIBUR BLOG RESEARCH ===
+topic_id: L01
+article_dir: memory/blog/articles/L01-proverka-tovarnogo-znaka-pered-podachey-v-rospatent
+status: ✅
+utility_verdict: PASS
+article_mode: B (чек-лист)
+summary: SERP — 8+ источников (Klerk, Selsup, юрблоги, SaaS-проверки, RBC 2026, официальные ФИПС/Роспатент). Угол — бесплатный маршрут «Поисковая платформа → реестры/заявки → МКТУ/однородность → ст. 1483» до пошлины. action_outline 9 шагов, 7 FAQ, 18 фактов с URL. Wordstat MCP недоступен — объёмы спроса не использовать.
+===
