@@ -69,6 +69,37 @@ export LIREATE_ENV_FILE="$LIREATE_AUTOPUB_HOME/.env"
 
 Успех: `STATUS: PUBLISHED` и HTTP 200 на URL статьи.
 
+### Картинки в статье
+
+Скрипт кладёт файлы из `cover/` статьи в **`$LIREATE_DOCROOT/images/`**:
+
+| Файл в репозитории | На сайте |
+|--------------------|----------|
+| `cover/cover.png` | `/images/{seo_url}.jpg` (обложка в начале `full_story`) |
+| `cover/inline-01.png` … `inline-03.png` | `/images/{seo_url}_inline_01.jpg` … |
+
+В MySQL в `full_story` подставляются пути `/images/...`, а не `cover/inline-*.png`.
+
+Проверка после публикации:
+
+```bash
+ls -la "$LIREATE_DOCROOT/images/"*proverka*   # подставьте свой seo_url
+```
+
+### Повторная выкладка (битые картинки, правка HTML)
+
+Если новость уже в БД, обычный запуск выдаёт `STATUS: ALREADY_PUBLISHED` и **не** обновляет текст. Чтобы залить картинки заново и обновить `full_story`:
+
+```bash
+export LIREATE_AUTOPUB_HOME="$HOME/lireate-autopub"
+export LIREATE_ENV_FILE="$LIREATE_AUTOPUB_HOME/.env"
+# в .env: LIREATE_ALLOW_PUBLISH=yes
+"$(cat "$LIREATE_AUTOPUB_HOME/.python-interpreter")" \
+  "$LIREATE_AUTOPUB_HOME/repo/scripts/lireate_hosting_publish.py" --update
+```
+
+Ожидаемо: `hosting_images` в `lireate-publish-result.json`, в ответе PHP `updated: true`.
+
 ### CRON (ежедневно 12:00 Москва)
 
 ```cron

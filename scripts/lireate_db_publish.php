@@ -278,25 +278,64 @@ function lireate_cmd_publish($docroot)
 
     $mysqli = lireate_mysqli($docroot);
 
+    $forceUpdate = !empty($payload['force_update']);
+    $dupId = null;
     $stmt = $mysqli->prepare('SELECT `id` FROM `news` WHERE `seo_url` = ? OR `name` = ? LIMIT 1');
     if ($stmt) {
         $stmt->bind_param('ss', $seoUrl, $name);
         $stmt->execute();
         $stmt->bind_result($dupId);
-        if ($stmt->fetch()) {
-            $stmt->close();
-            $mysqli->close();
-            lireate_out(array(
-                'ok' => true,
-                'mode' => 'publish',
-                'dry_run' => $dry,
-                'duplicate' => true,
-                'existing_id' => $dupId,
-                'detail' => 'skip duplicate seo_url or name',
-                'row' => $row,
-            ), 0);
-        }
+        $stmt->fetch();
         $stmt->close();
+    }
+
+    if ($dupId && $forceUpdate && !$dry) {
+        $sqlUp = 'UPDATE `news` SET `name`=?, `short_story`=?, `full_story`=?, `title`=?, `seo_title`=?, `seo_keywords`=?, `seo_description`=?, `category`=?, `active`=? WHERE `id`=?';
+        $stmtUp = $mysqli->prepare($sqlUp);
+        if (!$stmtUp) {
+            lireate_out(array('ok' => false, 'error' => 'update prepare failed', 'mysqli' => $mysqli->error), 2);
+        }
+        $stmtUp->bind_param(
+            'sssisssiii',
+            $row['name'],
+            $row['short_story'],
+            $row['full_story'],
+            $row['title'],
+            $row['seo_title'],
+            $row['seo_keywords'],
+            $row['seo_description'],
+            $row['category'],
+            $row['active'],
+            $dupId
+        );
+        $okUp = $stmtUp->execute();
+        $errUp = $stmtUp->error;
+        $stmtUp->close();
+        $mysqli->close();
+        if (!$okUp) {
+            lireate_out(array('ok' => false, 'error' => 'update failed', 'mysqli' => $errUp, 'row' => $row), 2);
+        }
+        lireate_out(array(
+            'ok' => true,
+            'mode' => 'publish',
+            'dry_run' => false,
+            'updated' => true,
+            'existing_id' => $dupId,
+            'row' => $row,
+        ), 0);
+    }
+
+    if ($dupId) {
+        $mysqli->close();
+        lireate_out(array(
+            'ok' => true,
+            'mode' => 'publish',
+            'dry_run' => $dry,
+            'duplicate' => true,
+            'existing_id' => $dupId,
+            'detail' => $forceUpdate ? 'duplicate (use force_update on server)' : 'skip duplicate seo_url or name',
+            'row' => $row,
+        ), 0);
     }
 
     if ($dry) {

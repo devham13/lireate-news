@@ -18,7 +18,11 @@ sys.path.insert(0, str(REPO_ROOT / "scripts"))
 from lireate_compat import require_python  # noqa: E402
 from lireate_db_invoke import run_publish  # noqa: E402
 from lireate_dotenv import load_dotenv  # noqa: E402
-from lireate_local_deploy import copy_cover_image  # noqa: E402
+from lireate_hosting_images import (  # noqa: E402
+    build_hosting_image_map,
+    deploy_hosting_images,
+    transform_html_paths,
+)
 from lireate_news_format import build_news_row  # noqa: E402
 from lireate_publish_bundle import build_publish_bundle  # noqa: E402
 from lireate_publish_live import http_status, is_already_live, record_published  # noqa: E402
@@ -102,15 +106,16 @@ def _print_status(code, detail=""):
     logging.info(msg)
 
 
-def _print_dry_run_preview(row, docroot_path):
-    image_target = docroot_path / "images" / row.get("cover_image_basename", "")
+def _print_dry_run_preview(row, docroot_path, image_paths):
     print("=== DRY-RUN ROW PREVIEW (no writes) ===")
     print("name: {0}".format(row.get("name")))
     print("seo_url: {0}".format(row.get("seo_url")))
     print("category: {0}".format(row.get("category")))
     print("title (int): {0}".format(row.get("title")))
     print("short_story: {0!r}".format(row.get("short_story")))
-    print("image_target: {0}".format(image_target))
+    print("image_files (would copy to docroot/images/):")
+    for p in image_paths:
+        print("  - {0}".format(p))
     fs = row.get("full_story") or ""
     print("full_story (first 500 chars):")
     print(fs[:500])
@@ -120,6 +125,11 @@ def main():
     parser = argparse.ArgumentParser(description="Lireate hosting autopublish (REG.RU cron)")
     parser.add_argument("--article-dir", type=Path, default=None)
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument(
+        "--update",
+        action="store_true",
+        help="Update existing news row (same seo_url) and redeploy images",
+    )
     parser.add_argument("--env-file", type=Path, default=None)
     args = parser.parse_args()
 
@@ -177,8 +187,12 @@ def main():
     category_id = int(meta.get("lireate_category_id", 9))
 
     html = html_path.read_text(encoding="utf-8")
-    bundle, _image_map, transformed = build_publish_bundle(article_dir, meta, html)
-    row = build_news_row(meta, transformed)
+    bundle, _image_map, _transformed = build_publish_bundle(article_dir, meta, html)
+    row_preview = build_news_row(meta, html)
+    seo_url = row_preview["seo_url"]
+    hosting_map = build_hosting_image_map(seo_url, article_dir)
+    body_for_cms = transform_html_paths(html, hosting_map)
+    row = build_news_row(meta, body_for_cms)
     payload = {
         "name": row["name"],
         "title": row["title"],
@@ -191,6 +205,18 @@ def main():
         "full_story": row["full_story"],
         "active": row["active"],
     }
+    if args.update:
+        payload["force_update"] = True
+    planned_images = [
+        str((docroot_path or Path(".")) / "images" / "{0}{1}".format(seo_url, suffix))
+        for local, suffix in (
+            ("cover/cover.png", ".jpg"),
+            ("cover/inline-01.png", "_inline_01.jpg"),
+            ("cover/inline-02.png", "_inline_02.jpg"),
+            ("cover/inline-03.png", "_inline_03.jpg"),
+        )
+        if (article_dir / local).is_file()
+    ]
 
     target_url = "{0}/{1}".format(site, row["seo_url"]) if site else None
     result.update(
@@ -205,10 +231,8 @@ def main():
     )
 
     if args.dry_run:
-        if docroot_path and docroot_path.is_dir():
-            _print_dry_run_preview(row, docroot_path)
-        else:
-            _print_dry_run_preview(row, Path(docroot or "(set LIREATE_DOCROOT)"))
+        base = docroot_path if docroot_path and docroot_path.is_dir() else Path(docroot or ".")
+        _print_dry_run_preview(row, base, planned_images)
         result["verdict"] = "dry_run"
         result_path.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         _print_status("DRY_RUN", "preview only — no DB or files written")
@@ -218,7 +242,7 @@ def main():
         if target_url:
             already, st = is_already_live(site, "/" + row["seo_url"], state_file, slug)
             result["live_url_http_before"] = st
-            if already:
+            if already and not args.update:
                 result["verdict"] = "already_published"
                 result["live_url"] = target_url
                 result_path.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -244,11 +268,12 @@ def main():
             _print_status("BLOCKER", result["blocker"])
             return 1
 
-        cover_src = article_dir / "cover" / "cover.png"
-        img_ok, img_path, img_detail = copy_cover_image(docroot_path, row["seo_url"], cover_src)
-        result["cover_image_copy"] = {"ok": img_ok, "path": img_path, "detail": img_detail}
+        img_ok, img_paths, img_detail = deploy_hosting_images(
+            docroot_path, row["seo_url"], article_dir
+        )
+        result["hosting_images"] = {"ok": img_ok, "paths": img_paths, "detail": img_detail}
         if not img_ok:
-            result["blocker"] = "cover copy failed: {0}".format(img_detail)
+            result["blocker"] = "image deploy failed: {0}".format(img_detail)
             result_path.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
             _print_status("BLOCKER", result["blocker"])
             return 1
@@ -260,7 +285,7 @@ def main():
         result["live_url_http_after"] = live_after
 
         db_ok = db_res.get("ok") and (
-            db_res.get("insert_id") or db_res.get("duplicate")
+            db_res.get("insert_id") or db_res.get("updated") or db_res.get("duplicate")
         )
         if db_res.get("dry_run"):
             db_ok = False
