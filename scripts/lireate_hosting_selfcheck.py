@@ -57,16 +57,18 @@ def main():
         p = Path(docroot).expanduser()
         report["docroot_exists"] = p.is_dir()
         report["db_php_exists"] = (p / "data" / "db.php").is_file()
-        blog = p / "template" / "images" / "blog"
-        report["blog_dir_exists"] = blog.is_dir()
-        if blog.is_dir():
+        images = p / "images"
+        report["images_dir_exists"] = images.is_dir()
+        if images.is_dir():
             try:
-                test = blog / ".lireate_write_test"
+                test = images / ".lireate_write_test"
                 test.write_text("ok", encoding="utf-8")
                 test.unlink()
-                report["blog_dir_writable"] = True
+                report["images_dir_writable"] = True
             except OSError:
-                report["blog_dir_writable"] = False
+                report["images_dir_writable"] = False
+        else:
+            report["images_dir_writable"] = False
 
     repo = home / "repo"
     report["repo_dir"] = str(repo)
@@ -79,7 +81,7 @@ def main():
         and not missing
         and report.get("docroot_exists")
         and report.get("db_php_exists")
-        and report.get("blog_dir_writable")
+        and report.get("images_dir_writable")
         and report.get("repo_exists")
         and report.get("db_publish_php_exists")
         and report.get("php_ok")

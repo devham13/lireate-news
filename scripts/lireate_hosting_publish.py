@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """
-Cron entry for REG.RU shared hosting: local images + direct MySQL via PHP CLI.
-
-Loads $HOME/lireate-autopub/.env, file lock, logging, idempotent publish (live URL 200).
+Cron entry for REG.RU shared hosting: cover image + direct MySQL via PHP CLI.
 """
 
 import argparse
@@ -18,9 +16,10 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
 
 from lireate_compat import require_python  # noqa: E402
-from lireate_db_invoke import build_news_payload, run_publish  # noqa: E402
+from lireate_db_invoke import run_publish  # noqa: E402
 from lireate_dotenv import load_dotenv  # noqa: E402
-from lireate_local_deploy import copy_bundle_images  # noqa: E402
+from lireate_local_deploy import copy_cover_image  # noqa: E402
+from lireate_news_format import build_news_row  # noqa: E402
 from lireate_publish_bundle import build_publish_bundle  # noqa: E402
 from lireate_publish_live import http_status, is_already_live, record_published  # noqa: E402
 
@@ -103,18 +102,18 @@ def _print_status(code, detail=""):
     logging.info(msg)
 
 
-def _cover_web_path(image_map):
-    for local, remote in image_map.items():
-        if "cover" in local:
-            return remote
-    return None
-
-
-def _short_story_html(meta):
-    desc = meta.get("description") or ""
-    if not desc:
-        return ""
-    return "<p>{0}</p>".format(desc)
+def _print_dry_run_preview(row, docroot_path):
+    image_target = docroot_path / "images" / row.get("cover_image_basename", "")
+    print("=== DRY-RUN ROW PREVIEW (no writes) ===")
+    print("name: {0}".format(row.get("name")))
+    print("seo_url: {0}".format(row.get("seo_url")))
+    print("category: {0}".format(row.get("category")))
+    print("title (int): {0}".format(row.get("title")))
+    print("short_story: {0!r}".format(row.get("short_story")))
+    print("image_target: {0}".format(image_target))
+    fs = row.get("full_story") or ""
+    print("full_story (first 500 chars):")
+    print(fs[:500])
 
 
 def main():
@@ -133,7 +132,8 @@ def main():
     lock_file = Path(os.environ.get("LIREATE_LOCK_FILE") or (home / "var" / "publish.lock"))
     state_file = Path(os.environ.get("LIREATE_STATE_FILE") or (home / "state" / "published.json"))
 
-    _setup_logging(log_file)
+    if not args.dry_run:
+        _setup_logging(log_file)
 
     article_dir = args.article_dir
     if article_dir is None:
@@ -154,6 +154,7 @@ def main():
     site = (os.environ.get("LIREATE_PUBLIC_SITE_URL") or "").strip().rstrip("/")
     docroot = (os.environ.get("LIREATE_DOCROOT") or "").strip()
     allow = _truthy("LIREATE_ALLOW_PUBLISH")
+    docroot_path = Path(docroot).expanduser().resolve() if docroot else None
 
     result = {
         "mode": "hosting_db",
@@ -174,46 +175,48 @@ def main():
     slug = meta.get("slug") or article_dir.name.split("-", 1)[-1]
     topic_id = meta.get("topic_id")
     category_id = int(meta.get("lireate_category_id", 9))
-    canonical = meta.get("canonical_path") or "/{0}".format(slug)
-    target_url = "{0}{1}".format(site, canonical) if site else None
 
+    html = html_path.read_text(encoding="utf-8")
+    bundle, _image_map, transformed = build_publish_bundle(article_dir, meta, html)
+    row = build_news_row(meta, transformed)
+    payload = {
+        "name": row["name"],
+        "title": row["title"],
+        "seo_title": row["seo_title"],
+        "seo_keywords": row["seo_keywords"],
+        "seo_description": row["seo_description"],
+        "seo_url": row["seo_url"],
+        "category": row["category"],
+        "short_story": row["short_story"],
+        "full_story": row["full_story"],
+        "active": row["active"],
+    }
+
+    target_url = "{0}/{1}".format(site, row["seo_url"]) if site else None
     result.update(
         {
             "topic_id": topic_id,
             "slug": slug,
-            "canonical_path": canonical,
+            "seo_url": row["seo_url"],
             "target_url": target_url,
+            "bundle_dir": str(bundle),
+            "payload": payload,
         }
     )
 
-    html = html_path.read_text(encoding="utf-8")
-    bundle, image_map, transformed = build_publish_bundle(article_dir, meta, html)
-    result["bundle_dir"] = str(bundle)
-
-    payload = build_news_payload(
-        meta,
-        transformed,
-        short_html=_short_story_html(meta),
-        cover_web_path=_cover_web_path(image_map),
-    )
-
-    docroot_path = Path(docroot).expanduser().resolve() if docroot else None
-
     if args.dry_run:
-        result["verdict"] = "dry_run"
         if docroot_path and docroot_path.is_dir():
-            payload["dry_run"] = True
-            result["db"] = run_publish(docroot_path, payload)
+            _print_dry_run_preview(row, docroot_path)
         else:
-            result["db"] = {"ok": True, "skipped": "set LIREATE_DOCROOT for DB dry-run preview"}
-            result["payload_preview"] = payload
+            _print_dry_run_preview(row, Path(docroot or "(set LIREATE_DOCROOT)"))
+        result["verdict"] = "dry_run"
         result_path.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        _print_status("DRY_RUN", "bundle at {0}".format(bundle))
+        _print_status("DRY_RUN", "preview only — no DB or files written")
         return 0
 
     with _file_lock(lock_file):
         if target_url:
-            already, st = is_already_live(site, canonical, state_file, slug)
+            already, st = is_already_live(site, "/" + row["seo_url"], state_file, slug)
             result["live_url_http_before"] = st
             if already:
                 result["verdict"] = "already_published"
@@ -228,29 +231,24 @@ def main():
             _print_status("BLOCKER", result["blocker"])
             return 1
 
-        if not site:
-            result["blocker"] = "set LIREATE_PUBLIC_SITE_URL in .env"
-            result_path.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-            _print_status("BLOCKER", result["blocker"])
-            return 1
-
-        if not docroot_path or not docroot_path.is_dir():
-            result["blocker"] = "set LIREATE_DOCROOT to site public_html"
+        if not site or not docroot_path or not docroot_path.is_dir():
+            result["blocker"] = "set LIREATE_PUBLIC_SITE_URL and LIREATE_DOCROOT"
             result_path.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
             _print_status("BLOCKER", result["blocker"])
             return 1
 
         db_php = docroot_path / "data" / "db.php"
         if not db_php.is_file():
-            result["blocker"] = "missing {0} (DB credentials stay in site tree)".format(db_php)
+            result["blocker"] = "missing {0}".format(db_php)
             result_path.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
             _print_status("BLOCKER", result["blocker"])
             return 1
 
-        img_ok, copied, img_detail = copy_bundle_images(docroot_path, bundle / "images")
-        result["local_image_copy"] = {"ok": img_ok, "files": copied, "detail": img_detail}
+        cover_src = article_dir / "cover" / "cover.png"
+        img_ok, img_path, img_detail = copy_cover_image(docroot_path, row["seo_url"], cover_src)
+        result["cover_image_copy"] = {"ok": img_ok, "path": img_path, "detail": img_detail}
         if not img_ok:
-            result["blocker"] = "image copy failed: {0}".format(img_detail)
+            result["blocker"] = "cover copy failed: {0}".format(img_detail)
             result_path.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
             _print_status("BLOCKER", result["blocker"])
             return 1
@@ -262,7 +260,7 @@ def main():
         result["live_url_http_after"] = live_after
 
         db_ok = db_res.get("ok") and (
-            db_res.get("insert_id") or db_res.get("duplicate") or db_res.get("would_insert")
+            db_res.get("insert_id") or db_res.get("duplicate")
         )
         if db_res.get("dry_run"):
             db_ok = False
@@ -279,7 +277,7 @@ def main():
         if db_res.get("ok") and db_res.get("duplicate") and live_after != 200:
             result["blocker"] = "duplicate in DB but live URL still {0}".format(live_after)
         elif db_res.get("ok") and live_after != 200:
-            result["blocker"] = "DB insert OK but live URL still {0} — check seo_url/routing".format(live_after)
+            result["blocker"] = "DB insert OK but live URL still {0}".format(live_after)
         else:
             result["blocker"] = "DB publish failed: {0}".format(db_res.get("error") or db_res)
 

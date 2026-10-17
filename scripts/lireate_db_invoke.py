@@ -91,31 +91,18 @@ def run_publish(docroot, payload, env=None):
 
 
 def build_news_payload(meta, full_html, short_html=None, cover_web_path=None):
-    slug = meta.get("slug") or ""
-    canonical = (meta.get("canonical_path") or "/{0}".format(slug)).strip("/")
-    seo_url = canonical.split("/")[-1] if canonical else slug.replace("-", "_")
-    name = meta.get("title") or meta.get("h1") or slug
-    title = meta.get("h1") or meta.get("title") or name
-    keywords = meta.get("keywords") or []
-    if isinstance(keywords, list):
-        seo_keywords = ", ".join(keywords)
-    else:
-        seo_keywords = str(keywords)
-    short_story = short_html or meta.get("description") or ""
-    full_story = full_html or ""
-    if cover_web_path:
-        img = '<p><img src="{0}" alt="" /></p>'.format(cover_web_path)
-        if img not in full_story:
-            full_story = img + full_story
+    from lireate_news_format import build_news_row
+
+    row = build_news_row(meta, full_html)
     return {
-        "name": name,
-        "title": title,
-        "seo_title": meta.get("title") or name,
-        "seo_keywords": seo_keywords,
-        "seo_description": meta.get("description") or "",
-        "seo_url": seo_url,
-        "category": int(meta.get("lireate_category_id", 9)),
-        "short_story": short_story,
-        "full_story": full_story,
-        "active": 1,
+        "name": row["name"],
+        "title": row["title"],
+        "seo_title": row["seo_title"],
+        "seo_keywords": row["seo_keywords"],
+        "seo_description": row["seo_description"],
+        "seo_url": row["seo_url"],
+        "category": row["category"],
+        "short_story": row["short_story"],
+        "full_story": row["full_story"],
+        "active": row["active"],
     }
