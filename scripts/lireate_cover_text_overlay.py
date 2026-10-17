@@ -80,7 +80,7 @@ def _clean_frame_top(im, band_h=None):
     im = im.convert("RGBA")
     w, h = im.size
     if band_h is None:
-        band_h = max(MARGIN_PX + 4, int(h * 0.22))
+        band_h = max(MARGIN_PX + 8, int(h * 0.26))
     draw = ImageDraw.Draw(im)
     fill = _paper_fill(im, 0, 0, w, band_h)
     draw.rectangle((0, 0, w, band_h), fill=fill + (255,))
@@ -164,10 +164,11 @@ def draw_l01_headline(im, profile="860"):
     win_x0, win_y0, win_x1, _win_y1 = _registry_window_box(w, h)
 
     if profile == "350":
-        plate_x0 = MARGIN_PX
+        # Right column only — do not cover heroine on the left
+        plate_x0 = int(w * 0.40)
         plate_x1 = w - MARGIN_PX
-        max_text_w = plate_x1 - plate_x0 - 12
-        start_font = 18
+        max_text_w = plate_x1 - plate_x0 - 10
+        start_font = 15
         line_gap = 1
         plate_y0 = MARGIN_PX
     else:
@@ -194,7 +195,9 @@ def draw_l01_headline(im, profile="860"):
         width=2,
     )
 
-    ty = plate_y0 + 8
+    ty = plate_y0 + 10
+    if ty < MARGIN_PX:
+        ty = MARGIN_PX
     for i, line in enumerate(L01_TITLE_LINES):
         tw = widths[i]
         tx = plate_x0 + int((plate_x1 - plate_x0 - tw) / 2)
