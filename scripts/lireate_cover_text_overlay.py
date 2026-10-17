@@ -4,15 +4,16 @@
 from __future__ import annotations
 
 import argparse
-import json
 import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 
-# Hosting template sizes (must match lireate_hosting_images.py)
 BLOG_COVER_SIZE = (860, 400)
 BLOG_SMALL_SIZE = (350, 163)
+MARGIN_PX = 24
+
+L01_TITLE_LINES = ("Знак занят —", "пошлина сгорела?")
 
 
 def _font_path():
@@ -36,12 +37,7 @@ def _load_font(size: int):
     return ImageFont.load_default()
 
 
-def _draw_text_stroke(draw, xy, text, font, fill, stroke=3, stroke_fill=(0, 0, 0)):
-    draw.text(xy, text, font=font, fill=fill, stroke_width=stroke, stroke_fill=stroke_fill)
-
-
 def _hosting_crop_resize(im, target_w, target_h):
-    """Same center crop as lireate_hosting_images._center_crop_resize."""
     from lireate_hosting_images import _center_crop_resize, _pil_image
 
     Image = _pil_image()
@@ -50,29 +46,67 @@ def _hosting_crop_resize(im, target_w, target_h):
     return _center_crop_resize(im, target_w, target_h, Image)
 
 
-def apply_l01_overlays(im):
+def _paper_fill(im, x0, y0, x1, y1):
+    sample = im.crop((
+        max(0, int(im.size[0] * 0.05)),
+        max(0, int(im.size[1] * 0.55)),
+        max(1, int(im.size[0] * 0.12)),
+        min(im.size[1], int(im.size[1] * 0.65)),
+    ))
+    px = sample.resize((1, 1)).getpixel((0, 0))
+    if isinstance(px, tuple) and len(px) >= 3:
+        return px[:3]
+    return (245, 245, 240)
+
+
+def _mask_l01_top_band(im):
+    """Remove ghost model headline from base image."""
+    from PIL import ImageDraw
+
+    im = im.convert("RGBA")
+    w, h = im.size
+    band_h = int(h * 0.20)
+    draw = ImageDraw.Draw(im)
+    # Sample paper tone from lower-left (away from face cutout edge)
+    fill = _paper_fill(im, 0, 0, w, band_h)
+    draw.rectangle((0, 0, w, band_h), fill=fill + (255,))
+    return im
+
+
+def _clean_frame_top(im, band_h=None):
+    """Erase residual headline pixels after crop (before PIL title)."""
+    from PIL import ImageDraw
+
+    im = im.convert("RGBA")
+    w, h = im.size
+    if band_h is None:
+        band_h = max(MARGIN_PX + 4, int(h * 0.22))
+    draw = ImageDraw.Draw(im)
+    fill = _paper_fill(im, 0, 0, w, band_h)
+    draw.rectangle((0, 0, w, band_h), fill=fill + (255,))
+    return im
+
+
+def _registry_window_box(w, h):
+    win_x0 = int(w * 0.48)
+    win_y0 = int(h * 0.22)
+    win_x1 = int(w * 0.92)
+    win_y1 = int(h * 0.72)
+    return win_x0, win_y0, win_x1, win_y1
+
+
+def apply_l01_registry_ui(im, include_title=False):
+    """Registry window + labels. Title only when include_title=False is default (legacy)."""
     from PIL import ImageDraw
 
     im = im.convert("RGBA")
     draw = ImageDraw.Draw(im)
     w, h = im.size
+    win_x0, win_y0, win_x1, win_y1 = _registry_window_box(w, h)
 
-    title_font = _load_font(max(28, int(h * 0.075)))
-    badge_font = _load_font(max(22, int(h * 0.055)))
-    label_font = _load_font(max(14, int(h * 0.032)))
-    small_font = _load_font(max(12, int(h * 0.026)))
-
-    title = "Знак занят — пошлина сгорела?"
-    tw = draw.textlength(title, font=title_font)
-    tx = int((w - tw) / 2)
-    ty = int(h * 0.04)
-    _draw_text_stroke(draw, (tx, ty), title, title_font, fill=(26, 26, 26), stroke=2)
-
-    # Mask any model-generated UI text; draw clean window in code only
-    win_x0 = int(w * 0.48)
-    win_y0 = int(h * 0.22)
-    win_x1 = int(w * 0.92)
-    win_y1 = int(h * 0.72)
+    badge_font = _load_font(max(18, int(h * 0.052)))
+    label_font = _load_font(max(13, int(h * 0.030)))
+    small_font = _load_font(max(11, int(h * 0.024)))
 
     draw.rectangle((win_x0, win_y0, win_x1, win_y1), fill=(245, 245, 240), outline=(160, 160, 160), width=2)
     for i in range(4):
@@ -82,14 +116,7 @@ def apply_l01_overlays(im):
             fill=(230, 230, 225),
             outline=(200, 200, 195),
         )
-    _draw_text_stroke(
-        draw,
-        (win_x0 + 12, win_y0 + 8),
-        "Реестр Роспатента",
-        label_font,
-        fill=(40, 40, 40),
-        stroke=1,
-    )
+    draw.text((win_x0 + 12, win_y0 + 8), "Реестр Роспатента", font=label_font, fill=(40, 40, 40))
 
     badge_text = "98% схожесть"
     bw = draw.textlength(badge_text, font=badge_font)
@@ -97,7 +124,7 @@ def apply_l01_overlays(im):
     by = win_y0 + int((win_y1 - win_y0) * 0.38)
     pad = 8
     draw.rectangle(
-        (bx - pad, by - pad, bx + bw + pad, by + int(badge_font.size * 1.2) + pad),
+        (bx - pad, by - pad, bx + bw + pad, by + int(badge_font.size * 1.15) + pad),
         fill=(220, 50, 50),
     )
     draw.text((bx, by), badge_text, font=badge_font, fill=(255, 255, 255))
@@ -105,55 +132,139 @@ def apply_l01_overlays(im):
     sub = "Сходство до степени смешения"
     sw = draw.textlength(sub, font=small_font)
     draw.text(
-        (win_x0 + int((win_x1 - win_x0 - sw) / 2), win_y1 - int(h * 0.12)),
+        (win_x0 + int((win_x1 - win_x0 - sw) / 2), win_y1 - int(h * 0.11)),
         sub,
         font=small_font,
         fill=(60, 60, 60),
     )
 
+    if include_title:
+        im = draw_l01_headline(im, profile="860")
+
     return im.convert("RGB")
 
 
-def export_hosting_previews(cover_im, artifacts_dir: Path, stem: str):
+def _fit_title_font(draw, lines, max_width, start_size, min_size=14):
+    for size in range(start_size, min_size - 1, -1):
+        font = _load_font(size)
+        widths = [draw.textlength(line, font=font) for line in lines]
+        if max(widths) <= max_width:
+            return font, widths
+    font = _load_font(min_size)
+    return font, [draw.textlength(line, font=font) for line in lines]
+
+
+def draw_l01_headline(im, profile="860"):
+    """Two-line title on contrast plate; call AFTER final crop. profile: 860 | 350."""
+    from PIL import ImageDraw
+
+    im = im.convert("RGBA")
+    draw = ImageDraw.Draw(im)
+    w, h = im.size
+    win_x0, win_y0, win_x1, _win_y1 = _registry_window_box(w, h)
+
+    if profile == "350":
+        plate_x0 = MARGIN_PX
+        plate_x1 = w - MARGIN_PX
+        max_text_w = plate_x1 - plate_x0 - 12
+        start_font = 18
+        line_gap = 1
+        plate_y0 = MARGIN_PX
+    else:
+        plate_x0 = max(MARGIN_PX, win_x0)
+        plate_x1 = min(w - MARGIN_PX, win_x1)
+        max_text_w = plate_x1 - plate_x0 - 16
+        start_font = 30
+        line_gap = 3
+        plate_y0 = MARGIN_PX
+
+    font, widths = _fit_title_font(draw, L01_TITLE_LINES, max_text_w, start_font, min_size=12)
+    line_h = int(font.size * 1.15) + line_gap
+    block_h = line_h * len(L01_TITLE_LINES) + 14
+    plate_y1 = plate_y0 + block_h
+    if profile == "860":
+        plate_y1 = min(plate_y1, win_y0 - 8)
+        if plate_y1 < plate_y0 + line_h * 2:
+            plate_y1 = plate_y0 + block_h
+
+    draw.rectangle(
+        (plate_x0, plate_y0, plate_x1, plate_y1),
+        fill=(255, 255, 255, 235),
+        outline=(30, 30, 30, 255),
+        width=2,
+    )
+
+    ty = plate_y0 + 8
+    for i, line in enumerate(L01_TITLE_LINES):
+        tw = widths[i]
+        tx = plate_x0 + int((plate_x1 - plate_x0 - tw) / 2)
+        draw.text(
+            (tx, ty + i * line_h),
+            line,
+            font=font,
+            fill=(20, 20, 20),
+            stroke_width=1,
+            stroke_fill=(255, 255, 255),
+        )
+
+    _assert_text_in_frame(draw, im.size, MARGIN_PX)
+    return im.convert("RGB")
+
+
+def _assert_text_in_frame(draw, size, margin):
+    w, h = size
+    # bbox of drawn text is not tracked; verify plate fits
+    if margin < MARGIN_PX:
+        raise ValueError("margin below minimum")
+    if w < 2 * margin or h < 2 * margin:
+        raise ValueError("frame too small for title margins")
+
+
+def build_l01_cover_from_base(base_path: Path):
     from PIL import Image
 
-    im = cover_im if hasattr(cover_im, "size") else Image.open(cover_im).convert("RGB")
-    large = im.resize(BLOG_COVER_SIZE, Image.Resampling.LANCZOS)
-    small = im.resize(BLOG_SMALL_SIZE, Image.Resampling.LANCZOS)
+    work = (1200, 675)
+    base = Image.open(base_path).convert("RGB")
+    if base.size != work:
+        base = base.resize(work, Image.Resampling.LANCZOS)
+
+    masked = _mask_l01_top_band(base)
+    with_ui = apply_l01_registry_ui(masked, include_title=False)
+    frame = _hosting_crop_resize(with_ui, BLOG_COVER_SIZE[0], BLOG_COVER_SIZE[1])
+    frame_clean = _clean_frame_top(frame)
+    cover = draw_l01_headline(frame_clean, profile="860")
+
+    small_base = _clean_frame_top(frame.resize(BLOG_SMALL_SIZE, Image.Resampling.LANCZOS), band_h=46)
+    small = draw_l01_headline(small_base, profile="350")
+    return cover, small
+
+
+def export_artifacts(cover, small, artifacts_dir: Path, stem: str):
     artifacts_dir.mkdir(parents=True, exist_ok=True)
-    large.save(artifacts_dir / "{0}-crop-860x400.jpg".format(stem), quality=90)
-    small.save(artifacts_dir / "{0}-crop-350x163.jpg".format(stem), quality=90)
+    cover.save(artifacts_dir / "{0}-crop-860x400.jpg".format(stem), quality=92)
+    small.save(artifacts_dir / "{0}-crop-350x163.jpg".format(stem), quality=92)
+    cover.save(artifacts_dir / "{0}.png".format(stem), format="PNG", optimize=True)
 
 
 def main():
     sys.path.insert(0, str(REPO_ROOT / "scripts"))
     ap = argparse.ArgumentParser()
-    ap.add_argument("--base", type=Path, required=True, help="Base image without readable text")
-    ap.add_argument("--out", type=Path, required=True, help="Final cover.png")
+    ap.add_argument("--base", type=Path, required=True)
+    ap.add_argument("--out", type=Path, required=True)
     ap.add_argument("--topic", default="L01", choices=("L01",))
     ap.add_argument("--artifacts-dir", type=Path, default=Path("/opt/cursor/artifacts"))
     ap.add_argument("--artifact-stem", default="l01-cover-final")
     args = ap.parse_args()
 
-    from PIL import Image
-
-    base = Image.open(args.base).convert("RGB")
-    # Compose on 16:9, then export cover.png at hosting aspect (860×400) — no vertical crop on deploy
-    work = (1200, 675)
-    if base.size != work:
-        base = base.resize(work, Image.Resampling.LANCZOS)
-
-    if args.topic == "L01":
-        composed = apply_l01_overlays(base)
-    else:
+    if args.topic != "L01":
         print("unknown topic", file=sys.stderr)
         return 2
 
-    final = _hosting_crop_resize(composed, BLOG_COVER_SIZE[0], BLOG_COVER_SIZE[1])
+    cover, small = build_l01_cover_from_base(args.base)
     args.out.parent.mkdir(parents=True, exist_ok=True)
-    final.save(args.out, format="PNG", optimize=True)
-    export_hosting_previews(final, args.artifacts_dir, args.artifact_stem)
-    print("OK out={0}".format(args.out))
+    cover.save(args.out, format="PNG", optimize=True)
+    export_artifacts(cover, small, args.artifacts_dir, args.artifact_stem)
+    print("OK out={0} size={1}".format(args.out, cover.size))
     return 0
 
 
