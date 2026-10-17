@@ -5,7 +5,7 @@
  *   php lireate_db_publish.php diagnostic <DOCROOT>
  *   cat payload.json | php lireate_db_publish.php publish <DOCROOT>
  *
- * Reads credentials only from <DOCROOT>/data/db.php (never printed).
+ * Parses <DOCROOT>/data/db.php as text (does not require/execute it).
  * Honors LIREATE_ALLOW_PUBLISH=yes for real INSERT; otherwise publish prints planned row only.
  */
 
@@ -26,19 +26,44 @@ function lireate_truthy_env($name)
     return in_array($v, array('1', 'yes', 'true', 'on'), true);
 }
 
-function lireate_load_includes($docroot)
+function lireate_parse_db_constants($dbFile)
 {
-    $files = array(
-        $docroot . '/admin/data/sql.php',
-        $docroot . '/admin/data/config.php',
-        $docroot . '/admin/config.php',
-        $docroot . '/data/config.php',
-    );
-    foreach ($files as $f) {
-        if (is_file($f)) {
-            @require_once $f;
-        }
+    $text = @file_get_contents($dbFile);
+    if ($text === false) {
+        lireate_out(array('ok' => false, 'error' => 'cannot read db.php', 'path' => $dbFile), 2);
     }
+    $keys = array('DB_SERVER', 'DB_USER', 'DB_PASS', 'DB_NAME');
+    $out = array();
+    foreach ($keys as $key) {
+        $pattern = '/define\s*\(\s*["\']' . $key . '["\']\s*,\s*["\']([^"\']*)["\']\s*\)/i';
+        if (!preg_match($pattern, $text, $m)) {
+            lireate_out(array(
+                'ok' => false,
+                'error' => 'define not found in db.php',
+                'constant' => $key,
+                'path' => $dbFile,
+            ), 2);
+        }
+        $out[$key] = $m[1];
+    }
+    return $out;
+}
+
+function lireate_mysqli_connect($cfg)
+{
+    $mysqli = @new mysqli($cfg['DB_SERVER'], $cfg['DB_USER'], $cfg['DB_PASS'], $cfg['DB_NAME']);
+    if ($mysqli->connect_errno) {
+        lireate_out(array(
+            'ok' => false,
+            'error' => 'mysqli connect failed',
+            'errno' => $mysqli->connect_errno,
+            'message' => $mysqli->connect_error,
+        ), 2);
+    }
+    if (!$mysqli->set_charset('utf8mb4')) {
+        $mysqli->set_charset('utf8');
+    }
+    return $mysqli;
 }
 
 function lireate_translit_fallback($str)
@@ -92,21 +117,8 @@ function lireate_mysqli($docroot)
     if (!is_file($dbFile)) {
         lireate_out(array('ok' => false, 'error' => 'missing db.php', 'path' => $dbFile), 2);
     }
-    require $dbFile;
-    if (!defined('DB_SERVER') || !defined('DB_USER') || !defined('DB_NAME')) {
-        lireate_out(array('ok' => false, 'error' => 'db.php missing DB_* constants'), 2);
-    }
-    $mysqli = @new mysqli(DB_SERVER, DB_USER, DB_PASS, DB_NAME);
-    if ($mysqli->connect_errno) {
-        lireate_out(array(
-            'ok' => false,
-            'error' => 'mysqli connect failed',
-            'errno' => $mysqli->connect_errno,
-            'message' => $mysqli->connect_error,
-        ), 2);
-    }
-    $mysqli->set_charset('utf8');
-    return $mysqli;
+    $cfg = lireate_parse_db_constants($dbFile);
+    return lireate_mysqli_connect($cfg);
 }
 
 function lireate_table_columns($mysqli, $table)
@@ -135,7 +147,6 @@ function lireate_snippet($text, $len)
 function lireate_cmd_diagnostic($docroot)
 {
     date_default_timezone_set('Europe/Moscow');
-    lireate_load_includes($docroot);
     $mysqli = lireate_mysqli($docroot);
     $out = array('ok' => true, 'mode' => 'diagnostic', 'docroot' => $docroot, 'timezone' => date_default_timezone_get());
 
@@ -198,8 +209,8 @@ function lireate_cmd_diagnostic($docroot)
         }
     }
     $out['categories'] = $categories;
-    $out['translit_source'] = function_exists('Translit') ? 'site Translit()' : 'lireate_translit_fallback';
-    $out['get_quotes'] = function_exists('get_quotes');
+    $out['translit_source'] = 'lireate_translit_fallback (db.php not executed)';
+    $out['get_quotes'] = false;
     $mysqli->close();
     lireate_out($out, 0);
 }
@@ -207,7 +218,6 @@ function lireate_cmd_diagnostic($docroot)
 function lireate_cmd_publish($docroot)
 {
     date_default_timezone_set('Europe/Moscow');
-    lireate_load_includes($docroot);
     $raw = stream_get_contents(STDIN);
     $payload = json_decode($raw, true);
     if (!is_array($payload)) {

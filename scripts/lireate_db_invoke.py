@@ -22,10 +22,18 @@ def pick_php_executable():
     import shutil
 
     candidates = [
+        "/opt/alt/php83/usr/bin/php",
+        "/opt/alt/php82/usr/bin/php",
+        "/opt/alt/php81/usr/bin/php",
+        "/opt/php83/bin/php",
+        "/opt/php82/bin/php",
+        "/opt/php81/bin/php",
+        "/opt/php/php-8.3/bin/php",
         "/opt/php/php-8.2/bin/php",
         "/opt/php/php-8.1/bin/php",
         "/opt/php/php-8.0/bin/php",
         "/opt/php/php-7.4/bin/php",
+        "/usr/bin/php",
         shutil.which("php"),
         shutil.which("php-cli"),
         "php",
