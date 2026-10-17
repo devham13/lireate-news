@@ -5,7 +5,7 @@ on:
     paths:
       - "scripts/lireate_*.py"
       - "scripts/lireate_*.sh"
-      - "hosting/lireate-analytics/**"
+      - "hosting/**"
       - ".github/workflows/lireate-py38.yml"
   push:
     branches:
@@ -39,6 +39,7 @@ jobs:
           python -m py_compile scripts/lireate_translit.py
           python -m py_compile scripts/lireate_news_format.py
           python -m py_compile scripts/lireate_hosting_images.py
+          python -m py_compile scripts/lireate_hosting_webmaster_export.py
       - name: PHP syntax check
         run: |
           php -l scripts/lireate_db_publish.php
