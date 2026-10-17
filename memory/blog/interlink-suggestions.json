@@ -1,5 +1,5 @@
 {
-  "site_base": "PUBLIC_SITE_URL",
+  "site_base": "https://example.com",
   "total_articles": 6,
   "opportunities_found": 0,
   "suggestions": []
