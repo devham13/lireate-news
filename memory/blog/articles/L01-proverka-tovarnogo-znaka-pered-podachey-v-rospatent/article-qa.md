@@ -1,7 +1,7 @@
 # QA: L01 proverka-tovarnogo-znaka-pered-podachey-v-rospatent
 
-date: 2026-10-16
-score_total: 93/100
+date: 2026-10-17
+score_total: 94/100
 core_eeat_lite: 20/20
 link_verify: pass
 utility_gate: pass
@@ -16,7 +16,7 @@ verdict: PASS
 | CORE-EEAT lite | 15 | 15 | 20/20 (см. ниже) |
 | Human voice | 15 | 15 | 0 AI-slop hits, Flesch RU 51.2 (экспертный тон) |
 | Fact safety | 15 | 13 | fact-check PASS; 3 unverified (ст. 1499, тел. ФИПС, «3–5 лет» — допустимо) |
-| Contract HTML | 10 | 9 | linter PASS, объём 8896 ✓, CTA Лирейт ×2 ✓; −1 нет `<img>` с alt |
+| Contract HTML | 10 | 10 | linter PASS, объём 8572 ✓, CTA Лирейт ×2 ✓, 3× `<img>` с alt |
 
 **Порог PASS:** ≥80, CORE-EEAT ≥16/20, link-verify pass, utility gate PASS — **выполнен**.
 
@@ -59,14 +59,13 @@ verdict: PASS
 ## Link verify
 
 - total: 6, failed: 0
-- site-base: `--site-base` из `PUBLIC_SITE_URL` (lireate)
-- fix cycle 1: fips.ru / rospatent.gov.ru (403/SSL в CI) → licensingrussia.ru (реестры), WIPO Brand Database (TMview), base.garant.ru (сводка по сервисам/тарифам)
-- официальные URL fips.ru остаются в plain text и research-notes
+- site-base: `LIREATE_PUBLIC_SITE_URL`
+- fix cycle 2: fips.ru href (403 в CI) → licensingrussia.ru (реестры), base.garant.ru (тарифы); канон fips.ru в plain text
 
 ## AI-slop scan
 
 - cliches: 0
-- over-long sentences (>25 words): 1 (таблица — допустимо)
+- over-long sentences (>25 words): 2 (таблица — допустимо)
 - Flesch RU: 51.2 (Standard)
 - see `slop-detector-report.json`
 
@@ -82,12 +81,11 @@ verdict: PASS
 
 ## Fix cycle
 
-- cycle 1: GEO QA заменил 3 внешних href для link-verify pass (смысл сохранён; канон fips.ru в тексте)
-- cycle 2: не требовался
+- cycle 1 (16.10): замена внешних href для link-verify
+- cycle 2 (17.10): Writer вернул fips.ru в таблицу + `<figure>` для inline — GEO QA: `<p><img>`, рабочие href как в cycle 1
 
 ## Optional (не blocker)
 
-- добавить `<img>` с alt по контракту
 - href на [приказ № 197](https://pravo.ppt.ru/prikaz/rospatent/n-197-23382) в секции сходства
 - после publish: повторить link-verify с `--site-base` на финальный canonical
 
