@@ -1,0 +1,101 @@
+{
+  "article": "memory/blog/articles/L03-kak-zaregistrirovat-brend-na-ozon-i-wildberries/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "warning",
+  "total_extracted_facts": 13,
+  "verified_facts_count": 6,
+  "unverified_facts_count": 7,
+  "facts": [
+    {
+      "fact": "2 р.",
+      "kind": "price_or_currency",
+      "context": "120×50 px , JPG . Статус в \"Заявки\": модерация до 2 р.д. , затем одобрение или отказ. Workflow WB: прове",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "3 р.",
+      "kind": "price_or_currency",
+      "context": "тегории, логотип или фото с брендом. Модерация до 3 р.д. Логотип: JPEG/PNG , от 500×500 px , до 5 МБ ; т",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 р.",
+      "kind": "price_or_currency",
+      "context": "ство ТЗ: Ozon - \"Документы на бренды\" (проверка 5-10 р.д. ); WB - \"Стать представителем\" + копия свидетел",
+      "verified": true,
+      "reason": "Numerical value '10' matched in fact-bank context"
+    },
+    {
+      "fact": "30 р.",
+      "kind": "price_or_currency",
+      "context": "тавителем\" + копия свидетельства или лицензия (до 30 р.д. ). Незавершённая заявка в Роспатенте статус пре",
+      "verified": true,
+      "reason": "Numerical value '30' matched in fact-bank context"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "ь документы для \"Оригинала\" и сверки с реестром в 2026-2027 году. TL;DR / Быстрый инсайт: \"Бренд в ЛК\" -",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2027",
+      "kind": "date_or_year",
+      "context": "ументы для \"Оригинала\" и сверки с реестром в 2026-2027 году. TL;DR / Быстрый инсайт: \"Бренд в ЛК\" - это з",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2027 года",
+      "kind": "date_or_year",
+      "context": "нным знаком могут скрыть. Что изменится с 1 марта 2027 года для брендов на маркетплейсах? Вступает сверка пра",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "180 дней",
+      "kind": "metric_or_duration",
+      "context": "Старые карточки проверяют в переходный период до 180 дней . Схема сроков: модерация бренда в ЛК (часы-3 дня",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "дное обозначение для однородных товаров (п. 6 ст. 1483 ГК РФ ). Сценарий Wildberries Ozon Нужен ли ТЗ в Р",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "100",
+      "kind": "large_number",
+      "context": "ать бренд\" или \"Добавить\" в карточке. Логотип: до 100 Кб , 120×50 px , JPG . Статус в \"Заявки\": модераци",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "500",
+      "kind": "large_number",
+      "context": "м. Модерация до 3 р.д. Логотип: JPEG/PNG , от 500×500 px , до 5 МБ ; текст на картинке = название бренда",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "180",
+      "kind": "large_number",
+      "context": "Старые карточки проверяют в переходный период до 180 дней . Схема сроков: модерация бренда в ЛК (часы-3",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "821",
+      "kind": "large_number",
+      "context": "ая платформа Роспатента и календарь 289-ФЗ / ПП № 821 сверены с официальными инструкциями и КонсультантП",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    }
+  ]
+}

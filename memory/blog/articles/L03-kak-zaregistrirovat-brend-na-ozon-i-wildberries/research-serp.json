@@ -1,0 +1,533 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-10-18",
+    "today_ru": "18.10.2026",
+    "year": 2026,
+    "month": 10,
+    "month_name_ru": "октябрь",
+    "weekday_ru": "воскресенье",
+    "freshness_window": {
+      "prefer_sources_after": "2026-07-20",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-10-18 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L03",
+    "priority": "P1",
+    "slug": "kak-zaregistrirovat-brend-na-ozon-i-wildberries",
+    "h1": "Как зарегистрировать бренд на Ozon и Wildberries: нужен ли товарный знак",
+    "primary_query": "как проверить есть ли такой бренд на вайлдберриз",
+    "secondary_queries": [
+      "как добавить бренд на озон",
+      "как зарегистрировать свой бренд на озон селлер",
+      "бренд на озон",
+      "как создать бренд на озоне",
+      "как зарегистрировать бренд на озон"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "как проверить есть ли такой бренд на вайлдберриз 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как проверить занят ли бренд на вайлдберриз",
+          "url": "https://mksegment.ru/b/kak-proverit-zanyat-li-brend-na-vajldberriz",
+          "snippet": ""
+        },
+        {
+          "title": "Wildberries",
+          "url": "https://www.wildberries.ru/*/",
+          "snippet": "Но как узнать, свободен ли бренд на Вайлдберриз? В поиске свободного бренда на Вайлдберриз поможет специальная утилита, доступная на официальном сайте этой платформы."
+        },
+        {
+          "title": "Как определить, свободен ли бренд для регистрации на платформе Вайлдберриз",
+          "url": "https://turniketpro.ru/a/kak-opredelit-svoboden-li-brend-dlya-registracii-na-platforme-vajldberriz",
+          "snippet": "Wildberries"
+        },
+        {
+          "title": "Как проверить занят ли бренд на вайлдберриз",
+          "url": "https://peredelka38.ru/d/kak-proverit-zanyat-li-brend-na-vajldberriz",
+          "snippet": "Если бренд найден, вы увидите его логотип и название на странице результатов поиска. Если бренд не найден, система также сообщит об этом."
+        },
+        {
+          "title": "Как узнать доступность бренда на популярной интернет-площадке ...",
+          "url": "https://peredelka38.ru/b/kak-uznat-dostupnost-brenda-na-populyarnoj-internet-ploshchadke-wildberries-prostoj-i-ehffektivnyj-sposob",
+          "snippet": "Ввести предполагаемое название бренда в поле поиска и нажать кнопку «Поиск». Просмотреть результаты поиска и проверить, есть ли уже бренд с таким же или похожим названием."
+        },
+        {
+          "title": "Wildberries и Ozon начнут сверять бренды с реестром Роспатента с 1 ...",
+          "url": "https://mercora.ru/news/wildberries-i-ozon-nachnut-sveryat-brendy-2026-07-08",
+          "snippet": "В данной статье мы рассмотрим, как узнать, свободен ли бренд на Вайлдберриз — одной из самых популярных онлайн-площадок для продажи товаров."
+        }
+      ],
+      "searched_at": "2026-10-18"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "как проверить есть ли такой бренд на вайлдберриз октябрь 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как узнать, является ли бренд уникальным на платформе",
+          "url": "https://mksegment.ru/b/kak-uznat-yavlyaetsya-li-brend-unikalnym-na-platforme-vajldberriz",
+          "snippet": ""
+        },
+        {
+          "title": "Как проверить товарный знак для Wildberries перед запуском бренда",
+          "url": "https://prilan.ru/blog/trademark/kak-proverit-tovarnyy-znak-dlya-wildberries-pered-zapuskom-brenda/",
+          "snippet": "Для этого можно воспользоваться поисковой системой Wildberries и проверить русскоязычное название бренда. Если никаких совпадений не найдено, это уже хороший знак."
+        },
+        {
+          "title": "5 шагов, чтобы проверить бренд для Wildberries",
+          "url": "https://onlinepatent.ru/journal/5-shagov-chtobi-proverit-brend-dlya-wildberries/",
+          "snippet": "Как проверить бренд для Wildberries перед запуском продаж. Проверка товарного знака, названия и логотипа, поиск похожих обозначений, выбор МКТУ и оценка рисков регистрации."
+        },
+        {
+          "title": "Анализ бренда на Вайлдберриз с примерами",
+          "url": "https://www.likestats.io/blog/analiz-brenda-na-wildberries",
+          "snippet": "Как проверить обозначение для WB? 1 шаг — в поисковой строке маркетплейса вводите придуманное вами наименование. Если в результатах есть что-то схожее (для анализа используйте также пункты «Все фильтры», «Бренд»), то, пожалуй, следует предложить что-то иное."
+        },
+        {
+          "title": "Как проверить занят ли бренд на вайлдберриз",
+          "url": "https://mksegment.ru/b/kak-proverit-zanyat-li-brend-na-vajldberriz",
+          "snippet": "Для этого нужно понять, пользуется ли спросом продукция данной марки на маркетплейсе. У вас уже есть собственный бренд, но пока он не представлен на Вайлдберриз."
+        },
+        {
+          "title": "Как добавить бренд на Wildberries: пошаговая инструкция",
+          "url": "https://selsup.ru/blog/kak-dobavit-brend-na-wildberries/",
+          "snippet": "Но как узнать, свободен ли бренд на Вайлдберриз? В поиске свободного бренда на Вайлдберриз поможет специальная утилита, доступная на официальном сайте этой платформы."
+        }
+      ],
+      "searched_at": "2026-10-18"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "как проверить есть ли такой бренд на вайлдберриз новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как узнать, является ли бренд уникальным на платформе",
+          "url": "https://mksegment.ru/b/kak-uznat-yavlyaetsya-li-brend-unikalnym-na-platforme-vajldberriz",
+          "snippet": ""
+        },
+        {
+          "title": "5 шагов, чтобы проверить бренд для Wildberries",
+          "url": "https://onlinepatent.ru/journal/5-shagov-chtobi-proverit-brend-dlya-wildberries/",
+          "snippet": "Для этого можно воспользоваться поисковой системой Wildberries и проверить русскоязычное название бренда. Если никаких совпадений не найдено, это уже хороший знак."
+        },
+        {
+          "title": "Как проверить товарный знак для Wildberries перед запуском бренда",
+          "url": "https://prilan.ru/blog/trademark/kak-proverit-tovarnyy-znak-dlya-wildberries-pered-zapuskom-brenda/",
+          "snippet": "Как проверить обозначение для WB? 1 шаг — в поисковой строке маркетплейса вводите придуманное вами наименование. Если в результатах есть что-то схожее (для анализа используйте также пункты «Все фильтры», «Бренд»), то, пожалуй, следует предложить что-то иное."
+        },
+        {
+          "title": "Как проверить занят ли бренд на вайлдберриз",
+          "url": "https://mksegment.ru/b/kak-proverit-zanyat-li-brend-na-vajldberriz",
+          "snippet": "Как проверить бренд для Wildberries перед запуском продаж. Проверка товарного знака, названия и логотипа, поиск похожих обозначений, выбор МКТУ и оценка рисков регистрации."
+        },
+        {
+          "title": "Как получить доступ к новой аналитике Wildberries для бренда",
+          "url": "https://a3-agency.ru/marketplace/blog/r4pllgc881-kak-poluchit-dostup-k-novoi-analitike-wi",
+          "snippet": "Но как узнать, свободен ли бренд на Вайлдберриз? В поиске свободного бренда на Вайлдберриз поможет специальная утилита, доступная на официальном сайте этой платформы."
+        },
+        {
+          "title": "Как Проверить, Нет Ли Вашего Бренда На Wb И Свободен Ли Он Для ...",
+          "url": "https://setka.ru/posts/0196304f-443e-42a4-b440-8931e388c53e",
+          "snippet": "Как получить доступ к расширенной аналитике Wildberries для бренда: кому доступна, какие условия нужны, какие отчёты открываются и как использовать их в решениях."
+        }
+      ],
+      "searched_at": "2026-10-18"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "как добавить бренд на озон 2026",
+      "purpose": "вторичный запрос: как добавить бренд на озон",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как зарегистрировать бренд на Ozon: необходимые документы и пошаговая ...",
+          "url": "https://seller.ozon.ru/media/boost/kak-vyvesti-svoj-brend-na-marketplejs/",
+          "snippet": ""
+        },
+        {
+          "title": "Как добавить бренд на Озон: пошаговая инструкция 2026",
+          "url": "https://obozone.vercel.app/articles/b/br/brend-na-ozon-kak-dobavit.html",
+          "snippet": "Узнайте, как зарегистрировать свой бренд на Ozon и какие документы для этого необходимы."
+        },
+        {
+          "title": "Как добавить бренд на Озон Селлер в 2026: пошаговая инструкция",
+          "url": "https://obozone.vercel.app/articles/k/ka/kak-dobavit-svoj-brend-na-ozon-seller.html",
+          "snippet": "В этой статье мы разберём актуальные требования Ozon к брендам в 2026 году, подробно опишем каждый этап регистрации — от подготовки документов до решения типичных проблем."
+        },
+        {
+          "title": "Бренд и логотип: как добавить — База знаний Ozon Seller Edu",
+          "url": "https://seller-edu.ozon.ru/work-with-goods/trebovaniya-k-kartochkam-tovarov/characteristics/brendy",
+          "snippet": "Регистрация собственного бренда на Ozon — ключевой шаг для продавцов, которые хотят выделиться среди конкурентов, защитить свой товарный знак и получить доступ к premium-инструментам ..."
+        },
+        {
+          "title": "Как добавить бренд на Озон? - Изибренд",
+          "url": "https://ezybrand.ru/blog/kak-dobavit-brend-na-ozon/",
+          "snippet": "Как добавить бренд и логотип Seller. Требования к размеру логотипа и настройка характеристик бренда — База знаний Ozon Seller Edu."
+        },
+        {
+          "title": "Регистрация бренда на Ozon: пошаговая инструкция",
+          "url": "https://mpmgr.ru/blog/business/registraciya-brenda-ozon-instruktsiya",
+          "snippet": "В этой статье вы получите ответы на все вопросы: как добавить бренд на Озон, нужна ли его регистрация, правила оформления и какие документы может потребовать площадка."
+        }
+      ],
+      "searched_at": "2026-10-18"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "как зарегистрировать свой бренд на озон селлер 2026",
+      "purpose": "вторичный запрос: как зарегистрировать свой бренд на озон селлер",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как зарегистрировать бренд на Ozon: необходимые документы и пошаговая ...",
+          "url": "https://seller.ozon.ru/media/boost/kak-vyvesti-svoj-brend-na-marketplejs/",
+          "snippet": ""
+        },
+        {
+          "title": "Как зарегистрироваться на Ozon",
+          "url": "https://seller.ozon.ru/media/beginners/kak-nachat-prodavat-na-ozon/",
+          "snippet": "Узнайте, как зарегистрировать свой бренд на Ozon и какие документы для этого необходимы."
+        },
+        {
+          "title": "Как добавить свой бренд на Озон Селлер: полная инструкция 2026",
+          "url": "https://obozone.vercel.app/articles/k/ka/kak-dobavit-svoj-brend-na-ozon-seller.html",
+          "snippet": "Рассказываем вкратце, как начать продавать на Ozon и что для этого нужно. Спойлер: ничего сложного нет."
+        },
+        {
+          "title": "Как создать бренд на Ozon с нуля: пошаговая инструкция 2026",
+          "url": "https://obozone.vercel.app/articles/k/ka/kak-sdelat-svoj-brend-na-ozon.html",
+          "snippet": "Регистрация собственного бренда на Ozon — ключевой шаг для продавцов, которые хотят выделиться среди конкурентов, защитить свой товарный знак и получить доступ к premium-инструментам ..."
+        },
+        {
+          "title": "Регистрация на Ozon Seller в 2026: пошаговая инструкция для селлеров",
+          "url": "https://uniseller.io/blog/registraciya-na-ozon-seller-2026/",
+          "snippet": "Полное руководство по регистрации и продвижению собственного бренда на маркетплейсе Ozon: от подготовки документов до стратегий продаж. Актуальные требования 2026 года."
+        },
+        {
+          "title": "Как начать продавать на Ozon в 2026 году: пошаговая инструкция",
+          "url": "https://www.moysklad.ru/poleznoe/marketplejsy/kak-nachat-prodavat-na-ozon-poshagovaya-instruktsiya-dlya-sellerov/",
+          "snippet": "В 2026 году зарегистрироваться на Ozon могут ИП, ООО и самозанятые — граждане РФ, Беларуси, Казахстана, Армении, Киргизии и других стран ЕАЭС. Для каждого типа — свой набор документов, доступные категории и налоговые сценарии."
+        }
+      ],
+      "searched_at": "2026-10-18"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "бренд на озон 2026",
+      "purpose": "вторичный запрос: бренд на озон",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Бренды на Озон: что отличает сильных в 2026",
+          "url": "https://reelsiq.ru/blog/brendy-na-ozon/",
+          "snippet": ""
+        },
+        {
+          "title": "Популярные бренды на Ozon: список и статистика 2026",
+          "url": "https://obozone.vercel.app/articles/k/ka/kakie-populyarnye-brendy-est-na-ozon.html",
+          "snippet": "Разбираем, что объединяет марки, которые покупатель запоминает и к которым возвращается. Бренды на Озон в 2026 году делятся на две категории, и разница между ними видна с первого экрана."
+        },
+        {
+          "title": "Какие бренды есть на Озоне: полный список марок в 2026 году",
+          "url": "https://obozone.vercel.app/articles/k/ka/kakie-brendy-est-na-ozone.html",
+          "snippet": "В этой статье мы разберем, какие именно компании закрепились в топе, как найти их официальные точки и почему это критически важно для качества вашей покупки."
+        },
+        {
+          "title": "Список Всех Брендов По Алфавиту На Ozon",
+          "url": "https://www.ozon.ru/brand/",
+          "snippet": "Подробный обзор брендов на Ozon. Список официальных магазинов, топ производителей электроники, одежды и косметики. Как проверить продавца и не купить подделку."
+        },
+        {
+          "title": "Брендинг и название магазина на маркетплейсах 2026 — как придумать ...",
+          "url": "https://totalcrm.ru/blog/2026/01/brending-na-marketplejsah-v-2026-nazvanie-magazina-sozdanie-brenda-i-oformlenie-na-ozonwildberries-%E2%80%94-maksimalno-praktichnoe-rukovodstvo_120",
+          "snippet": "Каталог новых и популярных брендов одежды и обуви, электроники и бытовой техники, товаров для дома, детских товаров и других категорий на OZON"
+        },
+        {
+          "title": "Список Всех Брендов По Алфавиту На Ozon",
+          "url": "https://www.ozon.ru/brand/DATA/",
+          "snippet": "Практическое руководство 2026: как придумать название магазина для маркетплейса, как назвать магазин на Ozon и WB, как создать и зарегистрировать бренд, добавить логотип и избежать юридических ..."
+        }
+      ],
+      "searched_at": "2026-10-18"
+    },
+    {
+      "query_id": "secondary_4",
+      "query": "как создать бренд на озоне 2026",
+      "purpose": "вторичный запрос: как создать бренд на озоне",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как создать бренд на Ozon с нуля: пошаговое руководство 2026",
+          "url": "https://obozone.vercel.app/articles/k/ka/kak-sozdat-brend-na-ozon.html",
+          "snippet": ""
+        },
+        {
+          "title": "Как создать бренд на Ozon с нуля: пошаговая инструкция 2026",
+          "url": "https://obozone.vercel.app/articles/k/ka/kak-sdelat-svoj-brend-na-ozon.html",
+          "snippet": "В этой статье разберём, как с нуля создать бренд на Ozon в 2026 году — от юридических нюансов до маркетинговых фишек, которые реально работают."
+        },
+        {
+          "title": "Как зарегистрировать бренд на Ozon: необходимые документы и пошаговая ...",
+          "url": "https://seller.ozon.ru/media/boost/kak-vyvesti-svoj-brend-na-marketplejs/",
+          "snippet": "Эта статья поможет разобраться, как зарегистрировать бренд на Ozon с нуля, избежать типичных ошибок и выстроить систему продаж, которая будет приносить стабильный доход."
+        },
+        {
+          "title": "Как зарегистрироваться на Ozon",
+          "url": "https://seller.ozon.ru/media/beginners/kak-nachat-prodavat-na-ozon/",
+          "snippet": "Узнайте, как зарегистрировать свой бренд на Ozon и какие документы для этого необходимы."
+        },
+        {
+          "title": "Регистрация бренда на Ozon: пошаговая инструкция",
+          "url": "https://mpmgr.ru/blog/business/registraciya-brenda-ozon-instruktsiya",
+          "snippet": "Рассказываем вкратце, как начать продавать на Ozon и что для этого нужно. Спойлер: ничего сложного нет."
+        },
+        {
+          "title": "Как зарегистрировать бренд на Ozon: документы и сроки",
+          "url": "https://mpmgr.ru/blog/business/registraciya-brenda-ozon-dokumenty",
+          "snippet": "Регистрация бренда на Ozon: требования к названию и логотипу, необходимые документы, пошаговая инструкция по регистрации и получение статуса представителя."
+        }
+      ],
+      "searched_at": "2026-10-18"
+    },
+    {
+      "query_id": "secondary_5",
+      "query": "как зарегистрировать бренд на озон 2026",
+      "purpose": "вторичный запрос: как зарегистрировать бренд на озон",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как зарегистрировать бренд на Ozon: необходимые документы и пошаговая ...",
+          "url": "https://seller.ozon.ru/media/boost/kak-vyvesti-svoj-brend-na-marketplejs/",
+          "snippet": ""
+        },
+        {
+          "title": "Как зарегистрировать бренд для продаж на Ozon",
+          "url": "https://seller.ozon.ru/media/video/kak-zaregistrirovat-brend-dlya-prodazh-na-ozon/",
+          "snippet": "Узнайте, как зарегистрировать свой бренд на Ozon и какие документы для этого необходимы."
+        },
+        {
+          "title": "Как зарегистрировать бренд на Ozon в 2026: пошаговая инструкция",
+          "url": "https://obozone.vercel.app/articles/k/ka/kak-zaregistrirovat-brend-na-ozone.html",
+          "snippet": "В этом видео продавец на Ozon рассказывает, как зарегистрировать бренд и начать продавать свои товары на маркетплейсе. Видеоинструкция, личный опыт и полезные советы от предпринимателя."
+        },
+        {
+          "title": "Регистрация бренда на Ozon: пошаговая инструкция 2026",
+          "url": "https://obozone.vercel.app/articles/k/ka/kak-zaregistrirovat-svoj-brend-na-ozone.html",
+          "snippet": "Подробное руководство по регистрации бренда на Ozon для продавцов: требования, документы, сроки и стоимость. Узнайте, как защитить свой товарный знак и избежать блокировок."
+        },
+        {
+          "title": "Регистрация бренда на Ozon — пошаговая инструкция 2026",
+          "url": "https://marqatm.ru/analytics/registraciya-brenda-ozon-2026.html",
+          "snippet": "Как зарегистрировать свой бренд на Озоне: требования, документы, стоимость и сроки. Пошаговая инструкция для продавцов с советами экспертов"
+        },
+        {
+          "title": "Как зарегистрировать бренд на Ozon: документы и сроки",
+          "url": "https://mpmgr.ru/blog/business/registraciya-brenda-ozon-dokumenty",
+          "snippet": "Регистрация бренда на Ozon — двухэтапный процесс: сначала товарный знак регистрируется в Роспатенте (12-18 месяцев, от 31 200 рублей госпошлин), затем правообладатель проходит верификацию на ..."
+        }
+      ],
+      "searched_at": "2026-10-18"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как зарегистрировать бренд на Ozon и Wildberries: нужен ли товарный знак 2026",
+      "purpose": "SERP по H1",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-10-18"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://mksegment.ru/b/kak-proverit-zanyat-li-brend-na-vajldberriz",
+      "title": "Как проверить занят ли бренд на вайлдберриз",
+      "from_query": "как проверить есть ли такой бренд на вайлдберриз 2026"
+    },
+    {
+      "url": "https://www.wildberries.ru/*/",
+      "title": "Wildberries",
+      "from_query": "как проверить есть ли такой бренд на вайлдберриз 2026"
+    },
+    {
+      "url": "https://turniketpro.ru/a/kak-opredelit-svoboden-li-brend-dlya-registracii-na-platforme-vajldberriz",
+      "title": "Как определить, свободен ли бренд для регистрации на платформе Вайлдберриз",
+      "from_query": "как проверить есть ли такой бренд на вайлдберриз 2026"
+    },
+    {
+      "url": "https://peredelka38.ru/d/kak-proverit-zanyat-li-brend-na-vajldberriz",
+      "title": "Как проверить занят ли бренд на вайлдберриз",
+      "from_query": "как проверить есть ли такой бренд на вайлдберриз 2026"
+    },
+    {
+      "url": "https://peredelka38.ru/b/kak-uznat-dostupnost-brenda-na-populyarnoj-internet-ploshchadke-wildberries-prostoj-i-ehffektivnyj-sposob",
+      "title": "Как узнать доступность бренда на популярной интернет-площадке ...",
+      "from_query": "как проверить есть ли такой бренд на вайлдберриз 2026"
+    },
+    {
+      "url": "https://mercora.ru/news/wildberries-i-ozon-nachnut-sveryat-brendy-2026-07-08",
+      "title": "Wildberries и Ozon начнут сверять бренды с реестром Роспатента с 1 ...",
+      "from_query": "как проверить есть ли такой бренд на вайлдберриз 2026"
+    },
+    {
+      "url": "https://mksegment.ru/b/kak-uznat-yavlyaetsya-li-brend-unikalnym-na-platforme-vajldberriz",
+      "title": "Как узнать, является ли бренд уникальным на платформе",
+      "from_query": "как проверить есть ли такой бренд на вайлдберриз октябрь 2026"
+    },
+    {
+      "url": "https://prilan.ru/blog/trademark/kak-proverit-tovarnyy-znak-dlya-wildberries-pered-zapuskom-brenda/",
+      "title": "Как проверить товарный знак для Wildberries перед запуском бренда",
+      "from_query": "как проверить есть ли такой бренд на вайлдберриз октябрь 2026"
+    },
+    {
+      "url": "https://onlinepatent.ru/journal/5-shagov-chtobi-proverit-brend-dlya-wildberries/",
+      "title": "5 шагов, чтобы проверить бренд для Wildberries",
+      "from_query": "как проверить есть ли такой бренд на вайлдберриз октябрь 2026"
+    },
+    {
+      "url": "https://www.likestats.io/blog/analiz-brenda-na-wildberries",
+      "title": "Анализ бренда на Вайлдберриз с примерами",
+      "from_query": "как проверить есть ли такой бренд на вайлдберриз октябрь 2026"
+    },
+    {
+      "url": "https://selsup.ru/blog/kak-dobavit-brend-na-wildberries/",
+      "title": "Как добавить бренд на Wildberries: пошаговая инструкция",
+      "from_query": "как проверить есть ли такой бренд на вайлдберриз октябрь 2026"
+    },
+    {
+      "url": "https://a3-agency.ru/marketplace/blog/r4pllgc881-kak-poluchit-dostup-k-novoi-analitike-wi",
+      "title": "Как получить доступ к новой аналитике Wildberries для бренда",
+      "from_query": "как проверить есть ли такой бренд на вайлдберриз новости 2026"
+    },
+    {
+      "url": "https://setka.ru/posts/0196304f-443e-42a4-b440-8931e388c53e",
+      "title": "Как Проверить, Нет Ли Вашего Бренда На Wb И Свободен Ли Он Для ...",
+      "from_query": "как проверить есть ли такой бренд на вайлдберриз новости 2026"
+    },
+    {
+      "url": "https://seller.ozon.ru/media/boost/kak-vyvesti-svoj-brend-na-marketplejs/",
+      "title": "Как зарегистрировать бренд на Ozon: необходимые документы и пошаговая ...",
+      "from_query": "как добавить бренд на озон 2026"
+    },
+    {
+      "url": "https://obozone.vercel.app/articles/b/br/brend-na-ozon-kak-dobavit.html",
+      "title": "Как добавить бренд на Озон: пошаговая инструкция 2026",
+      "from_query": "как добавить бренд на озон 2026"
+    },
+    {
+      "url": "https://obozone.vercel.app/articles/k/ka/kak-dobavit-svoj-brend-na-ozon-seller.html",
+      "title": "Как добавить бренд на Озон Селлер в 2026: пошаговая инструкция",
+      "from_query": "как добавить бренд на озон 2026"
+    },
+    {
+      "url": "https://seller-edu.ozon.ru/work-with-goods/trebovaniya-k-kartochkam-tovarov/characteristics/brendy",
+      "title": "Бренд и логотип: как добавить — База знаний Ozon Seller Edu",
+      "from_query": "как добавить бренд на озон 2026"
+    },
+    {
+      "url": "https://ezybrand.ru/blog/kak-dobavit-brend-na-ozon/",
+      "title": "Как добавить бренд на Озон? - Изибренд",
+      "from_query": "как добавить бренд на озон 2026"
+    },
+    {
+      "url": "https://mpmgr.ru/blog/business/registraciya-brenda-ozon-instruktsiya",
+      "title": "Регистрация бренда на Ozon: пошаговая инструкция",
+      "from_query": "как добавить бренд на озон 2026"
+    },
+    {
+      "url": "https://seller.ozon.ru/media/beginners/kak-nachat-prodavat-na-ozon/",
+      "title": "Как зарегистрироваться на Ozon",
+      "from_query": "как зарегистрировать свой бренд на озон селлер 2026"
+    },
+    {
+      "url": "https://obozone.vercel.app/articles/k/ka/kak-sdelat-svoj-brend-na-ozon.html",
+      "title": "Как создать бренд на Ozon с нуля: пошаговая инструкция 2026",
+      "from_query": "как зарегистрировать свой бренд на озон селлер 2026"
+    },
+    {
+      "url": "https://uniseller.io/blog/registraciya-na-ozon-seller-2026/",
+      "title": "Регистрация на Ozon Seller в 2026: пошаговая инструкция для селлеров",
+      "from_query": "как зарегистрировать свой бренд на озон селлер 2026"
+    },
+    {
+      "url": "https://www.moysklad.ru/poleznoe/marketplejsy/kak-nachat-prodavat-na-ozon-poshagovaya-instruktsiya-dlya-sellerov/",
+      "title": "Как начать продавать на Ozon в 2026 году: пошаговая инструкция",
+      "from_query": "как зарегистрировать свой бренд на озон селлер 2026"
+    },
+    {
+      "url": "https://reelsiq.ru/blog/brendy-na-ozon/",
+      "title": "Бренды на Озон: что отличает сильных в 2026",
+      "from_query": "бренд на озон 2026"
+    },
+    {
+      "url": "https://obozone.vercel.app/articles/k/ka/kakie-populyarnye-brendy-est-na-ozon.html",
+      "title": "Популярные бренды на Ozon: список и статистика 2026",
+      "from_query": "бренд на озон 2026"
+    },
+    {
+      "url": "https://obozone.vercel.app/articles/k/ka/kakie-brendy-est-na-ozone.html",
+      "title": "Какие бренды есть на Озоне: полный список марок в 2026 году",
+      "from_query": "бренд на озон 2026"
+    },
+    {
+      "url": "https://www.ozon.ru/brand/",
+      "title": "Список Всех Брендов По Алфавиту На Ozon",
+      "from_query": "бренд на озон 2026"
+    },
+    {
+      "url": "https://totalcrm.ru/blog/2026/01/brending-na-marketplejsah-v-2026-nazvanie-magazina-sozdanie-brenda-i-oformlenie-na-ozonwildberries-%E2%80%94-maksimalno-praktichnoe-rukovodstvo_120",
+      "title": "Брендинг и название магазина на маркетплейсах 2026 — как придумать ...",
+      "from_query": "бренд на озон 2026"
+    },
+    {
+      "url": "https://www.ozon.ru/brand/DATA/",
+      "title": "Список Всех Брендов По Алфавиту На Ozon",
+      "from_query": "бренд на озон 2026"
+    },
+    {
+      "url": "https://obozone.vercel.app/articles/k/ka/kak-sozdat-brend-na-ozon.html",
+      "title": "Как создать бренд на Ozon с нуля: пошаговое руководство 2026",
+      "from_query": "как создать бренд на озоне 2026"
+    },
+    {
+      "url": "https://mpmgr.ru/blog/business/registraciya-brenda-ozon-dokumenty",
+      "title": "Как зарегистрировать бренд на Ozon: документы и сроки",
+      "from_query": "как создать бренд на озоне 2026"
+    },
+    {
+      "url": "https://seller.ozon.ru/media/video/kak-zaregistrirovat-brend-dlya-prodazh-na-ozon/",
+      "title": "Как зарегистрировать бренд для продаж на Ozon",
+      "from_query": "как зарегистрировать бренд на озон 2026"
+    },
+    {
+      "url": "https://obozone.vercel.app/articles/k/ka/kak-zaregistrirovat-brend-na-ozone.html",
+      "title": "Как зарегистрировать бренд на Ozon в 2026: пошаговая инструкция",
+      "from_query": "как зарегистрировать бренд на озон 2026"
+    },
+    {
+      "url": "https://obozone.vercel.app/articles/k/ka/kak-zaregistrirovat-svoj-brend-na-ozone.html",
+      "title": "Регистрация бренда на Ozon: пошаговая инструкция 2026",
+      "from_query": "как зарегистрировать бренд на озон 2026"
+    },
+    {
+      "url": "https://marqatm.ru/analytics/registraciya-brenda-ozon-2026.html",
+      "title": "Регистрация бренда на Ozon — пошаговая инструкция 2026",
+      "from_query": "как зарегистрировать бренд на озон 2026"
+    }
+  ]
+}
