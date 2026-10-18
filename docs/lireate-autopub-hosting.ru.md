@@ -21,6 +21,20 @@ curl -fsSL "https://raw.githubusercontent.com/devham13/lireate-news/${LIREATE_RE
 
 ### Обновить код
 
+**Важно:** команды `git` выполняйте только внутри `$HOME/lireate-autopub/repo` (из `~` будет `fatal: не найден git репозиторий`). Сначала:
+
+```bash
+export LIREATE_AUTOPUB_HOME="$HOME/lireate-autopub"
+export LIREATE_ENV_FILE="$LIREATE_AUTOPUB_HOME/.env"
+cd "$LIREATE_AUTOPUB_HOME/repo"
+```
+
+Или одной командой из любого каталога (после `git pull` хотя бы раз вручную):
+
+```bash
+bash "$HOME/lireate-autopub/repo/scripts/lireate_hosting_operator.sh"
+```
+
 Клон с feature-ветки часто **не имеет локальной `main`** — тогда `git checkout main` даёт `pathspec 'main' did not match`. Используйте:
 
 ```bash
