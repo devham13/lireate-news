@@ -15,7 +15,7 @@ on:
 
 jobs:
   compile-36:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -40,6 +40,8 @@ jobs:
           python -m py_compile scripts/lireate_news_format.py
           python -m py_compile scripts/lireate_hosting_images.py
           python -m py_compile scripts/lireate_hosting_webmaster_export.py
+          python -m py_compile scripts/lireate_cover_text_overlay.py
+          python -m py_compile scripts/lireate_topic_queue.py
       - name: PHP syntax check
         run: |
           php -l scripts/lireate_db_publish.php
