@@ -1,6 +1,6 @@
 {
-  "pipeline": "i2i_base + lireate_cover_text_overlay.py",
-  "base": "cover/cover-base-notext.jpg",
-  "note": "GenerateImage without text; mask UI; Cyrillic via PIL; cover.png 860x400",
-  "artifact": "/opt/cursor/artifacts/l01-cover-final.png"
+  "url": "cursor-GenerateImage-i2i:/opt/cursor/artifacts/assets/l01-canvas-quad.jpg",
+  "pipeline": "quad_canvas_1x_mcp_fallback_generate_image",
+  "reference_url_hosted": "https://lyratetrademark.ru/wp-content/uploads/2025/12/photo_2025-12-24_12-17-06.jpg",
+  "note": "user-mcp-kv gpt-image-2 unavailable in Cloud Agent; ONE GenerateImage i2i with blog-hero-reference.png"
 }
