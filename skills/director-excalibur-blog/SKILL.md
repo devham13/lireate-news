@@ -173,6 +173,16 @@ Task(excalibur-blog-publish)
 
 Fallback (только если пользователь явно разрешил): `Task(generalPurpose)` с полным текстом agent.md + SKILL.md **одной** роли.
 
+### Шаг 7 — Lireate: PR + auto-merge (директор)
+
+Для `site: lireate` после Indexer и PASS проверок (lint, SEO, GEO QA, cover с PIL-оверлеем):
+
+1. `status: written` в карточке темы в том же PR.
+2. Готовый (не draft) PR в `main`; при зелёном CI — **merge агентом** без ручного одобрения.
+3. FAIL любой проверки — PR не мержить; CRON не публикует.
+
+Live INSERT — только CRON REG.RU после merge в `main`.
+
 ## Fragment финала
 
 ```text
@@ -181,4 +191,5 @@ topic_id:
 article_dir:
 qa:
 publish:
+merge_sha: (Lireate)
 ```

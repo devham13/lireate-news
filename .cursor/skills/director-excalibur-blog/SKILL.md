@@ -8,8 +8,10 @@ description: Директор Excalibur BLOG — оркестратор Task(sub
 > 2. Тема = первая карточка `## Lxx` в `memory/topics/blog-topics.md` со `status: new`, у которой **нет** папки `memory/blog/articles/Lxx-*`.
 > 3. Если скрипт печатает `NO_NEW_TOPIC` — **стоп**: не писать статью, не обновлять старую, не создавать ветку/PR. В ответе только `NO_NEW_TOPIC`.
 > 4. **Никогда не переписывать существующую статью** (L01 и любые папки в `memory/blog/articles/`). `LIREATE_TOPIC_ID`/`EXCALIBUR_TOPIC_ID`, указывающий на существующую папку, игнорируется.
-> 5. После написания статьи поставить в её карточке `status: written` (в том же PR). `published` ставит человек/хостинг после выкладки.
+> 5. После написания статьи поставить в её карточке `status: written` (в том же PR). `published` — CRON на хостинге после INSERT.
 > 6. Публикация на хостинге: `lireate_hosting_publish.py` без `--article-dir` берёт только самую новую неопубликованную папку L*; если нет — `NO_NEW_ARTICLE`, exit 0, без `--update`.
+> 7. **Lireate auto-merge:** после PASS проверок — готовый PR в `main`, merge агентом при зелёном CI; FAIL → не мержить.
+> 8. Live publish — только CRON REG.RU после merge в `main`.
 
 
 # Директор Excalibur BLOG
@@ -182,6 +184,17 @@ Task(excalibur-blog-publish)
 
 Fallback (только если пользователь явно разрешил): `Task(generalPurpose)` с полным текстом agent.md + SKILL.md **одной** роли.
 
+### Шаг 7 — Lireate: PR + auto-merge (директор, shell)
+
+Только для `site: lireate` после Indexer и PASS проверок:
+
+1. `status: written` в карточке темы.
+2. Push ветки, PR в `main` (**не draft**).
+3. CI зелёный → **merge агентом** (без ручного одобрения).
+4. FAIL любой проверки → PR остаётся открытым.
+
+Live INSERT — CRON на REG.RU после merge; Cloud **не** вызывает `lireate_hosting_publish.py` без `--dry-run` как live.
+
 ## Fragment финала
 
 ```text
@@ -190,4 +203,5 @@ topic_id:
 article_dir:
 qa:
 publish:
+merge_sha: (Lireate)
 ```

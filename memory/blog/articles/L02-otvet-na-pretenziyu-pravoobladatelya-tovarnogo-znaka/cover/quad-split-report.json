@@ -1,0 +1,130 @@
+{
+  "agent": "excalibur-blog-cover-quad-split",
+  "status": "PASS",
+  "manifest": "cover/quad-manifest.json",
+  "split": {
+    "source_canvas": "memory/blog/articles/L02-otvet-na-pretenziyu-pravoobladatelya-tovarnogo-znaka/cover/canvas-quad.png",
+    "source_size_px": [
+      1280,
+      720
+    ],
+    "panel_size_px": [
+      639,
+      359
+    ],
+    "split_meta": {
+      "split_mode": "gutter_detect",
+      "h_gutter_px": {
+        "start": 359,
+        "end": 361
+      },
+      "v_gutter_px": {
+        "start": 639,
+        "end": 641
+      }
+    },
+    "output_size_px": [
+      1200,
+      675
+    ],
+    "outputs": {
+      "cover": {
+        "file": "cover/cover.png",
+        "quadrant": "top_left",
+        "box_px": {
+          "left": 0,
+          "top": 0,
+          "right": 639,
+          "bottom": 359
+        },
+        "raw_box_px": {
+          "left": 0,
+          "top": 0,
+          "right": 639,
+          "bottom": 359
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Обложка: ответ на претензию правообладателя товарного знака — срок 30 дней и чек-лист без признания вины",
+        "h2_anchor": null
+      },
+      "inline_1": {
+        "file": "cover/inline-01.png",
+        "quadrant": "top_right",
+        "box_px": {
+          "left": 641,
+          "top": 0,
+          "right": 1280,
+          "bottom": 359
+        },
+        "raw_box_px": {
+          "left": 641,
+          "top": 0,
+          "right": 1280,
+          "bottom": 359
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Таблица первых 10 дней после претензии: сроки, действия и риски бездействия",
+        "h2_anchor": "Зафиксируйте первые 10 дней: сроки, действия и риски бездействия"
+      },
+      "inline_2": {
+        "file": "cover/inline-02.png",
+        "quadrant": "bottom_left",
+        "box_px": {
+          "left": 0,
+          "top": 361,
+          "right": 639,
+          "bottom": 720
+        },
+        "raw_box_px": {
+          "left": 0,
+          "top": 361,
+          "right": 639,
+          "bottom": 720
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Схема разбора претензии: основания, доказательства и требования правообладателя",
+        "h2_anchor": "Разберите претензию: основания, доказательства и требования"
+      },
+      "inline_3": {
+        "file": "cover/inline-03.png",
+        "quadrant": "bottom_right",
+        "box_px": {
+          "left": 641,
+          "top": 361,
+          "right": 1280,
+          "bottom": 720
+        },
+        "raw_box_px": {
+          "left": 641,
+          "top": 361,
+          "right": 1280,
+          "bottom": 720
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Чеклист структуры ответа на претензию по товарному знаку и приложений",
+        "h2_anchor": "Подготовьте ответ пошагово: структура письма и приложения"
+      }
+    }
+  },
+  "html_inject": [
+    "injected inline_1 after H2 — Зафиксируйте первые 10 дней: сроки, действия и риски бездействия",
+    "injected inline_2 after H2 — Разберите претензию: основания, доказательства и требования",
+    "injected inline_3 after H2 — Подготовьте ответ пошагово: структура письма и приложения"
+  ]
+}

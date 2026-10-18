@@ -16,11 +16,10 @@ on:
 jobs:
   compile-36:
     runs-on: ubuntu-latest
+    container:
+      image: python:3.6
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.6"
       - name: Byte-compile Lireate scripts (Python 3.6)
         run: |
           python -m py_compile scripts/lireate_compat.py
@@ -39,11 +38,9 @@ jobs:
           python -m py_compile scripts/lireate_translit.py
           python -m py_compile scripts/lireate_news_format.py
           python -m py_compile scripts/lireate_hosting_images.py
-          python -m py_compile scripts/lireate_hosting_webmaster_export.py
-      - name: PHP syntax check
-        run: |
-          php -l scripts/lireate_db_publish.php
-          php -l hosting/lireate-analytics/webmaster.php
+          # webmaster_export requires Python 3.7+ (future annotations); checked in compile-38
+          python -m py_compile scripts/lireate_cover_text_overlay.py
+          python -m py_compile scripts/lireate_topic_queue.py
 
   php-legacy-lint:
     runs-on: ubuntu-latest

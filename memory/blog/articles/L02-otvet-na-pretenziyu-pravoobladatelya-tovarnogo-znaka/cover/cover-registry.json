@@ -1,0 +1,50 @@
+{
+  "topic_id": "L02",
+  "slug": "otvet-na-pretenziyu-pravoobladatelya-tovarnogo-znaka",
+  "cover_family": "brand_collage",
+  "style_preset": "digital_meme_collage_ru",
+  "pipeline": "quad_canvas_1x_mcp",
+  "file": "cover/cover.png",
+  "alt": "Обложка: ответ на претензию правообладателя товарного знака — срок 30 дней и чек-лист без признания вины",
+  "aspect_ratio": "16:9",
+  "canvas_source": "cover/canvas-quad.png",
+  "generated_at": "2026-10-18T12:36:46+00:00",
+  "assets": [
+    {
+      "role": "cover",
+      "slot": "cover",
+      "file": "cover/cover.png",
+      "alt": "Обложка: ответ на претензию правообладателя товарного знака — срок 30 дней и чек-лист без признания вины",
+      "h2_anchor": null,
+      "visual_type": "cover_meme_hero",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_1",
+      "file": "cover/inline-01.png",
+      "alt": "Таблица первых 10 дней после претензии: сроки, действия и риски бездействия",
+      "h2_anchor": "Зафиксируйте первые 10 дней: сроки, действия и риски бездействия",
+      "visual_type": "comparison_table_ui",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_2",
+      "file": "cover/inline-02.png",
+      "alt": "Схема разбора претензии: основания, доказательства и требования правообладателя",
+      "h2_anchor": "Разберите претензию: основания, доказательства и требования",
+      "visual_type": "workflow_diagram",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_3",
+      "file": "cover/inline-03.png",
+      "alt": "Чеклист структуры ответа на претензию по товарному знаку и приложений",
+      "h2_anchor": "Подготовьте ответ пошагово: структура письма и приложения",
+      "visual_type": "checklist_board",
+      "aspect_ratio": "16:9"
+    }
+  ]
+}
