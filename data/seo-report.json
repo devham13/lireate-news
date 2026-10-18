@@ -1,0 +1,2187 @@
+{
+  "generated_at": "2026-10-17T09:44:12+03:00",
+  "site": "lireate.ru",
+  "counter_id": 52622734,
+  "period": {
+    "last7": [
+      "2026-10-10",
+      "2026-10-16"
+    ],
+    "prev7": [
+      "2026-10-03",
+      "2026-10-09"
+    ],
+    "last28": [
+      "2026-09-19",
+      "2026-10-16"
+    ]
+  },
+  "totals": {
+    "last7": {
+      "visits": 323.0,
+      "users": 302.0,
+      "bounce_rate": 19.2,
+      "page_depth": 1.59,
+      "avg_duration_sec": 83.24
+    },
+    "prev7": {
+      "visits": 264.0,
+      "users": 246.0,
+      "bounce_rate": 13.64,
+      "page_depth": 1.72,
+      "avg_duration_sec": 73.91
+    },
+    "last28": {
+      "visits": 1252.0,
+      "users": 1154.0,
+      "bounce_rate": 17.01,
+      "page_depth": 1.57,
+      "avg_duration_sec": 64.98
+    },
+    "wow_delta": {
+      "visits": {
+        "abs": 59.0,
+        "pct": 22.3
+      },
+      "users": {
+        "abs": 56.0,
+        "pct": 22.8
+      },
+      "bounce_rate": {
+        "abs": 5.56,
+        "pct": 40.8
+      },
+      "page_depth": {
+        "abs": -0.13,
+        "pct": -7.6
+      },
+      "avg_duration_sec": {
+        "abs": 9.33,
+        "pct": 12.6
+      }
+    }
+  },
+  "sources": [
+    {
+      "source": "Прямые заходы",
+      "visits": 153.0,
+      "prev7_visits": 77.0,
+      "bounce_rate": 24.84,
+      "page_depth": 1.11
+    },
+    {
+      "source": "Переходы из поисковых систем",
+      "visits": 118.0,
+      "prev7_visits": 137.0,
+      "bounce_rate": 15.25,
+      "page_depth": 1.93
+    },
+    {
+      "source": "Переходы по ссылкам на сайтах",
+      "visits": 27.0,
+      "prev7_visits": 24.0,
+      "bounce_rate": 7.41,
+      "page_depth": 2.44
+    },
+    {
+      "source": "Переходы из рекомендательных систем",
+      "visits": 15.0,
+      "prev7_visits": 15.0,
+      "bounce_rate": 0.0,
+      "page_depth": 2.47
+    },
+    {
+      "source": "Внутренние переходы",
+      "visits": 8.0,
+      "prev7_visits": 6.0,
+      "bounce_rate": 25.0,
+      "page_depth": 1.25
+    },
+    {
+      "source": "Переходы из социальных сетей",
+      "visits": 1.0,
+      "prev7_visits": 2.0,
+      "bounce_rate": 100.0,
+      "page_depth": 1.0
+    }
+  ],
+  "search_engines": [
+    {
+      "engine": "Google",
+      "visits": 58.0
+    },
+    {
+      "engine": "Яндекс",
+      "visits": 56.0
+    },
+    {
+      "engine": "Mail.ru",
+      "visits": 3.0
+    },
+    {
+      "engine": "Bing",
+      "visits": 1.0
+    }
+  ],
+  "top_queries": {
+    "last7": [
+      {
+        "phrase": "лирейт",
+        "visits": 6.0,
+        "bounce_rate": 0.0,
+        "page_depth": 5.17,
+        "avg_duration_sec": 1399.5
+      },
+      {
+        "phrase": "ооо лирейт татарстан",
+        "visits": 2.0,
+        "bounce_rate": 0.0,
+        "page_depth": 3.0,
+        "avg_duration_sec": 659.5
+      },
+      {
+        "phrase": "если товарный знак не зарегистрировали а купил у другого правообладателя можно ли покупку назвать недобросовестнрй конкуренцией, если первый регистрировал знак не добросоветно ноне падавал исков, а второй подал иски",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      },
+      {
+        "phrase": "законность демонстрации эмблем авто в роликах",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      },
+      {
+        "phrase": "защита дизайна товара",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      },
+      {
+        "phrase": "когда заинтересованное лицо может подать возражения против регистрации товарного знака",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      },
+      {
+        "phrase": "лирейд",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 2.0,
+        "avg_duration_sec": 19.0
+      },
+      {
+        "phrase": "лирейт товарный знак",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 2.0,
+        "avg_duration_sec": 17.0
+      },
+      {
+        "phrase": "можно ли использовать логотипы компаний в видео",
+        "visits": 1.0,
+        "bounce_rate": 100.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 1.0
+      },
+      {
+        "phrase": "ооо лирейт зеленодольск",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      },
+      {
+        "phrase": "оптика какой класс мкту новости",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 25.0
+      },
+      {
+        "phrase": "перевод иностранных рассказов на русский могу ли публиковать свой перевод в интернете",
+        "visits": 1.0,
+        "bounce_rate": 100.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 0.0
+      },
+      {
+        "phrase": "попов алексей дмитриевич лирейт",
+        "visits": 1.0,
+        "bounce_rate": 100.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 0.0
+      },
+      {
+        "phrase": "товарный знак и логотип в чем разница",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      },
+      {
+        "phrase": "хайретдинов рустем афузалович",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 8.0,
+        "avg_duration_sec": 586.0
+      },
+      {
+        "phrase": "я собираюсь перевести с английского и издать книгу автора метода духовного развития (он живой, находится в индии. какие у меня права на перевод и издание. и какие нужны разрешения от него?)",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      }
+    ],
+    "last28": [
+      {
+        "phrase": "лирейт",
+        "visits": 15.0,
+        "bounce_rate": 6.67,
+        "page_depth": 2.73,
+        "avg_duration_sec": 569.0
+      },
+      {
+        "phrase": "лирейт патентное бюро",
+        "visits": 7.0,
+        "bounce_rate": 0.0,
+        "page_depth": 3.71,
+        "avg_duration_sec": 208.57
+      },
+      {
+        "phrase": "как правильно промаркировать импортный товар, последовательность действий по шагово",
+        "visits": 3.0,
+        "bounce_rate": 33.33,
+        "page_depth": 1.0,
+        "avg_duration_sec": 10.33
+      },
+      {
+        "phrase": "патентное бюро лирейт",
+        "visits": 3.0,
+        "bounce_rate": 0.0,
+        "page_depth": 4.0,
+        "avg_duration_sec": 100.67
+      },
+      {
+        "phrase": "lireate",
+        "visits": 2.0,
+        "bounce_rate": 0.0,
+        "page_depth": 3.5,
+        "avg_duration_sec": 120.0
+      },
+      {
+        "phrase": "лирейт регистрация товарного знака",
+        "visits": 2.0,
+        "bounce_rate": 0.0,
+        "page_depth": 3.0,
+        "avg_duration_sec": 83.5
+      },
+      {
+        "phrase": "ооо «лирейт»",
+        "visits": 2.0,
+        "bounce_rate": 50.0,
+        "page_depth": 3.0,
+        "avg_duration_sec": 63.5
+      },
+      {
+        "phrase": "ооо лирейт татарстан",
+        "visits": 2.0,
+        "bounce_rate": 0.0,
+        "page_depth": 3.0,
+        "avg_duration_sec": 659.5
+      },
+      {
+        "phrase": "я сделал перевод книги куда мне обратиться",
+        "visits": 2.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.5
+      },
+      {
+        "phrase": "+7 (960) 048-49-57",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 3.0,
+        "avg_duration_sec": 11.0
+      },
+      {
+        "phrase": "авторская переписка",
+        "visits": 1.0,
+        "bounce_rate": 100.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 0.0
+      },
+      {
+        "phrase": "авторское вознаграждение гк",
+        "visits": 1.0,
+        "bounce_rate": 100.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 0.0
+      },
+      {
+        "phrase": "азизова гузель рустамовна,",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 7.0,
+        "avg_duration_sec": 113.0
+      },
+      {
+        "phrase": "будет ли нарушением авторских прав использование скриншота из игры",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 29.0
+      },
+      {
+        "phrase": "договор с дизайнером на разработку логотипа",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 13.0
+      },
+      {
+        "phrase": "если в песне использовать торговую марку будут ли проблемы",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 14.0
+      },
+      {
+        "phrase": "если кто то в своем видео использует твою торговую марку как свою",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      },
+      {
+        "phrase": "если товарный знак не зарегистрировали а купил у другого правообладателя можно ли покупку назвать недобросовестнрй конкуренцией, если первый регистрировал знак не добросоветно ноне падавал исков, а второй подал иски",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      },
+      {
+        "phrase": "законность демонстрации эмблем авто в роликах",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      },
+      {
+        "phrase": "защита дизайна товара",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      },
+      {
+        "phrase": "история возникновения логотипа",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      },
+      {
+        "phrase": "как добавить свой бренд на озон селлер",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      },
+      {
+        "phrase": "как закрепить за собой песню и мелодию",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 2.0,
+        "avg_duration_sec": 35.0
+      },
+      {
+        "phrase": "как исправить слово в логотипе",
+        "visits": 1.0,
+        "bounce_rate": 100.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 0.0
+      },
+      {
+        "phrase": "как опубликовать перевод песни с английского языка если нет разрешения правообладателя",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      },
+      {
+        "phrase": "как подать возражение в палату по патентным спорам",
+        "visits": 1.0,
+        "bounce_rate": 100.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 0.0
+      },
+      {
+        "phrase": "как проверить зарегистрирован ли бренд на вайлдберриз",
+        "visits": 1.0,
+        "bounce_rate": 100.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 0.0
+      },
+      {
+        "phrase": "как проверить зарегистрирован ли товарный знак в роспатенте",
+        "visits": 1.0,
+        "bounce_rate": 100.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 0.0
+      },
+      {
+        "phrase": "когда заинтересованное лицо может подать возражения против регистрации товарного знака",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      },
+      {
+        "phrase": "компания лирейт",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      },
+      {
+        "phrase": "лирейд",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 2.0,
+        "avg_duration_sec": 19.0
+      },
+      {
+        "phrase": "лирейт регистрация товарного",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 65.0
+      },
+      {
+        "phrase": "лирейт регистрация товарных знаков",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 5.0,
+        "avg_duration_sec": 105.0
+      },
+      {
+        "phrase": "лирейт товарный знак",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 2.0,
+        "avg_duration_sec": 17.0
+      },
+      {
+        "phrase": "лирейт\\",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 3.0,
+        "avg_duration_sec": 37.0
+      },
+      {
+        "phrase": "лирэйт",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 3.0,
+        "avg_duration_sec": 243.0
+      },
+      {
+        "phrase": "мкту хлопья",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      },
+      {
+        "phrase": "можно ли выкладывать в постах картины старых художников с указанием авторства",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      },
+      {
+        "phrase": "можно ли использовать а клипе картины, написанные по мастер классам с указанием",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      },
+      {
+        "phrase": "можно ли использовать логотипы компаний в видео",
+        "visits": 1.0,
+        "bounce_rate": 100.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 1.0
+      },
+      {
+        "phrase": "можно ли использовать логотипы публичных компаний в своем видео",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 16.0
+      },
+      {
+        "phrase": "можно ли класть в подарок к заказу скриншоты из игр",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      },
+      {
+        "phrase": "можно ли показывать нашивки брендов на костюме у себя на канале ютуб",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      },
+      {
+        "phrase": "можно ли скриншот из игры использовать в коммерческих целях",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      },
+      {
+        "phrase": "мука и зерновые продукты; хлебобулочные изделия, кондитерские изделия; мороженое;",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      },
+      {
+        "phrase": "на вайлдберриз обязательно указывать бренд",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 16.0
+      },
+      {
+        "phrase": "ооо \"лирейт\"",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 4.0,
+        "avg_duration_sec": 127.0
+      },
+      {
+        "phrase": "ооо \"лирейт\" контакты",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      },
+      {
+        "phrase": "ооо лирейт",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 3.0,
+        "avg_duration_sec": 32.0
+      },
+      {
+        "phrase": "ооо лирейт зеленодольск",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      },
+      {
+        "phrase": "оптика какой класс мкту новости",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 25.0
+      },
+      {
+        "phrase": "патентное бюро лирейт услуги",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 16.0
+      },
+      {
+        "phrase": "перевод иностранных рассказов на русский могу ли публиковать свой перевод в интернете",
+        "visits": 1.0,
+        "bounce_rate": 100.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 0.0
+      },
+      {
+        "phrase": "подавать возражения в фипс на регистрацию товарного знака",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      },
+      {
+        "phrase": "попов алексей дмитриевич лирейт",
+        "visits": 1.0,
+        "bounce_rate": 100.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 0.0
+      },
+      {
+        "phrase": "расчет вознаграждение за использование рид нескольким авторам",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      },
+      {
+        "phrase": "сенатова валерия станиславовна змр",
+        "visits": 1.0,
+        "bounce_rate": 100.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 0.0
+      },
+      {
+        "phrase": "товарный знак и логотип в чем разница",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      },
+      {
+        "phrase": "услуги дизайнера по доработке товарного знака",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 16.0
+      },
+      {
+        "phrase": "хайретдинов рустем афузалович",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 8.0,
+        "avg_duration_sec": 586.0
+      },
+      {
+        "phrase": "что необходимо для публикации переводов на личной странице в интернете",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 14.0
+      },
+      {
+        "phrase": "я собираюсь перевести с английского и издать книгу автора метода духовного развития (он живой, находится в индии. какие у меня права на перевод и издание. и какие нужны разрешения от него?)",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      }
+    ],
+    "note": "Метрика: ym:s:lastSearchPhrase (большая часть фраз скрыта поисковиками)",
+    "brand_share_pct_28d": 52.7
+  },
+  "top_landing_pages": {
+    "last7": [
+      {
+        "url": "/",
+        "visits": 157.0,
+        "bounce_rate": 18.47,
+        "page_depth": 1.47,
+        "avg_duration_sec": 96.08
+      },
+      {
+        "url": "/sroki_deystviya_avtorskix_prav_na_kakoy_srok_predostavlyayutsya_avtorskie_prava_i_chto_proisxodit_posle_ix_istecheniya",
+        "visits": 29.0,
+        "bounce_rate": 6.9,
+        "page_depth": 2.28,
+        "avg_duration_sec": 101.86
+      },
+      {
+        "url": "/vsyo_chto_nuzhno_znat_o_dogovore_franchayzinga_",
+        "visits": 27.0,
+        "bounce_rate": 7.41,
+        "page_depth": 2.0,
+        "avg_duration_sec": 80.96
+      },
+      {
+        "url": "/kuda_podat_vozrazhenie_protiv_registracii_tovarnogo_znaka",
+        "visits": 13.0,
+        "bounce_rate": 0.0,
+        "page_depth": 2.54,
+        "avg_duration_sec": 113.23
+      },
+      {
+        "url": "/brendyi_stavshie_naricatelnyimi",
+        "visits": 11.0,
+        "bounce_rate": 27.27,
+        "page_depth": 1.18,
+        "avg_duration_sec": 18.36
+      },
+      {
+        "url": "https://msk.lireate.ru/",
+        "visits": 10.0,
+        "bounce_rate": 90.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 1.3
+      },
+      {
+        "url": "/vyiplata_avtorskogo_voznagrazhdeniya_avtoru_komu_polozheno_i_kak_rasschitat_",
+        "visits": 8.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.75,
+        "avg_duration_sec": 66.0
+      },
+      {
+        "url": "/kontekstnaya_reklama_i_tovarnyiy_znak_kak_ne_narushit_zakon_i_borotsya_s_narushitelyami",
+        "visits": 6.0,
+        "bounce_rate": 33.33,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.83
+      },
+      {
+        "url": "/chuzhoy_logotip_ili_nazvanie_v_video",
+        "visits": 5.0,
+        "bounce_rate": 40.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 9.2
+      },
+      {
+        "url": "/kontaktyi",
+        "visits": 5.0,
+        "bounce_rate": 20.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 12.0
+      },
+      {
+        "url": "/markirovka_importnyix_tovarov_chestnyiy_znak",
+        "visits": 5.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.8,
+        "avg_duration_sec": 62.4
+      },
+      {
+        "url": "/mogu_li_ya_vyikladyivat_sobstvennyiy_perevod_zarubezhnogo_proizvedeniya",
+        "visits": 5.0,
+        "bounce_rate": 20.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 11.8
+      },
+      {
+        "url": "/registraciya_tovarnogo_znaka",
+        "visits": 3.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.33,
+        "avg_duration_sec": 301.67
+      },
+      {
+        "url": "//",
+        "visits": 2.0,
+        "bounce_rate": 50.0,
+        "page_depth": 1.5,
+        "avg_duration_sec": 19.0
+      },
+      {
+        "url": "/docs/",
+        "visits": 2.0,
+        "bounce_rate": 0.0,
+        "page_depth": 3.0,
+        "avg_duration_sec": 659.5
+      },
+      {
+        "url": "/dorabotka_tovarnogo_znaka_kak_dorabotat_logotip_i_naimenovanie",
+        "visits": 2.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      },
+      {
+        "url": "/findtz",
+        "visits": 2.0,
+        "bounce_rate": 100.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 0.0
+      },
+      {
+        "url": "/mktu_chto_izmenilos_v_122025_i_chto_gotovit_132026",
+        "visits": 2.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 19.0
+      },
+      {
+        "url": "/reg-tz-main",
+        "visits": 2.0,
+        "bounce_rate": 100.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 0.0
+      },
+      {
+        "url": "/yavlyaetsya_li_publikaciya_skrinshotov_iz_igr_narusheniem_avtorskix_prav",
+        "visits": 2.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 14.5
+      },
+      {
+        "url": "https://vla.lireate.ru/",
+        "visits": 2.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.5,
+        "avg_duration_sec": 58.0
+      },
+      {
+        "url": "/6",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      },
+      {
+        "url": "/?fbclid=IwZXh0bgNhZW0CMTEAcGRvZgRzcnRjBmFwcF9pZAwyNTYyODEwNDA1NTgAAR6arsitoHKVN4CMp6kz6k6s_ygwhhnHGAvoMmXYUyOM3KG2MyqlthOYUwW-Rg_aem_GfwPr3kFkO33DEjioaDsBg",
+        "visits": 1.0,
+        "bounce_rate": 100.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 0.0
+      },
+      {
+        "url": "/_parallelnyiy_import_kogda_mozhno_vvozit_tovar_bez_soglasiya_pravoobladatelya",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      },
+      {
+        "url": "/chem_otlichaetsya_logotip_ot_tovarnogo_znaka",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      },
+      {
+        "url": "/dogovoryi_ob_otchuzhdeniilicenzii_tovarnyix_znakov_obyazatelnaya_gosregistraciya_v_rospatente__inache_prava_ne_perexodyat",
+        "visits": 1.0,
+        "bounce_rate": 100.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 0.0
+      },
+      {
+        "url": "/fas_mozhet_primenit_meryi_k_yandeksu_izza_reklamnogo_slogana",
+        "visits": 1.0,
+        "bounce_rate": 100.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 0.0
+      },
+      {
+        "url": "/kak_oformit_avtorskie_prava_na_logotip",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 14.0
+      },
+      {
+        "url": "/konkurentyi_zaregistrirovali_tovarnyiy_znak_ranshe_kak_deystvovat_chtobyi_vernut_brend",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      },
+      {
+        "url": "/kuda_podat_vozrazhenie_protiv_registracii_tovarnogo_znaka&lr=213&search_source=dzen_touch_safe",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 3.0,
+        "avg_duration_sec": 413.0
+      }
+    ],
+    "last28": [
+      {
+        "url": "/",
+        "visits": 522.0,
+        "bounce_rate": 14.18,
+        "page_depth": 1.48,
+        "avg_duration_sec": 52.23
+      },
+      {
+        "url": "/sroki_deystviya_avtorskix_prav_na_kakoy_srok_predostavlyayutsya_avtorskie_prava_i_chto_proisxodit_posle_ix_istecheniya",
+        "visits": 149.0,
+        "bounce_rate": 9.4,
+        "page_depth": 2.22,
+        "avg_duration_sec": 114.93
+      },
+      {
+        "url": "/vsyo_chto_nuzhno_znat_o_dogovore_franchayzinga_",
+        "visits": 114.0,
+        "bounce_rate": 7.02,
+        "page_depth": 2.08,
+        "avg_duration_sec": 104.74
+      },
+      {
+        "url": "/brendyi_stavshie_naricatelnyimi",
+        "visits": 54.0,
+        "bounce_rate": 18.52,
+        "page_depth": 1.19,
+        "avg_duration_sec": 75.89
+      },
+      {
+        "url": "/vyiplata_avtorskogo_voznagrazhdeniya_avtoru_komu_polozheno_i_kak_rasschitat_",
+        "visits": 36.0,
+        "bounce_rate": 8.33,
+        "page_depth": 1.92,
+        "avg_duration_sec": 86.11
+      },
+      {
+        "url": "/kuda_podat_vozrazhenie_protiv_registracii_tovarnogo_znaka",
+        "visits": 33.0,
+        "bounce_rate": 6.06,
+        "page_depth": 2.36,
+        "avg_duration_sec": 130.7
+      },
+      {
+        "url": "/kontekstnaya_reklama_i_tovarnyiy_znak_kak_ne_narushit_zakon_i_borotsya_s_narushitelyami",
+        "visits": 21.0,
+        "bounce_rate": 14.29,
+        "page_depth": 1.0,
+        "avg_duration_sec": 19.43
+      },
+      {
+        "url": "/kontaktyi",
+        "visits": 19.0,
+        "bounce_rate": 42.11,
+        "page_depth": 1.21,
+        "avg_duration_sec": 107.21
+      },
+      {
+        "url": "/mogu_li_ya_vyikladyivat_sobstvennyiy_perevod_zarubezhnogo_proizvedeniya",
+        "visits": 19.0,
+        "bounce_rate": 15.79,
+        "page_depth": 1.0,
+        "avg_duration_sec": 12.79
+      },
+      {
+        "url": "/chuzhoy_logotip_ili_nazvanie_v_video",
+        "visits": 18.0,
+        "bounce_rate": 27.78,
+        "page_depth": 1.0,
+        "avg_duration_sec": 11.0
+      },
+      {
+        "url": "https://msk.lireate.ru/",
+        "visits": 18.0,
+        "bounce_rate": 66.67,
+        "page_depth": 1.28,
+        "avg_duration_sec": 15.17
+      },
+      {
+        "url": "/markirovka_importnyix_tovarov_chestnyiy_znak",
+        "visits": 14.0,
+        "bounce_rate": 14.29,
+        "page_depth": 1.5,
+        "avg_duration_sec": 72.21
+      },
+      {
+        "url": "/dorabotka_tovarnogo_znaka_kak_dorabotat_logotip_i_naimenovanie",
+        "visits": 8.0,
+        "bounce_rate": 12.5,
+        "page_depth": 1.0,
+        "avg_duration_sec": 13.25
+      },
+      {
+        "url": "/nuzhno_li_registrirovat_brend_dlya_vayldberriz",
+        "visits": 8.0,
+        "bounce_rate": 50.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 7.62
+      },
+      {
+        "url": "/neyroseti_i_avtorskoe_pravo_otvetyi_na_aktualnyie_voprosyi",
+        "visits": 7.0,
+        "bounce_rate": 42.86,
+        "page_depth": 1.0,
+        "avg_duration_sec": 10.29
+      },
+      {
+        "url": "/registraciya_tovarnogo_znaka",
+        "visits": 7.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.29,
+        "avg_duration_sec": 152.57
+      },
+      {
+        "url": "/v_chem_raznica_mezhdu_avtorom_i_vladelcem_avtorskogo_prava",
+        "visits": 7.0,
+        "bounce_rate": 71.43,
+        "page_depth": 1.0,
+        "avg_duration_sec": 4.0
+      },
+      {
+        "url": "/yavlyaetsya_li_publikaciya_skrinshotov_iz_igr_narusheniem_avtorskix_prav",
+        "visits": 7.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 16.86
+      },
+      {
+        "url": "//",
+        "visits": 6.0,
+        "bounce_rate": 33.33,
+        "page_depth": 1.67,
+        "avg_duration_sec": 19.17
+      },
+      {
+        "url": "/istoriya_proisxozhdeniya_logotipa",
+        "visits": 6.0,
+        "bounce_rate": 16.67,
+        "page_depth": 1.5,
+        "avg_duration_sec": 212.83
+      },
+      {
+        "url": "/reg-tz-main",
+        "visits": 6.0,
+        "bounce_rate": 66.67,
+        "page_depth": 1.17,
+        "avg_duration_sec": 5.33
+      },
+      {
+        "url": "/dogovoryi_ob_otchuzhdeniilicenzii_tovarnyix_znakov_obyazatelnaya_gosregistraciya_v_rospatente__inache_prava_ne_perexodyat",
+        "visits": 5.0,
+        "bounce_rate": 40.0,
+        "page_depth": 1.2,
+        "avg_duration_sec": 6.4
+      },
+      {
+        "url": "/domennoe_imya_kak_nematerialnyiy_aktiv",
+        "visits": 5.0,
+        "bounce_rate": 40.0,
+        "page_depth": 1.2,
+        "avg_duration_sec": 11.0
+      },
+      {
+        "url": "/findtz",
+        "visits": 5.0,
+        "bounce_rate": 80.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 3.0
+      },
+      {
+        "url": "/kak_dokazat_razglashenie_kommercheskoy_taynyi_sotrudnikom",
+        "visits": 5.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 18.4
+      },
+      {
+        "url": "/nouxau_po_franshize",
+        "visits": 5.0,
+        "bounce_rate": 100.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 0.0
+      },
+      {
+        "url": "/registraciya_tovarnogo_znaka_na_fizicheskoe_lico",
+        "visits": 5.0,
+        "bounce_rate": 40.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 11.4
+      },
+      {
+        "url": "/_parallelnyiy_import_kogda_mozhno_vvozit_tovar_bez_soglasiya_pravoobladatelya",
+        "visits": 4.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 31.75
+      },
+      {
+        "url": "/avtorskoe_pravo_na_kontent_v_socsetyax_vozmozhnosti_i_problemyi_zaschityi_polzovatelskogo_kontenta",
+        "visits": 4.0,
+        "bounce_rate": 25.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 34.5
+      },
+      {
+        "url": "/poluchenie_patenta_na_ispolzuemyie_algoritmyi_dlya_zaschityi_programmyi_ot_nezakonnogo_ispolzovaniya",
+        "visits": 4.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.25,
+        "avg_duration_sec": 20.25
+      },
+      {
+        "url": "/team",
+        "visits": 4.0,
+        "bounce_rate": 0.0,
+        "page_depth": 4.25,
+        "avg_duration_sec": 184.25
+      },
+      {
+        "url": "https://sam.lireate.ru/",
+        "visits": 4.0,
+        "bounce_rate": 75.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 4.0
+      },
+      {
+        "url": "https://kra.lireate.ru/",
+        "visits": 3.0,
+        "bounce_rate": 66.67,
+        "page_depth": 1.0,
+        "avg_duration_sec": 5.0
+      },
+      {
+        "url": "/docs/",
+        "visits": 3.0,
+        "bounce_rate": 0.0,
+        "page_depth": 2.33,
+        "avg_duration_sec": 631.67
+      },
+      {
+        "url": "/konflikt_tovarnogo_znaka_i_firmennogo_naimenovaniya_kak_izbezhat_sudebnogo_spora",
+        "visits": 3.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.33
+      },
+      {
+        "url": "/news?num=9&category=16",
+        "visits": 3.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.67,
+        "avg_duration_sec": 96.33
+      },
+      {
+        "url": "/otvet_na_pretenziyu_o_narushenii_isklyuchitelnyix_prav_na_tovarnyiy_znak_nuzhen_li",
+        "visits": 3.0,
+        "bounce_rate": 33.33,
+        "page_depth": 1.0,
+        "avg_duration_sec": 9.67
+      },
+      {
+        "url": "/patent",
+        "visits": 3.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.33
+      },
+      {
+        "url": "/rasprostranyaetsya_li_avtorskoe_pravo_na_perepisku",
+        "visits": 3.0,
+        "bounce_rate": 33.33,
+        "page_depth": 1.0,
+        "avg_duration_sec": 10.0
+      },
+      {
+        "url": "/schitaetsya_li_vorovstvom_kontenta_razmeschenie_fotografii_kartinyi_s_ukazaniem_avtorstva",
+        "visits": 3.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.33
+      },
+      {
+        "url": "/sroki_deystviya_avtorskix_prav_na_kakoy_srok_predostavlyayutsya_avtorskie_prava_i_chto_proisxodit_posle_ix_istecheniya&source=tabbar",
+        "visits": 3.0,
+        "bounce_rate": 33.33,
+        "page_depth": 2.0,
+        "avg_duration_sec": 80.0
+      },
+      {
+        "url": "https://nov.lireate.ru/",
+        "visits": 3.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      },
+      {
+        "url": "https://vla.lireate.ru/",
+        "visits": 3.0,
+        "bounce_rate": 33.33,
+        "page_depth": 1.33,
+        "avg_duration_sec": 38.67
+      },
+      {
+        "url": "https://corporate.lireate.ru/",
+        "visits": 2.0,
+        "bounce_rate": 100.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 0.0
+      },
+      {
+        "url": "https://l2fwf37zqofqxbqq.lireate.ru/",
+        "visits": 2.0,
+        "bounce_rate": 100.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 0.0
+      },
+      {
+        "url": "/30",
+        "visits": 2.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      },
+      {
+        "url": "/kak_oformit_avtorskie_prava_na_logotip",
+        "visits": 2.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      },
+      {
+        "url": "/kak_proverit_zaregistrirovan_li_tovarnyiy_znak2023",
+        "visits": 2.0,
+        "bounce_rate": 50.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 7.5
+      },
+      {
+        "url": "/mktu_chto_izmenilos_v_122025_i_chto_gotovit_132026",
+        "visits": 2.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 19.0
+      },
+      {
+        "url": "/mozhno_li_upominat_pri_reklamirovanii_produkcii_brendyi_prinadlezhaschie_drugim_vladelcam",
+        "visits": 2.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      }
+    ],
+    "organic_last28": [
+      {
+        "url": "/",
+        "visits": 113.0,
+        "bounce_rate": 11.5,
+        "page_depth": 2.37,
+        "avg_duration_sec": 143.62
+      },
+      {
+        "url": "/sroki_deystviya_avtorskix_prav_na_kakoy_srok_predostavlyayutsya_avtorskie_prava_i_chto_proisxodit_posle_ix_istecheniya",
+        "visits": 98.0,
+        "bounce_rate": 10.2,
+        "page_depth": 2.17,
+        "avg_duration_sec": 112.65
+      },
+      {
+        "url": "/vsyo_chto_nuzhno_znat_o_dogovore_franchayzinga_",
+        "visits": 74.0,
+        "bounce_rate": 10.81,
+        "page_depth": 1.97,
+        "avg_duration_sec": 96.34
+      },
+      {
+        "url": "/brendyi_stavshie_naricatelnyimi",
+        "visits": 42.0,
+        "bounce_rate": 21.43,
+        "page_depth": 1.24,
+        "avg_duration_sec": 93.45
+      },
+      {
+        "url": "/vyiplata_avtorskogo_voznagrazhdeniya_avtoru_komu_polozheno_i_kak_rasschitat_",
+        "visits": 27.0,
+        "bounce_rate": 11.11,
+        "page_depth": 1.63,
+        "avg_duration_sec": 74.44
+      },
+      {
+        "url": "/kuda_podat_vozrazhenie_protiv_registracii_tovarnogo_znaka",
+        "visits": 25.0,
+        "bounce_rate": 8.0,
+        "page_depth": 2.16,
+        "avg_duration_sec": 120.36
+      },
+      {
+        "url": "/mogu_li_ya_vyikladyivat_sobstvennyiy_perevod_zarubezhnogo_proizvedeniya",
+        "visits": 19.0,
+        "bounce_rate": 15.79,
+        "page_depth": 1.0,
+        "avg_duration_sec": 12.79
+      },
+      {
+        "url": "/chuzhoy_logotip_ili_nazvanie_v_video",
+        "visits": 14.0,
+        "bounce_rate": 21.43,
+        "page_depth": 1.0,
+        "avg_duration_sec": 11.79
+      },
+      {
+        "url": "/markirovka_importnyix_tovarov_chestnyiy_znak",
+        "visits": 10.0,
+        "bounce_rate": 10.0,
+        "page_depth": 1.7,
+        "avg_duration_sec": 94.9
+      },
+      {
+        "url": "/dorabotka_tovarnogo_znaka_kak_dorabotat_logotip_i_naimenovanie",
+        "visits": 8.0,
+        "bounce_rate": 12.5,
+        "page_depth": 1.0,
+        "avg_duration_sec": 13.25
+      },
+      {
+        "url": "/nuzhno_li_registrirovat_brend_dlya_vayldberriz",
+        "visits": 8.0,
+        "bounce_rate": 50.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 7.62
+      },
+      {
+        "url": "/kontaktyi",
+        "visits": 7.0,
+        "bounce_rate": 14.29,
+        "page_depth": 1.29,
+        "avg_duration_sec": 262.57
+      },
+      {
+        "url": "/yavlyaetsya_li_publikaciya_skrinshotov_iz_igr_narusheniem_avtorskix_prav",
+        "visits": 6.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 17.17
+      },
+      {
+        "url": "/domennoe_imya_kak_nematerialnyiy_aktiv",
+        "visits": 5.0,
+        "bounce_rate": 40.0,
+        "page_depth": 1.2,
+        "avg_duration_sec": 11.0
+      },
+      {
+        "url": "/istoriya_proisxozhdeniya_logotipa",
+        "visits": 5.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.6,
+        "avg_duration_sec": 255.4
+      },
+      {
+        "url": "/registraciya_tovarnogo_znaka_na_fizicheskoe_lico",
+        "visits": 5.0,
+        "bounce_rate": 40.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 11.4
+      },
+      {
+        "url": "/poluchenie_patenta_na_ispolzuemyie_algoritmyi_dlya_zaschityi_programmyi_ot_nezakonnogo_ispolzovaniya",
+        "visits": 4.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.25,
+        "avg_duration_sec": 20.25
+      },
+      {
+        "url": "/reg-tz-main",
+        "visits": 4.0,
+        "bounce_rate": 75.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 4.0
+      },
+      {
+        "url": "/_parallelnyiy_import_kogda_mozhno_vvozit_tovar_bez_soglasiya_pravoobladatelya",
+        "visits": 3.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 37.33
+      },
+      {
+        "url": "/otvet_na_pretenziyu_o_narushenii_isklyuchitelnyix_prav_na_tovarnyiy_znak_nuzhen_li",
+        "visits": 3.0,
+        "bounce_rate": 33.33,
+        "page_depth": 1.0,
+        "avg_duration_sec": 9.67
+      },
+      {
+        "url": "/rasprostranyaetsya_li_avtorskoe_pravo_na_perepisku",
+        "visits": 3.0,
+        "bounce_rate": 33.33,
+        "page_depth": 1.0,
+        "avg_duration_sec": 10.0
+      },
+      {
+        "url": "/schitaetsya_li_vorovstvom_kontenta_razmeschenie_fotografii_kartinyi_s_ukazaniem_avtorstva",
+        "visits": 3.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.33
+      },
+      {
+        "url": "/team",
+        "visits": 3.0,
+        "bounce_rate": 0.0,
+        "page_depth": 5.33,
+        "avg_duration_sec": 240.67
+      },
+      {
+        "url": "/30",
+        "visits": 2.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      },
+      {
+        "url": "/docs/",
+        "visits": 2.0,
+        "bounce_rate": 0.0,
+        "page_depth": 3.0,
+        "avg_duration_sec": 659.5
+      },
+      {
+        "url": "/kak_dokazat_razglashenie_kommercheskoy_taynyi_sotrudnikom",
+        "visits": 2.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 21.5
+      },
+      {
+        "url": "/kak_oformit_avtorskie_prava_na_logotip",
+        "visits": 2.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      },
+      {
+        "url": "/kak_proverit_zaregistrirovan_li_tovarnyiy_znak2023",
+        "visits": 2.0,
+        "bounce_rate": 50.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 7.5
+      },
+      {
+        "url": "/konflikt_tovarnogo_znaka_i_firmennogo_naimenovaniya_kak_izbezhat_sudebnogo_spora",
+        "visits": 2.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.5
+      },
+      {
+        "url": "/mozhno_li_upominat_pri_reklamirovanii_produkcii_brendyi_prinadlezhaschie_drugim_vladelcam",
+        "visits": 2.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
+      }
+    ]
+  },
+  "goals": [
+    {
+      "id": 63227074,
+      "name": "Заявка",
+      "type": "url",
+      "last7": {
+        "reaches": 4.0,
+        "conversion_rate": 0.93,
+        "visits": 3.0
+      },
+      "prev7": {
+        "reaches": 3.0,
+        "conversion_rate": 0.76,
+        "visits": 2.0
+      },
+      "last28": {
+        "reaches": 13.0,
+        "conversion_rate": 0.88,
+        "visits": 11.0
+      }
+    },
+    {
+      "id": 224586316,
+      "name": "Автоцель: отправка формы",
+      "type": "form",
+      "last7": {
+        "reaches": 10.0,
+        "conversion_rate": 1.86,
+        "visits": 6.0
+      },
+      "prev7": {
+        "reaches": 3.0,
+        "conversion_rate": 0.76,
+        "visits": 2.0
+      },
+      "last28": {
+        "reaches": 21.0,
+        "conversion_rate": 1.28,
+        "visits": 16.0
+      }
+    },
+    {
+      "id": 224625407,
+      "name": "Автоцель: переход в соц.сеть",
+      "type": "social",
+      "last7": {
+        "reaches": 0.0,
+        "conversion_rate": 0.0,
+        "visits": 0.0
+      },
+      "prev7": {
+        "reaches": 0.0,
+        "conversion_rate": 0.0,
+        "visits": 0.0
+      },
+      "last28": {
+        "reaches": 1.0,
+        "conversion_rate": 0.08,
+        "visits": 1.0
+      }
+    },
+    {
+      "id": 224913322,
+      "name": "Автоцель: скачивание файла",
+      "type": "file",
+      "last7": {
+        "reaches": 1.0,
+        "conversion_rate": 0.31,
+        "visits": 1.0
+      },
+      "prev7": {
+        "reaches": 0.0,
+        "conversion_rate": 0.0,
+        "visits": 0.0
+      },
+      "last28": {
+        "reaches": 4.0,
+        "conversion_rate": 0.32,
+        "visits": 4.0
+      }
+    },
+    {
+      "id": 225380411,
+      "name": "Автоцель: клик по номеру телефона",
+      "type": "phone",
+      "last7": {
+        "reaches": 2.0,
+        "conversion_rate": 0.62,
+        "visits": 2.0
+      },
+      "prev7": {
+        "reaches": 5.0,
+        "conversion_rate": 1.52,
+        "visits": 4.0
+      },
+      "last28": {
+        "reaches": 14.0,
+        "conversion_rate": 0.88,
+        "visits": 11.0
+      }
+    },
+    {
+      "id": 226925853,
+      "name": "Автоцель: клик по email",
+      "type": "email",
+      "last7": {
+        "reaches": 0.0,
+        "conversion_rate": 0.0,
+        "visits": 0.0
+      },
+      "prev7": {
+        "reaches": 0.0,
+        "conversion_rate": 0.0,
+        "visits": 0.0
+      },
+      "last28": {
+        "reaches": 1.0,
+        "conversion_rate": 0.08,
+        "visits": 1.0
+      }
+    },
+    {
+      "id": 227995073,
+      "name": "Автоцель: переход в мессенджер",
+      "type": "messenger",
+      "last7": {
+        "reaches": 8.0,
+        "conversion_rate": 1.55,
+        "visits": 5.0
+      },
+      "prev7": {
+        "reaches": 4.0,
+        "conversion_rate": 0.76,
+        "visits": 2.0
+      },
+      "last28": {
+        "reaches": 21.0,
+        "conversion_rate": 1.2,
+        "visits": 15.0
+      }
+    },
+    {
+      "id": 227995074,
+      "name": "Автоцель: поиск по сайту",
+      "type": "search",
+      "last7": {
+        "reaches": 0.0,
+        "conversion_rate": 0.0,
+        "visits": 0.0
+      },
+      "prev7": {
+        "reaches": 0.0,
+        "conversion_rate": 0.0,
+        "visits": 0.0
+      },
+      "last28": {
+        "reaches": 1.0,
+        "conversion_rate": 0.08,
+        "visits": 1.0
+      }
+    },
+    {
+      "id": 244860705,
+      "name": "Автоцель: заполнил контактные данные",
+      "type": "contact_data",
+      "last7": {
+        "reaches": 4.0,
+        "conversion_rate": 1.24,
+        "visits": 4.0
+      },
+      "prev7": {
+        "reaches": 2.0,
+        "conversion_rate": 0.76,
+        "visits": 2.0
+      },
+      "last28": {
+        "reaches": 12.0,
+        "conversion_rate": 0.96,
+        "visits": 12.0
+      }
+    },
+    {
+      "id": 300669092,
+      "name": "Переход в телеграмм",
+      "type": "messenger",
+      "last7": {
+        "reaches": 5.0,
+        "conversion_rate": 1.24,
+        "visits": 4.0
+      },
+      "prev7": {
+        "reaches": 3.0,
+        "conversion_rate": 0.76,
+        "visits": 2.0
+      },
+      "last28": {
+        "reaches": 13.0,
+        "conversion_rate": 0.88,
+        "visits": 11.0
+      }
+    },
+    {
+      "id": 339217892,
+      "name": "Автоцель: отправил контактные данные",
+      "type": "contact_data_sent",
+      "last7": {
+        "reaches": 4.0,
+        "conversion_rate": 1.24,
+        "visits": 4.0
+      },
+      "prev7": {
+        "reaches": 2.0,
+        "conversion_rate": 0.76,
+        "visits": 2.0
+      },
+      "last28": {
+        "reaches": 12.0,
+        "conversion_rate": 0.96,
+        "visits": 12.0
+      }
+    }
+  ],
+  "webmaster": {
+    "source_path": "none",
+    "attempts": [
+      {
+        "path": "direct_api",
+        "ok": false,
+        "error": "URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)'))"
+      },
+      {
+        "path": "proxy_api",
+        "ok": false,
+        "error": "URLError(OSError('Tunnel connection failed: 502 Bad Gateway'))"
+      },
+      {
+        "path": "hosting_php",
+        "ok": false,
+        "error": "HTTP 500: "
+      }
+    ],
+    "queries": [],
+    "indexing": null,
+    "errors": null
+  },
+  "keyword_opportunities": {
+    "queries": [
+      {
+        "query": "как правильно промаркировать импортный товар, последовательность действий по шагово",
+        "source": "metrika",
+        "visits_28d": 3.0,
+        "bounce_rate": 33.33,
+        "landing": null,
+        "reason": "короткий визит"
+      },
+      {
+        "query": "я сделал перевод книги куда мне обратиться",
+        "source": "metrika",
+        "visits_28d": 2.0,
+        "bounce_rate": 0.0,
+        "landing": null,
+        "reason": "короткий визит"
+      },
+      {
+        "query": "авторская переписка",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 100.0,
+        "landing": null,
+        "reason": "высокий отказ — страница не отвечает на запрос; короткий визит"
+      },
+      {
+        "query": "авторское вознаграждение гк",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 100.0,
+        "landing": null,
+        "reason": "высокий отказ — страница не отвечает на запрос; короткий визит"
+      },
+      {
+        "query": "будет ли нарушением авторских прав использование скриншота из игры",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 0.0,
+        "landing": null,
+        "reason": "небрендовый информационный запрос с единичными визитами — потенциал роста позиций"
+      },
+      {
+        "query": "договор с дизайнером на разработку логотипа",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 0.0,
+        "landing": null,
+        "reason": "короткий визит"
+      },
+      {
+        "query": "если в песне использовать торговую марку будут ли проблемы",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 0.0,
+        "landing": null,
+        "reason": "короткий визит"
+      },
+      {
+        "query": "если кто то в своем видео использует твою торговую марку как свою",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 0.0,
+        "landing": null,
+        "reason": "короткий визит"
+      },
+      {
+        "query": "если товарный знак не зарегистрировали а купил у другого правообладателя можно ли покупку назвать недобросовестнрй конкуренцией, если первый регистрировал знак не добросоветно ноне падавал исков, а второй подал иски",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 0.0,
+        "landing": null,
+        "reason": "короткий визит"
+      },
+      {
+        "query": "законность демонстрации эмблем авто в роликах",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 0.0,
+        "landing": null,
+        "reason": "короткий визит"
+      },
+      {
+        "query": "защита дизайна товара",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 0.0,
+        "landing": null,
+        "reason": "короткий визит"
+      },
+      {
+        "query": "история возникновения логотипа",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 0.0,
+        "landing": null,
+        "reason": "короткий визит"
+      },
+      {
+        "query": "как добавить свой бренд на озон селлер",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 0.0,
+        "landing": null,
+        "reason": "короткий визит"
+      },
+      {
+        "query": "как закрепить за собой песню и мелодию",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 0.0,
+        "landing": null,
+        "reason": "небрендовый информационный запрос с единичными визитами — потенциал роста позиций"
+      },
+      {
+        "query": "как исправить слово в логотипе",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 100.0,
+        "landing": null,
+        "reason": "высокий отказ — страница не отвечает на запрос; короткий визит"
+      },
+      {
+        "query": "как опубликовать перевод песни с английского языка если нет разрешения правообладателя",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 0.0,
+        "landing": null,
+        "reason": "короткий визит"
+      },
+      {
+        "query": "как подать возражение в палату по патентным спорам",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 100.0,
+        "landing": null,
+        "reason": "высокий отказ — страница не отвечает на запрос; короткий визит"
+      },
+      {
+        "query": "как проверить зарегистрирован ли бренд на вайлдберриз",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 100.0,
+        "landing": null,
+        "reason": "высокий отказ — страница не отвечает на запрос; короткий визит"
+      },
+      {
+        "query": "как проверить зарегистрирован ли товарный знак в роспатенте",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 100.0,
+        "landing": null,
+        "reason": "высокий отказ — страница не отвечает на запрос; короткий визит"
+      },
+      {
+        "query": "когда заинтересованное лицо может подать возражения против регистрации товарного знака",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 0.0,
+        "landing": null,
+        "reason": "короткий визит"
+      },
+      {
+        "query": "лирэйт",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 0.0,
+        "landing": null,
+        "reason": "небрендовый информационный запрос с единичными визитами — потенциал роста позиций"
+      },
+      {
+        "query": "мкту хлопья",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 0.0,
+        "landing": null,
+        "reason": "короткий визит"
+      },
+      {
+        "query": "можно ли выкладывать в постах картины старых художников с указанием авторства",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 0.0,
+        "landing": null,
+        "reason": "короткий визит"
+      },
+      {
+        "query": "можно ли использовать а клипе картины, написанные по мастер классам с указанием",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 0.0,
+        "landing": null,
+        "reason": "короткий визит"
+      },
+      {
+        "query": "можно ли использовать логотипы компаний в видео",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 100.0,
+        "landing": null,
+        "reason": "высокий отказ — страница не отвечает на запрос; короткий визит"
+      },
+      {
+        "query": "можно ли использовать логотипы публичных компаний в своем видео",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 0.0,
+        "landing": null,
+        "reason": "короткий визит"
+      },
+      {
+        "query": "можно ли класть в подарок к заказу скриншоты из игр",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 0.0,
+        "landing": null,
+        "reason": "короткий визит"
+      },
+      {
+        "query": "можно ли показывать нашивки брендов на костюме у себя на канале ютуб",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 0.0,
+        "landing": null,
+        "reason": "короткий визит"
+      },
+      {
+        "query": "можно ли скриншот из игры использовать в коммерческих целях",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 0.0,
+        "landing": null,
+        "reason": "короткий визит"
+      },
+      {
+        "query": "мука и зерновые продукты; хлебобулочные изделия, кондитерские изделия; мороженое;",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 0.0,
+        "landing": null,
+        "reason": "короткий визит"
+      },
+      {
+        "query": "на вайлдберриз обязательно указывать бренд",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 0.0,
+        "landing": null,
+        "reason": "короткий визит"
+      },
+      {
+        "query": "оптика какой класс мкту новости",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 0.0,
+        "landing": null,
+        "reason": "небрендовый информационный запрос с единичными визитами — потенциал роста позиций"
+      },
+      {
+        "query": "перевод иностранных рассказов на русский могу ли публиковать свой перевод в интернете",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 100.0,
+        "landing": null,
+        "reason": "высокий отказ — страница не отвечает на запрос; короткий визит"
+      },
+      {
+        "query": "подавать возражения в фипс на регистрацию товарного знака",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 0.0,
+        "landing": null,
+        "reason": "короткий визит"
+      },
+      {
+        "query": "расчет вознаграждение за использование рид нескольким авторам",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 0.0,
+        "landing": null,
+        "reason": "короткий визит"
+      },
+      {
+        "query": "сенатова валерия станиславовна змр",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 100.0,
+        "landing": null,
+        "reason": "высокий отказ — страница не отвечает на запрос; короткий визит"
+      },
+      {
+        "query": "товарный знак и логотип в чем разница",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 0.0,
+        "landing": null,
+        "reason": "короткий визит"
+      },
+      {
+        "query": "услуги дизайнера по доработке товарного знака",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 0.0,
+        "landing": null,
+        "reason": "короткий визит"
+      },
+      {
+        "query": "что необходимо для публикации переводов на личной странице в интернете",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 0.0,
+        "landing": null,
+        "reason": "короткий визит"
+      },
+      {
+        "query": "я собираюсь перевести с английского и издать книгу автора метода духовного развития (он живой, находится в индии. какие у меня права на перевод и издание. и какие нужны разрешения от него?)",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 0.0,
+        "landing": null,
+        "reason": "короткий визит"
+      }
+    ],
+    "article_topic_candidates": [
+      {
+        "topic": "Товарные знаки: регистрация, возражения, споры",
+        "evidence_queries": [
+          "если товарный знак не зарегистрировали а купил у другого правообладателя можно ли покупку назвать недобросовестнрй конкуренцией, если первый регистрировал знак не добросоветно ноне падавал исков, а второй подал иски",
+          "как добавить свой бренд на озон селлер",
+          "как подать возражение в палату по патентным спорам",
+          "как проверить зарегистрирован ли бренд на вайлдберриз",
+          "как проверить зарегистрирован ли товарный знак в роспатенте",
+          "когда заинтересованное лицо может подать возражения против регистрации товарного знака",
+          "мкту хлопья",
+          "можно ли показывать нашивки брендов на костюме у себя на канале ютуб"
+        ],
+        "query_count": 13
+      },
+      {
+        "topic": "Логотипы и чужие эмблемы в контенте/видео",
+        "evidence_queries": [
+          "договор с дизайнером на разработку логотипа",
+          "законность демонстрации эмблем авто в роликах",
+          "история возникновения логотипа",
+          "как исправить слово в логотипе",
+          "можно ли использовать логотипы компаний в видео",
+          "можно ли использовать логотипы публичных компаний в своем видео",
+          "товарный знак и логотип в чем разница"
+        ],
+        "query_count": 7
+      },
+      {
+        "topic": "Авторское право: сроки, вознаграждение, нарушения",
+        "evidence_queries": [
+          "авторская переписка",
+          "авторское вознаграждение гк",
+          "будет ли нарушением авторских прав использование скриншота из игры",
+          "если товарный знак не зарегистрировали а купил у другого правообладателя можно ли покупку назвать недобросовестнрй конкуренцией, если первый регистрировал знак не добросоветно ноне падавал исков, а второй подал иски",
+          "как опубликовать перевод песни с английского языка если нет разрешения правообладателя",
+          "можно ли класть в подарок к заказу скриншоты из игр",
+          "можно ли скриншот из игры использовать в коммерческих целях"
+        ],
+        "query_count": 7
+      },
+      {
+        "topic": "Переводы и публикация переводов",
+        "evidence_queries": [
+          "я сделал перевод книги куда мне обратиться",
+          "как опубликовать перевод песни с английского языка если нет разрешения правообладателя",
+          "перевод иностранных рассказов на русский могу ли публиковать свой перевод в интернете",
+          "что необходимо для публикации переводов на личной странице в интернете",
+          "я собираюсь перевести с английского и издать книгу автора метода духовного развития (он живой, находится в индии. какие у меня права на перевод и издание. и какие нужны разрешения от него?)"
+        ],
+        "query_count": 5
+      },
+      {
+        "topic": "Промышленный дизайн и патенты",
+        "evidence_queries": [
+          "договор с дизайнером на разработку логотипа",
+          "защита дизайна товара",
+          "как подать возражение в палату по патентным спорам",
+          "как проверить зарегистрирован ли товарный знак в роспатенте",
+          "услуги дизайнера по доработке товарного знака"
+        ],
+        "query_count": 5
+      },
+      {
+        "topic": "Маркировка товаров (Честный знак, импорт)",
+        "evidence_queries": [
+          "как правильно промаркировать импортный товар, последовательность действий по шагово"
+        ],
+        "query_count": 1
+      },
+      {
+        "topic": "Франчайзинг и договоры (лицензии, отчуждение)",
+        "evidence_queries": [
+          "договор с дизайнером на разработку логотипа"
+        ],
+        "query_count": 1
+      },
+      {
+        "topic": "Недобросовестная конкуренция",
+        "evidence_queries": [
+          "если товарный знак не зарегистрировали а купил у другого правообладателя можно ли покупку назвать недобросовестнрй конкуренцией, если первый регистрировал знак не добросоветно ноне падавал исков, а второй подал иски"
+        ],
+        "query_count": 1
+      }
+    ]
+  },
+  "other_counters": {
+    "lireate.com": {
+      "totals": {
+        "last7": {
+          "visits": 45.0,
+          "users": 38.0,
+          "bounce_rate": 44.44,
+          "page_depth": 1.16,
+          "avg_duration_sec": 15.62
+        },
+        "prev7": {
+          "visits": 27.0,
+          "users": 27.0,
+          "bounce_rate": 48.15,
+          "page_depth": 1.15,
+          "avg_duration_sec": 46.81
+        },
+        "last28": {
+          "visits": 165.0,
+          "users": 142.0,
+          "bounce_rate": 60.0,
+          "page_depth": 1.12,
+          "avg_duration_sec": 17.13
+        }
+      },
+      "sources_last7": [
+        {
+          "source": "Прямые заходы",
+          "visits": 26.0
+        },
+        {
+          "source": "Переходы по рекламе",
+          "visits": 8.0
+        },
+        {
+          "source": "Переходы из социальных сетей",
+          "visits": 4.0
+        },
+        {
+          "source": "Переходы из поисковых систем",
+          "visits": 3.0
+        },
+        {
+          "source": "Переходы по ссылкам на сайтах",
+          "visits": 2.0
+        }
+      ]
+    },
+    "lireate-tm.ru": {
+      "totals": {
+        "last7": {
+          "visits": 0.0,
+          "users": 0.0,
+          "bounce_rate": 0.0,
+          "page_depth": 0.0,
+          "avg_duration_sec": 0.0
+        },
+        "prev7": {
+          "visits": 0.0,
+          "users": 0.0,
+          "bounce_rate": 0.0,
+          "page_depth": 0.0,
+          "avg_duration_sec": 0.0
+        },
+        "last28": {
+          "visits": 0.0,
+          "users": 0.0,
+          "bounce_rate": 0.0,
+          "page_depth": 0.0,
+          "avg_duration_sec": 0.0
+        }
+      },
+      "sources_last7": []
+    }
+  }
+}
