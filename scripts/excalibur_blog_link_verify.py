@@ -125,6 +125,18 @@ def verify_article(
     skip_external: bool = False,
 ) -> dict[str, Any]:
     html = html_path.read_text(encoding="utf-8")
+    privacy_violations: list[str] = []
+    try:
+        import sys
+
+        _scripts = Path(__file__).resolve().parent
+        if str(_scripts) not in sys.path:
+            sys.path.insert(0, str(_scripts))
+        from lireate_privacy_link_policy import audit_html
+
+        privacy_violations = audit_html(html, source=str(html_path))
+    except Exception as e:  # noqa: BLE001
+        privacy_violations = [f"privacy link policy check failed: {e}"]
     links = extract_links(html)
     user_agent = "ExcaliburBlogLinkVerify/1.0"
     results: list[dict[str, Any]] = []
@@ -168,11 +180,13 @@ def verify_article(
         results.append(r)
 
     failed = [r for r in results if not r.get("ok")]
+    policy_fail = bool(privacy_violations)
     return {
         "source": str(html_path).replace("\\", "/"),
         "total_links": len(results),
         "failed_count": len(failed),
-        "verdict": "pass" if not failed else "fail",
+        "privacy_policy_violations": privacy_violations,
+        "verdict": "pass" if not failed and not policy_fail else "fail",
         "links": results,
     }
 

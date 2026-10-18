@@ -102,6 +102,16 @@ python3 scripts/excalibur_blog_research_start.py --topic-id B01
 
 Проверка FTP: `python3 scripts/lireate_reg_ru_check.py`
 
+## Lireate: политика и согласие на ПДн (ссылки в статьях)
+
+Если в `article.html` (L* и любой материал для lireate.ru) есть ссылка на политику конфиденциальности или согласие на обработку персональных данных — **только** канонические URL (проверены, 200):
+
+- Политика конфиденциальности: `/politika_konfidencialnosti` на публичном домене из `LIREATE_PUBLIC_SITE_URL` (полный URL в `shared/lireate-legal-page-urls.md`)
+- Согласие на обработку персональных данных: `/private_data` (там же)
+
+**Запрещено** придумывать свои пути (`/privacy/`, `/policy`, англоязычные заглушки; `/privacy/` на lireate.ru → 404).  
+Канон: `shared/lireate-legal-page-urls.md`. Проверка: `python3 scripts/lireate_privacy_link_policy.py --all-lireate` и встроенные правила в `excalibur_blog_html_linter.py` / `excalibur_blog_link_verify.py`.
+
 - MCP через `${env:...}` в mcp.json
 
 ## Git hygiene

@@ -123,6 +123,20 @@ def lint_html_file(html_path: Path, whitelist: set[str]) -> dict[str, Any]:
     linter.errors.extend(detect_anchor_toc(html_content))
     linter.errors.extend(detect_duplicate_faq_sections(html_content))
 
+    privacy_errors: list[str] = []
+    try:
+        import sys
+
+        _scripts = Path(__file__).resolve().parent
+        if str(_scripts) not in sys.path:
+            sys.path.insert(0, str(_scripts))
+        from lireate_privacy_link_policy import audit_html
+
+        privacy_errors = audit_html(html_content, source=str(html_path))
+    except Exception as e:  # noqa: BLE001
+        privacy_errors = [f"privacy link policy check failed: {e}"]
+    linter.errors.extend(privacy_errors)
+
     return {
         "file": str(html_path.name),
         "verdict": "pass" if not linter.errors else "fail",

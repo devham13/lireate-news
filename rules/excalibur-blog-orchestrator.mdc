@@ -37,3 +37,11 @@ Handoff: `shared/excalibur-blog-handoff.md`
 - `Task(excalibur-blog-director)`
 - субагенты не запускают вложенные Task
 - шаг 4 без QA PASS
+
+## Lireate: ссылки на политику и согласие
+
+В статьях для **lireate.ru** не выдумывать URL политики/согласия на ПДн. Только канон (HTTP 200):
+
+- `/politika_konfidencialnosti` и `/private_data` на домене `LIREATE_PUBLIC_SITE_URL` (см. `shared/lireate-legal-page-urls.md`)
+
+Запрещены `/privacy`, `/privacy/`, `/policy` и аналоги. См. `shared/lireate-legal-page-urls.md`, `scripts/lireate_privacy_link_policy.py`.

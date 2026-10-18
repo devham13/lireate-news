@@ -1,0 +1,28 @@
+name: lireate-privacy-links
+
+on:
+  pull_request:
+    paths:
+      - "memory/blog/articles/L*/**"
+      - "scripts/lireate_privacy_link_policy.py"
+      - "scripts/excalibur_blog_html_linter.py"
+      - "scripts/excalibur_blog_link_verify.py"
+      - "shared/lireate-legal-page-urls.md"
+      - ".github/workflows/lireate-privacy-links.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "memory/blog/articles/L*/article.html"
+      - "scripts/lireate_privacy_link_policy.py"
+
+jobs:
+  privacy-link-policy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.8"
+      - name: L* articles — forbidden /privacy /policy URLs
+        run: python3 scripts/lireate_privacy_link_policy.py --all-lireate
