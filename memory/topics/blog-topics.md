@@ -206,7 +206,7 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L03 — Как зарегистрировать бренд на Ozon и Wildberries: нужен ли товарный знак
 
-- **status:** new
+- **status:** written
 - **priority:** P1
 - **site:** lireate
 - **lireate_category_id:** 13
@@ -215,7 +215,7 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 - **h1:** Как зарегистрировать бренд на Ozon и Wildberries: нужен ли товарный знак
 - **primary_query:** как проверить есть ли такой бренд на вайлдберриз
 - **secondary_queries:** как добавить бренд на озон, как зарегистрировать свой бренд на озон селлер, бренд на озон, как создать бренд на озоне, как зарегистрировать бренд на озон
-- **search_intent:** commercial
+- **search_intent:** how_to
 - **article_mode:** B
 - **angle:** Пошагово карточка бренда в ЛК селлера, какие документы просят, когда без ТЗ не обойтись
 - **target_service:** reg-tz-main
