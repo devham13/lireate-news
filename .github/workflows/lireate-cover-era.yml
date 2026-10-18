@@ -1,0 +1,26 @@
+name: lireate-cover-era
+
+on:
+  pull_request:
+    paths:
+      - "memory/blog/articles/L*/**"
+      - "memory/blog/cover-action-selfie.md"
+      - "scripts/lireate_cover_era*.py"
+      - "scripts/lireate_cover_kie.py"
+  push:
+    branches:
+      - main
+    paths:
+      - "memory/blog/articles/L*/article.meta.json"
+      - "scripts/lireate_cover_era*.py"
+
+jobs:
+  era-rotation-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.8"
+      - name: cover_era rotation (last 10 L articles)
+        run: python3 scripts/lireate_cover_era_check.py --all-lireate

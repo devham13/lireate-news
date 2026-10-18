@@ -25,6 +25,7 @@
 
 - Cloud готовит контент в **git**; live INSERT только на хостинге (`lireate_hosting_publish.py`).
 - PR не в `main` (не смержен) → CRON на сервере не видит новые `article.html`. Lireate: агент **сам мержит** готовый PR после зелёного CI; draft PR не использовать.
+- Lireate cover: только `lireate_cover_kie.py` + `KIE_API_KEY`. `COVER_BLOCKER` → не мержить; PIL/quad fallback запрещён. `cover_era` не повторять в окне 10 статей.
 - После первой публикации URL даёт **200** → обычный cron выходит `ALREADY_PUBLISHED` без обновления текста. Нужны `git pull` + `--update` (см. `scripts/lireate_hosting_cron.sh`).
 - Повторные прогоны по той же L01 не создают вторую новость (тот же `seo_url`).
 

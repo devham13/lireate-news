@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Overlay readable Cyrillic text on blog covers (no model-generated microcopy)."""
+"""Legacy PIL overlay for L01/L02-era covers. Lireate NEW articles: use scripts/lireate_cover_kie.py only."""
 
 import argparse
 import os
