@@ -1,5 +1,14 @@
 # Lireate NEWS — автоматизация (Cloud + хостинг REG.RU)
 
+> ## ⛔ Lireate: правило очереди тем (обязательно, приоритет над всем ниже)
+> 1. Первым шагом: `python3 scripts/excalibur_blog_today.py` (или `python3 scripts/lireate_topic_queue.py`).
+> 2. Тема = первая карточка `## Lxx` в `memory/topics/blog-topics.md` со `status: new`, у которой **нет** папки `memory/blog/articles/Lxx-*`.
+> 3. Если скрипт печатает `NO_NEW_TOPIC` — **стоп**: не писать статью, не обновлять старую, не создавать ветку/PR. В ответе только `NO_NEW_TOPIC`.
+> 4. **Никогда не переписывать существующую статью** (L01 и любые папки в `memory/blog/articles/`). `LIREATE_TOPIC_ID`/`EXCALIBUR_TOPIC_ID`, указывающий на существующую папку, игнорируется.
+> 5. После написания статьи поставить в её карточке `status: written` (в том же PR). `published` ставит человек/хостинг после выкладки.
+> 6. Публикация на хостинге: `lireate_hosting_publish.py` без `--article-dir` берёт только самую новую неопубликованную папку L*; если нет — `NO_NEW_ARTICLE`, exit 0, без `--update`.
+
+
 Инструкция для **Cursor Automations / Cloud Agent** и для оператора. Язык работы: **русский**.
 
 Два связанных контура:
@@ -54,7 +63,7 @@ Lireate (для справки / worker; live publish на сервере):
 
 Тема:
 
-- EXCALIBUR_TOPIC_ID или LIREATE_TOPIC_ID — например L01; если пусто — today.py + карточка из memory/topics/blog-topics.md (префикс L)
+- EXCALIBUR_TOPIC_ID или LIREATE_TOPIC_ID — обычно пусто: today.py берёт первую карточку L со status new без папки; существующая папка игнорируется; нет темы → NO_NEW_TOPIC
 - publish в триггере: `publish:no` — только контент в git, без инструкций на live; иначе после пайплайна — чеклист хостинга + dry-run команды
 
 ## Handoff (каждый прогон)

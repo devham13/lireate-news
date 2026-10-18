@@ -151,11 +151,17 @@ def main():
         raw = (os.environ.get("LIREATE_ARTICLE_DIR") or "").strip()
         if raw:
             article_dir = Path(raw)
-        else:
-            article_dir = (
-                REPO_ROOT
-                / "memory/blog/articles/L01-proverka-tovarnogo-znaka-pered-podachey-v-rospatent"
-            )
+    if article_dir is None:
+        # Auto mode: only the newest not-yet-published L* article. No L01 fallback, no --update.
+        from lireate_topic_queue import next_unpublished_article
+
+        if args.update:
+            print("STATUS: BLOCKER — --update requires explicit --article-dir (auto mode never rewrites)")
+            return 2
+        article_dir = next_unpublished_article(REPO_ROOT, state_file)
+        if article_dir is None:
+            _print_status("NO_NEW_ARTICLE", "nothing to publish")
+            return 0
     article_dir = article_dir.resolve()
 
     result_path = article_dir / "lireate-publish-result.json"

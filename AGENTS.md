@@ -1,5 +1,14 @@
 # Excalibur BLOG Cloud Instructions
 
+> ## ⛔ Lireate: правило очереди тем (обязательно, приоритет над всем ниже)
+> 1. Первым шагом: `python3 scripts/excalibur_blog_today.py` (или `python3 scripts/lireate_topic_queue.py`).
+> 2. Тема = первая карточка `## Lxx` в `memory/topics/blog-topics.md` со `status: new`, у которой **нет** папки `memory/blog/articles/Lxx-*`.
+> 3. Если скрипт печатает `NO_NEW_TOPIC` — **стоп**: не писать статью, не обновлять старую, не создавать ветку/PR. В ответе только `NO_NEW_TOPIC`.
+> 4. **Никогда не переписывать существующую статью** (L01 и любые папки в `memory/blog/articles/`). `LIREATE_TOPIC_ID`/`EXCALIBUR_TOPIC_ID`, указывающий на существующую папку, игнорируется.
+> 5. После написания статьи поставить в её карточке `status: written` (в том же PR). `published` ставит человек/хостинг после выкладки.
+> 6. Публикация на хостинге: `lireate_hosting_publish.py` без `--article-dir` берёт только самую новую неопубликованную папку L*; если нет — `NO_NEW_ARTICLE`, exit 0, без `--update`.
+
+
 Язык работы: русский.
 
 ## Главное правило

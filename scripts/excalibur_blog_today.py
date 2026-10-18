@@ -106,14 +106,25 @@ def main() -> None:
 
     root = project_root()
     now = datetime.now(TZ)
-    published = parse_published_slugs(root)
-    topic_id = os.environ.get("EXCALIBUR_TOPIC_ID", "").strip().upper() or next_p0_topic(root, published)
+    # Lireate only: ignore legacy B** (mayai.ru) rows; topic = first `new` L card without article folder.
+    published = [r for r in parse_published_slugs(root) if r["topic_id"].upper().startswith("L")]
+    sys.path.insert(0, str(root / "scripts"))
+    from lireate_topic_queue import article_dirs, next_new_topic
+
+    forced = (os.environ.get("LIREATE_TOPIC_ID") or os.environ.get("EXCALIBUR_TOPIC_ID") or "").strip().upper()
+    if forced and forced in article_dirs(root):
+        forced = ""  # never rewrite an existing article
+    topic_id = forced or next_new_topic(root) or ""
 
     print(f"EXCALIBUR_RUN_DATE={now:%Y-%m-%d}")
     print(f"EXCALIBUR_RUN_DATETIME={now:%Y-%m-%d %H:%M:%S %Z}")
     print(f"EXCALIBUR_RUN_YEAR={now.year}")
     print(f"EXCALIBUR_FRESHNESS_WINDOW=prefer_sources_after_{(now.date().replace(day=1)).isoformat()}")
-    print(f"EXCALIBUR_SUGGESTED_TOPIC_ID={topic_id}")
+    if topic_id:
+        print(f"EXCALIBUR_SUGGESTED_TOPIC_ID={topic_id}")
+    else:
+        print("EXCALIBUR_SUGGESTED_TOPIC_ID=")
+        print("NO_NEW_TOPIC")
     print(
         "EXCALIBUR_PUBLISHED_ARTICLES="
         + json.dumps(published[-10:], ensure_ascii=False)

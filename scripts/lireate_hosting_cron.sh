@@ -26,5 +26,6 @@ if [[ -d "$REPO_DIR/.git" ]]; then
   fi
 fi
 
-# After first publish the URL is 200 — refresh text/images from git (--update bumps datetime).
-exec "$PY" "$REPO_DIR/scripts/lireate_hosting_publish.py" --update "$@"
+# Publish only the newest not-yet-published article; prints NO_NEW_ARTICLE and exits 0 otherwise.
+# Never --update here: old articles are not rewritten by CRON.
+exec "$PY" "$REPO_DIR/scripts/lireate_hosting_publish.py" "$@"
