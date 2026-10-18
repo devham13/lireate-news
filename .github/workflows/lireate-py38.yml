@@ -15,12 +15,11 @@ on:
 
 jobs:
   compile-36:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
+    container:
+      image: python:3.6
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.6"
       - name: Byte-compile Lireate scripts (Python 3.6)
         run: |
           python -m py_compile scripts/lireate_compat.py
