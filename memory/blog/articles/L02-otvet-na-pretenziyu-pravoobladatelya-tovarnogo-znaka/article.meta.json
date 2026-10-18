@@ -40,12 +40,5 @@
     "description_aeo": "Ответ на досудебную претензию по товарному знаку - проверка знака в Поисковой платформе, отказ или частичное согласие, оговорка о непризнании вины, срок 30 дней по ст. 1252 ГК РФ."
   },
   "cover_family": "brand_collage",
-  "cover_style": {
-    "topic_id": "L02",
-    "style_id": "dark_cinematic_closeup",
-    "layout_id": "dark_cinematic_closeup_layout",
-    "caption_layout_id": "caption_lower_third_dark",
-    "palette_id": "cinematic_navy_amber",
-    "hero_present": true
-  }
+  "cover_era": "Викторианский Лондон"
 }

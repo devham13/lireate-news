@@ -7,7 +7,7 @@
 > 4. **Никогда не переписывать существующую статью** (L01 и любые папки в `memory/blog/articles/`). `LIREATE_TOPIC_ID`/`EXCALIBUR_TOPIC_ID`, указывающий на существующую папку, игнорируется.
 > 5. После написания статьи поставить в её карточке `status: written` (в том же PR). `published` ставит **CRON на хостинге** после успешного INSERT.
 > 6. Публикация на хостинге: `lireate_hosting_publish.py` без `--article-dir` берёт только самую новую неопубликованную папку L*; если нет — `NO_NEW_ARTICLE`, exit 0, без `--update`.
-> 7. **Auto-merge PR:** после PASS всех проверок (lint, SEO, GEO QA, обложка с PIL-оверлеем русского текста) — **готовый** PR в `main`, **merge агентом** при зелёном CI. FAIL → PR остаётся открытым, merge и publish нет.
+> 7. **Auto-merge PR:** после PASS (lint, SEO, GEO QA, **KIE action-selfie cover**, `cover_era` rotation) — merge при зелёном CI. `COVER_BLOCKER` → не мержить. Секрет **`KIE_API_KEY`** обязателен для генерации обложек Lireate.
 > 8. Live после merge — только **CRON** на REG.RU, не ручное одобрение владельца.
 
 
@@ -77,6 +77,7 @@ agent worker start --pool --pool-name excalibur-blog --idle-release-timeout 600
 | `LIREATE_ALLOW_PUBLISH` | `yes` когда готовы выкладывать |
 | `LIREATE_ADMIN_URL` / `LIREATE_ADMIN_USER` / `LIREATE_ADMIN_PASSWORD` | вход в CMS для создания новости (см. autopublish doc) |
 | `EXCALIBUR_PROJECT_ROOT` | корень репо на worker |
+| `KIE_API_KEY` | kie.ai Bearer token для обложек Lireate (`scripts/lireate_cover_kie.py`) |
 
 Проверка FTP (legacy): `python3 scripts/lireate_reg_ru_check.py` — см. `shared/lireate-reg-ru-connection.md`.  
 **Каноническая автоматизация Lireate NEWS:** `LIREATE-AUTOMATION.md` (Cloud контент + REG.RU hosting publish).  

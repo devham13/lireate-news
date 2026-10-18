@@ -7,7 +7,7 @@
 > 4. **Никогда не переписывать существующую статью** (L01 и любые папки в `memory/blog/articles/`). `LIREATE_TOPIC_ID`/`EXCALIBUR_TOPIC_ID`, указывающий на существующую папку, игнорируется.
 > 5. После написания статьи поставить в её карточке `status: written` (в том же PR). `published` ставит **CRON на хостинге** после `STATUS: PUBLISHED`.
 > 6. Публикация на хостинге: `lireate_hosting_publish.py` без `--article-dir` берёт только самую новую неопубликованную папку L*; если нет — `NO_NEW_ARTICLE`, exit 0, без `--update`.
-> 7. **Auto-merge:** контент-пайплайн открывает **не-draft** PR в `main` и **сам мержит** после зелёных проверок (lint, SEO, fact-check/GEO QA PASS, cover с читаемым русским текстом через `lireate_cover_text_overlay.py`). Любой FAIL — PR не мержится, CRON не видит статью.
+> 7. **Auto-merge:** контент-пайплайн открывает **не-draft** PR в `main` и **сам мержит** после зелёных проверок (lint, SEO, GEO QA, **KIE action-selfie cover** + `cover-kie-qa.md`). Нет `KIE_API_KEY` или `COVER_BLOCKER` после 2 попыток kie — **не мержить**. Fallback на PIL/quad **запрещён**.
 > 8. **NO_NEW_TOPIC** — без статьи, без PR, без обновления docs/очереди.
 
 
@@ -24,11 +24,15 @@
 
 Подробности сервера: `memory/hosting/lireate-reg-ru-production.md`, установка: `docs/lireate-autopub-hosting.ru.md`.
 
-**Героиня обложек (i2i):** `memory/cover/blog-hero.json` + `memory/cover/assets/blog-hero-reference.png` (копия `assets/hero/heroine_ref.jpg`). Лицо — молодая женщина, чёрные волнистые волосы с чёлкой, карие глаза; на обложке — деловой образ юриста по ИС. **Поза, кадр и локация меняются**; в части стилей героини нет (см. каталог).
+**Обложки (только kie.ai):** канон `memory/blog/cover-action-selfie.md`, модель **nano-banana-2**, скрипт `scripts/lireate_cover_kie.py`. Env: **`KIE_API_KEY`** (Cursor Cloud Secrets / worker `.env`).
 
-**Стили и ротация:** `memory/blog/cover-styles.md` + `memory/blog/cover-style-registry.json`. В `article.meta.json` → `cover_style` (`style_id`, `layout_id`, `caption_layout_id`, `palette_id`, `hero_present`). Перед cover: `python3 scripts/lireate_cover_style_pick.py --topic-id Lxx --write-meta article.meta.json`. **Не повторять `style_id` у последних 3 L-статей; не повторять `caption_layout_id` у предыдущей.** CI: `scripts/lireate_cover_style_check.py --all-lireate`. Layout L01/L02 (`legacy_hero_left_doc_card`) — только история, для новых статей запрещён.
+**Героиня:** identity lock с face reference (URL в `cover-action-selfie.md`, локально `memory/cover/assets/blog-hero-reference.png`). **Action selfie** 24mm: героиня в **исторической эпохе** по теме статьи, visual gag по юридической теме, цвета Velvia, без сепии.
 
-**Текст на обложке:** модель **не** рисует мелкие надписи (только пустой UI); весь русский текст — **PIL-оверлей** (`scripts/lireate_cover_text_overlay.py`), **позиция/цвет/размер** по `caption_layout_id` стиля. `cover.png` — **860×400**, без псевдотекста.
+**Типографика в кадре (рисует модель):** короткий заголовок **2–5 слов** кириллицей (`cover_headline` в meta), крупный белый condensed сверху, не на лице; внизу **@LIREATE** + лого Telegram. Не полный title статьи.
+
+**Ротация эпох:** `cover_era` в `article.meta.json`; **не повторять эпоху** среди последних **10** L-статей. `lireate_cover_era_pick.py` / CI `lireate_cover_era_check.py`.
+
+**Выход:** `cover/cover.png` 860×400, `cover-small.png` 350×163, `cover/cover-kie-qa.md`. При ошибке API → `COVER_BLOCKER`, PR не мержить.
 
 ---
 
