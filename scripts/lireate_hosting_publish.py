@@ -151,11 +151,17 @@ def main():
         raw = (os.environ.get("LIREATE_ARTICLE_DIR") or "").strip()
         if raw:
             article_dir = Path(raw)
-        else:
-            article_dir = (
-                REPO_ROOT
-                / "memory/blog/articles/L01-proverka-tovarnogo-znaka-pered-podachey-v-rospatent"
-            )
+    if article_dir is None:
+        # Auto mode: only the newest not-yet-published L* article. No L01 fallback, no --update.
+        from lireate_topic_queue import next_unpublished_article
+
+        if args.update:
+            print("STATUS: BLOCKER — --update requires explicit --article-dir (auto mode never rewrites)")
+            return 2
+        article_dir = next_unpublished_article(REPO_ROOT, state_file)
+        if article_dir is None:
+            _print_status("NO_NEW_ARTICLE", "nothing to publish")
+            return 0
     article_dir = article_dir.resolve()
 
     result_path = article_dir / "lireate-publish-result.json"
@@ -185,7 +191,18 @@ def main():
     meta = json.loads(meta_path.read_text(encoding="utf-8"))
     slug = meta.get("slug") or article_dir.name.split("-", 1)[-1]
     topic_id = meta.get("topic_id")
-    category_id = int(meta.get("lireate_category_id", 9))
+    from lireate_topic_queue import merge_lireate_category_from_topic_card
+
+    meta = merge_lireate_category_from_topic_card(REPO_ROOT, meta)
+    if meta.get("lireate_category_id") is None:
+        result["error"] = (
+            "missing lireate_category_id in article.meta.json and in topic card "
+            "(memory/topics/blog-topics.md)"
+        )
+        result_path.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        _print_status("BLOCKER", result["error"])
+        return 2
+    category_id = int(meta["lireate_category_id"])
 
     html = html_path.read_text(encoding="utf-8")
     bundle, _image_map, _transformed = build_publish_bundle(article_dir, meta, html)

@@ -1,5 +1,14 @@
 # Lireate NEWS — автоматизация (Cloud + хостинг REG.RU)
 
+> ## ⛔ Lireate: правило очереди тем (обязательно, приоритет над всем ниже)
+> 1. Первым шагом: `python3 scripts/excalibur_blog_today.py` (или `python3 scripts/lireate_topic_queue.py`).
+> 2. Тема = первая карточка `## Lxx` в `memory/topics/blog-topics.md` со `status: new`, у которой **нет** папки `memory/blog/articles/Lxx-*`.
+> 3. Если скрипт печатает `NO_NEW_TOPIC` — **стоп**: не писать статью, не обновлять старую, не создавать ветку/PR. В ответе только `NO_NEW_TOPIC`.
+> 4. **Никогда не переписывать существующую статью** (L01 и любые папки в `memory/blog/articles/`). `LIREATE_TOPIC_ID`/`EXCALIBUR_TOPIC_ID`, указывающий на существующую папку, игнорируется.
+> 5. После написания статьи поставить в её карточке `status: written` (в том же PR). `published` ставит человек/хостинг после выкладки.
+> 6. Публикация на хостинге: `lireate_hosting_publish.py` без `--article-dir` берёт только самую новую неопубликованную папку L*; если нет — `NO_NEW_ARTICLE`, exit 0, без `--update`.
+
+
 Инструкция для **Cursor Automations / Cloud Agent** и для оператора. Язык работы: **русский**.
 
 Два связанных контура:
@@ -54,7 +63,7 @@ Lireate (для справки / worker; live publish на сервере):
 
 Тема:
 
-- EXCALIBUR_TOPIC_ID или LIREATE_TOPIC_ID — например L01; если пусто — today.py + карточка из memory/topics/blog-topics.md (префикс L)
+- EXCALIBUR_TOPIC_ID или LIREATE_TOPIC_ID — обычно пусто: today.py берёт первую карточку L со status new без папки; существующая папка игнорируется; нет темы → NO_NEW_TOPIC
 - publish в триггере: `publish:no` — только контент в git, без инструкций на live; иначе после пайплайна — чеклист хостинга + dry-run команды
 
 ## Handoff (каждый прогон)
@@ -169,16 +178,25 @@ Cloud Agent после шага E: записать в handoff команды F 
 - HTTP-админка с captcha — **не использовать** для автоматизации.
 - `db.php` на сайте **не подключать** через require в CLI (битый порядок аргументов mysqli_set_charset); парсинг define() — в `lireate_db_publish.php`.
 
-## Категории (таблица category)
+## Категории (таблица category, lireate.ru/news)
 
 | id | Название |
 |----|----------|
+| 2 | Новости |
 | 9 | Товарный знак |
 | 10 | Логотип |
 | 11 | Фирменный стиль |
-| … | см. diagnostic на сервере |
+| 12 | Сайт |
+| 13 | Бренд |
+| 14 | Фирменное наименование |
+| 15 | Бизнес |
+| 16 | Франчайзинг и франшиза |
+| 17 | Авторское право |
+| 18 | Творческий псевдоним |
+| 19 | Программа ЭВМ |
+| 20 | Патент |
 
-В `article.meta.json` всегда задавать `lireate_category_id`.
+В карточке темы (`memory/topics/blog-topics.md`) и в `article.meta.json` задавать `lireate_category_id` и `lireate_category_name`. Для новых карточек **L\*** — выбирать наиболее подходящую рубрику из таблицы (каноническая копия таблицы — в `blog-topics.md`, секция Lireate). Publish на хостинге берёт категорию из meta, при отсутствии — из карточки темы по `topic_id`.
 
 ## Ошибки директора
 
