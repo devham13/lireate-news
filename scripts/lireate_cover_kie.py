@@ -98,7 +98,7 @@ def upload_face_ref(local_path, api_key):
 def load_prompt_template(root):
     text = (root / "memory/blog/cover-action-selfie.md").read_text(encoding="utf-8")
     m = re.search(
-        r"## Промпт \(подставить.*?\n```\n([\s\S]*?)```",
+        r"## Промпт \(подставить.*?\n+```\n([\s\S]*?)```",
         text,
     )
     if not m:
@@ -141,8 +141,14 @@ def poll_task(api_key, task_id, max_wait=600, interval=8):
             url,
             headers={"Authorization": "Bearer {0}".format(api_key)},
         )
-        status = (info.get("status") or info.get("data", {}).get("status") or "").lower()
-        if status in ("success", "succeeded", "completed", "done"):
+        data = info.get("data") if isinstance(info.get("data"), dict) else {}
+        status = (
+            data.get("state")
+            or info.get("status")
+            or data.get("status")
+            or ""
+        ).lower()
+        if status in ("success", "succeeded", "completed", "done") or data.get("successFlag") == 1:
             return info
         if status in ("fail", "failed", "error"):
             raise RuntimeError("kie task failed: {0}".format(info))
@@ -151,10 +157,27 @@ def poll_task(api_key, task_id, max_wait=600, interval=8):
 
 
 def extract_image_url(record):
+    data = record.get("data") if isinstance(record.get("data"), dict) else record
+    if isinstance(data, dict):
+        rj = data.get("resultJson")
+        if isinstance(rj, str) and rj.strip():
+            try:
+                parsed = json.loads(rj)
+                urls = parsed.get("resultUrls") or parsed.get("resultUrl")
+                if isinstance(urls, list) and urls:
+                    return urls[0]
+                if isinstance(urls, str) and urls.startswith("http"):
+                    return urls
+            except json.JSONDecodeError:
+                pass
+        resp = data.get("response")
+        if isinstance(resp, dict):
+            urls = resp.get("resultUrls")
+            if isinstance(urls, list) and urls:
+                return urls[0]
     for key in ("resultUrl", "outputUrl", "imageUrl", "url"):
         if record.get(key):
             return record[key]
-    data = record.get("data") or record.get("result") or {}
     if isinstance(data, dict):
         for key in ("resultUrl", "outputUrl", "imageUrl", "url", "output"):
             val = data.get(key)
