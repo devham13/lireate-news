@@ -5,8 +5,10 @@
 > 2. Тема = первая карточка `## Lxx` в `memory/topics/blog-topics.md` со `status: new`, у которой **нет** папки `memory/blog/articles/Lxx-*`.
 > 3. Если скрипт печатает `NO_NEW_TOPIC` — **стоп**: не писать статью, не обновлять старую, не создавать ветку/PR. В ответе только `NO_NEW_TOPIC`.
 > 4. **Никогда не переписывать существующую статью** (L01 и любые папки в `memory/blog/articles/`). `LIREATE_TOPIC_ID`/`EXCALIBUR_TOPIC_ID`, указывающий на существующую папку, игнорируется.
-> 5. После написания статьи поставить в её карточке `status: written` (в том же PR). `published` ставит человек/хостинг после выкладки.
+> 5. После написания статьи поставить в её карточке `status: written` (в том же PR). `published` ставит **CRON на хостинге** после `STATUS: PUBLISHED`.
 > 6. Публикация на хостинге: `lireate_hosting_publish.py` без `--article-dir` берёт только самую новую неопубликованную папку L*; если нет — `NO_NEW_ARTICLE`, exit 0, без `--update`.
+> 7. **Auto-merge:** контент-пайплайн открывает **не-draft** PR в `main` и **сам мержит** после зелёных проверок (lint, SEO, fact-check/GEO QA PASS, cover с читаемым русским текстом через `lireate_cover_text_overlay.py`). Любой FAIL — PR не мержится, CRON не видит статью.
+> 8. **NO_NEW_TOPIC** — без статьи, без PR, без обновления docs/очереди.
 
 
 Инструкция для **Cursor Automations / Cloud Agent** и для оператора. Язык работы: **русский**.
@@ -149,6 +151,18 @@ python3 scripts/lireate_hosting_publish.py \
 - `image_files`: `{DOCROOT}/template/images/blog/{seo_url}.jpg`, `.../small/{seo_url}.jpg`, inline в `/images/`
 
 Закоммитить артефакты статьи в git (без секретов, без handoff).
+
+### E2. Git PR и auto-merge (Cloud Agent)
+
+После шага D (Indexer) и PASS всех проверок репозитория:
+
+1. Ветка `cursor/...`, коммит: статья + `status: written` в карточке L**.
+2. Открыть PR в `main` **без draft**.
+3. Дождаться зелёного CI (lint, SEO, cover-caption check, fact-check / GEO QA).
+4. **Смержить PR агентом** — без ожидания ручного одобрения владельца.
+5. При любом FAIL проверок — **не мержить**; live publish не запускается.
+
+`NO_NEW_TOPIC` → шаги E–E2 **не выполняются**.
 
 ### F. Live publish (только хостинг REG.RU)
 

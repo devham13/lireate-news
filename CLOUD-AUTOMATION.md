@@ -5,8 +5,10 @@
 > 2. Тема = первая карточка `## Lxx` в `memory/topics/blog-topics.md` со `status: new`, у которой **нет** папки `memory/blog/articles/Lxx-*`.
 > 3. Если скрипт печатает `NO_NEW_TOPIC` — **стоп**: не писать статью, не обновлять старую, не создавать ветку/PR. В ответе только `NO_NEW_TOPIC`.
 > 4. **Никогда не переписывать существующую статью** (L01 и любые папки в `memory/blog/articles/`). `LIREATE_TOPIC_ID`/`EXCALIBUR_TOPIC_ID`, указывающий на существующую папку, игнорируется.
-> 5. После написания статьи поставить в её карточке `status: written` (в том же PR). `published` ставит человек/хостинг после выкладки.
+> 5. После написания статьи поставить в её карточке `status: written` (в том же PR). `published` ставит **CRON на хостинге** после успешного INSERT.
 > 6. Публикация на хостинге: `lireate_hosting_publish.py` без `--article-dir` берёт только самую новую неопубликованную папку L*; если нет — `NO_NEW_ARTICLE`, exit 0, без `--update`.
+> 7. **Auto-merge PR:** после PASS всех проверок (lint, SEO, GEO QA, обложка с PIL-оверлеем русского текста) — **готовый** PR в `main`, **merge агентом** при зелёном CI. FAIL → PR остаётся открытым, merge и publish нет.
+> 8. Live после merge — только **CRON** на REG.RU, не ручное одобрение владельца.
 
 
 Настройка запуска в **Cursor Cloud Agents / Automations** по образцу [kovcheg-office-cloud](https://github.com/Horosheff/kovcheg-office-cloud).
@@ -129,7 +131,7 @@ Fallback: если Task types недоступны — generalPurpose per role (
 - `memory/blog/excalibur-blog-run-log.md`
 - артефакты в `memory/blog/articles/<topic_id>-<slug>/`
 
-Если Automation через PR — merge PR, чтобы следующий run видел ledger.
+**Lireate:** после зелёного CI агент **сам мержит** PR статьи в `main` (см. AGENTS.md § auto-merge). Excalibur WP: merge PR, чтобы следующий run видел ledger.
 
 ## Локальная разработка плагина
 
