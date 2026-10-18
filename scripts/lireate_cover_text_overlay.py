@@ -42,6 +42,25 @@ def _load_font(size: int):
     return ImageFont.load_default()
 
 
+def _crop_resize_top_right_bias(im, target_w, target_h):
+    """Crop to aspect keeping top + right (hero on right must stay in frame)."""
+    from PIL import Image
+
+    w, h = im.size
+    target_aspect = float(target_w) / float(target_h)
+    src_aspect = float(w) / float(h)
+    if src_aspect > target_aspect:
+        new_w = int(round(h * target_aspect))
+        left = w - new_w
+        box = (left, 0, left + new_w, h)
+    else:
+        new_h = int(round(w / target_aspect))
+        top = 0
+        box = (0, top, w, top + new_h)
+    cropped = im.crop(box)
+    return cropped.resize((target_w, target_h), Image.Resampling.LANCZOS)
+
+
 def _crop_resize_top_left_bias(im, target_w, target_h):
     """Crop to aspect keeping top + left (heroine head on left must stay in frame)."""
     from PIL import Image
@@ -241,6 +260,45 @@ def draw_l02_headline(im, profile="860"):
     return draw_topic_headline(im, L02_TITLE_LINES, L02_TITLE_SHORT, profile=profile)
 
 
+def draw_caption_lower_third_dark(im, lines, short_lines, profile="860"):
+    """Bottom band caption — dark cinematic style (not top-right plate)."""
+    from PIL import ImageDraw
+
+    im = im.convert("RGBA")
+    draw = ImageDraw.Draw(im)
+    w, h = im.size
+    m = MARGIN_PX if profile == "860" else SMALL_MARGIN_PX
+    lines_use = short_lines if profile == "350" else lines
+    band_y0 = int(h * 0.62) if profile == "860" else int(h * 0.55)
+    draw.rectangle((0, band_y0, w, h), fill=(15, 23, 42, 200))
+    max_w = w - 2 * m
+    start_font = 26 if profile == "860" else 12
+    font, widths = _fit_title_font(draw, lines_use, max_w, start_font, min_size=9)
+    line_h = int(font.size * 1.15)
+    block_h = line_h * len(lines_use) + 8
+    ty = band_y0 + int((h - band_y0 - block_h) / 2)
+    for i, line in enumerate(lines_use):
+        tw = widths[i]
+        tx = m if profile == "860" else m + 4
+        draw.text(
+            (tx, ty + i * line_h),
+            line,
+            font=font,
+            fill=(254, 243, 199),
+            stroke_width=1 if profile == "860" else 0,
+            stroke_fill=(15, 23, 42),
+        )
+    sub = "Срок 30 дней · ст. 1252 ГК РФ"
+    if profile == "860":
+        sf = _load_font(max(12, int(h * 0.032)))
+        draw.text((m, h - m - int(sf.size * 1.1)), sub, font=sf, fill=(251, 191, 36))
+    return im.convert("RGB")
+
+
+def draw_l02_headline_cinematic(im, profile="860"):
+    return draw_caption_lower_third_dark(im, L02_TITLE_LINES, L02_TITLE_SHORT, profile=profile)
+
+
 def build_l02_small_thumb(base_path: Path):
     from PIL import Image, ImageDraw
 
@@ -366,6 +424,26 @@ def build_l02_cover_from_base(base_path: Path):
     return cover, small
 
 
+def build_l02_small_thumb_cinematic(base_path: Path):
+    from PIL import Image
+
+    base = Image.open(base_path).convert("RGB")
+    frame = _crop_resize_top_right_bias(base, BLOG_SMALL_SIZE[0], BLOG_SMALL_SIZE[1])
+    return draw_l02_headline_cinematic(frame, profile="350")
+
+
+def build_l02_cover_cinematic_from_base(base_path: Path):
+    from PIL import Image
+
+    base = Image.open(base_path).convert("RGB")
+    work = (1290, 600)
+    base_r = base.resize(work, Image.Resampling.LANCZOS)
+    frame = _crop_resize_top_right_bias(base_r, BLOG_COVER_SIZE[0], BLOG_COVER_SIZE[1])
+    cover = draw_l02_headline_cinematic(frame, profile="860")
+    small = build_l02_small_thumb_cinematic(base_path)
+    return cover, small
+
+
 def export_artifacts(cover, small, artifacts_dir: Path, stem: str):
     artifacts_dir.mkdir(parents=True, exist_ok=True)
     cover.save(artifacts_dir / "{0}-crop-860x400.jpg".format(stem), quality=92)
@@ -379,6 +457,11 @@ def main():
     ap.add_argument("--base", type=Path, required=True)
     ap.add_argument("--out", type=Path, required=True)
     ap.add_argument("--topic", default="L01", choices=("L01", "L02"))
+    ap.add_argument(
+        "--style-id",
+        default="",
+        help="Lireate cover style (e.g. dark_cinematic_closeup for L02)",
+    )
     ap.add_argument("--artifacts-dir", type=Path, default=Path("/opt/cursor/artifacts"))
     ap.add_argument("--artifact-stem", default="l01-cover-final")
     ap.add_argument(
@@ -388,11 +471,16 @@ def main():
     )
     args = ap.parse_args()
 
-    builders = {
-        "L01": (build_l01_cover_from_base, build_l01_small_thumb),
-        "L02": (build_l02_cover_from_base, build_l02_small_thumb),
-    }
-    build_cover, build_small = builders[args.topic]
+    style_id = (args.style_id or os.environ.get("LIREATE_COVER_STYLE_ID") or "").strip()
+    if args.topic == "L02" and style_id == "dark_cinematic_closeup":
+        build_cover = build_l02_cover_cinematic_from_base
+        build_small = build_l02_small_thumb_cinematic
+    else:
+        builders = {
+            "L01": (build_l01_cover_from_base, build_l01_small_thumb),
+            "L02": (build_l02_cover_from_base, build_l02_small_thumb),
+        }
+        build_cover, build_small = builders[args.topic]
 
     from PIL import Image
 

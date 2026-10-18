@@ -42,10 +42,10 @@
   "cover_family": "brand_collage",
   "cover_style": {
     "topic_id": "L02",
-    "style_id": "legacy_hero_left_doc_card",
-    "layout_id": "hero_left_doc_card_topright",
-    "caption_layout_id": "caption_plate_top_right",
-    "palette_id": "cream_navy_accent",
+    "style_id": "dark_cinematic_closeup",
+    "layout_id": "dark_cinematic_closeup_layout",
+    "caption_layout_id": "caption_lower_third_dark",
+    "palette_id": "cinematic_navy_amber",
     "hero_present": true
   }
 }
