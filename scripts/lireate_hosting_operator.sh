@@ -27,13 +27,13 @@ else
   git pull --ff-only origin main || true
 fi
 
-if [[ ! -f "$ENV_FILE" ]]; then
-  echo "ERROR: missing $ENV_FILE" >&2
+if [[ ! -f "$LIREATE_ENV_FILE" ]]; then
+  echo "ERROR: missing $LIREATE_ENV_FILE" >&2
   exit 1
 fi
 
-if ! grep -qE '^LIREATE_ALLOW_PUBLISH=(yes|1|true|on)' "$ENV_FILE" 2>/dev/null; then
-  echo "WARN: set LIREATE_ALLOW_PUBLISH=yes in $ENV_FILE before live publish" >&2
+if ! grep -qE '^LIREATE_ALLOW_PUBLISH=(yes|1|true|on)' "$LIREATE_ENV_FILE" 2>/dev/null; then
+  echo "WARN: set LIREATE_ALLOW_PUBLISH=yes in $LIREATE_ENV_FILE before live publish" >&2
 fi
 
 exec bash "$CRON"
