@@ -1,0 +1,92 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-10-18",
+    "today_ru": "18.10.2026",
+    "year": 2026,
+    "month": 10,
+    "month_name_ru": "октябрь",
+    "weekday_ru": "воскресенье",
+    "freshness_window": {
+      "prefer_sources_after": "2026-07-20",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-10-18 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L03",
+    "priority": "P1",
+    "slug": "kak-zaregistrirovat-brend-na-ozon-i-wildberries",
+    "h1": "Как зарегистрировать бренд на Ozon и Wildberries: нужен ли товарный знак",
+    "primary_query": "как проверить есть ли такой бренд на вайлдберриз",
+    "secondary_queries": [
+      "как добавить бренд на озон",
+      "как зарегистрировать свой бренд на озон селлер",
+      "бренд на озон",
+      "как создать бренд на озоне",
+      "как зарегистрировать бренд на озон"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "L03",
+    "status": "PASS",
+    "search_intent": "how_to",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "как проверить есть ли такой бренд на вайлдберриз 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "как проверить есть ли такой бренд на вайлдберриз октябрь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "как проверить есть ли такой бренд на вайлдберриз новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "как добавить бренд на озон 2026",
+      "purpose": "вторичный запрос: как добавить бренд на озон"
+    },
+    {
+      "id": "secondary_2",
+      "query": "как зарегистрировать свой бренд на озон селлер 2026",
+      "purpose": "вторичный запрос: как зарегистрировать свой бренд на озон селлер"
+    },
+    {
+      "id": "secondary_3",
+      "query": "бренд на озон 2026",
+      "purpose": "вторичный запрос: бренд на озон"
+    },
+    {
+      "id": "secondary_4",
+      "query": "как создать бренд на озоне 2026",
+      "purpose": "вторичный запрос: как создать бренд на озоне"
+    },
+    {
+      "id": "secondary_5",
+      "query": "как зарегистрировать бренд на озон 2026",
+      "purpose": "вторичный запрос: как зарегистрировать бренд на озон"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как зарегистрировать бренд на Ozon и Wildberries: нужен ли товарный знак 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/L03-kak-zaregistrirovat-brend-na-ozon-i-wildberries",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}
