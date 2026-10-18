@@ -44,8 +44,15 @@ chmod 600 "${LIREATE_AUTOPUB_HOME}/.python-interpreter" "${LIREATE_AUTOPUB_HOME}
 if [[ ! -d "${LIREATE_AUTOPUB_HOME}/repo/.git" ]]; then
   git clone --depth 1 --branch "${REPO_BRANCH}" "${REPO_URL}" "${LIREATE_AUTOPUB_HOME}/repo"
 else
-  echo "==> repo exists, git pull"
-  git -C "${LIREATE_AUTOPUB_HOME}/repo" pull --ff-only || true
+  echo "==> repo exists, sync to origin/${REPO_BRANCH}"
+  SYNC="${LIREATE_AUTOPUB_HOME}/repo/scripts/lireate_hosting_git_sync.sh"
+  if [[ -x "${SYNC}" ]]; then
+    LIREATE_AUTOPUB_HOME="${LIREATE_AUTOPUB_HOME}" LIREATE_REPO_BRANCH="${REPO_BRANCH}" bash "${SYNC}" || true
+  else
+    git -C "${LIREATE_AUTOPUB_HOME}/repo" fetch origin "${REPO_BRANCH}" || true
+    git -C "${LIREATE_AUTOPUB_HOME}/repo" checkout -B "${REPO_BRANCH}" "origin/${REPO_BRANCH}" || true
+    git -C "${LIREATE_AUTOPUB_HOME}/repo" pull --ff-only origin "${REPO_BRANCH}" || true
+  fi
 fi
 
 ENV_FILE="${LIREATE_AUTOPUB_HOME}/.env"

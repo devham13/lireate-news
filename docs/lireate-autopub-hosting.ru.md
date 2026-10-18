@@ -21,12 +21,21 @@ curl -fsSL "https://raw.githubusercontent.com/devham13/lireate-news/${LIREATE_RE
 
 ### Обновить код
 
+Клон с feature-ветки часто **не имеет локальной `main`** — тогда `git checkout main` даёт `pathspec 'main' did not match`. Используйте:
+
 ```bash
 export LIREATE_AUTOPUB_HOME="$HOME/lireate-autopub"
+export LIREATE_REPO_BRANCH=main
+bash "$LIREATE_AUTOPUB_HOME/repo/scripts/lireate_hosting_git_sync.sh"
+```
+
+Если скрипта ещё нет (старый clone), одноразово:
+
+```bash
 cd "$LIREATE_AUTOPUB_HOME/repo"
-git fetch origin cursor/lireate-hosting-cron-762f
-git checkout cursor/lireate-hosting-cron-762f
-git pull
+git fetch origin main
+git checkout -B main origin/main
+git pull --ff-only origin main
 ```
 
 ### Self-check

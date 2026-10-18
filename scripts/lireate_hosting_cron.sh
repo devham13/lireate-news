@@ -14,10 +14,16 @@ export LIREATE_AUTOPUB_HOME="$AUTOPUB_HOME"
 export LIREATE_ENV_FILE="$ENV_FILE"
 
 if [[ -d "$REPO_DIR/.git" ]]; then
-  cd "$REPO_DIR"
-  git fetch origin "$BRANCH" 2>>"$LOG_DIR/cron-git.log" || true
-  git checkout "$BRANCH" 2>>"$LOG_DIR/cron-git.log" || true
-  git pull --ff-only origin "$BRANCH" 2>>"$LOG_DIR/cron-git.log" || true
+  SYNC="$REPO_DIR/scripts/lireate_hosting_git_sync.sh"
+  if [[ -x "$SYNC" ]]; then
+    bash "$SYNC" >>"$LOG_DIR/cron-git.log" 2>&1 || true
+  else
+    # Fallback until repo synced to a commit that contains git_sync.sh
+    cd "$REPO_DIR"
+    git fetch origin "$BRANCH" 2>>"$LOG_DIR/cron-git.log" || true
+    git checkout -B "$BRANCH" "origin/$BRANCH" 2>>"$LOG_DIR/cron-git.log" || true
+    git pull --ff-only origin "$BRANCH" 2>>"$LOG_DIR/cron-git.log" || true
+  fi
 fi
 
 # After first publish the URL is 200 — refresh text/images from git (--update bumps datetime).

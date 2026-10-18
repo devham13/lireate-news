@@ -253,13 +253,11 @@ export LIREATE_ENV_FILE="$LIREATE_AUTOPUB_HOME/.env"
 ### Обновление кода на сервере
 
 ```bash
-cd "$HOME/lireate-autopub/repo"
-git fetch origin cursor/lireate-hosting-cron-762f
-git checkout cursor/lireate-hosting-cron-762f
-git pull
+export LIREATE_AUTOPUB_HOME="$HOME/lireate-autopub"
+bash "$LIREATE_AUTOPUB_HOME/repo/scripts/lireate_hosting_git_sync.sh"
 ```
 
-(После merge в `main` — подставьте ветку `main`.)
+Ошибка `pathspec 'main' did not match` → нет локальной ветки: `git fetch origin main && git checkout -B main origin/main`.
 
 ---
 
