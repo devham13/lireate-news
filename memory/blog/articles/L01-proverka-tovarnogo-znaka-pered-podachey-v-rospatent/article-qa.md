@@ -59,7 +59,7 @@ verdict: PASS
 ## Link verify
 
 - total: 8, failed: 0
-- site-base: `--site-base` из `LIREATE_PUBLIC_SITE_URL`
+- site-base: публичный домен Lireate (флаг `--site-base` link-verify)
 - fix cycle 1 (2026-10-18): rospatent.gov.ru (SSL в CI), fips.ru (403) → klerk.ru (пошлины), base.garant.ru (сервисы/тарифы), licensingrussia.ru (реестры); канон fips.ru/rospatent.gov.ru в plain text
 
 ## AI-slop scan

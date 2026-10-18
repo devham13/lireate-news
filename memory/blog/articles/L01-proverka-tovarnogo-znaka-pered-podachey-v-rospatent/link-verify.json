@@ -1,10 +1,18 @@
 {
   "source": "memory/blog/articles/L01-proverka-tovarnogo-znaka-pered-podachey-v-rospatent/article.html",
-  "total_links": 6,
+  "total_links": 8,
   "failed_count": 0,
   "verdict": "pass",
-  "site_base_note": "verified with --site-base from PUBLIC_SITE_URL env",
   "links": [
+    {
+      "url": "https://searchplatform.rospatent.gov.ru/trademarks",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
     {
       "url": "/7_prichin_zaregestrirovat_tovarnyiy_znak",
       "status": 200,
@@ -12,10 +20,20 @@
       "method": "HEAD",
       "error": null,
       "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/7_prichin_zaregestrirovat_tovarnyiy_znak"
+    },
+    {
+      "url": "https://www.klerk.ru/blogs/patent24/683176/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
       "skipped": false
     },
     {
-      "url": "https://searchplatform.rospatent.gov.ru/trademarks",
+      "url": "https://base.garant.ru/408182169/",
       "status": 200,
       "ok": true,
       "method": "HEAD",
@@ -42,7 +60,7 @@
       "skipped": false
     },
     {
-      "url": "https://base.garant.ru/408182169/",
+      "url": "https://online.rospatent.gov.ru/open-data/classifiers/product-classifiers",
       "status": 200,
       "ok": true,
       "method": "HEAD",
@@ -57,7 +75,8 @@
       "method": "HEAD",
       "error": null,
       "kind": "internal_relative",
-      "skipped": false
+      "skipped": false,
+      "checked_url": "/kak_zaschitit_tovarnyiy_znak_i_reputaciyu_biznesa_v_seti"
     }
   ]
 }
