@@ -1,9 +1,8 @@
 {
   "source": "memory/blog/articles/L01-proverka-tovarnogo-znaka-pered-podachey-v-rospatent/article.html",
-  "total_links": 6,
+  "total_links": 7,
   "failed_count": 0,
   "verdict": "pass",
-  "site_base_note": "verified with --site-base from PUBLIC_SITE_URL env",
   "links": [
     {
       "url": "/7_prichin_zaregestrirovat_tovarnyiy_znak",
@@ -43,6 +42,15 @@
     },
     {
       "url": "https://base.garant.ru/408182169/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_316428/",
       "status": 200,
       "ok": true,
       "method": "HEAD",

@@ -1,11 +1,18 @@
 {
   "article": "memory/blog/articles/L01-proverka-tovarnogo-znaka-pered-podachey-v-rospatent/article.html",
   "fact_bank_source": "memory/brief/fact-bank.md",
-  "verdict": "pass",
-  "total_extracted_facts": 8,
-  "verified_facts_count": 5,
-  "unverified_facts_count": 3,
+  "verdict": "warning",
+  "total_extracted_facts": 11,
+  "verified_facts_count": 6,
+  "unverified_facts_count": 5,
   "facts": [
+    {
+      "fact": "35 000 руб",
+      "kind": "price_or_currency",
+      "context": "один класс МКТУ и до 10 позиций в перечне - около 35 000 руб. (п. 2.1, 2.4 и 2.11 таблицы Роспатента). Возврат",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
     {
       "fact": "46 200 руб",
       "kind": "price_or_currency",
@@ -23,9 +30,16 @@
     {
       "fact": "2026",
       "kind": "date_or_year",
-      "context": "К РФ сверены с сайтами Роспатента и ФИПС на 16.10.2026. Показы Яндекс Вордстат в среде подготовки матери",
+      "context": "К РФ сверены с сайтами Роспатента и ФИПС на 18.10.2026. Показы Яндекс Вордстат в среде подготовки матери",
       "verified": true,
       "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "12 месяцев",
+      "kind": "metric_or_duration",
+      "context": "ожидания. Экспертиза по существу может длиться до 12 месяцев после формальной части. Минимальный набор пошлин",
+      "verified": true,
+      "reason": "Numerical value '12' matched in fact-bank context"
     },
     {
       "fact": "5 лет",
@@ -44,9 +58,16 @@
     {
       "fact": "1483",
       "kind": "large_number",
-      "context": "то теряете, если пропустить шаг Отказ по п. 6 ст. 1483 (сходство в однородных товарах) возможен после по",
+      "context": "пуска проверки до оплаты пошлин Отказ по п. 6 ст. 1483 (сходство в однородных товарах) возможен после по",
       "verified": true,
       "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "35 000",
+      "kind": "large_number",
+      "context": "один класс МКТУ и до 10 позиций в перечне - около 35 000 руб. (п. 2.1, 2.4 и 2.11 таблицы Роспатента). Возв",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
     },
     {
       "fact": "46 200",
@@ -58,7 +79,7 @@
     {
       "fact": "6340",
       "kind": "large_number",
-      "context": "спорном сходстве. Консультации ФИПС: +7 (495) 531-6340, 10:00-16:00. Лирейт помогает пройти тот же маршр",
+      "context": "спорном сходстве. Консультации ФИПС: +7 (495) 531-6340, 10:00-16:00. Что дальше Зафиксируйте итоговую та",
       "verified": false,
       "reason": "No matching fact or number found in fact-bank"
     }

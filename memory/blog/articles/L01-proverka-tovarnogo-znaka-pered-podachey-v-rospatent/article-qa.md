@@ -1,7 +1,7 @@
 # QA: L01 proverka-tovarnogo-znaka-pered-podachey-v-rospatent
 
-date: 2026-10-16
-score_total: 93/100
+date: 2026-10-18
+score_total: 92/100
 core_eeat_lite: 20/20
 link_verify: pass
 utility_gate: pass
@@ -14,9 +14,9 @@ verdict: PASS
 | SEO structure | 20 | 19 | H2/H3, primary query, FAQ 7, 2 internal links — OK; −1 длина title/meta на грани CTR |
 | GEO / citability | 25 | 24 | Lead answer-first, таблица инструментов, 7 FAQ, blockquote-маршрут, numbered steps |
 | CORE-EEAT lite | 15 | 15 | 20/20 (см. ниже) |
-| Human voice | 15 | 15 | 0 AI-slop hits, Flesch RU 51.2 (экспертный тон) |
-| Fact safety | 15 | 13 | fact-check PASS; 3 unverified (ст. 1499, тел. ФИПС, «3–5 лет» — допустимо) |
-| Contract HTML | 10 | 9 | linter PASS, объём 8896 ✓, CTA Лирейт ×2 ✓; −1 нет `<img>` с alt |
+| Human voice | 15 | 14 | 0 AI-slop hits, Flesch RU 50.9; −1 три длинных предложения (>25 слов) |
+| Fact safety | 15 | 12 | fact-check WARNING (6/11 verified); 35 000 ₽ и др. — из research, не в fact-bank |
+| Contract HTML | 10 | 8 | linter PASS, объём ~9 300+ ✓, CTA Лирейт ×2 ✓; −2 inline `<img>` с alt (3 шт. есть) |
 
 **Порог PASS:** ≥80, CORE-EEAT ≥16/20, link-verify pass, utility gate PASS — **выполнен**.
 
@@ -49,30 +49,30 @@ verdict: PASS
 
 | Скрипт | Verdict | Файл |
 |--------|---------|------|
-| fact-check | PASS | fact-check-report.json |
+| fact-check | WARNING | fact-check-report.json |
 | link-verify | PASS | link-verify.json |
 | html-linter | PASS | html-linter-report.json |
 | slop-detector | PASS | slop-detector-report.json |
 | cannibalization | PASS | cannibalization-report.json |
-| utility gate | PASS | utility-gate-report.json |
+| utility gate (article) | PASS | utility-gate-report.json |
 
 ## Link verify
 
-- total: 6, failed: 0
-- site-base: `--site-base` из `PUBLIC_SITE_URL` (lireate)
-- fix cycle 1: fips.ru / rospatent.gov.ru (403/SSL в CI) → licensingrussia.ru (реестры), WIPO Brand Database (TMview), base.garant.ru (сводка по сервисам/тарифам)
-- официальные URL fips.ru остаются в plain text и research-notes
+- total: 7, failed: 0
+- site-base: `LIREATE_PUBLIC_SITE_URL`
+- fix cycle 2026-10-18: fips.ru / rospatent.gov.ru (403/SSL в CI) → licensingrussia.ru (реестры), base.garant.ru (тарифы предоценки), consultant.ru (патентные пошлины)
+- канон fips.ru / rospatent.gov.ru остаётся в plain text и research-notes
 
 ## AI-slop scan
 
 - cliches: 0
-- over-long sentences (>25 words): 1 (таблица — допустимо)
-- Flesch RU: 51.2 (Standard)
+- over-long sentences (>25 words): 3
+- Flesch RU: 50.9 (Standard)
 - see `slop-detector-report.json`
 
 ## Fact-check
 
-- verdict: PASS (8 extracted, 5 verified, 3 unverified — статьи ГК, телефон, горизонт классов)
+- verdict: WARNING (11 extracted, 6 verified, 5 unverified — пошлины 35 000 ₽, тел. ФИПС, ст. 1499 и др.)
 - see `fact-check-report.json`
 
 ## Cannibalization
@@ -82,12 +82,11 @@ verdict: PASS
 
 ## Fix cycle
 
-- cycle 1: GEO QA заменил 3 внешних href для link-verify pass (смысл сохранён; канон fips.ru в тексте)
+- cycle 1 (2026-10-18): GEO QA заменил 3 внешних href для link-verify pass (смысл сохранён)
 - cycle 2: не требовался
 
 ## Optional (не blocker)
 
-- добавить `<img>` с alt по контракту
 - href на [приказ № 197](https://pravo.ppt.ru/prikaz/rospatent/n-197-23382) в секции сходства
 - после publish: повторить link-verify с `--site-base` на финальный canonical
 
