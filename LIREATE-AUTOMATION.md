@@ -151,10 +151,10 @@ python3 scripts/lireate_hosting_publish.py \
 4. `lireate_hosting_publish.py` (без --dry-run)
 5. Успех: `STATUS: PUBLISHED` и HTTP **200** на `/{seo_url}/`
 
-CRON (ежедневно 12:00 MSK):
+CRON (ежедневно 12:00 MSK) — `git pull` + `--update`:
 
 TZ=Europe/Moscow
-0 12 * * * $(cat $HOME/lireate-autopub/.python-interpreter) $HOME/lireate-autopub/repo/scripts/lireate_hosting_publish.py >> $HOME/lireate-autopub/logs/cron.log 2>&1
+0 12 * * * bash $HOME/lireate-autopub/repo/scripts/lireate_hosting_cron.sh >> $HOME/lireate-autopub/logs/cron.log 2>&1
 
 Cloud Agent после шага E: записать в handoff команды F и **не** считать статью опубликованной, пока нет подтверждения 200 с хостинга.
 

@@ -108,8 +108,16 @@ export LIREATE_ENV_FILE="$LIREATE_AUTOPUB_HOME/.env"
 
 ### CRON (ежедневно 12:00 Москва)
 
+Рекомендуется обёртка с `git pull` и `--update`:
+
 ```cron
 TZ=Europe/Moscow
+0 12 * * * bash $HOME/lireate-autopub/repo/scripts/lireate_hosting_cron.sh >> $HOME/lireate-autopub/logs/cron.log 2>&1
+```
+
+Без pull/update (устарело — после первого INSERT только `ALREADY_PUBLISHED`):
+
+```cron
 0 12 * * * $(cat $HOME/lireate-autopub/.python-interpreter) $HOME/lireate-autopub/repo/scripts/lireate_hosting_publish.py >> $HOME/lireate-autopub/logs/cron.log 2>&1
 ```
 
