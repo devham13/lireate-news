@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "caption_layout_ids": [
+    "caption_plate_top_right",
+    "caption_band_bottom_full",
+    "caption_left_column",
+    "caption_center_stack",
+    "caption_diagonal_accent",
+    "caption_lower_third_dark",
+    "caption_upper_left_compact",
+    "caption_split_sidebar"
+  ],
+  "styles": [
+    {
+      "style_id": "editorial_magazine_photo",
+      "name": "Editorial magazine photo",
+      "hero_present": true,
+      "default_caption_layout_id": "caption_band_bottom_full",
+      "default_palette_id": "warm_editorial_ivory",
+      "quad_prompt_hint": "Full-bleed editorial photo, heroine as IP lawyer, soft window light, magazine crop; empty lower third band for text overlay; no letters in image",
+      "caption_pil": { "position": "bottom_band", "text_fill": "#1a1a1a", "plate_fill": "rgba(255,255,255,0.92)" }
+    },
+    {
+      "style_id": "bold_color_typography",
+      "name": "Bold minimal typography on colour field",
+      "hero_present": false,
+      "default_caption_layout_id": "caption_center_stack",
+      "default_palette_id": "electric_violet_white",
+      "quad_prompt_hint": "Solid vibrant color field, abstract geometric accent only, NO person, NO text, large empty center for headline overlay",
+      "caption_pil": { "position": "center_stack", "text_fill": "#ffffff", "plate_fill": null }
+    },
+    {
+      "style_id": "flat_vector_trademark",
+      "name": "Flat vector illustration (™ / shield)",
+      "hero_present": false,
+      "default_caption_layout_id": "caption_left_column",
+      "default_palette_id": "mint_charcoal_coral",
+      "quad_prompt_hint": "Flat vector illustration, trademark symbol and document shapes, isometric-lite, no photoreal face, no text",
+      "caption_pil": { "position": "left_column", "text_fill": "#0f172a", "plate_fill": "rgba(255,255,255,0.88)" }
+    },
+    {
+      "style_id": "render_3d_symbol",
+      "name": "3D render symbolic object",
+      "hero_present": false,
+      "default_caption_layout_id": "caption_upper_left_compact",
+      "default_palette_id": "studio_gray_gold",
+      "quad_prompt_hint": "3D render of scales OR wax seal OR ® mark on pedestal, studio lighting, no human, no text",
+      "caption_pil": { "position": "upper_left", "text_fill": "#f8fafc", "plate_fill": "rgba(15,23,42,0.75)" }
+    },
+    {
+      "style_id": "isometric_scene",
+      "name": "Isometric marketplace / office scene",
+      "hero_present": "optional",
+      "default_caption_layout_id": "caption_split_sidebar",
+      "default_palette_id": "sky_teal_white",
+      "quad_prompt_hint": "Isometric illustration, marketplace boxes or office desk with laptop, tiny optional heroine silhouette far right, no readable text",
+      "caption_pil": { "position": "right_sidebar", "text_fill": "#0c4a6e", "plate_fill": "rgba(255,255,255,0.9)" }
+    },
+    {
+      "style_id": "collage_paper_cut",
+      "name": "Collage / paper cut layers",
+      "hero_present": true,
+      "default_caption_layout_id": "caption_diagonal_accent",
+      "default_palette_id": "paper_craft_terracotta",
+      "quad_prompt_hint": "Paper cut collage layers, heroine face from reference small on left, torn paper shapes, craft texture, no printed words",
+      "caption_pil": { "position": "diagonal_accent", "text_fill": "#292524", "plate_fill": "rgba(254,243,199,0.95)" }
+    },
+    {
+      "style_id": "dark_cinematic_closeup",
+      "name": "Dark cinematic close-up",
+      "hero_present": true,
+      "default_caption_layout_id": "caption_lower_third_dark",
+      "default_palette_id": "cinematic_navy_amber",
+      "quad_prompt_hint": "Dark cinematic close-up, heroine right third, rim light, shallow depth, moody navy background, no text",
+      "caption_pil": { "position": "lower_third", "text_fill": "#fef3c7", "plate_fill": "rgba(15,23,42,0.85)" }
+    },
+    {
+      "style_id": "split_screen_before_after",
+      "name": "Split screen before/after",
+      "hero_present": "optional",
+      "default_caption_layout_id": "caption_band_bottom_full",
+      "default_palette_id": "split_muted_green_red",
+      "quad_prompt_hint": "Vertical split screen, left muted problem scene, right bright solution, optional small heroine on bright side, no labels text",
+      "caption_pil": { "position": "bottom_band", "text_fill": "#111827", "plate_fill": "rgba(255,255,255,0.94)" }
+    },
+    {
+      "style_id": "infographic_composition",
+      "name": "Infographic-style composition",
+      "hero_present": true,
+      "default_caption_layout_id": "caption_plate_top_right",
+      "default_palette_id": "info_blue_gray",
+      "quad_prompt_hint": "Infographic layout with empty chart frames and icons, heroine small bottom-left pointing, clean UI blocks without letters",
+      "caption_pil": { "position": "top_right_plate", "text_fill": "#1e3a8a", "plate_fill": "rgba(255,255,255,0.93)" }
+    },
+    {
+      "style_id": "handdrawn_sketch",
+      "name": "Hand-drawn sketch",
+      "hero_present": true,
+      "default_caption_layout_id": "caption_left_column",
+      "default_palette_id": "sketch_pencil_ochre",
+      "quad_prompt_hint": "Hand-drawn sketch style, heroine as line-art portrait left, notebook texture, pencil strokes, no handwritten text",
+      "caption_pil": { "position": "left_column", "text_fill": "#44403c", "plate_fill": "rgba(250,250,249,0.9)" }
+    },
+    {
+      "style_id": "legacy_hero_left_doc_card",
+      "name": "Legacy L01/L02 layout (deprecated for new articles)",
+      "hero_present": true,
+      "default_caption_layout_id": "caption_plate_top_right",
+      "default_palette_id": "cream_navy_accent",
+      "quad_prompt_hint": "DEPRECATED — do not use for new covers",
+      "caption_pil": { "position": "top_right_plate", "text_fill": "#141414", "plate_fill": "rgba(255,255,255,0.94)" }
+    }
+  ]
+}

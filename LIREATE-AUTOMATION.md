@@ -24,9 +24,11 @@
 
 Подробности сервера: `memory/hosting/lireate-reg-ru-production.md`, установка: `docs/lireate-autopub-hosting.ru.md`.
 
-**Героиня обложек (i2i):** `memory/cover/blog-hero.json` + `memory/cover/assets/blog-hero-reference.png` (копия `assets/hero/heroine_ref.jpg`). Лицо — молодая женщина, чёрные волнистые волосы с чёлкой, карие глаза; на обложке — деловой образ юриста по ИС. Старый мужской reference снят.
+**Героиня обложек (i2i):** `memory/cover/blog-hero.json` + `memory/cover/assets/blog-hero-reference.png` (копия `assets/hero/heroine_ref.jpg`). Лицо — молодая женщина, чёрные волнистые волосы с чёлкой, карие глаза; на обложке — деловой образ юриста по ИС. **Поза, кадр и локация меняются**; в части стилей героини нет (см. каталог).
 
-**Текст на обложке:** модель **не** рисует мелкие надписи (только пустой UI); весь русский текст — **PIL-оверлей** (`scripts/lireate_cover_text_overlay.py`). `cover.png` L01 — **860×400**, без псевдотекста.
+**Стили и ротация:** `memory/blog/cover-styles.md` + `memory/blog/cover-style-registry.json`. В `article.meta.json` → `cover_style` (`style_id`, `layout_id`, `caption_layout_id`, `palette_id`, `hero_present`). Перед cover: `python3 scripts/lireate_cover_style_pick.py --topic-id Lxx --write-meta article.meta.json`. **Не повторять `style_id` у последних 3 L-статей; не повторять `caption_layout_id` у предыдущей.** CI: `scripts/lireate_cover_style_check.py --all-lireate`. Layout L01/L02 (`legacy_hero_left_doc_card`) — только история, для новых статей запрещён.
+
+**Текст на обложке:** модель **не** рисует мелкие надписи (только пустой UI); весь русский текст — **PIL-оверлей** (`scripts/lireate_cover_text_overlay.py`), **позиция/цвет/размер** по `caption_layout_id` стиля. `cover.png` — **860×400**, без псевдотекста.
 
 ---
 
