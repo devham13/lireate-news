@@ -47,4 +47,4 @@ Excalibur создаёт этот файл после `✅ ARTICLE OK` (до и�
 
 ## Notes
 
-Indexer (2026-10-16): interlinker `--apply` по всему `memory/blog/articles` — **0** автоматических вставок (единственная L-статья в репо; anchor_variants L01 не матчятся в B01–B05; outbound в `article.html` уже вручную). llms: `memory/blog/lireate-site/llms.txt` (1 статья, относительные пути), mayai-индекс `memory/blog/llms.txt` — 5 статей B01–B05 без изменения состава.
+Indexer (2026-10-18): interlinker `--apply` (`--site-base` LIREATE_PUBLIC_SITE_URL) по `memory/blog/articles` — **0** автоматических вставок (anchor_variants L01 не матчятся в B01–B05; outbound в `article.html` уже есть). llms: пересобраны `memory/blog/lireate-site/llms.txt`, `llms-full.txt` и копии в `article_dir` (1 L-статья, canonical_path). mayai-индекс `memory/blog/llms.txt` — без изменений (5× B01–B05).
