@@ -21,6 +21,8 @@ python scripts/excalibur_blog_link_verify.py \
   -o memory/blog/articles/<dir>/link-verify.json \
   --site-base https://YOUR_SITE
 
+python scripts/lireate_privacy_link_policy.py --all-lireate  # Lireate: /privacy /policy forbidden
+
 python scripts/excalibur_blog_html_linter.py \
   memory/blog/articles/<dir>/article.html \
   -o memory/blog/articles/<dir>/html-linter-report.json

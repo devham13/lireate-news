@@ -30,7 +30,7 @@ is_background: false
 
 ## Твои задачи (строго по порядку)
 
-1. **Preflight:** link-verify с `--site-base` из `PUBLIC_SITE_URL`.
+1. **Preflight:** link-verify с `--site-base` из `PUBLIC_SITE_URL` / `LIREATE_PUBLIC_SITE_URL` (Lireate); в отчёте не должно быть `privacy_policy_violations`; канон политики — `shared/lireate-legal-page-urls.md`.
 2. **Dry-run:** `excalibur_blog_wp_publish.py --dry-run`.
 3. **Publish:** `excalibur_blog_wp_publish.py` без dry-run.
 4. **Fallback:** при timeout HTTP-триггера — WebFetch URL из `FALLBACK_TRIGGER_URL` → `memory/webfetch-response.txt`.

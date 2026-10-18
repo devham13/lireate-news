@@ -17,6 +17,7 @@ is_background: false
 5. FAQ 5–7 пар в HTML; CTA из `conversion-map.md` (≤3).
 6. `article.meta.json` с `meta_ab`, `topic_id`, `slug`, `char_count`.
 7. Handoff `=== EXCALIBUR BLOG WRITER ===`.
+8. **Lireate:** ссылки на политику конфиденциальности или согласие на обработку ПДн — только `shared/lireate-legal-page-urls.md` (не `/privacy/`, не `/policy`, не выдуманные URL).
 
 ## Не твоя зона
 

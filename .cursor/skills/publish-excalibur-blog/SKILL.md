@@ -36,6 +36,8 @@ python scripts/excalibur_blog_link_verify.py \
   --site-base https://mayai.ru
 ```
 
+Для **Lireate NEWS** (`site: lireate` в meta): `--site-base` = значение `LIREATE_PUBLIC_SITE_URL`. Ссылки на политику/согласие на ПДн — только `shared/lireate-legal-page-urls.md` (запрещены `/privacy`, `/policy`). В `link-verify.json` поле `privacy_policy_violations` должно быть пустым.
+
 Gate: `link-verify.json` → pass. Иначе FIX (writer/QA) или BLOCKER.
 
 ### 2. Dry-run
