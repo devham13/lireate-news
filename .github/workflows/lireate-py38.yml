@@ -41,6 +41,9 @@ jobs:
           # webmaster_export requires Python 3.7+ (future annotations); checked in compile-38
           python -m py_compile scripts/lireate_cover_text_overlay.py
           python -m py_compile scripts/lireate_topic_queue.py
+          python -m py_compile scripts/lireate_cover_style_check.py
+          python -m py_compile scripts/lireate_cover_style_pick.py
+          python -m py_compile scripts/lireate_cover_style_samples.py
 
   php-legacy-lint:
     runs-on: ubuntu-latest

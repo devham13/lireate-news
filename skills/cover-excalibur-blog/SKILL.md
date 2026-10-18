@@ -63,6 +63,15 @@ inject <figure> after H2 in article.html
 **Одежда:** деловой образ юриста по ИС (пиджак, блуза) — **не** копировать casual outfit с reference-фото.  
 **Inline-панели:** без лица героя (только top-left cover).
 
+### Lireate: стили и ротация (обязательно для site lireate)
+
+1. Каталог: `memory/blog/cover-styles.md`, JSON: `memory/blog/cover-style-registry.json`.
+2. До MCP: `python3 scripts/lireate_cover_style_pick.py --topic-id Lxx --write-meta <article_dir>/article.meta.json`.
+3. Quad prompt: `style_id` + `quad_prompt_hint` из registry (**не** `legacy_hero_left_doc_card`).
+4. Дублировать `cover_style` в `cover/cover-registry.json`.
+5. После PIL: `python3 scripts/lireate_cover_style_check.py --article-dir <article_dir>` (CI падает при нарушении).
+6. Герой: варьировать позу/сеттинг; стили `hero_present: false` — без лица.
+
 ### Текст на обложке (обязательно)
 
 - **Не** просить модель рисовать мелкий текст в UI/скринах — получается псевдокириллица.

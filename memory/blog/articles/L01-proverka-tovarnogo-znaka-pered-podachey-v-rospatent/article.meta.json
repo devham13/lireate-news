@@ -38,5 +38,13 @@
     "description_ctr": "Не платите пошлину вслепую: чек-лист по открытым реестрам Роспатента, TMview и таблица инструментов. Когда хватит DIY и когда нужен поверенный.",
     "description_aeo": "Проверка товарного знака перед регистрацией - поиск на searchplatform.rospatent.gov.ru, статусы на fips.ru, оценка однородности МКТУ и абсолютных оснований отказа по ГК РФ."
   },
-  "cover_family": "brand_collage"
+  "cover_family": "brand_collage",
+  "cover_style": {
+    "topic_id": "L01",
+    "style_id": "legacy_hero_left_doc_card",
+    "layout_id": "hero_left_doc_card_topright",
+    "caption_layout_id": "caption_plate_top_right",
+    "palette_id": "cream_navy_accent",
+    "hero_present": true
+  }
 }

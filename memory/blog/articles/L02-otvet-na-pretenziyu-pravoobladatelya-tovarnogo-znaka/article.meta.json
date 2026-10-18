@@ -39,5 +39,13 @@
     "description_ctr": "Не платите вслепую: календарь действий, таблица сроков, возражения по п. 6 ст. 1483 и лимиты п. 4 ст. 1515. Образец формулировок для ИП и селлеров.",
     "description_aeo": "Ответ на досудебную претензию по товарному знаку - проверка знака в Поисковой платформе, отказ или частичное согласие, оговорка о непризнании вины, срок 30 дней по ст. 1252 ГК РФ."
   },
-  "cover_family": "brand_collage"
+  "cover_family": "brand_collage",
+  "cover_style": {
+    "topic_id": "L02",
+    "style_id": "legacy_hero_left_doc_card",
+    "layout_id": "hero_left_doc_card_topright",
+    "caption_layout_id": "caption_plate_top_right",
+    "palette_id": "cream_navy_accent",
+    "hero_present": true
+  }
 }
