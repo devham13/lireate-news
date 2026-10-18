@@ -38,7 +38,7 @@ jobs:
           python -m py_compile scripts/lireate_translit.py
           python -m py_compile scripts/lireate_news_format.py
           python -m py_compile scripts/lireate_hosting_images.py
-          python -m py_compile scripts/lireate_hosting_webmaster_export.py
+          # webmaster_export requires Python 3.7+ (future annotations); checked in compile-38
           python -m py_compile scripts/lireate_cover_text_overlay.py
           python -m py_compile scripts/lireate_topic_queue.py
       - name: PHP syntax check

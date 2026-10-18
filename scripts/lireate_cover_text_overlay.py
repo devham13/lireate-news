@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """Overlay readable Cyrillic text on blog covers (no model-generated microcopy)."""
 
-from __future__ import annotations
-
 import argparse
 import os
 import sys
