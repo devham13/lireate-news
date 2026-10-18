@@ -2,7 +2,14 @@
   "topic_id": "L02",
   "slug": "otvet-na-pretenziyu-pravoobladatelya-tovarnogo-znaka",
   "cover_family": "brand_collage",
-  "style_preset": "digital_meme_collage_ru",
+  "style_preset": "dark_cinematic_closeup",
+  "cover_style": {
+    "style_id": "dark_cinematic_closeup",
+    "layout_id": "dark_cinematic_closeup_layout",
+    "caption_layout_id": "caption_lower_third_dark",
+    "palette_id": "cinematic_navy_amber",
+    "hero_present": true
+  },
   "pipeline": "quad_canvas_1x_mcp",
   "file": "cover/cover.png",
   "alt": "Обложка: ответ на претензию правообладателя товарного знака — срок 30 дней и чек-лист без признания вины",
