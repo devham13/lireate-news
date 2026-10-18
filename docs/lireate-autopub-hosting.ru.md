@@ -47,9 +47,12 @@ bash "$LIREATE_AUTOPUB_HOME/repo/scripts/lireate_hosting_git_sync.sh"
 
 ```bash
 cd "$LIREATE_AUTOPUB_HOME/repo"
-git fetch origin main
-git checkout -B main origin/main
+git fetch origin '+refs/heads/main:refs/heads/main'
+git checkout main
 git pull --ff-only origin main
+```
+
+Если `origin/main не является коммитом` — это нормально для shallow clone; достаточно `git pull --ff-only origin main` (как у вас после fast-forward).
 ```
 
 ### Self-check

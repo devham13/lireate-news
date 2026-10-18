@@ -13,14 +13,9 @@ if [[ ! -d "$REPO_DIR/.git" ]]; then
 fi
 
 cd "$REPO_DIR"
-git fetch "$REMOTE" "$BRANCH"
-
-if git show-ref --verify --quiet "refs/remotes/$REMOTE/$BRANCH"; then
-  git checkout -B "$BRANCH" "$REMOTE/$BRANCH"
-else
-  echo "ERROR: remote ref $REMOTE/$BRANCH not found after fetch" >&2
-  exit 1
-fi
-
-git pull --ff-only "$REMOTE" "$BRANCH" || true
+# Shallow/feature clone: после `git fetch origin main` часто есть только FETCH_HEAD, без refs/remotes/origin/main
+git fetch "$REMOTE" "+refs/heads/${BRANCH}:refs/heads/${BRANCH}"
+git fetch "$REMOTE" "+refs/heads/${BRANCH}:refs/remotes/${REMOTE}/${BRANCH}" 2>/dev/null || true
+git checkout -B "$BRANCH" "$BRANCH"
+git pull --ff-only "$REMOTE" "$BRANCH" 2>/dev/null || true
 echo "OK synced to $REMOTE/$BRANCH at $(git rev-parse --short HEAD)"
