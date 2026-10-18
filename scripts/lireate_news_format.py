@@ -57,7 +57,7 @@ def build_news_row(meta, body_html, lead_style="template"):
         "seo_keywords": seo_keywords,
         "seo_description": truncate_utf8(description, 200),
         "seo_url": seo_url,
-        "category": int(meta.get("lireate_category_id", 9)),
+        "category": int(meta["lireate_category_id"]),
         "short_story": "",
         "full_story": build_full_story(name, seo_url, body_html, lead_style=lead_style),
         "active": 1,

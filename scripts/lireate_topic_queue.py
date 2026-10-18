@@ -13,6 +13,8 @@ from pathlib import Path
 ALWAYS_PUBLISHED = {"L01"}
 CARD_RE = re.compile(r"^##\s+(L\d+)\s+—[^\n]*\n(.*?)(?=^---|^##\s|\Z)", re.DOTALL | re.MULTILINE)
 STATUS_RE = re.compile(r"\*\*status:\*\*\s*([a-z_]+)", re.I)
+CAT_ID_RE = re.compile(r"\*\*lireate_category_id:\*\*\s*(\d+)", re.I)
+CAT_NAME_RE = re.compile(r"\*\*lireate_category_name:\*\*\s*(.+)", re.I)
 
 
 def _num(topic_id):
@@ -30,6 +32,49 @@ def article_dirs(root):
         if p.is_dir() and m:
             out[m.group(1)] = p
     return out
+
+
+def _card_body(root, topic_id):
+    path = Path(root) / "memory/topics/blog-topics.md"
+    if not path.is_file():
+        return None
+    want = (topic_id or "").strip().upper()
+    for m in CARD_RE.finditer(path.read_text(encoding="utf-8")):
+        if m.group(1).upper() == want:
+            return m.group(2)
+    return None
+
+
+def topic_card_lireate_category(root, topic_id):
+    """Return lireate_category_id/name from a topic card, or None."""
+    body = _card_body(root, topic_id)
+    if not body:
+        return None
+    cid = CAT_ID_RE.search(body)
+    cname = CAT_NAME_RE.search(body)
+    if not cid:
+        return None
+    out = {"lireate_category_id": int(cid.group(1))}
+    if cname:
+        out["lireate_category_name"] = cname.group(1).strip()
+    return out
+
+
+def merge_lireate_category_from_topic_card(root, meta):
+    """Fill lireate_category_* in meta from blog-topics card when missing."""
+    meta = dict(meta or {})
+    if meta.get("lireate_category_id") is not None:
+        return meta
+    tid = (meta.get("topic_id") or "").strip()
+    if not tid:
+        return meta
+    card = topic_card_lireate_category(root, tid)
+    if not card:
+        return meta
+    meta.setdefault("lireate_category_id", card["lireate_category_id"])
+    if card.get("lireate_category_name"):
+        meta.setdefault("lireate_category_name", card["lireate_category_name"])
+    return meta
 
 
 def topic_cards(root):

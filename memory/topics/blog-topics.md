@@ -149,6 +149,26 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 # Lireate — очередь тем L02–L16
 
+## Рубрики Lireate (`category` в ленте `/news/`)
+
+| id | Название |
+|----|----------|
+| 2 | Новости |
+| 9 | Товарный знак |
+| 10 | Логотип |
+| 11 | Фирменный стиль |
+| 12 | Сайт |
+| 13 | Бренд |
+| 14 | Фирменное наименование |
+| 15 | Бизнес |
+| 16 | Франчайзинг и франшиза |
+| 17 | Авторское право |
+| 18 | Творческий псевдоним |
+| 19 | Программа ЭВМ |
+| 20 | Патент |
+
+**Правило:** при добавлении новой карточки **L\*** укажите `lireate_category_id` и `lireate_category_name` — выберите наиболее подходящую рубрику из таблицы (не подставляйте 9 по умолчанию, если тема про патент, бренд, сайт и т.д.).
+
 > **Источник:** Яндекс Метрика, счётчик lireate.ru 52622734, поисковые фразы (ym:s:searchPhrase) за всё время по 2026-10-18 — 4435 небрендовых фраз / ~5500 визитов (за 90 дней — только 3 фразы, за 365 — 12: Яндекс скрывает большинство фраз). lireate-tm.ru и lireate.com фраз почти не дали. Визиты по карточке — сумма по фразам кластера (оценка). Сырые данные: /workspace/lireate-semantics/ (бокс Grok Bot).
 >
 > **Правило автоматизации:** берётся первая карточка со `status: new`, у которой нет папки в `memory/blog/articles/`. Нет такой — `NO_NEW_TOPIC`, ничего не писать и не обновлять.
@@ -179,8 +199,8 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 - **status:** new
 - **priority:** P1
 - **site:** lireate
-- **lireate_category_id:** 9
-- **lireate_category_name:** Товарный знак
+- **lireate_category_id:** 13
+- **lireate_category_name:** Бренд
 - **slug:** kak-zaregistrirovat-brend-na-ozon-i-wildberries
 - **h1:** Как зарегистрировать бренд на Ozon и Wildberries: нужен ли товарный знак
 - **primary_query:** как проверить есть ли такой бренд на вайлдберриз
@@ -198,8 +218,8 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 - **status:** new
 - **priority:** P1
 - **site:** lireate
-- **lireate_category_id:** 9
-- **lireate_category_name:** Товарный знак
+- **lireate_category_id:** 20
+- **lireate_category_name:** Патент
 - **slug:** otkazali-v-vydache-patenta-chto-delat
 - **h1:** Отказали в выдаче патента: что делать дальше
 - **primary_query:** если отказали патент что делать дальше
@@ -217,8 +237,8 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 - **status:** new
 - **priority:** P1
 - **site:** lireate
-- **lireate_category_id:** 9
-- **lireate_category_name:** Товарный знак
+- **lireate_category_id:** 20
+- **lireate_category_name:** Патент
 - **slug:** sposoby-zashchity-izobreteniya
 - **h1:** Способы защиты изобретения: патент, ноу-хау или публикация
 - **primary_query:** способы защиты изобретения
@@ -312,8 +332,8 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 - **status:** new
 - **priority:** P1
 - **site:** lireate
-- **lireate_category_id:** 9
-- **lireate_category_name:** Товарный знак
+- **lireate_category_id:** 12
+- **lireate_category_name:** Сайт
 - **slug:** domennoe-imya-nma-ili-net
 - **h1:** Доменное имя — это НМА или нет: учёт и защита домена
 - **primary_query:** домен это нма
@@ -331,8 +351,8 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 - **status:** new
 - **priority:** P1
 - **site:** lireate
-- **lireate_category_id:** 9
-- **lireate_category_name:** Товарный знак
+- **lireate_category_id:** 10
+- **lireate_category_name:** Логотип
 - **slug:** dogovor-na-razrabotku-logotipa-prava-ot-dizajnera
 - **h1:** Договор на разработку логотипа: как получить права от дизайнера
 - **primary_query:** авторские права на логотип
@@ -369,8 +389,8 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 - **status:** new
 - **priority:** P1
 - **site:** lireate
-- **lireate_category_id:** 9
-- **lireate_category_name:** Товарный знак
+- **lireate_category_id:** 17
+- **lireate_category_name:** Авторское право
 - **slug:** mozhno-li-publikovat-foto-kartin-hudozhnika
 - **h1:** Можно ли публиковать фото картин и работ художника
 - **primary_query:** фотография картины авторское право
@@ -388,8 +408,8 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 - **status:** new
 - **priority:** P1
 - **site:** lireate
-- **lireate_category_id:** 9
-- **lireate_category_name:** Товарный знак
+- **lireate_category_id:** 15
+- **lireate_category_name:** Бизнес
 - **slug:** rezhim-kommercheskoj-tajny-kak-vvesti
 - **h1:** Режим коммерческой тайны: как ввести, чтобы доказать разглашение
 - **primary_query:** как доказать разглашение коммерческой тайны
@@ -426,8 +446,8 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 - **status:** new
 - **priority:** P1
 - **site:** lireate
-- **lireate_category_id:** 9
-- **lireate_category_name:** Товарный знак
+- **lireate_category_id:** 17
+- **lireate_category_name:** Авторское право
 - **slug:** kak-legalno-opublikovat-perevod-knigi
 - **h1:** Как легально опубликовать перевод зарубежной книги
 - **primary_query:** можно ли делать любительский перевод
