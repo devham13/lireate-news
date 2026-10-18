@@ -5,17 +5,23 @@
   "split": {
     "source_canvas": "memory/blog/articles/L01-proverka-tovarnogo-znaka-pered-podachey-v-rospatent/cover/canvas-quad.png",
     "source_size_px": [
-      1280,
-      720
+      2048,
+      1152
     ],
     "panel_size_px": [
-      640,
-      360
+      1023,
+      575
     ],
     "split_meta": {
-      "split_mode": "mechanical_center",
-      "h_gutter_px": null,
-      "v_gutter_px": null
+      "split_mode": "gutter_detect",
+      "h_gutter_px": {
+        "start": 575,
+        "end": 579
+      },
+      "v_gutter_px": {
+        "start": 1023,
+        "end": 1026
+      }
     },
     "output_size_px": [
       1200,
@@ -28,37 +34,37 @@
         "box_px": {
           "left": 0,
           "top": 0,
-          "right": 640,
-          "bottom": 360
+          "right": 1023,
+          "bottom": 575
         },
         "raw_box_px": {
           "left": 0,
           "top": 0,
-          "right": 640,
-          "bottom": 360
+          "right": 1023,
+          "bottom": 575
         },
         "size_px": [
           1200,
           675
         ],
         "aspect_ratio": "16:9",
-        "alt": "Обложка: проверка товарного знака перед Роспатентом — эксперт указывает на совпадение в поисковой платформе",
+        "alt": "Обложка: проверка товарного знака перед Роспатентом — патентный поверенный у реестра Роспатента",
         "h2_anchor": null
       },
       "inline_1": {
         "file": "cover/inline-01.png",
         "quadrant": "top_right",
         "box_px": {
-          "left": 640,
+          "left": 1026,
           "top": 0,
-          "right": 1280,
-          "bottom": 360
+          "right": 2048,
+          "bottom": 575
         },
         "raw_box_px": {
-          "left": 640,
+          "left": 1026,
           "top": 0,
-          "right": 1280,
-          "bottom": 360
+          "right": 2048,
+          "bottom": 575
         },
         "size_px": [
           1200,
@@ -66,45 +72,45 @@
         ],
         "aspect_ratio": "16:9",
         "alt": "Схема: что теряете, если не проверить обозначение до заявки в Роспатент",
-        "h2_anchor": "Проверьте обозначение до заявки: что теряете, если пропустить шаг"
+        "h2_anchor": "Проверьте обозначение до заявки: что теряете, если пропустить этап"
       },
       "inline_2": {
         "file": "cover/inline-02.png",
         "quadrant": "bottom_left",
         "box_px": {
           "left": 0,
-          "top": 360,
-          "right": 640,
-          "bottom": 720
+          "top": 579,
+          "right": 1023,
+          "bottom": 1152
         },
         "raw_box_px": {
           "left": 0,
-          "top": 360,
-          "right": 640,
-          "bottom": 720
+          "top": 579,
+          "right": 1023,
+          "bottom": 1152
         },
         "size_px": [
           1200,
           675
         ],
         "aspect_ratio": "16:9",
-        "alt": "Таблица бесплатных источников: платформа Роспатента, ФИПС, TMview",
-        "h2_anchor": "Соберите карту источников: платформа, реестры, opendata, TMview"
+        "alt": "Таблица бесплатных источников: реестры Роспатента, ВОИС, ЕГРЮЛ и рынок",
+        "h2_anchor": "Найдите источники: реестры Роспатента, ВОИС, ЕГРЮЛ и рынок"
       },
       "inline_3": {
         "file": "cover/inline-03.png",
         "quadrant": "bottom_right",
         "box_px": {
-          "left": 640,
-          "top": 360,
-          "right": 1280,
-          "bottom": 720
+          "left": 1026,
+          "top": 579,
+          "right": 2048,
+          "bottom": 1152
         },
         "raw_box_px": {
-          "left": 640,
-          "top": 360,
-          "right": 1280,
-          "bottom": 720
+          "left": 1026,
+          "top": 579,
+          "right": 2048,
+          "bottom": 1152
         },
         "size_px": [
           1200,
@@ -115,5 +121,10 @@
         "h2_anchor": "Пройдите пошаговую проверку на тождество и сходство"
       }
     }
-  }
+  },
+  "html_inject": [
+    "injected inline_1 after H2 — Проверьте обозначение до заявки: что теряете, если пропустить этап",
+    "injected inline_2 after H2 — Найдите источники: реестры Роспатента, ВОИС, ЕГРЮЛ и рынок",
+    "injected inline_3 after H2 — Пройдите пошаговую проверку на тождество и сходство"
+  ]
 }
