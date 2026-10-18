@@ -1,64 +1,106 @@
 {
   "article": "memory/blog/articles/L01-proverka-tovarnogo-znaka-pered-podachey-v-rospatent/article.html",
   "fact_bank_source": "memory/brief/fact-bank.md",
-  "verdict": "pass",
-  "total_extracted_facts": 8,
-  "verified_facts_count": 5,
-  "unverified_facts_count": 3,
+  "verdict": "warning",
+  "total_extracted_facts": 14,
+  "verified_facts_count": 6,
+  "unverified_facts_count": 8,
   "facts": [
+    {
+      "fact": "4 000 руб",
+      "kind": "price_or_currency",
+      "context": "водка Patent24): подача и формальная экспертиза - 4 000 руб. за первый класс и 1 000 руб. за каждый следующий",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1 000 руб",
+      "kind": "price_or_currency",
+      "context": "мальная экспертиза - 4 000 руб. за первый класс и 1 000 руб. за каждый следующий; экспертиза по существу с 04",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "13 000 руб",
+      "kind": "price_or_currency",
+      "context": "следующий; экспертиза по существу с 04.10.2025 - 13 000 руб. плюс доплаты за лишние классы и позиции в перечн",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
     {
       "fact": "46 200 руб",
       "kind": "price_or_currency",
-      "context": "Полнотекстовые БД; заключение за 15 раб. дней От 46 200 руб. словесный знак, 1 класс (с НДС 22%) Платная инфо",
-      "verified": true,
-      "reason": "Exact match found in fact-bank"
-    },
-    {
-      "fact": "2023",
-      "kind": "date_or_year",
-      "context": "й поиск - Поисковая платформа Роспатента (с 11.12.2023). Добавьте реестр заявок на ФИПС, TMview и оценку",
+      "context": "ние об охраноспособности, словесный знак, 1 класс 46 200 руб. с НДС, 15 рабочих дней (тариф на fips.ru) Вне ре",
       "verified": true,
       "reason": "Exact match found in fact-bank"
     },
     {
       "fact": "2026",
       "kind": "date_or_year",
-      "context": "К РФ сверены с сайтами Роспатента и ФИПС на 16.10.2026. Показы Яндекс Вордстат в среде подготовки матери",
+      "context": "тр заявок и TMview, сопоставите классы по МКТУ-13–2026 и решите: доработать обозначение, заказать предоце",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2023",
+      "kind": "date_or_year",
+      "context": "ковая платформа Роспатента (круглосуточно с 11.12.2023). Обязательно смотрите реестр заявок на ФИПС, оце",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2025",
+      "kind": "date_or_year",
+      "context": "солютным основаниям п. 1–3 той же статьи. С 04.10.2025 пошлины за экспертизу выросли: имеет смысл потрати",
       "verified": true,
       "reason": "Exact match found in fact-bank"
     },
     {
       "fact": "5 лет",
       "kind": "metric_or_duration",
-      "context": "тор на ФИПС. Делайте: заявлять нужные классы на 3-5 лет. Не делайте: раздувать перечень \"про запас\". Отсе",
-      "verified": false,
-      "reason": "No matching fact or number found in fact-bank"
-    },
-    {
-      "fact": "1499",
-      "kind": "large_number",
-      "context": "пертиза ищет сходство и однородность товаров (ст. 1499 ГК РФ). Мотивацию регистрации не повторяем - см. 7",
+      "context": "тификатор на ФИПС. Делайте: классы с запасом на 3–5 лет. Не делайте: раздувать перечень - лишние позиции",
       "verified": false,
       "reason": "No matching fact or number found in fact-bank"
     },
     {
       "fact": "1483",
       "kind": "large_number",
-      "context": "то теряете, если пропустить шаг Отказ по п. 6 ст. 1483 (сходство в однородных товарах) возможен после по",
+      "context": "гарантия регистрации. Отказ возможен по п. 6 ст. 1483 ГК РФ (сходство до смешения в однородных товарах)",
       "verified": true,
       "reason": "Exact match found in fact-bank"
     },
     {
+      "fact": "4 000",
+      "kind": "large_number",
+      "context": "водка Patent24): подача и формальная экспертиза - 4 000 руб. за первый класс и 1 000 руб. за каждый следую",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1 000",
+      "kind": "large_number",
+      "context": "мальная экспертиза - 4 000 руб. за первый класс и 1 000 руб. за каждый следующий; экспертиза по существу с",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "13 000",
+      "kind": "large_number",
+      "context": "следующий; экспертиза по существу с 04.10.2025 - 13 000 руб. плюс доплаты за лишние классы и позиции в пер",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
       "fact": "46 200",
       "kind": "large_number",
-      "context": "Полнотекстовые БД; заключение за 15 раб. дней От 46 200 руб. словесный знак, 1 класс (с НДС 22%) Платная и",
+      "context": "ние об охраноспособности, словесный знак, 1 класс 46 200 руб. с НДС, 15 рабочих дней (тариф на fips.ru) Вне",
       "verified": true,
       "reason": "Exact match found in fact-bank"
     },
     {
       "fact": "6340",
       "kind": "large_number",
-      "context": "спорном сходстве. Консультации ФИПС: +7 (495) 531-6340, 10:00-16:00. Лирейт помогает пройти тот же маршр",
+      "context": "е или высоких рисках сходства. ФИПС: +7 (495) 531-6340, 10:00–16:00. Лирейт помогает пройти маршрут по р",
       "verified": false,
       "reason": "No matching fact or number found in fact-bank"
     }
