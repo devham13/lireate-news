@@ -8,25 +8,26 @@
 
 ---
 
-## Lireate NEWS (`site: lireate` / `lireate.ru`) — только KIE action selfie
+## Lireate NEWS (`site: lireate` / `lireate.ru`) — collage-v1 (новые L06+, не L01–L05)
 
-**Переопределяет** quad/MCP/PIL ниже. Канон: `memory/blog/cover-action-selfie.md`.
+**Переопределяет** quad/MCP/KIE для **новых** папок. Канон: `memory/blog/cover-collage-v1.md`, контракт шаблона: `shared/lireate-collage-v1-template-contract.md`.
 
 ```text
-cover_era_pick → build prompt (THEME, ERA, HEADLINE 2–5 слов)
-  → scripts/lireate_cover_kie.py (nano-banana-2, KIE_API_KEY)
-  → cover.png 860×400 + cover-small.png + cover-kie-qa.md
+Writer/visual: cover/inline-specs.json (1–3 макета bad_good | process | checklist)
+  → scripts/lireate_collage_pipeline.py --article-dir memory/blog/articles/Lxx-…
+  → cover.png 860×400 + inline-01..03 + inject figures
+  → meta cover_style: collage-v1
 ```
 
-1. `python3 scripts/lireate_cover_era_pick.py --topic-id Lxx --write-meta article.meta.json`
-2. Задать `cover_headline` (короткий русский hook, не полный title).
-3. `python3 scripts/lireate_cover_kie.py --article-dir ... --theme "..." --headline "..."`
-4. `python3 scripts/lireate_cover_era_check.py --article-dir ...`
-5. Человек/агент: чеклист QA в `cover-kie-qa.md`.
+1. Задать `cover_headline`, `cover_highlight` (опционально), `cover/inline-specs.json`.
+2. `python3 scripts/lireate_collage_pipeline.py --article-dir ...`
+3. QA: `cover/cover-collage-qa.md`, превью 396×300, кириллица без опечаток.
 
-**COVER_BLOCKER** если нет `KIE_API_KEY` или kie упал **2 раза** — **не** использовать `lireate_cover_text_overlay.py`, quad canvas, gpt-image-2.
+**Не трогать** L01–L05 и каталоги с `kie-raw.png` без `cover_style: collage-v1`.
 
-Inline-изображения в статье: quad/split **только для inline** (опционально) — **обложка списка только KIE**.
+**Fallback KIE** (`memory/blog/cover-action-selfie.md`) только если в meta `"cover_fallback": "kie"` и нет collage-v1.
+
+Старые inline quad/split — **запрещены** для новых Lireate статей.
 
 ---
 

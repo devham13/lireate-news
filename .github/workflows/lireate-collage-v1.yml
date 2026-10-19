@@ -1,0 +1,40 @@
+name: lireate-collage-v1
+
+on:
+  pull_request:
+    paths:
+      - "scripts/lireate_collage/**"
+      - "scripts/lireate_*collage*.py"
+      - "scripts/test_lireate_collage.py"
+      - "memory/cover/collage-v1/**"
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/lireate_collage/**"
+      - "scripts/lireate_*collage*.py"
+
+jobs:
+  unit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Unit tests (no browser)
+        run: python3 scripts/test_lireate_collage.py
+
+  render-smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install render deps
+        run: |
+          pip install Pillow playwright
+          python -m playwright install chromium
+      - name: Sample renders
+        run: python3 scripts/lireate_collage_samples.py

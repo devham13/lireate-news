@@ -1,6 +1,8 @@
 # LIREATE article cover: action selfie (mandatory, 2026-10-18)
 
-**Единственный канал обложек Lireate NEWS:** kie.ai **nano-banana-2**. Скрипт: `scripts/lireate_cover_kie.py`.  
+**Новые статьи (L06+, не L01–L05):** обложка и inline — **collage-v1** (`memory/blog/cover-collage-v1.md`, `scripts/lireate_collage_pipeline.py`).
+
+**Legacy / fallback:** kie.ai **nano-banana-2** (`scripts/lireate_cover_kie.py`) только при `"cover_fallback": "kie"` без `cover_style: collage-v1`.  
 **Нет fallback** на PIL/quad/MCP — при отсутствии `KIE_API_KEY` или двух неудачах API → `COVER_BLOCKER`, PR **не** мержить.
 
 Эталон результата (владелец): steampunk-era selfie, крупный белый заголовок сверху, @LIREATE внизу — см. sample у оператора (не в git).
