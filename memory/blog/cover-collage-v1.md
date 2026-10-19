@@ -1,6 +1,6 @@
 # Lireate NEWS: collage-v1 cover + inline (2026-10-19)
 
-**Канал для новых статей L06+** (не L01–L05): детерминированный HTML/CSS + Chromium.
+**Канал для новых статей L07+** (не L01–L06): детерминированный HTML/CSS + Chromium. L06 — legacy KIE на live; не перегенерировать без `--update` на хостинге.
 
 ```text
 derive spec from article.meta.json (+ cover/inline-specs.json)
@@ -19,6 +19,8 @@ derive spec from article.meta.json (+ cover/inline-specs.json)
 | `lireate_collage_pipeline.py` | всё вместе |
 | `lireate_collage_samples.py` | артефакты для QA |
 
-**KIE** (`lireate_cover_kie.py`) — только fallback при `"cover_fallback": "kie"` и без `cover_style: collage-v1`.
+**KIE** (`lireate_cover_kie.py`) — **запрещён** для L07+; только legacy L01–L06.
+
+Перед merge/publish: `python3 scripts/lireate_collage_publish_gate.py --article-dir …` (или `--all-lireate` в CI).
 
 Контракт для шаблона сайта: `shared/lireate-collage-v1-template-contract.md`.

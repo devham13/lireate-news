@@ -32,8 +32,18 @@ def read_cover_era(article_dir):
     if not meta_path.is_file():
         return None
     meta = json.loads(meta_path.read_text(encoding="utf-8"))
+    if meta.get("cover_style") == "collage-v1":
+        return None
     era = (meta.get("cover_era") or "").strip()
     return era or None
+
+
+def uses_kie_cover_era(article_dir):
+    meta_path = article_dir / "article.meta.json"
+    if not meta_path.is_file():
+        return False
+    meta = json.loads(meta_path.read_text(encoding="utf-8"))
+    return meta.get("cover_style") != "collage-v1"
 
 
 def collect_eras(root, exclude_topic=None):
@@ -71,7 +81,7 @@ def check_article_dir(root, article_dir):
     topic = (meta.get("topic_id") or "").upper()
     era = (meta.get("cover_era") or "").strip()
     has_cover = (article_dir / "cover/cover.png").is_file()
-    if has_cover and not era:
+    if has_cover and not era and uses_kie_cover_era(article_dir):
         return ["cover.png exists but cover_era missing in meta"]
     history = collect_eras(root, exclude_topic=topic)
     return validate_era(era, history)
@@ -83,7 +93,7 @@ def check_all_lireate(root):
     for _n, tid, adir in dirs:
         era = read_cover_era(adir)
         if not era:
-            if (adir / "cover/cover.png").is_file():
+            if (adir / "cover/cover.png").is_file() and uses_kie_cover_era(adir):
                 errors.append("{0}: cover.png without cover_era".format(tid))
             continue
         hist = []

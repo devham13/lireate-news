@@ -75,4 +75,4 @@ python3 scripts/lireate_collage_pipeline.py \
 
 ## Fallback
 
-`scripts/lireate_cover_kie.py` остаётся **только** если в meta `"cover_fallback": "kie"` и нет `cover_style: collage-v1`. Для L01–L05 и уже опубликованных папок collage-скрипты **не запускаются**.
+`scripts/lireate_cover_kie.py` — **только L01–L06** (legacy). L07+ обязаны `cover_style: collage-v1` и gate `lireate_collage_publish_gate.py`. Для L01–L05 collage-скрипты **не запускаются** (frozen).

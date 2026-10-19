@@ -1,9 +1,10 @@
 # LIREATE article cover: action selfie (mandatory, 2026-10-18)
 
-**Новые статьи (L06+, не L01–L05):** обложка и inline — **collage-v1** (`memory/blog/cover-collage-v1.md`, `scripts/lireate_collage_pipeline.py`).
+**Новые статьи (L07+, не L01–L06):** обложка и inline — **только collage-v1** (`memory/blog/cover-collage-v1.md`, `scripts/lireate_collage_pipeline.py`). Gate: `lireate_collage_publish_gate.py`.
 
-**Legacy / fallback:** kie.ai **nano-banana-2** (`scripts/lireate_cover_kie.py`) только при `"cover_fallback": "kie"` без `cover_style: collage-v1`.  
-**Нет fallback** на PIL/quad/MCP — при отсутствии `KIE_API_KEY` или двух неудачах API → `COVER_BLOCKER`, PR **не** мержить.
+**Legacy (L01–L06):** kie.ai **nano-banana-2** (`scripts/lireate_cover_kie.py`). L07+ → скрипт завершается `COVER_BLOCKER`.
+
+**Нет fallback** на PIL/quad/MCP для Lireate NEWS.
 
 Эталон результата (владелец): steampunk-era selfie, крупный белый заголовок сверху, @LIREATE внизу — см. sample у оператора (не в git).
 

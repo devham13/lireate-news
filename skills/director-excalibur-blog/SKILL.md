@@ -103,7 +103,7 @@ Task(excalibur-blog-geo-qa)
 
 | Task | Задача |
 |------|--------|
-| `excalibur-blog-cover` | ONE MCP quad i2i + design code → cover + 3 inline (см. cover-excalibur-blog SKILL) |
+| `excalibur-blog-cover` | **Lireate L07+:** `lireate_collage_pipeline.py` + publish gate PASS. **Excalibur WP:** ONE MCP quad i2i (cover-excalibur-blog SKILL) |
 | `excalibur-blog-schema` | schema.jsonld BlogPosting + FAQPage |
 
 Почему параллельно: разные выходные файлы; общий вход после QA PASS. Cover/schema → fragments `.cursor/excalibur-blog-fragments/`; директор переносит в handoff.

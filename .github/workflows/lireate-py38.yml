@@ -45,6 +45,7 @@ jobs:
           python -m py_compile scripts/lireate_cover_era_pick.py
           python -m py_compile scripts/lireate_cover_kie.py
           python -m py_compile scripts/lireate_collage_pipeline.py
+          python -m py_compile scripts/lireate_collage_publish_gate.py
           python -m py_compile scripts/lireate_cover_collage.py
           python -m py_compile scripts/lireate_privacy_link_policy.py
 

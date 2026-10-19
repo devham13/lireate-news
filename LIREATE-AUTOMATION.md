@@ -7,7 +7,7 @@
 > 4. **Никогда не переписывать существующую статью** (L01 и любые папки в `memory/blog/articles/`). `LIREATE_TOPIC_ID`/`EXCALIBUR_TOPIC_ID`, указывающий на существующую папку, игнорируется.
 > 5. После написания статьи поставить в её карточке `status: written` (в том же PR). `published` ставит **CRON на хостинге** после `STATUS: PUBLISHED`.
 > 6. Публикация на хостинге: `lireate_hosting_publish.py` без `--article-dir` берёт только самую новую неопубликованную папку L*; если нет — `NO_NEW_ARTICLE`, exit 0, без `--update`.
-> 7. **Auto-merge:** контент-пайплайн открывает **не-draft** PR в `main` и **сам мержит** после зелёных проверок (lint, SEO, GEO QA, **KIE action-selfie cover** + `cover-kie-qa.md`). Нет `KIE_API_KEY` или `COVER_BLOCKER` после 2 попыток kie — **не мержить**. Fallback на PIL/quad **запрещён**.
+> 7. **Auto-merge:** контент-пайплайн открывает **не-draft** PR в `main` и **сам мержит** после зелёных проверок (lint, SEO, GEO QA, **collage-v1** `lireate_collage_pipeline.py` + `cover-collage-qa.md` + `lireate_collage_publish_gate.py` для L07+). `COVER_BLOCKER` — **не мержить**. KIE/quad/PIL для L07+ **запрещён**.
 > 8. **NO_NEW_TOPIC** — без статьи, без PR, без обновления docs/очереди.
 
 
@@ -24,15 +24,13 @@
 
 Подробности сервера: `memory/hosting/lireate-reg-ru-production.md`, установка: `docs/lireate-autopub-hosting.ru.md`.
 
-**Обложки (только kie.ai):** канон `memory/blog/cover-action-selfie.md`, модель **nano-banana-2**, скрипт `scripts/lireate_cover_kie.py`. Env: **`KIE_API_KEY`** (Cursor Cloud Secrets / worker `.env`).
+**Обложки и inline (L07+, обязательно collage-v1):** канон `memory/blog/cover-collage-v1.md`, контракт `shared/lireate-collage-v1-template-contract.md`, скрипт **`python3 scripts/lireate_collage_pipeline.py --article-dir …`**. Writer готовит `cover/inline-specs.json` (2–4 макета `bad_good` | `process` | `checklist`). Текст на PNG — программный рендер (Chromium), **не** KIE. Fact scrub: цифры в inline только если есть в `article.html`.
 
-**Героиня:** identity lock с face reference (URL в `cover-action-selfie.md`, локально `memory/cover/assets/blog-hero-reference.png`). **Action selfie** 24mm: героиня в **исторической эпохе** по теме статьи, visual gag по юридической теме, цвета Velvia, без сепии.
+**Выход:** `cover/cover.png` 860×400, `inline-01..03.png` 1200×675, `cover/cover-collage-qa.md`, `meta.cover_style: collage-v1`, `<figure class="lx-article-cover">` + `inline-collage` в HTML. Gate перед publish/merge: `python3 scripts/lireate_collage_publish_gate.py --article-dir …`.
 
-**Типографика в кадре (рисует модель):** короткий заголовок **2–5 слов** кириллицей (`cover_headline` в meta), крупный белый condensed сверху, не на лице; внизу **@LIREATE** + лого Telegram. Не полный title статьи.
+**Legacy L01–L06 (KIE action-selfie):** `memory/blog/cover-action-selfie.md`, `scripts/lireate_cover_kie.py`, `KIE_API_KEY`, `cover_era` rotation (`lireate_cover_era_pick.py` / CI). **Не** использовать для L07+.
 
-**Ротация эпох:** `cover_era` в `article.meta.json`; **не повторять эпоху** среди последних **10** L-статей. `lireate_cover_era_pick.py` / CI `lireate_cover_era_check.py`.
-
-**Выход:** `cover/cover.png` 860×400, `cover-small.png` 350×163, `cover/cover-kie-qa.md`. При ошибке API → `COVER_BLOCKER`, PR не мержить.
+**L06:** опубликована с KIE; повторная конвертация в collage-v1 — только `lireate_hosting_publish.py --update --article-dir …` (тот же `seo_url`, без дубля в БД).
 
 ---
 

@@ -10,10 +10,13 @@ is_background: false
 
 ## Роль
 
-Cover-агент генерирует **один** quad-холст 2×2 (MCP `gpt-image-2` + reference i2i), режет на `cover.png` + 3 inline, вставляет `<figure>` в `article.html`.
+**Lireate NEWS (L07+):** только `scripts/lireate_collage_pipeline.py` → collage-v1 cover + inline + HTML inject; gate `lireate_collage_publish_gate.py` PASS. **Не** KIE, **не** quad MCP.
+
+**Excalibur WP:** Cover-агент генерирует **один** quad-холст 2×2 (MCP `gpt-image-2` + reference i2i), режет на `cover.png` + 3 inline, вставляет `<figure>` в `article.html`.
 
 **Skill (читать первым):** `skills/cover-excalibur-blog/SKILL.md`  
-**Контракт:** `shared/blog-cover-quad-canvas-contract.md`  
+**Контракт Lireate:** `shared/lireate-collage-v1-template-contract.md`  
+**Контракт Excalibur:** `shared/blog-cover-quad-canvas-contract.md`  
 **Карта файлов:** `shared/excalibur-blog-cover-index.md`
 
 ---

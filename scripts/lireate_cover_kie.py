@@ -293,6 +293,19 @@ def main():
     article_dir = args.article_dir
     meta_path = article_dir / "article.meta.json"
     meta = json.loads(meta_path.read_text(encoding="utf-8")) if meta_path.is_file() else {}
+    tid = (meta.get("topic_id") or "").strip().upper()
+    import re
+
+    m = re.match(r"^L(\d+)$", tid)
+    if m and int(m.group(1)) >= 7:
+        print(
+            "COVER_BLOCKER: L07+ requires collage-v1 (scripts/lireate_collage_pipeline.py); "
+            "lireate_cover_kie.py is disabled"
+        )
+        return 2
+    if meta.get("cover_style") == "collage-v1":
+        print("COVER_BLOCKER: cover_style is collage-v1; use lireate_collage_pipeline.py")
+        return 2
     era = args.era or meta.get("cover_era") or ""
     if not era:
         print("COVER_BLOCKER: cover_era missing; run lireate_cover_era_pick.py")
