@@ -45,6 +45,13 @@ class TestCollage(unittest.TestCase):
         spec = derive_cover_spec(meta)
         self.assertEqual(spec["badge_label"], "ПАТЕНТ")
         self.assertFalse(validate_cover_spec(spec))
+        self.assertIn("Патентная заявка", spec["ui_card_title"])
+        self.assertNotIn("МКТУ", " ".join(spec["ui_card_rows"]))
+
+    def test_derive_copyright_ui(self):
+        meta = {"lireate_category_name": "Авторское право", "cover_headline": "Права на текст"}
+        spec = derive_cover_spec(meta)
+        self.assertIn("Права на контент", spec["ui_card_title"])
 
     def test_inline_bad_good(self):
         item = {
