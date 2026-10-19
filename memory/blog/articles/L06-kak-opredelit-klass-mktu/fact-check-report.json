@@ -1,0 +1,52 @@
+{
+  "article": "memory/blog/articles/L06-kak-opredelit-klass-mktu/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 6,
+  "verified_facts_count": 5,
+  "unverified_facts_count": 1,
+  "facts": [
+    {
+      "fact": "46 200 руб",
+      "kind": "price_or_currency",
+      "context": "ака . При сомнении - предоценка ФИПС (1 класс, от 46 200 руб., fips.ru). Лирейт помогает с подбором классов; у",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": ". Дальше - структура МКТУ, поиск строки в МКТУ-13–2026 и черновик перечня без путаницы ковров, часов и по",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2026 года",
+      "kind": "date_or_year",
+      "context": "–34 для товаров, 35–45 для услуг. В заявке в РФ с 2026 года нужны точные формулировки из МКТУ-13–2026 , а не",
+      "verified": true,
+      "reason": "Numerical value '2026' matched in fact-bank context"
+    },
+    {
+      "fact": "5 лет",
+      "kind": "metric_or_duration",
+      "context": "согласовали классы с реальным ассортиментом на 3–5 лет вперёд. Материал проверен: редакция Лирейт, практ",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "нивают по смыслу товаров, в том числе по п. 6 ст. 1483 ГК РФ. Маршрут подбора класса: Описание товара или",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "46 200",
+      "kind": "large_number",
+      "context": "ака . При сомнении - предоценка ФИПС (1 класс, от 46 200 руб., fips.ru). Лирейт помогает с подбором классов",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    }
+  ]
+}
