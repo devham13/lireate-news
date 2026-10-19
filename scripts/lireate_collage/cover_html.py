@@ -108,8 +108,8 @@ html, body {{ margin:0; width:{w}px; height:{h}px; overflow:hidden; }}
   font-weight:800; font-size:20px; white-space:nowrap; z-index:6; background:#fff;
 }}
 .slot-chips {{
-  position:absolute; top:124px; right:4px; width:96%;
-  display:flex; flex-direction:column; align-items:flex-end; gap:10px; z-index:7;
+  position:absolute; top:72px; right:18px; width:72%;
+  display:flex; flex-direction:column; align-items:flex-end; gap:10px; z-index:6;
   pointer-events:none;
 }}
 .chip-tilt {{ font-size:18px; padding:8px 16px; transform:rotate(var(--rot)); }}

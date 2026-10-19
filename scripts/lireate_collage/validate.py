@@ -31,6 +31,15 @@ def validate_cover_spec(spec):
     return errors
 
 
+def validate_inline_item_digits(item, article_text):
+    """Every digit sequence in spec strings must appear in article plain text."""
+    from .article_facts import collect_unverified_digit_strings
+
+    if not article_text:
+        return []
+    return collect_unverified_digit_strings(item, article_text)
+
+
 def validate_inline_item(item):
     errors = []
     if _len(item.get("headline")) > 120:

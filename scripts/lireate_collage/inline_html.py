@@ -157,11 +157,23 @@ def _step_body(step):
             )
         return rows
     if variant == "fee":
-        return (
-            '<div class="fee-row"><span class="fee-label">Пошлина</span><span class="fee-val">12 500 ₽</span></div>'
-            '<div class="fee-row"><span class="fee-label">Срок</span><span class="fee-date">до 15.04</span></div>'
-            '<div class="bar short"></div>'
+        amount = (step.get("fee_amount") or "").strip()
+        deadline = (step.get("fee_deadline") or "").strip()
+        amount_cell = (
+            '<span class="fee-val">{0}</span>'.format(_esc(amount))
+            if amount
+            else '<span class="fee-ph"><span class="bar short"></span></span>'
         )
+        deadline_cell = (
+            '<span class="fee-date">{0}</span>'.format(_esc(deadline))
+            if deadline
+            else '<span class="fee-ph"><span class="bar short"></span></span>'
+        )
+        return (
+            '<div class="fee-row"><span class="fee-label">Пошлина</span>{amt}</div>'
+            '<div class="fee-row"><span class="fee-label">Срок</span>{dl}</div>'
+            '<div class="bar short"></div>'
+        ).format(amt=amount_cell, dl=deadline_cell)
     return _lines_html(step.get("lines"), use_text=True)
 
 
@@ -259,6 +271,7 @@ def build_inline_html(item, width, height):
     chips = " ".join(_chip(c) for c in (item.get("chips") or [])[:3])
     headline = _esc(item.get("headline") or "")
     header_class = "inline-header" + (" inline-header--full" if tmpl == "checklist" else "")
+    comp_gap = 20 if tmpl == "checklist" else SECTION_GAP_PX
 
     return """<!DOCTYPE html>
 <html><head><meta charset="utf-8"><style>
@@ -277,11 +290,12 @@ html, body {{ margin:0; width:{w}px; height:{h}px; overflow:hidden; }}
 .inline-header {{
   display:grid; grid-template-columns: 1fr {sticky_w}px; gap:20px; align-items:start;
 }}
-.inline-header--full {{ grid-template-columns: 1fr; }}
+.inline-header--full {{ grid-template-columns: 1fr; padding-top:16px; }}
 h1.title {{
-  font-size:{headline_px}px; font-weight:800; line-height:1.08; margin:0 0 10px;
+  font-size:{headline_px}px; font-weight:800; line-height:1.08; margin:40px 0 10px;
   display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
 }}
+.inline-header--full h1.title {{ margin-top:46px; }}
 .meta-chip {{
   display:inline-flex; align-items:center; gap:8px; height:{chip_h}px; padding:0 14px;
   border:1px solid #e5e7eb; border-radius:999px; background:#fff;
@@ -357,6 +371,8 @@ h1.title {{
 }}
 .fee-row {{ display:flex; justify-content:space-between; font-size:{card_body}px; margin:10px 0; }}
 .fee-val, .fee-date {{ font-weight:700; }}
+.fee-ph {{ display:inline-block; min-width:88px; }}
+.fee-ph .bar {{ margin:0; }}
 .checklist-split {{
   display:grid; grid-template-columns: 55% 45%; gap:14px; align-items:center; flex:1; min-height:0;
 }}
@@ -364,10 +380,11 @@ h1.title {{
 .checklist-left .ck-row {{ height:46px; }}
 .checklist-rail {{
   display:flex; flex-direction:column; align-items:flex-start; justify-content:center;
-  gap:10px; padding:2px 0 10px 8px; box-sizing:border-box;
+  gap:8px; padding:0 0 14px 8px; box-sizing:border-box;
 }}
-.checklist-rail .sticky-note {{ height:165px; font-size:30px; }}
-.checklist-rail .conc-box {{ min-height:92px; font-size:30px; padding:10px 14px; }}
+.checklist-rail .sticky-note {{ height:132px; font-size:28px; }}
+.checklist-rail .conc-box {{ min-height:86px; font-size:28px; padding:8px 12px; }}
+.checklist-rail .conc-chip {{ font-size:20px; padding:6px 10px; }}
 .checklist-rail .conc-chip {{ transform:rotate(-2deg); }}
 .checklist .ck-card, .checklist-left .ck-card {{
   width:100%; max-width:100%; border:1px solid #e5e7eb; padding:16px 18px; background:#fff; box-sizing:border-box;
@@ -406,12 +423,13 @@ h1.title {{
   position:absolute; width:46px; height:16px; background:linear-gradient(135deg,rgba(22,22,22,.9),rgba(8,8,8,.92));
   opacity:.75; z-index:20;
 }}
-.tl {{ top:10px; left:20px; transform:rotate(-28deg); }}
-.tr {{ top:12px; right:24px; transform:rotate(24deg); }}
+.tl {{ top:14px; left:22px; transform:rotate(-28deg); }}
+.tr {{ top:16px; right:26px; transform:rotate(24deg); }}
 </style></head><body>
 <div class="stage">
   <div class="paper paper-torn sheet" data-layout-paper="1">
-    <div class="tape-corner tl"></div><div class="tape-corner tr"></div>
+    <div class="tape-corner tl" data-layout-slot="slot-tape-tl"></div>
+    <div class="tape-corner tr" data-layout-slot="slot-tape-tr"></div>
     <div id="composition">
       <header class="{header_class}">
         <div>
@@ -430,7 +448,7 @@ h1.title {{
         w=width,
         h=height,
         m=PAPER_MARGIN,
-        gap=SECTION_GAP_PX,
+        gap=comp_gap,
         navy="#0b1020",
         paper="#fafaf8",
         sticky_w=STICKY_W,

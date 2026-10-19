@@ -58,6 +58,10 @@ Inline: файл `cover/inline-specs.json` (см. `memory/cover/collage-v1/inlin
 - **cover:** зазор **≥16px** между `slot-arrow` и `slot-headline`;
 - минимальные размеры шрифтов и плотность квадрантов.
 
+## Факты в inline-spec
+
+Любая **последовательность цифр** в строках `inline-specs.json` должна встречаться в `article.html` (после scrub иначе поле удаляется; `fee_amount` / `fee_deadline` без подтверждения → placeholder bars). Проверка: `article_facts.scrub_inline_item` + `validate_inline_item_digits`.
+
 ## Pipeline smoke test (не в `memory/blog/articles/`)
 
 Тестовый прогон `lireate_collage_pipeline.py` — только каталог  
