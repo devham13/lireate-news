@@ -25,7 +25,7 @@ def _sticky_html(text, underline, bg):
     else:
         inner = _esc(text)
     return (
-        '<div class="sticky hand slot-sticky" data-layout-slot="slot-sticky" style="background:{bg}">'
+        '<div class="cover-sticky hand" data-layout-slot="slot-sticky" style="background:{bg}">'
         '<div class="sticky-tape-beige"></div><div class="sticky-text">{inner}</div></div>'
     ).format(bg=bg, inner=inner)
 
@@ -59,140 +59,96 @@ def build_cover_html(spec, width, height):
             '<div class="ui-row"><span>{label}</span><span class="toggle {on}"></span></div>'
         ).format(label=_esc(row), on=on)
 
-    # Arrow lives in right column left edge, curves toward sticky (does not enter left col)
+    hl_px = max(44, int(height * 0.13))
+    sw, sh = width, height
+
     arrow_svg = (
-        '<svg class="slot-arrow" data-layout-slot="slot-arrow" viewBox="0 0 90 44" aria-hidden="true">'
-        '<path d="M6 32 C30 6, 52 36, 78 14" stroke="#111" fill="none" stroke-width="2.2"/>'
-        '<path d="M70 8l12 8-14 3" stroke="#111" fill="none" stroke-width="2"/>'
+        '<svg class="cover-arrow" data-layout-slot="slot-arrow" viewBox="0 0 100 36" aria-hidden="true">'
+        '<path d="M8 28 C42 8, 58 30, 88 12" stroke="#111" fill="none" stroke-width="2.2"/>'
+        '<path d="M80 6l12 8-14 3" stroke="#111" fill="none" stroke-width="2"/>'
         "</svg>"
     )
-
-    hl_px = max(48, int(height * 0.125))
-    sheet_w = int(width * 0.97)
-    sheet_h = int(height * 0.94)
 
     return """<!DOCTYPE html>
 <html><head><meta charset="utf-8"><style>
 {shared}
-.stage {{ width: {w}px; height: {h}px; display: flex; align-items: center; justify-content: center; }}
+html, body {{ margin:0; width:{w}px; height:{h}px; overflow:hidden; }}
+.stage {{ width:{w}px; height:{h}px; background:#0b1020; display:flex; align-items:center; justify-content:center; }}
 .sheet {{
-  width: {sw}px; height: {sh}px; position: relative;
-  display: grid;
-  grid-template-columns: 55% 45%;
-  grid-template-rows: 1fr;
-  padding: 28px 32px 24px 36px;
-  gap: 0;
+  width:{sw}px; height:{sh}px; position:relative; box-sizing:border-box;
+  display:grid; grid-template-columns: 54% 46%; padding:20px 22px 16px 26px;
 }}
-.col-left {{
-  display: flex; align-items: center;
-  padding-right: 12px;
-  z-index: 1;
-}}
-.col-right {{
-  position: relative;
-  height: 100%;
-  min-height: 0;
-}}
+.col-left {{ display:flex; align-items:center; position:relative; padding-right:8px; }}
+.col-right {{ position:relative; }}
 .hl {{
-  font-size: {hl_px}px;
-  font-weight: 800;
-  line-height: 1.05;
-  letter-spacing: -0.03em;
-  width: 100%;
+  font-size:{hl_px}px; font-weight:800; line-height:1.05; letter-spacing:-0.03em;
 }}
-.hl-accent {{ color: #ff1f6b; }}
-.hl-line {{ margin-bottom: 0.06em; }}
-.slot-badge {{
-  position: absolute; top: 0; right: 0;
-  border: 3px solid #111; padding: 10px 16px;
-  font-weight: 800; font-size: 22px;
-  white-space: nowrap; z-index: 5;
-  background: #fff;
+.hl-accent {{ color:#ff1f6b; }}
+.hl-line {{ margin-bottom:0.05em; }}
+.cover-arrow {{
+  position:absolute; right:-4px; top:38%; width:90px; height:auto; pointer-events:none;
 }}
-.slot-sticky {{
-  position: absolute; top: 6%; left: 0; width: 78%;
-  padding: 16px 14px 14px;
-  font-size: 22px; line-height: 1.2;
-  transform: rotate(3deg);
-  z-index: 4;
-  box-shadow: 2px 6px 14px rgba(0,0,0,.18);
+.cover-sticky {{
+  position:absolute; top:44px; left:6px; width:230px; min-height:150px;
+  padding:18px 16px; box-sizing:border-box; font-size:22px; line-height:1.15;
+  transform:rotate(4deg); z-index:4; box-shadow:2px 6px 14px rgba(0,0,0,.18);
 }}
-.sticky-text {{ font-size: 20px; }}
-.sticky-ul {{
-  text-decoration: none;
-  background: linear-gradient(transparent 55%, rgba(239,68,68,.55) 55%);
-}}
+.sticky-ul {{ background:linear-gradient(transparent 58%, rgba(239,68,68,.55) 58%); }}
 .sticky-tape-beige {{
-  position: absolute; top: -9px; left: 50%; margin-left: -30px;
-  width: 60px; height: 16px;
-  background: rgba(235,220,185,.82);
-  transform: rotate(-3deg);
-  border-radius: 1px;
+  position:absolute; top:-10px; left:50%; margin-left:-34px; width:68px; height:18px;
+  background:rgba(235,220,185,.88); transform:rotate(-2deg);
+}}
+.slot-badge {{
+  position:absolute; top:0; right:0; border:3px solid #111; padding:8px 14px;
+  font-weight:800; font-size:20px; white-space:nowrap; z-index:6; background:#fff;
 }}
 .slot-chips {{
-  position: absolute; top: 34%; right: 0; width: 92%;
-  display: flex; flex-direction: column;
-  align-items: flex-end; gap: 10px;
-  z-index: 3;
+  position:absolute; top:200px; right:0; width:100%;
+  display:flex; flex-direction:column; align-items:flex-end; gap:8px; z-index:3;
 }}
-.chip-tilt {{ font-size: 18px; padding: 8px 16px; transform: rotate(var(--rot)); }}
+.chip-tilt {{ font-size:18px; padding:8px 16px; transform:rotate(var(--rot)); }}
 .slot-ui {{
-  position: absolute; bottom: 0; left: 0; right: 0;
-  height: 42%;
-  background: #fff; border-radius: 14px; padding: 14px 16px 12px;
-  box-shadow: 0 10px 28px rgba(0,0,0,.14); border: 1px solid #e5e7eb;
-  font-size: 14px; z-index: 2;
+  position:absolute; bottom:8px; right:0; width:94%; z-index:5;
+  background:#fff; border-radius:12px; padding:12px 14px 10px;
+  box-shadow:0 10px 26px rgba(0,0,0,.14); border:1px solid #e5e7eb;
+  font-size:17px;
 }}
-.slot-ui h4 {{ font-size: 15px; margin-bottom: 8px; font-weight: 700; }}
-.ui-foot {{ margin-top: auto; padding-top: 8px; display: flex; gap: 12px; justify-content: flex-end; font-size: 12px; align-items: center; }}
-.muted {{ color: #64748b; }}
-.apply {{ background: #ff2d78; color: #fff; padding: 5px 14px; border-radius: 6px; font-weight: 600; }}
-.slot-ui {{ display: flex; flex-direction: column; }}
-.ui-row {{ display: flex; justify-content: space-between; align-items: center; margin: 7px 0; }}
-.toggle {{
-  width: 38px; height: 22px; border-radius: 999px; background: #e5e7eb; position: relative; flex-shrink: 0;
-}}
-.toggle.on {{ background: #ff2d78; }}
+.slot-ui h4 {{ font-size:17px; margin:0 0 8px; font-weight:700; }}
+.ui-row {{ display:flex; justify-content:space-between; align-items:center; margin:6px 0; }}
+.toggle {{ width:36px; height:20px; border-radius:999px; background:#e5e7eb; position:relative; flex-shrink:0; }}
+.toggle.on {{ background:#ff2d78; }}
 .toggle.on::after {{
-  content: ''; position: absolute; right: 3px; top: 3px; width: 16px; height: 16px;
-  background: #fff; border-radius: 50%;
+  content:''; position:absolute; right:3px; top:3px; width:14px; height:14px; background:#fff; border-radius:50%;
 }}
-.slot-arrow {{
-  position: absolute; top: 20%; left: 4%; width: 38%; height: auto;
-  z-index: 2; pointer-events: none;
-}}
+.ui-foot {{ margin-top:8px; display:flex; gap:10px; justify-content:flex-end; font-size:12px; align-items:center; }}
+.muted {{ color:#64748b; }}
+.apply {{ background:#ff2d78; color:#fff; padding:4px 12px; border-radius:6px; font-weight:600; }}
 .tape-corner {{
-  position: absolute; width: 48px; height: 18px;
-  background: linear-gradient(135deg, rgba(22,22,22,.88), rgba(8,8,8,.92));
-  opacity: .75; border-radius: 2px; z-index: 10;
+  position:absolute; width:42px; height:14px;
+  background:linear-gradient(135deg,rgba(22,22,22,.88),rgba(8,8,8,.92));
+  opacity:.75; z-index:10;
 }}
-.tape-tl {{ top: 6px; left: 28px; transform: rotate(-32deg); }}
-.tape-tr {{ top: 8px; right: 32px; transform: rotate(28deg); }}
+.tape-tl {{ top:6px; left:22px; transform:rotate(-30deg); }}
+.tape-tr {{ top:8px; right:26px; transform:rotate(26deg); }}
 .brand-mark {{
-  position: absolute; bottom: 8px; right: 12px;
-  font-size: 11px; font-weight: 700; letter-spacing: 0.14em;
-  color: #64748b; z-index: 6;
+  position:absolute; bottom:6px; right:10px; font-size:11px; font-weight:700;
+  letter-spacing:0.14em; color:#64748b; z-index:6;
 }}
 </style></head><body>
 <div class="stage">
-  <div class="paper paper-torn sheet">
-    <div class="tape-corner tape-tl"></div>
-    <div class="tape-corner tape-tr"></div>
+  <div class="paper paper-torn sheet" data-layout-paper="1">
+    <div class="tape-corner tape-tl"></div><div class="tape-corner tape-tr"></div>
     <div class="col-left">
-      <div class="hl slot-headline" data-layout-slot="slot-headline">{headline}</div>
-    </div>
-    <div class="col-right">
+      <div class="hl" data-layout-slot="slot-headline">{headline}</div>
       {arrow}
+    </div>
+    <div class="col-right" data-layout-slot="slot-body">
       <div class="slot-badge" data-layout-slot="slot-badge">{badge}</div>
       {sticky}
       <div class="slot-chips" data-layout-slot="slot-chips">{labels}</div>
       <div class="slot-ui" data-layout-slot="slot-ui-card">
-        <h4>{ui_title}</h4>
-        {ui_rows}
-        <div class="ui-foot">
-          <span class="muted">Сохранить</span>
-          <span class="apply">Применить</span>
-        </div>
+        <h4>{ui_title}</h4>{ui_rows}
+        <div class="ui-foot"><span class="muted">Сохранить</span><span class="apply">Применить</span></div>
       </div>
     </div>
     <div class="brand-mark">LIREATE</div>
@@ -202,17 +158,13 @@ def build_cover_html(spec, width, height):
         shared=shared_styles(),
         w=width,
         h=height,
-        sw=sheet_w,
-        sh=sheet_h,
+        sw=sw,
+        sh=sh,
         hl_px=hl_px,
         headline=_headline_html(lines, highlight),
         arrow=arrow_svg,
         badge=_esc(badge),
-        sticky=_sticky_html(
-            spec.get("sticky_text") or "",
-            spec.get("sticky_underline") or "",
-            sticky_bg,
-        ),
+        sticky=_sticky_html(spec.get("sticky_text") or "", spec.get("sticky_underline") or "", sticky_bg),
         labels=labels_html,
         ui_title=_esc(ui_title),
         ui_rows=ui_rows_html,
