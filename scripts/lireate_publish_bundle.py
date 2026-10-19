@@ -49,6 +49,7 @@ def build_publish_bundle(article_dir, meta, html):
                 "lireate_category_name": meta.get("lireate_category_name", "Товарный знак"),
                 "title": meta.get("title"),
                 "description": meta.get("description"),
+                "cover_style": meta.get("cover_style"),
                 "image_map": image_map,
             },
             ensure_ascii=False,

@@ -1,0 +1,103 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Lireate collage-v1 inline illustrations",
+  "type": "object",
+  "required": ["version", "style", "illustrations"],
+  "properties": {
+    "version": { "const": 1 },
+    "style": { "const": "collage-v1" },
+    "illustrations": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 3,
+      "items": { "$ref": "#/definitions/illustration" }
+    }
+  },
+  "definitions": {
+    "chip": {
+      "type": "object",
+      "required": ["text"],
+      "properties": {
+        "icon": { "type": "string", "enum": ["tag", "calendar", "clock", "globe", "layers", "warning", "shield", "doc"] },
+        "text": { "type": "string", "maxLength": 24 }
+      }
+    },
+    "sticky": {
+      "type": "object",
+      "required": ["text"],
+      "properties": {
+        "text": { "type": "string", "maxLength": 80 },
+        "color": { "type": "string", "enum": ["pink", "yellow"] }
+      }
+    },
+    "conclusion": {
+      "type": "object",
+      "required": ["box_lines"],
+      "properties": {
+        "label": { "type": "string", "maxLength": 12 },
+        "box_lines": { "type": "array", "minItems": 1, "maxItems": 3, "items": { "type": "string", "maxLength": 28 } },
+        "highlight_word": { "type": "string", "maxLength": 20 },
+        "marker_underline": { "type": "boolean" },
+        "chip": { "type": "string", "maxLength": 48 }
+      }
+    },
+    "illustration": {
+      "type": "object",
+      "required": ["slot", "template", "headline", "alt"],
+      "properties": {
+        "slot": { "type": "string", "enum": ["inline_1", "inline_2", "inline_3"] },
+        "template": { "type": "string", "enum": ["bad_good", "process", "checklist"] },
+        "headline": { "type": "string", "maxLength": 120 },
+        "chips": { "type": "array", "maxItems": 4, "items": { "$ref": "#/definitions/chip" } },
+        "sticky": { "$ref": "#/definitions/sticky" },
+        "conclusion": { "$ref": "#/definitions/conclusion" },
+        "alt": { "type": "string", "maxLength": 200 },
+        "figcaption": { "type": "string", "maxLength": 200 },
+        "bad": {
+          "type": "object",
+          "properties": {
+            "header": { "type": "string", "maxLength": 40 },
+            "lines": { "type": "array", "maxItems": 4, "items": { "type": "string", "maxLength": 60 } }
+          }
+        },
+        "good": {
+          "type": "object",
+          "properties": {
+            "header": { "type": "string", "maxLength": 40 },
+            "lines": { "type": "array", "maxItems": 4, "items": { "type": "string", "maxLength": 60 } }
+          }
+        },
+        "side_checklist": { "type": "array", "maxItems": 5, "items": { "type": "string", "maxLength": 40 } },
+        "steps": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 4,
+          "items": {
+            "type": "object",
+            "required": ["title", "subtitle"],
+            "properties": {
+              "title": { "type": "string", "maxLength": 32 },
+              "subtitle": { "type": "string", "maxLength": 48 },
+              "chip": { "type": "string", "maxLength": 24 },
+              "variant": { "type": "string", "enum": ["lines", "toggles", "icon"] }
+            }
+          }
+        },
+        "checklist_rows": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 6,
+          "items": {
+            "type": "object",
+            "required": ["text"],
+            "properties": {
+              "text": { "type": "string", "maxLength": 48 },
+              "icon": { "type": "string" }
+            }
+          }
+        },
+        "checklist_title": { "type": "string", "maxLength": 48 }
+      }
+    }
+  }
+}
