@@ -283,7 +283,7 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L06 — Как определить класс МКТУ для товара или услуги
 
-- **status:** new
+- **status:** written
 - **priority:** P1
 - **site:** lireate
 - **lireate_category_id:** 9
@@ -292,7 +292,7 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 - **h1:** Как определить класс МКТУ для товара или услуги
 - **primary_query:** структура мкту
 - **secondary_queries:** классы мкту 14, класс 27, классы мкту, вареники мкту, вареники класс мкту
-- **search_intent:** informational
+- **search_intent:** how_to
 - **article_mode:** B
 - **angle:** Структура МКТУ, поиск класса по товару, типичные ошибки, смежные классы
 - **target_service:** —
