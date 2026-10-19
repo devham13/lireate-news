@@ -49,6 +49,15 @@ Inline: файл `cover/inline-specs.json` (см. `memory/cover/collage-v1/inlin
 
 Пути и имена не меняются — `scripts/lireate_hosting_publish.py` / `lireate_hosting_images.py`.
 
+## Layout QA (`layout_check.py`)
+
+После Chromium-скриншота Playwright проверяет:
+
+- запрещённые пересечения слотов (headline × sticky и т.д.);
+- **safe-area:** каждый `[data-layout-slot]` внутри `[data-layout-paper]` с отступом **20px**;
+- **cover:** зазор **≥16px** между `slot-arrow` и `slot-headline`;
+- минимальные размеры шрифтов и плотность квадрантов.
+
 ## Fallback
 
 `scripts/lireate_cover_kie.py` остаётся **только** если в meta `"cover_fallback": "kie"` и нет `cover_style: collage-v1`. Для L01–L05 и уже опубликованных папок collage-скрипты **не запускаются**.

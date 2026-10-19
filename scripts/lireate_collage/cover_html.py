@@ -1,4 +1,5 @@
 from .base_css import _esc, shared_styles
+from .inline_tokens import COVER_STICKY_H, COVER_STICKY_TEXT_PX, COVER_STICKY_W
 
 
 def _headline_html(lines, highlight):
@@ -40,7 +41,7 @@ def build_cover_html(spec, width, height):
     ui_rows = spec.get("ui_card_rows") or []
 
     labels_html = ""
-    rots = (-4, 2, -3)
+    rots = (-6, 4, -5)
     for i, chip in enumerate(label_chips[:3]):
         if isinstance(chip, (list, tuple)):
             text, variant = chip[0], chip[1]
@@ -78,20 +79,24 @@ html, body {{ margin:0; width:{w}px; height:{h}px; overflow:hidden; }}
   width:{sw}px; height:{sh}px; position:relative; box-sizing:border-box;
   display:grid; grid-template-columns: 54% 46%; padding:20px 22px 16px 26px;
 }}
-.col-left {{ display:flex; align-items:center; position:relative; padding-right:8px; }}
-.col-right {{ position:relative; }}
+.col-left {{ display:flex; align-items:center; position:relative; padding-right:12px; }}
+.col-right {{ position:relative; min-height:100%; }}
 .hl {{
   font-size:{hl_px}px; font-weight:800; line-height:1.05; letter-spacing:-0.03em;
 }}
 .hl-accent {{ color:#ff1f6b; }}
 .hl-line {{ margin-bottom:0.05em; }}
 .cover-arrow {{
-  position:absolute; right:-4px; top:38%; width:90px; height:auto; pointer-events:none;
+  position:absolute; right:8px; top:58%; width:78px; height:auto; pointer-events:none;
 }}
 .cover-sticky {{
-  position:absolute; top:44px; left:6px; width:230px; min-height:150px;
-  padding:18px 16px; box-sizing:border-box; font-size:22px; line-height:1.15;
+  position:absolute; top:36px; left:0; width:{cover_sticky_w}px; height:{cover_sticky_h}px;
+  padding:10px 12px; box-sizing:border-box; font-size:{cover_sticky_text}px; line-height:1.12;
   transform:rotate(4deg); z-index:4; box-shadow:2px 6px 14px rgba(0,0,0,.18);
+  display:flex; align-items:center; justify-content:center; text-align:center;
+}}
+.cover-sticky .sticky-text {{
+  display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden;
 }}
 .sticky-ul {{ background:linear-gradient(transparent 58%, rgba(239,68,68,.55) 58%); }}
 .sticky-tape-beige {{
@@ -103,8 +108,9 @@ html, body {{ margin:0; width:{w}px; height:{h}px; overflow:hidden; }}
   font-weight:800; font-size:20px; white-space:nowrap; z-index:6; background:#fff;
 }}
 .slot-chips {{
-  position:absolute; top:200px; right:0; width:100%;
-  display:flex; flex-direction:column; align-items:flex-end; gap:8px; z-index:3;
+  position:absolute; top:124px; right:4px; width:96%;
+  display:flex; flex-direction:column; align-items:flex-end; gap:10px; z-index:7;
+  pointer-events:none;
 }}
 .chip-tilt {{ font-size:18px; padding:8px 16px; transform:rotate(var(--rot)); }}
 .slot-ui {{
@@ -140,9 +146,9 @@ html, body {{ margin:0; width:{w}px; height:{h}px; overflow:hidden; }}
     <div class="tape-corner tape-tl"></div><div class="tape-corner tape-tr"></div>
     <div class="col-left">
       <div class="hl" data-layout-slot="slot-headline">{headline}</div>
-      {arrow}
     </div>
-    <div class="col-right" data-layout-slot="slot-body">
+    <div class="col-right">
+      {arrow}
       <div class="slot-badge" data-layout-slot="slot-badge">{badge}</div>
       {sticky}
       <div class="slot-chips" data-layout-slot="slot-chips">{labels}</div>
@@ -161,6 +167,9 @@ html, body {{ margin:0; width:{w}px; height:{h}px; overflow:hidden; }}
         sw=sw,
         sh=sh,
         hl_px=hl_px,
+        cover_sticky_w=COVER_STICKY_W,
+        cover_sticky_h=COVER_STICKY_H,
+        cover_sticky_text=COVER_STICKY_TEXT_PX,
         headline=_headline_html(lines, highlight),
         arrow=arrow_svg,
         badge=_esc(badge),

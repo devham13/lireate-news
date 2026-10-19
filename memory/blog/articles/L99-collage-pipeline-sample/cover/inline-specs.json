@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "style": "collage-v1",
+  "illustrations": [
+    {
+      "slot": "inline_1",
+      "template": "bad_good",
+      "headline": "Ответ на претензию по товарному знаку: срок и доказательства",
+      "chips": [
+        {"icon": "tag", "text": "претензия"},
+        {"icon": "calendar", "text": "30 дней"},
+        {"icon": "clock", "text": "срок"}
+      ],
+      "sticky": {"text": "молчание дороже", "underline": "дороже", "color": "pink"},
+      "bad": {
+        "header": "BAD — игнор",
+        "lines": ["Нет ответа в срок", "Нет позиции по знаку", "Риск иска и блокировки"]
+      },
+      "good": {
+        "header": "GOOD — ответ",
+        "lines": ["Ответ в срок", "Доказательства и доводы", "Снижение претензий"]
+      },
+      "side_checklist": ["срок соблюдён", "позиция ясна", "риск снижен"],
+      "conclusion": {
+        "box_lines": ["ответ", "в срок"],
+        "highlight_word": "в срок",
+        "chip": "меньше риска иска"
+      },
+      "alt": "Сравнение ответа на претензию по товарному знаку"
+    },
+    {
+      "slot": "inline_2",
+      "template": "process",
+      "headline": "Подача патентной заявки: от поиска до пошлин",
+      "chips": [{"icon": "layers", "text": "этапы"}, {"icon": "warning", "text": "новизна"}],
+      "sticky": {"text": "приоритет решает", "underline": "приоритет", "color": "pink"},
+      "steps": [
+        {"title": "Поиск", "subtitle": "ФИПС, публикации", "chip": "база", "variant": "icon"},
+        {"title": "Заявка", "subtitle": "описание и формула", "chip": "суть", "variant": "toggles"},
+        {"title": "Пошлины", "subtitle": "сроки оплаты", "variant": "fee"}
+      ],
+      "conclusion": {
+        "box_lines": ["срок", "новизны"],
+        "highlight_word": "новизны",
+        "marker_underline": true,
+        "chip": "без потери приоритета"
+      },
+      "alt": "Этапы подачи патентной заявки"
+    },
+    {
+      "slot": "inline_3",
+      "template": "checklist",
+      "headline": "Публикация контента: проверка авторских прав",
+      "chips": [{"icon": "globe", "text": "сайт"}, {"icon": "calendar", "text": "релиз"}],
+      "sticky": {"text": "без договора — риск", "underline": "риск", "color": "pink"},
+      "checklist_title": "Чеклист прав на материалы",
+      "checklist_rows": [
+        {"text": "договор с автором?", "icon": "person"},
+        {"text": "лицензия на веб?", "icon": "doc"},
+        {"text": "указан правообладатель?", "icon": "tag"},
+        {"text": "срок действия?", "icon": "clock"},
+        {"text": "архив исходников?", "icon": "shield"}
+      ],
+      "conclusion": {
+        "box_lines": ["не", "СКРИН"],
+        "highlight_word": "СКРИН",
+        "marker_underline": true,
+        "chip": "нужен договор и лицензия"
+      },
+      "alt": "Чеклист авторских прав перед публикацией"
+    }
+  ]
+}
