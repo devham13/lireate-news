@@ -1,0 +1,130 @@
+{
+  "agent": "excalibur-blog-cover-quad-split",
+  "status": "PASS",
+  "manifest": "cover/quad-manifest.json",
+  "split": {
+    "source_canvas": "memory/blog/articles/L05-sposoby-zashchity-izobreteniya/cover/canvas-quad.png",
+    "source_size_px": [
+      2048,
+      1152
+    ],
+    "panel_size_px": [
+      1022,
+      573
+    ],
+    "split_meta": {
+      "split_mode": "gutter_detect",
+      "h_gutter_px": {
+        "start": 573,
+        "end": 576
+      },
+      "v_gutter_px": {
+        "start": 1022,
+        "end": 1025
+      }
+    },
+    "output_size_px": [
+      1200,
+      675
+    ],
+    "outputs": {
+      "cover": {
+        "file": "cover/cover.png",
+        "quadrant": "top_left",
+        "box_px": {
+          "left": 0,
+          "top": 0,
+          "right": 1022,
+          "bottom": 573
+        },
+        "raw_box_px": {
+          "left": 0,
+          "top": 0,
+          "right": 1022,
+          "bottom": 573
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Коллаж: способы защиты изобретения — патент, ноу-хау или публикация",
+        "h2_anchor": null
+      },
+      "inline_1": {
+        "file": "cover/inline-01.png",
+        "quadrant": "top_right",
+        "box_px": {
+          "left": 1025,
+          "top": 0,
+          "right": 2048,
+          "bottom": 573
+        },
+        "raw_box_px": {
+          "left": 1025,
+          "top": 0,
+          "right": 2048,
+          "bottom": 573
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Чеклист выбора режима охраны изобретения: патент, ноу-хау, публикация или комбинация",
+        "h2_anchor": "Выберите режим охраны: патент, ноу-хау, публикация или комбинация"
+      },
+      "inline_2": {
+        "file": "cover/inline-02.png",
+        "quadrant": "bottom_left",
+        "box_px": {
+          "left": 0,
+          "top": 576,
+          "right": 1022,
+          "bottom": 1152
+        },
+        "raw_box_px": {
+          "left": 0,
+          "top": 576,
+          "right": 1022,
+          "bottom": 1152
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Сравнительная таблица патент, ноу-хау и публикация: срок, стоимость, риски",
+        "h2_anchor": "Сравните патент, ноу-хау и публикацию: срок, стоимость, доказуемость, риски"
+      },
+      "inline_3": {
+        "file": "cover/inline-03.png",
+        "quadrant": "bottom_right",
+        "box_px": {
+          "left": 1025,
+          "top": 576,
+          "right": 2048,
+          "bottom": 1152
+        },
+        "raw_box_px": {
+          "left": 1025,
+          "top": 576,
+          "right": 2048,
+          "bottom": 1152
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Схема шагов подачи патентной заявки: новизна, приоритет и пошлины Роспатента",
+        "h2_anchor": "Подайте патентную заявку вовремя: новизна, приоритет и пошлины Роспатента"
+      }
+    }
+  },
+  "html_inject": [
+    "injected inline_1 after H2 — Выберите режим охраны: патент, ноу-хау, публикация или комбинация",
+    "injected inline_2 after H2 — Сравните патент, ноу-хау и публикацию: срок, стоимость, доказуемость, риски",
+    "injected inline_3 after H2 — Подайте патентную заявку вовремя: новизна, приоритет и пошлины Роспатента"
+  ]
+}

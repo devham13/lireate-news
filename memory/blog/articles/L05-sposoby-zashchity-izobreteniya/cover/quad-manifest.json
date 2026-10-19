@@ -1,0 +1,42 @@
+{
+  "topic_id": "L05",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_mcp",
+  "style_preset": "digital_meme_collage_ru",
+  "style_file": "memory/cover/quad-style-digital-meme-collage-ru.json",
+  "blog_hero": "memory/cover/blog-hero.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "Три карточки охраны — а новизна уже утекла?",
+  "mcp_note": "ONE gpt-image-2 call with input_urls=[reference_url_hosted], then split; list cover = KIE only",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_meme_hero",
+      "alt": "Коллаж: способы защиты изобретения — патент, ноу-хау или публикация",
+      "scene_hint": "кабинет патентного поверенного, героиня в пиджаке указывает на три карточки «патент 20 лет», «ноу-хау», «публикация»; fake скрин ФИПС; стикер «12 мес»; torn paper, скотч",
+      "meme_caption_ru": "новизна не вернётся"
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "Выберите режим охраны: патент, ноу-хау, публикация или комбинация",
+      "visual_type": "checklist_board",
+      "scene_hint": "Доска с тремя колонками «Патент / Ноу-хау / Публикация» и чекбоксами критериев: разбор на составляющие, скрытые режимы, инвестор, ROI; розовые стикеры; кириллица; без лица героя",
+      "alt": "Чеклист выбора режима охраны изобретения: патент, ноу-хау, публикация или комбинация"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "Сравните патент, ноу-хау и публикацию: срок, стоимость, доказуемость, риски",
+      "visual_type": "comparison_table_ui",
+      "scene_hint": "Таблица «Критерий / Патент / Ноу-хау / Публикация»: срок 20 лет, пошлины от 28 000 руб., раскрытие, независимое создание; UI как Google Sheets со скотчем; без лица героя",
+      "alt": "Сравнительная таблица патент, ноу-хау и публикация: срок, стоимость, риски"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "Подайте патентную заявку вовремя: новизна, приоритет и пошлины Роспатента",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "Workflow 5 шагов: реестры ФИПС → заявка до питча → бюджет 28 000+ → экспертиза → публикация заявки; стрелки на рваной ленте; акцент «12 месяцев льгота»; без лица героя",
+      "alt": "Схема шагов подачи патентной заявки: новизна, приоритет и пошлины Роспатента"
+    }
+  }
+}
