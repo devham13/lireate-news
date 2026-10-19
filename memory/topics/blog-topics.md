@@ -480,6 +480,67 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ---
 
+## L17 — Защита дизайна товара: промышленный образец или товарный знак
+
+- **status:** written
+- **priority:** P1
+- **site:** lireate
+- **lireate_category_id:** 20
+- **lireate_category_name:** Патент
+- **slug:** zashchita-dizajna-tovara-promobrazec-ili-tovarnyy-znak
+- **h1:** Защита дизайна товара: промышленный образец или товарный знак
+- **primary_query:** защита дизайна товара
+- **secondary_queries:** промышленный образец или товарный знак, патент на дизайн упаковки, регистрация внешнего вида изделия, товарный знак на форму бутылки
+- **search_intent:** comparison
+- **article_mode:** B
+- **angle:** Сравнение ПО (ст. 1352) и ТЗ, маршрут выбора, сроки и пошлины
+- **target_service:** патентование
+- **metrika_visits:** 1 (seo-report, 28 дней)
+
+---
+
+## L19 — Чужой логотип или название в видео (SEO refresh)
+
+- **status:** written
+- **priority:** P1
+- **site:** lireate
+- **lireate_category_id:** 10
+- **lireate_category_name:** Логотип
+- **slug:** chuzhoy-logotip-ili-nazvanie-v-video
+- **h1:** Чужой логотип или название в видео: можно ли использовать законно
+- **primary_query:** можно ли использовать логотипы компаний в видео
+- **secondary_queries:** законность демонстрации эмблем авто в роликах, чужой логотип в youtube, товарный знак в рекламном ролике
+- **search_intent:** how_to
+- **article_mode:** B
+- **angle:** Прямой ответ в первом экране; refresh live URL /chuzhoy_logotip_ili_nazvanie_v_video
+- **target_service:** защита ТЗ
+- **metrika_visits:** 18 (28 дней, короткие визиты)
+- **hosting_update:** true
+- **lireate_seo_url:** chuzhoy_logotip_ili_nazvanie_v_video
+
+---
+
+## L20 — Собственный перевод зарубежного произведения (SEO refresh)
+
+- **status:** written
+- **priority:** P1
+- **site:** lireate
+- **lireate_category_id:** 17
+- **lireate_category_name:** Авторское право
+- **slug:** mogu-li-vykladyivat-sobstvennyiy-perevod-zarubezhnogo-proizvedeniya
+- **h1:** Могу ли я выкладывать собственный перевод зарубежного произведения?
+- **primary_query:** могу ли я выкладывать собственный перевод зарубежного произведения
+- **secondary_queries:** можно ли делать любительский перевод, куда можно выложить перевод книги, легально опубликовать перевод
+- **search_intent:** workflow
+- **article_mode:** B
+- **angle:** Прямой ответ + пошаговая легальная публикация; refresh live URL
+- **target_service:** —
+- **metrika_visits:** 19 (28 дней)
+- **hosting_update:** true
+- **lireate_seo_url:** mogu_li_ya_vyikladyivat_sobstvennyiy_perevod_zarubezhnogo_proizvedeniya
+
+---
+
 ## L18 — Покупка у правообладателя и конкурент без регистрации: недобросовестная конкуренция?
 
 - **status:** written

@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "#lireate-organization",
+      "name": "Лирейт"
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "#article-l17",
+      "headline": "Защита дизайна товара: промышленный образец или товарный знак",
+      "description": "Сравнение защиты дизайна товара: промышленный образец и товарный знак.",
+      "datePublished": "2026-10-19",
+      "dateModified": "2026-10-19",
+      "inLanguage": "ru",
+      "url": "/zashchita-dizajna-tovara-promobrazec-ili-tovarnyy-znak",
+      "author": { "@id": "#lireate-organization" },
+      "publisher": { "@id": "#lireate-organization" }
+    }
+  ]
+}
