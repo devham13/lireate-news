@@ -57,7 +57,11 @@ def main():
             return 2
         html = build_inline_html(item, w, h)
         raw = cover_dir / ("collage-inline-raw-{0}.png".format(slot))
-        render_html_to_png(html, w, h, raw, device_scale_factor=1)
+        try:
+            render_html_to_png(html, w, h, raw, device_scale_factor=1, layout_check=True)
+        except RuntimeError as e:
+            print("INLINE_BLOCKER:", e)
+            return 2
         resize_png(raw, cover_dir / fname, INLINE_OUT)
         (cover_dir / ("inline-{0}-template.html".format(slot))).write_text(html, encoding="utf-8")
 

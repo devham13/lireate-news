@@ -85,7 +85,11 @@ def main():
     cover_dir = args.out_dir or (article_dir / "cover")
     cover_dir.mkdir(parents=True, exist_ok=True)
     raw = cover_dir / "collage-render-raw.png"
-    render_html_to_png(html, w, h, raw, device_scale_factor=1)
+    try:
+        render_html_to_png(html, w, h, raw, device_scale_factor=1, layout_check=True)
+    except RuntimeError as e:
+        print("COVER_BLOCKER:", e)
+        return 2
     resize_png(raw, cover_dir / "cover.png", COVER_OUT)
     resize_png(raw, cover_dir / "cover-small.png", COVER_SMALL)
     resize_png(cover_dir / "cover.png", cover_dir / "cover-preview-396x300.png", COVER_PREVIEW)
