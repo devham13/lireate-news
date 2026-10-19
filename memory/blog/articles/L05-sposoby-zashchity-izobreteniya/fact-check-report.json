@@ -1,0 +1,178 @@
+{
+  "article": "memory/blog/articles/L05-sposoby-zashchity-izobreteniya/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "warning",
+  "total_extracted_facts": 24,
+  "verified_facts_count": 5,
+  "unverified_facts_count": 19,
+  "facts": [
+    {
+      "fact": "28 000 руб",
+      "kind": "price_or_currency",
+      "context": "бует раскрыть суть в заявке и платить пошлины (от 28 000 руб. за базовую заявку с одним независимым пунктом).",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "78 000 руб",
+      "kind": "price_or_currency",
+      "context": "вас Поддержание после 5-го года: 23 000, 52 000 и 78 000 руб. за пятилетия 6-10, 11-15 и 16-20 годов ( Положен",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "рименимость ( ст. 1350 ГК РФ ). Материал на 19.10.2026 не заменяет консультацию патентного поверенного; ц",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "20 лет",
+      "kind": "metric_or_duration",
+      "context": "TL;DR / Быстрый инсайт: Патент дает монополию до 20 лет, но требует раскрыть суть в заявке и платить пошл",
+      "verified": true,
+      "reason": "Numerical value '20' matched in fact-bank context"
+    },
+    {
+      "fact": "12 месяцев",
+      "kind": "metric_or_duration",
+      "context": "льгота по новизне - подать в Роспатент в течение 12 месяцев после своего раскрытия (п. 3 ст. 1350 ГК РФ). Час",
+      "verified": true,
+      "reason": "Numerical value '12' matched in fact-bank context"
+    },
+    {
+      "fact": "10 лет",
+      "kind": "metric_or_duration",
+      "context": "актив в реестре; жизненный цикл технологии короче 10 лет → пересчитайте ROI патента против режима секретно",
+      "verified": true,
+      "reason": "Numerical value '10' matched in fact-bank context"
+    },
+    {
+      "fact": "18 месяцев",
+      "kind": "metric_or_duration",
+      "context": "ытие Сущность в заявке; публикация заявки ~ через 18 месяцев ( ст. 1385 ) Суть не публикуется; утечка = потеря",
+      "verified": true,
+      "reason": "Numerical value '18' matched in fact-bank context"
+    },
+    {
+      "fact": "6 месяцев",
+      "kind": "metric_or_duration",
+      "context": "тательского уровня в Регламенте отдельно - льгота 6 месяцев , не путайте с новизной ( Регламент ИЗ ; разъясне",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "3 лет",
+      "kind": "metric_or_duration",
+      "context": "датайство о экспертизе по существу в сроки ГК (до 3 лет с подачи). Отслеживайте публикацию заявки: досроч",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "7 дней",
+      "kind": "metric_or_duration",
+      "context": "ст недели для стартапа и производства Workflow на 7 дней: описание решения (день 1-2) → поиск в реестрах (",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "28 000",
+      "kind": "large_number",
+      "context": "бует раскрыть суть в заявке и платить пошлины (от 28 000 руб. за базовую заявку с одним независимым пунктом",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1350",
+      "kind": "large_number",
+      "context": "чение 12 месяцев после своего раскрытия (п. 3 ст. 1350 ГК РФ). Часто выигрывает комбинация: широкий патен",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1358",
+      "kind": "large_number",
+      "context": "прещает третьим лицам использовать решение по ст. 1358 , даже при самостоятельной разработке. Ноу-хау (",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1465",
+      "kind": "large_number",
+      "context": "аже при самостоятельной разработке. Ноу-хау ( ст. 1465 ) держится на сокрытии и разумных мерах. Осознанн",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1363",
+      "kind": "large_number",
+      "context": "лет с даты подачи заявки при уплате пошлин ( ст. 1363 ) Пока сведения неизвестны и меры соблюдаются; ср",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "4 000",
+      "kind": "large_number",
+      "context": "овизны Минимальные госпошлины (база) 28 000 руб.: 4 000 + 1 000 (формальная) + 14 000 (существо) + 10 000",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1 000",
+      "kind": "large_number",
+      "context": "инимальные госпошлины (база) 28 000 руб.: 4 000 + 1 000 (формальная) + 14 000 (существо) + 10 000 (регист",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "14 000",
+      "kind": "large_number",
+      "context": "(база) 28 000 руб.: 4 000 + 1 000 (формальная) + 14 000 (существо) + 10 000 (регистрация и 1-5 годы) при",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 000",
+      "kind": "large_number",
+      "context": "4 000 + 1 000 (формальная) + 14 000 (существо) + 10 000 (регистрация и 1-5 годы) при одном независимом пу",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1385",
+      "kind": "large_number",
+      "context": "аявке; публикация заявки ~ через 18 месяцев ( ст. 1385 ) Суть не публикуется; утечка = потеря охраны Нам",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "23 000",
+      "kind": "large_number",
+      "context": "сли успел раньше вас Поддержание после 5-го года: 23 000, 52 000 и 78 000 руб. за пятилетия 6-10, 11-15 и",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "52 000",
+      "kind": "large_number",
+      "context": "л раньше вас Поддержание после 5-го года: 23 000, 52 000 и 78 000 руб. за пятилетия 6-10, 11-15 и 16-20 год",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "78 000",
+      "kind": "large_number",
+      "context": "вас Поддержание после 5-го года: 23 000, 52 000 и 78 000 руб. за пятилетия 6-10, 11-15 и 16-20 годов ( Поло",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 98",
+      "kind": "large_number",
+      "context": "ым навсегда\" - суды требуют доказанных мер по ст. 10 98-ФЗ . Подайте патентную заявку вовремя: новизна, п",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

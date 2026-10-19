@@ -1,0 +1,109 @@
+{
+  "source": "memory/blog/articles/L05-sposoby-zashchity-izobreteniya/article.html",
+  "total_links": 11,
+  "failed_count": 0,
+  "privacy_policy_violations": [],
+  "verdict": "pass",
+  "links": [
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/4b30fa7ca4e5733597a1bc9b2b12351cc5c430e6/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_487430/8fc527f897d9582cf7202cbdeb16625354d7fd01/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/2ffc1c12af8092a1d40b1948dc25316dc7562b6b/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/f8743d677137889f4c521c9e3e17a5d837ed54bf/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/9e7ee220e4fac9a5158bb4406a5cb4e224e5122e/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/5165407c76b4c777c440202b6de4a21821c2095f/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_48699/0ca1b144b64eaa68cd80ca51ad37ac4047c47775/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_316428/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://searchplatform.rospatent.gov.ru/patents",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/patent",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/patent"
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_48699/1baefc3a58183ff7712fb7baf06689440ed24c98/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    }
+  ]
+}
