@@ -8,26 +8,25 @@
 
 ---
 
-## Lireate NEWS (`site: lireate` / `lireate.ru`) — collage-v1 (новые L06+, не L01–L05)
+## Lireate NEWS (`site: lireate` / `lireate.ru`) — collage-v1 (L07+, не L01–L06)
 
-**Переопределяет** quad/MCP/KIE для **новых** папок. Канон: `memory/blog/cover-collage-v1.md`, контракт шаблона: `shared/lireate-collage-v1-template-contract.md`.
+**Переопределяет** quad/MCP/KIE для **новых** папок. Канон: `memory/blog/cover-collage-v1.md`, контракт: `shared/lireate-collage-v1-template-contract.md`.
 
 ```text
-Writer/visual: cover/inline-specs.json (1–3 макета bad_good | process | checklist)
-  → scripts/lireate_collage_pipeline.py --article-dir memory/blog/articles/Lxx-…
-  → cover.png 860×400 + inline-01..03 + inject figures
+Writer: cover/inline-specs.json (2–4 макета bad_good | process | checklist)
+  → python3 scripts/lireate_collage_pipeline.py --article-dir memory/blog/articles/Lxx-…
+  → cover.png 860×400 + inline-01..03 + inject lx-article-cover + inline-collage
   → meta cover_style: collage-v1
+  → python3 scripts/lireate_collage_publish_gate.py --article-dir …  # must PASS before PR merge
 ```
 
-1. Задать `cover_headline`, `cover_highlight` (опционально), `cover/inline-specs.json`.
-2. `python3 scripts/lireate_collage_pipeline.py --article-dir ...`
-3. QA: `cover/cover-collage-qa.md`, превью 396×300, кириллица без опечаток.
+1. `cover_headline`, `cover_highlight` (опц.), `cover/inline-specs.json` (`style: collage-v1`).
+2. **Только** `lireate_collage_pipeline.py` — **не** `lireate_cover_kie.py`, **не** quad/MCP split.
+3. QA: `cover/cover-collage-qa.md` (PASS markers), layout_check внутри рендера, fact scrub цифр.
 
-**Не трогать** L01–L05 и каталоги с `kie-raw.png` без `cover_style: collage-v1`.
+**Не трогать** L01–L05. **L06** — legacy KIE на live; не конвертировать в этом PR без явного `--update` на хостинге.
 
-**Fallback KIE** (`memory/blog/cover-action-selfie.md`) только если в meta `"cover_fallback": "kie"` и нет collage-v1.
-
-Старые inline quad/split — **запрещены** для новых Lireate статей.
+**KIE / quad / PIL — запрещены** для L07+ (`lireate_cover_kie.py` → COVER_BLOCKER).
 
 ---
 
@@ -89,7 +88,7 @@ inject <figure> after H2 in article.html
 ### Текст на обложке Excalibur (не Lireate)
 
 - Для **Excalibur WP** — quad + при необходимости PIL (`lireate_cover_text_overlay.py` legacy).
-- Для **Lireate** — текст на обложке **рисует kie** (см. блок выше).
+- Для **Lireate L07+** — текст на обложке **рендерит collage-v1** (Chromium), не KIE.
 
 ---
 

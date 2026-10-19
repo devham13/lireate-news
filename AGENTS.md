@@ -7,7 +7,7 @@
 > 4. **Никогда не переписывать существующую статью** (L01 и любые папки в `memory/blog/articles/`). `LIREATE_TOPIC_ID`/`EXCALIBUR_TOPIC_ID`, указывающий на существующую папку, игнорируется.
 > 5. После написания статьи поставить в её карточке `status: written` (в том же PR). `published` ставит **CRON на хостинге** после успешного INSERT (не Cloud Agent).
 > 6. Публикация на хостинге: `lireate_hosting_publish.py` без `--article-dir` берёт только самую новую неопубликованную папку L*; если нет — `NO_NEW_ARTICLE`, exit 0, без `--update`.
-> 7. **Auto-merge PR:** после PASS проверок (lint, SEO, GEO QA, **Lireate cover через kie.ai** + era rotation + `cover-kie-qa`) — **готовый** PR в `main`, merge при зелёном CI. `COVER_BLOCKER` / нет `KIE_API_KEY` → **не мержить**. PIL/quad fallback для Lireate **запрещён**.
+> 7. **Auto-merge PR:** после PASS проверок (lint, SEO, GEO QA, **Lireate collage-v1** через `scripts/lireate_collage_pipeline.py` + `cover-collage-qa.md` + `lireate_collage_publish_gate.py`) — **готовый** PR в `main`, merge при зелёном CI. `COVER_BLOCKER` → **не мержить**. KIE/quad/PIL fallback для L07+ **запрещён** (L06 legacy grandfathered).
 > 8. После merge в `main` live-публикацию выполняет **CRON REG.RU** (`lireate_hosting_cron.sh`), не Cloud Agent.
 
 

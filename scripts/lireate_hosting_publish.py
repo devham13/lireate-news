@@ -188,9 +188,19 @@ def main():
         _print_status("BLOCKER", result["error"])
         return 2
 
+    html = html_path.read_text(encoding="utf-8")
     meta = json.loads(meta_path.read_text(encoding="utf-8"))
     slug = meta.get("slug") or article_dir.name.split("-", 1)[-1]
     topic_id = meta.get("topic_id")
+    from lireate_collage_publish_gate import validate_collage_publish
+
+    collage_errors = validate_collage_publish(article_dir, html=html, meta=meta)
+    if collage_errors:
+        result["collage_gate"] = collage_errors
+        result["error"] = "collage-v1 gate: " + "; ".join(collage_errors)
+        result_path.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        _print_status("BLOCKER", result["error"])
+        return 2
     from lireate_topic_queue import merge_lireate_category_from_topic_card
 
     meta = merge_lireate_category_from_topic_card(REPO_ROOT, meta)
@@ -204,7 +214,6 @@ def main():
         return 2
     category_id = int(meta["lireate_category_id"])
 
-    html = html_path.read_text(encoding="utf-8")
     bundle, _image_map, _transformed = build_publish_bundle(article_dir, meta, html)
     row_preview = build_news_row(meta, html)
     seo_url = row_preview["seo_url"]

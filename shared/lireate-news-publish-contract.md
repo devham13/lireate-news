@@ -25,9 +25,13 @@
 |------|------------|
 | `article.html` | Тело (фрагмент без обёртки темы) |
 | `article.meta.json` | `slug`, SEO, `lireate_category_id`, `canonical_path` |
-| `cover/cover.png` | Featured / OG |
-| `cover/inline-*.png` | Иллюстрации в тексте |
+| `cover/cover.png` | Featured / OG (collage-v1: 860×400) |
+| `cover/inline-*.png` | Иллюстрации в тексте (collage-v1: 1200×675) |
+| `cover_style` | `"collage-v1"` обязателен для **L07+** |
+| `cover/cover-collage-qa.md` | PASS после `lireate_collage_pipeline.py` |
 | `schema.jsonld` | BlogPosting + FAQPage (в мета темы или вручную) |
+
+**Gate L07+:** `python3 scripts/lireate_collage_publish_gate.py --article-dir …` и тот же check внутри `lireate_hosting_publish.py` (BLOCKER без collage). Очередь cron: `next_unpublished_article` пропускает `sample: true` и L90+.
 
 ## Поля CMS (наблюдаемое поведение сайта)
 

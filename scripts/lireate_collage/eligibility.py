@@ -30,7 +30,14 @@ def collage_allowed(article_dir):
     if (article_dir / "cover" / "kie-raw.png").is_file():
         return False, "existing KIE cover (set cover_style=collage-v1 only for new dirs)"
     if meta.get("cover_fallback") == "kie" and not meta.get("cover_style"):
-        return False, "kie-only meta without collage-v1"
+        return False, "kie-only meta without collage-v1 (cover_fallback removed for L07+)"
+    if tid.startswith("L"):
+        import re
+
+        m = re.match(r"^L(\d+)$", tid)
+        if m and int(m.group(1)) >= 7 and meta.get("cover_style") != "collage-v1":
+            if (article_dir / "cover" / "kie-raw.png").is_file():
+                return False, "L07+ must use collage-v1, not KIE"
     # New article dir: allow if topic is L* and not frozen
     if tid.startswith("L") and tid not in FROZEN_TOPIC_IDS:
         return True, ""
