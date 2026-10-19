@@ -1,0 +1,18 @@
+{
+  "topic_id": "L99",
+  "slug": "collage-pipeline-sample",
+  "h1": "Образец пайплайна collage-v1",
+  "title": "Образец пайплайна collage-v1",
+  "description": "Тестовая статья для проверки рендера обложки и inline collage-v1.",
+  "cover_style": "collage-v1",
+  "lireate_category_name": "Товарный знак",
+  "cover_headline": "Проверка товарного знака до подачи в Роспатент",
+  "cover_highlight": "Роспатент",
+  "keywords": [
+    "товарный знак",
+    "ФИПС",
+    "сходство"
+  ],
+  "cover_renderer": "html_chromium",
+  "cover_family": "lireate_collage_v1"
+}

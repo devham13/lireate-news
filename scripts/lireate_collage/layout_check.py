@@ -12,6 +12,8 @@ MIN_FONT_COVER_UI = 17
 MAX_ICON_LOGICAL = 64
 MIN_QUADRANT_INK = 0.12
 MIN_CONTENT_COVERAGE = 0.85
+SAFE_AREA_PADDING = 20
+ARROW_TEXT_CLEARANCE = 16
 
 
 def _rect_intersects(a, b, margin=MIN_GAP):
@@ -175,9 +177,58 @@ def check_layout_slots(page):
     return check_overlaps(collect_slot_boxes(page))
 
 
+def check_safe_area(page, padding=SAFE_AREA_PADDING):
+    return page.evaluate(
+        """(pad) => {
+      const paper = document.querySelector('[data-layout-paper]');
+      if (!paper) return [];
+      const pr = paper.getBoundingClientRect();
+      const errors = [];
+      document.querySelectorAll('[data-layout-slot]').forEach((el) => {
+        const slot = el.getAttribute('data-layout-slot') || '?';
+        const b = el.getBoundingClientRect();
+        if (b.width < 2 || b.height < 2) return;
+        if (b.left < pr.left + pad - 0.5) errors.push('safe-area-left:' + slot);
+        if (b.top < pr.top + pad - 0.5) errors.push('safe-area-top:' + slot);
+        if (b.right > pr.right - pad + 0.5) errors.push('safe-area-right:' + slot);
+        if (b.bottom > pr.bottom - pad + 0.5) errors.push('safe-area-bottom:' + slot);
+      });
+      return errors;
+    }""",
+        padding,
+    )
+
+
+def check_arrow_text_clearance(page, min_gap=ARROW_TEXT_CLEARANCE):
+    return page.evaluate(
+        """(minGap) => {
+      const arrow = document.querySelector('[data-layout-slot="slot-arrow"]');
+      const headline = document.querySelector('[data-layout-slot="slot-headline"]');
+      if (!arrow || !headline) return [];
+      const a = arrow.getBoundingClientRect();
+      const h = headline.getBoundingClientRect();
+      const overlapX = Math.max(0, Math.min(a.right, h.right) - Math.max(a.left, h.left));
+      const overlapY = Math.max(0, Math.min(a.bottom, h.bottom) - Math.max(a.top, h.top));
+      if (overlapX <= 0 || overlapY <= 0) return [];
+      const gaps = [
+        h.left - a.right,
+        a.left - h.right,
+        h.top - a.bottom,
+        a.top - h.bottom,
+      ];
+      const best = Math.max(...gaps);
+      if (best < minGap) return ['arrow-headline-clearance:' + best.toFixed(1) + 'px'];
+      return [];
+    }""",
+        min_gap,
+    )
+
+
 def assert_layout_ok(page, png_path=None, dpr=2, check_density=True):
     errors = list(check_layout_slots(page))
     errors.extend(check_fonts_and_icons(page))
+    errors.extend(check_safe_area(page))
+    errors.extend(check_arrow_text_clearance(page))
 
     cov = check_content_coverage(page)
     if cov.get("error"):
