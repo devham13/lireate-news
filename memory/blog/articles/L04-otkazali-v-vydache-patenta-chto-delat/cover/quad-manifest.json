@@ -1,0 +1,42 @@
+{
+  "topic_id": "L04",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_mcp",
+  "style_preset": "digital_meme_collage_ru",
+  "style_file": "memory/cover/quad-style-digital-meme-collage-ru.json",
+  "blog_hero": "memory/cover/blog-hero.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "Отказ в патенте — паника или план на 7 месяцев?",
+  "mcp_note": "ONE gpt-image-2 call with input_urls=[reference_url_hosted], then split; list cover = KIE only",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_meme_hero",
+      "alt": "Обложка-коллаж: отказ в выдаче патента Роспатента",
+      "scene_hint": "кабинет патентного поверенного, героиня в пиджаке указывает на пустой UI решения об отказе; стикеры «6 мес» «7 мес»; torn paper, скотч",
+      "meme_caption_ru": "отказ — не конец?"
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "Определите документ Роспатента: уведомление, запрос или решение об отказе",
+      "visual_type": "comparison_table_ui",
+      "scene_hint": "Таблица «Документ / Что означает / Срок ответа»: уведомление о патентоспособности, запрос экспертизы, решение об отказе; кириллица; UI как Google Sheets со скотчем; красная ячейка «пропуск срока»; без лица героя",
+      "alt": "Таблица типов документов Роспатента после экспертизы: уведомление, запрос, отказ"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "Ответьте на запрос экспертизы и доработайте формулу до отказа",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "Workflow 5 шагов: запрос ФИПС → доработка формулы → ответ в срок → уведомление → решение; стрелки на рваной ленте; акцент на «формула изобретения»; без лица героя",
+      "alt": "Схема шагов ответа на запрос экспертизы и доработки формулы до отказа"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "Подготовьте возражение в Палату по патентным спорам: документы и пошлина",
+      "visual_type": "checklist_board",
+      "scene_hint": "Чеклист на клипборде: возражение, доверенность, копии решения, оплата 3000 руб/пункт, срок 7 месяцев; галочки, ручка, стикер «ППС»; без лица героя",
+      "alt": "Чеклист документов и пошлины для возражения в Палату по патентным спорам"
+    }
+  }
+}

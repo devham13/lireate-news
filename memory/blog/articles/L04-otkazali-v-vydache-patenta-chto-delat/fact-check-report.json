@@ -1,0 +1,150 @@
+{
+  "article": "memory/blog/articles/L04-otkazali-v-vydache-patenta-chto-delat/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "warning",
+  "total_extracted_facts": 20,
+  "verified_facts_count": 3,
+  "unverified_facts_count": 17,
+  "facts": [
+    {
+      "fact": "3 000 руб",
+      "kind": "price_or_currency",
+      "context": "мя запросить копии противопоставлений). Пошлина - 3 000 руб. за независимый пункт формулы (п. 1.27.1 Роспатен",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2 000 руб",
+      "kind": "price_or_currency",
+      "context": "ния в Роспатенте Отзыв заявки Отдельно Возражение 2 000 руб. (п. 1.27.2) или ст. 1389 Не путать с отказом по",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "9 000 руб",
+      "kind": "price_or_currency",
+      "context": "1.27.1 ; канон - таблица на rospatent.gov.ru), не 9 000 руб. как у товарного знака. Укажите номер заявки и да",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "о ст. 1387 ГК РФ и регламенту экспертизы на 19.10.2026. Для полезной модели и промобразца логика та же,",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "7 месяцев",
+      "kind": "metric_or_duration",
+      "context": "а работу. От типа письма зависят сроки - 6, 3 или 7 месяцев. Вы разберёте конверт из ФИПС и выберете ветку: о",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "6 месяцев",
+      "kind": "metric_or_duration",
+      "context": "ведомление о проверке патентоспособности: ответ - 6 месяцев, продлить нельзя. После решения об отказе - возра",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "3 лет",
+      "kind": "metric_or_duration",
+      "context": "пертиза по существу идёт по ходатайству в течение 3 лет с подачи ( п. 1 ст. 1386 ). Календарь зависит от",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 месяцев",
+      "kind": "metric_or_duration",
+      "context": "ертизы 3 месяца Дополнить материалы; продление до 10 месяцев с пошлиной Отзыв заявки ( п. 3 ст. 1384 ) Уведомл",
+      "verified": true,
+      "reason": "Numerical value '10' matched in fact-bank context"
+    },
+    {
+      "fact": "30 дней",
+      "kind": "metric_or_duration",
+      "context": "омер и дату направления, поставьте напоминание за 30 дней до дедлайна. Не делайте: ждать последней недели п",
+      "verified": true,
+      "reason": "Numerical value '30' matched in fact-bank context"
+    },
+    {
+      "fact": "2 месяцев",
+      "kind": "metric_or_duration",
+      "context": "сяцев ( абз. 3 п. 1 ст. 1387 ), рассмотрение - до 2 месяцев ( п. 28 Регламента ). Workflow до отказа: уведомл",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "3 000",
+      "kind": "large_number",
+      "context": "мя запросить копии противопоставлений). Пошлина - 3 000 руб. за независимый пункт формулы (п. 1.27.1 Роспа",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1248",
+      "kind": "large_number",
+      "context": "оспатента). Сначала административный порядок (ст. 1248 ГК РФ), затем при необходимости СИП. Запрос \"если",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1387",
+      "kind": "large_number",
+      "context": "охраной технических решений. Ниже workflow по ст. 1387 ГК РФ и регламенту экспертизы на 19.10.2026. Для п",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1350",
+      "kind": "large_number",
+      "context": "тельском уровне и промышленной применимости ( ст. 1350 ГК РФ ). Экспертиза по существу идёт по ходатайств",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1386",
+      "kind": "large_number",
+      "context": "о ходатайству в течение 3 лет с подачи ( п. 1 ст. 1386 ). Календарь зависит от последнего письма ФИПС. Д",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1384",
+      "kind": "large_number",
+      "context": "до 10 месяцев с пошлиной Отзыв заявки ( п. 3 ст. 1384 ) Уведомление о патентоспособности 6 месяцев Отве",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2 000",
+      "kind": "large_number",
+      "context": "ния в Роспатенте Отзыв заявки Отдельно Возражение 2 000 руб. (п. 1.27.2) или ст. 1389 Не путать с отказом",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1389",
+      "kind": "large_number",
+      "context": "тдельно Возражение 2 000 руб. (п. 1.27.2) или ст. 1389 Не путать с отказом по сути Делайте: сохраните PDF",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "9 000",
+      "kind": "large_number",
+      "context": "1.27.1 ; канон - таблица на rospatent.gov.ru), не 9 000 руб. как у товарного знака. Укажите номер заявки и",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "198",
+      "kind": "large_number",
+      "context": "ПС: СИП ~3 месяца с осознания нарушения (ч. 4 ст. 198 АПК), только после п. 2 ст. 1248 . Не публикуйте д",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

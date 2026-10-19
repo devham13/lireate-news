@@ -1,0 +1,130 @@
+{
+  "agent": "excalibur-blog-cover-quad-split",
+  "status": "PASS",
+  "manifest": "cover/quad-manifest.json",
+  "split": {
+    "source_canvas": "memory/blog/articles/L04-otkazali-v-vydache-patenta-chto-delat/cover/canvas-quad.png",
+    "source_size_px": [
+      1280,
+      720
+    ],
+    "panel_size_px": [
+      638,
+      358
+    ],
+    "split_meta": {
+      "split_mode": "gutter_detect",
+      "h_gutter_px": {
+        "start": 358,
+        "end": 362
+      },
+      "v_gutter_px": {
+        "start": 638,
+        "end": 641
+      }
+    },
+    "output_size_px": [
+      1200,
+      675
+    ],
+    "outputs": {
+      "cover": {
+        "file": "cover/cover.png",
+        "quadrant": "top_left",
+        "box_px": {
+          "left": 0,
+          "top": 0,
+          "right": 638,
+          "bottom": 358
+        },
+        "raw_box_px": {
+          "left": 0,
+          "top": 0,
+          "right": 638,
+          "bottom": 358
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Обложка-коллаж: отказ в выдаче патента Роспатента",
+        "h2_anchor": null
+      },
+      "inline_1": {
+        "file": "cover/inline-01.png",
+        "quadrant": "top_right",
+        "box_px": {
+          "left": 641,
+          "top": 0,
+          "right": 1280,
+          "bottom": 358
+        },
+        "raw_box_px": {
+          "left": 641,
+          "top": 0,
+          "right": 1280,
+          "bottom": 358
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Таблица типов документов Роспатента после экспертизы: уведомление, запрос, отказ",
+        "h2_anchor": "Определите документ Роспатента: уведомление, запрос или решение об отказе"
+      },
+      "inline_2": {
+        "file": "cover/inline-02.png",
+        "quadrant": "bottom_left",
+        "box_px": {
+          "left": 0,
+          "top": 362,
+          "right": 638,
+          "bottom": 720
+        },
+        "raw_box_px": {
+          "left": 0,
+          "top": 362,
+          "right": 638,
+          "bottom": 720
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Схема шагов ответа на запрос экспертизы и доработки формулы до отказа",
+        "h2_anchor": "Ответьте на запрос экспертизы и доработайте формулу до отказа"
+      },
+      "inline_3": {
+        "file": "cover/inline-03.png",
+        "quadrant": "bottom_right",
+        "box_px": {
+          "left": 641,
+          "top": 362,
+          "right": 1280,
+          "bottom": 720
+        },
+        "raw_box_px": {
+          "left": 641,
+          "top": 362,
+          "right": 1280,
+          "bottom": 720
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Чеклист документов и пошлины для возражения в Палату по патентным спорам",
+        "h2_anchor": "Подготовьте возражение в Палату по патентным спорам: документы и пошлина"
+      }
+    }
+  },
+  "html_inject": [
+    "injected inline_1 after H2 — Определите документ Роспатента: уведомление, запрос или решение об отказе",
+    "injected inline_2 after H2 — Ответьте на запрос экспертизы и доработайте формулу до отказа",
+    "injected inline_3 after H2 — Подготовьте возражение в Палату по патентным спорам: документы и пошлина"
+  ]
+}
