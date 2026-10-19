@@ -1,0 +1,50 @@
+{
+  "topic_id": "L06",
+  "slug": "kak-opredelit-klass-mktu",
+  "cover_family": "brand_collage",
+  "style_preset": "digital_meme_collage_ru",
+  "pipeline": "quad_canvas_1x_mcp",
+  "file": "cover/cover.png",
+  "alt": "Коллаж: подбор класса МКТУ — вареники, часы и ковры без путаницы",
+  "aspect_ratio": "16:9",
+  "canvas_source": "cover/canvas-quad.png",
+  "generated_at": "2026-10-19T15:13:28+00:00",
+  "assets": [
+    {
+      "role": "cover",
+      "slot": "cover",
+      "file": "cover/cover.png",
+      "alt": "Коллаж: подбор класса МКТУ — вареники, часы и ковры без путаницы",
+      "h2_anchor": null,
+      "visual_type": "cover_meme_hero",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_1",
+      "file": "cover/inline-01.png",
+      "alt": "Схема структуры одного класса МКТУ: перечень, пояснения и корреспонденция",
+      "h2_anchor": "Разберите структуру МКТУ: из чего состоит один класс",
+      "visual_type": "workflow_diagram",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_2",
+      "file": "cover/inline-02.png",
+      "alt": "Таблица входных данных для подбора класса МКТУ: товар, услуга или оба вида деятельности",
+      "h2_anchor": "Соберите входные данные: товар, услуга или оба вида деятельности",
+      "visual_type": "comparison_table_ui",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_3",
+      "file": "cover/inline-03.png",
+      "alt": "Чеклист поиска формулировки в перечне МКТУ-13–2026 на сайте ФИПС",
+      "h2_anchor": "Откройте МКТУ-13–2026 и найдите формулировку в перечне",
+      "visual_type": "checklist_board",
+      "aspect_ratio": "16:9"
+    }
+  ]
+}
