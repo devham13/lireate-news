@@ -86,7 +86,7 @@ def main():
     cover_dir.mkdir(parents=True, exist_ok=True)
     raw = cover_dir / "collage-render-raw.png"
     try:
-        render_html_to_png(html, w, h, raw, device_scale_factor=1, layout_check=True)
+        render_html_to_png(html, w, h, raw, layout_check=True, fit=False)
     except RuntimeError as e:
         print("COVER_BLOCKER:", e)
         return 2
