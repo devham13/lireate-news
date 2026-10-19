@@ -58,6 +58,17 @@ Inline: файл `cover/inline-specs.json` (см. `memory/cover/collage-v1/inlin
 - **cover:** зазор **≥16px** между `slot-arrow` и `slot-headline`;
 - минимальные размеры шрифтов и плотность квадрантов.
 
+## Pipeline smoke test (не в `memory/blog/articles/`)
+
+Тестовый прогон `lireate_collage_pipeline.py` — только каталог  
+`memory/cover/collage-v1/sample-article/` (`"sample": true`, `topic_id` L99).  
+**Не** класть sample в `memory/blog/articles/` — hosting cron публикует highest unpublished Lxx.
+
+```bash
+python3 scripts/lireate_collage_pipeline.py \
+  --article-dir memory/cover/collage-v1/sample-article --force
+```
+
 ## Fallback
 
 `scripts/lireate_cover_kie.py` остаётся **только** если в meta `"cover_fallback": "kie"` и нет `cover_style: collage-v1`. Для L01–L05 и уже опубликованных папок collage-скрипты **не запускаются**.

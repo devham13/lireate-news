@@ -11,6 +11,8 @@ import re
 from pathlib import Path
 
 ALWAYS_PUBLISHED = {"L01"}
+# Auto-publish cron only considers L01–L89 (defense in depth vs test/sample dirs).
+MAX_AUTO_PUBLISH_L_NUM = 89
 CARD_RE = re.compile(r"^##\s+(L\d+)\s+—[^\n]*\n(.*?)(?=^---|^##\s|\Z)", re.DOTALL | re.MULTILINE)
 STATUS_RE = re.compile(r"\*\*status:\*\*\s*([a-z_]+)", re.I)
 CAT_ID_RE = re.compile(r"\*\*lireate_category_id:\*\*\s*(\d+)", re.I)
@@ -96,6 +98,30 @@ def next_new_topic(root):
     return None
 
 
+def _load_article_meta(article_dir):
+    try:
+        return json.loads((article_dir / "article.meta.json").read_text(encoding="utf-8"))
+    except (OSError, ValueError, TypeError):
+        return {}
+
+
+def is_auto_publish_article(topic_id, article_dir):
+    """False for sample meta, invalid Lxx, or L90+ (not real queue articles)."""
+    tid = (topic_id or "").strip().upper()
+    n = _num(tid)
+    if n < 1 or n > MAX_AUTO_PUBLISH_L_NUM:
+        return False
+    meta = _load_article_meta(article_dir)
+    if meta.get("sample") is True:
+        return False
+    meta_tid = (meta.get("topic_id") or "").strip().upper()
+    if meta_tid:
+        mn = _num(meta_tid)
+        if meta_tid != tid or mn < 1 or mn > MAX_AUTO_PUBLISH_L_NUM:
+            return False
+    return True
+
+
 def published_ids(state_file, dirs):
     done = set(ALWAYS_PUBLISHED)
     try:
@@ -126,8 +152,12 @@ def next_unpublished_article(root, state_file):
     dirs = article_dirs(root)
     done = published_ids(state_file, dirs)
     ready = [
-        (tid, d) for tid, d in dirs.items()
-        if tid not in done and (d / "article.html").is_file() and (d / "article.meta.json").is_file()
+        (tid, d)
+        for tid, d in dirs.items()
+        if tid not in done
+        and (d / "article.html").is_file()
+        and (d / "article.meta.json").is_file()
+        and is_auto_publish_article(tid, d)
     ]
     if not ready:
         return None
