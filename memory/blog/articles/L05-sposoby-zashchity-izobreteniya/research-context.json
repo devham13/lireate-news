@@ -1,0 +1,92 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-10-19",
+    "today_ru": "19.10.2026",
+    "year": 2026,
+    "month": 10,
+    "month_name_ru": "октябрь",
+    "weekday_ru": "понедельник",
+    "freshness_window": {
+      "prefer_sources_after": "2026-07-21",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-10-19 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L05",
+    "priority": "P1",
+    "slug": "sposoby-zashchity-izobreteniya",
+    "h1": "Сравнение способов защиты изобретения: патент, ноу-хау или публикация",
+    "primary_query": "способы защиты изобретения",
+    "secondary_queries": [
+      "защита технологии производства",
+      "защита изобретения",
+      "способы защиты изобретений",
+      "способы защиты изобретение",
+      "как организовать защиту семейных изобретений"
+    ],
+    "search_intent": "comparison",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "L05",
+    "status": "PASS",
+    "search_intent": "comparison",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "способы защиты изобретения 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "способы защиты изобретения октябрь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "способы защиты изобретения новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "защита технологии производства 2026",
+      "purpose": "вторичный запрос: защита технологии производства"
+    },
+    {
+      "id": "secondary_2",
+      "query": "защита изобретения 2026",
+      "purpose": "вторичный запрос: защита изобретения"
+    },
+    {
+      "id": "secondary_3",
+      "query": "способы защиты изобретений 2026",
+      "purpose": "вторичный запрос: способы защиты изобретений"
+    },
+    {
+      "id": "secondary_4",
+      "query": "способы защиты изобретение 2026",
+      "purpose": "вторичный запрос: способы защиты изобретение"
+    },
+    {
+      "id": "secondary_5",
+      "query": "как организовать защиту семейных изобретений 2026",
+      "purpose": "вторичный запрос: как организовать защиту семейных изобретений"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Сравнение способов защиты изобретения: патент, ноу-хау или публикация 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/L05-sposoby-zashchity-izobreteniya",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}

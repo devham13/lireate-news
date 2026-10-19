@@ -1,0 +1,524 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-10-19",
+    "today_ru": "19.10.2026",
+    "year": 2026,
+    "month": 10,
+    "month_name_ru": "октябрь",
+    "weekday_ru": "понедельник",
+    "freshness_window": {
+      "prefer_sources_after": "2026-07-21",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-10-19 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L05",
+    "priority": "P1",
+    "slug": "sposoby-zashchity-izobreteniya",
+    "h1": "Сравнение способов защиты изобретения: патент, ноу-хау или публикация",
+    "primary_query": "способы защиты изобретения",
+    "secondary_queries": [
+      "защита технологии производства",
+      "защита изобретения",
+      "способы защиты изобретений",
+      "способы защиты изобретение",
+      "как организовать защиту семейных изобретений"
+    ],
+    "search_intent": "comparison",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "способы защиты изобретения 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Защита прав автора изобретения и патентообладателя в РФ: анализ 2026 ...",
+          "url": "https://pravsob.ru/kursovaya/pravovoe-regulirovanie-i-mehanizmy-zaschity-prav-avtora-izobreteniya-i-patentoobladatelya-v-rf-kompleksnyy-akademicheskiy-analiz-s-uchetom-aktualnyh-izmeneniy-i-perspektiv/",
+          "snippet": ""
+        },
+        {
+          "title": "Защита Интеллектуальной Собственности в РФ: Патенты, Пошлины ...",
+          "url": "https://psystars.ru/referat/aktualnye-mehanizmy-zaschity-intellektualnoy-sobstvennosti-v-rossiyskoy-federatsii-patentovanie-poshliny-i-podderzhanie-patentov-v-2026-godu/",
+          "snippet": "Комплексный академический анализ правового регулирования и механизмов защиты прав автора изобретения и патентообладателя в РФ с учетом актуальных изменений 2026 года."
+        },
+        {
+          "title": "Защита интеллектуальной собственности: способы и формы защиты прав в ...",
+          "url": "https://patent-family.ru/journal/zashchita/zashchita-intellektualnoj-sobstvennosti/",
+          "snippet": "Актуальный обзор механизмов защиты интеллектуальной собственности в РФ на 2026 год: патентование изобретений, полезных моделей, промышленных образцов, пошлины, льготы и изменения."
+        },
+        {
+          "title": "Патент в РФ: Защита изобретений, актуальные изменения 2024-2026 ...",
+          "url": "https://urveda.ru/referat/patent-kak-pravovaya-forma-zaschity-izobreteniya-v-rossiyskoy-federatsii-aktualnyy-analiz-zakonodatelstva-i-praktiki/",
+          "snippet": "Способы и формы защиты интеллектуальной собственности в России: гражданско-правовая, административная и уголовная защита, статьи ГК РФ, КоАП и УК. Обзор механизмов и выбор стратегии."
+        },
+        {
+          "title": "Новое в IP-спорах в 2026 году - veta.education",
+          "url": "https://veta.education/media/trendy-v-intellektualnyh-sporah/",
+          "snippet": "Мы последовательно раскроем его понятие и правовую природу, детально изучим критерии патентоспособности, проследим поэтапный порядок получения, рассмотрим права и обязанности патентообладателя, а также механизмы прекращения, аннулирования и защиты патентных прав."
+        },
+        {
+          "title": "Патентование в 2026-2027 году: как защитить изобретение, полезную ...",
+          "url": "https://www.klerk.ru/blogs/roskom24/697978/",
+          "snippet": "О главных изменениях 2025 года, которые задают правила на 2026, рассказал на одном из наших вебинаров Виктор Калужский — руководитель группы интеллектуальной собственности в CLS и патентный поверенный. А мы выбрали из его выступления самое интересное и важное для этой статьи."
+        }
+      ],
+      "searched_at": "2026-10-19"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "способы защиты изобретения октябрь 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Защита Интеллектуальной Собственности в РФ: Патенты, Пошлины ...",
+          "url": "https://psystars.ru/referat/aktualnye-mehanizmy-zaschity-intellektualnoy-sobstvennosti-v-rossiyskoy-federatsii-patentovanie-poshliny-i-podderzhanie-patentov-v-2026-godu/",
+          "snippet": ""
+        },
+        {
+          "title": "Защита интеллектуальной собственности: способы и формы защиты прав в ...",
+          "url": "https://patent-family.ru/journal/zashchita/zashchita-intellektualnoj-sobstvennosti/",
+          "snippet": "Актуальный обзор механизмов защиты интеллектуальной собственности в РФ на 2026 год: патентование изобретений, полезных моделей, промышленных образцов, пошлины, льготы и изменения."
+        },
+        {
+          "title": "Патент в РФ: Защита изобретений, актуальные изменения 2024-2026 ...",
+          "url": "https://urveda.ru/referat/patent-kak-pravovaya-forma-zaschity-izobreteniya-v-rossiyskoy-federatsii-aktualnyy-analiz-zakonodatelstva-i-praktiki/",
+          "snippet": "Способы и формы защиты интеллектуальной собственности в России: гражданско-правовая, административная и уголовная защита, статьи ГК РФ, КоАП и УК. Обзор механизмов и выбор стратегии."
+        },
+        {
+          "title": "Защита прав автора изобретения и патентообладателя в РФ: анализ 2026 ...",
+          "url": "https://pravsob.ru/kursovaya/pravovoe-regulirovanie-i-mehanizmy-zaschity-prav-avtora-izobreteniya-i-patentoobladatelya-v-rf-kompleksnyy-akademicheskiy-analiz-s-uchetom-aktualnyh-izmeneniy-i-perspektiv/",
+          "snippet": "Настоящий реферат ставит целью всестороннее исследование патента как формы защиты изобретения в российском законодательстве."
+        },
+        {
+          "title": "Правовая защита интеллектуальной собственности | Инмар",
+          "url": "https://inmarlegal.ru/press/publications/copyrightlaw/zashchita-intellektualnoj-sobstvennosti/",
+          "snippet": "Комплексный академический анализ правового регулирования и механизмов защиты прав автора изобретения и патентообладателя в РФ с учетом актуальных изменений 2026 года."
+        },
+        {
+          "title": "Новое в IP-спорах в 2026 году - veta.education",
+          "url": "https://veta.education/media/trendy-v-intellektualnyh-sporah/",
+          "snippet": "Судебная практика по защите прав интеллектуальной собственности строится на положениях статей 1229 и 1252 ГК РФ, закрепляющих содержание исключительного права и перечень способов его защиты."
+        }
+      ],
+      "searched_at": "2026-10-19"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "способы защиты изобретения новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Защита Интеллектуальной Собственности в РФ: Патенты, Пошлины ...",
+          "url": "https://psystars.ru/referat/aktualnye-mehanizmy-zaschity-intellektualnoy-sobstvennosti-v-rossiyskoy-federatsii-patentovanie-poshliny-i-podderzhanie-patentov-v-2026-godu/",
+          "snippet": ""
+        },
+        {
+          "title": "Защита прав автора изобретения и патентообладателя в РФ: анализ 2026 ...",
+          "url": "https://pravsob.ru/kursovaya/pravovoe-regulirovanie-i-mehanizmy-zaschity-prav-avtora-izobreteniya-i-patentoobladatelya-v-rf-kompleksnyy-akademicheskiy-analiz-s-uchetom-aktualnyh-izmeneniy-i-perspektiv/",
+          "snippet": "Актуальный обзор механизмов защиты интеллектуальной собственности в РФ на 2026 год: патентование изобретений, полезных моделей, промышленных образцов, пошлины, льготы и изменения."
+        },
+        {
+          "title": "Защита интеллектуальной собственности: способы и формы защиты прав в ...",
+          "url": "https://patent-family.ru/journal/zashchita/zashchita-intellektualnoj-sobstvennosti/",
+          "snippet": "Комплексный академический анализ правового регулирования и механизмов защиты прав автора изобретения и патентообладателя в РФ с учетом актуальных изменений 2026 года."
+        },
+        {
+          "title": "В России придумали новый способ защиты от атак ВСУ",
+          "url": "https://www.gazeta.ru/business/news/2026/10/18/29550439.shtml",
+          "snippet": "Способы и формы защиты интеллектуальной собственности в России: гражданско-правовая, административная и уголовная защита, статьи ГК РФ, КоАП и УК. Обзор механизмов и выбор стратегии."
+        },
+        {
+          "title": "Патент в РФ: Защита изобретений, актуальные изменения 2024-2026 ...",
+          "url": "https://urveda.ru/referat/patent-kak-pravovaya-forma-zaschity-izobreteniya-v-rossiyskoy-federatsii-aktualnyy-analiz-zakonodatelstva-i-praktiki/",
+          "snippet": "Шохин: бизнес готов профинансировать новые системы ПВО для защиты промобъектов"
+        },
+        {
+          "title": "Новое в IP-спорах в 2026 году - veta.education",
+          "url": "https://veta.education/media/trendy-v-intellektualnyh-sporah/",
+          "snippet": "Настоящий реферат ставит целью всестороннее исследование патента как формы защиты изобретения в российском законодательстве."
+        }
+      ],
+      "searched_at": "2026-10-19"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "защита технологии производства 2026",
+      "purpose": "вторичный запрос: защита технологии производства",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Современные технологии безопасности предприятий и защита производства в ...",
+          "url": "https://b2b-bezopasnost-predpriyatiy.blogspot.com/p/2026_01223788639.html",
+          "snippet": ""
+        },
+        {
+          "title": "Автоматизация защиты в промышленности 2026: главные тренды",
+          "url": "https://ru-bezh.ru/analitika/avtomatizatsiya-zashchity-v-promyshlennosti-2026-glavnye-trendy",
+          "snippet": "Портал о современных технологиях безопасности предприятий и защите производства. Искусственный интеллект, промышленная безопасность, видеонаблюдение, IIoT, автоматизация, охрана труда и ..."
+        },
+        {
+          "title": "Новости Производства: Тенденции, Технологии И Прогнозы 2026 - T-ген",
+          "url": "https://t-generator.ru/novosti-proizvodstva-tendentsii-tehnologii-i-prognozy-2026/",
+          "snippet": "В 2026 году программное обеспечение для промышленной автоматизации, лишенное гибких программных интерфейсов (API), окажется в тупике технологического прогресса."
+        },
+        {
+          "title": "Безопасность на производстве: пошаговое руководство по снижению рисков ...",
+          "url": "https://profhoning.ru/bezopasnost-na-proizvodstve-posagovoe-rukovodstvo-po-snizeniu-riskov-v-2026-godu",
+          "snippet": "В этой статье я собрал ключевые тренды и технологии, которые будут определять производство и поставки в 2026 году, и дал практические советы, где и как внедрять новшества в реальном промсекторе."
+        },
+        {
+          "title": "Безопасность промышленных объектов и ТЭК 2026",
+          "url": "https://ru-bezh.ru/tek-2026/",
+          "snippet": "Практическое руководство по обеспечению безопасности на производстве в 2026 году: от анализа рисков и выбора эргономичных СИЗ до внедрения IoT-технологий и формирования культуры охраны труда."
+        },
+        {
+          "title": "Технологии и безопасность 2026 | Обзоры событий ProКачество",
+          "url": "https://kachestvo.pro/events/tekhnologii-i-bezopasnost-2026/",
+          "snippet": "Один из ключевых фокусов спецпроекта — изменения в нормативной правовой базе. 1 мая 2026 года вступил в силу ГОСТ Р 72551-2026, который установил единые требования к услугам по категорированию объектов и разработке ..."
+        }
+      ],
+      "searched_at": "2026-10-19"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "защита изобретения 2026",
+      "purpose": "вторичный запрос: защита изобретения",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Защита прав автора изобретения и патентообладателя в РФ: анализ 2026 ...",
+          "url": "https://pravsob.ru/kursovaya/pravovoe-regulirovanie-i-mehanizmy-zaschity-prav-avtora-izobreteniya-i-patentoobladatelya-v-rf-kompleksnyy-akademicheskiy-analiz-s-uchetom-aktualnyh-izmeneniy-i-perspektiv/",
+          "snippet": ""
+        },
+        {
+          "title": "Патент в РФ: Защита изобретений, актуальные изменения 2024-2026 ...",
+          "url": "https://urveda.ru/referat/patent-kak-pravovaya-forma-zaschity-izobreteniya-v-rossiyskoy-federatsii-aktualnyy-analiz-zakonodatelstva-i-praktiki/",
+          "snippet": "Комплексный академический анализ правового регулирования и механизмов защиты прав автора изобретения и патентообладателя в РФ с учетом актуальных изменений 2026 года."
+        },
+        {
+          "title": "Защита Интеллектуальной Собственности в РФ: Патенты, Пошлины ...",
+          "url": "https://psystars.ru/referat/aktualnye-mehanizmy-zaschity-intellektualnoy-sobstvennosti-v-rossiyskoy-federatsii-patentovanie-poshliny-i-podderzhanie-patentov-v-2026-godu/",
+          "snippet": "Настоящий реферат ставит целью всестороннее исследование патента как формы защиты изобретения в российском законодательстве."
+        },
+        {
+          "title": "Защита брендов в России 2026: ключевые изменения",
+          "url": "https://innproverka.ru/info/zashhita-brendov-i-avtorskix-prav-v-2026-godu-v-rossii-klyucevye-aspekty",
+          "snippet": "Актуальный обзор механизмов защиты интеллектуальной собственности в РФ на 2026 год: патентование изобретений, полезных моделей, промышленных образцов, пошлины, льготы и изменения."
+        },
+        {
+          "title": "Защита изобретений в РФ: проблемы, перспективы, судебная практика 2023 ...",
+          "url": "https://urveda.ru/diplomnaya/patentoobladateli/",
+          "snippet": "Узнайте о защите брендов и авторских прав в России в 2026: новые компенсации до 10 млн руб., регистрация знаков, проверка контрагентов по ИНН бесплатно на innproverka.ru."
+        },
+        {
+          "title": "Новые размеры компенсаций за нарушение интеллектуальной собственности с ...",
+          "url": "https://shewzov.ru/articles/new-ip-compensation-amounts-2026/",
+          "snippet": "Полный анализ правовой защиты изобретений и патентов в РФ: от основ до новых законов 2025-2026, льготного срока и судебной практики. Изучите дилемму патента и ноу-хау."
+        }
+      ],
+      "searched_at": "2026-10-19"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "способы защиты изобретений 2026",
+      "purpose": "вторичный запрос: способы защиты изобретений",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Защита Интеллектуальной Собственности в РФ: Патенты, Пошлины ...",
+          "url": "https://psystars.ru/referat/aktualnye-mehanizmy-zaschity-intellektualnoy-sobstvennosti-v-rossiyskoy-federatsii-patentovanie-poshliny-i-podderzhanie-patentov-v-2026-godu/",
+          "snippet": ""
+        },
+        {
+          "title": "Защита прав автора изобретения и патентообладателя в РФ: анализ 2026 ...",
+          "url": "https://pravsob.ru/kursovaya/pravovoe-regulirovanie-i-mehanizmy-zaschity-prav-avtora-izobreteniya-i-patentoobladatelya-v-rf-kompleksnyy-akademicheskiy-analiz-s-uchetom-aktualnyh-izmeneniy-i-perspektiv/",
+          "snippet": "Актуальный обзор механизмов защиты интеллектуальной собственности в РФ на 2026 год: патентование изобретений, полезных моделей, промышленных образцов, пошлины, льготы и изменения."
+        },
+        {
+          "title": "Патент в РФ: Защита изобретений, актуальные изменения 2024-2026 ...",
+          "url": "https://urveda.ru/referat/patent-kak-pravovaya-forma-zaschity-izobreteniya-v-rossiyskoy-federatsii-aktualnyy-analiz-zakonodatelstva-i-praktiki/",
+          "snippet": "Комплексный академический анализ правового регулирования и механизмов защиты прав автора изобретения и патентообладателя в РФ с учетом актуальных изменений 2026 года."
+        },
+        {
+          "title": "Защита интеллектуальной собственности: способы и формы защиты прав в ...",
+          "url": "https://patent-family.ru/journal/zashchita/zashchita-intellektualnoj-sobstvennosti/",
+          "snippet": "Настоящий реферат ставит целью всестороннее исследование патента как формы защиты изобретения в российском законодательстве."
+        },
+        {
+          "title": "Защита изобретений в РФ: проблемы, перспективы, судебная практика 2023 ...",
+          "url": "https://urveda.ru/diplomnaya/patentoobladateli/",
+          "snippet": "Способы и формы защиты интеллектуальной собственности в России: гражданско-правовая, административная и уголовная защита, статьи ГК РФ, КоАП и УК. Обзор механизмов и выбор стратегии."
+        },
+        {
+          "title": "Интеллектуальная собственность в РФ: право, проблемы, перспективы ...",
+          "url": "https://psystars.ru/referat/intellektualnaya-sobstvennost-v-rossiyskoy-federatsii-kompleksnyy-analiz-pravovogo-regulirovaniya-problem-i-perspektiv/",
+          "snippet": "Полный анализ правовой защиты изобретений и патентов в РФ: от основ до новых законов 2025-2026, льготного срока и судебной практики. Изучите дилемму патента и ноу-хау."
+        }
+      ],
+      "searched_at": "2026-10-19"
+    },
+    {
+      "query_id": "secondary_4",
+      "query": "способы защиты изобретение 2026",
+      "purpose": "вторичный запрос: способы защиты изобретение",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Защита прав автора изобретения и патентообладателя в РФ: анализ 2026 ...",
+          "url": "https://pravsob.ru/kursovaya/pravovoe-regulirovanie-i-mehanizmy-zaschity-prav-avtora-izobreteniya-i-patentoobladatelya-v-rf-kompleksnyy-akademicheskiy-analiz-s-uchetom-aktualnyh-izmeneniy-i-perspektiv/",
+          "snippet": ""
+        },
+        {
+          "title": "Защита Интеллектуальной Собственности в РФ: Патенты, Пошлины ...",
+          "url": "https://psystars.ru/referat/aktualnye-mehanizmy-zaschity-intellektualnoy-sobstvennosti-v-rossiyskoy-federatsii-patentovanie-poshliny-i-podderzhanie-patentov-v-2026-godu/",
+          "snippet": "Комплексный академический анализ правового регулирования и механизмов защиты прав автора изобретения и патентообладателя в РФ с учетом актуальных изменений 2026 года."
+        },
+        {
+          "title": "Патент в РФ: Защита изобретений, актуальные изменения 2024-2026 ...",
+          "url": "https://urveda.ru/referat/patent-kak-pravovaya-forma-zaschity-izobreteniya-v-rossiyskoy-federatsii-aktualnyy-analiz-zakonodatelstva-i-praktiki/",
+          "snippet": "Актуальный обзор механизмов защиты интеллектуальной собственности в РФ на 2026 год: патентование изобретений, полезных моделей, промышленных образцов, пошлины, льготы и изменения."
+        },
+        {
+          "title": "Защита интеллектуальной собственности: способы и формы защиты прав в ...",
+          "url": "https://patent-family.ru/journal/zashchita/zashchita-intellektualnoj-sobstvennosti/",
+          "snippet": "Настоящий реферат ставит целью всестороннее исследование патента как формы защиты изобретения в российском законодательстве."
+        },
+        {
+          "title": "Новое в IP-спорах в 2026 году - veta.education",
+          "url": "https://veta.education/media/trendy-v-intellektualnyh-sporah/",
+          "snippet": "Способы и формы защиты интеллектуальной собственности в России: гражданско-правовая, административная и уголовная защита, статьи ГК РФ, КоАП и УК. Обзор механизмов и выбор стратегии."
+        },
+        {
+          "title": "Патентование в 2026-2027 году: как защитить изобретение, полезную ...",
+          "url": "https://www.klerk.ru/blogs/roskom24/697978/",
+          "snippet": "О главных изменениях 2025 года, которые задают правила на 2026, рассказал на одном из наших вебинаров Виктор Калужский — руководитель группы интеллектуальной собственности в CLS и патентный поверенный. А мы выбрали из его выступления самое интересное и важное для этой статьи."
+        }
+      ],
+      "searched_at": "2026-10-19"
+    },
+    {
+      "query_id": "secondary_5",
+      "query": "как организовать защиту семейных изобретений 2026",
+      "purpose": "вторичный запрос: как организовать защиту семейных изобретений",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Патент в РФ: Защита изобретений, актуальные изменения 2024-2026 ...",
+          "url": "https://urveda.ru/referat/patent-kak-pravovaya-forma-zaschity-izobreteniya-v-rossiyskoy-federatsii-aktualnyy-analiz-zakonodatelstva-i-praktiki/",
+          "snippet": ""
+        },
+        {
+          "title": "Защита Интеллектуальной Собственности в РФ: Патенты, Пошлины ...",
+          "url": "https://psystars.ru/referat/aktualnye-mehanizmy-zaschity-intellektualnoy-sobstvennosti-v-rossiyskoy-federatsii-patentovanie-poshliny-i-podderzhanie-patentov-v-2026-godu/",
+          "snippet": "Настоящий реферат ставит целью всестороннее исследование патента как формы защиты изобретения в российском законодательстве."
+        },
+        {
+          "title": "Новые правила патентования в 2026: что изменится для изобретателей и ...",
+          "url": "https://stroydokument.ru/novye-pravila-patentovaniya-v-2026-chto-izmenitsya-dlya-izobretatelej-i-biznesa/",
+          "snippet": "Актуальный обзор механизмов защиты интеллектуальной собственности в РФ на 2026 год: патентование изобретений, полезных моделей, промышленных образцов, пошлины, льготы и изменения."
+        },
+        {
+          "title": "Защита интеллектуальной собственности: способы и формы защиты прав в ...",
+          "url": "https://patent-family.ru/journal/zashchita/zashchita-intellektualnoj-sobstvennosti/",
+          "snippet": "В 2026 году система патентования претерпела ряд важных изменений, которые затрагивают как индивидуальных изобретателей, так и компании. Речь идёт о пересмотре лимитов, упрощениях в подаче заявок и обновлённых требованиях к документам."
+        },
+        {
+          "title": "Защита интеллектуальной собственности 2026: товарные знаки, патенты",
+          "url": "https://shmeleva-partners.ru/autsorsing/zashhita-intellektualnoj-sobstvennosti-v-2026-godu-tovarnye-znaki-patenty-i-parallelnyj-import",
+          "snippet": "Способы и формы защиты интеллектуальной собственности в России: гражданско-правовая, административная и уголовная защита, статьи ГК РФ, КоАП и УК. Обзор механизмов и выбор стратегии."
+        },
+        {
+          "title": "На ПМЭФ представили новые механизмы защиты интеллектуальной ...",
+          "url": "https://asi.ru/news/207298/",
+          "snippet": "Интеллектуальная собственность 2026: как защитить товарные знаки и патенты, что с параллельным импортом. Пошаговые советы, риски и обновления закона."
+        }
+      ],
+      "searched_at": "2026-10-19"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Сравнение способов защиты изобретения: патент, ноу-хау или публикация 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Патент vs ноу-хау — что выбрать для защиты технологии",
+          "url": "https://vitvet.com/articles/intellekt/nou_hau/patent_ili_sekret_proizvodstva/",
+          "snippet": ""
+        },
+        {
+          "title": "Защита инноваций: патент или ноу-хау?",
+          "url": "https://onlinepatent.ru/faq/patent/zashchita-innovatsii-patent-ili-nou-khau/",
+          "snippet": "Сравнение двух режимов защиты: плюсы и минусы патента и ноу-хау, примеры (Coca-Cola), выбор в зависимости от типа решения."
+        },
+        {
+          "title": "Патент или Ноу-Хау, что выбрать? | Гардиум",
+          "url": "https://legal-support.ru/information/faq/patent/patent-ili-nou-hau-chto-vybrat/",
+          "snippet": "И патентование, и охрана в режиме ноу-хау имеют свои плюсы и минусы. Наиболее эффективный подход - комбинированная защита, при которой ключевые решения патентуются, а вспомогательные ..."
+        },
+        {
+          "title": "Патент Vs Ноу-хау: Что Выбрать Для Защиты Изобретения",
+          "url": "https://www.yurlov.ru/bureau/press/01-16-09-2025/",
+          "snippet": "В чем разница между патентом и ноу-хау, и какие факторы нужно учитывать при выборе способов защиты изобретений? Ответ на эти вопросы можно узнать в нашем материале."
+        },
+        {
+          "title": "Ноу-хау или патент: какой способ охраны лучше? - Изибренд",
+          "url": "https://ezybrand.ru/blog/nou-hau-ili-patent/",
+          "snippet": "Рассмотрим ключевые отличия патентной охраны и режима ноу-хау, опираясь на действующее законодательство. Что такое патент и какую защиту он дает?"
+        },
+        {
+          "title": "Как запатентовать технологию: патент или ноу-хау",
+          "url": "https://nevskylaw.ru/knowledge/patent-na-tehnologiyu-kak-zapatentovat-tehnologiyu/",
+          "snippet": "В этой статье подробно разберем, в чем отличие ноу-хау от патента, а также максимальную пользу и выгоду каждого способа для развития компании. Получить бесплатную консультацию!"
+        }
+      ],
+      "searched_at": "2026-10-19"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://pravsob.ru/kursovaya/pravovoe-regulirovanie-i-mehanizmy-zaschity-prav-avtora-izobreteniya-i-patentoobladatelya-v-rf-kompleksnyy-akademicheskiy-analiz-s-uchetom-aktualnyh-izmeneniy-i-perspektiv/",
+      "title": "Защита прав автора изобретения и патентообладателя в РФ: анализ 2026 ...",
+      "from_query": "способы защиты изобретения 2026"
+    },
+    {
+      "url": "https://psystars.ru/referat/aktualnye-mehanizmy-zaschity-intellektualnoy-sobstvennosti-v-rossiyskoy-federatsii-patentovanie-poshliny-i-podderzhanie-patentov-v-2026-godu/",
+      "title": "Защита Интеллектуальной Собственности в РФ: Патенты, Пошлины ...",
+      "from_query": "способы защиты изобретения 2026"
+    },
+    {
+      "url": "https://patent-family.ru/journal/zashchita/zashchita-intellektualnoj-sobstvennosti/",
+      "title": "Защита интеллектуальной собственности: способы и формы защиты прав в ...",
+      "from_query": "способы защиты изобретения 2026"
+    },
+    {
+      "url": "https://urveda.ru/referat/patent-kak-pravovaya-forma-zaschity-izobreteniya-v-rossiyskoy-federatsii-aktualnyy-analiz-zakonodatelstva-i-praktiki/",
+      "title": "Патент в РФ: Защита изобретений, актуальные изменения 2024-2026 ...",
+      "from_query": "способы защиты изобретения 2026"
+    },
+    {
+      "url": "https://veta.education/media/trendy-v-intellektualnyh-sporah/",
+      "title": "Новое в IP-спорах в 2026 году - veta.education",
+      "from_query": "способы защиты изобретения 2026"
+    },
+    {
+      "url": "https://www.klerk.ru/blogs/roskom24/697978/",
+      "title": "Патентование в 2026-2027 году: как защитить изобретение, полезную ...",
+      "from_query": "способы защиты изобретения 2026"
+    },
+    {
+      "url": "https://inmarlegal.ru/press/publications/copyrightlaw/zashchita-intellektualnoj-sobstvennosti/",
+      "title": "Правовая защита интеллектуальной собственности | Инмар",
+      "from_query": "способы защиты изобретения октябрь 2026"
+    },
+    {
+      "url": "https://www.gazeta.ru/business/news/2026/10/18/29550439.shtml",
+      "title": "В России придумали новый способ защиты от атак ВСУ",
+      "from_query": "способы защиты изобретения новости 2026"
+    },
+    {
+      "url": "https://b2b-bezopasnost-predpriyatiy.blogspot.com/p/2026_01223788639.html",
+      "title": "Современные технологии безопасности предприятий и защита производства в ...",
+      "from_query": "защита технологии производства 2026"
+    },
+    {
+      "url": "https://ru-bezh.ru/analitika/avtomatizatsiya-zashchity-v-promyshlennosti-2026-glavnye-trendy",
+      "title": "Автоматизация защиты в промышленности 2026: главные тренды",
+      "from_query": "защита технологии производства 2026"
+    },
+    {
+      "url": "https://t-generator.ru/novosti-proizvodstva-tendentsii-tehnologii-i-prognozy-2026/",
+      "title": "Новости Производства: Тенденции, Технологии И Прогнозы 2026 - T-ген",
+      "from_query": "защита технологии производства 2026"
+    },
+    {
+      "url": "https://profhoning.ru/bezopasnost-na-proizvodstve-posagovoe-rukovodstvo-po-snizeniu-riskov-v-2026-godu",
+      "title": "Безопасность на производстве: пошаговое руководство по снижению рисков ...",
+      "from_query": "защита технологии производства 2026"
+    },
+    {
+      "url": "https://ru-bezh.ru/tek-2026/",
+      "title": "Безопасность промышленных объектов и ТЭК 2026",
+      "from_query": "защита технологии производства 2026"
+    },
+    {
+      "url": "https://kachestvo.pro/events/tekhnologii-i-bezopasnost-2026/",
+      "title": "Технологии и безопасность 2026 | Обзоры событий ProКачество",
+      "from_query": "защита технологии производства 2026"
+    },
+    {
+      "url": "https://innproverka.ru/info/zashhita-brendov-i-avtorskix-prav-v-2026-godu-v-rossii-klyucevye-aspekty",
+      "title": "Защита брендов в России 2026: ключевые изменения",
+      "from_query": "защита изобретения 2026"
+    },
+    {
+      "url": "https://urveda.ru/diplomnaya/patentoobladateli/",
+      "title": "Защита изобретений в РФ: проблемы, перспективы, судебная практика 2023 ...",
+      "from_query": "защита изобретения 2026"
+    },
+    {
+      "url": "https://shewzov.ru/articles/new-ip-compensation-amounts-2026/",
+      "title": "Новые размеры компенсаций за нарушение интеллектуальной собственности с ...",
+      "from_query": "защита изобретения 2026"
+    },
+    {
+      "url": "https://psystars.ru/referat/intellektualnaya-sobstvennost-v-rossiyskoy-federatsii-kompleksnyy-analiz-pravovogo-regulirovaniya-problem-i-perspektiv/",
+      "title": "Интеллектуальная собственность в РФ: право, проблемы, перспективы ...",
+      "from_query": "способы защиты изобретений 2026"
+    },
+    {
+      "url": "https://stroydokument.ru/novye-pravila-patentovaniya-v-2026-chto-izmenitsya-dlya-izobretatelej-i-biznesa/",
+      "title": "Новые правила патентования в 2026: что изменится для изобретателей и ...",
+      "from_query": "как организовать защиту семейных изобретений 2026"
+    },
+    {
+      "url": "https://shmeleva-partners.ru/autsorsing/zashhita-intellektualnoj-sobstvennosti-v-2026-godu-tovarnye-znaki-patenty-i-parallelnyj-import",
+      "title": "Защита интеллектуальной собственности 2026: товарные знаки, патенты",
+      "from_query": "как организовать защиту семейных изобретений 2026"
+    },
+    {
+      "url": "https://asi.ru/news/207298/",
+      "title": "На ПМЭФ представили новые механизмы защиты интеллектуальной ...",
+      "from_query": "как организовать защиту семейных изобретений 2026"
+    },
+    {
+      "url": "https://vitvet.com/articles/intellekt/nou_hau/patent_ili_sekret_proizvodstva/",
+      "title": "Патент vs ноу-хау — что выбрать для защиты технологии",
+      "from_query": "Сравнение способов защиты изобретения: патент, ноу-хау или публикация 2026"
+    },
+    {
+      "url": "https://onlinepatent.ru/faq/patent/zashchita-innovatsii-patent-ili-nou-khau/",
+      "title": "Защита инноваций: патент или ноу-хау?",
+      "from_query": "Сравнение способов защиты изобретения: патент, ноу-хау или публикация 2026"
+    },
+    {
+      "url": "https://legal-support.ru/information/faq/patent/patent-ili-nou-hau-chto-vybrat/",
+      "title": "Патент или Ноу-Хау, что выбрать? | Гардиум",
+      "from_query": "Сравнение способов защиты изобретения: патент, ноу-хау или публикация 2026"
+    },
+    {
+      "url": "https://www.yurlov.ru/bureau/press/01-16-09-2025/",
+      "title": "Патент Vs Ноу-хау: Что Выбрать Для Защиты Изобретения",
+      "from_query": "Сравнение способов защиты изобретения: патент, ноу-хау или публикация 2026"
+    },
+    {
+      "url": "https://ezybrand.ru/blog/nou-hau-ili-patent/",
+      "title": "Ноу-хау или патент: какой способ охраны лучше? - Изибренд",
+      "from_query": "Сравнение способов защиты изобретения: патент, ноу-хау или публикация 2026"
+    },
+    {
+      "url": "https://nevskylaw.ru/knowledge/patent-na-tehnologiyu-kak-zapatentovat-tehnologiyu/",
+      "title": "Как запатентовать технологию: патент или ноу-хау",
+      "from_query": "Сравнение способов защиты изобретения: патент, ноу-хау или публикация 2026"
+    }
+  ]
+}
