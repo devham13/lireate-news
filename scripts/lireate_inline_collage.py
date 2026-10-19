@@ -13,7 +13,8 @@ from lireate_collage.constants import INLINE_OUT, INLINE_RENDER, SLOT_FILES  # n
 from lireate_collage.eligibility import collage_allowed  # noqa: E402
 from lireate_collage.inline_html import build_inline_html  # noqa: E402
 from lireate_collage.render import render_html_to_png, resize_png  # noqa: E402
-from lireate_collage.validate import validate_inline_item  # noqa: E402
+from lireate_collage.article_facts import article_plain_text, scrub_inline_item  # noqa: E402
+from lireate_collage.validate import validate_inline_item, validate_inline_item_digits  # noqa: E402
 
 
 def main():
@@ -44,8 +45,17 @@ def main():
     cover_dir = args.out_dir or (article_dir / "cover")
     cover_dir.mkdir(parents=True, exist_ok=True)
     w, h = INLINE_RENDER
+    article_text = ""
+    article_html_path = article_dir / "article.html"
+    if article_html_path.is_file():
+        article_text = article_plain_text(article_html_path.read_text(encoding="utf-8"))
 
     for item in doc.get("illustrations") or []:
+        item = scrub_inline_item(item, article_text)
+        unverified = validate_inline_item_digits(item, article_text)
+        if unverified:
+            print("INLINE_BLOCKER: unverified digits in spec:", unverified[:3])
+            return 2
         errs = validate_inline_item(item)
         if errs:
             print("INLINE_BLOCKER:", item.get("slot"), errs)

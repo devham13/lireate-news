@@ -100,7 +100,7 @@ INLINE_SAMPLES = [
                 {
                     "title": "Пошлины",
                     "subtitle": "сроки оплаты",
-                    "variant": "fee",
+                    "variant": "checklist",
                     "mini_rows": ["пошлина подана", "квитанция", "срок сохранён"],
                 },
             ],
@@ -173,6 +173,10 @@ def main():
             print("wrote", dest)
 
         for sample in INLINE_SAMPLES:
+            (tmp / "article.html").write_text(
+                "Срок ответа на претензию — 30 дней. Этапы подачи заявки и пошлины без выдуманных сумм.",
+                encoding="utf-8",
+            )
             spec_doc = {"version": 1, "style": "collage-v1", "illustrations": [sample["item"]]}
             (tmp / "cover" / "inline-specs.json").parent.mkdir(parents=True, exist_ok=True)
             (tmp / "cover" / "inline-specs.json").write_text(

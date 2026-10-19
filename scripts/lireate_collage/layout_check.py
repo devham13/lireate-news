@@ -14,6 +14,8 @@ MIN_QUADRANT_INK = 0.12
 MIN_CONTENT_COVERAGE = 0.85
 SAFE_AREA_PADDING = 20
 ARROW_TEXT_CLEARANCE = 16
+TAPE_CLEARANCE = 20
+CHIP_UI_CLEARANCE = 2
 
 
 def _rect_intersects(a, b, margin=MIN_GAP):
@@ -41,8 +43,11 @@ def collect_slot_boxes(page):
 
 def check_overlaps(boxes):
     errors = []
+    optional_slots = {"slot-chips"}
     for slot, box in boxes.items():
         if box is None:
+            if slot in optional_slots:
+                continue
             errors.append("missing or zero-size slot: {0}".format(slot))
     for a, b in FORBIDDEN_OVERLAPS:
         ba, bb = boxes.get(a), boxes.get(b)
@@ -186,6 +191,7 @@ def check_safe_area(page, padding=SAFE_AREA_PADDING):
       const errors = [];
       document.querySelectorAll('[data-layout-slot]').forEach((el) => {
         const slot = el.getAttribute('data-layout-slot') || '?';
+        if (slot.indexOf('slot-tape') === 0) return;
         const b = el.getBoundingClientRect();
         if (b.width < 2 || b.height < 2) return;
         if (b.left < pr.left + pad - 0.5) errors.push('safe-area-left:' + slot);
@@ -224,11 +230,68 @@ def check_arrow_text_clearance(page, min_gap=ARROW_TEXT_CLEARANCE):
     )
 
 
+def check_tape_clearance(page, min_gap=TAPE_CLEARANCE):
+    return page.evaluate(
+        """(minGap) => {
+      const headline = document.querySelector('[data-layout-slot="slot-headline"]');
+      if (!headline) return [];
+      const h = headline.getBoundingClientRect();
+      const tapes = document.querySelectorAll('[data-layout-slot="slot-tape-tr"]');
+      const errors = [];
+      tapes.forEach((tape) => {
+        const t = tape.getBoundingClientRect();
+        const overlapX = Math.max(0, Math.min(h.right, t.right) - Math.max(h.left, t.left));
+        const overlapY = Math.max(0, Math.min(h.bottom, t.bottom) - Math.max(h.top, t.top));
+        if (overlapX > 0 && overlapY > 0) {
+          errors.push('tape-headline-overlap:' + tape.getAttribute('data-layout-slot'));
+          return;
+        }
+        const gaps = [h.left - t.right, t.left - h.right, h.top - t.bottom, t.top - h.bottom];
+        const best = Math.max(...gaps);
+        if (best < minGap) {
+          errors.push('tape-headline-clearance:' + tape.getAttribute('data-layout-slot') + ':' + best.toFixed(1) + 'px');
+        }
+      });
+      return errors;
+    }""",
+        min_gap,
+    )
+
+
+def check_cover_chips_vs_ui(page, min_gap=CHIP_UI_CLEARANCE):
+    return page.evaluate(
+        """(minGap) => {
+      const chips = document.querySelectorAll('.slot-chips .chip-tilt, .slot-chips .torn-chip');
+      const ui = document.querySelector('[data-layout-slot="slot-ui-card"]');
+      if (!ui || !chips.length) return [];
+      const controls = ui.querySelectorAll('.ui-row span, .ui-row .toggle, .ui-foot span, .ui-foot .apply');
+      const errors = [];
+      chips.forEach((chip) => {
+        const c = chip.getBoundingClientRect();
+        controls.forEach((ctrl) => {
+          const r = ctrl.getBoundingClientRect();
+          if (r.width < 2 || r.height < 2) return;
+          const overlapX = Math.max(0, Math.min(c.right, r.right) - Math.max(c.left, r.left));
+          const overlapY = Math.max(0, Math.min(c.bottom, r.bottom) - Math.max(c.top, r.top));
+          if (overlapX > minGap && overlapY > minGap) {
+            errors.push('chip-ui-control:' + (chip.innerText || '').slice(0, 16));
+          }
+        });
+      });
+      return errors;
+    }""",
+        min_gap,
+    )
+
+
 def assert_layout_ok(page, png_path=None, dpr=2, check_density=True):
     errors = list(check_layout_slots(page))
     errors.extend(check_fonts_and_icons(page))
     errors.extend(check_safe_area(page))
     errors.extend(check_arrow_text_clearance(page))
+    errors.extend(check_tape_clearance(page))
+    if page.query_selector(".slot-chips"):
+        errors.extend(check_cover_chips_vs_ui(page))
 
     cov = check_content_coverage(page)
     if cov.get("error"):

@@ -12,6 +12,7 @@ sys.path.insert(0, str(REPO_ROOT / "scripts"))
 
 from lireate_collage.derive import category_badge, derive_cover_spec, split_headline  # noqa: E402
 from lireate_collage.eligibility import collage_allowed  # noqa: E402
+from lireate_collage.article_facts import scrub_inline_item  # noqa: E402
 from lireate_collage.validate import validate_cover_spec, validate_inline_item  # noqa: E402
 
 
@@ -52,6 +53,19 @@ class TestCollage(unittest.TestCase):
         meta = {"lireate_category_name": "Авторское право", "cover_headline": "Права на текст"}
         spec = derive_cover_spec(meta)
         self.assertIn("Права на контент", spec["ui_card_title"])
+
+    def test_scrub_unverified_digits(self):
+        item = {
+            "template": "process",
+            "headline": "Тест",
+            "steps": [{"title": "x", "variant": "fee", "fee_amount": "12 500 ₽", "fee_deadline": "до 15.04"}],
+            "conclusion": {"box_lines": ["итог"]},
+        }
+        article = "Пошлины оплачиваются по регламенту без конкретной суммы в тексте."
+        cleaned = scrub_inline_item(item, article)
+        step = cleaned["steps"][0]
+        self.assertNotIn("fee_amount", step)
+        self.assertNotIn("fee_deadline", step)
 
     def test_inline_bad_good(self):
         item = {

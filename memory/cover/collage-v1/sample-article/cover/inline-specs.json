@@ -37,7 +37,7 @@
       "steps": [
         {"title": "Поиск", "subtitle": "ФИПС, публикации", "chip": "база", "variant": "icon"},
         {"title": "Заявка", "subtitle": "описание и формула", "chip": "суть", "variant": "toggles"},
-        {"title": "Пошлины", "subtitle": "сроки оплаты", "variant": "fee"}
+        {"title": "Пошлины", "subtitle": "сроки оплаты", "variant": "checklist"}
       ],
       "conclusion": {
         "box_lines": ["срок", "новизны"],
