@@ -42,8 +42,17 @@
   "cover_family": "lireate_collage_v1",
   "cover_scene_hint": "матрица форматов: баннер сравнения, ключ Директа, логотип партнёра",
   "cover_era": "Шумер",
-  "cover_headline": "ЧУЖОЙ БРЕНД В РЕКЛАМЕ",
+  "cover_headline": "ЧУЖОЙ БРЕНД В РЕКЛАМЕ БАННЕР ДИРЕКТ КЛЮЧ",
   "cover_highlight": "ЧУЖОЙ",
+  "cover_sticky": "баннер ≠ ключ в объявлении",
+  "cover_sticky_underline": "ключ",
+  "cover_ui_title": "Матрица форматов",
+  "cover_ui_rows": [
+    "Сравнение ст. 5",
+    "Оригинал ст. 1487",
+    "Ключ без знака",
+    "Логотип — согласие"
+  ],
   "cover_style": "collage-v1",
   "cover_renderer": "html_chromium"
 }
