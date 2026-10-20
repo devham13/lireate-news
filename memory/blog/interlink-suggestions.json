@@ -1,6 +1,14 @@
 {
   "site_base": "https://example.com",
-  "total_articles": 11,
-  "opportunities_found": 0,
-  "suggestions": []
+  "total_articles": 12,
+  "opportunities_found": 1,
+  "suggestions": [
+    {
+      "source": "L07-otkaz-v-registracii-tovarnogo-znaka-otnositelnye-osnovaniya",
+      "target": "L06-kak-opredelit-klass-mktu",
+      "keyword": "классы мкту",
+      "context": "<p>Из уведомления выпишите номер чужого знака или заявки, классы МКТУ и цитату экспертизы. Откройте <a href=\"https://searchplatfo",
+      "link_replacement": "<a href=\"/blog/kak-opredelit-klass-mktu/\">классы МКТУ</a>"
+    }
+  ]
 }
