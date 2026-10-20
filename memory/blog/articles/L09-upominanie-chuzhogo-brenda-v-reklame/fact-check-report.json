@@ -1,0 +1,143 @@
+{
+  "article": "memory/blog/articles/L09-upominanie-chuzhogo-brenda-v-reklame/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "warning",
+  "total_extracted_facts": 19,
+  "verified_facts_count": 2,
+  "unverified_facts_count": 17,
+  "facts": [
+    {
+      "fact": "10 000 000 руб",
+      "kind": "price_or_currency",
+      "context": "Норма Чего ждут Суд ст. 1515 Компенсация 10 000 - 10 000 000 руб., снять знак с рекламы ФАС ст. 5 Прекратить распр",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 000 000 рублей",
+      "kind": "price_or_currency",
+      "context": "вание знака в баннере? По ст. 1515 - от 10 000 до 10 000 000 рублей либо двукратный размер стоимости права использова",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "вно согласию ( п. 1 ст. 1229 ). Материал на 20.10.2026 не заменяет индивидуальную консультацию юриста. Оп",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2019",
+      "kind": "date_or_year",
+      "context": "я и целевую страницу; ориентир - письмо ФАС 21.10.2019 , дела СИП Логотип чужой компании на баннере или",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2020",
+      "kind": "date_or_year",
+      "context": "знака не было в объявлении и на сайте (А56-49696/2020, С01-954/2023, А40-58038/2024). Делайте: проверит",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2023",
+      "kind": "date_or_year",
+      "context": "в объявлении и на сайте (А56-49696/2020, С01-954/2023, А40-58038/2024). Делайте: проверить объявление и",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2024",
+      "kind": "date_or_year",
+      "context": "на сайте (А56-49696/2020, С01-954/2023, А40-58038/2024). Делайте: проверить объявление и лендинг на лого",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "7 ч",
+      "kind": "metric_or_duration",
+      "context": "ы\" ст. 1229 , 1484; ложные сведения о правах ( п. 7 ч. 3 ст. 5 ) Письменное согласие правообладателя ил",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2 ч",
+      "kind": "metric_or_duration",
+      "context": "одия, негатив про конкурента Порча репутации ( п. 2 ч. 2 ст. 5 ) Юридическая вычитка; не запускать без",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1 ч",
+      "kind": "metric_or_duration",
+      "context": "ь конкурента можно при объективном сравнении ( п. 1 ч. 2 ст. 5 ). \"Лучший\" и \"№ 1\" без критерия бьют по",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1484",
+      "kind": "large_number",
+      "context": "артовать кампанию. TL;DR / Быстрый инсайт: По ст. 1484 ГК РФ знак в рекламе без согласия правообладателя",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1487",
+      "kind": "large_number",
+      "context": "есть риск смешения; исключение - исчерпание ( ст. 1487 ) для оригинала в обороте. Сравнения - ст. 5 и ст",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1229",
+      "kind": "large_number",
+      "context": "та у правообладателя не равно согласию ( п. 1 ст. 1229 ). Материал на 20.10.2026 не заменяет индивидуаль",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1079",
+      "kind": "large_number",
+      "context": "цифр, без \"лучший\" без критерия ( руководство ФАС 1079/23 ) Реклама оригинального товара с чужим ТЗ на у",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "49696",
+      "kind": "large_number",
+      "context": ", если знака не было в объявлении и на сайте (А56-49696/2020, С01-954/2023, А40-58038/2024). Делайте: про",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "58038",
+      "kind": "large_number",
+      "context": "нии и на сайте (А56-49696/2020, С01-954/2023, А40-58038/2024). Делайте: проверить объявление и лендинг на",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1515",
+      "kind": "large_number",
+      "context": "я красоты\". Куда жалуются Норма Чего ждут Суд ст. 1515 Компенсация 10 000 - 10 000 000 руб., снять знак с",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 000",
+      "kind": "large_number",
+      "context": "жалуются Норма Чего ждут Суд ст. 1515 Компенсация 10 000 - 10 000 000 руб., снять знак с рекламы ФАС ст. 5",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 000 000",
+      "kind": "large_number",
+      "context": "Норма Чего ждут Суд ст. 1515 Компенсация 10 000 - 10 000 000 руб., снять знак с рекламы ФАС ст. 5 Прекратить ра",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
