@@ -65,6 +65,25 @@ def run_diagnostic(docroot):
     return data
 
 
+def run_sitemap_urls(docroot):
+    php = pick_php_executable()
+    proc = subprocess.run(
+        [php, str(PHP_SCRIPT), "sitemap_urls", str(docroot)],
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        universal_newlines=True,
+    )
+    out = proc.stdout.strip()
+    err = proc.stderr.strip()
+    try:
+        data = json.loads(out) if out else {"ok": False, "error": "empty stdout", "stderr": err}
+    except ValueError:
+        data = {"ok": False, "error": "non-json stdout", "stdout": out, "stderr": err}
+    data["php_executable"] = php
+    data["returncode"] = proc.returncode
+    return data
+
+
 def run_publish(docroot, payload, env=None):
     php = pick_php_executable()
     run_env = os.environ.copy()

@@ -158,3 +158,7 @@ TZ=Europe/Moscow
 ## Яндекс.Вебмастер (экспорт с хостинга)
 
 Инструкция для владельца (OAuth, cron 07:30 МСК, защищённый JSON): [lireate-webmaster-export.ru.md](lireate-webmaster-export.ru.md).
+
+## Sitemap и IndexNow после публикации
+
+Пошаговая настройка ключа и одноразовая выкладка файла проверки: [lireate-indexnow-hosting.ru.md](lireate-indexnow-hosting.ru.md).

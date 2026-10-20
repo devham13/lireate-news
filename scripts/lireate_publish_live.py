@@ -1,6 +1,7 @@
 """Live URL checks and publish state (stdlib, Py3.6+)."""
 
 import json
+import logging
 import urllib.error
 import urllib.request
 from datetime import datetime, timezone
@@ -66,3 +67,20 @@ def is_already_live(site, canonical_path, state_path, slug):
             if status2 == 200:
                 return True, status2
     return False, status
+
+
+def run_fast_indexing_after_publish(docroot, site_url, article_url):
+    """
+    Regenerate sitemap.xml and notify Yandex IndexNow. Fail-safe: never raises.
+    """
+    try:
+        from lireate_fast_indexing import run_after_publish
+
+        return run_after_publish(docroot, site_url, article_url, log=logging.info)
+    except Exception as e:
+        err = "{0}: {1}".format(type(e).__name__, e)
+        logging.warning("fast_indexing: unexpected error (non-fatal): %s", err)
+        return {
+            "sitemap": {"ok": False, "error": err},
+            "indexnow": {"ok": False, "error": err},
+        }
