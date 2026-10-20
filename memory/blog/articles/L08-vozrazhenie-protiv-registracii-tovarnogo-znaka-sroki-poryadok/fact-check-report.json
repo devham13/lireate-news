@@ -1,0 +1,157 @@
+{
+  "article": "memory/blog/articles/L08-vozrazhenie-protiv-registracii-tovarnogo-znaka-sroki-poryadok/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "warning",
+  "total_extracted_facts": 21,
+  "verified_facts_count": 3,
+  "unverified_facts_count": 18,
+  "facts": [
+    {
+      "fact": "14 000 руб",
+      "kind": "price_or_currency",
+      "context": "вления правовой охраны по ст. 1512 в ППС: пошлина 14 000 руб. (п. 2.28.4), заседание коллегии, отзыв правообла",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "9 000 руб",
+      "kind": "price_or_currency",
+      "context": "е заявителя на отказ по своей заявке ( ст. 1500 , 9 000 руб. по п. 2.28.2). В выдаче смешивают обращение на э",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1 000 руб",
+      "kind": "price_or_currency",
+      "context": "материалами заявки может оплачиваться по п. 2.27 (1 000 руб.) Доводы учитываются при экспертизе Государственн",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "ителя на отказ по своей заявке. Материал на 20.10.2026 не заменяет консультацию поверенного. Определите с",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2023",
+      "kind": "date_or_year",
+      "context": "ковой платформе (бесплатно, круглосуточно с 11.12.2023) или в открытых реестрах ФИПС (поиск по номеру на",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "1512 5 лет",
+      "kind": "metric_or_duration",
+      "context": "Возражение против охраны ст. 1513 , основания ст. 1512 5 лет с публикации регистрации (п. 6–7, 10 ст. 1483) ил",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "5 лет",
+      "kind": "metric_or_duration",
+      "context": ". 6, 7, 10 (сходство с вашим знаком, НМПТ и т.п.) 5 лет с даты публикации сведений о государственной реги",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2 месяцев",
+      "kind": "metric_or_duration",
+      "context": "рабочих дней , исправление формальных ошибок - до 2 месяцев ; заседание - не позднее 2 месяцев с принятия ( п",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1493",
+      "kind": "large_number",
+      "context": "лицо может направить в Роспатент обращение по ст. 1493 ГК РФ с доводами о нарушении ст. 1477 и 1483; эксп",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1477",
+      "kind": "large_number",
+      "context": "ение по ст. 1493 ГК РФ с доводами о нарушении ст. 1477 и 1483; экспертиза учитывает их при проверке ( ст.",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "ст. 1493 ГК РФ с доводами о нарушении ст. 1477 и 1483; экспертиза учитывает их при проверке ( ст. 1499",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "1499",
+      "kind": "large_number",
+      "context": "1483; экспертиза учитывает их при проверке ( ст. 1499 ), но отмена не гарантирована. После регистрации",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1512",
+      "kind": "large_number",
+      "context": "ение против предоставления правовой охраны по ст. 1512 в ППС: пошлина 14 000 руб. (п. 2.28.4), заседание",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "14 000",
+      "kind": "large_number",
+      "context": "вления правовой охраны по ст. 1512 в ППС: пошлина 14 000 руб. (п. 2.28.4), заседание коллегии, отзыв правоо",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1500",
+      "kind": "large_number",
+      "context": "зражение заявителя на отказ по своей заявке ( ст. 1500 , 9 000 руб. по п. 2.28.2). В выдаче смешивают об",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "9 000",
+      "kind": "large_number",
+      "context": "е заявителя на отказ по своей заявке ( ст. 1500 , 9 000 руб. по п. 2.28.2). В выдаче смешивают обращение н",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1 000",
+      "kind": "large_number",
+      "context": "материалами заявки может оплачиваться по п. 2.27 (1 000 руб.) Доводы учитываются при экспертизе Государств",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1513",
+      "kind": "large_number",
+      "context": "рация уже состоялась Возражение против охраны ст. 1513 , основания ст. 1512 5 лет с публикации регистрац",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1512 5",
+      "kind": "large_number",
+      "context": "Возражение против охраны ст. 1513 , основания ст. 1512 5 лет с публикации регистрации (п. 6–7, 10 ст. 1483)",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1248",
+      "kind": "large_number",
+      "context": "513 в административном порядке у Роспатента ( ст. 1248 п. 2 ). Заинтересованное лицо - владелец более ран",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "261",
+      "kind": "large_number",
+      "context": "ор доказательств и оформление по Правилам ППС 644/261 занимают время. Уплатите пошлину и подайте возраже",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
