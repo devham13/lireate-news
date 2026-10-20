@@ -1,0 +1,94 @@
+{
+  "article": "memory/blog/articles/L07-otkaz-v-registracii-tovarnogo-znaka-otnositelnye-osnovaniya/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "warning",
+  "total_extracted_facts": 12,
+  "verified_facts_count": 2,
+  "unverified_facts_count": 10,
+  "facts": [
+    {
+      "fact": "9 000 руб",
+      "kind": "price_or_currency",
+      "context": "ние в Роспатент по ст. 1500 за 4 месяца и пошлина 9 000 руб. (п. 2.28.2). Тактика: разобрать противопоставлен",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "таблицей Роспатента и публикациями ФИПС на 20.10.2026. Показы Яндекс Вордстат в среде подготовки матери",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "6 месяцев",
+      "kind": "metric_or_duration",
+      "context": "ктами. На уведомление экспертизы (ст. 1499) у вас 6 месяцев с даты направления письма, чтобы подать мотивиров",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "6 мес",
+      "kind": "metric_or_duration",
+      "context": "t.gov.ru) Три документа - три срока: Уведомление (6 мес., доводы в деле заявки) → экспертиза учитывает от",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "4 мес",
+      "kind": "metric_or_duration",
+      "context": "страции или отказе → при отказе возражение в ППС (4 мес., 9 000 руб.) Посчитайте срок 6 месяцев и заведит",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "7 дней",
+      "kind": "metric_or_duration",
+      "context": "00 п. 1). Делайте: ставить напоминание за 30 и за 7 дней до дедлайна. Не делайте: ждать последнего дня - с",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "учитывают. Относительные основания по п. 6–10 ст. 1483 ГК РФ означают конфликт с чужими правами, а не с \"",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "1499",
+      "kind": "large_number",
+      "context": "и иными объектами. На уведомление экспертизы (ст. 1499) у вас 6 месяцев с даты направления письма, чтобы",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1500",
+      "kind": "large_number",
+      "context": "ончательный отказ - возражение в Роспатент по ст. 1500 за 4 месяца и пошлина 9 000 руб. (п. 2.28.2). Такт",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "9 000",
+      "kind": "large_number",
+      "context": "ние в Роспатент по ст. 1500 за 4 месяца и пошлина 9 000 руб. (п. 2.28.2). Тактика: разобрать противопостав",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1497",
+      "kind": "large_number",
+      "context": "по части позиций - ограничение перечня (п. 2 ст. 1497): убрать однородные товары, из-за которых видят с",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1512",
+      "kind": "large_number",
+      "context": "ванный знак третьим лицом - другая процедура (ст. 1512); её в этой статье не разбираем. Делайте: хранить",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
