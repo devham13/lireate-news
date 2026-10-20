@@ -1,0 +1,25 @@
+{
+  "policy_id": "utility_only_v1",
+  "overall": "PASS",
+  "reports": [
+    {
+      "gate": "article",
+      "article_dir": "memory/blog/articles/L09-upominanie-chuzhogo-brenda-v-reklame",
+      "status": "PASS",
+      "metrics": {
+        "numbered_list_items": 9,
+        "h2_sections": 9,
+        "faq_h3": 7,
+        "tables": 2,
+        "blockquotes": 3,
+        "ul_lists": 0,
+        "action_markers": 12,
+        "water_hits": []
+      },
+      "errors": [],
+      "warnings": [
+        "meta_ab.title_seo не содержит ключевые слова из primary_query: ['допустимых']"
+      ]
+    }
+  ]
+}
