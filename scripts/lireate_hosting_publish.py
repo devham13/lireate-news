@@ -26,7 +26,13 @@ from lireate_hosting_images import (  # noqa: E402
 )
 from lireate_news_format import build_news_row  # noqa: E402
 from lireate_publish_bundle import build_publish_bundle  # noqa: E402
-from lireate_publish_live import http_status, is_already_live, record_published  # noqa: E402
+from lireate_fast_indexing import run_deploy_indexnow_key  # noqa: E402
+from lireate_publish_live import (  # noqa: E402
+    http_status,
+    is_already_live,
+    record_published,
+    run_fast_indexing_after_publish,
+)
 
 require_python((3, 6))
 
@@ -132,12 +138,30 @@ def main():
         help="Update existing news row (same seo_url) and redeploy images",
     )
     parser.add_argument("--env-file", type=Path, default=None)
+    parser.add_argument(
+        "--deploy-indexnow-key",
+        action="store_true",
+        help="Write INDEXNOW_KEY verification file to public_html (one-time setup)",
+    )
     args = parser.parse_args()
 
     home = _default_autopub_home()
     env_file = args.env_file or Path(os.environ.get("LIREATE_ENV_FILE") or (home / ".env"))
     if env_file.is_file():
         load_dotenv(env_file, override=False)
+
+    docroot_early = (os.environ.get("LIREATE_DOCROOT") or "").strip()
+    docroot_path_early = Path(docroot_early).expanduser().resolve() if docroot_early else None
+    if args.deploy_indexnow_key:
+        if not docroot_path_early or not docroot_path_early.is_dir():
+            _print_status("BLOCKER", "set LIREATE_DOCROOT for --deploy-indexnow-key")
+            return 1
+        ok, detail = run_deploy_indexnow_key(docroot_path_early)
+        if ok:
+            _print_status("INDEXNOW_KEY_DEPLOYED", detail)
+            return 0
+        _print_status("BLOCKER", detail)
+        return 1
 
     log_file = Path(os.environ.get("LIREATE_LOG_FILE") or (home / "logs" / "publish.log"))
     lock_file = Path(os.environ.get("LIREATE_LOCK_FILE") or (home / "var" / "publish.lock"))
@@ -314,6 +338,9 @@ def main():
             result["live_url"] = target_url
             record_published(state_file, slug, topic_id, target_url, category_id)
             _append_repo_ledger(topic_id, slug, target_url, category_id)
+            result["fast_indexing"] = run_fast_indexing_after_publish(
+                docroot_path, site, target_url
+            )
             result_path.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
             _print_status("PUBLISHED", target_url)
             return 0

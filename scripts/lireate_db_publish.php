@@ -229,6 +229,47 @@ function lireate_cmd_diagnostic($docroot)
     lireate_out($out, 0);
 }
 
+function lireate_cmd_sitemap_urls($docroot)
+{
+    date_default_timezone_set('Europe/Moscow');
+    $mysqli = lireate_mysqli($docroot);
+    $cols = lireate_table_columns($mysqli, 'news');
+    $hasActive = in_array('active', $cols, true);
+    $sql = 'SELECT `seo_url`, `datetime` FROM `news`';
+    if ($hasActive) {
+        $sql .= ' WHERE `active` = 1';
+    }
+    $sql .= ' ORDER BY `id` ASC';
+    $rows = array();
+    $res = $mysqli->query($sql);
+    if (!$res) {
+        $mysqli->close();
+        lireate_out(array(
+            'ok' => false,
+            'error' => 'sitemap_urls query failed',
+            'mysqli' => $mysqli->error,
+        ), 2);
+    }
+    while ($row = $res->fetch_assoc()) {
+        $seo = isset($row['seo_url']) ? trim((string) $row['seo_url']) : '';
+        if ($seo === '') {
+            continue;
+        }
+        $rows[] = array(
+            'seo_url' => $seo,
+            'datetime' => isset($row['datetime']) ? (int) $row['datetime'] : 0,
+        );
+    }
+    $res->free();
+    $mysqli->close();
+    lireate_out(array(
+        'ok' => true,
+        'mode' => 'sitemap_urls',
+        'rows' => $rows,
+        'count' => count($rows),
+    ), 0);
+}
+
 function lireate_cmd_publish($docroot)
 {
     date_default_timezone_set('Europe/Moscow');
@@ -409,7 +450,7 @@ $argv = $_SERVER['argv'];
 if ($argc < 3) {
     lireate_out(array(
         'ok' => false,
-        'error' => 'usage: php lireate_db_publish.php diagnostic|publish <DOCROOT>',
+        'error' => 'usage: php lireate_db_publish.php diagnostic|publish|sitemap_urls <DOCROOT>',
     ), 2);
 }
 
@@ -424,6 +465,9 @@ if ($cmd === 'diagnostic') {
 }
 if ($cmd === 'publish') {
     lireate_cmd_publish($docroot);
+}
+if ($cmd === 'sitemap_urls') {
+    lireate_cmd_sitemap_urls($docroot);
 }
 
 lireate_out(array('ok' => false, 'error' => 'unknown command', 'command' => $cmd), 2);

@@ -1,0 +1,24 @@
+User-agent: *
+Disallow: /?mode=test
+Disallow: /*?mode=test
+Disallow: /admin/
+Disallow: /private_data
+Disallow: /politika_konfidencialnosti
+Disallow: /newStyle
+Disallow: /newBlog
+Disallow: /reg-name
+Disallow: /?test
+Disallow: /partnersNew
+Disallow: /mainPage
+Disallow: /testPage
+Disallow: /new_lending
+Disallow: /new_rewiev
+Disallow: /new_port
+Disallow: /contacts
+Clean-param: cat&design /
+Clean-param: category /news/
+
+User-agent: Twitterbot
+Allow: /
+
+Sitemap: https://lireate.ru/sitemap.xml  // pragma: allowlist secret
