@@ -1,0 +1,101 @@
+{
+  "article": "memory/blog/articles/L11-dogovor-na-razrabotku-logotipa-prava-ot-dizajnera/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 13,
+  "verified_facts_count": 3,
+  "unverified_facts_count": 10,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "договор с дизайнером. Материал не юруслуга (21.10.2026). AP защищает произведение дизайна; ТЗ даёт моноп",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2023",
+      "kind": "date_or_year",
+      "context": "Поисковой платформе Роспатента (бесплатно с 11.12.2023) → при необходимости согласие автора для п. 9 ст.",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "1259",
+      "kind": "large_number",
+      "context": "охраняется авторским правом без регистрации ( ст. 1259 ГК РФ ); исключительное право изначально у автора",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1228",
+      "kind": "large_number",
+      "context": "); исключительное право изначально у автора ( ст. 1228 ). У фрилансера нужен письменный договор авторско",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1288",
+      "kind": "large_number",
+      "context": "нужен письменный договор авторского заказа ( ст. 1288 ) с отчуждением ( ст. 1234 ) или лицензией ( ст.",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1234",
+      "kind": "large_number",
+      "context": "вторского заказа ( ст. 1288 ) с отчуждением ( ст. 1234 ) или лицензией ( ст. 1286 ). Свидетельство на то",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1286",
+      "kind": "large_number",
+      "context": ") с отчуждением ( ст. 1234 ) или лицензией ( ст. 1286 ). Свидетельство на товарный знак не заменяет дог",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "Без договора с автором заявку оспорят по п. 9 ст. 1483 , если знак сходен с чужим произведением. PNG в п",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "1296",
+      "kind": "large_number",
+      "context": "или особые правила для заказа у организации ( ст. 1296 ГК РФ ). Практика T-Ж и art.etopravo.ru совпадает:",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1233",
+      "kind": "large_number",
+      "context": "го объёма договор трактуют как лицензию (п. 3 ст. 1233) Цена Отдельное вознаграждение за права или едина",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1235",
+      "kind": "large_number",
+      "context": "я в качестве товарного знака\" - иначе по п. 1 ст. 1235 неуказанный способ не считается предоставленным. Д",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1266",
+      "kind": "large_number",
+      "context": "менять цвет, формат, носители Отказ автора по ст. 1266, нарушение по п. 2 ст. 1270 Приложение с эталоном",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1270",
+      "kind": "large_number",
+      "context": "и Отказ автора по ст. 1266, нарушение по п. 2 ст. 1270 Приложение с эталоном (цвет, ч/б, горизонталь) Фик",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
