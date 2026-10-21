@@ -135,3 +135,7 @@ python3 scripts/excalibur_blog_research_start.py --topic-id B01
 Директор: `.cursor/agents/excalibur-blog-director.md` + `director-excalibur-blog` skill — **не Task**.
 
 Полная настройка worker/automation: `CLOUD-AUTOMATION.md`.
+
+## Lireate → Google Sheets после публикации
+
+После подтверждённой live-публикации (HTTP 200) CRON обязан синхронизировать название, публичную ссылку и краткое содержание с исходной таблицей `lireate_blog_articles`, вкладка `Статьи блога`, колонки A:D. Навык: `skills/lireate-google-sheets-publication/SKILL.md`. Код: `scripts/lireate_sheets_sync.py`; настройка: `docs/lireate-sheets-setup.md`. Синхронизация только после публикации, ошибки сохраняются в outbox для повтора. Не объявлять запись успешной без подтверждения Google. Секреты только в .env хостинга.
