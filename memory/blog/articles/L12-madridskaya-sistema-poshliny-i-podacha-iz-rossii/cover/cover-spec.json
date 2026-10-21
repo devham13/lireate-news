@@ -1,0 +1,32 @@
+{
+  "headline_lines": [
+    "МАДРИД ИЗ РФ",
+    "ДВЕ КАССЫ ММ2 CHF"
+  ],
+  "highlight": "ДВЕ КАССЫ",
+  "sticky_text": "база + ММ2",
+  "sticky_underline": "база",
+  "sticky_color": "yellow",
+  "badge_label": "ТЗ",
+  "label_chips": [
+    [
+      "как подать заяв…",
+      "black"
+    ],
+    [
+      "мадридская сист…",
+      "white"
+    ],
+    [
+      "мадридская сист…",
+      "pink"
+    ]
+  ],
+  "ui_card_title": "Пошлины Мадрид",
+  "ui_card_rows": [
+    "4.14 Роспатент",
+    "653/903 CHF",
+    "100 или individual",
+    "12/18 мес."
+  ]
+}
