@@ -25,6 +25,7 @@ from lireate_hosting_images import (  # noqa: E402
     transform_html_paths,
 )
 from lireate_news_format import build_news_row  # noqa: E402
+from lireate_sheets_sync import enqueue as enqueue_sheets, flush as flush_sheets  # noqa: E402
 from lireate_publish_bundle import build_publish_bundle  # noqa: E402
 from lireate_fast_indexing import run_deploy_indexnow_key  # noqa: E402
 from lireate_publish_live import (  # noqa: E402
@@ -149,6 +150,12 @@ def main():
     env_file = args.env_file or Path(os.environ.get("LIREATE_ENV_FILE") or (home / ".env"))
     if env_file.is_file():
         load_dotenv(env_file, override=False)
+
+    # Always retry pending Sheets events, including CRON runs with no new article.
+    try:
+        flush_sheets()
+    except Exception as exc:
+        logging.warning("Sheets retry deferred: %s", type(exc).__name__)
 
     docroot_early = (os.environ.get("LIREATE_DOCROOT") or "").strip()
     docroot_path_early = Path(docroot_early).expanduser().resolve() if docroot_early else None
@@ -338,6 +345,12 @@ def main():
             result["live_url"] = target_url
             record_published(state_file, slug, topic_id, target_url, category_id)
             _append_repo_ledger(topic_id, slug, target_url, category_id)
+            try:
+                enqueue_sheets(row.get("name") or meta.get("title"), target_url, row.get("short_story") or meta.get("description") or meta.get("summary"))
+                result["sheets_sync"] = flush_sheets()
+            except Exception as exc:
+                result["sheets_sync"] = {"status": "pending", "error_type": type(exc).__name__}
+                logging.warning("Sheets sync postponed: %s", type(exc).__name__)
             result["fast_indexing"] = run_fast_indexing_after_publish(
                 docroot_path, site, target_url
             )
