@@ -1,0 +1,9 @@
+{
+  "gate": "topic",
+  "topic_id": "L10",
+  "status": "PASS",
+  "search_intent": "checklist",
+  "article_mode": "B",
+  "errors": [],
+  "warnings": []
+}

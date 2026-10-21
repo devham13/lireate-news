@@ -1,0 +1,108 @@
+{
+  "article": "memory/blog/articles/L10-domennoe-imya-nma-ili-net/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "warning",
+  "total_extracted_facts": 14,
+  "verified_facts_count": 4,
+  "unverified_facts_count": 10,
+  "facts": [
+    {
+      "fact": "100 000 руб",
+      "kind": "price_or_currency",
+      "context": "емого имущества по ст. 256 НК (с 2025 в обзорах - 100 000 руб.; для прошлых лет сверяйте редакцию на дату опера",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2022",
+      "kind": "date_or_year",
+      "context": "капитализировать или списать в период. По ФСБУ 14/2022 отдельное доменное имя редко становится НМА, но пе",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "платформе ( L01 ). Не аудит и не юруслуга (21.10.2026). \"Цифровой актив\" в маркетинге и строка в баланс",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2002",
+      "kind": "date_or_year",
+      "context": "алансе - не одно и то же. Письмо Минфина от 26.03.2002 не относило домен к НМА по старым правилам; с отчё",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2024",
+      "kind": "date_or_year",
+      "context": "о домен к НМА по старым правилам; с отчётности за 2024 обязателен ФСБУ 14/2022, и домен может входить в с",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2020",
+      "kind": "date_or_year",
+      "context": "ставе сайта Дт 08 - Кт 60/76 ( klerk.ru , ФСБУ 26/2020) Сайт уже в эксплуатации Продление домена - текущ",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2025",
+      "kind": "date_or_year",
+      "context": "порог амортизируемого имущества по ст. 256 НК (с 2025 в обзорах - 100 000 руб.; для прошлых лет сверяйте",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "12 мес",
+      "kind": "metric_or_duration",
+      "context": "актив по п. 4 ФСБУ 14/2022 при использовании &gt;12 мес. и выгоде. Первая регистрация при сайте-НМА → 08",
+      "verified": true,
+      "reason": "Numerical value '12' matched in fact-bank context"
+    },
+    {
+      "fact": "14 дней",
+      "kind": "metric_or_duration",
+      "context": "икт с ТЗ до оплаты; при споре - маршрут КЦ и срок 14 дней. Ежегодно контролируйте делегирование; при утрате",
+      "verified": true,
+      "reason": "Numerical value '14' matched in fact-bank context"
+    },
+    {
+      "fact": "2 149",
+      "kind": "large_number",
+      "context": "Быстрый инсайт: Домен - адрес в сети ( п. 15 ст. 2 149-ФЗ ), НМА - актив по п. 4 ФСБУ 14/2022 при исполь",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1484",
+      "kind": "large_number",
+      "context": "я, хотя может нести товарный знак ( п. 5 п. 2 ст. 1484 ГК ). Делайте: разделять право, учёт и маркетинг.",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "256",
+      "kind": "large_number",
+      "context": "асходятся: порог амортизируемого имущества по ст. 256 НК (с 2025 в обзорах - 100 000 руб.; для прошлых л",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "100 000",
+      "kind": "large_number",
+      "context": "емого имущества по ст. 256 НК (с 2025 в обзорах - 100 000 руб.; для прошлых лет сверяйте редакцию на дату оп",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "264",
+      "kind": "large_number",
+      "context": "продление услуг регистратора - по пп. 49 п. 1 ст. 264 НК равномерно по сроку договора или в периоде опла",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
