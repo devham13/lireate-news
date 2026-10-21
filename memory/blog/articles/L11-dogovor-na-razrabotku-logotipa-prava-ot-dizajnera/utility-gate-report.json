@@ -1,0 +1,23 @@
+{
+  "policy_id": "utility_only_v1",
+  "overall": "PASS",
+  "reports": [
+    {
+      "gate": "article",
+      "article_dir": "memory/blog/articles/L11-dogovor-na-razrabotku-logotipa-prava-ot-dizajnera",
+      "status": "PASS",
+      "metrics": {
+        "numbered_list_items": 12,
+        "h2_sections": 8,
+        "faq_h3": 7,
+        "tables": 3,
+        "blockquotes": 4,
+        "ul_lists": 0,
+        "action_markers": 11,
+        "water_hits": []
+      },
+      "errors": [],
+      "warnings": []
+    }
+  ]
+}
