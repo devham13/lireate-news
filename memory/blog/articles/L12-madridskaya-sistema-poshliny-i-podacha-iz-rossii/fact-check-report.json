@@ -1,0 +1,94 @@
+{
+  "article": "memory/blog/articles/L12-madridskaya-sistema-poshliny-i-podacha-iz-rossii/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 12,
+  "verified_facts_count": 7,
+  "unverified_facts_count": 5,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "дизайнациях, не по всему миру. Не юруслуга (21.10.2026). Регистрация по Мадриду не заменяет российское с",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2025",
+      "kind": "date_or_year",
+      "context": "х: п. 4.14, Schedule WIPO, приказ № 161, Протокол 2025 и Notice 9/2026 сверены на 21.10.2026. Показы Янде",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "18 месяцев",
+      "kind": "metric_or_duration",
+      "context": "я и заложите сроки предварительного отказа 12 или 18 месяцев. TL;DR / Быстрый инсайт: Мадрид - одна международ",
+      "verified": true,
+      "reason": "Numerical value '18' matched in fact-bank context"
+    },
+    {
+      "fact": "18 мес",
+      "kind": "metric_or_duration",
+      "context": "→ публикация → дизайнации → национальная фаза 12/18 мес. Зафиксируйте номер базы и перечень МКТУ (не шире",
+      "verified": true,
+      "reason": "Numerical value '18' matched in fact-bank context"
+    },
+    {
+      "fact": "10 лет",
+      "kind": "metric_or_duration",
+      "context": "считают слоями: российская пересылка, основная на 10 лет, доплата за классы сверх трёх и каждая дизайнация",
+      "verified": true,
+      "reason": "Numerical value '10' matched in fact-bank context"
+    },
+    {
+      "fact": "12 мес",
+      "kind": "metric_or_duration",
+      "context": "равилам. Этап Срок Действие Предварительный отказ 12 мес. (до 18, если страна заявила) Ответ по праву стра",
+      "verified": true,
+      "reason": "Numerical value '12' matched in fact-bank context"
+    },
+    {
+      "fact": "5 000",
+      "kind": "large_number",
+      "context": "через Роспатент при базовом знаке в РФ. Пошлины: 5 000 ₽ + 1 000 ₽/класс сверх 3 ( п. 4.14 ) и сборы ВОИ",
+      "verified": true,
+      "reason": "Numerical value '5000' matched in fact-bank context"
+    },
+    {
+      "fact": "1 000",
+      "kind": "large_number",
+      "context": "патент при базовом знаке в РФ. Пошлины: 5 000 ₽ + 1 000 ₽/класс сверх 3 ( п. 4.14 ) и сборы ВОИС в CHF (",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "100",
+      "kind": "large_number",
+      "context": ") и сборы ВОИС в CHF ( Schedule ). Страны: часто 100 CHF или индивидуальный тариф ( individual fees ).",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "130",
+      "kind": "large_number",
+      "context": "( WIPO filing index ). Система охватывает порядка 130 государств, но вы платите и проходите экспертизу т",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "903",
+      "kind": "large_number",
+      "context": "в Роспатент Заявка в каждое ведомство Бюджет 653/903 CHF + страны + п. 4.14 Сумма пошлин по странам Рис",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1 083",
+      "kind": "large_number",
+      "context": "110 (Китай с 12.04.2026, Notice 9/2026 ) + 100 = 1 083 CHF; Роспатент 5 000 ₽. Курс CHF в рубли на дату п",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
