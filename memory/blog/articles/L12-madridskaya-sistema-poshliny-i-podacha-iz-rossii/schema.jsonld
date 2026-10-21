@@ -1,0 +1,85 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "#lireate-organization",
+      "name": "Лирейт"
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "#article-l12",
+      "headline": "Как подать международную заявку по Мадридской системе из России: пошлины и порядок",
+      "description": "Подача через Роспатент: базовый знак, форма ММ2, п. 4.14 и пошлины ВОИС в CHF, индивидуальные тарифы (Китай с 12.04.2026), национальная фаза 12/18 месяцев и риски центральной атаки.",
+      "datePublished": "2026-10-21",
+      "dateModified": "2026-10-21",
+      "inLanguage": "ru",
+      "url": "/madridskaya-sistema-poshliny-i-podacha-iz-rossii",
+      "image": "/template/images/blog/l12_madridskaya_sistema_poshliny_i_podacha_iz_rossii_cover.png",
+      "author": { "@id": "#lireate-organization" },
+      "publisher": { "@id": "#lireate-organization" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "#faq-l12",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Можно ли подать по Мадриду, если российская заявка на экспертизе?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, если база принята. Без приёмки базы комплект не соберут. Проверьте статус дела до оплаты CHF."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько стоит Роспатент и ВОИС?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "От 5 000 ₽ по п. 4.14 плюс 653/903 CHF и сборы за страны и классы. Рубли за CHF зависят от курса на дату платежа."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Где смотреть индивидуальную пошлину для Китая?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "В individual fees и Notice 9/2026 (ставки с 12.04.2026)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли указать больше классов, чем в базе?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет, только сузить перечень."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что если откажут в регистрации базового знака?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Риск центральной атаки и отмены международной регистрации. Закройте вопросы по базе до или сразу после регистрации в РФ."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Даёт ли регистрация в России права в других странах?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Нужна дизайнация по Мадриду или национальная регистрация в нужной стране."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем отказ по Мадриду отличается от отказа Роспатента?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Роспатент - по ГК РФ. Предварительный отказ по ст. 5 - по праву страны дизайнации в срок 12/18 мес., ответ через местного представителя."
+          }
+        }
+      ]
+    }
+  ]
+}

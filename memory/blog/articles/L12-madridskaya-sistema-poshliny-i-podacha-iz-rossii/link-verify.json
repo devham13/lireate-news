@@ -1,0 +1,129 @@
+{
+  "source": "memory/blog/articles/L12-madridskaya-sistema-poshliny-i-podacha-iz-rossii/article.html",
+  "total_links": 13,
+  "failed_count": 0,
+  "privacy_policy_violations": [],
+  "verdict": "pass",
+  "links": [
+    {
+      "url": "https://pravo.ppt.ru/prikaz/rospatent/n-161-70915",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.wipo.int/en/web/madrid-system/fees/sched",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.wipo.int/en/web/madrid-system/fees/ind_taxes",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.wipo.int/en/web/madrid-system/how_to/file/index",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.wipo.int/ru/web/madrid-system/how_to/file/index",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.wipo.int/edocs/pubdocs/ru/wipo-pub-455-2024-ru-guide-to-the-madrid-system-international-registration-of-marks-under-the-madrid-protocol.pdf",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.wipo.int/en/web/madrid-system/how_to/file/file",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/proverka_tovarnogo_znaka_pered_registraciey_chek_list_po_reestram_rospatenta",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/proverka_tovarnogo_znaka_pered_registraciey_chek_list_po_reestram_rospatenta"
+    },
+    {
+      "url": "https://online.rospatent.gov.ru/open-data/classifiers/product-classifiers",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.wipo.int/ru/web/madrid-system/how_to/file/fees",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.wipo.int/documents/d/madrid-system/information-notices-en-2026-madrid_2026_9_e.pdf",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/registraciya_tovarnogo_znaka_v_kitae",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/registraciya_tovarnogo_znaka_v_kitae"
+    },
+    {
+      "url": "/reg-tz-main",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/reg-tz-main"
+    }
+  ]
+}

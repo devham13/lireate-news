@@ -1,14 +1,6 @@
 {
   "site_base": "https://example.com",
-  "total_articles": 16,
-  "opportunities_found": 1,
-  "suggestions": [
-    {
-      "source": "L11-dogovor-na-razrabotku-logotipa-prava-ot-dizajnera",
-      "target": "L06-kak-opredelit-klass-mktu",
-      "keyword": "классы мкту",
-      "context": "т. 1483); договор с дизайнером закрывает ваше произведение. Классы МКТУ выбирают отдельно. Сопровождение заявки - <a href=\"/reg-tz-",
-      "link_replacement": "<a href=\"/blog/kak-opredelit-klass-mktu/\">Классы МКТУ</a>"
-    }
-  ]
+  "total_articles": 17,
+  "opportunities_found": 0,
+  "suggestions": []
 }
