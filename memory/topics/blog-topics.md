@@ -378,7 +378,7 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L11 — Договор на разработку логотипа: как получить права от дизайнера
 
-- **status:** new
+- **status:** written
 - **priority:** P1
 - **site:** lireate
 - **lireate_category_id:** 10
@@ -387,7 +387,7 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 - **h1:** Договор на разработку логотипа: как получить права от дизайнера
 - **primary_query:** авторские права на логотип
 - **secondary_queries:** договор на разработку логотипа, договор на разработку логотипа интеллектуальная собственность, договор авторского заказа на создание логотипа, авторское право на логотип от дизайнера, авторское право на логотип как оформить
-- **search_intent:** commercial
+- **search_intent:** how_to
 - **article_mode:** B
 - **angle:** Отчуждение vs лицензия, обязательные пункты, регистрация логотипа как ТЗ
 - **target_service:** reg-tz
