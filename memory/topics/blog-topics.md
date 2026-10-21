@@ -359,16 +359,16 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L10 — Доменное имя — это НМА или нет: учёт и защита домена
 
-- **status:** new
+- **status:** written
 - **priority:** P1
 - **site:** lireate
 - **lireate_category_id:** 12
 - **lireate_category_name:** Сайт
 - **slug:** domennoe-imya-nma-ili-net
-- **h1:** Доменное имя — это НМА или нет: учёт и защита домена
-- **primary_query:** домен это нма
+- **h1:** Доменное имя — НМА или нет: чек-лист учёта и защиты по ФСБУ 14/2022
+- **primary_query:** как учесть домен нма или нет
 - **secondary_queries:** доменное имя нма или нет, домен нма или нет, продление домена нма или нет, доменное имя это нма или нет, доменное имя как цифровой актив
-- **search_intent:** informational
+- **search_intent:** checklist
 - **article_mode:** B
 - **angle:** Бухучёт ФСБУ 14/2022, продление, связь домена с товарным знаком
 - **target_service:** —

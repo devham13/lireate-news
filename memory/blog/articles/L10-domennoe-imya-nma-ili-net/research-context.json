@@ -1,0 +1,92 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-10-21",
+    "today_ru": "21.10.2026",
+    "year": 2026,
+    "month": 10,
+    "month_name_ru": "октябрь",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-07-23",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-10-21 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L10",
+    "priority": "P1",
+    "slug": "domennoe-imya-nma-ili-net",
+    "h1": "Доменное имя — НМА или нет: чек-лист учёта и защиты по ФСБУ 14/2022",
+    "primary_query": "как учесть домен нма или нет",
+    "secondary_queries": [
+      "доменное имя нма или нет",
+      "домен нма или нет",
+      "продление домена нма или нет",
+      "доменное имя это нма или нет",
+      "доменное имя как цифровой актив"
+    ],
+    "search_intent": "checklist",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "L10",
+    "status": "PASS",
+    "search_intent": "checklist",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "как учесть домен нма или нет 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "как учесть домен нма или нет октябрь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "как учесть домен нма или нет новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "доменное имя нма или нет 2026",
+      "purpose": "вторичный запрос: доменное имя нма или нет"
+    },
+    {
+      "id": "secondary_2",
+      "query": "домен нма или нет 2026",
+      "purpose": "вторичный запрос: домен нма или нет"
+    },
+    {
+      "id": "secondary_3",
+      "query": "продление домена нма или нет 2026",
+      "purpose": "вторичный запрос: продление домена нма или нет"
+    },
+    {
+      "id": "secondary_4",
+      "query": "доменное имя это нма или нет 2026",
+      "purpose": "вторичный запрос: доменное имя это нма или нет"
+    },
+    {
+      "id": "secondary_5",
+      "query": "доменное имя как цифровой актив 2026",
+      "purpose": "вторичный запрос: доменное имя как цифровой актив"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Доменное имя — НМА или нет: чек-лист учёта и защиты по ФСБУ 14/2022 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/L10-domennoe-imya-nma-ili-net",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}
