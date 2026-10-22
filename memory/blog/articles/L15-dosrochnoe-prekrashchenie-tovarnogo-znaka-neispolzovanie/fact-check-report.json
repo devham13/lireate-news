@@ -1,0 +1,87 @@
+{
+  "article": "memory/blog/articles/L15-dosrochnoe-prekrashchenie-tovarnogo-znaka-neispolzovanie/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "warning",
+  "total_extracted_facts": 11,
+  "verified_facts_count": 4,
+  "unverified_facts_count": 7,
+  "facts": [
+    {
+      "fact": "14 000 руб",
+      "kind": "price_or_currency",
+      "context": "ание экспертизы. Не делайте: платить пошлину ППС (14 000 руб. по п. 2.28.4) в надежде \"снять\" знак за неактивн",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "ва неиспользования и заинтересованности. На 22.10.2026; не юруслуга. TL;DR / Быстрый инсайт: Досрочное п",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2025",
+      "kind": "date_or_year",
+      "context": "лько формальную заявку в Роспатент: в деле СИП-60/2025 недостаточно было одной заявки без коммерческого н",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "30 дней",
+      "kind": "metric_or_duration",
+      "context": "ладателю, два месяца ожидания, затем иск в СИП за 30 дней. Ниже вы сверите сроки, отделите СИП от ППС и соб",
+      "verified": true,
+      "reason": "Numerical value '30' matched in fact-bank context"
+    },
+    {
+      "fact": "1486",
+      "kind": "large_number",
+      "context": "ка в Роспатент. Кнопки \"аннулировать\" нет: по ст. 1486 ГК РФ сначала письмо правообладателю, два месяца о",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1512",
+      "kind": "large_number",
+      "context": "н правообладатель ( п. 3 ст. 1486 ). В ППС по ст. 1512 спорят о регистрации , не о неиспользовании. СИП -",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1513",
+      "kind": "large_number",
+      "context": "во, недобросовестность) Возражение в ППС ст. 1512–1513 Решение Роспатента, иной порядок и пошлины Вам пиш",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1515",
+      "kind": "large_number",
+      "context": "те чужой знак Досудебка и защита, не ст. 1486 ст. 1515 и др. См. ответ на претензию правообладателя Ответ",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "14 000",
+      "kind": "large_number",
+      "context": "ание экспертизы. Не делайте: платить пошлину ППС (14 000 руб. по п. 2.28.4) в надежде \"снять\" знак за неакт",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "ость товаров с перечнем спорного знака ( п. 6 ст. 1483 про сходство в однородных товарах). Суды смотрят н",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "126",
+      "kind": "large_number",
+      "context": "му с требованиями к исковому заявлению по ст. 125–126 АПК РФ (цена иска, доказательства, копии для ответ",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
