@@ -1,6 +1,14 @@
 {
-  "site_base": "https://example.com",
-  "total_articles": 18,
-  "opportunities_found": 0,
-  "suggestions": []
+  "site_base": "https://example.com", // pragma: allowlist secret
+  "total_articles": 20,
+  "opportunities_found": 1,
+  "suggestions": [
+    {
+      "source": "L15-dosrochnoe-prekrashchenie-tovarnogo-znaka-neispolzovanie",
+      "target": "L06-kak-opredelit-klass-mktu",
+      "keyword": "классы мкту",
+      "context": "дата государственной регистрации, перечень товаров и услуг (классы МКТУ), адрес правообладателя. Предложение по ст. 1486 можно напр",
+      "link_replacement": "<a href=\"/blog/kak-opredelit-klass-mktu/\">классы МКТУ</a>"
+    }
+  ]
 }
