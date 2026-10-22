@@ -43,16 +43,30 @@
   "cover_family": "lireate_collage_v1",
   "cover_scene_hint": "пять мер ст. 10, гриф на документе, журнал доступа, комиссия при утечке",
   "cover_era": "Шумер",
-  "cover_headline": "КОММЕРЧЕСКАЯ ТАЙНА 5 МЕР СТ 10 ГРИФ КОМИССИЯ",
+  "cover_headline": "РЕЖИМ КТ 5 МЕР СТ 10 ГРИФ КОМИССИЯ",
   "cover_highlight": "5 МЕР",
+  "cover_label_chips": [
+    [
+      "ст. 10 98-ФЗ",
+      "black"
+    ],
+    [
+      "перечень и гриф",
+      "white"
+    ],
+    [
+      "журнал доступа",
+      "pink"
+    ]
+  ],
   "cover_sticky": "NDA ≠ режим",
   "cover_sticky_underline": "NDA",
-  "cover_ui_title": "Режим КТ",
+  "cover_ui_title": "Режим коммерческой тайны",
   "cover_ui_rows": [
-    "Перечень / гриф",
-    "Журнал доступа",
-    "NDA + ТД",
-    "Комиссия"
+    "Перечень КТ и гриф на носителях",
+    "Журнал лиц с доступом",
+    "NDA, трудовой договор, подряд",
+    "Комиссия при утечке ст. 193"
   ],
   "cover_style": "collage-v1",
   "cover_renderer": "html_chromium"
