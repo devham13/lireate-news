@@ -1,0 +1,94 @@
+{
+  "article": "memory/blog/articles/L14-rezhim-kommercheskoj-tajny-kak-vvesti/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 12,
+  "verified_facts_count": 2,
+  "unverified_facts_count": 10,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "тв, если инцидент уже случился. Материал на 22.10.2026 не заменяет консультацию юриста. TL;DR / Быстрый и",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "6 ч",
+      "kind": "metric_or_duration",
+      "context": "reshdoc.ru ), но не заменяет суд. Увольнение - п. 6 ч. 1 ст. 81 ТК (подп. \"в\") при доказанной охраняемо",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "4 ч",
+      "kind": "metric_or_duration",
+      "context": "год проверяйте перечень и доступы уволенных ( п. 4 ч. 3 ст. 11 ). Что сделать дальше Соберите папку \"р",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 98",
+      "kind": "large_number",
+      "context": "не закрыли. Без режима коммерческой тайны по ст. 10 98-ФЗ доказать разглашение коммерческой тайны почти",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "3 98",
+      "kind": "large_number",
+      "context": "лицам, но только при введенном режиме ( п. 2 ст. 3 98-ФЗ ). Режим действует, когда выполнены все пять м",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "5 98",
+      "kind": "large_number",
+      "context": "ния вообще подпадают под КТ, а не под запреты ст. 5 98-ФЗ (зарплаты, учредительные в реестре, экология и",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1 98",
+      "kind": "large_number",
+      "context": "т с момента установления режима по ст. 10 ( ст. 6.1 98-ФЗ ). Проверьте, можно ли отнести сведения к комм",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "193",
+      "kind": "large_number",
+      "context": "есованных) → сохранение логов → объяснения по ст. 193 ТК РФ . Комиссия выясняет обстоятельства, виновных",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "14 98",
+      "kind": "large_number",
+      "context": "плина Нарушение без состава преступления ч. 2 ст. 14 98-ФЗ Убытки Вина работника, соблюден режим ст. 11 9",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "11 98",
+      "kind": "large_number",
+      "context": "4 98-ФЗ Убытки Вина работника, соблюден режим ст. 11 98-ФЗ КоАП Разглашение с ограниченным доступом, если",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "200",
+      "kind": "large_number",
+      "context": "-10 тыс. руб., должностные 40-50 тыс., юрлица 100-200 тыс.) УК Незаконное разглашение лицом, которому до",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "183",
+      "kind": "large_number",
+      "context": "азглашение лицом, которому доверили по службе ст. 183 УК РФ (санкции по частям, квалификацию дает юрист)",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
