@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "style": "collage-v1",
+  "illustrations": [
+    {
+      "slot": "inline_1",
+      "template": "bad_good",
+      "headline": "Картина и фотофайл — два слоя прав",
+      "chips": [
+        {"icon": "layers", "text": "оригинал"},
+        {"icon": "doc", "text": "JPG"},
+        {"icon": "warning", "text": "1270"}
+      ],
+      "sticky": {"text": "два поля в заметках", "color": "pink"},
+      "bad": {
+        "header": "BAD",
+        "lines": [
+          "Старая картина = любой снимок",
+          "Один слой на всё"
+        ]
+      },
+      "good": {
+        "header": "GOOD",
+        "lines": [
+          "Основание на оригинал и файл",
+          "Свой снимок или лицензия"
+        ]
+      },
+      "side_checklist": ["картина", "файл"],
+      "conclusion": {
+        "box_lines": ["спросите", "дважды"],
+        "highlight_word": "дважды",
+        "chip": "1259"
+      },
+      "alt": "Сравнение ошибки смешивать права на картину и файл и правильного разделения оснований",
+      "figcaption": "Отдельно проверьте основание на оригинал и на фотофайл перед публикацией репродукции."
+    },
+    {
+      "slot": "inline_2",
+      "template": "bad_good",
+      "headline": "Цель поста и ст. 1274 / 1276",
+      "chips": [
+        {"icon": "doc", "text": "1274"},
+        {"icon": "shield", "text": "1276"},
+        {"icon": "warning", "text": "реклама"}
+      ],
+      "sticky": {"text": "сеть ≠ 1276", "color": "pink"},
+      "bad": {
+        "header": "BAD",
+        "lines": [
+          "Чужой JPG «по 1276»",
+          "Картина в рекламе без лицензии"
+        ]
+      },
+      "good": {
+        "header": "GOOD",
+        "lines": [
+          "Обзор: 1274, имя, объём",
+          "Своя съёмка: 1276 + музей"
+        ]
+      },
+      "side_checklist": ["1274", "1276"],
+      "conclusion": {
+        "box_lines": ["сверьте", "цель"],
+        "highlight_word": "цель",
+        "chip": "ГК РФ"
+      },
+      "alt": "Сравнение неверного применения ст. 1274 и 1276 и корректного выбора основания",
+      "figcaption": "Сопоставьте цель поста со ст. 1274 и 1276; чужой файл из сети не заменяет съёмку в зале."
+    },
+    {
+      "slot": "inline_3",
+      "template": "process",
+      "headline": "Маршрут перед публикацией фото",
+      "chips": [
+        {"icon": "clock", "text": "70 лет"},
+        {"icon": "doc", "text": "copyright"},
+        {"icon": "layers", "text": "чек-лист"}
+      ],
+      "sticky": {"text": "архив скрина", "color": "pink"},
+      "steps": [
+        {
+          "title": "Срок",
+          "subtitle": "70+ лет → PD",
+          "chip": "1281",
+          "variant": "icon"
+        },
+        {
+          "title": "Файл",
+          "subtitle": "камера или музей",
+          "chip": "copy",
+          "variant": "toggles"
+        },
+        {
+          "title": "Чек-лист",
+          "subtitle": "1274/1276, подпись",
+          "chip": "ок/стоп",
+          "variant": "checklist"
+        }
+      ],
+      "conclusion": {
+        "box_lines": ["сохраните", "PDF"],
+        "highlight_word": "PDF",
+        "marker_underline": true,
+        "chip": "до поста"
+      },
+      "alt": "Этапы проверки срока, источника файла и чек-листа перед публикацией фото картины",
+      "figcaption": "Срок на картину, источник файла, ст. 1274 или 1276 и правила музея — затем чек-лист и подпись."
+    }
+  ]
+}
