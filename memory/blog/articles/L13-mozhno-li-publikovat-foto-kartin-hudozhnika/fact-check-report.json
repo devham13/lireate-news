@@ -1,0 +1,129 @@
+{
+  "article": "memory/blog/articles/L13-mozhno-li-publikovat-foto-kartin-hudozhnika/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "warning",
+  "total_extracted_facts": 17,
+  "verified_facts_count": 2,
+  "unverified_facts_count": 15,
+  "facts": [
+    {
+      "fact": "10 000 000 руб",
+      "kind": "price_or_currency",
+      "context": "е до поста Компенсация по ст. 1301 - от 10 000 до 10 000 000 руб. по выбору правообладателя (ред. с 04.01.2026) ил",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2024",
+      "kind": "date_or_year",
+      "context": "равно законному использованию ( обзор ВС РФ 29.05.2024, п. 7 ). Не юруслуга (22.10.2026). Запрос \"как пр",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "бзор ВС РФ 29.05.2024, п. 7 ). Не юруслуга (22.10.2026). Запрос \"как проверить, можно ли публиковать фот",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2023",
+      "kind": "date_or_year",
+      "context": "ачивание не доказывает законность (СИП № С01-2277/2023, garant.ru ). Итоговый вердикт: чужой файл без ли",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "70 лет",
+      "kind": "metric_or_duration",
+      "context": "егистрации ( ст. 1259 ). Срок - жизнь автора плюс 70 лет ( ст. 1281 ), затем общественное достояние ( ст.",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1274",
+      "kind": "large_number",
+      "context": "е срок охраны и источник, сопоставите цель со ст. 1274 и 1276 ГК РФ и сохраните основание до публикации.",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1276",
+      "kind": "large_number",
+      "context": "охраны и источник, сопоставите цель со ст. 1274 и 1276 ГК РФ и сохраните основание до публикации. TL;DR /",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1259",
+      "kind": "large_number",
+      "context": "инсайт: Живопись охраняется без регистрации ( ст. 1259 ). Срок - жизнь автора плюс 70 лет ( ст. 1281 ),",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1281",
+      "kind": "large_number",
+      "context": "ст. 1259 ). Срок - жизнь автора плюс 70 лет ( ст. 1281 ), затем общественное достояние ( ст. 1282 ). Фот",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1282",
+      "kind": "large_number",
+      "context": "( ст. 1281 ), затем общественное достояние ( ст. 1282 ). Фото картины - отдельное произведение. Скачива",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1291",
+      "kind": "large_number",
+      "context": "на не даёт права на промо-фото без договора ( ст. 1291 ). Разделите права на картину и на фотофайл AP за",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1270",
+      "kind": "large_number",
+      "context": "соцсети входят в исключительное право ( п. 2 ст. 1270 ). Публикация JPG - это и образ на холсте, и чужо",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1229",
+      "kind": "large_number",
+      "context": "запрета на сайте - не согласие ( абз. 2 п. 1 ст. 1229 ). Скачивание не доказывает законность (СИП № С01",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2277",
+      "kind": "large_number",
+      "context": "). Скачивание не доказывает законность (СИП № С01-2277/2023, garant.ru ). Итоговый вердикт: чужой файл б",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1301",
+      "kind": "large_number",
+      "context": "о Архив PDF Запросите до поста Компенсация по ст. 1301 - от 10 000 до 10 000 000 руб. по выбору правообл",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 000",
+      "kind": "large_number",
+      "context": "F Запросите до поста Компенсация по ст. 1301 - от 10 000 до 10 000 000 руб. по выбору правообладателя (ред.",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 000 000",
+      "kind": "large_number",
+      "context": "е до поста Компенсация по ст. 1301 - от 10 000 до 10 000 000 руб. по выбору правообладателя (ред. с 04.01.2026)",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
