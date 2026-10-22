@@ -1,5 +1,5 @@
 {
-  "site_base": "https://example.com", // pragma: allowlist secret
+  "site_base": "https://SITE_BASE_PLACEHOLDER",
   "total_articles": 20,
   "opportunities_found": 1,
   "suggestions": [
