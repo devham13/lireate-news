@@ -1,0 +1,25 @@
+{
+  "policy_id": "utility_only_v1",
+  "overall": "PASS",
+  "reports": [
+    {
+      "gate": "article",
+      "article_dir": "memory/blog/articles/L16-kak-legalno-opublikovat-perevod-knigi",
+      "status": "PASS",
+      "metrics": {
+        "numbered_list_items": 7,
+        "h2_sections": 8,
+        "faq_h3": 7,
+        "tables": 1,
+        "blockquotes": 4,
+        "ul_lists": 1,
+        "action_markers": 9,
+        "water_hits": []
+      },
+      "errors": [],
+      "warnings": [
+        "char_count=8499 вне 8500–9500"
+      ]
+    }
+  ]
+}

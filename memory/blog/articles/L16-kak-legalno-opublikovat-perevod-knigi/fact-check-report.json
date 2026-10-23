@@ -1,0 +1,108 @@
+{
+  "article": "memory/blog/articles/L16-kak-legalno-opublikovat-perevod-knigi/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "warning",
+  "total_extracted_facts": 14,
+  "verified_facts_count": 1,
+  "unverified_facts_count": 13,
+  "facts": [
+    {
+      "fact": "10 000 000 руб",
+      "kind": "price_or_currency",
+      "context": "ция без лицензии грозит компенсацией от 10 000 до 10 000 000 руб. ( ст. 1301 ). Ищите готовый перевод на Читай-гор",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "себя без выкладки - ст. 1273 . Не юруслуга (23.10.2026). Любительский перевод - перенос текста без издат",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "70 лет",
+      "kind": "metric_or_duration",
+      "context": "роверить Оригинал Автор, наследники, издательство 70 лет, русское издание Лицензия на перевод Правообладат",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1260",
+      "kind": "large_number",
+      "context": "ия на перевод у правообладателя и ваш текст ( ст. 1260 ). Публикация без договора - ст. 1270 ; молчание",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1270",
+      "kind": "large_number",
+      "context": "текст ( ст. 1260 ). Публикация без договора - ст. 1270 ; молчание автора не согласие ( ст. 1229 ). Тольк",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1229",
+      "kind": "large_number",
+      "context": "ра - ст. 1270 ; молчание автора не согласие ( ст. 1229 ). Только для себя без выкладки - ст. 1273 . Не ю",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1273",
+      "kind": "large_number",
+      "context": "( ст. 1229 ). Только для себя без выкладки - ст. 1273 . Не юруслуга (23.10.2026). Любительский перевод",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1281",
+      "kind": "large_number",
+      "context": "ра плюс 70 лет с 1 января года после смерти ( ст. 1281 ), затем общественное достояние ( ст. 1282 ). Для",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1282",
+      "kind": "large_number",
+      "context": "( ст. 1281 ), затем общественное достояние ( ст. 1282 ). Для живого автора публикация без лицензии гроз",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 000",
+      "kind": "large_number",
+      "context": "ра публикация без лицензии грозит компенсацией от 10 000 до 10 000 000 руб. ( ст. 1301 ). Ищите готовый пер",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 000 000",
+      "kind": "large_number",
+      "context": "ция без лицензии грозит компенсацией от 10 000 до 10 000 000 руб. ( ст. 1301 ). Ищите готовый перевод на Читай-",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1301",
+      "kind": "large_number",
+      "context": "т компенсацией от 10 000 до 10 000 000 руб. ( ст. 1301 ). Ищите готовый перевод на Читай-город , ЛитРес",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1286",
+      "kind": "large_number",
+      "context": "вперёд. Лицензия только в письменной форме ( ст. 1286 ): перевод, сеть, печать, аудио, территория, срок",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1259",
+      "kind": "large_number",
+      "context": "о книгу. AP на текст возникает при создании ( ст. 1259 ). Депонирование фиксирует дату файла, но не заме",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
