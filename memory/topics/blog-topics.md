@@ -487,3 +487,92 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 - **angle:** Права на перевод, общественное достояние, лицензия у правообладателя, площадки
 - **target_service:** —
 - **metrika_visits:** 391 (фраз: 372)
+
+---
+
+## L17 — Защита дизайна товара: промышленный образец или товарный знак
+
+- **status:** written
+- **priority:** P1
+- **site:** lireate
+- **lireate_category_id:** 20
+- **lireate_category_name:** Патент
+- **slug:** zashchita-dizajna-tovara-promobrazec-ili-tovarnyy-znak
+- **h1:** Защита дизайна товара: промышленный образец или товарный знак
+- **primary_query:** защита дизайна товара
+- **secondary_queries:** промышленный образец или товарный знак, патент на дизайн упаковки, регистрация внешнего вида изделия, товарный знак на форму бутылки
+- **search_intent:** comparison
+- **article_mode:** B
+- **angle:** Сравнение ПО (ст. 1352) и ТЗ, маршрут выбора, сроки и пошлины
+- **target_service:** патентование
+- **metrika_visits:** 1 (seo-report, 28 дней)
+
+---
+
+## L19 — Чужой логотип или название в видео (SEO refresh)
+
+- **status:** written
+- **priority:** P1
+- **site:** lireate
+- **lireate_category_id:** 10
+- **lireate_category_name:** Логотип
+- **slug:** chuzhoy-logotip-ili-nazvanie-v-video
+- **h1:** Чужой логотип или название в видео: можно ли использовать законно
+- **primary_query:** можно ли использовать логотипы компаний в видео
+- **secondary_queries:** законность демонстрации эмблем авто в роликах, чужой логотип в youtube, товарный знак в рекламном ролике
+- **search_intent:** how_to
+- **article_mode:** B
+- **angle:** Прямой ответ в первом экране; refresh live URL /chuzhoy_logotip_ili_nazvanie_v_video
+- **target_service:** защита ТЗ
+- **metrika_visits:** 18 (28 дней, короткие визиты)
+- **hosting_update:** true
+- **lireate_seo_url:** chuzhoy_logotip_ili_nazvanie_v_video
+
+---
+
+## L20 — Собственный перевод зарубежного произведения (SEO refresh)
+
+- **status:** written
+- **priority:** P1
+- **site:** lireate
+- **lireate_category_id:** 17
+- **lireate_category_name:** Авторское право
+- **slug:** mogu-li-vykladyivat-sobstvennyiy-perevod-zarubezhnogo-proizvedeniya
+- **h1:** Могу ли я выкладывать собственный перевод зарубежного произведения?
+- **primary_query:** могу ли я выкладывать собственный перевод зарубежного произведения
+- **secondary_queries:** можно ли делать любительский перевод, куда можно выложить перевод книги, легально опубликовать перевод
+- **search_intent:** workflow
+- **article_mode:** B
+- **angle:** Прямой ответ + пошаговая легальная публикация; refresh live URL
+- **target_service:** —
+- **metrika_visits:** 19 (28 дней)
+- **hosting_update:** true
+- **lireate_seo_url:** mogu_li_ya_vyikladyivat_sobstvennyiy_perevod_zarubezhnogo_proizvedeniya
+
+---
+
+## L18 — Покупка у правообладателя и конкурент без регистрации: недобросовестная конкуренция?
+
+- **status:** written
+- **priority:** P1
+- **site:** lireate
+- **lireate_category_id:** 15
+- **lireate_category_name:** Бизнес
+- **slug:** kupil-u-pravoobladatelya-nedobrosovestnaya-konkurenciya
+- **h1:** Купил товар у правообладателя, а у конкурента нет регистрации: это недобросовестная конкуренция?
+- **primary_query:** купил у правообладателя недобросовестная конкуренция
+- **secondary_queries:** товарный знак не зарегистрировали купил у правообладателя, недобросовестная конкуренция без регистрации товарного знака, исчерпание прав ст 1487, ст 4 зозкт конкурент, конкурент без товарного знака
+- **search_intent:** comparison
+- **article_mode:** B
+- **angle:** Развести ст. 1487, 1484, ст. 4 ЗоЗКТ и 14.33 КоАП; прямой ответ в первом экране
+- **target_service:** reg-tz / защита ТЗ
+- **metrika_visits:** 1 (длинный запрос из seo-report)
+- **h2_outline:**
+  1. Развести три трека: товарный знак, исчерпание, ЗоЗКТ
+  2. Сравнить ситуации закупки и конкурента без регистрации
+  3. Проверить признаки недобросовестной конкуренции по ст. 4
+  4. Собрать доказательства закупки для ст. 1487
+  5. Выбрать тактику: претензия, ФАС, суд
+  6. Спланировать шаги при давлении через маркетплейс
+- **faq_hints:** можно ли назвать покупку у правообладателя недобросовестной конкуренцией; помогает ли договор с брендом; что важнее регистрация или УПД; когда ФАС; ст 14.33 без регистрации
+- **internal_links:** /otvet-na-pretenziyu-pravoobladatelya-tovarnogo-znaka, /proverka_tovarnogo_znaka_pered_registraciey_chek_list_po_reestram_rospatenta, /7_prichin_zaregestrirovat_tovarnyiy_znak

@@ -1,0 +1,36 @@
+Main Objective: Create a HYPER-REALISTIC ACTION SELFIE photo cover for an article.
+Theme: Публикация перевода зарубежного произведения
+
+STRICT VISUAL STYLE:
+A photorealistic wide-angle selfie shot of the main hero (from reference), blending seamlessly with historical events/personalities based on the theme.
+Captured with a 24mm wide-angle lens (simulating high-end smartphone or wide POV camera) to capture both the hero's face and the dynamic historical background.
+The image must look like a real, candid moment captured in time, NOT an illustration.
+
+SUBJECT & COMPOSITION:
+The main hero young woman (from first reference image), making a funny/cool expression reacting to the historical event behind her.
+- Clothing: Era-accurate costume blended with modern stylish elements.
+- Face: Ultra-sharp focus on the hero's face. Visible skin pores, realistic eye reflections. IDENTITY LOCK: exactly the same person as the reference (face shape, eyes, brows, nose, lips, cheekbones, skin tone, long black hair with thick straight bangs).
+- Glasses: Stylish eyewear reflecting the scene (accurate optical reflections).
+- NO cap, NO hood.
+
+ENVIRONMENT & CONTEXT (from theme + chosen era):
+The background depicts a vivid, chaotic, or humorous historical scene relevant to: Публикация перевода зарубежного произведения in the era Шумер.
+- Action: Dynamic movement, historical figures reacting to the hero or the event.
+- Visual Gag: Witty physical comedy happening in the background, linked to the article's legal topic.
+- Props/Vehicles: 100% era-accurate details (materials, wear and tear, dust).
+
+LIGHTING & ATMOSPHERE:
+- Color Palette: Realistic, rich colors (Fujifilm Velvia simulation), NO vintage yellow filters, NO sepia.
+
+TYPOGRAPHY & BRANDING:
+- Headline: a SHORTENED title (2-5 words, NOT the full article title) "ПЕРЕВОД БЕЗ ЛИЦЕНЗИИ" in big white bold condensed Cyrillic across the top, possibly on a bright plaque, as in the owner samples. Readable when shrunk to 396x300: within central third horizontally; 2-3 lines if needed. Never cover the hero's face.
+- Language: All visible text MUST be in Russian Cyrillic, spelled exactly as given.
+- Footer: Subtle Telegram logo and handle @LIREATE at the very bottom (small, neutral).
+
+TECHNICAL QUALITY TARGETS:
+- 8k resolution, raw photo quality. ISO 100 grain (subtle).
+- Depth of Field: Sharp face, slightly softer background but clearly legible details.
+- Imperfections: Chromatic aberration on edges, motion blur on fast-moving background elements.
+
+NEGATIVE PROMPT:
+Drawing, painting, illustration, 3d render, cartoon, anime, sketch, plastic skin, smooth skin, doll-like, blurry face, bad eyes, distorted hands, watermark, latin letters (except @LIREATE), english text, misspelled Russian.
