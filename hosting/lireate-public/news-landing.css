@@ -1,0 +1,62 @@
+/* Подключить в шаблоне /news после основных стилей: <link rel="stylesheet" href="/inc/news-landing.css"> */
+.lireate-news-hero {
+  margin: 1.5rem 0 2rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  background: #fafafa;
+}
+.lireate-news-cta__title,
+.lireate-news-featured__title {
+  font-size: 1.15rem;
+  margin: 0 0 0.75rem;
+}
+.lireate-news-cta__text {
+  margin: 0 0 1rem;
+  max-width: 42rem;
+}
+.lireate-news-cta__links {
+  margin: 0 0 1.5rem;
+}
+.lireate-btn {
+  display: inline-block;
+  margin-right: 0.75rem;
+  padding: 0.55rem 1.1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+}
+.lireate-btn--tg {
+  background: #229ed9;
+}
+.lireate-btn--wa {
+  background: #25d366;
+}
+.lireate-news-featured__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.lireate-news-featured__item {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+.lireate-news-featured__item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.lireate-news-featured__badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #666;
+  margin-bottom: 0.35rem;
+}
+.lireate-news-featured__item a {
+  font-weight: 600;
+  font-size: 1.05rem;
+}

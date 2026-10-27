@@ -1,0 +1,53 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "#lireate-organization",
+      "name": "Лирейт"
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "#article-l17",
+      "headline": "Можно ли показывать чужие логотипы и эмблемы в видео и на обложках",
+      "description": "Чек-лист для видео и превью: когда чужой логотип или эмблема допустимы, когда нужна лицензия по ГК РФ, как снизить риск претензии по товарному знаку и авторскому праву.",
+      "datePublished": "2026-10-26",
+      "dateModified": "2026-10-26",
+      "inLanguage": "ru",
+      "url": "/mozhno-li-pokazyvat-chuzhie-logotipy-v-video-i-na-oblozhkah",
+      "image": "/template/images/blog/mozhno_li_pokazyvat_chuzhie_logotipy_v_video_i_na_oblozhkah.jpg",
+      "author": { "@id": "#lireate-organization" },
+      "publisher": { "@id": "#lireate-organization" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "#faq-l17",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Можно ли поставить чужой логотип на обложку YouTube для привлечения просмотров?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Если знак узнаваем и вы продвигаете себя или товар в той же сфере, это близко к использованию товарного знака без согласия. Безопаснее свой макет без чужого обозначения или письменное разрешение."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем товарный знак отличается от логотипа в контексте видео?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ТЗ - исключительное право на обозначение в реестре для товаров и услуг. Логотип дополнительно может быть произведением дизайнера. В одном файле на экране вы можете затронуть оба слоя прав."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Достаточно ли указать в описании, что логотип принадлежит компании?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Дисклеймер не заменяет согласие правообладателя на использование по ст. 1484 и 1270 ГК РФ."
+          }
+        }
+      ]
+    }
+  ]
+}
