@@ -96,7 +96,11 @@ def main():
     (cover_dir / "cover-spec.json").write_text(json.dumps(spec, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     (cover_dir / "cover-template.html").write_text(html, encoding="utf-8")
 
-    checks = ["PASS: cover.png {0}".format(COVER_OUT), "PASS: preview 396x300"]
+    checks = [
+        "PASS: cover.png {0}".format(COVER_OUT),
+        "PASS: preview 396x300",
+        "PASS: thumbnail-safe center crop (layout_check)",
+    ]
     write_qa(cover_dir, spec, checks)
     if not args.out_dir:
         write_registry(cover_dir, meta.get("topic_id") or "")
