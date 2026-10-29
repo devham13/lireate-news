@@ -516,3 +516,237 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 - **faq_hints:** можно ли логотип на превью ютуб; нужно ли согласие для обзора; эмблема авто в кадре
 - **internal_links:** /upominanie-chuzhogo-brenda-v-reklame, /otvet-na-pretenziyu-pravoobladatelya-tovarnogo-znaka, /news?num=2&category=10
 - **cover_scene_hint:** превью видео с логотипами, стикеры ТЗ и ©, чек-лист обложки
+
+---
+
+## L18 — Как проверить, свободен ли бренд на Wildberries, и когда нужен товарный знак
+
+- **status:** written
+- **priority:** P0
+- **site:** lireate
+- **lireate_category_id:** 13
+- **lireate_category_name:** Бренд
+- **slug:** kak-proverit-brend-na-wildberries-svoboden-li-tovarnyy-znak
+- **h1:** Как проверить, свободен ли бренд на Wildberries, и когда нужен товарный знак
+- **primary_query:** как проверить есть ли такой бренд на вайлдберриз
+- **secondary_queries:** бренд на вайлдберриз как добавить предположительно, как зарегистрировать свой бренд на озон селлер, проверка бренда на маркетплейсе, свободен ли бренд для регистрации
+- **search_intent:** checklist
+- **article_mode:** B
+- **angle:** Справочник WB vs реестр Роспатента, пошаговая проверка, риски без ТЗ
+- **target_service:** reg-tz
+- **metrika_visits:** 2 (SEO-сводка 2026-10-29)
+- **h2_outline:**
+  1. Разделите каталог Wildberries и государственный реестр товарных знаков
+  2. Проверьте бренд в карточках WB и в Поисковой платформе Роспатента
+  3. Оцените сходство, однородность и чужие «Оригинал» на площадке
+  4. Сопоставьте с регистрацией на Ozon и единой стратегией МКТУ
+  5. Пройдите чек-лист перед подачей заявки и выходом на маркетплейс
+  6. Что делать, если бренд занят или пришла претензия
+- **faq_hints:** достаточно ли проверки только на WB; можно ли продавать без ТЗ; как добавить бренд в ЛК селлера
+- **internal_links:** /kak-zaregistrirovat-brend-na-ozon-i-wildberries, /proverka-tovarnogo-znaka-pered-podachey-v-rospatent, /news?num=2&category=13
+- **cover_scene_hint:** экран ЛК Wildberries и реестр Роспатента, стикеры «справочник ≠ ТЗ», чек-лист МКТУ
+
+---
+
+## L19 — Что делать, если товарный знак занят: пошаговый план
+
+- **status:** written
+- **priority:** P0
+- **site:** lireate
+- **lireate_category_id:** 9
+- **lireate_category_name:** Товарный знак
+- **slug:** chto-delat-esli-tovarnyy-znak-zanyat
+- **h1:** Что делать, если товарный знак занят: пошаговый план
+- **primary_query:** что делать если товарный знак занят
+- **secondary_queries:** товарный знак занят что делать, если товарный знак не зарегистрировали а купил у другого правообладателя, альтернативное обозначение, сходство товарного знака
+- **search_intent:** workflow
+- **article_mode:** B
+- **angle:** Поиск в реестре, доработка знака, лицензия, возражение, смена бренда
+- **target_service:** reg-tz
+- **metrika_visits:** 7 (Вебмастер, SEO 2026-10-29)
+- **h2_outline:**
+  1. Уточните, занято ли обозначение: тождество, сходство, классы МКТУ
+  2. Сравните сценарии: доработка, другой класс, лицензия, покупка прав
+  3. Проверьте риски покупки у «правообладателя» без регистрации в Роспатенте
+  4. Подготовьте альтернативное имя и повторную проверку
+  5. Зафиксируйте документы перед подачей новой заявки
+  6. Когда имеет смысл оспаривать чужую регистрацию
+- **faq_hints:** можно ли зарегистрировать похожий знак; что если занят только логотип; сколько стоит смена бренда
+- **internal_links:** /proverka-tovarnogo-znaka-pered-podachey-v-rospatent, /vozrazhenie-protiv-registracii-tovarnogo-znaka-sroki-poryadok, /news?num=2&category=9
+- **cover_scene_hint:** реестр с красной меткой «занято», стикеры «доработка / лицензия / смена»
+
+---
+
+## L20 — Регистрация мобильного приложения в Роспатенте: программа для ЭВМ или товарный знак
+
+- **status:** written
+- **priority:** P0
+- **site:** lireate
+- **lireate_category_id:** 19
+- **lireate_category_name:** Программа ЭВМ
+- **slug:** registraciya-mobilnogo-prilozheniya-v-rospatente
+- **h1:** Регистрация мобильного приложения в Роспатенте: программа для ЭВМ или товарный знак
+- **primary_query:** регистрация мобильного приложения в роспатенте
+- **secondary_queries:** регистрация программы для эвм в роспatente, товарный знак для приложения, как зарегистрировать название приложения, депонирование исходного кода
+- **search_intent:** comparison
+- **article_mode:** B
+- **angle:** Сравнение ПО и ТЗ, что защищает каждый инструмент, порядок подачи
+- **target_service:** reg-po / reg-tz
+- **metrika_visits:** 36 (Вебмастер, SEO 2026-10-29)
+- **h2_outline:**
+  1. Сравните, что защищает регистрация ПО и что даёт товарный знак приложения
+  2. Подготовьте материалы для программы для ЭВМ: фрагменты, реферат, авторы
+  3. Зарегистрируйте название и иконку как товарный знак в нужных классах МКТУ
+  4. Согласуйте договоры с разработчиками и право на код
+  5. Проверьте публикацию в магазинах App Store и Google Play
+  6. Чек-лист: ПО + ТЗ + политика конфиденциальности
+- **faq_hints:** можно ли одной заявкой; срок регистрации ПО; нужен ли ТЗ для названия в сторе
+- **internal_links:** /kak-opredelit-klass-mktu, /dogovor-na-razrabotku-logotipa-prava-ot-dizajnera, /news?num=2&category=19
+- **cover_scene_hint:** смартфон с иконкой приложения, стикеры «ПО ст. 1261» и «ТЗ класс 9»
+
+---
+
+## L21 — Оспаривание товарного знака в Роспатенте: возражение и порядок
+
+- **status:** new
+- **priority:** P1
+- **site:** lireate
+- **lireate_category_id:** 9
+- **lireate_category_name:** Товарный знак
+- **slug:** osparivanie-tovarnogo-znaka-v-rospatente
+- **h1:** Оспаривание товарного знака в Роспатенте: как подать возражение
+- **primary_query:** оспаривание товарного знака в роспатенте
+- **secondary_queries:** возражение против регистрации товарного знака, куда подается возражение на заявку на товарный знак, куда отправлять возражение против предоставления правовой охраны товарному знаку
+- **search_intent:** workflow
+- **article_mode:** B
+- **angle:** Сроки, подача в ФИПС, основания, отличие от суда
+- **target_service:** защита ТЗ
+- **metrika_visits:** 15 (Вебмастер)
+- **internal_links:** /vozrazhenie-protiv-registracii-tovarnogo-znaka-sroki-poryadok
+- **cover_scene_hint:** конверт возражения, календарь сроков, реестр заявок
+
+---
+
+## L22 — Маркировка импорта и Честный знак: что нужно владельцу бренда
+
+- **status:** new
+- **priority:** P1
+- **site:** lireate
+- **lireate_category_id:** 15
+- **lireate_category_name:** Бизнес
+- **slug:** markirovka-importa-chestnyy-znak-i-tovarnyy-znak
+- **h1:** Маркировка импорта и Честный знак: связь с товарным знаком и брендом
+- **primary_query:** честный знак импорт
+- **secondary_queries:** товарный знак маркировка честный знак, маркировка импорта честный знак, регистрация бренда для импорта
+- **search_intent:** checklist
+- **article_mode:** B
+- **angle:** Развести маркировку, ТЗ и документы импортёра
+- **target_service:** reg-tz
+- **metrika_visits:** 36 (Вебмастер)
+- **internal_links:** /kak-zaregistrirovat-brend-na-ozon-i-wildberries
+- **cover_scene_hint:** код маркировки, коробка импорта, стикер Честный знак
+
+---
+
+## L23 — Защита прав на базу данных: регистрация и доказательства
+
+- **status:** new
+- **priority:** P1
+- **site:** lireate
+- **lireate_category_id:** 17
+- **lireate_category_name:** Авторское право
+- **slug:** zashchita-prav-na-bazu-dannyh
+- **h1:** Защита прав на базу данных: как оформить и доказать нарушение
+- **primary_query:** защита прав на базу данных
+- **secondary_queries:** исключительное право на базу данных гк рф, регистрация базы данных, нарушение прав на базу данных
+- **search_intent:** how_to
+- **article_mode:** B
+- **angle:** Ст. 1334 ГК, договор, фиксация создания, споры
+- **target_service:** —
+- **metrika_visits:** 10 (Вебмастер)
+- **internal_links:** /rezhim-kommercheskoj-tajny-kak-vvesti
+- **cover_scene_hint:** таблица БД, стикер ©, договор с разработчиком
+
+---
+
+## L24 — Сайт-клон конкурента: как защитить бренд в интернете
+
+- **status:** new
+- **priority:** P1
+- **site:** lireate
+- **lireate_category_id:** 13
+- **lireate_category_name:** Бренд
+- **slug:** sajt-klon-zashchita-brenda-v-internete
+- **h1:** Сайт-клон конкурента: как защитить бренд и товарный знак в интернете
+- **primary_query:** защита бренда в интернете
+- **secondary_queries:** блокировка сайта клона, копия сайта конкурента, доменное имя и товарный знак
+- **search_intent:** workflow
+- **article_mode:** B
+- **angle:** ТЗ, домен, хостинг, претензия, суд
+- **target_service:** защита ТЗ
+- **metrika_visits:** 24 (черновик PR #24)
+- **internal_links:** /domennoe-imya-nma-ili-net, /upominanie-chuzhogo-brenda-v-reklame
+- **cover_scene_hint:** два похожих сайта, стикер «клон», письмо претензии
+
+---
+
+## L25 — Регистрация бренда одежды: классы МКТУ и маркетплейсы
+
+- **status:** new
+- **priority:** P1
+- **site:** lireate
+- **lireate_category_id:** 13
+- **lireate_category_name:** Бренд
+- **slug:** registraciya-brenda-odezhdy-mktu
+- **h1:** Регистрация бренда одежды: классы МКТУ для маркетплейсов и розницы
+- **primary_query:** регистрация бренда одежды
+- **secondary_queries:** товарный знак для одежды класс мкту, бренд одежды wildberries, регистрация названия бренда одежды
+- **search_intent:** how_to
+- **article_mode:** B
+- **angle:** Классы 25, 35, лейбл, дизайн vs ТЗ
+- **target_service:** reg-tz
+- **metrika_visits:** 26 (Вебмастер PR #24)
+- **internal_links:** /kak-opredelit-klass-mktu, /kak-zaregistrirovat-brend-na-ozon-i-wildberries
+- **cover_scene_hint:** вешалка с лейблом, класс 25, бирка бренда
+
+---
+
+## L26 — Промышленный образец или товарный знак для дизайна товара
+
+- **status:** new
+- **priority:** P1
+- **site:** lireate
+- **lireate_category_id:** 9
+- **lireate_category_name:** Товарный знак
+- **slug:** promyshlennyy-obrazec-ili-tovarnyy-znak-dizayn-tovara
+- **h1:** Промышленный образец или товарный знак: как защитить дизайн товара
+- **primary_query:** защита дизайна товара
+- **secondary_queries:** патентование дизайна, промышленный образец или товарный знак, ст 1352 гк рф
+- **search_intent:** comparison
+- **article_mode:** B
+- **angle:** Сравнение ПО, ТЗ и промобразца для формы изделия
+- **target_service:** reg-tz / promobrazec
+- **metrika_visits:** 9 (Вебмастер)
+- **internal_links:** /sposoby-zashchity-izobreteniya-patent-nou-hau
+- **cover_scene_hint:** форма бутылки, стикеры «образец» vs «ТЗ»
+
+---
+
+## L27 — Нарушение товарного знака на маркетплейсе: жалоба и доказательства
+
+- **status:** new
+- **priority:** P1
+- **site:** lireate
+- **lireate_category_id:** 15
+- **lireate_category_name:** Бизнес
+- **slug:** narushenie-tovarnogo-znaka-na-marketpleyse
+- **h1:** Нарушение товарного знака на маркетплейсе: как подать жалобу и собрать доказательства
+- **primary_query:** нарушение товарного знака на маркетплейсе
+- **secondary_queries:** жалоба wildberries на копию бренда, контрафакт на ozon, ст 1515 гк претензия селлеру
+- **search_intent:** workflow
+- **article_mode:** B
+- **angle:** Жалоба на площадку, претензия, реестр, скриншоты
+- **target_service:** защита ТЗ
+- **metrika_visits:** 0 (кластер SEO «авторское / ТЗ на МП»)
+- **internal_links:** /otvet-na-pretenziyu-pravoobladatelya-tovarnogo-znaka, /kak-zaregistrirovat-brend-na-ozon-i-wildberries
+- **cover_scene_hint:** карточка товара-копии, скриншот жалобы, свидетельство ТЗ

@@ -41,7 +41,7 @@
   "cover_family": "lireate_collage_v1",
   "cover_scene_hint": "реестр с красной меткой занято, стикеры доработка / лицензия / смена",
   "cover_era": "Античная Греция",
-  "cover_headline": "ТОВАРНЫЙ ЗНАК ЗАНЯТ - ПЛАН",
+  "cover_headline": "ТОВАРНЫЙ ЗНАК ЗАНЯТ ЧТО ДЕЛАТЬ ПОШАГОВЫЙ ПЛАН",
   "cover_highlight": "ЗАНЯТ",
   "cover_sticky": "сценарии до подачи",
   "cover_sticky_underline": "сценарии",
@@ -53,5 +53,6 @@
     "Документы"
   ],
   "cover_style": "collage-v1",
-  "cover_renderer": "html_chromium"
+  "cover_renderer": "html_chromium",
+  "lireate_seo_url": "chto_delat_esli_tovarnyy_znak_zanyat"
 }
