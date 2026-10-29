@@ -1,0 +1,32 @@
+{
+  "headline_lines": [
+    "БРЕНД НА WILDBERRIES",
+    "СВОБОДЕН ЛИ ТОВАРНЫЙ ЗНАК"
+  ],
+  "highlight": "WILDBERRIES",
+  "sticky_text": "справочник ≠ реестр",
+  "sticky_underline": "справочник",
+  "sticky_color": "yellow",
+  "badge_label": "ТЗ",
+  "label_chips": [
+    [
+      "как проверить е…",
+      "black"
+    ],
+    [
+      "бренд на вайлдб…",
+      "white"
+    ],
+    [
+      "проверка бренда…",
+      "pink"
+    ]
+  ],
+  "ui_card_title": "Проверка бренда WB",
+  "ui_card_rows": [
+    "Справочник WB",
+    "Реестр ТЗ",
+    "МКТУ",
+    "Чек-лист"
+  ]
+}
