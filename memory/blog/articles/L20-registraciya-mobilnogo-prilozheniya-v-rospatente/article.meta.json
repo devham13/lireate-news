@@ -23,7 +23,7 @@
   "site": "lireate",
   "lireate_category_id": 19,
   "lireate_category_name": "Программа ЭВМ",
-  "canonical_path": "/registraciya-mobilnogo-prilozheniya-v-rospatente",
+  "canonical_path": "/registraciya_mobilnogo_prilozheniya_programma_dlya_evm_ili_tovarnyy_znak",
   "news_list_url": "/news?num=2&category=19",
   "anchor_variants": [
     "регистрация мобильного приложения в роспатенте: ПО или товарный знак",
@@ -54,5 +54,5 @@
   ],
   "cover_style": "collage-v1",
   "cover_renderer": "html_chromium",
-  "lireate_seo_url": "registraciya_mobilnogo_prilozheniya_v_rospatente"
+  "lireate_seo_url": "registraciya_mobilnogo_prilozheniya_programma_dlya_evm_ili_tovarnyy_znak"
 }

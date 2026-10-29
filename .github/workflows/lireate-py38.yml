@@ -48,6 +48,7 @@ jobs:
           python -m py_compile scripts/lireate_collage_publish_gate.py
           python -m py_compile scripts/lireate_cover_collage.py
           python -m py_compile scripts/lireate_privacy_link_policy.py
+          python -m py_compile scripts/lireate_seo_url_publish_guard.py
 
   php-legacy-lint:
     runs-on: ubuntu-latest
