@@ -1,0 +1,38 @@
+{
+  "article": "memory/blog/articles/L22-markirovka-importa-chestnyy-znak-i-tovarnyy-znak/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 4,
+  "verified_facts_count": 2,
+  "unverified_facts_count": 2,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "афакта по бренду смотрите ТРОИС отдельно. С 01.09.2026 действуют автоштрафы по данным системы ( ФЗ № 120-",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "право на обозначение для однородных товаров ( ст. 1483 ГК РФ ) Роспатент, Поисковая платформа Русская мар",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "100",
+      "kind": "large_number",
+      "context": "воз без маркировки: ИП 5-10 тыс. руб. , юрлица 50-100 тыс. руб. (ч. 1); оборот без маркировки - выше (ч.",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "469",
+      "kind": "large_number",
+      "context": "ция в ГС1 РУС обычно не обязательна. Префиксы 460-469 и правила вашей группы проверьте в инструкции ЦРПТ",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
