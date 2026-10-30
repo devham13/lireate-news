@@ -1,7 +1,7 @@
 # Promotion checklist — L21 osparivanie-tovarnogo-znaka-v-rospatente
 
 Дата публикации: YYYY-MM-DD  
-Live URL: `{PUBLIC_SITE_URL}/osparivanie-tovarnogo-znaka-v-rospatente` (заполнить после publish)  
+Live URL: `{PUBLIC_SITE_URL}/osparivanie_tovarnogo_znaka_v_rospatente_kak_podat_vozrazhenie`  
 Рубрика: Товарный знак (`category_id=9`) — `{PUBLIC_SITE_URL}/news?num=2&category=9`
 
 Excalibur создаёт этот файл после `✅ ARTICLE OK` (до или после выкладки на Lireate /news).
@@ -31,7 +31,7 @@ Excalibur создаёт этот файл после `✅ ARTICLE OK` (до и�
 • Отличие от возражения по своему отказу и от детального гайда по атаке чужой регистрации (L08)
 • Суд по ст. 1248 — после решения ППС, не вместо пропущенного срока
 
-Читать: {PUBLIC_SITE_URL}/osparivanie-tovarnogo-znaka-v-rospatente
+Читать: {PUBLIC_SITE_URL}/osparivanie_tovarnogo_znaka_v_rospatente_kak_podat_vozrazhenie
 ```
 
 ## Перелинковка
