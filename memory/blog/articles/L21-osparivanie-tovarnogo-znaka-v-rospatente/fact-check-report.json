@@ -1,0 +1,143 @@
+{
+  "article": "memory/blog/articles/L21-osparivanie-tovarnogo-znaka-v-rospatente/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "warning",
+  "total_extracted_facts": 19,
+  "verified_facts_count": 2,
+  "unverified_facts_count": 17,
+  "facts": [
+    {
+      "fact": "9 000 руб",
+      "kind": "price_or_currency",
+      "context": "е по своей заявке ( ст. 1500 , 4 месяца , пошлина 9 000 руб. по п. 2.28.2); возражение против охраны чужого с",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "14 000 руб",
+      "kind": "price_or_currency",
+      "context": "тив охраны чужого свидетельства ( ст. 1512-1513 , 14 000 руб. по п. 2.28.4, сроки по ст. 1512). Подача - почта",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "14 000 рублей",
+      "kind": "price_or_currency",
+      "context": "у 9 000 руб. Сколько стоит возражение - 9 000 или 14 000 рублей? 9 000 руб. (п. 2.28.2) - возражение заявителя по",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "ают на экспертизе ( ст. 1499 ). Материал на 30.10.2026 не заменяет консультацию поверенного. Разберите, ч",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "1513 5 лет",
+      "kind": "metric_or_duration",
+      "context": "ротив предоставления охраны ст. 1512 , подача ст. 1513 5 лет с публикации регистрации (п. 6, 7, 10 ст. 1483) и",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "5 лет",
+      "kind": "metric_or_duration",
+      "context": "1512-1513 , 14 000 руб. ). Доказательства и срок 5 лет по сходству - в материале про основания досрочног",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1493",
+      "kind": "large_number",
+      "context": "о существу. Ниже вы определите роль, выберете ст. 1493, 1500 или 1512-1513, подадите документ в ФИПС и п",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1500",
+      "kind": "large_number",
+      "context": "ству. Ниже вы определите роль, выберете ст. 1493, 1500 или 1512-1513, подадите документ в ФИПС и поймёте,",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1512",
+      "kind": "large_number",
+      "context": "е вы определите роль, выберете ст. 1493, 1500 или 1512-1513, подадите документ в ФИПС и поймёте, когда п",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1513",
+      "kind": "large_number",
+      "context": "определите роль, выберете ст. 1493, 1500 или 1512-1513, подадите документ в ФИПС и поймёте, когда после",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "9 000",
+      "kind": "large_number",
+      "context": "е по своей заявке ( ст. 1500 , 4 месяца , пошлина 9 000 руб. по п. 2.28.2); возражение против охраны чужог",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "14 000",
+      "kind": "large_number",
+      "context": "тив охраны чужого свидетельства ( ст. 1512-1513 , 14 000 руб. по п. 2.28.4, сроки по ст. 1512). Подача - по",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1248",
+      "kind": "large_number",
+      "context": "официальный сайт ( Правила 644/261 ). Суд по ст. 1248 - после решения Роспатента по спору в ППС, а не в",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1499",
+      "kind": "large_number",
+      "context": "ращение по ст. 1493 учитывают на экспертизе ( ст. 1499 ). Материал на 30.10.2026 не заменяет консультаци",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1500 4",
+      "kind": "large_number",
+      "context": "регистрация, отзыв и др. Возражение заявителя ст. 1500 4 месяца с направления решения (с оговоркой про запр",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1513 5",
+      "kind": "large_number",
+      "context": "ротив предоставления охраны ст. 1512 , подача ст. 1513 5 лет с публикации регистрации (п. 6, 7, 10 ст. 1483",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "3 5 лет с публикации регистрации (п. 6, 7, 10 ст. 1483) или весь срок охраны (п. 1-5, 8, 9) 14 000 руб.",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "261",
+      "kind": "large_number",
+      "context": "приёмная ФИПС, сайт Роспатента По п. 4 Правил 644/261 подойдут почта, приёмная ФИПС и подача через офици",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1501",
+      "kind": "large_number",
+      "context": "о пропущенного возражения - восстановление по ст. 1501 не гарантировано. Что сделать дальше После выбора",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
