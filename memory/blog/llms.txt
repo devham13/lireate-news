@@ -3,6 +3,7 @@
 
 ## Blog Articles
 
+
 - [Как настроить geo оптимизацию сайта для попадания в ответы нейросетей?](https://example.com/blog/geo-optimizaciya-sajta-2026/): Geo оптимизация сайта – настройка robots.txt, answer-first блоков, FAQPage Schema и мониторинга промптов, чтобы нейросети цитировали ваш бренд как источник.
 - [Как настроить ИИ-агентов в n8n для автоматизации бизнеса?](https://example.com/blog/avtomatizaciya-n8n-ai-agents/): Автоматизация n8n с ИИ-агентами: Chat Trigger, AI Agent node, System Message, tools и Simple Memory. Когда выбрать Make.com вместо self-host n8n.
 - [Как писать SEO-статьи и что такое GEO в одном материале?](https://example.com/blog/primer-seo-stati/): SEO-статья закрывает запрос человека и упакована для AI-ответов: lead 350–500 знаков, атомарные H2, BlogPosting + FAQPage, llms.txt. Объём — по SERP, не по мифической норме.
