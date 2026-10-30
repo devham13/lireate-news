@@ -40,6 +40,17 @@
   },
   "cover_family": "lireate_collage_v1",
   "cover_scene_hint": "код маркировки, коробка импорта, стикер Честный знак",
+  "cover_headline": "ТРИ СЛОЯ ИМПОРТА: ЧЗ GTIN И ТОВАРНЫЙ ЗНАК",
+  "cover_highlight": "ТРИ",
+  "cover_sticky": "Data Matrix ≠ товарный знак",
+  "cover_sticky_underline": "знак",
+  "cover_ui_title": "Чек-лист до ФТС",
+  "cover_ui_rows": [
+    "ГИС МТ и GTIN в НК",
+    "КМ по 50 коп. за штуку",
+    "Нанесение до выпуска",
+    "Ввод в оборот после ФТС"
+  ],
   "cover_style": "collage-v1",
   "cover_renderer": "html_chromium"
 }
