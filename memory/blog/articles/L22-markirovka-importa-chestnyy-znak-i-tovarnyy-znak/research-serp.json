@@ -1,0 +1,428 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-10-30",
+    "today_ru": "30.10.2026",
+    "year": 2026,
+    "month": 10,
+    "month_name_ru": "октябрь",
+    "weekday_ru": "пятница",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-01",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-10-30 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L22",
+    "priority": "P1",
+    "slug": "markirovka-importa-chestnyy-znak-i-tovarnyy-znak",
+    "h1": "Чек-лист: маркировка импорта, Честный знак и товарный знак бренда",
+    "primary_query": "честный знак импорт",
+    "secondary_queries": [
+      "товарный знак маркировка честный знак",
+      "маркировка импорта честный знак",
+      "регистрация бренда для импорта"
+    ],
+    "search_intent": "checklist",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "честный знак импорт 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Маркировка Честный знак при импорте 2026: новые категории, цена…",
+          "url": "https://rusholdlogistic.ru/blog/markirovka-chestnyj-znak-import-2026",
+          "snippet": ""
+        },
+        {
+          "title": "Маркировка «Честный ЗНАК»: как изменились правила для импорта и ...",
+          "url": "https://gbs.ru/about/news/obyazatelnaya-markirovka-chestnyj-znak-v-2026-godu/",
+          "snippet": "Полный гайд по маркировке ЧЗ для импортёра 2026: какие категории добавили (детская одежда, корма, рыба), как наносить на фабрике в Китае, штрафы 300…"
+        },
+        {
+          "title": "Маркировка Честный знак 2026: какие импортные товары подлежат учету",
+          "url": "https://whitechina.ru/tpost/markirovka-chestnyj-znak-2026-kakie-importnye-tovary-podlezhat-uchetu",
+          "snippet": "Маркировка «Честный ЗНАК» в 2026 году: какие товары попадут под требования, сроки внедрения, правила для импортёров и как подготовиться к изменениям."
+        },
+        {
+          "title": "Маркировка «Честный знак»: как маркировать импортные товары в 2026",
+          "url": "https://whitechina.ru/tpost/markirovka-chestnyj-znak-kak-markirovat-importnye-tovary-v-2026",
+          "snippet": "Обязательная маркировка Честный знак - это государственная система цифровой прослеживаемости, которая в 2026 году охватывает до 55% всего легального импорта в РФ."
+        },
+        {
+          "title": "Честный знак импорт: правила для ввоза товаров в 2026",
+          "url": "https://markznak.ru/blog/tipichnye-oshibki-markirovka-importa-marketplace",
+          "snippet": "Маркировка «Честный знак» - это единая государственная система цифровой маркировки и прослеживания товаров в РФ. Импортные товары из Китая и других стран нужно маркировать до ввоза в обращение: без кода маркировки легально продавать и передавать товар нельзя."
+        },
+        {
+          "title": "Честный Знак 2026: Маркировка Для Импортёров - Insal",
+          "url": "https://insal.ru/blog/markirovka-chestnyy-znak-2026-obzor-importeram/",
+          "snippet": "Разбираем, как работает честный знак импорт в 2026 году. Пошаговая инструкция для импортеров: от заказа кодов до таможни и ввода в оборот. Избегайте штрафов."
+        }
+      ],
+      "searched_at": "2026-10-30"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "честный знак импорт октябрь 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Календарь маркировки Честный ЗНАК 2026: сроки по товарным группам ...",
+          "url": "https://truemark.ru/kalendar-markirovki/",
+          "snippet": ""
+        },
+        {
+          "title": "\"Честный знак\" с 1 октября 2026: самые важные изменения",
+          "url": "https://dzen.ru/a/aqEKvNqGoWl5ziEG",
+          "snippet": "Календарь маркировки Truemark собирает в одном месте все ключевые даты обязательной маркировки «Честный ЗНАК» по 50+ товарным группам — от регистрации в системе до перехода на поэкземплярный учёт."
+        },
+        {
+          "title": "Маркировка Честный знак с 1 октября 2026 года: что изменится в ...",
+          "url": "https://mertech.ru/blog/vse-o-markirovke/chto-izmenitsya-v-sisteme-markirovki-s-1-oktyabrya-2026-goda/",
+          "snippet": "С 1 сентября 2026 года участники оборота санитарно-гигиенических товаров обязаны зарегистрироваться в системе \"Честный знак\". А с 1 октября - наносить коды маркировки на упаковку."
+        },
+        {
+          "title": "Календарь маркировки Честный знак на 2026 год: в каких товарных группах ...",
+          "url": "https://kontur.ru/markirovka/spravka/54370-kalendar_markirovki_tovarov",
+          "snippet": "Рассказываем, что изменится в системе маркировки Честный знак с 1 октября 2026 года: новые товарные группы, объёмно-сортовой учёт, маркетплейсы и X-API-KEY."
+        },
+        {
+          "title": "Какие товары подлежат маркировке Честный ЗНАК в 2026 | Fulllog",
+          "url": "https://fulllog.ru/blog/markirovka-chestny-znak-kakie-tovary-2026",
+          "snippet": "С 1 октября 2026 года начнется маркировка для крестьянско-фермерских хозяйств (КФХ) и сельскохозяйственных кооперативов, они будут наносить коды Data Matrix сразу на все товары из ..."
+        },
+        {
+          "title": "Обязательная маркировка товаров - официальный сайт торговой маркировки ...",
+          "url": "https://честныйзнак.рф/",
+          "snippet": "Полный список товаров, подлежащих маркировке Честный ЗНАК в 2026 году: категории, даты старта по группам и как проверить свой товар по ТН ВЭД и ОКПД2."
+        }
+      ],
+      "searched_at": "2026-10-30"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "честный знак импорт новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Честный ЗНАК 2026: автоматическая блокировка товаров при импорте ...",
+          "url": "https://lcmg.ru/company/news/markirovka-i-avtomaticheskaya-blokirovka-tovarov-kak-sistema-chestnyy-znak-menyaet-kontrol-za-import/",
+          "snippet": ""
+        },
+        {
+          "title": "Честный ЗНАК 2026: маркировка при импорте из Китая",
+          "url": "https://asia-import.ru/blog/2026/08/10/chestny-znak-labeling-importers-from-china-product-groups-calendar-2026/",
+          "snippet": "С 1 сентября 2026 года в России планируется запуск новых правил, которые кардинально изменят подход к контролю за маркировкой товаров. В рамках этого процесса система «Честный знак» превратится из системы учета в инструмент мгновенной блокировки продукции."
+        },
+        {
+          "title": "Маркировка «Честный знак» в 2026: как импортёрам избежать задержек",
+          "url": "https://exporterimporter.ru/all-news/markirovka-chestnyj-znak-v-2026-kak-importjoram-izbezhat-zaderzhek/",
+          "snippet": "Маркировка «Честный ЗНАК» для импортёра из Китая в 2026: календарь товарных групп, коды Data Matrix до подачи ДТ, сроки и штрафы. Что важно знать."
+        },
+        {
+          "title": "Честный знак импорт: правила для ввоза товаров в 2026",
+          "url": "https://markznak.ru/blog/tipichnye-oshibki-markirovka-importa-marketplace",
+          "snippet": "Система маркировки «Честный знак» продолжает расширяться. В 2026 году под обязательную маркировку попадают новые товарные группы, а контроль за соблюдением требований становится ..."
+        },
+        {
+          "title": "Календарь маркировки Честный ЗНАК 2026: сроки по товарным группам ...",
+          "url": "https://truemark.ru/kalendar-markirovki/",
+          "snippet": "Разбираем, как работает честный знак импорт в 2026 году. Пошаговая инструкция для импортеров: от заказа кодов до таможни и ввода в оборот. Избегайте штрафов."
+        },
+        {
+          "title": "Маркировка Честный знак при импорте 2026: новые категории, цена…",
+          "url": "https://rusholdlogistic.ru/blog/markirovka-chestnyj-znak-import-2026",
+          "snippet": "Календарь маркировки Truemark собирает в одном месте все ключевые даты обязательной маркировки «Честный ЗНАК» по 50+ товарным группам — от регистрации в системе до перехода на поэкземплярный учёт."
+        }
+      ],
+      "searched_at": "2026-10-30"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "товарный знак маркировка честный знак 2026",
+      "purpose": "вторичный запрос: товарный знак маркировка честный знак",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Маркировка Честный ЗНАК 2026: товары, коды, сроки | Truemark",
+          "url": "https://truemark.ru/markirovka-chestnyj-znak/",
+          "snippet": ""
+        },
+        {
+          "title": "Календарь маркировки Честный ЗНАК 2026: сроки по товарным группам ...",
+          "url": "https://truemark.ru/kalendar-markirovki/",
+          "snippet": "Полный гид по маркировке Честный ЗНАК 2026: какие товары подлежат, коды Data Matrix, сроки, штрафы, как маркировать через Truemark — от регистрации до УПД."
+        },
+        {
+          "title": "Маркировка Честный Знак 2026-2027: Полный гайд по автоматизации с MarkZnak",
+          "url": "https://markznak.ru/markirovka_2026",
+          "snippet": "Это бесплатный интерактивный график всех дат обязательной маркировки «Честный ЗНАК» по товарным группам: регистрация, старт маркировки, маркировка остатков, разрешительный режим ..."
+        },
+        {
+          "title": "Маркировка товаров «Честный ЗНАК» в 2026 году: полный обзор нововведений",
+          "url": "https://mertech.ru/blog/vse-o-markirovke/markirovka-tovarov-chestnyi-znak/",
+          "snippet": "Узнайте, как настроить маркировку товаров в 2026 году. Пошаговая инструкция для производителей и ритейла, работа с ТСД, ЭДО и Честным Знаком через сервис MarkZnak"
+        },
+        {
+          "title": "Обязательная маркировка товаров в 2026 году — «Честный знак»",
+          "url": "https://www.pricetag.ru/articles/obyazatelnaya-markirovka-tovarov-v-2026-godu-chestniy-znak/",
+          "snippet": "Какие товары попадут под маркировку в 2026 году. Новые правила «Честного ЗНАКа», поэтапное введение и сроки для производителей и ритейла."
+        },
+        {
+          "title": "Обязательная маркировка товаров в 2026 году: полное руководство для ...",
+          "url": "https://www.ubrr.ru/dlya-biznesa/podderzhka-biznesa/spravochnik-predprinimatelya/kalendar-markirovki",
+          "snippet": "Полное руководство по обязательной цифровой маркировке товаров «Честный знак» для производителей, импортеров и продавцов."
+        }
+      ],
+      "searched_at": "2026-10-30"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "маркировка импорта честный знак 2026",
+      "purpose": "вторичный запрос: маркировка импорта честный знак",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Маркировка Честный ЗНАК 2026: товары, коды, сроки | Truemark",
+          "url": "https://truemark.ru/markirovka-chestnyj-znak/",
+          "snippet": ""
+        },
+        {
+          "title": "Товары подлежащие маркировке в 2026 — полный перечень «Честный знак»",
+          "url": "https://1markirovka.ru/blog/tovary-podlezhashchie-markirovke/",
+          "snippet": "Полный гид по маркировке Честный ЗНАК 2026: какие товары подлежат, коды Data Matrix, сроки, штрафы, как маркировать через Truemark — от регистрации до УПД."
+        },
+        {
+          "title": "Какие товары подлежат маркировке Честный ЗНАК в 2026 | Fulllog",
+          "url": "https://fulllog.ru/blog/markirovka-chestny-znak-kakie-tovary-2026",
+          "snippet": "Полный перечень товаров, подлежащих обязательной маркировке «Честный знак» в 2026 году: действующие группы, поэтапные и эксперименты."
+        },
+        {
+          "title": "Какие товары подлежат маркировке «Честный знак» в 2026: список",
+          "url": "https://swiftrans.ru/news/tovary-podlezhashchie-markirovke/",
+          "snippet": "Полный список товаров, подлежащих маркировке Честный ЗНАК в 2026 году: категории, даты старта по группам и как проверить свой товар по ТН ВЭД и ОКПД2."
+        },
+        {
+          "title": "Какие товары подлежат маркировке «Честный знак» в 2026 году — список 48 ...",
+          "url": "https://markznak.ru/tovary-podlezhashchie-markirovke",
+          "snippet": "Разбираем, какие товары подлежат обязательной маркировке в 2026 году, что изменилось за год, что маркировать не нужно и как промаркировать импортный товар, чтобы он приехал в Россию ..."
+        },
+        {
+          "title": "Товарные группы маркировки Честный знак 2026: полный список и сроки ...",
+          "url": "https://ibexpert.ru/markirovka/stati/tovarnye-gruppy/",
+          "snippet": "Маркировке «Честный знак» подлежат 48 товарных групп: 33 обязательны сейчас, 6 стоят в графике, 9 в эксперименте. Таблица кодов ТН ВЭД и дат. Проверьте свой товар по коду бесплатно."
+        }
+      ],
+      "searched_at": "2026-10-30"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "регистрация бренда для импорта 2026",
+      "purpose": "вторичный запрос: регистрация бренда для импорта",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Регистрация бренда: пошаговая инструкция 2026 | IPbot",
+          "url": "https://ipbot.ru/articles/registratsiya-brenda/",
+          "snippet": ""
+        },
+        {
+          "title": "Как зарегистрировать бренд в 2026 году?",
+          "url": "https://www.dvitex.ru/poleznoe/biznes/intellektualnaya-sobstvennost/kak-zaregistrirovat-brend/",
+          "snippet": "Как зарегистрировать бренд в России. Что можно защитить, порядок регистрации, стоимость, сроки и ошибки, которых стоит избегать."
+        },
+        {
+          "title": "Параллельный импорт 2026: новый перечень Минпромторга и риски для бизнеса",
+          "url": "https://1patent.ru/blog/parallelnyy-import-2026.html",
+          "snippet": "В статье юристы рассказывают о порядке регистрации бренда в Роспатенте, сроках регистрации и размере госпошлины. Можно ли сократить срок регистрации и уменьшить пошлину?"
+        },
+        {
+          "title": "Регистрация бренда: как защитить название и логотип в 2026 году",
+          "url": "https://patent-family.ru/journal/tz/registraciya-brenda/",
+          "snippet": "Разбираем, как обновление перечня Минпромторга по параллельному импорту в 2026 году меняет правила для бизнеса и что нужно проверить импортёрам и владельцам товарных знаков."
+        },
+        {
+          "title": "Регистрация брендов в 2026 году: декларация о намерении использовать ...",
+          "url": "https://ezybrand.ru/blog/registracziya-brendov-v-2026-godu-deklaracziya-o-namerenii-ispolzovat-tovarnyj-znak/",
+          "snippet": "Зарегистрировать бренд целиком нельзя — защитить можно только его элементы через товарный знак. Разбираем стратегию защиты названия и логотипа, этапы регистрации и типичные ошибки."
+        },
+        {
+          "title": "Как зарегистрировать товарный знак в 2026 году",
+          "url": "https://akp-legal.ru/blog/kak-zaregistrirovat-tovarnyj-znak-v-2026-godu/",
+          "snippet": "Государство ужесточает подход к регистрации брендов, чтобы противодействовать тем, кто оформляет их без планов реального использования на рынке. Речь идет о введении декларации о намерении использовать товарный знак. Рассказываем по порядку, что именно изменится и как это отразится на вашем бизнесе."
+        }
+      ],
+      "searched_at": "2026-10-30"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Чек-лист: маркировка импорта, Честный знак и товарный знак бренда 2026",
+      "purpose": "SERP по H1",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-10-30"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://rusholdlogistic.ru/blog/markirovka-chestnyj-znak-import-2026",
+      "title": "Маркировка Честный знак при импорте 2026: новые категории, цена…",
+      "from_query": "честный знак импорт 2026"
+    },
+    {
+      "url": "https://gbs.ru/about/news/obyazatelnaya-markirovka-chestnyj-znak-v-2026-godu/",
+      "title": "Маркировка «Честный ЗНАК»: как изменились правила для импорта и ...",
+      "from_query": "честный знак импорт 2026"
+    },
+    {
+      "url": "https://whitechina.ru/tpost/markirovka-chestnyj-znak-2026-kakie-importnye-tovary-podlezhat-uchetu",
+      "title": "Маркировка Честный знак 2026: какие импортные товары подлежат учету",
+      "from_query": "честный знак импорт 2026"
+    },
+    {
+      "url": "https://whitechina.ru/tpost/markirovka-chestnyj-znak-kak-markirovat-importnye-tovary-v-2026",
+      "title": "Маркировка «Честный знак»: как маркировать импортные товары в 2026",
+      "from_query": "честный знак импорт 2026"
+    },
+    {
+      "url": "https://markznak.ru/blog/tipichnye-oshibki-markirovka-importa-marketplace",
+      "title": "Честный знак импорт: правила для ввоза товаров в 2026",
+      "from_query": "честный знак импорт 2026"
+    },
+    {
+      "url": "https://insal.ru/blog/markirovka-chestnyy-znak-2026-obzor-importeram/",
+      "title": "Честный Знак 2026: Маркировка Для Импортёров - Insal",
+      "from_query": "честный знак импорт 2026"
+    },
+    {
+      "url": "https://truemark.ru/kalendar-markirovki/",
+      "title": "Календарь маркировки Честный ЗНАК 2026: сроки по товарным группам ...",
+      "from_query": "честный знак импорт октябрь 2026"
+    },
+    {
+      "url": "https://dzen.ru/a/aqEKvNqGoWl5ziEG",
+      "title": "\"Честный знак\" с 1 октября 2026: самые важные изменения",
+      "from_query": "честный знак импорт октябрь 2026"
+    },
+    {
+      "url": "https://mertech.ru/blog/vse-o-markirovke/chto-izmenitsya-v-sisteme-markirovki-s-1-oktyabrya-2026-goda/",
+      "title": "Маркировка Честный знак с 1 октября 2026 года: что изменится в ...",
+      "from_query": "честный знак импорт октябрь 2026"
+    },
+    {
+      "url": "https://kontur.ru/markirovka/spravka/54370-kalendar_markirovki_tovarov",
+      "title": "Календарь маркировки Честный знак на 2026 год: в каких товарных группах ...",
+      "from_query": "честный знак импорт октябрь 2026"
+    },
+    {
+      "url": "https://fulllog.ru/blog/markirovka-chestny-znak-kakie-tovary-2026",
+      "title": "Какие товары подлежат маркировке Честный ЗНАК в 2026 | Fulllog",
+      "from_query": "честный знак импорт октябрь 2026"
+    },
+    {
+      "url": "https://честныйзнак.рф/",
+      "title": "Обязательная маркировка товаров - официальный сайт торговой маркировки ...",
+      "from_query": "честный знак импорт октябрь 2026"
+    },
+    {
+      "url": "https://lcmg.ru/company/news/markirovka-i-avtomaticheskaya-blokirovka-tovarov-kak-sistema-chestnyy-znak-menyaet-kontrol-za-import/",
+      "title": "Честный ЗНАК 2026: автоматическая блокировка товаров при импорте ...",
+      "from_query": "честный знак импорт новости 2026"
+    },
+    {
+      "url": "https://asia-import.ru/blog/2026/08/10/chestny-znak-labeling-importers-from-china-product-groups-calendar-2026/",
+      "title": "Честный ЗНАК 2026: маркировка при импорте из Китая",
+      "from_query": "честный знак импорт новости 2026"
+    },
+    {
+      "url": "https://exporterimporter.ru/all-news/markirovka-chestnyj-znak-v-2026-kak-importjoram-izbezhat-zaderzhek/",
+      "title": "Маркировка «Честный знак» в 2026: как импортёрам избежать задержек",
+      "from_query": "честный знак импорт новости 2026"
+    },
+    {
+      "url": "https://truemark.ru/markirovka-chestnyj-znak/",
+      "title": "Маркировка Честный ЗНАК 2026: товары, коды, сроки | Truemark",
+      "from_query": "товарный знак маркировка честный знак 2026"
+    },
+    {
+      "url": "https://markznak.ru/markirovka_2026",
+      "title": "Маркировка Честный Знак 2026-2027: Полный гайд по автоматизации с MarkZnak",
+      "from_query": "товарный знак маркировка честный знак 2026"
+    },
+    {
+      "url": "https://mertech.ru/blog/vse-o-markirovke/markirovka-tovarov-chestnyi-znak/",
+      "title": "Маркировка товаров «Честный ЗНАК» в 2026 году: полный обзор нововведений",
+      "from_query": "товарный знак маркировка честный знак 2026"
+    },
+    {
+      "url": "https://www.pricetag.ru/articles/obyazatelnaya-markirovka-tovarov-v-2026-godu-chestniy-znak/",
+      "title": "Обязательная маркировка товаров в 2026 году — «Честный знак»",
+      "from_query": "товарный знак маркировка честный знак 2026"
+    },
+    {
+      "url": "https://www.ubrr.ru/dlya-biznesa/podderzhka-biznesa/spravochnik-predprinimatelya/kalendar-markirovki",
+      "title": "Обязательная маркировка товаров в 2026 году: полное руководство для ...",
+      "from_query": "товарный знак маркировка честный знак 2026"
+    },
+    {
+      "url": "https://1markirovka.ru/blog/tovary-podlezhashchie-markirovke/",
+      "title": "Товары подлежащие маркировке в 2026 — полный перечень «Честный знак»",
+      "from_query": "маркировка импорта честный знак 2026"
+    },
+    {
+      "url": "https://swiftrans.ru/news/tovary-podlezhashchie-markirovke/",
+      "title": "Какие товары подлежат маркировке «Честный знак» в 2026: список",
+      "from_query": "маркировка импорта честный знак 2026"
+    },
+    {
+      "url": "https://markznak.ru/tovary-podlezhashchie-markirovke",
+      "title": "Какие товары подлежат маркировке «Честный знак» в 2026 году — список 48 ...",
+      "from_query": "маркировка импорта честный знак 2026"
+    },
+    {
+      "url": "https://ibexpert.ru/markirovka/stati/tovarnye-gruppy/",
+      "title": "Товарные группы маркировки Честный знак 2026: полный список и сроки ...",
+      "from_query": "маркировка импорта честный знак 2026"
+    },
+    {
+      "url": "https://ipbot.ru/articles/registratsiya-brenda/",
+      "title": "Регистрация бренда: пошаговая инструкция 2026 | IPbot",
+      "from_query": "регистрация бренда для импорта 2026"
+    },
+    {
+      "url": "https://www.dvitex.ru/poleznoe/biznes/intellektualnaya-sobstvennost/kak-zaregistrirovat-brend/",
+      "title": "Как зарегистрировать бренд в 2026 году?",
+      "from_query": "регистрация бренда для импорта 2026"
+    },
+    {
+      "url": "https://1patent.ru/blog/parallelnyy-import-2026.html",
+      "title": "Параллельный импорт 2026: новый перечень Минпромторга и риски для бизнеса",
+      "from_query": "регистрация бренда для импорта 2026"
+    },
+    {
+      "url": "https://patent-family.ru/journal/tz/registraciya-brenda/",
+      "title": "Регистрация бренда: как защитить название и логотип в 2026 году",
+      "from_query": "регистрация бренда для импорта 2026"
+    },
+    {
+      "url": "https://ezybrand.ru/blog/registracziya-brendov-v-2026-godu-deklaracziya-o-namerenii-ispolzovat-tovarnyj-znak/",
+      "title": "Регистрация брендов в 2026 году: декларация о намерении использовать ...",
+      "from_query": "регистрация бренда для импорта 2026"
+    },
+    {
+      "url": "https://akp-legal.ru/blog/kak-zaregistrirovat-tovarnyj-znak-v-2026-godu/",
+      "title": "Как зарегистрировать товарный знак в 2026 году",
+      "from_query": "регистрация бренда для импорта 2026"
+    }
+  ]
+}

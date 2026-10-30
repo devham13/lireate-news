@@ -1,0 +1,80 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-10-30",
+    "today_ru": "30.10.2026",
+    "year": 2026,
+    "month": 10,
+    "month_name_ru": "октябрь",
+    "weekday_ru": "пятница",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-01",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-10-30 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L22",
+    "priority": "P1",
+    "slug": "markirovka-importa-chestnyy-znak-i-tovarnyy-znak",
+    "h1": "Чек-лист: маркировка импорта, Честный знак и товарный знак бренда",
+    "primary_query": "честный знак импорт",
+    "secondary_queries": [
+      "товарный знак маркировка честный знак",
+      "маркировка импорта честный знак",
+      "регистрация бренда для импорта"
+    ],
+    "search_intent": "checklist",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "L22",
+    "status": "PASS",
+    "search_intent": "checklist",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "честный знак импорт 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "честный знак импорт октябрь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "честный знак импорт новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "товарный знак маркировка честный знак 2026",
+      "purpose": "вторичный запрос: товарный знак маркировка честный знак"
+    },
+    {
+      "id": "secondary_2",
+      "query": "маркировка импорта честный знак 2026",
+      "purpose": "вторичный запрос: маркировка импорта честный знак"
+    },
+    {
+      "id": "secondary_3",
+      "query": "регистрация бренда для импорта 2026",
+      "purpose": "вторичный запрос: регистрация бренда для импорта"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Чек-лист: маркировка импорта, Честный знак и товарный знак бренда 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/L22-markirovka-importa-chestnyy-znak-i-tovarnyy-znak",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}

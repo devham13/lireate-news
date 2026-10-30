@@ -629,13 +629,13 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L22 — Маркировка импорта и Честный знак: что нужно владельцу бренда
 
-- **status:** new
+- **status:** written
 - **priority:** P1
 - **site:** lireate
 - **lireate_category_id:** 15
 - **lireate_category_name:** Бизнес
 - **slug:** markirovka-importa-chestnyy-znak-i-tovarnyy-znak
-- **h1:** Маркировка импорта и Честный знак: связь с товарным знаком и брендом
+- **h1:** Чек-лист: маркировка импорта, Честный знак и товарный знак бренда
 - **primary_query:** честный знак импорт
 - **secondary_queries:** товарный знак маркировка честный знак, маркировка импорта честный знак, регистрация бренда для импорта
 - **search_intent:** checklist
