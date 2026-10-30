@@ -1,48 +1,21 @@
 {
   "source": "memory/blog/articles/L21-osparivanie-tovarnogo-znaka-v-rospatente/article.html",
-  "total_links": 13,
+  "total_links": 15,
   "failed_count": 0,
   "privacy_policy_violations": [],
   "verdict": "pass",
   "links": [
     {
-      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/da1d238252af35623ade3d61ef2cd110c632dd5f/",
-      "status": 200,
-      "ok": true,
-      "method": "HEAD",
-      "error": null,
-      "kind": "external",
-      "skipped": false
-    },
-    {
-      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/04d8518205401260b478eea8470dd73a41a97085/",
-      "status": 200,
-      "ok": true,
-      "method": "HEAD",
-      "error": null,
-      "kind": "external",
-      "skipped": false
-    },
-    {
-      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/65a4af0cccfa200fb361da6e731356a369a0ed8e/",
-      "status": 200,
-      "ok": true,
-      "method": "HEAD",
-      "error": null,
-      "kind": "external",
-      "skipped": false
-    },
-    {
-      "url": "https://base.garant.ru/74563620/53f89421bbdaf741eb2d1ecc4ddb4c33/",
-      "status": 200,
-      "ok": true,
-      "method": "HEAD",
-      "error": null,
-      "kind": "external",
-      "skipped": false
-    },
-    {
       "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/d2dcd2977e647a08c6f2a264994c10c8b51bee1a/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/",
       "status": 200,
       "ok": true,
       "method": "HEAD",
@@ -60,16 +33,7 @@
       "skipped": false
     },
     {
-      "url": "https://searchplatform.rospatent.gov.ru/trademarks",
-      "status": 200,
-      "ok": true,
-      "method": "HEAD",
-      "error": null,
-      "kind": "external",
-      "skipped": false
-    },
-    {
-      "url": "https://licensingrussia.ru/article/14579-kak-proverit-registriruemyi-tovarnyi-znak-pered-podachei-zaiavki-v-rospatent/",
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/65a4af0cccfa200fb361da6e731356a369a0ed8e/",
       "status": 200,
       "ok": true,
       "method": "HEAD",
@@ -87,16 +51,6 @@
       "skipped": false
     },
     {
-      "url": "/proverka_tovarnogo_znaka_pered_registraciey_chek_list_po_reestram_rospatenta",
-      "status": 200,
-      "ok": true,
-      "method": "HEAD",
-      "error": null,
-      "kind": "internal_relative",
-      "skipped": false,
-      "checked_url": "/proverka_tovarnogo_znaka_pered_registraciey_chek_list_po_reestram_rospatenta"
-    },
-    {
       "url": "https://www.klerk.ru/blogs/patent24/683176/",
       "status": 200,
       "ok": true,
@@ -106,17 +60,72 @@
       "skipped": false
     },
     {
-      "url": "/kak_zaschitit_tovarnyiy_znak_i_reputaciyu_biznesa_v_seti",
+      "url": "https://searchplatform.rospatent.gov.ru/trademarks",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://base.garant.ru/74563620/53f89421bbdaf741eb2d1ecc4ddb4c33/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/chto_delat_esli_tovarnyy_znak_zanyat",
       "status": 200,
       "ok": true,
       "method": "HEAD",
       "error": null,
       "kind": "internal_relative",
       "skipped": false,
-      "checked_url": "/kak_zaschitit_tovarnyiy_znak_i_reputaciyu_biznesa_v_seti"
+      "checked_url": "/chto_delat_esli_tovarnyy_znak_zanyat"
     },
     {
-      "url": "/news?num=2&category=9",
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/2e83c7a3d54808ca80d8f0b2a034caa0f7122b57/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.gosuslugi.ru/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://licensingrussia.ru/article/14579-kak-proverit-registriruemyi-tovarnyi-znak-pered-podachei-zaiavki-v-rospatent/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/reg-tz-main",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/reg-tz-main"
+    },
+    {
+      "url": "/news",
       "status": 200,
       "ok": true,
       "method": "HEAD",
@@ -124,6 +133,16 @@
       "kind": "internal_relative",
       "skipped": false,
       "checked_url": "/news?num=2&category=9"
+    },
+    {
+      "url": "/proverka_tovarnogo_znaka_pered_registraciey_chek_list_po_reestram_rospatenta",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/proverka_tovarnogo_znaka_pered_registraciey_chek_list_po_reestram_rospatenta"
     }
   ]
 }

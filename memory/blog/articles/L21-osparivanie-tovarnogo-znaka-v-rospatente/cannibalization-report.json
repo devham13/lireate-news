@@ -1,6 +1,6 @@
 {
-  "verdict": "warning",
-  "total_issues": 1,
+  "verdict": "fail",
+  "total_issues": 2,
   "issues": [
     {
       "severity": "warning",
@@ -13,6 +13,16 @@
       "primary_query": "как подать возражение против регистрации товарного знака",
       "secondary_query": "возражение против регистрации товарного знака",
       "similarity": 0.83
+    },
+    {
+      "severity": "fail",
+      "type": "duplicate_primary_query",
+      "message": "CRITICAL: Articles 'L03-kak-zaregistrirovat-brend-na-ozon-i-wildberries' and 'L18-kak-proverit-brend-na-wildberries-svoboden-li-tovarnyy-znak' share the EXACT SAME primary query: 'как проверить есть ли такой бренд на вайлдберриз'",
+      "articles": [
+        "L03-kak-zaregistrirovat-brend-na-ozon-i-wildberries",
+        "L18-kak-proverit-brend-na-wildberries-svoboden-li-tovarnyy-znak"
+      ],
+      "query": "как проверить есть ли такой бренд на вайлдберриз"
     }
   ]
 }
