@@ -1,7 +1,7 @@
 {
   "site_base": "https://example.com",
   "total_articles": 26,
-  "opportunities_found": 5,
+  "opportunities_found": 6,
   "suggestions": [
     {
       "source": "L17-mozhno-li-pokazyvat-chuzhie-logotipy-v-video-i-na-oblozhkah",
@@ -37,6 +37,13 @@
       "keyword": "как проверить есть ли такой бренд на вайлдберриз",
       "context": "ом на Wildberries хотите понять, свободен ли бренд. Запрос \"как проверить есть ли такой бренд на вайлдберриз\" отвечает только на часть задачи: каталог площадки не равен",
       "link_replacement": "<a href=\"/blog/kak-zaregistrirovat-brend-na-ozon-i-wildberries/\">как проверить есть ли такой бренд на вайлдберриз</a>"
+    },
+    {
+      "source": "L03-kak-zaregistrirovat-brend-na-ozon-i-wildberries",
+      "target": "L18-kak-proverit-brend-na-wildberries-svoboden-li-tovarnyy-znak",
+      "keyword": "как проверить есть ли такой бренд на вайлдберриз",
+      "context": "те название: Wildberries, Ozon и Роспатент</h2>  <p>Запрос \"как проверить есть ли такой бренд на вайлдберриз\" закрывается при создании: <a href=\"https://seller.wildberr",
+      "link_replacement": "<a href=\"/blog/kak-proverit-brend-na-wildberries-svoboden-li-tovarnyy-znak/\">как проверить есть ли такой бренд на вайлдберриз</a>"
     }
   ]
 }

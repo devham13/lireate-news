@@ -1,7 +1,7 @@
 # QA: L21 osparivanie-tovarnogo-znaka-v-rospatente
 
 date: 2026-10-30
-score_total: 89/100
+score_total: 91/100
 core_eeat_lite: 17/20
 link_verify: pass
 utility_gate: pass
@@ -11,12 +11,12 @@ verdict: PASS
 
 | Блок | Вес | Балл | Комментарий |
 |------|-----|------|-------------|
-| SEO structure | 20 | 18 | H2×8, FAQ 7, таблица 1493/1500/1512, ol×7, TL;DR blockquote |
-| GEO / citability | 25 | 23 | workflow-карта трёх процедур, «Делайте / не делайте», FAQ answer-first |
+| SEO structure | 20 | 18 | H2×8, FAQ 7, 2 таблицы, ol×7, угол «карта стадий vs L08 how-to» |
+| GEO / citability | 25 | 23 | TL;DR, матрица стадий, FAQ answer-first, blockquote-схема |
 | CORE-EEAT lite | 15 | 14 | 17/20 (см. ниже) |
-| Human voice | 15 | 13 | 0 AI-slop hits; −2 четыре предложения >25 слов |
-| Fact safety | 15 | 12 | fact-check WARNING (19 extracted, 2 verified); сверено с research-notes |
-| Contract HTML | 10 | 9 | linter PASS, объём ~8.5k ✓; −1 нет `<img>` с alt (cover после cover-агента) |
+| Human voice | 15 | 14 | 0 AI-slop hits; −1 один over-long hit (артефакт парсера blockquote+ol) |
+| Fact safety | 15 | 12 | fact-check WARNING (14 unverified; сверено с research-notes) |
+| Contract HTML | 10 | 10 | linter PASS, объём ~8.5k ✓ |
 
 **Порог PASS:** ≥80, CORE-EEAT ≥16/20, link-verify pass, utility gate PASS — **выполнен**.
 
@@ -24,26 +24,26 @@ verdict: PASS
 
 | ID | ✓/✗ | Примечание |
 |----|-----|------------|
-| C01 | ✓ | H1/title — оспаривание ТЗ в Роспатенте, три процедуры |
-| C02 | ✓ | Lead + TL;DR — 1493 / 1500 / 1512-1513 |
-| C03 | ✓ | Заявитель, третье лицо, правообладатель |
-| C04 | ✓ | ст. 1493, 1500, 1512-1513, 1248; 9 000 / 14 000 ₽ |
+| C01 | ✓ | H1/title — оспаривание в Роспатенте, возражение |
+| C02 | ✓ | Lead + TL;DR — 1493 vs 1512–1513 |
+| C03 | ✓ | Заинтересованный правообладатель / конкурент |
+| C04 | ✓ | ППС, МКТУ, заинтересованное лицо |
 | O01 | ✓ | H2 = research action_outline |
-| O02 | ✓ | Карта → таблица → каналы → 1500 → отличие L08 → 7 шагов → суд |
+| O02 | ✓ | Термины → матрица → основания → admin vs court |
 | O03 | ✓ | FAQ 7 |
-| O04 | ✓ | Таблица, ol, blockquote |
-| R01 | ✓ | Standalone блоки в секциях |
-| R02 | ✓ | КонсультантПлюс, ГАРАНТ, Поисковая платформа, klerk |
-| R03 | ✓ | 4 мес., 9k/14k, 5 лет — из research-notes |
+| O04 | ✓ | Таблицы, ol, blockquote |
+| R01 | ✓ | Standalone блоки 40–60 слов |
+| R02 | ✓ | КонсультантПлюс, ГАРАНТ 644/261, klerk 2.28.4 |
+| R03 | ✓ | 14 000 ₽, 9 000 ₽, 5 лет — из research-notes |
 | R04 | ✓ | FAQ: ответ в первом предложении |
-| E01 | ✓ | Отстройка от L08 (детальная атака) и ст. 1500 vs 1513 |
-| E02 | ✓ | «Делайте / не делайте» |
-| E03 | ✓ | CTA защита знака ×1, чек-лист L01 legacy, рубрика category=9 |
+| E01 | ✓ | Карта оспаривания, не клон L08 |
+| E02 | ✓ | «Делайте / не делайте» в секциях |
+| E03 | ✓ | CTA reg-tz-main ×1 |
 | Exp01 | ✓ | Режим B |
-| Exp02 | ✓ | research-notes |
+| Exp02 | ✓ | research-notes / brief |
 | Exp03 | ✓ | 0 slop hits |
-| Ept01 | ✓ | Не юрконсультация, дата 30.10.2026 |
-| Ept02 | ✗ | Interlink L08 slug отложен (404 на live); L08/L21 WARN в cannibalization |
+| Ept01 | ✓ | Не юрконсультация, admin vs суд |
+| Ept02 | ✗ | L08 interlink plain text до live slug; L19 + L01 live |
 
 ## Script reports
 
@@ -53,45 +53,39 @@ verdict: PASS
 | link-verify | PASS | link-verify.json |
 | html-linter | PASS | html-linter-report.json |
 | slop-detector | PASS (acceptable) | slop-detector-report.json |
-| cannibalization | WARNING (acceptable) | cannibalization-report.json |
+| cannibalization | WARN L08↔L21 (expected) | cannibalization-report.json |
 | utility gate | PASS | utility-gate-report.json |
 | lireate privacy | PASS | (repo-wide `--all-lireate`) |
 
 ## Link verify
 
-- total: 13, failed: 0
-- site-base: `LIREATE_PUBLIC_SITE_URL`
-- fix cycle 1 (2026-10-30): удалён `<figure>`; fips 403 / rospatent SSL → garant, licensingrussia, klerk; internal slug 404 → legacy чек-лист L01 + consultant вместо L08 slug
+- total: 15, failed: 0
+- site-base: публичный домен Lireate (`--site-base`)
+- fix cycle 1 (2026-10-30): L08 internal 404 → plain text до publish; L19 slug → `/chto_delat_esli_tovarnyy_znak_zanyat`; rospatent.gov.ru (SSL) → klerk 2.28.4; stateservices → gosuslugi.ru; fips 403 → licensingrussia; opendata → plain text
 
 ## AI-slop scan
 
 - cliches: 0
-- over-long sentences (>25 words): 4
-- Flesch RU: 61.0 (Easy)
+- over-long sentences (>25 words): 1 (парсер)
+- Flesch RU: 57.3 (Standard)
 - see `slop-detector-report.json`
 
 ## Fact-check
 
-- verdict: WARNING (19 extracted, 2 verified, 17 unverified)
-- факты сверены с `research-notes.md` (1493/1500/1512-1513, 9 000 / 14 000 ₽, 4 мес.)
+- verdict: WARNING (18 extracted, 4 verified, 14 unverified)
+- факты сверены с `research-notes.md` (ст. 1493/1499/1512–1513, 14 000 ₽, 5 лет, 2.28.2)
 - see `fact-check-report.json`
 
 ## Cannibalization
 
-- verdict: WARNING — primary L08 ↔ secondary L21 «возражение против регистрации…» 83% (ожидаемо: L21 = карта, L08 = deep dive)
-- repo fix: `L18` primary_query уточнён (снят дубликат с L03, CRITICAL)
-- see `cannibalization-report.json`
+- WARNING: L08 primary ↔ L21 secondary (83%) — задокументировано в research-notes как SEO-разведение
+- CRITICAL L03/L18 duplicate primary — вне scope L21, не блокирует публикацию L21
 
-## Fix cycle
+## Utility gate
 
-- cycle 1: GEO QA — правки href и удаление cover `<figure>` в `article.html`
-- cycle 2: не требовался
+- PASS: 7 FAQ, 2 tables, 10 action markers
+- see `utility-gate-report.json`
 
-## Optional (не blocker)
+## Fix log
 
-- `<img>` с alt после cover-агента
-- после publish L08: вернуть interlink на `/vozrazhenie-protiv-registracii-tovarnogo-znaka-sroki-poryadok`
-
-## Schema ready (handoff для schema-агента)
-
-BlogPosting: pending | FAQPage: yes (7) | HowTo: no | Review: no | author_id: pending registry
+- cycle 1 (GEO QA): `article.html` — link-verify fixes (см. выше); без cover/schema
