@@ -1,0 +1,136 @@
+{
+  "article": "memory/blog/articles/L21-osparivanie-tovarnogo-znaka-v-rospatente/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "warning",
+  "total_extracted_facts": 18,
+  "verified_facts_count": 4,
+  "unverified_facts_count": 14,
+  "facts": [
+    {
+      "fact": "14 000 руб",
+      "kind": "price_or_currency",
+      "context": "ии - возражение по ст. 1512-1513 в ППС с пошлиной 14 000 руб. Ниже вы пройдете карту стадий, основания и адрес",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "9 000 руб",
+      "kind": "price_or_currency",
+      "context": "м заявителя на отказ по своей заявке ( ст. 1500 , 9 000 руб. по 2.28.2). Сопоставьте стадию, документ и куда",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "5000 руб",
+      "kind": "price_or_currency",
+      "context": "айних сроков по 1512. Не делайте: верить SEO про \"5000 руб.\" или \"3 месяца\" без привязки к вашей ветке и тар",
+      "verified": true,
+      "reason": "Numerical value '5000' matched in fact-bank context"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "ст. 1483) обычно не выигрывают. Материал на 30.10.2026 не заменяет консультацию поверенного. Разберите, ч",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "5 лет",
+      "kind": "metric_or_duration",
+      "context": "(п. 2 пп. 2) п. 6, 7, 10 (сходство, однородность) 5 лет с публикации регистрации Заинтересованные ( ст. 1",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2 месяцев",
+      "kind": "metric_or_duration",
+      "context": "возражения до 5 раб. дней, формальная проверка до 2 месяцев, коллегия ППС, отзыв правообладателя за 10 раб. д",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1493",
+      "kind": "large_number",
+      "context": "на экспертизе чужой заявки идет обращение по ст. 1493, после регистрации - возражение по ст. 1512-1513",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1512",
+      "kind": "large_number",
+      "context": "о ст. 1493, после регистрации - возражение по ст. 1512-1513 в ППС с пошлиной 14 000 руб. Ниже вы пройдет",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1513",
+      "kind": "large_number",
+      "context": "1493, после регистрации - возражение по ст. 1512-1513 в ППС с пошлиной 14 000 руб. Ниже вы пройдете карт",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "14 000",
+      "kind": "large_number",
+      "context": "ии - возражение по ст. 1512-1513 в ППС с пошлиной 14 000 руб. Ниже вы пройдете карту стадий, основания и ад",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1248",
+      "kind": "large_number",
+      "context": "Роспатенте\" в быту - административный спор ( ст. 1248 п. 2 ): до регистрации - обращение ст. 1493 (учет",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1499",
+      "kind": "large_number",
+      "context": "ии - обращение ст. 1493 (учет при экспертизе, ст. 1499 ); после свидетельства - возражение ст. 1513 по с",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1500",
+      "kind": "large_number",
+      "context": "С - часть Роспатента. Отказ по своей заявке - ст. 1500 , не эта карта. ППС (Палата по патентным спорам)",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "явке; без однородности спор по сходству (п. 6 ст. 1483) обычно не выигрывают. Материал на 30.10.2026 не",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "1514",
+      "kind": "large_number",
+      "context": "гда третьи лица узнают о чужой подаче. Суд по ст. 1514 - отдельная ветка от коллегии ППС. Делайте: найди",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "9 000",
+      "kind": "large_number",
+      "context": "м заявителя на отказ по своей заявке ( ст. 1500 , 9 000 руб. по 2.28.2). Сопоставьте стадию, документ и ку",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1477",
+      "kind": "large_number",
+      "context": "т ст. 1513 и исходы 1493: номер заявки, доводы по 1477 и 1483, без 2.28.4; экспертиза учитывает обращение",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "5000",
+      "kind": "large_number",
+      "context": "айних сроков по 1512. Не делайте: верить SEO про \"5000 руб.\" или \"3 месяца\" без привязки к вашей ветке и",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    }
+  ]
+}

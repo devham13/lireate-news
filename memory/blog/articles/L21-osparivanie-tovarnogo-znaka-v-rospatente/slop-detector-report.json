@@ -1,0 +1,18 @@
+{
+  "verdict": "pass",
+  "total_slop_hits": 0,
+  "slop_hits": [],
+  "total_over_long_sentences": 1,
+  "over_long_sentences": [
+    {
+      "sentence": "Схема: реестр → 1493 или 1512-1513 → основания 1483 и срок → пакет → Роспатент → (1513) ППС → решение → суд при необходимости Найдите заявку или свидетельство в Поисковой платформе или в открытых реестрах ФИПС",
+      "word_count": 26
+    }
+  ],
+  "readability": {
+    "score": 57.3,
+    "level": "Standard (Intellectual editorial/expert text)",
+    "avg_sentence_len": 6.0,
+    "avg_syllables_per_word": 2.4
+  }
+}
