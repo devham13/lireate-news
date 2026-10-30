@@ -23,7 +23,8 @@
   "site": "lireate",
   "lireate_category_id": 9,
   "lireate_category_name": "Товарный знак",
-  "canonical_path": "/osparivanie_tovarnogo_znaka_v_rospatente",
+  "canonical_path": "/osparivanie_tovarnogo_znaka_v_rospatente_kak_podat_vozrazhenie",
+  "lireate_seo_url": "osparivanie_tovarnogo_znaka_v_rospatente_kak_podat_vozrazhenie",
   "news_list_url": "/news?num=2&category=9",
   "anchor_variants": [
     "оспаривание товарного знака в роспатенте: карта ст. 1493 и 1512-1513",
@@ -53,6 +54,5 @@
     "Суд - 1514"
   ],
   "cover_style": "collage-v1",
-  "cover_renderer": "html_chromium",
-  "lireate_seo_url": "osparivanie_tovarnogo_znaka_v_rospatente"
+  "cover_renderer": "html_chromium"
 }
