@@ -1,6 +1,42 @@
 {
   "site_base": "https://example.com",
-  "total_articles": 21,
-  "opportunities_found": 0,
-  "suggestions": []
+  "total_articles": 26,
+  "opportunities_found": 5,
+  "suggestions": [
+    {
+      "source": "L17-mozhno-li-pokazyvat-chuzhie-logotipy-v-video-i-na-oblozhkah",
+      "target": "L06-kak-opredelit-klass-mktu",
+      "keyword": "классы мкту",
+      "context": "в Поисковой платформе Роспатента.</li>   <li><b>Сверьте</b> классы МКТУ с вашим товаром или услугой в ролике.</li>   <li><b>Уточнит",
+      "link_replacement": "<a href=\"/blog/kak-opredelit-klass-mktu/\">классы МКТУ</a>"
+    },
+    {
+      "source": "L19-chto-delat-esli-tovarnyy-znak-zanyat",
+      "target": "L06-kak-opredelit-klass-mktu",
+      "keyword": "классы мктu",
+      "context": "твует, на экспертизе, прекращён).</li>   <li><b>Сверьте</b> классы МКТУ и текст перечня позиций с вашим ассортиментом.</li>   <li><",
+      "link_replacement": "<a href=\"/blog/kak-opredelit-klass-mktu/\">классы МКТУ</a>"
+    },
+    {
+      "source": "L18-kak-proverit-brend-na-wildberries-svoboden-li-tovarnyy-znak",
+      "target": "L06-kak-opredelit-klass-mktu",
+      "keyword": "классы мкту",
+      "context": "<td><b>Роспатент</b></td>       <td>Правообладатель, классы МКТУ, статус знака</td>       <td>Правила модерации конкретной к",
+      "link_replacement": "<a href=\"/blog/kak-opredelit-klass-mktu/\">классы МКТУ</a>"
+    },
+    {
+      "source": "L19-chto-delat-esli-tovarnyy-znak-zanyat",
+      "target": "L11-dogovor-na-razrabotku-logotipa-prava-ot-dizajnera",
+      "keyword": "договор на разработку логотипа",
+      "context": "ованным знаком в вашем классе.</li>   <li><b>Не путайте</b> договор на разработку логотипа с передачей прав на товарный знак.</li>   <li><b>Закрепите<",
+      "link_replacement": "<a href=\"/blog/dogovor-na-razrabotku-logotipa-prava-ot-dizajnera/\">договор на разработку логотипа</a>"
+    },
+    {
+      "source": "L18-kak-proverit-brend-na-wildberries-svoboden-li-tovarnyy-znak",
+      "target": "L03-kak-zaregistrirovat-brend-na-ozon-i-wildberries",
+      "keyword": "как проверить есть ли такой бренд на вайлдберриз",
+      "context": "ом на Wildberries хотите понять, свободен ли бренд. Запрос \"как проверить есть ли такой бренд на вайлдберриз\" отвечает только на часть задачи: каталог площадки не равен",
+      "link_replacement": "<a href=\"/blog/kak-zaregistrirovat-brend-na-ozon-i-wildberries/\">как проверить есть ли такой бренд на вайлдберриз</a>"
+    }
+  ]
 }
