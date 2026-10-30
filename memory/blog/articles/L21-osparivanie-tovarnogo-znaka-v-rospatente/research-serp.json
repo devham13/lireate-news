@@ -1,0 +1,413 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-10-30",
+    "today_ru": "30.10.2026",
+    "year": 2026,
+    "month": 10,
+    "month_name_ru": "октябрь",
+    "weekday_ru": "пятница",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-01",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-10-30 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L21",
+    "priority": "P1",
+    "slug": "osparivanie-tovarnogo-znaka-v-rospatente",
+    "h1": "Оспаривание товарного знака в Роспатенте: как подать возражение",
+    "primary_query": "оспаривание товарного знака в роспатенте",
+    "secondary_queries": [
+      "возражение против регистрации товарного знака",
+      "куда подается возражение на заявку на товарный знак",
+      "куда отправлять возражение против предоставления правовой охраны товарному знаку"
+    ],
+    "search_intent": "workflow",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "оспаривание товарного знака в роспатенте 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-10-30"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "оспаривание товарного знака в роспатенте октябрь 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Регистрация Товарного Знака В Роспатенте: Пошаговое Руководство 2026 | Pdf",
+          "url": "https://ru.scribd.com/document/1070421107/%D0%A0%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B7%D0%BD%D0%B0%D0%BA%D0%B0-%D0%B2-%D0%A0%D0%BE%D1%81%D0%BF%D0%B0%D1%82%D0%B5%D0%BD%D1%82%D0%B5-%D0%BF%D0%BE%D1%88%D0%B0%D0%B3%D0%BE%D0%B2%D0%BE%D0%B5-%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE-2026",
+          "snippet": ""
+        },
+        {
+          "title": "Регистрация товарного знака в Роспатенте в 2026 году: пошаговая ...",
+          "url": "https://aleflegal.ru/%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8/01-registraciya-tovarnogo-znaka-2026.html",
+          "snippet": "Практическое руководство по регистрации товарного знака в России на 2026 год: почему приоритет определяется датой подачи заявки, как подобрать классы МКТУ и чем опасен незакрытый смежный класс."
+        },
+        {
+          "title": "Регистрация товарного знака: порядок, этапы и документы в 2026 году",
+          "url": "https://patent-family.ru/journal/tz/registraciya-tovarnogo-znaka/",
+          "snippet": "Как зарегистрировать товарный знак в Роспатенте в 2026 году: этапы, сроки экспертизы, новые пошлины с октября 2025, проверка обозначения, ошибки заявителей. Практическое руководство для ..."
+        },
+        {
+          "title": "Регистрация товарного знака в 2026: пошаговая инструкция",
+          "url": "https://vitvet.com/articles/intellekt/tovarnye_znaki/registraciya_tovarnogo_znaka_2026/",
+          "snippet": "Регистрация товарного знака в Роспатенте подтверждается выдачей свидетельства, которое действует 10 лет с даты подачи заявки и может продлеваться неограниченное количество раз."
+        },
+        {
+          "title": "Роспатент. Госуслуги",
+          "url": "https://rospatent.gov.ru/ru/stateservices",
+          "snippet": "Регистрация товарного знака в России занимает от 10 до 18 месяцев и обходится от 33 000 рублей в пошлинах при подаче через Госуслуги. Статья охватывает полный цикл: предварительный поиск, подачу заявки, экспертизу, типичные отказы и стратегии их преодоления."
+        },
+        {
+          "title": "Федеральная служба по интеллектуальной собственности (Роспатент ...",
+          "url": "https://rospatent.gov.ru/",
+          "snippet": "Внесение изменений в государственные реестры товарных знаков, географических указаний, наименований мест происхождения товаров, Перечень общеизвестных ТЗ, а также в свидетельства."
+        }
+      ],
+      "searched_at": "2026-10-30"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "оспаривание товарного знака в роспатенте новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Порядок оспаривания товарного знака: обзор практики за 2026 год - Konsu",
+          "url": "https://konsugroup.com/ru/news/challenging-trademark-russia-2026/",
+          "snippet": ""
+        },
+        {
+          "title": "Оспаривание товарного знака: основания, сроки и практика Роспатента",
+          "url": "https://patent-family.ru/journal/tz/osparivanie-registracii-tovarnogo-znaka/",
+          "snippet": "Если Роспатент отказал в удовлетворении возражения либо, напротив, удовлетворил возражение и прекратил правовую охрану товарного знака, заинтересованное лицо вправе оспорить ..."
+        },
+        {
+          "title": "Федеральная служба по интеллектуальной собственности (Роспатент ...",
+          "url": "https://rospatent.gov.ru/ru",
+          "snippet": "Оспаривание товарного знака — это требование признать предоставление правовой охраны недействительным: полностью или в части отдельных товаров и услуг. Если возражение удовлетворят, регистрация считается недействительной с даты приоритета — так, будто охраны не было с самого начала."
+        },
+        {
+          "title": "Регистрация товарного знака: порядок, этапы и документы в 2026 году",
+          "url": "https://patent-family.ru/journal/tz/registraciya-tovarnogo-znaka/",
+          "snippet": "Внесение изменений в государственные реестры товарных знаков, географических указаний, наименований мест происхождения товаров, Перечень общеизвестных ТЗ, а также в свидетельства."
+        },
+        {
+          "title": "Оспаривание товарного знака: основания",
+          "url": "https://vitvet.com/articles/tovarnyj-znak/sudebnye-spory/osparivanie/",
+          "snippet": "Регистрация товарного знака в Роспатенте подтверждается выдачей свидетельства, которое действует 10 лет с даты подачи заявки и может продлеваться неограниченное количество раз."
+        },
+        {
+          "title": "Регистрация лицензионного договора на товарный знак в Роспатенте ...",
+          "url": "https://legium.pro/blog/%D1%80%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%BB%D0%B8%D1%86%D0%B5%D0%BD%D0%B7%D0%B8%D0%BE%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B0-%D0%BD%D0%B0-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BD%D1%8B%D0%B9-%D0%B7%D0%BD%D0%B0%D0%BA-%D0%B2-%D1%80%D0%BE%D1%81%D0%BF%D0%B0%D1%82%D0%B5%D0%BD%D1%82%D0%B5-%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0-%D0%B8-%D1%81%D1%80%D0%BE%D0%BA%D0%B8",
+          "snippet": "По состоянию на май 2026 года процедура проходит в два этапа: сначала возражение в Палату по патентным спорам Роспатента, затем - обжалование в Суде по интеллектуальным правам."
+        }
+      ],
+      "searched_at": "2026-10-30"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "возражение против регистрации товарного знака 2026",
+      "purpose": "вторичный запрос: возражение против регистрации товарного знака",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Возражение против регистрации товарного знака \\ 2026-2025-2024 год ...",
+          "url": "https://www.consultant.ru/law/podborki/vozrazhenie_protiv_registracii_tovarnogo_znaka/",
+          "snippet": ""
+        },
+        {
+          "title": "Возражение против регистрации товарного знака: как подать и что ...",
+          "url": "https://lyratetrademark.ru/2026/01/05/poluchite-poshagovoe-rukovodstvo-po-podache-vozrazheniya-protiv-registraczii-tovarnogo-znaka-sovety-tipichnye-oshibki-i-sekrety-uspeshnoj-zashhity-vashego-brenda/",
+          "snippet": "Подборка наиболее важных документов по запросу Возражение против регистрации товарного знака (нормативно-правовые акты, формы, статьи, консультации экспертов и многое другое). Вопрос: Как подать заявку на регистрацию товарного знака?"
+        },
+        {
+          "title": "Возражение на регистрацию товарного знака \\ 2026-2025-2024 год \\ Акты ...",
+          "url": "https://www.consultant.ru/law/podborki/vozrazhenie_na_registraciyu_tovarnogo_znaka/",
+          "snippet": "Если коротко и по-честному: после этого текста у вас сложится рабочая схема, как подать возражение, что приложить к заявлению, где чаще всего люди ломают себе нервы и как заранее проверить регистрацию товарного знака, чтобы не бегать с огнетушителем, когда уже полыхнуло."
+        },
+        {
+          "title": "Возражение против регистрации товарного знака в Роспатенте",
+          "url": "https://vitvet.com/articles/tovarnyj-znak/zashchita/vozrazhenie/",
+          "snippet": "Подборка наиболее важных документов по запросу Возражение на регистрацию товарного знака (нормативно-правовые акты, формы, статьи, консультации экспертов и многое другое). Вопрос: Как подать заявку на регистрацию товарного знака?"
+        },
+        {
+          "title": "Возражение против регистрации товарного знака: сроки, документы ...",
+          "url": "https://lyratetrademark.ru/2026/06/07/kak-zashhitit-svoj-biznes-ot-chuzhih-tovarnyh-znakov-uznajte-o-srokah-dokumentah-i-poshlinah-dlya-podachi-vozrazheniya/",
+          "snippet": "По состоянию на май 2026 года процедура рассматривается Палатой по патентным спорам и позволяет заинтересованному лицу заблокировать регистрацию обозначения, которое нарушает его права или противоречит требованиям закона."
+        },
+        {
+          "title": "Как подать возражение против регистрации товарного знака",
+          "url": "https://zhelezno.com/zashchitit-brend/vozrazhenie-protiv-registracii",
+          "snippet": "Быстрый ответ: Возражение против регистрации товарного знака подают, когда чужая регистрация мешает вашему бренду или нарушает правила охраноспособности."
+        }
+      ],
+      "searched_at": "2026-10-30"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "куда подается возражение на заявку на товарный знак 2026",
+      "purpose": "вторичный запрос: куда подается возражение на заявку на товарный знак",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Возражение на отказ в регистрации товарного знака: процедура",
+          "url": "https://nevskylaw.ru/glossary-ip/obzhalovanie-resheniya-po-zayavke-na-registraciyu-tovarnogo-znaka/",
+          "snippet": ""
+        },
+        {
+          "title": "Возражение против регистрации ТЗ - vitvet.com",
+          "url": "https://vitvet.com/articles/tovarnyj-znak/zashchita/vozrazhenie/",
+          "snippet": "В случае отказа в регистрации товарного знака заявитель вправе подать возражение в Палату по патентным спорам в течение трех месяцев. Рассмотрение основано на экспертизе и ..."
+        },
+        {
+          "title": "Возражение на регистрацию товарного знака \\ 2026-2025-2024 год \\ Акты ...",
+          "url": "https://www.consultant.ru/law/podborki/vozrazhenie_na_registraciyu_tovarnogo_znaka/",
+          "snippet": "Как подать возражение против заявки на ТЗ в Палату по патентным спорам. Сроки, основания, образец."
+        },
+        {
+          "title": "Возражение против предоставления правовой охраны товарному знаку ...",
+          "url": "https://www.bashukchichkanov.com/press/vozrazhenie-protiv-predostavleniya-pravovoy-okhrany-tovarnomu-znaku-osnovaniya-poryadok-i-praktika/",
+          "snippet": "(КонсультантПлюс, 2026) Составить и направить такое обращение нужно до принятия решения о государственной регистрации товарного знака."
+        },
+        {
+          "title": "Возражение против регистрации товарного знака: как подать и что ...",
+          "url": "http://lyratetrademark.ru/2026/01/05/poluchite-poshagovoe-rukovodstvo-po-podache-vozrazheniya-protiv-registraczii-tovarnogo-znaka-sovety-tipichnye-oshibki-i-sekrety-uspeshnoj-zashhity-vashego-brenda/",
+          "snippet": "Возражение подается в Роспатент, а рассматривает его Палата по патентным спорам. Судебный порядок (в Суде по интеллектуальным правам)."
+        },
+        {
+          "title": "Палата по патентным спорам: как подать возражение и какие шансы",
+          "url": "https://patent-family.ru/journal/patenty/palata-po-patentnym-sporam/",
+          "snippet": "Первое, что делаем: ищем конкретную заявку на регистрацию товарного знака и фиксируем её номер, заявителя, заявленное обозначение, классы МКТУ и статус."
+        }
+      ],
+      "searched_at": "2026-10-30"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "куда отправлять возражение против предоставления правовой охраны товарному знаку 2026",
+      "purpose": "вторичный запрос: куда отправлять возражение против предоставления правовой охраны товарному знаку",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Возражение против предоставления правовой охраны товарному знаку ...",
+          "url": "https://www.bashukchichkanov.com/press/vozrazhenie-protiv-predostavleniya-pravovoy-okhrany-tovarnomu-znaku-osnovaniya-poryadok-i-praktika/",
+          "snippet": ""
+        },
+        {
+          "title": "Возражение против предоставления правовой охраны товарному знаку \\ 2026 ...",
+          "url": "https://www.consultant.ru/law/podborki/vozrazhenie_protiv_predostavleniya_pravovoj_ohrany_tovarnomu_znaku/",
+          "snippet": "Законодательством предусмотрено два основных пути: административный и судебный. Их не нужно путать. Административный порядок (в Роспатенте). Это первая и основная инстанция для оспаривания уже предоставленной охраны. Возражение подается в Роспатент, а рассматривает его Палата по патентным спорам."
+        },
+        {
+          "title": "Возражение товарный знак \\ 2026-2025-2024 год \\ Акты, образцы, формы ...",
+          "url": "https://www.consultant.ru/law/podborki/vozrazhenie_tovarnyj_znak/",
+          "snippet": "Подборка наиболее важных документов по запросу Возражение против предоставления правовой охраны товарному знаку (нормативно-правовые акты, формы, статьи, консультации экспертов и ..."
+        },
+        {
+          "title": "Федеральная служба по интеллектуальной собственности (Роспатент ...",
+          "url": "https://rospatent.gov.ru/",
+          "snippet": "Подборка наиболее важных документов по запросу Возражение товарный знак (нормативно-правовые акты, формы, статьи, консультации экспертов и многое другое)."
+        },
+        {
+          "title": "Правила рассмотрения и разрешения федеральным органом исполнительной ...",
+          "url": "https://fips.ru/about/otdelenie-palata-po-patentnym-sporam/pravila-podachi-vozrazheniy-i-zayavleniy-i-ikh-rassmotreniya-v-palate-po-patentnym-sporam.php?sphrase_id=9674",
+          "snippet": "Федеральный орган исполнительной власти, служба, осуществляющая функции по контролю и надзору в сфере правовой охраны и использования объектов интеллектуальной собственности, патентов, товарных знаков и результатов интеллектуальной деятельности."
+        },
+        {
+          "title": "Самостоятельная процедура подачи возражения.",
+          "url": "https://intellectprava.ru/samostoyatelnaya-procedura-podachi-vozrazheniya",
+          "snippet": "Во время рассмотрения спора члены коллегии оценивают доводы возражения или заявления, приведенные подавшим его лицом в доказательство своих требований, доводы правообладателя ..."
+        }
+      ],
+      "searched_at": "2026-10-30"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Оспаривание товарного знака в Роспатенте: как подать возражение 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Оспаривание товарного знака: Процедура в Роспатенте 2025",
+          "url": "https://nevskylaw.ru/knowledge/osparivanie-tovarnogo-znaka-procedura-v-rospatente-2025/",
+          "snippet": ""
+        },
+        {
+          "title": "Возражение против регистрации товарного знака в Роспатенте",
+          "url": "https://vitvet.com/articles/tovarnyj-znak/zashchita/vozrazhenie/",
+          "snippet": "Полное руководство по оспариванию регистрации товарного знака в РФ. Узнайте этапы оспаривания товарного знака, основания, пошлины (5000 руб.), сроки (3-6 месяцев) и защиту прав в Роспатенте."
+        },
+        {
+          "title": "Самостоятельная процедура подачи возражения.",
+          "url": "https://intellectprava.ru/samostoyatelnaya-procedura-podachi-vozrazheniya",
+          "snippet": "Ниже - полное руководство: основания, сроки, процедура и типичные ошибки. Кто вправе подать возражение и в какие сроки?"
+        },
+        {
+          "title": "Возражение против предоставления правовой охраны товарному знаку ...",
+          "url": "https://www.bashukchichkanov.com/press/vozrazhenie-protiv-predostavleniya-pravovoy-okhrany-tovarnomu-znaku-osnovaniya-poryadok-i-praktika/",
+          "snippet": "Подробное руководство по процедуре подачи возражения и оспаривания отказа в выдаче товарного знака в Роспатенте."
+        },
+        {
+          "title": "Как оспорить товарный знак в РФ — основания, способы и сроки ...",
+          "url": "https://www.bashukchichkanov.com/press/kak-osporit-tovarnyy-znak-sposoby-sroki-i-osnovaniya-dlya-annulirovaniya-registratsii/",
+          "snippet": "Статья 1513 ГК РФ (порядок оспаривания) Данная статья определяет процедуру: кто, куда и в какие сроки может подавать возражение."
+        },
+        {
+          "title": "Оспаривание товарного знака: основания, сроки и практика Роспатента",
+          "url": "https://patent-family.ru/journal/tz/osparivanie-registracii-tovarnogo-znaka/",
+          "snippet": "Узнайте, как оспорить товарный знак в России: кто имеет право обжаловать регистрацию, какие существуют основания для признания её недействительной, и в какие сроки можно подать возражение ..."
+        }
+      ],
+      "searched_at": "2026-10-30"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://ru.scribd.com/document/1070421107/%D0%A0%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B7%D0%BD%D0%B0%D0%BA%D0%B0-%D0%B2-%D0%A0%D0%BE%D1%81%D0%BF%D0%B0%D1%82%D0%B5%D0%BD%D1%82%D0%B5-%D0%BF%D0%BE%D1%88%D0%B0%D0%B3%D0%BE%D0%B2%D0%BE%D0%B5-%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE-2026",
+      "title": "Регистрация Товарного Знака В Роспатенте: Пошаговое Руководство 2026 | Pdf",
+      "from_query": "оспаривание товарного знака в роспатенте октябрь 2026"
+    },
+    {
+      "url": "https://aleflegal.ru/%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8/01-registraciya-tovarnogo-znaka-2026.html",
+      "title": "Регистрация товарного знака в Роспатенте в 2026 году: пошаговая ...",
+      "from_query": "оспаривание товарного знака в роспатенте октябрь 2026"
+    },
+    {
+      "url": "https://patent-family.ru/journal/tz/registraciya-tovarnogo-znaka/",
+      "title": "Регистрация товарного знака: порядок, этапы и документы в 2026 году",
+      "from_query": "оспаривание товарного знака в роспатенте октябрь 2026"
+    },
+    {
+      "url": "https://vitvet.com/articles/intellekt/tovarnye_znaki/registraciya_tovarnogo_znaka_2026/",
+      "title": "Регистрация товарного знака в 2026: пошаговая инструкция",
+      "from_query": "оспаривание товарного знака в роспатенте октябрь 2026"
+    },
+    {
+      "url": "https://rospatent.gov.ru/ru/stateservices",
+      "title": "Роспатент. Госуслуги",
+      "from_query": "оспаривание товарного знака в роспатенте октябрь 2026"
+    },
+    {
+      "url": "https://rospatent.gov.ru/",
+      "title": "Федеральная служба по интеллектуальной собственности (Роспатент ...",
+      "from_query": "оспаривание товарного знака в роспатенте октябрь 2026"
+    },
+    {
+      "url": "https://konsugroup.com/ru/news/challenging-trademark-russia-2026/",
+      "title": "Порядок оспаривания товарного знака: обзор практики за 2026 год - Konsu",
+      "from_query": "оспаривание товарного знака в роспатенте новости 2026"
+    },
+    {
+      "url": "https://patent-family.ru/journal/tz/osparivanie-registracii-tovarnogo-znaka/",
+      "title": "Оспаривание товарного знака: основания, сроки и практика Роспатента",
+      "from_query": "оспаривание товарного знака в роспатенте новости 2026"
+    },
+    {
+      "url": "https://rospatent.gov.ru/ru",
+      "title": "Федеральная служба по интеллектуальной собственности (Роспатент ...",
+      "from_query": "оспаривание товарного знака в роспатенте новости 2026"
+    },
+    {
+      "url": "https://vitvet.com/articles/tovarnyj-znak/sudebnye-spory/osparivanie/",
+      "title": "Оспаривание товарного знака: основания",
+      "from_query": "оспаривание товарного знака в роспатенте новости 2026"
+    },
+    {
+      "url": "https://legium.pro/blog/%D1%80%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%BB%D0%B8%D1%86%D0%B5%D0%BD%D0%B7%D0%B8%D0%BE%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B0-%D0%BD%D0%B0-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BD%D1%8B%D0%B9-%D0%B7%D0%BD%D0%B0%D0%BA-%D0%B2-%D1%80%D0%BE%D1%81%D0%BF%D0%B0%D1%82%D0%B5%D0%BD%D1%82%D0%B5-%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0-%D0%B8-%D1%81%D1%80%D0%BE%D0%BA%D0%B8",
+      "title": "Регистрация лицензионного договора на товарный знак в Роспатенте ...",
+      "from_query": "оспаривание товарного знака в роспатенте новости 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/vozrazhenie_protiv_registracii_tovarnogo_znaka/",
+      "title": "Возражение против регистрации товарного знака \\ 2026-2025-2024 год ...",
+      "from_query": "возражение против регистрации товарного знака 2026"
+    },
+    {
+      "url": "https://lyratetrademark.ru/2026/01/05/poluchite-poshagovoe-rukovodstvo-po-podache-vozrazheniya-protiv-registraczii-tovarnogo-znaka-sovety-tipichnye-oshibki-i-sekrety-uspeshnoj-zashhity-vashego-brenda/",
+      "title": "Возражение против регистрации товарного знака: как подать и что ...",
+      "from_query": "возражение против регистрации товарного знака 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/vozrazhenie_na_registraciyu_tovarnogo_znaka/",
+      "title": "Возражение на регистрацию товарного знака \\ 2026-2025-2024 год \\ Акты ...",
+      "from_query": "возражение против регистрации товарного знака 2026"
+    },
+    {
+      "url": "https://vitvet.com/articles/tovarnyj-znak/zashchita/vozrazhenie/",
+      "title": "Возражение против регистрации товарного знака в Роспатенте",
+      "from_query": "возражение против регистрации товарного знака 2026"
+    },
+    {
+      "url": "https://lyratetrademark.ru/2026/06/07/kak-zashhitit-svoj-biznes-ot-chuzhih-tovarnyh-znakov-uznajte-o-srokah-dokumentah-i-poshlinah-dlya-podachi-vozrazheniya/",
+      "title": "Возражение против регистрации товарного знака: сроки, документы ...",
+      "from_query": "возражение против регистрации товарного знака 2026"
+    },
+    {
+      "url": "https://zhelezno.com/zashchitit-brend/vozrazhenie-protiv-registracii",
+      "title": "Как подать возражение против регистрации товарного знака",
+      "from_query": "возражение против регистрации товарного знака 2026"
+    },
+    {
+      "url": "https://nevskylaw.ru/glossary-ip/obzhalovanie-resheniya-po-zayavke-na-registraciyu-tovarnogo-znaka/",
+      "title": "Возражение на отказ в регистрации товарного знака: процедура",
+      "from_query": "куда подается возражение на заявку на товарный знак 2026"
+    },
+    {
+      "url": "https://www.bashukchichkanov.com/press/vozrazhenie-protiv-predostavleniya-pravovoy-okhrany-tovarnomu-znaku-osnovaniya-poryadok-i-praktika/",
+      "title": "Возражение против предоставления правовой охраны товарному знаку ...",
+      "from_query": "куда подается возражение на заявку на товарный знак 2026"
+    },
+    {
+      "url": "http://lyratetrademark.ru/2026/01/05/poluchite-poshagovoe-rukovodstvo-po-podache-vozrazheniya-protiv-registraczii-tovarnogo-znaka-sovety-tipichnye-oshibki-i-sekrety-uspeshnoj-zashhity-vashego-brenda/",
+      "title": "Возражение против регистрации товарного знака: как подать и что ...",
+      "from_query": "куда подается возражение на заявку на товарный знак 2026"
+    },
+    {
+      "url": "https://patent-family.ru/journal/patenty/palata-po-patentnym-sporam/",
+      "title": "Палата по патентным спорам: как подать возражение и какие шансы",
+      "from_query": "куда подается возражение на заявку на товарный знак 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/vozrazhenie_protiv_predostavleniya_pravovoj_ohrany_tovarnomu_znaku/",
+      "title": "Возражение против предоставления правовой охраны товарному знаку \\ 2026 ...",
+      "from_query": "куда отправлять возражение против предоставления правовой охраны товарному знаку 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/vozrazhenie_tovarnyj_znak/",
+      "title": "Возражение товарный знак \\ 2026-2025-2024 год \\ Акты, образцы, формы ...",
+      "from_query": "куда отправлять возражение против предоставления правовой охраны товарному знаку 2026"
+    },
+    {
+      "url": "https://fips.ru/about/otdelenie-palata-po-patentnym-sporam/pravila-podachi-vozrazheniy-i-zayavleniy-i-ikh-rassmotreniya-v-palate-po-patentnym-sporam.php?sphrase_id=9674",
+      "title": "Правила рассмотрения и разрешения федеральным органом исполнительной ...",
+      "from_query": "куда отправлять возражение против предоставления правовой охраны товарному знаку 2026"
+    },
+    {
+      "url": "https://intellectprava.ru/samostoyatelnaya-procedura-podachi-vozrazheniya",
+      "title": "Самостоятельная процедура подачи возражения.",
+      "from_query": "куда отправлять возражение против предоставления правовой охраны товарному знаку 2026"
+    },
+    {
+      "url": "https://nevskylaw.ru/knowledge/osparivanie-tovarnogo-znaka-procedura-v-rospatente-2025/",
+      "title": "Оспаривание товарного знака: Процедура в Роспатенте 2025",
+      "from_query": "Оспаривание товарного знака в Роспатенте: как подать возражение 2026"
+    },
+    {
+      "url": "https://www.bashukchichkanov.com/press/kak-osporit-tovarnyy-znak-sposoby-sroki-i-osnovaniya-dlya-annulirovaniya-registratsii/",
+      "title": "Как оспорить товарный знак в РФ — основания, способы и сроки ...",
+      "from_query": "Оспаривание товарного знака в Роспатенте: как подать возражение 2026"
+    }
+  ]
+}
