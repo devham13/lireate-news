@@ -671,7 +671,7 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L24 — Сайт-клон конкурента: как защитить бренд в интернете
 
-- **status:** new
+- **status:** written
 - **priority:** P1
 - **site:** lireate
 - **lireate_category_id:** 13
