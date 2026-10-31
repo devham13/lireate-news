@@ -43,7 +43,7 @@
     },
     {
       "url": "https://www.consultant.ru/cons/cgi/online.cgi?base=SIP&n=160537&req=doc",
-      "status": 200,
+      "status": 204,
       "ok": true,
       "method": "HEAD",
       "error": null,
