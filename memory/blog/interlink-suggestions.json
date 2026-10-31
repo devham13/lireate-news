@@ -1,6 +1,14 @@
 {
-  "site_base": "https://example.com",
-  "total_articles": 28,
-  "opportunities_found": 0,
-  "suggestions": []
+  "site_base": "https://PUBLIC_SITE_URL",
+  "total_articles": 29,
+  "opportunities_found": 1,
+  "suggestions": [
+    {
+      "source": "L24-sajt-klon-zashchita-brenda-v-internete",
+      "target": "L06-kak-opredelit-klass-mktu",
+      "keyword": "классы мкту",
+      "context": "cument/cons_doc_LAW_64629/\" target=\"_blank\">ст. 1491</a>) и классы МКТУ в <a href=\"https://searchplatform.rospatent.gov.ru/trademar",
+      "link_replacement": "<a href=\"/blog/kak-opredelit-klass-mktu/\">классы МКТУ</a>"
+    }
+  ]
 }
