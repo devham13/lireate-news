@@ -1,5 +1,6 @@
 from pathlib import Path
 
+from .cover_headline_fit import HEADLINE_FIT_JS
 from .fit_composition import FIT_COMPOSITION_JS
 from .layout_check import assert_layout_ok
 
@@ -26,6 +27,9 @@ def render_html_to_png(html, width, height, out_path, device_scale_factor=None, 
         if fit:
             page.evaluate(FIT_COMPOSITION_JS)
             page.wait_for_timeout(200)
+        if page.query_selector('[data-layout-slot="slot-headline"]'):
+            page.evaluate(HEADLINE_FIT_JS)
+            page.wait_for_timeout(120)
         tmp = out_path.with_suffix(".layout.png")
         page.screenshot(path=str(tmp), clip={"x": 0, "y": 0, "width": width, "height": height})
         if layout_check:

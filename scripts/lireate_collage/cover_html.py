@@ -1,5 +1,6 @@
 from .base_css import _esc, shared_styles
 from .inline_tokens import COVER_STICKY_H, COVER_STICKY_TEXT_PX, COVER_STICKY_W
+from .thumbnail_safe import thumbnail_safe_rect
 
 
 def _headline_html(lines, highlight):
@@ -60,38 +61,50 @@ def build_cover_html(spec, width, height):
             '<div class="ui-row"><span>{label}</span><span class="toggle {on}"></span></div>'
         ).format(label=_esc(row), on=on)
 
-    hl_px = max(44, int(height * 0.13))
-    sw, sh = width, height
+    safe_left, safe_top, safe_w, safe_h = thumbnail_safe_rect((width, height))
+    hl_px = max(26, min(46, int(safe_h * 0.10)))
 
-    arrow_svg = (
-        '<svg class="cover-arrow" data-layout-slot="slot-arrow" viewBox="0 0 100 36" aria-hidden="true">'
-        '<path d="M8 28 C42 8, 58 30, 88 12" stroke="#111" fill="none" stroke-width="2.2"/>'
-        '<path d="M80 6l12 8-14 3" stroke="#111" fill="none" stroke-width="2"/>'
-        "</svg>"
-    )
+    sticky_w = min(COVER_STICKY_W, int(safe_w * 0.42))
+    sticky_h = min(COVER_STICKY_H, int(safe_h * 0.26))
+    sticky_text_px = max(18, min(COVER_STICKY_TEXT_PX, 22))
 
     return """<!DOCTYPE html>
 <html><head><meta charset="utf-8"><style>
 {shared}
 html, body {{ margin:0; width:{w}px; height:{h}px; overflow:hidden; }}
-.stage {{ width:{w}px; height:{h}px; background:#0b1020; display:flex; align-items:center; justify-content:center; }}
+.stage {{ width:{w}px; height:{h}px; background:#0b1020; position:relative; }}
 .sheet {{
-  width:{sw}px; height:{sh}px; position:relative; box-sizing:border-box;
-  display:grid; grid-template-columns: 54% 46%; padding:20px 22px 16px 26px;
+  width:{w}px; height:{h}px; position:relative; box-sizing:border-box;
+  background: transparent;
 }}
-.col-left {{ display:flex; align-items:center; position:relative; padding-right:12px; }}
-.col-right {{ position:relative; min-height:100%; }}
+.board-safe {{
+  position:absolute;
+  left:{safe_left}px; top:{safe_top}px;
+  width:{safe_w}px; height:{safe_h}px;
+  box-sizing:border-box;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:10px 8px;
+  padding:4px 6px;
+}}
+.col-headline {{
+  grid-column:1; grid-row:1 / span 2;
+  display:flex; align-items:center; justify-content:center;
+  text-align:center; position:relative; min-width:0;
+}}
+.col-deco {{
+  grid-column:2; grid-row:1 / span 2;
+  position:relative; min-height:0; min-width:0;
+}}
 .hl {{
-  font-size:{hl_px}px; font-weight:800; line-height:1.05; letter-spacing:-0.03em;
+  font-size:{hl_px}px; font-weight:800; line-height:1.06; letter-spacing:-0.03em;
+  max-width:100%; overflow:hidden;
 }}
 .hl-accent {{ color:#ff1f6b; }}
-.hl-line {{ margin-bottom:0.05em; }}
-.cover-arrow {{
-  position:absolute; right:8px; top:58%; width:78px; height:auto; pointer-events:none;
-}}
+.hl-line {{ margin-bottom:0.06em; word-break:break-word; hyphens:auto; }}
 .cover-sticky {{
-  position:absolute; top:36px; left:0; width:{cover_sticky_w}px; height:{cover_sticky_h}px;
-  padding:10px 12px; box-sizing:border-box; font-size:{cover_sticky_text}px; line-height:1.12;
+  position:absolute; top:52px; right:0; width:{sticky_w}px; height:{sticky_h}px;
+  padding:8px 10px; box-sizing:border-box; font-size:{sticky_text}px; line-height:1.1;
   transform:rotate(4deg); z-index:4; box-shadow:2px 6px 14px rgba(0,0,0,.18);
   display:flex; align-items:center; justify-content:center; text-align:center;
 }}
@@ -104,31 +117,39 @@ html, body {{ margin:0; width:{w}px; height:{h}px; overflow:hidden; }}
   background:rgba(235,220,185,.88); transform:rotate(-2deg);
 }}
 .slot-badge {{
-  position:absolute; top:0; right:0; border:3px solid #111; padding:8px 14px;
-  font-weight:800; font-size:20px; white-space:nowrap; z-index:6; background:#fff;
+  position:absolute; top:0; right:0; border:3px solid #111; padding:6px 12px;
+  font-weight:800; font-size:18px; white-space:nowrap; z-index:6; background:#fff;
 }}
 .slot-chips {{
-  position:absolute; top:72px; right:18px; width:72%;
-  display:flex; flex-direction:column; align-items:flex-end; gap:10px; z-index:6;
-  pointer-events:none;
+  position:absolute; top:108px; right:0; width:100%;
+  display:flex; flex-direction:column; align-items:flex-end; gap:5px; z-index:6;
+  pointer-events:none; max-height:88px; overflow:hidden;
 }}
-.chip-tilt {{ font-size:18px; padding:8px 16px; transform:rotate(var(--rot)); }}
+.chip-tilt {{ font-size:18px; padding:5px 10px; transform:rotate(var(--rot)); max-width:100%; overflow:hidden; text-overflow:ellipsis; }}
 .slot-ui {{
-  position:absolute; bottom:8px; right:0; width:94%; z-index:5;
-  background:#fff; border-radius:12px; padding:12px 14px 10px;
-  box-shadow:0 10px 26px rgba(0,0,0,.14); border:1px solid #e5e7eb;
+  position:absolute; bottom:0; right:0; left:0; z-index:5;
+  max-height:148px;
+  background:#fff; border-radius:10px; padding:8px 10px 8px;
+  box-shadow:0 8px 22px rgba(0,0,0,.14); border:1px solid #e5e7eb;
   font-size:17px;
 }}
-.slot-ui h4 {{ font-size:17px; margin:0 0 8px; font-weight:700; }}
-.ui-row {{ display:flex; justify-content:space-between; align-items:center; margin:6px 0; }}
-.toggle {{ width:36px; height:20px; border-radius:999px; background:#e5e7eb; position:relative; flex-shrink:0; }}
+.slot-ui h4 {{ font-size:17px; margin:0 0 6px; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }}
+.ui-row {{ display:flex; justify-content:space-between; align-items:center; margin:4px 0; gap:6px; }}
+.ui-row span:first-child {{ overflow:hidden; text-overflow:ellipsis; white-space:nowrap; flex:1; min-width:0; }}
+.toggle {{ width:32px; height:18px; border-radius:999px; background:#e5e7eb; position:relative; flex-shrink:0; }}
 .toggle.on {{ background:#ff2d78; }}
 .toggle.on::after {{
-  content:''; position:absolute; right:3px; top:3px; width:14px; height:14px; background:#fff; border-radius:50%;
+  content:''; position:absolute; right:3px; top:3px; width:12px; height:12px; background:#fff; border-radius:50%;
 }}
-.ui-foot {{ margin-top:8px; display:flex; gap:10px; justify-content:flex-end; font-size:12px; align-items:center; }}
+.ui-foot {{ margin-top:6px; display:flex; gap:8px; justify-content:flex-end; font-size:11px; align-items:center; }}
 .muted {{ color:#64748b; }}
-.apply {{ background:#ff2d78; color:#fff; padding:4px 12px; border-radius:6px; font-weight:600; }}
+.apply {{ background:#ff2d78; color:#fff; padding:3px 10px; border-radius:6px; font-weight:600; }}
+.paper-torn {{
+  clip-path: polygon(
+    0% 2%, 3% 0%, 8% 1%, 14% 0%, 22% 2%, 30% 0%, 38% 1%, 46% 0%, 54% 2%, 62% 0%, 70% 1%, 78% 0%, 86% 2%, 94% 0%, 100% 1%,
+    100% 98%, 97% 100%, 90% 99%, 82% 100%, 74% 98%, 66% 100%, 58% 99%, 50% 100%, 42% 98%, 34% 100%, 26% 99%, 18% 100%, 10% 98%, 2% 100%, 0% 99%
+  );
+}}
 .tape-corner {{
   position:absolute; width:42px; height:14px;
   background:linear-gradient(135deg,rgba(22,22,22,.88),rgba(8,8,8,.92));
@@ -144,17 +165,18 @@ html, body {{ margin:0; width:{w}px; height:{h}px; overflow:hidden; }}
 <div class="stage">
   <div class="paper paper-torn sheet" data-layout-paper="1">
     <div class="tape-corner tape-tl"></div><div class="tape-corner tape-tr"></div>
-    <div class="col-left">
-      <div class="hl" data-layout-slot="slot-headline">{headline}</div>
-    </div>
-    <div class="col-right">
-      {arrow}
-      <div class="slot-badge" data-layout-slot="slot-badge">{badge}</div>
-      {sticky}
-      <div class="slot-chips" data-layout-slot="slot-chips">{labels}</div>
-      <div class="slot-ui" data-layout-slot="slot-ui-card">
-        <h4>{ui_title}</h4>{ui_rows}
-        <div class="ui-foot"><span class="muted">Сохранить</span><span class="apply">Применить</span></div>
+    <div class="board-safe" id="composition" data-thumbnail-safe="1">
+      <div class="col-headline">
+        <div class="hl" data-layout-slot="slot-headline">{headline}</div>
+      </div>
+      <div class="col-deco">
+        <div class="slot-badge" data-layout-slot="slot-badge">{badge}</div>
+        {sticky}
+        <div class="slot-chips" data-layout-slot="slot-chips">{labels}</div>
+        <div class="slot-ui" data-layout-slot="slot-ui-card">
+          <h4>{ui_title}</h4>{ui_rows}
+          <div class="ui-foot"><span class="muted">Сохранить</span><span class="apply">Применить</span></div>
+        </div>
       </div>
     </div>
     <div class="brand-mark">LIREATE</div>
@@ -164,14 +186,15 @@ html, body {{ margin:0; width:{w}px; height:{h}px; overflow:hidden; }}
         shared=shared_styles(),
         w=width,
         h=height,
-        sw=sw,
-        sh=sh,
+        safe_left=safe_left,
+        safe_top=safe_top,
+        safe_w=safe_w,
+        safe_h=safe_h,
         hl_px=hl_px,
-        cover_sticky_w=COVER_STICKY_W,
-        cover_sticky_h=COVER_STICKY_H,
-        cover_sticky_text=COVER_STICKY_TEXT_PX,
+        sticky_w=sticky_w,
+        sticky_h=sticky_h,
+        sticky_text=sticky_text_px,
         headline=_headline_html(lines, highlight),
-        arrow=arrow_svg,
         badge=_esc(badge),
         sticky=_sticky_html(spec.get("sticky_text") or "", spec.get("sticky_underline") or "", sticky_bg),
         labels=labels_html,
