@@ -1,0 +1,449 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-10-31",
+    "today_ru": "31.10.2026",
+    "year": 2026,
+    "month": 10,
+    "month_name_ru": "октябрь",
+    "weekday_ru": "суббота",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-02",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-10-31 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L25",
+    "priority": "P1",
+    "slug": "registraciya-brenda-odezhdy-mktu",
+    "h1": "Как зарегистрировать бренд одежды: классы МКТУ для маркетплейсов и розницы",
+    "primary_query": "как зарегистрировать бренд одежды",
+    "secondary_queries": [
+      "товарный знак для одежды класс мкту",
+      "бренд одежды wildberries",
+      "регистрация названия бренда одежды"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "как зарегистрировать бренд одежды 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как создать свой бренд одежды с нуля: пошаговая инструкция 2026",
+          "url": "https://bankprofi.ru/blog/kak-sozdat-svoy-brend-odezhdy-s-nulya-poshagovyy-plan-2026",
+          "snippet": ""
+        },
+        {
+          "title": "Как создать свой бренд одежды с нуля: пошаговый план 2026 — Подушка",
+          "url": "https://bee-together.ru/media/articles/kak-sozdat-svoi-brend-odezdy-s-nulya-v-rossii-posagovyi-plan-2026",
+          "snippet": "В этой статье вы получите пошаговую инструкцию как создать свой бренд одежды с нуля, с акцентом на экономические аспекты старта и минимизацию рисков."
+        },
+        {
+          "title": "Как открыть свой бренд одежды в 2026 году: полная пошаговая инструкция",
+          "url": "https://businessmens.ru/article/kak-otkryt-svoy-brend-odezhdy-polnaya-poshagovaya-instrukciya",
+          "snippet": "Пошаговый план 2026: как создать свой бренд одежды с нуля, сколько стоит открыть и запустить, что нужно, как назвать, найти производство и продвигать."
+        },
+        {
+          "title": "Как зарегистрировать бренд одежды: пошаговая инструкция",
+          "url": "https://agregatorcursov.ru/articles/kak-zaregistrirovat-brend-odezhdy-poshagovaya-instruktsiya",
+          "snippet": "В этой статье мы представили подробную инструкцию по созданию бренда одежды: от выбора ниши и разработки концепции до производства, продвижения и первых продаж."
+        },
+        {
+          "title": "Как зарегистрировать бренд в 2026 году?",
+          "url": "https://www.dvitex.ru/poleznoe/biznes/intellektualnaya-sobstvennost/kak-zaregistrirovat-brend/",
+          "snippet": "Чтобы зарегистрировать свой бренд одежды, обычно требуется выбрать уникальное название, определить класс МКТУ, подготовить заявление по форме Роспатента и оплатить госпошлину."
+        },
+        {
+          "title": "Регистрация бренда: пошаговая инструкция 2026 | IPbot",
+          "url": "https://ipbot.ru/articles/registratsiya-brenda/",
+          "snippet": "В статье юристы рассказывают о порядке регистрации бренда в Роспатенте, сроках регистрации и размере госпошлины. Можно ли сократить срок регистрации и уменьшить пошлину?"
+        }
+      ],
+      "searched_at": "2026-10-31"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "как зарегистрировать бренд одежды октябрь 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как создать свой бренд одежды с нуля: пошаговая инструкция 2026",
+          "url": "https://bankprofi.ru/blog/kak-sozdat-svoy-brend-odezhdy-s-nulya-poshagovyy-plan-2026",
+          "snippet": ""
+        },
+        {
+          "title": "Как создать свой бренд одежды с нуля: пошаговый план 2026 — Подушка",
+          "url": "https://bee-together.ru/media/articles/kak-sozdat-svoi-brend-odezdy-s-nulya-v-rossii-posagovyi-plan-2026",
+          "snippet": "В этой статье вы получите пошаговую инструкцию как создать свой бренд одежды с нуля, с акцентом на экономические аспекты старта и минимизацию рисков."
+        },
+        {
+          "title": "Регистрация бренда: пошаговая инструкция 2026 | IPbot",
+          "url": "https://ipbot.ru/articles/registratsiya-brenda/",
+          "snippet": "Пошаговый план 2026: как создать свой бренд одежды с нуля, сколько стоит открыть и запустить, что нужно, как назвать, найти производство и продвигать."
+        },
+        {
+          "title": "Как зарегистрировать бренд в 2026 году?",
+          "url": "https://www.dvitex.ru/poleznoe/biznes/intellektualnaya-sobstvennost/kak-zaregistrirovat-brend/",
+          "snippet": "Как зарегистрировать бренд в России. Что можно защитить, порядок регистрации, стоимость, сроки и ошибки, которых стоит избегать."
+        },
+        {
+          "title": "Как зарегистрировать бренд одежды: пошаговая инструкция",
+          "url": "https://agregatorcursov.ru/articles/kak-zaregistrirovat-brend-odezhdy-poshagovaya-instruktsiya",
+          "snippet": "В статье юристы рассказывают о порядке регистрации бренда в Роспатенте, сроках регистрации и размере госпошлины. Можно ли сократить срок регистрации и уменьшить пошлину?"
+        },
+        {
+          "title": "Как открыть свой бренд одежды в 2026 году: полная пошаговая инструкция",
+          "url": "https://businessmens.ru/article/kak-otkryt-svoy-brend-odezhdy-polnaya-poshagovaya-instrukciya",
+          "snippet": "Чтобы зарегистрировать свой бренд одежды, обычно требуется выбрать уникальное название, определить класс МКТУ, подготовить заявление по форме Роспатента и оплатить госпошлину."
+        }
+      ],
+      "searched_at": "2026-10-31"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "как зарегистрировать бренд одежды новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как создать свой бренд одежды с нуля: пошаговая инструкция 2026",
+          "url": "https://bankprofi.ru/blog/kak-sozdat-svoy-brend-odezhdy-s-nulya-poshagovyy-plan-2026",
+          "snippet": ""
+        },
+        {
+          "title": "Как создать свой бренд одежды с нуля: пошаговый план 2026 — Подушка",
+          "url": "https://bee-together.ru/media/articles/kak-sozdat-svoi-brend-odezdy-s-nulya-v-rossii-posagovyi-plan-2026",
+          "snippet": "В этой статье вы получите пошаговую инструкцию как создать свой бренд одежды с нуля, с акцентом на экономические аспекты старта и минимизацию рисков."
+        },
+        {
+          "title": "Свой бренд одежды: 15 шагов для запуска с нуля в 2026 году",
+          "url": "https://blog.notifio.ru/promotion-and-marketing/svoj-brend-odezhdy.html",
+          "snippet": "Пошаговый план 2026: как создать свой бренд одежды с нуля, сколько стоит открыть и запустить, что нужно, как назвать, найти производство и продвигать."
+        },
+        {
+          "title": "Как открыть свой бренд одежды в 2026 году: полная пошаговая инструкция",
+          "url": "https://businessmens.ru/article/kak-otkryt-svoy-brend-odezhdy-polnaya-poshagovaya-instrukciya",
+          "snippet": "В этой главе мы детально разберем, как легализовать свой бренд одежды, защитить интеллектуальную собственность и выстроить прозрачную, безопасную и прибыльную систему работы."
+        },
+        {
+          "title": "Как создать свой бренд одежды с нуля в 2026: с чего начать, что для ...",
+          "url": "https://secrets.tbank.ru/biznes-s-nulya/kak-sozdat-svoj-brend-odezhdy/",
+          "snippet": "В этой статье мы представили подробную инструкцию по созданию бренда одежды: от выбора ниши и разработки концепции до производства, продвижения и первых продаж."
+        },
+        {
+          "title": "Как начать бренд одежды (шаг за шагом, 2026)",
+          "url": "https://www.atomm.com/ru/blog/2488-how-to-start-a-clothing-brand",
+          "snippet": "Создание бренда одежды можно условно разделить на семь шагов. Количество шагов и стоимость запуска могут быть индивидуальными, это не окончательный план. Скажем, возможно, у вас уже зарегистрирован бизнес — значит, этот шаг можно пропустить. Поэтому каждый этап придется просчитывать самостоятельно."
+        }
+      ],
+      "searched_at": "2026-10-31"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "товарный знак для одежды класс мкту 2026",
+      "purpose": "вторичный запрос: товарный знак для одежды класс мкту",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Классы МКТУ для товарного знака в 2026 году: как выбрать под свой ...",
+          "url": "https://podpisal.ru/articles/klassy-mktu-dlya-tovarnogo-znaka/",
+          "snippet": ""
+        },
+        {
+          "title": "МКТУ: классы товаров и услуг для регистрации товарных знаков",
+          "url": "https://mktu.org/",
+          "snippet": "Ниже — как устроена классификация, какая редакция действует в 2026 году, таблица классов для типовых видов бизнеса и расчёт пошлин за каждый класс."
+        },
+        {
+          "title": "МКТУ для одежды — классы 25,35 — расчёт онлайн 2026",
+          "url": "https://marqatm.ru/analytics/mktu-dlya-odezhda.html",
+          "snippet": "На сайте опубликована последняя 13-ая редакция классификации МКТУ 2026 года. Вы можете самостоятельно подобрать классы МКТУ для товарного знака, который хотите зарегистрировать."
+        },
+        {
+          "title": "Регистрация товарного знака одежда: сроки, цена и классы МКТУ 2026",
+          "url": "https://lyratetrademark.ru/2026/08/12/hotite-zashhitit-svoj-brend-odezhdy-uznajte-kak-zaregistrirovat-tovarnyj-znak-v-2026-godu-sroki-stoimost-i-neobhodimye-klassy-mktu/",
+          "snippet": "МКТУ (Международная классификация товаров и услуг) — система, по которой Роспатент определяет, какие товары и услуги охраняет зарегистрированный товарный знак (статья 1492 ГК РФ). По состоянию на май 2026 года для бренда одежды базовый набор классов — 25 и 35 МКТУ."
+        },
+        {
+          "title": "Классы МКТУ для регистрации товарного знака одежды — как выбрать в 2025 ...",
+          "url": "https://lyratetrademark.ru/2026/07/08/kak-vybrat-klassy-mktu-dlya-registraczii-tovarnogo-znaka-odezhdy-v-2025-2026-godah-uznajte-sekrety-uspeshnoj-registraczii-i-zashhitite-svoj-brend/",
+          "snippet": "Как выбрать классы МКТУ для регистрации товарного знака в 2026 году? МКТУ для регистрации товарных знаков это классификация, где 45 классов: 34 на товары и 11 на услуги."
+        },
+        {
+          "title": "Классы МКТУ-13 для товарного знака в 2026 | Qbrand",
+          "url": "https://qbrand.ru/blog/klassy-mktu-dlya-registracii-tovarnogo-znaka/",
+          "snippet": "Классы МКТУ для регистрации товарного знака одежды — как выбрать в 2025-2026. Быстрый ответ: Для бренда одежды в 2025-2026 годах базовый выбор почти всегда начинается с 25 класса МКТУ (одежда, обувь, головные уборы)."
+        }
+      ],
+      "searched_at": "2026-10-31"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "бренд одежды wildberries 2026",
+      "purpose": "вторичный запрос: бренд одежды wildberries",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Все Бренды - каталог 2025-2026 в интернет магазине WildBerries.ru",
+          "url": "https://www.wildberries.ru/brands/vse-brendy",
+          "snippet": ""
+        },
+        {
+          "title": "Женская одежда 2026: Главные тренды Wildberries уже сейчас!",
+          "url": "https://blog.skgroups.ru/osnovnye-trendy-zhenskoj-odezhdy-na-wildberries-v-2026-godu/",
+          "snippet": "Каталог Все Бренды 92 товара Белье Спортивная одежда Распродажа По популярности Все фильтры"
+        },
+        {
+          "title": "модная одежда - каталог 2025-2026 в интернет магазине WildBerries.ru",
+          "url": "https://www.wildberries.ru/brands/modnaya-odezhda",
+          "snippet": "Узнайте, что будет в моде на Wildberries в 2026 году! Quiet Luxury, минимализм, рубашки и блузы - самые горячие тренды женской одежды. Планируйте гардероб заранее!"
+        },
+        {
+          "title": "Бренды на Wildberries, которые устроили распродажу: стильные находки 2026",
+          "url": "https://dzen.ru/a/amwkiZ4XI375NJrL",
+          "snippet": "модная одежда / Костюм спортивный на молнии с капюшоном 28 октября -69% 1 355 ₽ 4 410 ₽"
+        },
+        {
+          "title": "7 брендов одежды с Wildberries с крутыми зимними коллекциями 2025-2026 ...",
+          "url": "https://www.yapokupayu.ru/blogs/post/7-brendov-s-wildberries-s-trendovymi-zimnimi-veschami-i-horoshimi-otzyvami",
+          "snippet": "Собрала подборку брендов, на которые точно стоит обратить внимание. Элегантные костюмы и жакеты. Сейчас многие бренды предлагают классические костюмы со скидками до 50-70%. Особенно понравились модели в молочном, темно-синем, шоколадном и графитовом оттенках."
+        },
+        {
+          "title": "12 Находок Весна 2026. Подборка актуальной одежды с Wildberries",
+          "url": "https://dzen.ru/a/aac3l4q1ATnA4HAP",
+          "snippet": "Для любительниц свитеров этот бренд станет приятным открытием. В «Избранное» попали трендовая модель с открытыми плечами, объемными рукавами и воротником поло. Также у бренда можно сразу собрать готовые образы — в каталоге представлены кожаные юбки миди, водолазки и приталенные пальто."
+        }
+      ],
+      "searched_at": "2026-10-31"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "регистрация названия бренда одежды 2026",
+      "purpose": "вторичный запрос: регистрация названия бренда одежды",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Регистрация бренда: пошаговая инструкция 2026 | IPbot",
+          "url": "https://ipbot.ru/articles/registratsiya-brenda/",
+          "snippet": ""
+        },
+        {
+          "title": "Как зарегистрировать бренд в 2026 году?",
+          "url": "https://www.dvitex.ru/poleznoe/biznes/intellektualnaya-sobstvennost/kak-zaregistrirovat-brend/",
+          "snippet": "Как зарегистрировать бренд в России. Что можно защитить, порядок регистрации, стоимость, сроки и ошибки, которых стоит избегать."
+        },
+        {
+          "title": "Регистрация названия бренда как ТЗ — пошагово — инструкция 2026",
+          "url": "https://marqatm.ru/analytics/registraciya-nazvaniya-brenda.html",
+          "snippet": "В статье юристы рассказывают о порядке регистрации бренда в Роспатенте, сроках регистрации и размере госпошлины. Можно ли сократить срок регистрации и уменьшить пошлину?"
+        },
+        {
+          "title": "Регистрация бренда: как защитить название и логотип в 2026 году",
+          "url": "https://patent-family.ru/journal/tz/registraciya-brenda/",
+          "snippet": "Проверим ваше название по базам ФИПС и оценим шансы регистрации — бесплатно, за 2 часа."
+        },
+        {
+          "title": "Как зарегистрировать бренд одежды: пошаговая инструкция",
+          "url": "https://agregatorcursov.ru/articles/kak-zaregistrirovat-brend-odezhdy-poshagovaya-instruktsiya",
+          "snippet": "Зарегистрировать бренд целиком нельзя — защитить можно только его элементы через товарный знак. Разбираем стратегию защиты названия и логотипа, этапы регистрации и типичные ошибки."
+        },
+        {
+          "title": "Как зарегистрировать бренд в России — этапы, процедура, документы для ...",
+          "url": "https://www.garant.ru/gardium/guide/kak-zapatentovat-brend/",
+          "snippet": "Чтобы зарегистрировать свой бренд одежды, обычно требуется выбрать уникальное название, определить класс МКТУ, подготовить заявление по форме Роспатента и оплатить госпошлину."
+        }
+      ],
+      "searched_at": "2026-10-31"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как зарегистрировать бренд одежды: классы МКТУ для маркетплейсов и розницы 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Товарный знак для бренда одежды: классы МКТУ и регистрация",
+          "url": "https://ipbot.ru/articles/tz-dlya-brenda-odezhdy/",
+          "snippet": ""
+        },
+        {
+          "title": "Классы МКТУ-13 для товарного знака в 2026 | Qbrand",
+          "url": "https://qbrand.ru/blog/klassy-mktu-dlya-registracii-tovarnogo-znaka/",
+          "snippet": "Защитить имя и логотип бренда одежды помогает товарный знак. Разберём, зачем он нужен, что регистрировать, какие классы МКТУ выбрать, сколько это стоит и как защищать бренд на ..."
+        },
+        {
+          "title": "МКТУ для одежды — классы 25,35 — расчёт онлайн 2026",
+          "url": "https://marqatm.ru/analytics/mktu-dlya-odezhda.html",
+          "snippet": "Разбираем 13-ю редакцию МКТУ, которая действует с 1 января 2026 года. 500+ изменений, новые правила пошлин, разбор топ-10 классов и как не переплатить за лишние позиции."
+        },
+        {
+          "title": "Тз Для Одежды — Регистрация И Защита Бренда | Marqa 2026",
+          "url": "https://marqatm.ru/analytics/tz-dlya-odezhda.html",
+          "snippet": "Рассчитайте стоимость регистрации бренда одежды прямо сейчас — калькулятор учтёт классы МКТУ и скидку за электронную подачу."
+        },
+        {
+          "title": "Регистрация товарного знака: пошаговая инструкция и стоимость | Банки.ру",
+          "url": "https://www.banki.ru/news/daytheme/?id=11022914",
+          "snippet": "Проверяйте класс 25 (одежда, обувь, головные уборы) и класс 35 (розница, маркетплейсы). Сходство оценивается по звуковому, визуальному и смысловому критериям согласно Руководству ..."
+        },
+        {
+          "title": "25 класс МКТУ 2026 г. Полный перечень товаров и пояснения | tm-patent.ru",
+          "url": "https://www.tm-patent.ru/Niceclasses/class25.html",
+          "snippet": "Разбираемся, что такое товарный знак, какие ограничения существуют, как выбрать классы МКТУ, сколько стоит регистрация и как пошагово оформить бренд в России."
+        }
+      ],
+      "searched_at": "2026-10-31"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://bankprofi.ru/blog/kak-sozdat-svoy-brend-odezhdy-s-nulya-poshagovyy-plan-2026",
+      "title": "Как создать свой бренд одежды с нуля: пошаговая инструкция 2026",
+      "from_query": "как зарегистрировать бренд одежды 2026"
+    },
+    {
+      "url": "https://bee-together.ru/media/articles/kak-sozdat-svoi-brend-odezdy-s-nulya-v-rossii-posagovyi-plan-2026",
+      "title": "Как создать свой бренд одежды с нуля: пошаговый план 2026 — Подушка",
+      "from_query": "как зарегистрировать бренд одежды 2026"
+    },
+    {
+      "url": "https://businessmens.ru/article/kak-otkryt-svoy-brend-odezhdy-polnaya-poshagovaya-instrukciya",
+      "title": "Как открыть свой бренд одежды в 2026 году: полная пошаговая инструкция",
+      "from_query": "как зарегистрировать бренд одежды 2026"
+    },
+    {
+      "url": "https://agregatorcursov.ru/articles/kak-zaregistrirovat-brend-odezhdy-poshagovaya-instruktsiya",
+      "title": "Как зарегистрировать бренд одежды: пошаговая инструкция",
+      "from_query": "как зарегистрировать бренд одежды 2026"
+    },
+    {
+      "url": "https://www.dvitex.ru/poleznoe/biznes/intellektualnaya-sobstvennost/kak-zaregistrirovat-brend/",
+      "title": "Как зарегистрировать бренд в 2026 году?",
+      "from_query": "как зарегистрировать бренд одежды 2026"
+    },
+    {
+      "url": "https://ipbot.ru/articles/registratsiya-brenda/",
+      "title": "Регистрация бренда: пошаговая инструкция 2026 | IPbot",
+      "from_query": "как зарегистрировать бренд одежды 2026"
+    },
+    {
+      "url": "https://blog.notifio.ru/promotion-and-marketing/svoj-brend-odezhdy.html",
+      "title": "Свой бренд одежды: 15 шагов для запуска с нуля в 2026 году",
+      "from_query": "как зарегистрировать бренд одежды новости 2026"
+    },
+    {
+      "url": "https://secrets.tbank.ru/biznes-s-nulya/kak-sozdat-svoj-brend-odezhdy/",
+      "title": "Как создать свой бренд одежды с нуля в 2026: с чего начать, что для ...",
+      "from_query": "как зарегистрировать бренд одежды новости 2026"
+    },
+    {
+      "url": "https://www.atomm.com/ru/blog/2488-how-to-start-a-clothing-brand",
+      "title": "Как начать бренд одежды (шаг за шагом, 2026)",
+      "from_query": "как зарегистрировать бренд одежды новости 2026"
+    },
+    {
+      "url": "https://podpisal.ru/articles/klassy-mktu-dlya-tovarnogo-znaka/",
+      "title": "Классы МКТУ для товарного знака в 2026 году: как выбрать под свой ...",
+      "from_query": "товарный знак для одежды класс мкту 2026"
+    },
+    {
+      "url": "https://mktu.org/",
+      "title": "МКТУ: классы товаров и услуг для регистрации товарных знаков",
+      "from_query": "товарный знак для одежды класс мкту 2026"
+    },
+    {
+      "url": "https://marqatm.ru/analytics/mktu-dlya-odezhda.html",
+      "title": "МКТУ для одежды — классы 25,35 — расчёт онлайн 2026",
+      "from_query": "товарный знак для одежды класс мкту 2026"
+    },
+    {
+      "url": "https://lyratetrademark.ru/2026/08/12/hotite-zashhitit-svoj-brend-odezhdy-uznajte-kak-zaregistrirovat-tovarnyj-znak-v-2026-godu-sroki-stoimost-i-neobhodimye-klassy-mktu/",
+      "title": "Регистрация товарного знака одежда: сроки, цена и классы МКТУ 2026",
+      "from_query": "товарный знак для одежды класс мкту 2026"
+    },
+    {
+      "url": "https://lyratetrademark.ru/2026/07/08/kak-vybrat-klassy-mktu-dlya-registraczii-tovarnogo-znaka-odezhdy-v-2025-2026-godah-uznajte-sekrety-uspeshnoj-registraczii-i-zashhitite-svoj-brend/",
+      "title": "Классы МКТУ для регистрации товарного знака одежды — как выбрать в 2025 ...",
+      "from_query": "товарный знак для одежды класс мкту 2026"
+    },
+    {
+      "url": "https://qbrand.ru/blog/klassy-mktu-dlya-registracii-tovarnogo-znaka/",
+      "title": "Классы МКТУ-13 для товарного знака в 2026 | Qbrand",
+      "from_query": "товарный знак для одежды класс мкту 2026"
+    },
+    {
+      "url": "https://www.wildberries.ru/brands/vse-brendy",
+      "title": "Все Бренды - каталог 2025-2026 в интернет магазине WildBerries.ru",
+      "from_query": "бренд одежды wildberries 2026"
+    },
+    {
+      "url": "https://blog.skgroups.ru/osnovnye-trendy-zhenskoj-odezhdy-na-wildberries-v-2026-godu/",
+      "title": "Женская одежда 2026: Главные тренды Wildberries уже сейчас!",
+      "from_query": "бренд одежды wildberries 2026"
+    },
+    {
+      "url": "https://www.wildberries.ru/brands/modnaya-odezhda",
+      "title": "модная одежда - каталог 2025-2026 в интернет магазине WildBerries.ru",
+      "from_query": "бренд одежды wildberries 2026"
+    },
+    {
+      "url": "https://dzen.ru/a/amwkiZ4XI375NJrL",
+      "title": "Бренды на Wildberries, которые устроили распродажу: стильные находки 2026",
+      "from_query": "бренд одежды wildberries 2026"
+    },
+    {
+      "url": "https://www.yapokupayu.ru/blogs/post/7-brendov-s-wildberries-s-trendovymi-zimnimi-veschami-i-horoshimi-otzyvami",
+      "title": "7 брендов одежды с Wildberries с крутыми зимними коллекциями 2025-2026 ...",
+      "from_query": "бренд одежды wildberries 2026"
+    },
+    {
+      "url": "https://dzen.ru/a/aac3l4q1ATnA4HAP",
+      "title": "12 Находок Весна 2026. Подборка актуальной одежды с Wildberries",
+      "from_query": "бренд одежды wildberries 2026"
+    },
+    {
+      "url": "https://marqatm.ru/analytics/registraciya-nazvaniya-brenda.html",
+      "title": "Регистрация названия бренда как ТЗ — пошагово — инструкция 2026",
+      "from_query": "регистрация названия бренда одежды 2026"
+    },
+    {
+      "url": "https://patent-family.ru/journal/tz/registraciya-brenda/",
+      "title": "Регистрация бренда: как защитить название и логотип в 2026 году",
+      "from_query": "регистрация названия бренда одежды 2026"
+    },
+    {
+      "url": "https://www.garant.ru/gardium/guide/kak-zapatentovat-brend/",
+      "title": "Как зарегистрировать бренд в России — этапы, процедура, документы для ...",
+      "from_query": "регистрация названия бренда одежды 2026"
+    },
+    {
+      "url": "https://ipbot.ru/articles/tz-dlya-brenda-odezhdy/",
+      "title": "Товарный знак для бренда одежды: классы МКТУ и регистрация",
+      "from_query": "Как зарегистрировать бренд одежды: классы МКТУ для маркетплейсов и розницы 2026"
+    },
+    {
+      "url": "https://marqatm.ru/analytics/tz-dlya-odezhda.html",
+      "title": "Тз Для Одежды — Регистрация И Защита Бренда | Marqa 2026",
+      "from_query": "Как зарегистрировать бренд одежды: классы МКТУ для маркетплейсов и розницы 2026"
+    },
+    {
+      "url": "https://www.banki.ru/news/daytheme/?id=11022914",
+      "title": "Регистрация товарного знака: пошаговая инструкция и стоимость | Банки.ру",
+      "from_query": "Как зарегистрировать бренд одежды: классы МКТУ для маркетплейсов и розницы 2026"
+    },
+    {
+      "url": "https://www.tm-patent.ru/Niceclasses/class25.html",
+      "title": "25 класс МКТУ 2026 г. Полный перечень товаров и пояснения | tm-patent.ru",
+      "from_query": "Как зарегистрировать бренд одежды: классы МКТУ для маркетплейсов и розницы 2026"
+    }
+  ]
+}

@@ -692,14 +692,14 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L25 — Регистрация бренда одежды: классы МКТУ и маркетплейсы
 
-- **status:** new
+- **status:** written
 - **priority:** P1
 - **site:** lireate
 - **lireate_category_id:** 13
 - **lireate_category_name:** Бренд
 - **slug:** registraciya-brenda-odezhdy-mktu
-- **h1:** Регистрация бренда одежды: классы МКТУ для маркетплейсов и розницы
-- **primary_query:** регистрация бренда одежды
+- **h1:** Как зарегистрировать бренд одежды: классы МКТУ для маркетплейсов и розницы
+- **primary_query:** как зарегистрировать бренд одежды
 - **secondary_queries:** товарный знак для одежды класс мкту, бренд одежды wildberries, регистрация названия бренда одежды
 - **search_intent:** how_to
 - **article_mode:** B
