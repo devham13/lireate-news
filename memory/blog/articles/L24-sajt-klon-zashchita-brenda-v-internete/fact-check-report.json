@@ -1,0 +1,108 @@
+{
+  "article": "memory/blog/articles/L24-sajt-klon-zashchita-brenda-v-internete/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "warning",
+  "total_extracted_facts": 14,
+  "verified_facts_count": 5,
+  "unverified_facts_count": 9,
+  "facts": [
+    {
+      "fact": "5 000 000 руб",
+      "kind": "price_or_currency",
+      "context": "RL, требования и расчет по ст. 1515 (от 10 000 до 5 000 000 руб. или двукратная стоимость - сверьте редакцию). Де",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "ов, за которыми закреплен знак. Материал на 31.10.2026 не заменяет консультацию патентного поверенного ил",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2025",
+      "kind": "date_or_year",
+      "context": "упоминание чужого бренда в рекламе» Обзор ВС № 4 (2025), п. 22: само размещение знака в URL не всегда на",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "10 лет",
+      "kind": "metric_or_duration",
+      "context": "ст. 1484 ). Делайте: сверить свидетельство, срок (10 лет, ст. 1491 ) и классы МКТУ в Поисковой платформе ;",
+      "verified": true,
+      "reason": "Numerical value '10' matched in fact-bank context"
+    },
+    {
+      "fact": "30 дней",
+      "kind": "metric_or_duration",
+      "context": "IS → выбор адресата (домен / хостинг) → претензия 30 дней → иск → контроль удаления и мониторинг новых доме",
+      "verified": true,
+      "reason": "Numerical value '30' matched in fact-bank context"
+    },
+    {
+      "fact": "1484",
+      "kind": "large_number",
+      "context": "домене или на страницах при риске смешения ( ст. 1484 ). Проверьте свидетельство и МКТУ , зафиксируйте",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1515",
+      "kind": "large_number",
+      "context": "d.ru ). Претензия, затем иск и компенсация по ст. 1515 . РКН не закрывает сайт только из-за чужого знака",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1491",
+      "kind": "large_number",
+      "context": "Делайте: сверить свидетельство, срок (10 лет, ст. 1491 ) и классы МКТУ в Поисковой платформе ; при споре",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1253",
+      "kind": "large_number",
+      "context": "нистратору/владельцу контента; посредник - по ст. 1253.1 Делайте: приложить номер свидетельства и сравне",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1252",
+      "kind": "large_number",
+      "context": "; на ответ дают 30 календарных дней ( п. 5.1 ст. 1252 ). При иске только о пресечении использования зна",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 000",
+      "kind": "large_number",
+      "context": "ельство, URL, требования и расчет по ст. 1515 (от 10 000 до 5 000 000 руб. или двукратная стоимость - сверь",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "5 000 000",
+      "kind": "large_number",
+      "context": "RL, требования и расчет по ст. 1515 (от 10 000 до 5 000 000 руб. или двукратная стоимость - сверьте редакцию).",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "15292",
+      "kind": "large_number",
+      "context": "писку (практика СИП по сходным доменам - дело А76-15292/2025 ). Не делайте: обещать блокировку \"за три дн",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "в доменах и на сайтах. Достоверность данных: ст. 1483, 1484, 1252, 1253.1, 1515 ГК РФ, инструкции cctld",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    }
+  ]
+}

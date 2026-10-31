@@ -1,0 +1,479 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-10-31",
+    "today_ru": "31.10.2026",
+    "year": 2026,
+    "month": 10,
+    "month_name_ru": "октябрь",
+    "weekday_ru": "суббота",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-02",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-10-31 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L24",
+    "priority": "P1",
+    "slug": "sajt-klon-zashchita-brenda-v-internete",
+    "h1": "Сайт-клон конкурента: как защитить бренд и товарный знак в интернете",
+    "primary_query": "защита бренда в интернете",
+    "secondary_queries": [
+      "блокировка сайта клона",
+      "копия сайта конкурента",
+      "доменное имя и товарный знак"
+    ],
+    "search_intent": "workflow",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "защита бренда в интернете 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Защита бренда 2026: товарный знак, домен, авторские права",
+          "url": "https://chimitdorzhi.tech/blog/zashchita-brenda-2026/",
+          "snippet": ""
+        },
+        {
+          "title": "Защита бренда в Интернете в 2026 году: как BrandShield помогает ...",
+          "url": "https://softprom.com/ru/zaschita-brenda-v-internete-v-2026-godu-kak-brandshield-pomogaet-kompaniyam-zaschischatsya-ot-ugroz-sozdavaemyih-iskusstvennyim-intellektom",
+          "snippet": "В 2026 году защита бренда — это уже не «когда вырастем», а базовая гигиена: имя, домен и логотип угоняют у стартапов и инфобизнеса каждый месяц. Три слоя защиты: товарный знак (Роспатент), домен (на ИП/ООО, на 5-10 лет) и авторское право (депонирование статей, кода, дизайна, видео)."
+        },
+        {
+          "title": "Рейтинг Drp-платформ И Сервисов Защиты Бренда 2026",
+          "url": "https://cyber-index.ru/research/reyting-drp-brand-protection-2026",
+          "snippet": "Discover the 2026 landscape of online brand abuse — including AI phishing, counterfeit marketplaces, fake domains, and social impersonation — and learn how BrandShield and Softprom help businesses detect, monitor, and remove threats with a full brand protection solution."
+        },
+        {
+          "title": "Proright — Защита Бренда И Товарного Знака В Интернете",
+          "url": "https://proright.ru/",
+          "snippet": "Рейтинг DRP-платформ и сервисов защиты бренда 2026: критерии сравнения, ориентир по российским вендорам и переход к рейтингу поставщиков по проверяемым"
+        },
+        {
+          "title": "Защита бренда в интернете и на маркетплейсах | Мониторинг нарушений ...",
+          "url": "https://www.gipsecurity.com/",
+          "snippet": "Мы защищаем компании, товарные знаки, доменные имена, программное обеспечение и приложения, делимся опытом защиты товарных знаков в Интернете. Найдём доменные имена, аккаунты и сайты, на которых незаконно используется ваш бренд. Соберём ссылки и все доказательства."
+        },
+        {
+          "title": "Защита бренда в интернете: маркетплейсы, соцсети, домены",
+          "url": "https://vitvet.com/articles/zawita_brenda/chuzhoj_tovarnyj_znak/",
+          "snippet": "GIPSECURITY — платформа защиты бренда в интернете, России, СНГ и ЕАЭС. Мониторинг нарушений, поиск контрафакта, аналитика продавцов, фиксация доказательств, претензионная работа, юридическое ..."
+        }
+      ],
+      "searched_at": "2026-10-31"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "защита бренда в интернете октябрь 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Рейтинг Drp-платформ И Сервисов Защиты Бренда 2026",
+          "url": "https://cyber-index.ru/research/reyting-drp-brand-protection-2026",
+          "snippet": ""
+        },
+        {
+          "title": "BrandSecurity — защита бренда от цифровых рисков - Сообщения за 2026 год",
+          "url": "https://www.securitylab.ru/blog/company/BrandSecurity/?year=2026",
+          "snippet": "Что входит в DRP и защиту бренда DRP (Digital Risk Protection) и Brand Protection закрывают риски, которые живут *вне* корпоративного периметра — там, где не работают межсетевой экран и EDR."
+        },
+        {
+          "title": "Защита бренда 2026: товарный знак, домен, авторские права",
+          "url": "https://chimitdorzhi.tech/blog/zashchita-brenda-2026/",
+          "snippet": "Блог компании BrandSecurity о защите брендов от фишинга, поддельных ресурсов, утечек данных и других онлайн-угроз."
+        },
+        {
+          "title": "Защита бренда в Интернете в 2026 году: как BrandShield помогает ...",
+          "url": "https://softprom.com/ru/zaschita-brenda-v-internete-v-2026-godu-kak-brandshield-pomogaet-kompaniyam-zaschischatsya-ot-ugroz-sozdavaemyih-iskusstvennyim-intellektom",
+          "snippet": "Чек-лист «защита бренда на этой неделе» — 5 действий, которые занимают 1-2 дня и закрывают 80% рисков. Конкретные сервисы, цены и сроки 2026 года."
+        },
+        {
+          "title": "Защита бренда на маркетплейсах в 2026: подделки и штрафы",
+          "url": "https://lowmart.ru/articles/brand-protection-on-marketplaces-in-2026-counterfeits-and/",
+          "snippet": "Discover the 2026 landscape of online brand abuse — including AI phishing, counterfeit marketplaces, fake domains, and social impersonation — and learn how BrandShield and Softprom help businesses detect, monitor, and remove threats with a full brand protection solution."
+        },
+        {
+          "title": "Системы защиты бренда (Brand Protection) - pickTech",
+          "url": "https://picktech.ru/catalog/brand-protection-software/",
+          "snippet": "8 фактов про защиту бренда на WB, Ozon, ЯМ в 2026: регистрация товарного знака, Цифровой арбитраж, кабинет бренда, статья 180 УК и закон 289-ФЗ против контрафакта."
+        }
+      ],
+      "searched_at": "2026-10-31"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "защита бренда в интернете новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "BrandSecurity — защита бренда от цифровых рисков - Сообщения за 2026 год",
+          "url": "https://www.securitylab.ru/blog/company/BrandSecurity/?year=2026",
+          "snippet": ""
+        },
+        {
+          "title": "BrandSecurity выпустила отчет «Нелегальные продажи в интернете 2026»",
+          "url": "https://brandsecurity.ru/press-center/novost-ob-analiticheskom-otchete-o-nelegalnykh-prodazhakh",
+          "snippet": "Блог компании BrandSecurity о защите брендов от фишинга, поддельных ресурсов, утечек данных и других онлайн-угроз."
+        },
+        {
+          "title": "Защита бренда 2026: товарный знак, домен, авторские права",
+          "url": "https://chimitdorzhi.tech/blog/zashchita-brenda-2026/",
+          "snippet": "Компания BrandSecurity выпустила аналитический отчет « Нелегальные продажи в интернете 2026: тенденции, отрасли, прогнозы ». В нем рассмотрены динамика нарушений прав на бренды, распределение нелегальных предложений по ..."
+        },
+        {
+          "title": "Защита бренда в Интернете в 2026 году: как BrandShield помогает ...",
+          "url": "https://softprom.com/ru/zaschita-brenda-v-internete-v-2026-godu-kak-brandshield-pomogaet-kompaniyam-zaschischatsya-ot-ugroz-sozdavaemyih-iskusstvennyim-intellektom",
+          "snippet": "Чек-лист «защита бренда на этой неделе» — 5 действий, которые занимают 1-2 дня и закрывают 80% рисков. Конкретные сервисы, цены и сроки 2026 года."
+        },
+        {
+          "title": "BrandSecurity выпустила отчет о нелегальных продажах в интернете в 2026 ...",
+          "url": "https://www.securitylab.ru/blog/company/BrandSecurity/363265.php",
+          "snippet": "Discover the 2026 landscape of online brand abuse — including AI phishing, counterfeit marketplaces, fake domains, and social impersonation — and learn how BrandShield and Softprom help businesses detect, monitor, and remove threats with a full brand protection solution."
+        },
+        {
+          "title": "Рейтинг Drp-платформ И Сервисов Защиты Бренда 2026",
+          "url": "https://cyber-index.ru/research/reyting-drp-brand-protection-2026",
+          "snippet": "Компания BrandSecurity выпустила аналитический отчет «Нелегальные продажи в интернете 2026: тенденции, отрасли, прогнозы». В нем рассмотрены динамика нарушений прав на бренды, распределение нелегальных предложений по типам площадок и товарным категориям, а также изменения в методах работы продавцов."
+        }
+      ],
+      "searched_at": "2026-10-31"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "блокировка сайта клона 2026",
+      "purpose": "вторичный запрос: блокировка сайта клона",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Какие сервисы заблокированы в России сейчас в 2026 году",
+          "url": "https://gogov.ru/articles/ru-detector",
+          "snippet": ""
+        },
+        {
+          "title": "Что заблокировал РКН в 2026 году — актуальный список",
+          "url": "https://takprostobot.ru/blog/chto-zablokiroval-rkn",
+          "snippet": "Статус работы в России в 2026 году можно найти ниже. Обращаем внимание, что если вы сталкиваетесь с проблемой в его работе прямо сейчас, то наличие глобальных сбоев можно проверить на сайтах downdetector.su и сбой.рф. Блокировка сайтов и сервисов в России осуществляется по различным причинам."
+        },
+        {
+          "title": "Заблокированные сайты в России 2026: полный разбор | MoleHole",
+          "url": "https://molehole.de/ru/zablokirovannye-sajty-rossiya/",
+          "snippet": "Актуальный список заблокированных сайтов и сервисов в России в 2026 году. Что нельзя открыть без VPN."
+        },
+        {
+          "title": "Заблокированные сайты в России 2026: как устроено и что законно",
+          "url": "https://maximum-vpn.com/blocked-websites-in-russia",
+          "snippet": "Какие сайты заблокированы в России в 2026 году и почему. Instagram, LinkedIn, Discord, Spotify — разбор причин блокировок и способы получить доступ."
+        },
+        {
+          "title": "Универсальный сервис проверки ограничения доступа к сайтам и (или ...",
+          "url": "https://blocklist.rkn.gov.ru/",
+          "snippet": "Это разбор того, как устроены блокировки в России в 2026 году: какие уровни бывают, как понять, с каким вы столкнулись, что об этом говорит закон и в каких случаях VPN действительно решает задачу, а в каких нет. Начнём с главного: это три независимых механизма, а не ступени одного."
+        },
+        {
+          "title": "Какие сервисы заблокированы в России в 2026 году: актуальный",
+          "url": "https://www.lovit24.com/blog/zablokirovannyje-servisy-2026",
+          "snippet": "Через форму, опубликованную ниже, вы можете получить данные о принятых мерах по ограничению доступа к сайтам и (или) страницам сайтов в сети «Интернет» в связи с невыполнением требований по ..."
+        }
+      ],
+      "searched_at": "2026-10-31"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "копия сайта конкурента 2026",
+      "purpose": "вторичный запрос: копия сайта конкурента",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "ТОП-6 сервисов для анализа сайтов конкурентов в 2026 году: обзор ...",
+          "url": "https://kokoc.com/blog/top-6-servisov-dlya-analiza-sajtov-konkurentov/",
+          "snippet": ""
+        },
+        {
+          "title": "Чек-лист по Сравнительному Анализу Сайтов Конкурентов [Таблица + Пример ...",
+          "url": "https://sosnovskij.ru/chek-list-analiz-konkurentov/",
+          "snippet": "Обзор лучших сервисов для анализа сайтов конкурентов: Serpstat, SimilarWeb, SpyWords, PR-CY, Arsenkin. Сравнение возможностей, стоимость тарифов и бесплатные аналоги."
+        },
+        {
+          "title": "Как я разбираю сайты конкурентов: алгоритм, метрики и инструменты",
+          "url": "https://vladimirnovozhilov.com/blog/analiz-sajta-konkurenta/",
+          "snippet": "Консультирую по вопросам поисковой оптимизации, продвижения сайтов. Лучший способ узнать мое подробное мнение по волнующей задаче/проблеме. Конкретные ответы на конкретные вопросы."
+        },
+        {
+          "title": "Сравнение Сайта С Конкурентом По Seo Онлайн",
+          "url": "https://raskruty.ru/tools/compare/",
+          "snippet": "В этой статье — пошаговый алгоритм конкурентного разбора: где искать прямых и косвенных соперников, какие метрики смотреть, какими сервисами пользоваться и как свести всё в рабочую таблицу-отчёт. Методика одинаково применима к B2B, IT и услугам — меняется лишь расстановка акцентов."
+        },
+        {
+          "title": "Промпты для анализа конкурентов. 30 готовых примеров",
+          "url": "https://petr-panda.ru/prompty-dlya-analiza-konkurentov/",
+          "snippet": "Сравнение сайта с конкурентом по SEO: два сайта бок о бок — общий балл, ошибки и предупреждения, технические показатели. Бесплатно, без регистрации."
+        },
+        {
+          "title": "Поиск и изучение сайтов конкурентов в 2026 году: обзор 5 полезных ...",
+          "url": "https://seojazz.ru/blog/poisk-i-izuchenie-sajtov-konkurentov-v-2026-godu-obzor-5-poleznyh-servisov-dlja-analiza/",
+          "snippet": "В этой статье вы найдете не просто советы, а готовый инструментарий. Здесь собраны 30 полнообъемных промптов для анализа конкурентов, которые можно адаптировать под любую современную ИИ-модель, будь то ChatGPT, Gemini, DeepSeek или отечественные решения."
+        }
+      ],
+      "searched_at": "2026-10-31"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "доменное имя и товарный знак 2026",
+      "purpose": "вторичный запрос: доменное имя и товарный знак",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Товарный знак и домен — разрешение споров",
+          "url": "https://vitvet.com/articles/intellekt/tovarnye_znaki/tovarnyi_znak_i_domen/",
+          "snippet": ""
+        },
+        {
+          "title": "Доменное имя товарный знак \\ 2026-2025-2024 год \\ Акты, образцы, формы ...",
+          "url": "https://www.consultant.ru/law/podborki/domennoe_imya_tovarnyj_znak/",
+          "snippet": "По состоянию на май 2026 года российские арбитражные суды и международные процедуры UDRP ежегодно рассматривают сотни споров о доменах, зарегистрированных в нарушение прав на товарные знаки."
+        },
+        {
+          "title": "Защита бренда 2026: товарный знак, домен, авторские права",
+          "url": "https://chimitdorzhi.tech/blog/zashchita-brenda-2026/",
+          "snippet": "(Консультация эксперта, 2026) Вопрос: Продавец использует доменное имя интернет-магазина, которое полностью совпадает с товарным знаком организации. При переходе по этому домену пользователь перенаправляется на страницу продавца на маркетплейсе, где размещены товары со знаком организации."
+        },
+        {
+          "title": "Каталог торговых марок и товарных знаков за 2026 год | РБК Компании",
+          "url": "https://companies.rbc.ru/trademarks/year/2026/",
+          "snippet": "В 2026 году защита бренда — это уже не «когда вырастем», а базовая гигиена: имя, домен и логотип угоняют у стартапов и инфобизнеса каждый месяц. Три слоя защиты: товарный знак (Роспатент), домен (на ИП/ООО, на 5-10 лет) и авторское право (депонирование статей, кода, дизайна, видео)."
+        },
+        {
+          "title": "Новые правила регистрации доменов с 1 сентября 2026: что учесть сейчас",
+          "url": "https://companies.rbc.ru/news/g5f0YJ2iI9/novyie-pravila-registratsii-domenov-s-1-sentyabrya-2026-chto-uchest-sejchas/",
+          "snippet": "Каталог торговых марок и товарных знаков зарегистрированных в 2026 году Для индивидуализации товаров регистрируются словесные, изобразительные, объемные обозначения или их комбинации."
+        },
+        {
+          "title": "Доменное имя vs товарный знак - киберсквоттинг",
+          "url": "https://vitvet.com/articles/intellekt/domeny/domennoe_imya_i_tovarnyy_znak/",
+          "snippet": "На конец апреля 2026 года изменения в правилах регистрации доменных имен уже не выглядят отдаленной перспективой. До вступления реформы в силу остается несколько месяцев, и в профессиональной среде все чаще обсуждается, как именно новые требования повлияют на бизнес."
+        }
+      ],
+      "searched_at": "2026-10-31"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Сайт-клон конкурента: как защитить бренд и товарный знак в интернете 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Защита интеллектуальной собственности сайта и бренда",
+          "url": "https://fedotov-ip.ru/blog/zashchita-intellektualnoy-sobstvennosti-v-internete",
+          "snippet": ""
+        },
+        {
+          "title": "Домен и товарный знак: как защищать бренд в интернете",
+          "url": "https://saenko-group.ru/press-center/articles/domen-i-tovarnyj-znak-kak-zashhishhat-brend-v-internete/",
+          "snippet": "Интернет дает бизнесу трафик и продажи, но одновременно увеличивает риски копирования контента, дизайна и бренда. Чтобы сайт, товарный знак и цифровые активы работали как полноценные бизнес‑активы, их нужно не только создать, но и юридически защитить."
+        },
+        {
+          "title": "Как защитить товарный знак в интернете: пошаговая инструкция |…",
+          "url": "https://www.selasat.ru/publications/kak-zashchitit-tovarnyy-znak-v-internete",
+          "snippet": "В этой статье разберём, чем домен отличается от товарного знака, какие схемы используют нарушители, как выстроить стратегию защиты бренда онлайн и что делать, если ваш домен или имя в сети уже «атаковали»."
+        },
+        {
+          "title": "Как защитить товарный знак от конкурентов - выявление нарушений, сбор ...",
+          "url": "https://rg.ru/2024/05/21/kak-zashitit-tovarnyj-znak-ot-konkurentov.html",
+          "snippet": "Пошаговая защита товарного знака в интернете: фиксация нарушения, маркетплейсы, претензия, судебный запрет и компенсация."
+        },
+        {
+          "title": "Доменный спор и права на бренд: как защитить доменное имя и товарный знак",
+          "url": "https://nevskylaw.ru/knowledge/domennyy-spor/",
+          "snippet": "Как доказать нарушение и куда обратиться - в подробной инструкции от судебного юриста \"Гардиума\"."
+        },
+        {
+          "title": "Защита товарного знака в интернете \\ 2026-2025-2024 год \\ Акты, образцы ...",
+          "url": "https://www.consultant.ru/law/podborki/zaschita_tovarnogo_znaka_v_internete/",
+          "snippet": "Составьте список ваших товаров и услуг. Сравните с теми, которые защищены товарным знаком конкурента."
+        }
+      ],
+      "searched_at": "2026-10-31"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://chimitdorzhi.tech/blog/zashchita-brenda-2026/",
+      "title": "Защита бренда 2026: товарный знак, домен, авторские права",
+      "from_query": "защита бренда в интернете 2026"
+    },
+    {
+      "url": "https://softprom.com/ru/zaschita-brenda-v-internete-v-2026-godu-kak-brandshield-pomogaet-kompaniyam-zaschischatsya-ot-ugroz-sozdavaemyih-iskusstvennyim-intellektom",
+      "title": "Защита бренда в Интернете в 2026 году: как BrandShield помогает ...",
+      "from_query": "защита бренда в интернете 2026"
+    },
+    {
+      "url": "https://cyber-index.ru/research/reyting-drp-brand-protection-2026",
+      "title": "Рейтинг Drp-платформ И Сервисов Защиты Бренда 2026",
+      "from_query": "защита бренда в интернете 2026"
+    },
+    {
+      "url": "https://proright.ru/",
+      "title": "Proright — Защита Бренда И Товарного Знака В Интернете",
+      "from_query": "защита бренда в интернете 2026"
+    },
+    {
+      "url": "https://www.gipsecurity.com/",
+      "title": "Защита бренда в интернете и на маркетплейсах | Мониторинг нарушений ...",
+      "from_query": "защита бренда в интернете 2026"
+    },
+    {
+      "url": "https://vitvet.com/articles/zawita_brenda/chuzhoj_tovarnyj_znak/",
+      "title": "Защита бренда в интернете: маркетплейсы, соцсети, домены",
+      "from_query": "защита бренда в интернете 2026"
+    },
+    {
+      "url": "https://www.securitylab.ru/blog/company/BrandSecurity/?year=2026",
+      "title": "BrandSecurity — защита бренда от цифровых рисков - Сообщения за 2026 год",
+      "from_query": "защита бренда в интернете октябрь 2026"
+    },
+    {
+      "url": "https://lowmart.ru/articles/brand-protection-on-marketplaces-in-2026-counterfeits-and/",
+      "title": "Защита бренда на маркетплейсах в 2026: подделки и штрафы",
+      "from_query": "защита бренда в интернете октябрь 2026"
+    },
+    {
+      "url": "https://picktech.ru/catalog/brand-protection-software/",
+      "title": "Системы защиты бренда (Brand Protection) - pickTech",
+      "from_query": "защита бренда в интернете октябрь 2026"
+    },
+    {
+      "url": "https://brandsecurity.ru/press-center/novost-ob-analiticheskom-otchete-o-nelegalnykh-prodazhakh",
+      "title": "BrandSecurity выпустила отчет «Нелегальные продажи в интернете 2026»",
+      "from_query": "защита бренда в интернете новости 2026"
+    },
+    {
+      "url": "https://www.securitylab.ru/blog/company/BrandSecurity/363265.php",
+      "title": "BrandSecurity выпустила отчет о нелегальных продажах в интернете в 2026 ...",
+      "from_query": "защита бренда в интернете новости 2026"
+    },
+    {
+      "url": "https://gogov.ru/articles/ru-detector",
+      "title": "Какие сервисы заблокированы в России сейчас в 2026 году",
+      "from_query": "блокировка сайта клона 2026"
+    },
+    {
+      "url": "https://takprostobot.ru/blog/chto-zablokiroval-rkn",
+      "title": "Что заблокировал РКН в 2026 году — актуальный список",
+      "from_query": "блокировка сайта клона 2026"
+    },
+    {
+      "url": "https://molehole.de/ru/zablokirovannye-sajty-rossiya/",
+      "title": "Заблокированные сайты в России 2026: полный разбор | MoleHole",
+      "from_query": "блокировка сайта клона 2026"
+    },
+    {
+      "url": "https://maximum-vpn.com/blocked-websites-in-russia",
+      "title": "Заблокированные сайты в России 2026: как устроено и что законно",
+      "from_query": "блокировка сайта клона 2026"
+    },
+    {
+      "url": "https://blocklist.rkn.gov.ru/",
+      "title": "Универсальный сервис проверки ограничения доступа к сайтам и (или ...",
+      "from_query": "блокировка сайта клона 2026"
+    },
+    {
+      "url": "https://www.lovit24.com/blog/zablokirovannyje-servisy-2026",
+      "title": "Какие сервисы заблокированы в России в 2026 году: актуальный",
+      "from_query": "блокировка сайта клона 2026"
+    },
+    {
+      "url": "https://kokoc.com/blog/top-6-servisov-dlya-analiza-sajtov-konkurentov/",
+      "title": "ТОП-6 сервисов для анализа сайтов конкурентов в 2026 году: обзор ...",
+      "from_query": "копия сайта конкурента 2026"
+    },
+    {
+      "url": "https://sosnovskij.ru/chek-list-analiz-konkurentov/",
+      "title": "Чек-лист по Сравнительному Анализу Сайтов Конкурентов [Таблица + Пример ...",
+      "from_query": "копия сайта конкурента 2026"
+    },
+    {
+      "url": "https://vladimirnovozhilov.com/blog/analiz-sajta-konkurenta/",
+      "title": "Как я разбираю сайты конкурентов: алгоритм, метрики и инструменты",
+      "from_query": "копия сайта конкурента 2026"
+    },
+    {
+      "url": "https://raskruty.ru/tools/compare/",
+      "title": "Сравнение Сайта С Конкурентом По Seo Онлайн",
+      "from_query": "копия сайта конкурента 2026"
+    },
+    {
+      "url": "https://petr-panda.ru/prompty-dlya-analiza-konkurentov/",
+      "title": "Промпты для анализа конкурентов. 30 готовых примеров",
+      "from_query": "копия сайта конкурента 2026"
+    },
+    {
+      "url": "https://seojazz.ru/blog/poisk-i-izuchenie-sajtov-konkurentov-v-2026-godu-obzor-5-poleznyh-servisov-dlja-analiza/",
+      "title": "Поиск и изучение сайтов конкурентов в 2026 году: обзор 5 полезных ...",
+      "from_query": "копия сайта конкурента 2026"
+    },
+    {
+      "url": "https://vitvet.com/articles/intellekt/tovarnye_znaki/tovarnyi_znak_i_domen/",
+      "title": "Товарный знак и домен — разрешение споров",
+      "from_query": "доменное имя и товарный знак 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/domennoe_imya_tovarnyj_znak/",
+      "title": "Доменное имя товарный знак \\ 2026-2025-2024 год \\ Акты, образцы, формы ...",
+      "from_query": "доменное имя и товарный знак 2026"
+    },
+    {
+      "url": "https://companies.rbc.ru/trademarks/year/2026/",
+      "title": "Каталог торговых марок и товарных знаков за 2026 год | РБК Компании",
+      "from_query": "доменное имя и товарный знак 2026"
+    },
+    {
+      "url": "https://companies.rbc.ru/news/g5f0YJ2iI9/novyie-pravila-registratsii-domenov-s-1-sentyabrya-2026-chto-uchest-sejchas/",
+      "title": "Новые правила регистрации доменов с 1 сентября 2026: что учесть сейчас",
+      "from_query": "доменное имя и товарный знак 2026"
+    },
+    {
+      "url": "https://vitvet.com/articles/intellekt/domeny/domennoe_imya_i_tovarnyy_znak/",
+      "title": "Доменное имя vs товарный знак - киберсквоттинг",
+      "from_query": "доменное имя и товарный знак 2026"
+    },
+    {
+      "url": "https://fedotov-ip.ru/blog/zashchita-intellektualnoy-sobstvennosti-v-internete",
+      "title": "Защита интеллектуальной собственности сайта и бренда",
+      "from_query": "Сайт-клон конкурента: как защитить бренд и товарный знак в интернете 2026"
+    },
+    {
+      "url": "https://saenko-group.ru/press-center/articles/domen-i-tovarnyj-znak-kak-zashhishhat-brend-v-internete/",
+      "title": "Домен и товарный знак: как защищать бренд в интернете",
+      "from_query": "Сайт-клон конкурента: как защитить бренд и товарный знак в интернете 2026"
+    },
+    {
+      "url": "https://www.selasat.ru/publications/kak-zashchitit-tovarnyy-znak-v-internete",
+      "title": "Как защитить товарный знак в интернете: пошаговая инструкция |…",
+      "from_query": "Сайт-клон конкурента: как защитить бренд и товарный знак в интернете 2026"
+    },
+    {
+      "url": "https://rg.ru/2024/05/21/kak-zashitit-tovarnyj-znak-ot-konkurentov.html",
+      "title": "Как защитить товарный знак от конкурентов - выявление нарушений, сбор ...",
+      "from_query": "Сайт-клон конкурента: как защитить бренд и товарный знак в интернете 2026"
+    },
+    {
+      "url": "https://nevskylaw.ru/knowledge/domennyy-spor/",
+      "title": "Доменный спор и права на бренд: как защитить доменное имя и товарный знак",
+      "from_query": "Сайт-клон конкурента: как защитить бренд и товарный знак в интернете 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/zaschita_tovarnogo_znaka_v_internete/",
+      "title": "Защита товарного знака в интернете \\ 2026-2025-2024 год \\ Акты, образцы ...",
+      "from_query": "Сайт-клон конкурента: как защитить бренд и товарный знак в интернете 2026"
+    }
+  ]
+}
