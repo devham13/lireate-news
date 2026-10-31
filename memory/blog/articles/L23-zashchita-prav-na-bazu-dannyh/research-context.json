@@ -1,0 +1,80 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-10-31",
+    "today_ru": "31.10.2026",
+    "year": 2026,
+    "month": 10,
+    "month_name_ru": "октябрь",
+    "weekday_ru": "суббота",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-02",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-10-31 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L23",
+    "priority": "P1",
+    "slug": "zashchita-prav-na-bazu-dannyh",
+    "h1": "Защита прав на базу данных: как оформить и доказать нарушение",
+    "primary_query": "защита прав на базу данных",
+    "secondary_queries": [
+      "исключительное право на базу данных гк рф",
+      "регистрация базы данных",
+      "нарушение прав на базу данных"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "L23",
+    "status": "PASS",
+    "search_intent": "how_to",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "защита прав на базу данных 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "защита прав на базу данных октябрь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "защита прав на базу данных новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "исключительное право на базу данных гк рф 2026",
+      "purpose": "вторичный запрос: исключительное право на базу данных гк рф"
+    },
+    {
+      "id": "secondary_2",
+      "query": "регистрация базы данных 2026",
+      "purpose": "вторичный запрос: регистрация базы данных"
+    },
+    {
+      "id": "secondary_3",
+      "query": "нарушение прав на базу данных 2026",
+      "purpose": "вторичный запрос: нарушение прав на базу данных"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Защита прав на базу данных: как оформить и доказать нарушение 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/L23-zashchita-prav-na-bazu-dannyh",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}

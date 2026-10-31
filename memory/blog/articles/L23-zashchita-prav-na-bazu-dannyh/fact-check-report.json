@@ -1,0 +1,115 @@
+{
+  "article": "memory/blog/articles/L23-zashchita-prav-na-bazu-dannyh/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "warning",
+  "total_extracted_facts": 15,
+  "verified_facts_count": 3,
+  "unverified_facts_count": 12,
+  "facts": [
+    {
+      "fact": "5 000 руб",
+      "kind": "price_or_currency",
+      "context": "я в Роспатенте по ст. 1262 добровольная , пошлина 5 000 руб. , срок услуги 62 рабочих дня (подача через ЕПГУ",
+      "verified": true,
+      "reason": "Numerical value '5000' matched in fact-bank context"
+    },
+    {
+      "fact": "5 000 000 руб",
+      "kind": "price_or_currency",
+      "context": "нзию или иск с расчетом по ст. 1311 (от 10 000 до 5 000 000 руб. или двукратная лицензия) и приложите договоры, с",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1 300 руб",
+      "kind": "price_or_currency",
+      "context": "ерат, 5 000 руб. , одна БД на заявку ; дубликат - 1 300 руб. Делайте: подать до спора, если БД - ядро выручки",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "Н по ПДн идут разными дорогами. Материал на 31.10.2026 не заменяет консультацию юриста. Отделите защиту б",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "1311",
+      "kind": "large_number",
+      "context": "траты, извлечение материалов и компенсация по ст. 1311, а не КоАП за 152-ФЗ. Ниже вы отделите БД от ПДн,",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1260",
+      "kind": "large_number",
+      "context": "чника. TL;DR / Быстрый инсайт: База данных по ст. 1260 ГК РФ - систематизированные для ЭВМ материалы; изг",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1333",
+      "kind": "large_number",
+      "context": "изированные для ЭВМ материалы; изготовитель ( ст. 1333 ) получает исключительное право на извлечение и и",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1334",
+      "kind": "large_number",
+      "context": "тельное право на извлечение и использование ( ст. 1334 ), если создание требовало существенных затрат (п",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 000",
+      "kind": "large_number",
+      "context": "ание требовало существенных затрат (презумпция от 10 000 элементов). Регистрация в Роспатенте по ст. 1262 д",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1262",
+      "kind": "large_number",
+      "context": "0 000 элементов). Регистрация в Роспатенте по ст. 1262 добровольная , пошлина 5 000 руб. , срок услуги 62",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "5 000",
+      "kind": "large_number",
+      "context": "я в Роспатенте по ст. 1262 добровольная , пошлина 5 000 руб. , срок услуги 62 рабочих дня (подача через ЕП",
+      "verified": true,
+      "reason": "Numerical value '5000' matched in fact-bank context"
+    },
+    {
+      "fact": "1335",
+      "kind": "large_number",
+      "context": "ии помните о возобновлении 15-летнего срока ( ст. 1335 ). Решите про регистрацию в Роспатенте: заявление",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "5 000 000",
+      "kind": "large_number",
+      "context": "нзию или иск с расчетом по ст. 1311 (от 10 000 до 5 000 000 руб. или двукратная лицензия) и приложите договоры",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1 300",
+      "kind": "large_number",
+      "context": "ерат, 5 000 руб. , одна БД на заявку ; дубликат - 1 300 руб. Делайте: подать до спора, если БД - ядро выру",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1336",
+      "kind": "large_number",
+      "context": "азах данных. Достоверность данных: ст. 1260, 1333-1336, 1262, 1335.1 и 1311 ГК РФ, пошлина 5 000 руб. по",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
