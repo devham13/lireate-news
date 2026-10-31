@@ -1,0 +1,115 @@
+{
+  "article": "memory/blog/articles/L25-registraciya-brenda-odezhdy-mktu/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 15,
+  "verified_facts_count": 5,
+  "unverified_facts_count": 10,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "формулировки товаров или услуг. Материал на 31.10.2026 не заменяет консультацию патентного поверенного. Р",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2023",
+      "kind": "date_or_year",
+      "context": "оиск - ИС \"Поисковая платформа\" (работает с 11.12.2023). Отметьте классы 25 и 35 , при необходимости 24",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "10 лет",
+      "kind": "metric_or_duration",
+      "context": "пертиза по существу → оплата 2.11 → свидетельство 10 лет → маркировка и мониторинг на маркетплейсах Зафикс",
+      "verified": true,
+      "reason": "Numerical value '10' matched in fact-bank context"
+    },
+    {
+      "fact": "10 дней",
+      "kind": "metric_or_duration",
+      "context": "WB спор идёт через \"Обращения правообладателей\": 10 дней на ответ с документами (см. инструкцию Wildberrie",
+      "verified": true,
+      "reason": "Numerical value '10' matched in fact-bank context"
+    },
+    {
+      "fact": "240102",
+      "kind": "large_number",
+      "context": "название на бирке охраняют через 25, а 24 класс (240102) - только если сами продаёте текстильные этикетки",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "35 000",
+      "kind": "large_number",
+      "context": "нужна гибкая охрана. Минимум по таблице пошлин : 35 000 ₽ за один класс; сценарий 25+35 - 38 500 ₽ (до 10",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "38 500",
+      "kind": "large_number",
+      "context": "пошлин : 35 000 ₽ за один класс; сценарий 25+35 - 38 500 ₽ (до 10 позиций в каждом классе, электронное сви",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1477",
+      "kind": "large_number",
+      "context": "ым покупатель отличает вашу одежду от чужой ( ст. 1477 ГК РФ ). МКТУ - международный справочник: в заявке",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1492",
+      "kind": "large_number",
+      "context": "яет свидетельство на товарный знак. Заявка по ст. 1492 ГК РФ содержит изображение знака, описание и переч",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "350120",
+      "kind": "large_number",
+      "context": "ми, а не только пришиваете к своей одежде Позиция 350120 (\"предоставление торговой площадки\") относится к",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1352",
+      "kind": "large_number",
+      "context": "шленный образец - силуэт и орнамент изделия ( ст. 1352 ГК РФ ). Крой и принт коллекции без образца ТЗ не",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "и 35 , при необходимости 24 . Учитывайте п. 6 ст. 1483 ГК РФ : отказ возможен при сходстве с ранним знако",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "25 35 000",
+      "kind": "large_number",
+      "context": "с) Ориентир по п. 2.1 + 2.4 + 2.11 Только изделия 25 35 000 ₽ Одежда + свои продажи 25 + 35 38 500 ₽ Бумажное",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "35 38 500",
+      "kind": "large_number",
+      "context": "ко изделия 25 35 000 ₽ Одежда + свои продажи 25 + 35 38 500 ₽ Бумажное свидетельство любой + 3 000 ₽ (п. 2.14",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "3 000",
+      "kind": "large_number",
+      "context": "и 25 + 35 38 500 ₽ Бумажное свидетельство любой + 3 000 ₽ (п. 2.14) Сроки экспертизы и ответ на запросы з",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
