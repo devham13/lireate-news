@@ -1,0 +1,80 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-10-31",
+    "today_ru": "31.10.2026",
+    "year": 2026,
+    "month": 10,
+    "month_name_ru": "октябрь",
+    "weekday_ru": "суббота",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-02",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-10-31 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L25",
+    "priority": "P1",
+    "slug": "registraciya-brenda-odezhdy-mktu",
+    "h1": "Как зарегистрировать бренд одежды: классы МКТУ для маркетплейсов и розницы",
+    "primary_query": "как зарегистрировать бренд одежды",
+    "secondary_queries": [
+      "товарный знак для одежды класс мкту",
+      "бренд одежды wildberries",
+      "регистрация названия бренда одежды"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "L25",
+    "status": "PASS",
+    "search_intent": "how_to",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "как зарегистрировать бренд одежды 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "как зарегистрировать бренд одежды октябрь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "как зарегистрировать бренд одежды новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "товарный знак для одежды класс мкту 2026",
+      "purpose": "вторичный запрос: товарный знак для одежды класс мкту"
+    },
+    {
+      "id": "secondary_2",
+      "query": "бренд одежды wildberries 2026",
+      "purpose": "вторичный запрос: бренд одежды wildberries"
+    },
+    {
+      "id": "secondary_3",
+      "query": "регистрация названия бренда одежды 2026",
+      "purpose": "вторичный запрос: регистрация названия бренда одежды"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как зарегистрировать бренд одежды: классы МКТУ для маркетплейсов и розницы 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/L25-registraciya-brenda-odezhdy-mktu",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}
