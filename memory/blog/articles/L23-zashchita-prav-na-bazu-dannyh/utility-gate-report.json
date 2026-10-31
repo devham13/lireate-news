@@ -1,0 +1,23 @@
+{
+  "policy_id": "utility_only_v1",
+  "overall": "PASS",
+  "reports": [
+    {
+      "gate": "article",
+      "article_dir": "memory/blog/articles/L23-zashchita-prav-na-bazu-dannyh",
+      "status": "PASS",
+      "metrics": {
+        "numbered_list_items": 7,
+        "h2_sections": 9,
+        "faq_h3": 7,
+        "tables": 1,
+        "blockquotes": 3,
+        "ul_lists": 0,
+        "action_markers": 9,
+        "water_hits": []
+      },
+      "errors": [],
+      "warnings": []
+    }
+  ]
+}
