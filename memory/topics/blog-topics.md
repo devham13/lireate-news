@@ -713,7 +713,7 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L26 — Промышленный образец или товарный знак для дизайна товара
 
-- **status:** new
+- **status:** written
 - **priority:** P1
 - **site:** lireate
 - **lireate_category_id:** 9
