@@ -1,0 +1,157 @@
+{
+  "article": "memory/blog/articles/L26-promyshlennyy-obrazec-ili-tovarnyy-znak-dizayn-tovara/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 21,
+  "verified_facts_count": 6,
+  "unverified_facts_count": 15,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "льготы ( п. 4 ст. 1352 ). Нормы сверены на 01.11.2026; с 01.01.2027 запланированы правки п. 1 ст. 1352",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2027",
+      "kind": "date_or_year",
+      "context": "ст. 1352 ). Нормы сверены на 01.11.2026; с 01.01.2027 запланированы правки п. 1 ст. 1352 (296-ФЗ) - уточ",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2015",
+      "kind": "date_or_year",
+      "context": ", не более 25 лет суммарно для заявок после 01.01.2015 ( ст. 1363 ). Уже выложил товар на Wildberries -",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "25 лет",
+      "kind": "metric_or_duration",
+      "context": "00 + 10 000) по ГУ Роспатента ; патент на ПО - до 25 лет продлениями, свидетельство на ТЗ - 10 лет . Публи",
+      "verified": true,
+      "reason": "Numerical value '25' matched in fact-bank context"
+    },
+    {
+      "fact": "10 лет",
+      "kind": "metric_or_duration",
+      "context": "ПО - до 25 лет продлениями, свидетельство на ТЗ - 10 лет . Публикация на сайте и WB до заявки бьёт по нови",
+      "verified": true,
+      "reason": "Numerical value '10' matched in fact-bank context"
+    },
+    {
+      "fact": "12 месяцев",
+      "kind": "metric_or_duration",
+      "context": "сайте и WB до заявки бьёт по новизне - учитывайте 12 месяцев льготы ( п. 4 ст. 1352 ). Нормы сверены на 01.11.",
+      "verified": true,
+      "reason": "Numerical value '12' matched in fact-bank context"
+    },
+    {
+      "fact": "5 лет",
+      "kind": "metric_or_duration",
+      "context": "( ст. 1352 ) Различительность, п. 4 ст. 1483 Срок 5 лет + продления до 25 лет ( ст. 1363 ) 10 лет, продле",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "20 месяцев",
+      "kind": "metric_or_duration",
+      "context": "льный срок госуслуги по выдаче патента на ПО - до 20 месяцев 2 недель при заявке без существенных недочётов (",
+      "verified": true,
+      "reason": "Numerical value '20' matched in fact-bank context"
+    },
+    {
+      "fact": "2 недель",
+      "kind": "metric_or_duration",
+      "context": "госуслуги по выдаче патента на ПО - до 20 месяцев 2 недель при заявке без существенных недочётов ( страница",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "й способности , а не \"обычной\" бутылки ( п. 4 ст. 1483 ). Минимум госпошлин на один ПО - ориентир 15 000",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "15 000",
+      "kind": "large_number",
+      "context": ". 1483 ). Минимум госпошлин на один ПО - ориентир 15 000 ₽ (2 000 + 3 000 + 10 000) по ГУ Роспатента ; пат",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2 000",
+      "kind": "large_number",
+      "context": "Минимум госпошлин на один ПО - ориентир 15 000 ₽ (2 000 + 3 000 + 10 000) по ГУ Роспатента ; патент на ПО",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "3 000",
+      "kind": "large_number",
+      "context": "госпошлин на один ПО - ориентир 15 000 ₽ (2 000 + 3 000 + 10 000) по ГУ Роспатента ; патент на ПО - до 25",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 000",
+      "kind": "large_number",
+      "context": "н на один ПО - ориентир 15 000 ₽ (2 000 + 3 000 + 10 000) по ГУ Роспатента ; патент на ПО - до 25 лет прод",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1352",
+      "kind": "large_number",
+      "context": "новизне - учитывайте 12 месяцев льготы ( п. 4 ст. 1352 ). Нормы сверены на 01.11.2026; с 01.01.2027 запл",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1477",
+      "kind": "large_number",
+      "context": "Товарный знак - маркировка источника товара ( ст. 1477 ГК РФ ). Материал не заменяет консультацию поверен",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1363",
+      "kind": "large_number",
+      "context": "4 ст. 1483 Срок 5 лет + продления до 25 лет ( ст. 1363 ) 10 лет, продление ( инструкция Роспатента ) Ори",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1358",
+      "kind": "large_number",
+      "context": "ПО Копируют только форму Сильный инструмент ( ст. 1358 , общее впечатление) Работает, если форма узнавае",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "141",
+      "kind": "large_number",
+      "context": "ия. Форма и название. Две заявки; учтите приказ № 141 о смежных объектах и ст. 1352 п. 5 . Функциональна",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1377",
+      "kind": "large_number",
+      "context": "а ) → пауза массовой публикации → заявка ПО ( ст. 1377 , изображения, группа с единым замыслом) → заявка",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1 700",
+      "kind": "large_number",
+      "context": "ии. Не делайте: верить устаревшим калькуляторам с 1 700 ₽ за ПО. Спланируйте мониторинг и следующий шаг н",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
