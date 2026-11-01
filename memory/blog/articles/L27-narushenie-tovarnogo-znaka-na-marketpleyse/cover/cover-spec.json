@@ -1,0 +1,32 @@
+{
+  "headline_lines": [
+    "ТЗ НА МП",
+    "ЖАЛОБА АРТИКУЛ ПРЕТЕНЗИЯ 1515"
+  ],
+  "highlight": "1515",
+  "sticky_text": "жалоба на площадку ≠ претензия селлеру",
+  "sticky_underline": "30 дн.",
+  "sticky_color": "yellow",
+  "badge_label": "ИС",
+  "label_chips": [
+    [
+      "нарушение товар…",
+      "black"
+    ],
+    [
+      "жалоба wildberr…",
+      "white"
+    ],
+    [
+      "контрафакт на o…",
+      "pink"
+    ]
+  ],
+  "ui_card_title": "Workflow правообладателя",
+  "ui_card_rows": [
+    "Реестр + МКТУ",
+    "URL + артикул",
+    "WB / Ozon / Маркет",
+    "Претензия 30 дней"
+  ]
+}

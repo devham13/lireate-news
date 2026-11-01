@@ -1,0 +1,469 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-01",
+    "today_ru": "01.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "воскресенье",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-03",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-01 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L27",
+    "priority": "P1",
+    "slug": "narushenie-tovarnogo-znaka-na-marketpleyse",
+    "h1": "Нарушение товарного знака на маркетплейсе: как подать жалобу и собрать доказательства",
+    "primary_query": "нарушение товарного знака на маркетплейсе",
+    "secondary_queries": [
+      "жалоба wildberries на копию бренда",
+      "контрафакт на ozon",
+      "ст 1515 гк претензия селлеру"
+    ],
+    "search_intent": "workflow",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "нарушение товарного знака на маркетплейсе 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Компенсация до 10 млн ₽ за товарный знак на маркетплейсе: что ...",
+          "url": "https://vc.ru/id2332690/3094742-kompensatsiya-za-tovarnyy-znak-na-marketpleyse",
+          "snippet": ""
+        },
+        {
+          "title": "Нарушение товарного знака: что грозит и как ответить на претензию в 2026",
+          "url": "https://checkroi.ru/blog/narushenie-tovarnogo-znaka/",
+          "snippet": "Продавцу пришла претензия от правообладателя товарного знака. По старой памяти ожидаемый потолок - около 5 млн рублей, суд обычно взыскивает меньше. На деле потолок другой, а маркетплейс, раньше отвечавший только за размещение карточки, теперь тоже может оказаться ответчиком."
+        },
+        {
+          "title": "Нарушение прав на товарный знак в 2026: 4 шага от фиксации до компенсации",
+          "url": "https://www.klerk.ru/blogs/yarsoft/702722/",
+          "snippet": "Нарушение товарного знака: компенсация до 10 млн ₽ с 2026 года, штрафы по КоАП и УК. Что делать по шагам, если пришла претензия, и шаблон ответа."
+        },
+        {
+          "title": "Нарушение товарного знака: компенсация, штрафы и претензия",
+          "url": "https://selsup.ru/blog/tovarnyj-znak-na-marketplejsah-kak-ne-poteryat-biznes-iz-za-chuzhogo-brenda/",
+          "snippet": "Разбираем, что считается нарушением прав на товарный знак, как собрать доказательства до того, как карточку удалят, сколько можно взыскать по статье 1515 ГК и почему претензия обязательна перед иском. Клиент звонит и спрашивает, почему заказ с маркетплейса приехал в чужой упаковке."
+        },
+        {
+          "title": "Нарушение прав на товарный знак: виды и ответственность",
+          "url": "https://patent-family.ru/journal/tz/narushenie-prav-tovarnyj-znak/",
+          "snippet": "Ниже — чем грозит чужой бренд в карточке по ГК, КоАП и УК, как считается компенсация после поправок 2026 года и что делать, когда претензия уже на руках. Нарушение — это использование чужого знака или сходного с ним обозначения без согласия правообладателя для тех же или однородных товаров."
+        },
+        {
+          "title": "Защита товарного знака от нарушений - взыскание",
+          "url": "https://sertifikat-plus.ru/zashhita-tovarnogo-znaka/",
+          "snippet": "За чужой логотип на товаре можно ответить рублём, штрафом и даже сроком — три вида ответственности идут параллельно. С 4 января 2026 года потолок компенсации за нарушение прав на товарный знак вырос до 10 млн рублей."
+        }
+      ],
+      "searched_at": "2026-11-01"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "нарушение товарного знака на маркетплейсе ноябрь 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Компенсация до 10 млн ₽ за товарный знак на маркетплейсе: что ...",
+          "url": "https://vc.ru/id2332690/3094742-kompensatsiya-za-tovarnyy-znak-na-marketpleyse",
+          "snippet": ""
+        },
+        {
+          "title": "Нарушение товарного знака: что грозит и как ответить на претензию в 2026",
+          "url": "https://checkroi.ru/blog/narushenie-tovarnogo-znaka/",
+          "snippet": "Продавцу пришла претензия от правообладателя товарного знака. По старой памяти ожидаемый потолок - около 5 млн рублей, суд обычно взыскивает меньше. На деле потолок другой, а маркетплейс, раньше отвечавший только за размещение карточки, теперь тоже может оказаться ответчиком."
+        },
+        {
+          "title": "Нарушение прав на товарный знак в 2026: 4 шага от фиксации до компенсации",
+          "url": "https://www.klerk.ru/blogs/yarsoft/702722/",
+          "snippet": "Ниже разобрали, что считается нарушением прав на товарный знак, какая ответственность грозит по закону в редакции 2026 года, и что делать по шагам, если претензия уже пришла."
+        },
+        {
+          "title": "Нарушение прав на товарный знак: виды и ответственность",
+          "url": "https://patent-family.ru/journal/tz/narushenie-prav-tovarnyj-znak/",
+          "snippet": "Под вашим названием торгует чужая компания на маркетплейсе или крутит рекламу конкурент. Разбираем, что считается нарушением прав на товарный знак, как собрать доказательства до того, как карточку удалят, сколько можно взыскать по статье 1515 ГК и почему претензия обязательна перед иском."
+        },
+        {
+          "title": "Компенсация до 10 млн руб. за товарный знак с 6 января 2026 года ...",
+          "url": "https://www.klerk.ru/blogs/roskom24/674567/",
+          "snippet": "За чужой логотип на товаре можно ответить рублём, штрафом и даже сроком — три вида ответственности идут параллельно. С 4 января 2026 года потолок компенсации за нарушение прав на товарный знак вырос до 10 млн рублей."
+        },
+        {
+          "title": "Нарушение товарного знака: компенсация, штрафы и претензия",
+          "url": "https://selsup.ru/blog/tovarnyj-znak-na-marketplejsah-kak-ne-poteryat-biznes-iz-za-chuzhogo-brenda/",
+          "snippet": "Теперь владельцы зарегистрированных товарных знаков смогут требовать компенсацию до 10 млн руб. за незаконное использование их марки. Эти нововведения призваны усилить охрану исключительных прав и сократить оборот контрафактной продукции."
+        }
+      ],
+      "searched_at": "2026-11-01"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "нарушение товарного знака на маркетплейсе новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Компенсация до 10 млн ₽ за товарный знак на маркетплейсе: что ...",
+          "url": "https://vc.ru/id2332690/3094742-kompensatsiya-za-tovarnyy-znak-na-marketpleyse",
+          "snippet": ""
+        },
+        {
+          "title": "Регистрация товарного знака и досудебное урегулирование: как защитить ...",
+          "url": "https://abnews.ru/news/2026/6/17/registracziya-tovarnogo-znaka-i-dosudebnoe-uregulirovanie-kak-zashhitit-prava-na-marketplejse",
+          "snippet": "Продавцу пришла претензия от правообладателя товарного знака. По старой памяти ожидаемый потолок - около 5 млн рублей, суд обычно взыскивает меньше. На деле потолок другой, а маркетплейс, раньше отвечавший только за размещение карточки, теперь тоже может оказаться ответчиком."
+        },
+        {
+          "title": "Нарушение товарного знака: что грозит и как ответить на претензию в 2026",
+          "url": "https://checkroi.ru/blog/narushenie-tovarnogo-znaka/",
+          "snippet": "Резюмируя, Кваша рекомендует правообладателям заранее регистрировать товарные знаки и фиксировать все этапы досудебного урегулирования, а маркетплейсам — внедрять системы ..."
+        },
+        {
+          "title": "Нарушение прав на товарный знак в 2026: 4 шага от фиксации до компенсации",
+          "url": "https://www.klerk.ru/blogs/yarsoft/702722/",
+          "snippet": "Ниже разобрали, что считается нарушением прав на товарный знак, какая ответственность грозит по закону в редакции 2026 года, и что делать по шагам, если претензия уже пришла."
+        },
+        {
+          "title": "Нарушение прав на товарный знак: виды и ответственность",
+          "url": "https://patent-family.ru/journal/tz/narushenie-prav-tovarnyj-znak/",
+          "snippet": "Под вашим названием торгует чужая компания на маркетплейсе или крутит рекламу конкурент. Разбираем, что считается нарушением прав на товарный знак, как собрать доказательства до того, как карточку удалят, сколько можно взыскать по статье 1515 ГК и почему претензия обязательна перед иском."
+        },
+        {
+          "title": "Компенсация до 10 млн руб. за товарный знак с 6 января 2026 года ...",
+          "url": "https://www.klerk.ru/blogs/roskom24/674567/",
+          "snippet": "За чужой логотип на товаре можно ответить рублём, штрафом и даже сроком — три вида ответственности идут параллельно. С 4 января 2026 года потолок компенсации за нарушение прав на товарный знак вырос до 10 млн рублей."
+        }
+      ],
+      "searched_at": "2026-11-01"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "жалоба wildberries на копию бренда 2026",
+      "purpose": "вторичный запрос: жалоба wildberries на копию бренда",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Защита бренда на Wildberries 2026: как бороться с копированием",
+          "url": "https://a3-agency.ru/blog/tpost/75ig2evid1-zaschita-brenda-na-vb-ot-kopirovaniya-ka",
+          "snippet": ""
+        },
+        {
+          "title": "Справочник по обращениям правообладателей Wildberries",
+          "url": "https://mpbrandguard.ru/spravka/",
+          "snippet": "Как защитить карточку товара на ВБ от копирования конкурентами в марте 2026 года. Инструкция по регистрации товарного знака, защите фотоконтента и блокировке нарушителей от A3 Agency."
+        },
+        {
+          "title": "Как написать жалобу на Вайлдберриз? Куда можно пожаловаться? | Юстихаб",
+          "url": "https://yustihab.ru/journal/kak-napisat-zhalobu-na-vaildberriz-poshagovaya-instruktsiya-i-sovety",
+          "snippet": "Как доказать авторство по требованиям Wildberries, что копируют на самом деле по данным 796 карточек, порядок жалобы и что площадка делает с карточкой нарушителя."
+        },
+        {
+          "title": "Жалоба на Ozon и Wildberries через Госуслуги: инструкция 2026",
+          "url": "https://turbozaim.ru/blogs/articles/kak-pozhalovatsya-na-ozon-wildberries-cherez-gosuslugi-2026/",
+          "snippet": "Как правильно подать жалобу на Вайлдберриз? Куда обратиться и что делать, если ваше требование не удовлетворили. Образцы и примеры претензий в Роспотребнадзор."
+        },
+        {
+          "title": "Скопировали товар на Wildberries: как защититься и подать жалобу",
+          "url": "https://nevskylaw.ru/knowledge/konkurenty-skopirovali-moy-tovar-na-wildberries/",
+          "snippet": "С лета 2026 года на Госуслугах появилась электронная книга жалоб на Ozon и Wildberries. Эксперты «Турбозайм» объясняют, в каких случаях можно подать обращение и как это сделать за пару кликов."
+        },
+        {
+          "title": "Куда жаловаться на Wildberries: пошаговое руководство 2026",
+          "url": "https://wb-gid.vercel.app/articles/k/ku/kuda-pisat-zhalobu-na-wildberries.html",
+          "snippet": "Пошаговый алгоритм защиты: жалоба в WB, претензия нарушителю, обращение в суд и ФАС. Актуальное руководство для продавцов на маркетплейсе в 2026 году."
+        }
+      ],
+      "searched_at": "2026-11-01"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "контрафакт на ozon 2026",
+      "purpose": "вторичный запрос: контрафакт на ozon",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Контрафакт на маркетплейсе: кто отвечает с 16 сентября 2026 года и что ...",
+          "url": "https://www.klerk.ru/user/2651996/709726/",
+          "snippet": ""
+        },
+        {
+          "title": "Закон о платформенной экономике: что изменится для владельцев ПВЗ Ozon ...",
+          "url": "https://seller.ozon.ru/media/instructions/zakon-o-platformennoj-ekonomike-dlya-vladelcev-pvz-s-1-oktyabrya/",
+          "snippet": "С 16 сентября изменился подход к контрафакту на Wildberries, Ozon и других маркетплейсах. Разбираем, когда площадка должна заблокировать товар, какие документы нужны продавцу и кто заплатит за необоснованную жалобу правообладателя."
+        },
+        {
+          "title": "Контрафакт на Ozon: как защититься от недобросовестных конкурентов в 2026",
+          "url": "https://obozone.vercel.app/articles/k/ko/kontrafakt-na-ozone-kak-borotsya-s-konkurentami.html",
+          "snippet": "Закон о платформенной экономике: что изменится для владельцев ПВЗ Ozon с 1 октября 2026 года. Проверка новых партнёров, прозрачные условия договора, изменение условий договора, досудебное решение споров, дополнительный ..."
+        },
+        {
+          "title": "Контрафакт На Маркетплейсах Вырос На 70%? Почему… | Ecomhub",
+          "url": "https://ecomhub.ru/counterfeit-products-russian-marketplaces-2026-brandsecurity-report-wildberries-ozon-yandex-market-intellectual-property-violations/",
+          "snippet": "В этой статье разберём конкретные шаги, как выявить контрафакт, собрать доказательную базу и эффективно бороться с мошенниками через инструменты Ozon и юридические механизмы."
+        },
+        {
+          "title": "WB и Ozon берутся за контрафакт ... - Дзен",
+          "url": "https://dzen.ru/a/amn0F54XI375pkF8",
+          "snippet": "На маркетплейсах выявили почти 224 тыс. нарушений прав на бренды. Почему статистика BrandSecurity расходится с отчётами площадок."
+        },
+        {
+          "title": "Закон о платформенной экономике: что изменится для продавцов Ozon с 1 ...",
+          "url": "https://seller.ozon.ru/media/instructions/zakon-o-platformennoj-ekonomike-chto-izmenitsya-dlya-prodavcov-ozon/",
+          "snippet": "С 1 августа 2026 года крупнейшие российские онлайн-площадки, включая Wildberries и Ozon, запускают полномасштабную чистку своих виртуальных витрин. Этот шаг станет переломным моментом в развитии отечественной электронной коммерции и призван кардинально повысить уровень безопасности покупателей."
+        }
+      ],
+      "searched_at": "2026-11-01"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "ст 1515 гк претензия селлеру 2026",
+      "purpose": "вторичный запрос: ст 1515 гк претензия селлеру",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Претензия за нарушение товарного знака: образец 2026",
+          "url": "https://nevskylaw.ru/knowledge/dosudebnaya-pretenziya-za-narushenie-tovarnogo-znaka-obrazec/",
+          "snippet": ""
+        },
+        {
+          "title": "ГК РФ Статья 1515. Ответственность за незаконное использование ...",
+          "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/44bf2477089f6ece7185aaf3e37bae5ace2954cf/",
+          "snippet": "Досудебная претензия за нарушение товарного знака: готовый образец 2026, обязательные реквизиты, правовые основания по ст. 1515 ГК РФ, расчет компенсации и пошаговая инструкция по направлению."
+        },
+        {
+          "title": "Претензия о нарушении товарного знака — шаблон 2026 | Legal Wording",
+          "url": "https://legalwording.ru/ru/documents/pretenziya-o-nezakonnom-ispolzovanii-tovarnogo-znaka",
+          "snippet": "Правообладатель вправе требовать изъятия из оборота и уничтожения за счет нарушителя контрафактных товаров, этикеток, упаковок товаров, на которых незаконно размещены товарный знак или сходное с ним до степени смешения обозначение."
+        },
+        {
+          "title": "Претензия за нарушение ТЗ — образец и инструкция 2026",
+          "url": "https://marqatm.ru/analytics/pretenziya-narushenie-tz-obrazec.html",
+          "snippet": "Готовый шаблон досудебной претензии о незаконном использовании товарного знака: ст. 1515 ГК РФ, компенсация, требования."
+        },
+        {
+          "title": "ГК РФ часть 4 Ст. 1515. Ответственность за незаконное использование ...",
+          "url": "https://legalacts.ru/kodeks/GK-RF-chast-4/razdel-vii/glava-76/ss-2/7/statja-1515/",
+          "snippet": "MARQA проведёт поиск по базам Роспатента, зафиксирует нарушение, подготовит претензию и рассчитает компенсацию с учётом всех оснований по статье 1515 ГК РФ."
+        },
+        {
+          "title": "Образец Претензии За Нарушение Тз 2026 | Marqa 2026",
+          "url": "https://marqatm.ru/analytics/obrazec-pretenzii-narushenie-tz.html",
+          "snippet": "Правообладатель вправе требовать изъятия из оборота и уничтожения за счет нарушителя контрафактных товаров, этикеток, упаковок товаров, на которых незаконно размещены товарный знак или сходное с ним до степени смешения обозначение."
+        }
+      ],
+      "searched_at": "2026-11-01"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Нарушение товарного знака на маркетплейсе: как подать жалобу и собрать доказательства 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Нарушение товарного знака на сайте и маркетплейсе | АдвоПрофиль",
+          "url": "https://advoprofil.ru/articles/tovarnyy-znak-marketpleys-sayt-narushenie-zashchita/",
+          "snippet": ""
+        },
+        {
+          "title": "Нарушение Тз — Что Делать Пошагово — Консультация Marqa",
+          "url": "https://marqatm.ru/analytics/narushenie-prav-tz-chto-delat.html",
+          "snippet": "Как зафиксировать чужое обозначение в карточке товара или рекламе, проверить сходство и однородность, обратиться к продавцу и площадке и рассчитать требования."
+        },
+        {
+          "title": "Как Доказать Нарушение Товарного Знака На Маркетплейсе — Blagin",
+          "url": "https://blagin-ip.ru/materialy/kak-dokazat-narushenie-tovarnogo-znaka-na-marketpleyse",
+          "snippet": "Как зафиксировать нарушение прав на товарный знак? Первый шаг — собрать доказательства, которые арбитражный суд признает допустимыми."
+        },
+        {
+          "title": "Доказательства нарушения товарного знака: как собрать",
+          "url": "https://cyberrlaw.ru/practice/dokazatelstva-narusheniya-tovarnogo-znaka/",
+          "snippet": "Пошаговая система для правообладателя: как подтвердить право на знак, зафиксировать карточку и конкретного продавца, доказать сходство и однородность, провести закупку и закрыть возражения об оригинальном товаре."
+        },
+        {
+          "title": "Как Зафиксировать Нарушение Товарного Знака В Интернете — Blagin",
+          "url": "https://blagin-ip.ru/materialy/kak-zafiksirovat-narushenie-prav-na-tovarnyy-znak-v-internete",
+          "snippet": "Какие доказательства нужны при нарушении товарного знака: скриншоты, контрольная закупка, документы на знак, данные продавца и порядок фиксации."
+        },
+        {
+          "title": "Контрафакт на маркетплейсах — удаление и компенсация",
+          "url": "https://vitvet.com/articles/intellekt/kontrafakt/kontrafakt_na_marketpleysah/",
+          "snippet": "Как собрать доказательства незаконного использования товарного знака на сайте, маркетплейсе, в соцсети, рекламе или доменном имени: скриншоты, видео, нотариус и закупка."
+        }
+      ],
+      "searched_at": "2026-11-01"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://vc.ru/id2332690/3094742-kompensatsiya-za-tovarnyy-znak-na-marketpleyse",
+      "title": "Компенсация до 10 млн ₽ за товарный знак на маркетплейсе: что ...",
+      "from_query": "нарушение товарного знака на маркетплейсе 2026"
+    },
+    {
+      "url": "https://checkroi.ru/blog/narushenie-tovarnogo-znaka/",
+      "title": "Нарушение товарного знака: что грозит и как ответить на претензию в 2026",
+      "from_query": "нарушение товарного знака на маркетплейсе 2026"
+    },
+    {
+      "url": "https://www.klerk.ru/blogs/yarsoft/702722/",
+      "title": "Нарушение прав на товарный знак в 2026: 4 шага от фиксации до компенсации",
+      "from_query": "нарушение товарного знака на маркетплейсе 2026"
+    },
+    {
+      "url": "https://selsup.ru/blog/tovarnyj-znak-na-marketplejsah-kak-ne-poteryat-biznes-iz-za-chuzhogo-brenda/",
+      "title": "Нарушение товарного знака: компенсация, штрафы и претензия",
+      "from_query": "нарушение товарного знака на маркетплейсе 2026"
+    },
+    {
+      "url": "https://patent-family.ru/journal/tz/narushenie-prav-tovarnyj-znak/",
+      "title": "Нарушение прав на товарный знак: виды и ответственность",
+      "from_query": "нарушение товарного знака на маркетплейсе 2026"
+    },
+    {
+      "url": "https://sertifikat-plus.ru/zashhita-tovarnogo-znaka/",
+      "title": "Защита товарного знака от нарушений - взыскание",
+      "from_query": "нарушение товарного знака на маркетплейсе 2026"
+    },
+    {
+      "url": "https://www.klerk.ru/blogs/roskom24/674567/",
+      "title": "Компенсация до 10 млн руб. за товарный знак с 6 января 2026 года ...",
+      "from_query": "нарушение товарного знака на маркетплейсе ноябрь 2026"
+    },
+    {
+      "url": "https://abnews.ru/news/2026/6/17/registracziya-tovarnogo-znaka-i-dosudebnoe-uregulirovanie-kak-zashhitit-prava-na-marketplejse",
+      "title": "Регистрация товарного знака и досудебное урегулирование: как защитить ...",
+      "from_query": "нарушение товарного знака на маркетплейсе новости 2026"
+    },
+    {
+      "url": "https://a3-agency.ru/blog/tpost/75ig2evid1-zaschita-brenda-na-vb-ot-kopirovaniya-ka",
+      "title": "Защита бренда на Wildberries 2026: как бороться с копированием",
+      "from_query": "жалоба wildberries на копию бренда 2026"
+    },
+    {
+      "url": "https://mpbrandguard.ru/spravka/",
+      "title": "Справочник по обращениям правообладателей Wildberries",
+      "from_query": "жалоба wildberries на копию бренда 2026"
+    },
+    {
+      "url": "https://yustihab.ru/journal/kak-napisat-zhalobu-na-vaildberriz-poshagovaya-instruktsiya-i-sovety",
+      "title": "Как написать жалобу на Вайлдберриз? Куда можно пожаловаться? | Юстихаб",
+      "from_query": "жалоба wildberries на копию бренда 2026"
+    },
+    {
+      "url": "https://turbozaim.ru/blogs/articles/kak-pozhalovatsya-na-ozon-wildberries-cherez-gosuslugi-2026/",
+      "title": "Жалоба на Ozon и Wildberries через Госуслуги: инструкция 2026",
+      "from_query": "жалоба wildberries на копию бренда 2026"
+    },
+    {
+      "url": "https://nevskylaw.ru/knowledge/konkurenty-skopirovali-moy-tovar-na-wildberries/",
+      "title": "Скопировали товар на Wildberries: как защититься и подать жалобу",
+      "from_query": "жалоба wildberries на копию бренда 2026"
+    },
+    {
+      "url": "https://wb-gid.vercel.app/articles/k/ku/kuda-pisat-zhalobu-na-wildberries.html",
+      "title": "Куда жаловаться на Wildberries: пошаговое руководство 2026",
+      "from_query": "жалоба wildberries на копию бренда 2026"
+    },
+    {
+      "url": "https://www.klerk.ru/user/2651996/709726/",
+      "title": "Контрафакт на маркетплейсе: кто отвечает с 16 сентября 2026 года и что ...",
+      "from_query": "контрафакт на ozon 2026"
+    },
+    {
+      "url": "https://seller.ozon.ru/media/instructions/zakon-o-platformennoj-ekonomike-dlya-vladelcev-pvz-s-1-oktyabrya/",
+      "title": "Закон о платформенной экономике: что изменится для владельцев ПВЗ Ozon ...",
+      "from_query": "контрафакт на ozon 2026"
+    },
+    {
+      "url": "https://obozone.vercel.app/articles/k/ko/kontrafakt-na-ozone-kak-borotsya-s-konkurentami.html",
+      "title": "Контрафакт на Ozon: как защититься от недобросовестных конкурентов в 2026",
+      "from_query": "контрафакт на ozon 2026"
+    },
+    {
+      "url": "https://ecomhub.ru/counterfeit-products-russian-marketplaces-2026-brandsecurity-report-wildberries-ozon-yandex-market-intellectual-property-violations/",
+      "title": "Контрафакт На Маркетплейсах Вырос На 70%? Почему… | Ecomhub",
+      "from_query": "контрафакт на ozon 2026"
+    },
+    {
+      "url": "https://dzen.ru/a/amn0F54XI375pkF8",
+      "title": "WB и Ozon берутся за контрафакт ... - Дзен",
+      "from_query": "контрафакт на ozon 2026"
+    },
+    {
+      "url": "https://seller.ozon.ru/media/instructions/zakon-o-platformennoj-ekonomike-chto-izmenitsya-dlya-prodavcov-ozon/",
+      "title": "Закон о платформенной экономике: что изменится для продавцов Ozon с 1 ...",
+      "from_query": "контрафакт на ozon 2026"
+    },
+    {
+      "url": "https://nevskylaw.ru/knowledge/dosudebnaya-pretenziya-za-narushenie-tovarnogo-znaka-obrazec/",
+      "title": "Претензия за нарушение товарного знака: образец 2026",
+      "from_query": "ст 1515 гк претензия селлеру 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/44bf2477089f6ece7185aaf3e37bae5ace2954cf/",
+      "title": "ГК РФ Статья 1515. Ответственность за незаконное использование ...",
+      "from_query": "ст 1515 гк претензия селлеру 2026"
+    },
+    {
+      "url": "https://legalwording.ru/ru/documents/pretenziya-o-nezakonnom-ispolzovanii-tovarnogo-znaka",
+      "title": "Претензия о нарушении товарного знака — шаблон 2026 | Legal Wording",
+      "from_query": "ст 1515 гк претензия селлеру 2026"
+    },
+    {
+      "url": "https://marqatm.ru/analytics/pretenziya-narushenie-tz-obrazec.html",
+      "title": "Претензия за нарушение ТЗ — образец и инструкция 2026",
+      "from_query": "ст 1515 гк претензия селлеру 2026"
+    },
+    {
+      "url": "https://legalacts.ru/kodeks/GK-RF-chast-4/razdel-vii/glava-76/ss-2/7/statja-1515/",
+      "title": "ГК РФ часть 4 Ст. 1515. Ответственность за незаконное использование ...",
+      "from_query": "ст 1515 гк претензия селлеру 2026"
+    },
+    {
+      "url": "https://marqatm.ru/analytics/obrazec-pretenzii-narushenie-tz.html",
+      "title": "Образец Претензии За Нарушение Тз 2026 | Marqa 2026",
+      "from_query": "ст 1515 гк претензия селлеру 2026"
+    },
+    {
+      "url": "https://advoprofil.ru/articles/tovarnyy-znak-marketpleys-sayt-narushenie-zashchita/",
+      "title": "Нарушение товарного знака на сайте и маркетплейсе | АдвоПрофиль",
+      "from_query": "Нарушение товарного знака на маркетплейсе: как подать жалобу и собрать доказательства 2026"
+    },
+    {
+      "url": "https://marqatm.ru/analytics/narushenie-prav-tz-chto-delat.html",
+      "title": "Нарушение Тз — Что Делать Пошагово — Консультация Marqa",
+      "from_query": "Нарушение товарного знака на маркетплейсе: как подать жалобу и собрать доказательства 2026"
+    },
+    {
+      "url": "https://blagin-ip.ru/materialy/kak-dokazat-narushenie-tovarnogo-znaka-na-marketpleyse",
+      "title": "Как Доказать Нарушение Товарного Знака На Маркетплейсе — Blagin",
+      "from_query": "Нарушение товарного знака на маркетплейсе: как подать жалобу и собрать доказательства 2026"
+    },
+    {
+      "url": "https://cyberrlaw.ru/practice/dokazatelstva-narusheniya-tovarnogo-znaka/",
+      "title": "Доказательства нарушения товарного знака: как собрать",
+      "from_query": "Нарушение товарного знака на маркетплейсе: как подать жалобу и собрать доказательства 2026"
+    },
+    {
+      "url": "https://blagin-ip.ru/materialy/kak-zafiksirovat-narushenie-prav-na-tovarnyy-znak-v-internete",
+      "title": "Как Зафиксировать Нарушение Товарного Знака В Интернете — Blagin",
+      "from_query": "Нарушение товарного знака на маркетплейсе: как подать жалобу и собрать доказательства 2026"
+    },
+    {
+      "url": "https://vitvet.com/articles/intellekt/kontrafakt/kontrafakt_na_marketpleysah/",
+      "title": "Контрафакт на маркетплейсах — удаление и компенсация",
+      "from_query": "Нарушение товарного знака на маркетплейсе: как подать жалобу и собрать доказательства 2026"
+    }
+  ]
+}
