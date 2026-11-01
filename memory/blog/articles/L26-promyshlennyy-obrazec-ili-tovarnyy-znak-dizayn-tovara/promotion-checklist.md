@@ -48,4 +48,4 @@ Excalibur создаёт этот файл после `✅ ARTICLE OK` (до и�
 
 ## Notes
 
-Indexer (2026-11-01): interlinker `--apply --blog-dir memory/blog/articles --site-base $LIREATE_PUBLIC_SITE_URL` — **1** автоматическая вставка (L26 → L06 по «классы МКТУ»); **1** ручная inbound (L25 → L26 в `article.html`). `memory/blog/interlink-suggestions.json` обновлён. llms: `memory/blog/llms.txt` + `llms-full.txt` (31 статья, `/blog/{slug}/`); `memory/blog/lireate-site/` и копии в каталоге L26 — **26** L-статей с `canonical_path` (добавлен L26). Live publish не выполнялся.
+Indexer (2026-11-01): interlinker `--apply --blog-dir memory/blog/articles --site-base $LIREATE_PUBLIC_SITE_URL` — **1** автоматическая вставка (L26 → L06 по «классы МКТУ»); **1** ручная inbound (L25 → L26 в `article.html`). `memory/blog/interlink-suggestions.json` обновлён. llms: `memory/blog/lireate-site/` и копии в каталоге L26 — **26** L-статей с `canonical_path` (добавлен L26); `memory/blog/llms.txt` / `llms-full.txt` (repo index) без изменений в этом коммите. Live publish не выполнялся.
