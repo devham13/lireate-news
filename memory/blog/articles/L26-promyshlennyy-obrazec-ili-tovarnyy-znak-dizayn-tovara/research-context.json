@@ -1,0 +1,80 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-01",
+    "today_ru": "01.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "воскресенье",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-03",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-01 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L26",
+    "priority": "P1",
+    "slug": "promyshlennyy-obrazec-ili-tovarnyy-znak-dizayn-tovara",
+    "h1": "Промышленный образец или товарный знак: как защитить дизайн товара",
+    "primary_query": "защита дизайна товара",
+    "secondary_queries": [
+      "патентование дизайна",
+      "промышленный образец или товарный знак",
+      "ст 1352 гк рф"
+    ],
+    "search_intent": "comparison",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "L26",
+    "status": "PASS",
+    "search_intent": "comparison",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "защита дизайна товара 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "защита дизайна товара ноябрь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "защита дизайна товара новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "патентование дизайна 2026",
+      "purpose": "вторичный запрос: патентование дизайна"
+    },
+    {
+      "id": "secondary_2",
+      "query": "промышленный образец или товарный знак 2026",
+      "purpose": "вторичный запрос: промышленный образец или товарный знак"
+    },
+    {
+      "id": "secondary_3",
+      "query": "ст 1352 гк рф 2026",
+      "purpose": "вторичный запрос: ст 1352 гк рф"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Промышленный образец или товарный знак: как защитить дизайн товара 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/L26-promyshlennyy-obrazec-ili-tovarnyy-znak-dizayn-tovara",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}
