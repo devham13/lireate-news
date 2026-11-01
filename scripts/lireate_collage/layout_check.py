@@ -1,5 +1,8 @@
 """Playwright layout QA: overlaps, density, font/icon sizes."""
 
+from .constants import COVER_RENDER
+from .thumbnail_safe import thumbnail_safe_rect
+
 FORBIDDEN_OVERLAPS = (
     ("slot-headline", "slot-sticky"),
     ("slot-headline", "slot-badge"),
@@ -258,6 +261,32 @@ def check_tape_clearance(page, min_gap=TAPE_CLEARANCE):
     )
 
 
+def check_thumbnail_safe_text(page, src_size=None, padding=2):
+    """All layout slots with text must stay inside the center-crop safe band."""
+    src_size = src_size or COVER_RENDER
+    left, top, sw, sh = thumbnail_safe_rect(src_size)
+    return page.evaluate(
+        """({ left, top, sw, sh, pad }) => {
+      const errors = [];
+      const safe = { l: left + pad, t: top + pad, r: left + sw - pad, b: top + sh - pad };
+      document.querySelectorAll('[data-layout-slot]').forEach((el) => {
+        const slot = el.getAttribute('data-layout-slot') || '?';
+        if (slot === 'slot-arrow') return;
+        const text = (el.innerText || '').trim();
+        if (!text) return;
+        const b = el.getBoundingClientRect();
+        if (b.width < 2 || b.height < 2) return;
+        if (b.left < safe.l - 0.5) errors.push('thumb-safe-left:' + slot);
+        if (b.top < safe.t - 0.5) errors.push('thumb-safe-top:' + slot);
+        if (b.right > safe.r + 0.5) errors.push('thumb-safe-right:' + slot);
+        if (b.bottom > safe.b + 0.5) errors.push('thumb-safe-bottom:' + slot);
+      });
+      return errors;
+    }""",
+        {"left": left, "top": top, "sw": sw, "sh": sh, "pad": padding},
+    )
+
+
 def check_cover_chips_vs_ui(page, min_gap=CHIP_UI_CLEARANCE):
     return page.evaluate(
         """(minGap) => {
@@ -287,16 +316,21 @@ def check_cover_chips_vs_ui(page, min_gap=CHIP_UI_CLEARANCE):
 def assert_layout_ok(page, png_path=None, dpr=2, check_density=True):
     errors = list(check_layout_slots(page))
     errors.extend(check_fonts_and_icons(page))
-    errors.extend(check_safe_area(page))
-    errors.extend(check_arrow_text_clearance(page))
+    thumb_cover = page.query_selector('[data-thumbnail-safe="1"]')
+    if not thumb_cover:
+        errors.extend(check_safe_area(page))
+    if not thumb_cover:
+        errors.extend(check_arrow_text_clearance(page))
     errors.extend(check_tape_clearance(page))
+    if page.query_selector('[data-thumbnail-safe="1"]'):
+        errors.extend(check_thumbnail_safe_text(page))
     if page.query_selector(".slot-chips"):
         errors.extend(check_cover_chips_vs_ui(page))
 
     cov = check_content_coverage(page)
     if cov.get("error"):
         errors.append(cov["error"])
-    else:
+    elif not thumb_cover:
         if cov["wr"] < MIN_CONTENT_COVERAGE or cov["hr"] < MIN_CONTENT_COVERAGE:
             errors.append(
                 "content coverage low: {0:.0%} x {1:.0%}".format(cov["wr"], cov["hr"])
