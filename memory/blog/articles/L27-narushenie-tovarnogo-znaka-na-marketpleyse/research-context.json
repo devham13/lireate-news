@@ -1,0 +1,80 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-01",
+    "today_ru": "01.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "воскресенье",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-03",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-01 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L27",
+    "priority": "P1",
+    "slug": "narushenie-tovarnogo-znaka-na-marketpleyse",
+    "h1": "Нарушение товарного знака на маркетплейсе: как подать жалобу и собрать доказательства",
+    "primary_query": "нарушение товарного знака на маркетплейсе",
+    "secondary_queries": [
+      "жалоба wildberries на копию бренда",
+      "контрафакт на ozon",
+      "ст 1515 гк претензия селлеру"
+    ],
+    "search_intent": "workflow",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "L27",
+    "status": "PASS",
+    "search_intent": "workflow",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "нарушение товарного знака на маркетплейсе 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "нарушение товарного знака на маркетплейсе ноябрь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "нарушение товарного знака на маркетплейсе новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "жалоба wildberries на копию бренда 2026",
+      "purpose": "вторичный запрос: жалоба wildberries на копию бренда"
+    },
+    {
+      "id": "secondary_2",
+      "query": "контрафакт на ozon 2026",
+      "purpose": "вторичный запрос: контрафакт на ozon"
+    },
+    {
+      "id": "secondary_3",
+      "query": "ст 1515 гк претензия селлеру 2026",
+      "purpose": "вторичный запрос: ст 1515 гк претензия селлеру"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Нарушение товарного знака на маркетплейсе: как подать жалобу и собрать доказательства 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/L27-narushenie-tovarnogo-znaka-na-marketpleyse",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}

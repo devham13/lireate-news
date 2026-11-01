@@ -1,0 +1,101 @@
+{
+  "article": "memory/blog/articles/L27-narushenie-tovarnogo-znaka-na-marketpleyse/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 13,
+  "verified_facts_count": 7,
+  "unverified_facts_count": 6,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "юрлицами - п. 5.1 ст. 1252 ). Компенсация с 04.01.2026 - от 10 000 до 10 000 000 ₽ за нарушение по выбор",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2026 года",
+      "kind": "date_or_year",
+      "context": "252 ). Какую компенсацию указывать после 4 января 2026 года? Правообладатель вправе выбрать: от 10 000 до 10",
+      "verified": true,
+      "reason": "Numerical value '2026' matched in fact-bank context"
+    },
+    {
+      "fact": "30 дней",
+      "kind": "metric_or_duration",
+      "context": "ощадки и параллельно направьте претензию селлеру (30 дней на ответ между ИП и юрлицами - п. 5.1 ст. 1252 ).",
+      "verified": true,
+      "reason": "Numerical value '30' matched in fact-bank context"
+    },
+    {
+      "fact": "10 дн",
+      "kind": "metric_or_duration",
+      "context": "о, артикулы, скрины, доверенность Ответ продавца ~10 дн., review WB до ~30 дн. Ozon brand.ozon.ru или под",
+      "verified": true,
+      "reason": "Numerical value '10' matched in fact-bank context"
+    },
+    {
+      "fact": "30 дн",
+      "kind": "metric_or_duration",
+      "context": "оверенность Ответ продавца ~10 дн., review WB до ~30 дн. Ozon brand.ozon.ru или поддержка ( инструкция )",
+      "verified": true,
+      "reason": "Numerical value '30' matched in fact-bank context"
+    },
+    {
+      "fact": "10 дней",
+      "kind": "metric_or_duration",
+      "context": "и ложную жалобу? Откройте L02 : ответ в срок WB (~10 дней) и на претензию (~30 дней), лицензия или доказате",
+      "verified": true,
+      "reason": "Numerical value '10' matched in fact-bank context"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "а карточке в однородном классе товаров ( п. 6 ст. 1483 ГК РФ ). Сначала проверьте свидетельство в Поисков",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "1252",
+      "kind": "large_number",
+      "context": "30 дней на ответ между ИП и юрлицами - п. 5.1 ст. 1252 ). Компенсация с 04.01.2026 - от 10 000 до 10 000",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 000",
+      "kind": "large_number",
+      "context": "п. 5.1 ст. 1252 ). Компенсация с 04.01.2026 - от 10 000 до 10 000 000 ₽ за нарушение по выбору правооблада",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 000 000",
+      "kind": "large_number",
+      "context": ". 1252 ). Компенсация с 04.01.2026 - от 10 000 до 10 000 000 ₽ за нарушение по выбору правообладателя ( п. 4 с",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1515",
+      "kind": "large_number",
+      "context": "за нарушение по выбору правообладателя ( п. 4 ст. 1515 ), но суд определяет сумму; это не \"штраф маркетп",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1484",
+      "kind": "large_number",
+      "context": "чке на МП попадает под использование в сети ( ст. 1484 ГК РФ ). Нормы сверены на 01.11.2026; это не индив",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1487",
+      "kind": "large_number",
+      "context": "того же продавца. Аргумент исчерпания права (ст. 1487) - на стороне ответчика; если жалобу подали на ва",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
