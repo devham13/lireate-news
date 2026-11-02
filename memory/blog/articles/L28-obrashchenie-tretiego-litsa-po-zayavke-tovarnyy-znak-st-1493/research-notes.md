@@ -1,7 +1,7 @@
 # Research notes — L28 «Обращение третьего лица по заявке на товарный знак (ст. 1493 ГК РФ)»
 
 **topic_id:** L28  
-**site:** [REDACTED] (рубрика «Товарный знак», category_id=9)  
+**site:** [REDACTED] (рубрика «Товарный знак», `category_id=9`)  
 **slug:** `obrashchenie-tretiego-litsa-po-zayavke-tovarnyy-znak-st-1493`  
 **article_mode:** B (workflow / инструкция)  
 **search_intent:** workflow  
