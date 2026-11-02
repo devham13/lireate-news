@@ -1,0 +1,101 @@
+{
+  "article": "memory/blog/articles/L28-obrashchenie-tretiego-litsa-po-zayavke-tovarnyy-znak-st-1493/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "warning",
+  "total_extracted_facts": 13,
+  "verified_facts_count": 2,
+  "unverified_facts_count": 11,
+  "facts": [
+    {
+      "fact": "14 000 рублей",
+      "kind": "price_or_currency",
+      "context": "товарный знак\" - но подать \"как в ППС\" с пошлиной 14 000 рублей нельзя: до регистрации действует другое правило.",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "вании в Роспатенте (L21) . Нормы сверены на 02.11.2026; это не индивидуальная юридическая консультация.",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "5 лет",
+      "kind": "metric_or_duration",
+      "context": "осле регистрации по ряду оснований действует срок 5 лет с публикации регистрации ( ст. 1512 п. 2 ). Детал",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "14 000",
+      "kind": "large_number",
+      "context": "товарный знак\" - но подать \"как в ППС\" с пошлиной 14 000 рублей нельзя: до регистрации действует другое пра",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1493",
+      "kind": "large_number",
+      "context": "другое правило. Ниже вы оформите обращение по ст. 1493 ГК РФ после публикации заявки и до решения эксперт",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1477",
+      "kind": "large_number",
+      "context": "экспертизы, укажете номер заявки и доводы по ст. 1477 и 1483, отправите документ в Роспатент без пошлины",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "тизы, укажете номер заявки и доводы по ст. 1477 и 1483, отправите документ в Роспатент без пошлины 2.28.",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "1499",
+      "kind": "large_number",
+      "context": "№ 482 ). Доводы учитываются при экспертизе ( ст. 1499 ); отдельной пошлины за обращение в таблице пошли",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1512",
+      "kind": "large_number",
+      "context": "С с заседанием. В выдаче смешивают 1493 (заявка), 1512-1513 (свидетельство, ППС, 2.28.4 ) и возражение з",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1513",
+      "kind": "large_number",
+      "context": "аседанием. В выдаче смешивают 1493 (заявка), 1512-1513 (свидетельство, ППС, 2.28.4 ) и возражение заявит",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1500",
+      "kind": "large_number",
+      "context": "ПС, 2.28.4 ) и возражение заявителя на отказ (ст. 1500). Здесь - только 1493. Параметр Обращение ст. 149",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "125993",
+      "kind": "large_number",
+      "context": "л № 482 ). Адрес: Бережковская наб., 30-1 ; почта 125993, Г-59, ГСП-3 . Пошлины за 1493 в таблице пошлин н",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "482",
+      "kind": "large_number",
+      "context": "и срок три месяца на обращение? В ГК и Правилах № 482 для 1493 фиксированного срока \"3 месяца\" нет . Ори",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
