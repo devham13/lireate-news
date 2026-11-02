@@ -1,0 +1,23 @@
+{
+  "policy_id": "utility_only_v1",
+  "overall": "PASS",
+  "reports": [
+    {
+      "gate": "article",
+      "article_dir": "memory/blog/articles/L28-obrashchenie-tretiego-litsa-po-zayavke-tovarnyy-znak-st-1493",
+      "status": "PASS",
+      "metrics": {
+        "numbered_list_items": 5,
+        "h2_sections": 8,
+        "faq_h3": 7,
+        "tables": 2,
+        "blockquotes": 3,
+        "ul_lists": 2,
+        "action_markers": 11,
+        "water_hits": []
+      },
+      "errors": [],
+      "warnings": []
+    }
+  ]
+}

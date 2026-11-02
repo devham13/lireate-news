@@ -750,3 +750,95 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 - **metrika_visits:** 0 (кластер SEO «авторское / ТЗ на МП»)
 - **internal_links:** /otvet-na-pretenziyu-pravoobladatelya-tovarnogo-znaka, /kak-zaregistrirovat-brend-na-ozon-i-wildberries
 - **cover_scene_hint:** карточка товара-копии, скриншот жалобы, свидетельство ТЗ
+
+---
+
+## L28 — Обращение третьего лица по заявке на товарный знак (ст. 1493 ГК РФ)
+
+- **status:** written
+- **priority:** P0
+- **site:** lireate
+- **lireate_category_id:** 9
+- **lireate_category_name:** Товарный знак
+- **slug:** obrashchenie-tretiego-litsa-po-zayavke-tovarnyy-znak-st-1493
+- **h1:** Обращение третьего лица по заявке на товарный знак (ст. 1493 ГК РФ): куда и как подать до регистрации
+- **primary_query:** возражение на заявку на товарный знак
+- **secondary_queries:** куда подается возражение на заявку на товарный знак, возражение на заявку в порядке ст 1493, обращение третьего лица против регистрации товарного знака, когда заинтересованное лицо может подать возражения против регистрации товарного знака
+- **search_intent:** workflow
+- **article_mode:** B
+- **angle:** Только стадия до регистрации: обращение по ст. 1493, без пошлины, срок от публикации заявки, основания ст. 1483, отличие от возражения в ППС (L08) и карты L21
+- **target_service:** защита ТЗ
+- **metrika_visits:** кластер SEO 2026-11-02 (seo-report)
+- **h2_outline:**
+  1. Отличите обращение по ст. 1493 от возражения после регистрации (ст. 1512–1513)
+  2. Проверьте, что вы заинтересованное лицо и заявка опубликована в бюллетене
+  3. Соберите доводы по абсолютным и относительным основаниям ст. 1483
+  4. Подайте обращение в Роспатент: адрес, форма, способ подачи, без пошлины
+  5. Отслеживайте экспертизу и решите, ждать отказа или готовить возражение в ППС
+  6. Чек-лист: когда выгоднее подождать регистрации и оспорить свидетельство
+- **faq_hints:** нужна ли пошлина за обращение по 1493; срок подачи; можно ли подать после регистрации тем же текстом
+- **internal_links:** /vozrazhenie_protiv_registracii_chuzhogo_tovarnogo_znaka_sroki_i_poryadok, /osparivanie_tovarnogo_znaka_v_rospatente_kak_podat_vozrazhenie
+- **cover_scene_hint:** бюллетень заявок, конверт «1493», календарь до решения, без кассы пошлины
+
+---
+
+## L29 — Как защитить компьютерную программу от плагиата
+
+- **status:** новая
+- **priority:** P1
+- **site:** lireate
+- **lireate_category_id:** 19
+- **lireate_category_name:** Программа ЭВМ
+- **slug:** kak-zashchitit-kompyuternuyu-programmu-ot-plagiata
+- **h1:** Как защитить компьютерную программу от плагиата: регистрация, договоры и досудебка
+- **primary_query:** как защитить компьютерную программу от плагиата
+- **secondary_queries:** незаконное использование программы для эвм, доказательства копирования кода, отличие от регистрации мобильного приложения
+- **search_intent:** checklist
+- **article_mode:** B
+- **angle:** Десктоп/SaaS/исходники: ст. 1261, депонирование, NDA, претензия; не дублировать L20 (мобильное приложение: ПО vs ТЗ)
+- **target_service:** reg-po / защита ПО
+- **metrika_visits:** SEO 2026-11-02
+- **internal_links:** /registraciya_mobilnogo_prilozheniya_programma_dlya_evm_ili_tovarnyy_znak, /zaschita_kompyuternoy_programmyi_i_bazyi_dannyix_pravovyie_metodyi
+- **cover_scene_hint:** экран с кодом, стикеры «ст. 1261» и «претензия», не смартфон-стор
+
+---
+
+## L30 — Авторское вознаграждение по ГК РФ: кому и как платить
+
+- **status:** новая
+- **priority:** P1
+- **site:** lireate
+- **lireate_category_id:** 12
+- **lireate_category_name:** Авторское право
+- **slug:** avtorskoe-voznagrazhdenie-po-gk-rf
+- **h1:** Авторское вознаграждение по ГК РФ: виды, сроки и порядок выплат правообладателю
+- **primary_query:** авторское вознаграждение гк
+- **secondary_queries:** вознаграждение автору при служебном произведении, отчётность перед автором, договор авторского заказа
+- **search_intent:** workflow
+- **article_mode:** B
+- **angle:** Ст. 1286, 1295, 1363: виды вознаграждения, отчёты, сроки; не путать с компенсацией за нарушение (ст. 1301)
+- **target_service:** dogovor-avtorskij
+- **metrika_visits:** SEO 2026-11-02
+- **internal_links:** /dogovor_na_razrabotku_logotipa_prava_ot_dizajnera
+- **cover_scene_hint:** акт и отчёт автору, календарь сроков, ст. 1286
+
+---
+
+## L31 — Можно ли запретить ввоз аналога запатентованного товара
+
+- **status:** новая
+- **priority:** P1
+- **site:** lireate
+- **lireate_category_id:** 8
+- **lireate_category_name:** Патент
+- **slug:** mozhno-li-zapretit-vvoz-analoga-zapatentovannogo-tovara
+- **h1:** Можно ли запретить ввоз аналога запатентованного товара: таможня, патент и альтернативы
+- **primary_query:** как запретить ввоз аналога запатентованного продукта
+- **secondary_queries:** таможенный реестр объектов интеллектуальной собственности, ст 1477 гк патент, параллельный импорт
+- **search_intent:** comparison
+- **article_mode:** B
+- **angle:** Патент на изделие vs ТЗ; таможенная процедура; когда работает суд, а не «запрет ввоза» одной заявкой
+- **target_service:** reg-patent / защита патента
+- **metrika_visits:** SEO 2026-11-02
+- **internal_links:** /sposoby_zaschity_izobreteniya_patent_nou_hau
+- **cover_scene_hint:** таможня, патентный реестр, стрелка «аналог vs патент»
