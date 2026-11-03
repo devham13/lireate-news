@@ -782,24 +782,24 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ---
 
-## L29 — Как защитить компьютерную программу от плагиата
+## L29 — Роспатент и ФИПС: открытые реестры и бесплатный поиск товарного знака
 
-- **status:** новая
-- **priority:** P1
+- **status:** written
+- **priority:** P0
 - **site:** lireate
-- **lireate_category_id:** 19
-- **lireate_category_name:** Программа ЭВМ
-- **slug:** kak-zashchitit-kompyuternuyu-programmu-ot-plagiata
-- **h1:** Как защитить компьютерную программу от плагиата: регистрация, договоры и досудебка
-- **primary_query:** как защитить компьютерную программу от плагиата
-- **secondary_queries:** незаконное использование программы для эвм, доказательства копирования кода, отличие от регистрации мобильного приложения
-- **search_intent:** checklist
+- **lireate_category_id:** 9
+- **lireate_category_name:** Товарный знак
+- **slug:** rospatent-fips-proverit-tovarnyy-znak-onlayn-besplatno
+- **h1:** Роспатент и ФИПС: официальные сайты, открытые реестры и как проверить товарный знак по названию онлайн бесплатно
+- **primary_query:** роспатент проверить товарный знак по названию онлайн бесплатно
+- **secondary_queries:** фипс официальный сайт патентный поиск, фипс роспатент открытые реестры, роспатент найти свидетельство, формат номера заявки роспатента, бесплатная база товарных знаков, проверка бренда зарегистрирован или нет
+- **search_intent:** workflow
 - **article_mode:** B
-- **angle:** Десктоп/SaaS/исходники: ст. 1261, депонирование, NDA, претензия; не дублировать L20 (мобильное приложение: ПО vs ТЗ)
-- **target_service:** reg-po / защита ПО
-- **metrika_visits:** SEO 2026-11-02
-- **internal_links:** /registraciya_mobilnogo_prilozheniya_programma_dlya_evm_ili_tovarnyy_znak, /zaschita_kompyuternoy_programmyi_i_bazyi_dannyix_pravovyie_metodyi
-- **cover_scene_hint:** экран с кодом, стикеры «ст. 1261» и «претензия», не смартфон-стор
+- **angle:** Навигация по searchplatform, fips.ru/registers-web, форматы номеров, статусы, лимиты DIY; стратегия рисков — L01, WB — L18
+- **target_service:** reg-tz-main
+- **metrika_visits:** SEO 2026-11-02 (seo-report)
+- **internal_links:** /proverka-tovarnogo-znaka-pered-podachey-v-rospatent, /kak_proverit_brend_na_wildberries_svoboden_li_tovarnyy_znak
+- **cover_scene_hint:** Поисковая платформа, registers-web, стикер «бесплатно», номер без масок
 
 ---
 
@@ -842,3 +842,45 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 - **metrika_visits:** SEO 2026-11-02
 - **internal_links:** /sposoby_zaschity_izobreteniya_patent_nou_hau
 - **cover_scene_hint:** таможня, патентный реестр, стрелка «аналог vs патент»
+
+---
+
+## L32 — Как защитить компьютерную программу от плагиата
+
+- **status:** новая
+- **priority:** P1
+- **site:** lireate
+- **lireate_category_id:** 19
+- **lireate_category_name:** Программа ЭВМ
+- **slug:** kak-zashchitit-kompyuternuyu-programmu-ot-plagiata
+- **h1:** Как защитить компьютерную программу от плагиата: регистрация, договоры и досудебка
+- **primary_query:** как защитить компьютерную программу от плагиата
+- **secondary_queries:** незаконное использование программы для эвм, доказательства копирования кода, отличие от регистрации мобильного приложения
+- **search_intent:** checklist
+- **article_mode:** B
+- **angle:** Десктоп/SaaS/исходники: ст. 1261, депонирование, NDA, претензия; не дублировать L20 (мобильное приложение: ПО vs ТЗ)
+- **target_service:** reg-po / защита ПО
+- **metrika_visits:** SEO 2026-11-02
+- **internal_links:** /registraciya_mobilnogo_prilozheniya_programma_dlya_evm_ili_tovarnyy_znak, /zaschita_kompyuternoy_programmyi_i_bazyi_dannyix_pravovyie_metodyi
+- **cover_scene_hint:** экран с кодом, стикеры «ст. 1261» и «претензия», не смартфон-стор
+
+---
+
+## L33 — Конкурент зарегистрировал похожий товарный знак: что делать
+
+- **status:** новая
+- **priority:** P1
+- **site:** lireate
+- **lireate_category_id:** 9
+- **lireate_category_name:** Товарный знак
+- **slug:** konkurent-zaregistriroval-pohozhiy-tovarnyy-znak
+- **h1:** Конкурент зарегистрировал похожий товарный знак: возражение, претензия и суд
+- **primary_query:** конкурент зарегистрировал похожий товарный знак
+- **secondary_queries:** оспаривание регистрации товарного знака, возражение против предоставления правовой охраны, претензия правообладателю товарного знака
+- **search_intent:** workflow
+- **article_mode:** B
+- **angle:** Маршрут: реестр → сроки ППС (L08/L21) → досудебка → суд; не дублировать L19 «знак занят до подачи»
+- **target_service:** защита ТЗ
+- **metrika_visits:** SEO 2026-11-02 (seo-report)
+- **internal_links:** /vozrazhenie_protiv_registracii_chuzhogo_tovarnogo_znaka_sroki_i_poryadok, /osparivanie_tovarnogo_znaka_v_rospatente_kak_podat_vozrazhenie
+- **cover_scene_hint:** два похожих логотипа, стрелки «1512» и «1515», календарь 5 лет

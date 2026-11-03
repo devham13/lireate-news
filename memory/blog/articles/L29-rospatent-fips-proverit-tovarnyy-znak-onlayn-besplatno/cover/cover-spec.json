@@ -1,0 +1,32 @@
+{
+  "headline_lines": [
+    "ПЛАТФОРМА РЕЕСТР ФИПС",
+    "НОМЕР ЗАЯВКИ БЕСПЛАТНО"
+  ],
+  "highlight": "ФИПС",
+  "sticky_text": "реестр ≠ «свободен»",
+  "sticky_underline": "реестр",
+  "sticky_color": "yellow",
+  "badge_label": "ТЗ",
+  "label_chips": [
+    [
+      "роспатент прове…",
+      "black"
+    ],
+    [
+      "фипс официальны…",
+      "white"
+    ],
+    [
+      "фипс роспатент…",
+      "pink"
+    ]
+  ],
+  "ui_card_title": "Проверка в реестрах",
+  "ui_card_rows": [
+    "searchplatform",
+    "registers-web",
+    "номер заявки",
+    "L01 чек-лист"
+  ]
+}

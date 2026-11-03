@@ -23,7 +23,8 @@
   "site": "lireate.ru",
   "lireate_category_id": 9,
   "lireate_category_name": "Товарный знак",
-  "canonical_path": "/proverka-tovarnogo-znaka-pered-podachey-v-rospatent",
+  "lireate_seo_url": "proverka_tovarnogo_znaka_pered_registraciey_chek_list_po_reestram_rospatenta",
+  "canonical_path": "/proverka_tovarnogo_znaka_pered_registraciey_chek_list_po_reestram_rospatenta",
   "news_list_url": "/news?num=2&category=9",
   "anchor_variants": [
     "проверка товарного знака перед регистрацией по реестрам",
