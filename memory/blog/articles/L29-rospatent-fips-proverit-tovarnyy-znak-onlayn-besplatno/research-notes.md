@@ -2,7 +2,7 @@
 
 **topic_id:** L29  
 **site:** lireate (рубрика «Товарный знак», `category_id=9`)  
-**slug:** `rospatent-fips-proverit-tovarnyy-znak-onlayn-bespatno`  
+**slug:** `rospatent-fips-proverit-tovarnyy-znak-onlayn-besplatno`  
 **article_mode:** B (workflow / инструкция)  
 **search_intent:** workflow  
 **research_date:** 2026-11-03  

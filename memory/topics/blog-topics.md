@@ -789,7 +789,7 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 - **site:** lireate
 - **lireate_category_id:** 9
 - **lireate_category_name:** Товарный знак
-- **slug:** rospatent-fips-proverit-tovarnyy-znak-onlayn-bespatno
+- **slug:** rospatent-fips-proverit-tovarnyy-znak-onlayn-besplatno
 - **h1:** Роспатент и ФИПС: официальные сайты, открытые реестры и как проверить товарный знак по названию онлайн бесплатно
 - **primary_query:** роспатент проверить товарный знак по названию онлайн бесплатно
 - **secondary_queries:** фипс официальный сайт патентный поиск, фипс роспатент открытые реестры, роспатент найти свидетельство, формат номера заявки роспатента, бесплатная база товарных знаков, проверка бренда зарегистрирован или нет

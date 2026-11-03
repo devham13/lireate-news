@@ -1,4 +1,4 @@
-# QA: L29 rospatent-fips-proverit-tovarnyy-znak-onlayn-bespatno
+# QA: L29 rospatent-fips-proverit-tovarnyy-znak-onlayn-besplatno
 
 date: 2026-11-03
 score_total: 82/100
