@@ -40,6 +40,17 @@
   },
   "cover_family": "lireate_collage_v1",
   "cover_scene_hint": "таможня, патентный реестр, стрелка аналог vs патент",
-  "cover_headline": "ПАТЕНТ НЕ В ТРОИС",
-  "cover_style": "collage-v1"
+  "cover_headline": "ВВОЗ АНАЛОГА ПАТЕНТ НЕ В ТРОИС ЗНАК 7-10 ДНЕЙ СУД",
+  "cover_highlight": "ТРОИС",
+  "cover_sticky": "формула ≠ блок на границе",
+  "cover_sticky_underline": "формула",
+  "cover_ui_title": "Таможня и ИС",
+  "cover_ui_rows": [
+    "Патент → суд",
+    "ТРОИС → 7-10 дн.",
+    "Перечень Минпромторга",
+    "ст. 1358 и 328"
+  ],
+  "cover_style": "collage-v1",
+  "cover_renderer": "html_chromium"
 }
