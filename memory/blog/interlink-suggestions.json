@@ -1,35 +1,6 @@
 {
   "site_base": "https://example.com",
-  "total_articles": 35,
-  "opportunities_found": 4,
-  "suggestions": [
-    {
-      "source": "L29-rospatent-fips-proverit-tovarnyy-znak-onlayn-besplatno",
-      "target": "L06-kak-opredelit-klass-mktu",
-      "keyword": "классы мкту",
-      "context": "не доказывает свободу знака; для регистрации нужны реестр и классы МКТУ.</figcaption> </figure>   <p>На <a href=\"https://searchplat",
-      "link_replacement": "<a href=\"/blog/kak-opredelit-klass-mktu/\">классы МКТУ</a>"
-    },
-    {
-      "source": "L21-osparivanie-tovarnogo-znaka-v-rospatente",
-      "target": "L28-obrashchenie-tretiego-litsa-po-zayavke-tovarnyy-znak-st-1493",
-      "keyword": "возражение на заявку на товарный знак",
-      "context": "</tr>   </tbody> </table>  <p>На запрос \"куда подается возражение на заявку на товарный знак\" отвечайте: <b>обращение по ст. 1493 в Роспатент</b>, пока",
-      "link_replacement": "<a href=\"/blog/obrashchenie-tretiego-litsa-po-zayavke-tovarnyy-znak-st-1493/\">возражение на заявку на товарный знак</a>"
-    },
-    {
-      "source": "L21-osparivanie-tovarnogo-znaka-v-rospatente",
-      "target": "L28-obrashchenie-tretiego-litsa-po-zayavke-tovarnyy-znak-st-1493",
-      "keyword": "куда подается возражение на заявку на товарный знак",
-      "context": "ие отказа</td>     </tr>   </tbody> </table>  <p>На запрос \"куда подается возражение на заявку на товарный знак\" отвечайте: <b>обращение по ст. 1493 в Роспатент</b>, пока",
-      "link_replacement": "<a href=\"/blog/obrashchenie-tretiego-litsa-po-zayavke-tovarnyy-znak-st-1493/\">куда подается возражение на заявку на товарный знак</a>"
-    },
-    {
-      "source": "L21-osparivanie-tovarnogo-znaka-v-rospatente",
-      "target": "L28-obrashchenie-tretiego-litsa-po-zayavke-tovarnyy-znak-st-1493",
-      "keyword": "возражение на заявку в порядке ст 1493",
-      "context": "вый гайд, ссылка после публикации), без дубля здесь. Фраза \"возражение на заявку в порядке ст 1493\" = обращение с номером заявки в шапке. Успех по 1493 не рав",
-      "link_replacement": "<a href=\"/blog/obrashchenie-tretiego-litsa-po-zayavke-tovarnyy-znak-st-1493/\">возражение на заявку в порядке ст 1493</a>"
-    }
-  ]
+  "total_articles": 36,
+  "opportunities_found": 0,
+  "suggestions": []
 }
