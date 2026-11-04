@@ -803,30 +803,30 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ---
 
-## L30 — Авторское вознаграждение по ГК РФ: кому и как платить
+## L30 — Как зарегистрировать товарный знак самостоятельно в 2026 году
 
-- **status:** новая
-- **priority:** P1
+- **status:** written
+- **priority:** P0
 - **site:** lireate
-- **lireate_category_id:** 12
-- **lireate_category_name:** Авторское право
-- **slug:** avtorskoe-voznagrazhdenie-po-gk-rf
-- **h1:** Авторское вознаграждение по ГК РФ: виды, сроки и порядок выплат правообладателю
-- **primary_query:** авторское вознаграждение гк
-- **secondary_queries:** вознаграждение автору при служебном произведении, отчётность перед автором, договор авторского заказа
+- **lireate_category_id:** 9
+- **lireate_category_name:** Товарный знак
+- **slug:** kak-zaregistrirovat-tovarnyy-znak-samostoyatelno-2026
+- **h1:** Как зарегистрировать товарный знак самостоятельно в 2026 году: шаги, сроки, пошлины
+- **primary_query:** как зарегистрировать товарный знак
+- **secondary_queries:** зарегистрировать бренд самостоятельно в 2026, сколько стоит зарегистрировать товарный знак в роспатенте, срок регистрации товарного знака в роспатенте, регистрация логотипа компании в роспатенте, роспатент зарегистрировать товарный знак онлайн, защищённое название для ИП
 - **search_intent:** workflow
 - **article_mode:** B
-- **angle:** Ст. 1286, 1295, 1363: виды вознаграждения, отчёты, сроки; не путать с компенсацией за нарушение (ст. 1301)
-- **target_service:** dogovor-avtorskij
-- **metrika_visits:** SEO 2026-11-02
-- **internal_links:** /dogovor_na_razrabotku_logotipa_prava_ot_dizajnera
-- **cover_scene_hint:** акт и отчёт автору, календарь сроков, ст. 1286
+- **angle:** DIY-маршрут: проверка (L01/L29), МКТУ (L06), подача через ФИПС/Госуслуги, пошлины по таблице Роспатента, экспертиза и сроки без гарантий; отказ - L07/L19; маркетплейсы - L03
+- **target_service:** reg-tz-main
+- **metrika_visits:** SEO 2026-11-04 (12 queries, 1 conversion)
+- **internal_links:** /proverka_tovarnogo_znaka_pered_registraciey_chek_list_po_reestram_rospatenta, /rospatent-fips-proverit-tovarnyy-znak-onlayn-besplatno, /kak-opredelit-klass-mktu, /kak_zaregistrirovat_brend_na_ozon_i_wildberries_proverka_imeni_i_nuzhen_li_tz
+- **cover_scene_hint:** экран подачи заявки online.rospatent, калькулятор пошлин, стикеры «35 000 ₽» и «ИП можно»
 
 ---
 
 ## L31 — Можно ли запретить ввоз аналога запатентованного товара
 
-- **status:** новая
+- **status:** new
 - **priority:** P1
 - **site:** lireate
 - **lireate_category_id:** 8
@@ -847,7 +847,7 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L32 — Как защитить компьютерную программу от плагиата
 
-- **status:** новая
+- **status:** new
 - **priority:** P1
 - **site:** lireate
 - **lireate_category_id:** 19
@@ -868,7 +868,7 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L33 — Конкурент зарегистрировал похожий товарный знак: что делать
 
-- **status:** новая
+- **status:** new
 - **priority:** P1
 - **site:** lireate
 - **lireate_category_id:** 9
@@ -884,3 +884,24 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 - **metrika_visits:** SEO 2026-11-02 (seo-report)
 - **internal_links:** /vozrazhenie_protiv_registracii_chuzhogo_tovarnogo_znaka_sroki_i_poryadok, /osparivanie_tovarnogo_znaka_v_rospatente_kak_podat_vozrazhenie
 - **cover_scene_hint:** два похожих логотипа, стрелки «1512» и «1515», календарь 5 лет
+
+---
+
+## L34 — Авторское вознаграждение по ГК РФ: кому и как платить
+
+- **status:** new
+- **priority:** P1
+- **site:** lireate
+- **lireate_category_id:** 12
+- **lireate_category_name:** Авторское право
+- **slug:** avtorskoe-voznagrazhdenie-po-gk-rf
+- **h1:** Авторское вознаграждение по ГК РФ: виды, сроки и порядок выплат правообладателю
+- **primary_query:** авторское вознаграждение гк
+- **secondary_queries:** вознаграждение автору при служебном произведении, отчётность перед автором, договор авторского заказа
+- **search_intent:** workflow
+- **article_mode:** B
+- **angle:** Ст. 1286, 1295, 1363: виды вознаграждения, отчёты, сроки; не путать с компенсацией за нарушение (ст. 1301)
+- **target_service:** dogovor-avtorskij
+- **metrika_visits:** SEO 2026-11-02
+- **internal_links:** /dogovor_na_razrabotku_logotipa_prava_ot_dizajnera
+- **cover_scene_hint:** акт и отчёт автору, календарь сроков, ст. 1286

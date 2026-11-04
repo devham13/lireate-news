@@ -1,0 +1,178 @@
+{
+  "article": "memory/blog/articles/L30-kak-zaregistrirovat-tovarnyy-znak-samostoyatelno-2026/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 24,
+  "verified_facts_count": 9,
+  "unverified_facts_count": 15,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "Запрос \"как зарегистрировать товарный знак\" в 2026 году - это не одна форма, а цепочка: проверка в ре",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2025",
+      "kind": "date_or_year",
+      "context": "тавки - из таблицы Роспатента (обновление с 04.10.2025). Этап Пункт таблицы Когда платить База (1 класс,",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2023",
+      "kind": "date_or_year",
+      "context": "те: ориентироваться на устаревшие суммы из статей 2023-2024 без сверки с таблицей 2026. Критерий Самосто",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2024",
+      "kind": "date_or_year",
+      "context": "риентироваться на устаревшие суммы из статей 2023-2024 без сверки с таблицей 2026. Критерий Самостоятельн",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "18 месяцев",
+      "kind": "metric_or_duration",
+      "context": "рут с бюджетом от 35 000 ₽ за класс, сроком около 18 месяцев и 2 недель и ссылками на L07 и L19, если эксперти",
+      "verified": true,
+      "reason": "Numerical value '18' matched in fact-bank context"
+    },
+    {
+      "fact": "2 недель",
+      "kind": "metric_or_duration",
+      "context": "м от 35 000 ₽ за класс, сроком около 18 месяцев и 2 недель и ссылками на L07 и L19, если экспертиза задаст в",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1 мес",
+      "kind": "metric_or_duration",
+      "context": "10 позиций в перечне) → формальная экспертиза (до 1 мес.) и по существу (до 12 мес.) → после решения о ре",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "12 мес",
+      "kind": "metric_or_duration",
+      "context": "рмальная экспертиза (до 1 мес.) и по существу (до 12 мес.) → после решения о регистрации 2.11 (18 000 ₽) →",
+      "verified": true,
+      "reason": "Numerical value '12' matched in fact-bank context"
+    },
+    {
+      "fact": "10 лет",
+      "kind": "metric_or_duration",
+      "context": "о регистрации 2.11 (18 000 ₽) → свидетельство на 10 лет . Общий срок услуги по карточке госуслуги : 18 ме",
+      "verified": true,
+      "reason": "Numerical value '10' matched in fact-bank context"
+    },
+    {
+      "fact": "6 мес",
+      "kind": "metric_or_duration",
+      "context": "чня у специалиста Уведомление Роспатента Ответ за 6 мес. готовите сами (L07) Доводы и переписку ведёт пов",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "6 месяцев",
+      "kind": "metric_or_duration",
+      "context": "е отказа приходит уведомление ; ответ - в течение 6 месяцев ( ст. 1499 ). Тактика и основания - L07 ; если зн",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "12 месяцев",
+      "kind": "metric_or_duration",
+      "context": "альная экспертиза - до 1 месяца, по существу - до 12 месяцев. Срок растягивается при уведомлениях и доводах. Ч",
+      "verified": true,
+      "reason": "Numerical value '12' matched in fact-bank context"
+    },
+    {
+      "fact": "35 000",
+      "kind": "large_number",
+      "context": "кспертизы. Ниже вы пройдёте маршрут с бюджетом от 35 000 ₽ за класс, сроком около 18 месяцев и 2 недель и",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "18 000",
+      "kind": "large_number",
+      "context": "(до 12 мес.) → после решения о регистрации 2.11 (18 000 ₽) → свидетельство на 10 лет . Общий срок услуги",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1492",
+      "kind": "large_number",
+      "context": "ключая ИП и, с 193-ФЗ, физлицо без ИП ( FAQ , ст. 1492 ). Одна заявка = один знак ; название и логотип о",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "однородных классах - основание отказа по п. 6 ст. 1483 ; пустой поиск не гарантирует регистрацию. Делайт",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "4 000",
+      "kind": "large_number",
+      "context": "ция заявки + формальная экспертиза 2.1 При подаче 4 000 ₽ + 1 000 ₽ за каждый класс сверх 1-го Экспертиза",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1 000",
+      "kind": "large_number",
+      "context": "+ формальная экспертиза 2.1 При подаче 4 000 ₽ + 1 000 ₽ за каждый класс сверх 1-го Экспертиза по сущест",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "13 000",
+      "kind": "large_number",
+      "context": "иза по существу 2.4 Одновременно с 2.1 при подаче 13 000 ₽ + 2 500 ₽ за класс сверх 1-го + 500 ₽ за позици",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2 500",
+      "kind": "large_number",
+      "context": "ству 2.4 Одновременно с 2.1 при подаче 13 000 ₽ + 2 500 ₽ за класс сверх 1-го + 500 ₽ за позицию в классе",
+      "verified": true,
+      "reason": "Numerical value '2500' matched in fact-bank context"
+    },
+    {
+      "fact": "2 000",
+      "kind": "large_number",
+      "context": "е положительного решения по экспертизе 18 000 ₽ + 2 000 ₽ за каждый класс сверх 5-го Бумажное свидетельст",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "3 000",
+      "kind": "large_number",
+      "context": "ли нужно) 2.14 / блок госуслуги После регистрации 3 000 ₽ (на странице услуги указано вместе с этапом выд",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "38 500",
+      "kind": "large_number",
+      "context": "пом выдачи) Минимум 1 класс: 35 000 ₽ ; 2 класса: 38 500 ₽ (до 10 позиций в классе, без бумажного бланка)",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1499",
+      "kind": "large_number",
+      "context": "т уведомление ; ответ - в течение 6 месяцев ( ст. 1499 ). Тактика и основания - L07 ; если знак занят ещ",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
