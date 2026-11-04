@@ -1,0 +1,474 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-04",
+    "today_ru": "04.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-06",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-04 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L32",
+    "priority": "P1",
+    "slug": "kak-zashchitit-kompyuternuyu-programmu-ot-plagiata",
+    "h1": "Как защитить компьютерную программу от плагиата: регистрация, договоры и досудебка",
+    "primary_query": "как защитить компьютерную программу от плагиата",
+    "secondary_queries": [
+      "незаконное использование программы для эвм",
+      "доказательства копирования кода",
+      "отличие от регистрации мобильного приложения"
+    ],
+    "search_intent": "checklist",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "как защитить компьютерную программу от плагиата 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Можно ли защитить компьютерную программу от плагиата?",
+          "url": "https://gpg.ru/magazine/itproducts/mozhno-li-zashchitit-kompyuternuyu-programmu-ot-plagiata.html",
+          "snippet": ""
+        },
+        {
+          "title": "Пять способов защитить компьютерную программу от плагиата - в материале ...",
+          "url": "https://www.bashukchichkanov.com/press/pyat-sposobov-zashchitit-kompyuternuyu-programmu-ot-plagiata-v-materiale-tinkoff-zhurnala/",
+          "snippet": "Можно ли защитить компьютерную программу от плагиата? Предположим, вы разработали новый антивирус или офисное приложение. Оно уникально, востребовано у заказчиков."
+        },
+        {
+          "title": "Как защитить научную работу от кражи и плагиата",
+          "url": "https://dissertatsia.ru/poleznoe/kak-zashitit-nauchnuyu-rabotu-ot-krazhi-i-plagiata/",
+          "snippet": "Мы рассказали в статье в Тинькофф Журнале, как зафиксировать авторское право на программный продукт и защитить его от плагиата. Как запатентовать свою программу и избежать ошибок."
+        },
+        {
+          "title": "Как защитить компьютерную программу и базу данных: правовые способы",
+          "url": "https://habr.com/ru/articles/741374/",
+          "snippet": "Полное руководство по защите научной работы: как предотвратить плагиат, кражу идей и неправомерное использование результатов."
+        },
+        {
+          "title": "Как защитит программу от пиратства и плагиата?",
+          "url": "https://dzen.ru/a/Z-7f2c5wHgUHo-WT",
+          "snippet": "Если вы создали компьютерную программу или базу данных, вы можете ее защитить. Есть несколько способов это сделать в условиях несовершенной законодательной базы в отношении этих ..."
+        },
+        {
+          "title": "Способы защиты программного обеспечения - Корпоративный блог Инфратех",
+          "url": "https://blog.infra-tech.ru/programmnaya-bezopasnost/",
+          "snippet": "Статья автора «Александр Телешинин | Юрист» в Дзене : Очень многие IT-компании и разработчики в сфере информационных технологий работают с программами."
+        }
+      ],
+      "searched_at": "2026-11-04"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "как защитить компьютерную программу от плагиата ноябрь 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Пять способов защитить компьютерную программу от плагиата - в материале ...",
+          "url": "https://www.bashukchichkanov.com/press/pyat-sposobov-zashchitit-kompyuternuyu-programmu-ot-plagiata-v-materiale-tinkoff-zhurnala/",
+          "snippet": ""
+        },
+        {
+          "title": "Можно ли защитить компьютерную программу от плагиата?",
+          "url": "https://gpg.ru/magazine/itproducts/mozhno-li-zashchitit-kompyuternuyu-programmu-ot-plagiata.html",
+          "snippet": "Мы рассказали в статье в Тинькофф Журнале, как зафиксировать авторское право на программный продукт и защитить его от плагиата. Как запатентовать свою программу и избежать ошибок."
+        },
+        {
+          "title": "Как защитит программу от пиратства и плагиата?",
+          "url": "https://dzen.ru/a/Z-7f2c5wHgUHo-WT",
+          "snippet": "Можно ли защитить компьютерную программу от плагиата? Предположим, вы разработали новый антивирус или офисное приложение. Оно уникально, востребовано у заказчиков."
+        },
+        {
+          "title": "Как защитить научную работу от кражи и плагиата",
+          "url": "https://dissertatsia.ru/poleznoe/kak-zashitit-nauchnuyu-rabotu-ot-krazhi-i-plagiata/",
+          "snippet": "Статья автора «Александр Телешинин | Юрист» в Дзене : Очень многие IT-компании и разработчики в сфере информационных технологий работают с программами."
+        },
+        {
+          "title": "Как защитить компьютерную программу и базу данных: правовые способы",
+          "url": "https://habr.com/ru/articles/741374/",
+          "snippet": "Полное руководство по защите научной работы: как предотвратить плагиат, кражу идей и неправомерное использование результатов."
+        },
+        {
+          "title": "Защита программного обеспечения от плагиата при помощи юриста",
+          "url": "https://saenko-group.ru/press-center/articles/zashhita-programmnogo-obespecheniya-ot-plagiata-pri-pomoshhi-yurista/",
+          "snippet": "Внесение в реестр программ ЭВМ защищает только от прямого плагиата исходного кода. Незащищенными остаются название, алгоритмы, дизайн и другие элементы программы."
+        }
+      ],
+      "searched_at": "2026-11-04"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "как защитить компьютерную программу от плагиата новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как защитить научную работу от кражи и плагиата",
+          "url": "https://dissertatsia.ru/poleznoe/kak-zashitit-nauchnuyu-rabotu-ot-krazhi-i-plagiata/",
+          "snippet": ""
+        },
+        {
+          "title": "Пять способов защитить компьютерную программу от плагиата - в материале ...",
+          "url": "https://www.bashukchichkanov.com/press/pyat-sposobov-zashchitit-kompyuternuyu-programmu-ot-plagiata-v-materiale-tinkoff-zhurnala/",
+          "snippet": "Полное руководство по защите научной работы: как предотвратить плагиат, кражу идей и неправомерное использование результатов."
+        },
+        {
+          "title": "Как защитить контент в интернете от копирования и плагиата: реальные ...",
+          "url": "https://pravo163.ru/kak-zashhitit-kontent-v-internete-ot-kopirovaniya-i-plagiata-realnye-sposoby-kotorye-rabotayut/",
+          "snippet": "Мы рассказали в статье в Тинькофф Журнале, как зафиксировать авторское право на программный продукт и защитить его от плагиата. Как запатентовать свою программу и избежать ошибок."
+        },
+        {
+          "title": "Можно ли защитить компьютерную программу от плагиата?",
+          "url": "https://gpg.ru/magazine/itproducts/mozhno-li-zashchitit-kompyuternuyu-programmu-ot-plagiata.html",
+          "snippet": "Юридически значимым этапом защиты является фиксация авторства и даты создания произведения."
+        },
+        {
+          "title": "Защита кода от внутренних утечек: регистрация прав | BrandR",
+          "url": "https://brandr.legal/ru/kak-regystraczyya-avtorskogo-prava-na-k/",
+          "snippet": "Можно ли защитить компьютерную программу от плагиата? Предположим, вы разработали новый антивирус или офисное приложение. Оно уникально, востребовано у заказчиков."
+        },
+        {
+          "title": "Как защитить свои работы от плагиата в интернете и сохранить авторские ...",
+          "url": "https://deviarts.ru/%D0%BA%D0%B0%D0%BA-%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%B8%D1%82%D1%8C-%D1%81%D0%B2%D0%BE%D0%B8-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B-%D0%BE%D1%82-%D0%BF%D0%BB%D0%B0%D0%B3%D0%B8%D0%B0%D1%82%D0%B0-%D0%B2/",
+          "snippet": "Подробнее о том, как использовать эти инструменты в суде, вы можете прочитать в материале о том, как выиграть спор с помощью регистрации прав."
+        }
+      ],
+      "searched_at": "2026-11-04"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "незаконное использование программы для эвм 2026",
+      "purpose": "вторичный запрос: незаконное использование программы для эвм",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Ответственность за незаконное использование программного обеспечения ...",
+          "url": "https://www.consultant.ru/law/podborki/otvetstvennost_za_nezakonnoe_ispolzovanie_programmnogo_obespecheniya/",
+          "snippet": ""
+        },
+        {
+          "title": "Незаконное использование программы для ЭВМ: защита интересов ...",
+          "url": "https://saenko-group.ru/press-center/articles/nezakonnoe-ispolzovanie-programmy-dlya-evm-zashhita-interesov-pravoobladatelya/",
+          "snippet": "Вопрос: К какой ответственности может быть привлечена организация за использование программного обеспечения без соответствующих прав? (Консультация эксперта, 2026)"
+        },
+        {
+          "title": "Защита программы эвм \\ 2026-2025-2024 год \\ Акты, образцы, формы ...",
+          "url": "https://www.consultant.ru/law/podborki/zaschita_programmy_jevm/",
+          "snippet": "Юрист подготовил претензию, в которой указал факт нарушения, приложил скриншоты интерфейса программы и потребовал прекратить использование ПО, а также выплатить компенсацию."
+        },
+        {
+          "title": "Статья 1261. Гражданского кодекса. Программы для ЭВМ",
+          "url": "https://consultant-mos.ru/kodeksy-rf/gk-rf/chast-4-gk-rf/razdel-7-gk-rf/glava-70-gk-rf/statya-1261-gk-rf",
+          "snippet": "Сегодня на практике нередко рассматриваются вопросы правомерности адаптации и модификации программы для ЭВМ, анализируются изменения в исходный код/текст программы, а также ..."
+        },
+        {
+          "title": "Права на программу для ЭВМ / Хабр - Habr",
+          "url": "https://habr.com/ru/articles/1061932/",
+          "snippet": "Программы для ЭВМ охраняются как объекты авторских прав, а именно как произведения литературы. Данное положение действовало до 1 января 2008 г. Это означает, что к программам для ЭВМ подлежат применению нормы о произведениях как об объектах авторских прав."
+        },
+        {
+          "title": "Незаконное использование программ для ЭВМ: какая грозит ответственность ...",
+          "url": "https://dzen.ru/a/Z6LAtGVGW1HIpf26",
+          "snippet": "Законодательство относит программы для ЭВМ к объектам авторского права и прямо указывает, что права на них охраняются так же, как авторские права на произведения литературы."
+        }
+      ],
+      "searched_at": "2026-11-04"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "доказательства копирования кода 2026",
+      "purpose": "вторичный запрос: доказательства копирования кода",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Конкурент скопировал программный код — как защитить права",
+          "url": "https://nevskylaw.ru/knowledge/skopirovali-nash-programmnyy-kod-konkurent/",
+          "snippet": ""
+        },
+        {
+          "title": "Художники требуют код Midjourney для доказательства кражи 4700 стилей",
+          "url": "https://modelora.ru/news/khudozhniki-trebuyut-kod-midjourney-dlya-dokazatelstva-2026-06-01",
+          "snippet": "Конкурент украл исходный код вашего продукта? Узнайте, как зафиксировать нарушение, подать иск, получить компенсацию и привлечь виновных к ответственности."
+        },
+        {
+          "title": "Авторские права на код: когда схожесть не доказывает нарушение",
+          "url": "https://vitvet.com/about/news/alttel-open-source-avtorskie-prava-na-po/",
+          "snippet": "Если истцам необходимо доказать факт незаконного копирования, им следует требовать доступ к элементам, находящимся за пределами понятия «исходный код»."
+        },
+        {
+          "title": "Права на ПО в 2026 году: кому принадлежит код | адвокат Антон Пуляев ...",
+          "url": "https://advolaw.ru/articles/komu-prinadlezhit-kod",
+          "snippet": "Дело наглядно демонстрирует ключевой принцип в спорах о программном коде: защита авторских прав на ПО требует доказательства факта копирования, а не факта схожести."
+        },
+        {
+          "title": "Претензия за нарушение прав на ПО: доказательства и требования",
+          "url": "https://nevskylaw.ru/knowledge/pretenziya-za-narushenie-isklyuchitelnyh-prav-na-po/",
+          "snippet": "Эта статья отвечает на один практический вопрос: кому принадлежит код в конкретной модели разработки и что должно быть написано в договоре, чтобы заказчик или разработчик получили ..."
+        },
+        {
+          "title": "Копирование программы для эвм \\ 2026-2025-2024 год \\ Акты, образцы ...",
+          "url": "https://www.consultant.ru/law/podborki/kopirovanie_programmy_dlya_jevm/",
+          "snippet": "Как подготовить претензию за нарушение прав на программу и код: цепочка прав, техническое сравнение, фиксация, требования и компенсация в 2026 году."
+        }
+      ],
+      "searched_at": "2026-11-04"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "отличие от регистрации мобильного приложения 2026",
+      "purpose": "вторичный запрос: отличие от регистрации мобильного приложения",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Регистрация ПО в Роспатенте и Минцифре: что это даёт разработчику и ...",
+          "url": "https://habr.com/ru/articles/1003964/",
+          "snippet": ""
+        },
+        {
+          "title": "Мобильная разработка в 2026 году — этапы, процессы, технологии | LighTech",
+          "url": "https://thelightech.ru/blog/mobilnye-prilozheniya/mobilnaya-razrabotka-v-2026-godu/",
+          "snippet": "Разбираемся, что именно можно зарегистрировать в Роспатенте, какие преимущества это даёт и что изменится в 2026 году с принятием нового закона о патентовании IT-решений."
+        },
+        {
+          "title": "Мобильное Приложение С Нуля В 2026 | Ukved",
+          "url": "https://ukved.ru/articles/oshibki/kak-sozdat-svoe-mobilnoe-prilozhenie-v-2026-gayd-ot-idei-do-reliza/",
+          "snippet": "Узнайте, как проходит создание мобильного приложения сегодня — сроки, этапы и задачи. Расскажем, как оптимизировать бюджет, выбрать вид разработки."
+        },
+        {
+          "title": "Как создать приложение в 2026 — пошаговый план от идеи до релиза",
+          "url": "https://ivankornev.com/ru/articles/web-services/features/kak-sozdat-prilozhenie-v-2026/",
+          "snippet": "Как создать мобильное приложение для бизнеса в 2026: от идеи и ТЗ до выбора технологии и публикации в сторах. Сроки, цены от 500 000 ₽, чек-лист релиза."
+        },
+        {
+          "title": "Минцифры предлагает отключать от связи смартфоны без регистрации на ...",
+          "url": "https://www.ntv.ru/novosti/3019218",
+          "snippet": "Полный гид по созданию мобильного или веб‑приложения в 2026 году. Этапы разработки, лучшие платформы (Flutter, React Native), стоимость и публикация в App Store/Google Play."
+        },
+        {
+          "title": "Разработка мобильного приложения 2026: этапы, цены, технологии — Surf",
+          "url": "https://surf.ru/razrabotka-mobilnogo-prilozheniya/",
+          "snippet": "В России могут ввести обязательную регистрацию смартфонов, ввезенных без таможенного оформления."
+        }
+      ],
+      "searched_at": "2026-11-04"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как защитить компьютерную программу от плагиата: регистрация, договоры и досудебка 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как Защитить По От Копирования: Лицензии, Eula И Nda — Wcr",
+          "url": "https://wcr-consulting.com/blog/2025/10/07/how-to-protect-software-from-copying-license-and-agreement/",
+          "snippet": ""
+        },
+        {
+          "title": "Как защитить права на программное обеспечение: пошаговый гайд для ...",
+          "url": "https://habr.com/ru/companies/aglegal/articles/1072018/",
+          "snippet": "Как защитить ПО от копирования: авторские права, лицензии, EULA и NDA для защиты кода, интерфейса и бизнес-логики в разных странах."
+        },
+        {
+          "title": "Авторское право на компьютерную программу: гайд 2026 | BrandR",
+          "url": "https://brandr.legal/ru/regystraczyya-avtorskogo-prava-na-komp/",
+          "snippet": "В 2026 году подобрать название для программного обеспечения становится все сложнее. Во-первых, все чаще возникают вопросы о допустимости использования иностранных слов и обозначений."
+        },
+        {
+          "title": "Правовая охрана программ и данных: как защищают программы для ЭВМ и ...",
+          "url": "https://zhelezno.com/zashchita-po/pravovaja-ohrana-programm-i-dannyh-kak-zashhishhajut-programmy-dlja-jevm-i-bazy-dannyh",
+          "snippet": "Такое понимание поможет вам построить стратегию, где регистрация авторского права на компьютерную программу станет не формальностью, а инструментом увеличения капитализации."
+        },
+        {
+          "title": "Как зарегистрировать права на программу и программное обеспечение для ЭВМ",
+          "url": "https://www.copytrust.ru/articles/registratsiya-prav-na-programmi-i-programmnoe-obespechenie",
+          "snippet": "Правовая охрана программ для ЭВМ строится на нормах авторского права: код защищается как произведение, с момента создания и без обязательной регистрации. Базы данных охраняются по своим правилам — как составные произведения и, при определенных условиях, через смежные права изготовителя."
+        },
+        {
+          "title": "Пять способов защитить компьютерную программу от плагиата - в материале ...",
+          "url": "https://www.bashukchichkanov.com/press/pyat-sposobov-zashchitit-kompyuternuyu-programmu-ot-plagiata-v-materiale-tinkoff-zhurnala/",
+          "snippet": "Вы узнаете о процедуре охраны программных продуктов, правильном оформлении документов, требованиях, необходимых для регистрации и защиты прав на программы для ЭВМ."
+        }
+      ],
+      "searched_at": "2026-11-04"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://gpg.ru/magazine/itproducts/mozhno-li-zashchitit-kompyuternuyu-programmu-ot-plagiata.html",
+      "title": "Можно ли защитить компьютерную программу от плагиата?",
+      "from_query": "как защитить компьютерную программу от плагиата 2026"
+    },
+    {
+      "url": "https://www.bashukchichkanov.com/press/pyat-sposobov-zashchitit-kompyuternuyu-programmu-ot-plagiata-v-materiale-tinkoff-zhurnala/",
+      "title": "Пять способов защитить компьютерную программу от плагиата - в материале ...",
+      "from_query": "как защитить компьютерную программу от плагиата 2026"
+    },
+    {
+      "url": "https://dissertatsia.ru/poleznoe/kak-zashitit-nauchnuyu-rabotu-ot-krazhi-i-plagiata/",
+      "title": "Как защитить научную работу от кражи и плагиата",
+      "from_query": "как защитить компьютерную программу от плагиата 2026"
+    },
+    {
+      "url": "https://habr.com/ru/articles/741374/",
+      "title": "Как защитить компьютерную программу и базу данных: правовые способы",
+      "from_query": "как защитить компьютерную программу от плагиата 2026"
+    },
+    {
+      "url": "https://dzen.ru/a/Z-7f2c5wHgUHo-WT",
+      "title": "Как защитит программу от пиратства и плагиата?",
+      "from_query": "как защитить компьютерную программу от плагиата 2026"
+    },
+    {
+      "url": "https://blog.infra-tech.ru/programmnaya-bezopasnost/",
+      "title": "Способы защиты программного обеспечения - Корпоративный блог Инфратех",
+      "from_query": "как защитить компьютерную программу от плагиата 2026"
+    },
+    {
+      "url": "https://saenko-group.ru/press-center/articles/zashhita-programmnogo-obespecheniya-ot-plagiata-pri-pomoshhi-yurista/",
+      "title": "Защита программного обеспечения от плагиата при помощи юриста",
+      "from_query": "как защитить компьютерную программу от плагиата ноябрь 2026"
+    },
+    {
+      "url": "https://pravo163.ru/kak-zashhitit-kontent-v-internete-ot-kopirovaniya-i-plagiata-realnye-sposoby-kotorye-rabotayut/",
+      "title": "Как защитить контент в интернете от копирования и плагиата: реальные ...",
+      "from_query": "как защитить компьютерную программу от плагиата новости 2026"
+    },
+    {
+      "url": "https://brandr.legal/ru/kak-regystraczyya-avtorskogo-prava-na-k/",
+      "title": "Защита кода от внутренних утечек: регистрация прав | BrandR",
+      "from_query": "как защитить компьютерную программу от плагиата новости 2026"
+    },
+    {
+      "url": "https://deviarts.ru/%D0%BA%D0%B0%D0%BA-%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D0%B8%D1%82%D1%8C-%D1%81%D0%B2%D0%BE%D0%B8-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B-%D0%BE%D1%82-%D0%BF%D0%BB%D0%B0%D0%B3%D0%B8%D0%B0%D1%82%D0%B0-%D0%B2/",
+      "title": "Как защитить свои работы от плагиата в интернете и сохранить авторские ...",
+      "from_query": "как защитить компьютерную программу от плагиата новости 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/otvetstvennost_za_nezakonnoe_ispolzovanie_programmnogo_obespecheniya/",
+      "title": "Ответственность за незаконное использование программного обеспечения ...",
+      "from_query": "незаконное использование программы для эвм 2026"
+    },
+    {
+      "url": "https://saenko-group.ru/press-center/articles/nezakonnoe-ispolzovanie-programmy-dlya-evm-zashhita-interesov-pravoobladatelya/",
+      "title": "Незаконное использование программы для ЭВМ: защита интересов ...",
+      "from_query": "незаконное использование программы для эвм 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/zaschita_programmy_jevm/",
+      "title": "Защита программы эвм \\ 2026-2025-2024 год \\ Акты, образцы, формы ...",
+      "from_query": "незаконное использование программы для эвм 2026"
+    },
+    {
+      "url": "https://consultant-mos.ru/kodeksy-rf/gk-rf/chast-4-gk-rf/razdel-7-gk-rf/glava-70-gk-rf/statya-1261-gk-rf",
+      "title": "Статья 1261. Гражданского кодекса. Программы для ЭВМ",
+      "from_query": "незаконное использование программы для эвм 2026"
+    },
+    {
+      "url": "https://habr.com/ru/articles/1061932/",
+      "title": "Права на программу для ЭВМ / Хабр - Habr",
+      "from_query": "незаконное использование программы для эвм 2026"
+    },
+    {
+      "url": "https://dzen.ru/a/Z6LAtGVGW1HIpf26",
+      "title": "Незаконное использование программ для ЭВМ: какая грозит ответственность ...",
+      "from_query": "незаконное использование программы для эвм 2026"
+    },
+    {
+      "url": "https://nevskylaw.ru/knowledge/skopirovali-nash-programmnyy-kod-konkurent/",
+      "title": "Конкурент скопировал программный код — как защитить права",
+      "from_query": "доказательства копирования кода 2026"
+    },
+    {
+      "url": "https://modelora.ru/news/khudozhniki-trebuyut-kod-midjourney-dlya-dokazatelstva-2026-06-01",
+      "title": "Художники требуют код Midjourney для доказательства кражи 4700 стилей",
+      "from_query": "доказательства копирования кода 2026"
+    },
+    {
+      "url": "https://vitvet.com/about/news/alttel-open-source-avtorskie-prava-na-po/",
+      "title": "Авторские права на код: когда схожесть не доказывает нарушение",
+      "from_query": "доказательства копирования кода 2026"
+    },
+    {
+      "url": "https://advolaw.ru/articles/komu-prinadlezhit-kod",
+      "title": "Права на ПО в 2026 году: кому принадлежит код | адвокат Антон Пуляев ...",
+      "from_query": "доказательства копирования кода 2026"
+    },
+    {
+      "url": "https://nevskylaw.ru/knowledge/pretenziya-za-narushenie-isklyuchitelnyh-prav-na-po/",
+      "title": "Претензия за нарушение прав на ПО: доказательства и требования",
+      "from_query": "доказательства копирования кода 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/kopirovanie_programmy_dlya_jevm/",
+      "title": "Копирование программы для эвм \\ 2026-2025-2024 год \\ Акты, образцы ...",
+      "from_query": "доказательства копирования кода 2026"
+    },
+    {
+      "url": "https://habr.com/ru/articles/1003964/",
+      "title": "Регистрация ПО в Роспатенте и Минцифре: что это даёт разработчику и ...",
+      "from_query": "отличие от регистрации мобильного приложения 2026"
+    },
+    {
+      "url": "https://thelightech.ru/blog/mobilnye-prilozheniya/mobilnaya-razrabotka-v-2026-godu/",
+      "title": "Мобильная разработка в 2026 году — этапы, процессы, технологии | LighTech",
+      "from_query": "отличие от регистрации мобильного приложения 2026"
+    },
+    {
+      "url": "https://ukved.ru/articles/oshibki/kak-sozdat-svoe-mobilnoe-prilozhenie-v-2026-gayd-ot-idei-do-reliza/",
+      "title": "Мобильное Приложение С Нуля В 2026 | Ukved",
+      "from_query": "отличие от регистрации мобильного приложения 2026"
+    },
+    {
+      "url": "https://ivankornev.com/ru/articles/web-services/features/kak-sozdat-prilozhenie-v-2026/",
+      "title": "Как создать приложение в 2026 — пошаговый план от идеи до релиза",
+      "from_query": "отличие от регистрации мобильного приложения 2026"
+    },
+    {
+      "url": "https://www.ntv.ru/novosti/3019218",
+      "title": "Минцифры предлагает отключать от связи смартфоны без регистрации на ...",
+      "from_query": "отличие от регистрации мобильного приложения 2026"
+    },
+    {
+      "url": "https://surf.ru/razrabotka-mobilnogo-prilozheniya/",
+      "title": "Разработка мобильного приложения 2026: этапы, цены, технологии — Surf",
+      "from_query": "отличие от регистрации мобильного приложения 2026"
+    },
+    {
+      "url": "https://wcr-consulting.com/blog/2025/10/07/how-to-protect-software-from-copying-license-and-agreement/",
+      "title": "Как Защитить По От Копирования: Лицензии, Eula И Nda — Wcr",
+      "from_query": "Как защитить компьютерную программу от плагиата: регистрация, договоры и досудебка 2026"
+    },
+    {
+      "url": "https://habr.com/ru/companies/aglegal/articles/1072018/",
+      "title": "Как защитить права на программное обеспечение: пошаговый гайд для ...",
+      "from_query": "Как защитить компьютерную программу от плагиата: регистрация, договоры и досудебка 2026"
+    },
+    {
+      "url": "https://brandr.legal/ru/regystraczyya-avtorskogo-prava-na-komp/",
+      "title": "Авторское право на компьютерную программу: гайд 2026 | BrandR",
+      "from_query": "Как защитить компьютерную программу от плагиата: регистрация, договоры и досудебка 2026"
+    },
+    {
+      "url": "https://zhelezno.com/zashchita-po/pravovaja-ohrana-programm-i-dannyh-kak-zashhishhajut-programmy-dlja-jevm-i-bazy-dannyh",
+      "title": "Правовая охрана программ и данных: как защищают программы для ЭВМ и ...",
+      "from_query": "Как защитить компьютерную программу от плагиата: регистрация, договоры и досудебка 2026"
+    },
+    {
+      "url": "https://www.copytrust.ru/articles/registratsiya-prav-na-programmi-i-programmnoe-obespechenie",
+      "title": "Как зарегистрировать права на программу и программное обеспечение для ЭВМ",
+      "from_query": "Как защитить компьютерную программу от плагиата: регистрация, договоры и досудебка 2026"
+    }
+  ]
+}

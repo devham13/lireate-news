@@ -1,0 +1,23 @@
+{
+  "policy_id": "utility_only_v1",
+  "overall": "PASS",
+  "reports": [
+    {
+      "gate": "article",
+      "article_dir": "memory/blog/articles/L32-kak-zashchitit-kompyuternuyu-programmu-ot-plagiata",
+      "status": "PASS",
+      "metrics": {
+        "numbered_list_items": 13,
+        "h2_sections": 7,
+        "faq_h3": 7,
+        "tables": 2,
+        "blockquotes": 5,
+        "ul_lists": 0,
+        "action_markers": 9,
+        "water_hits": []
+      },
+      "errors": [],
+      "warnings": []
+    }
+  ]
+}
