@@ -1,0 +1,80 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-04",
+    "today_ru": "04.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-06",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-04 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L32",
+    "priority": "P1",
+    "slug": "kak-zashchitit-kompyuternuyu-programmu-ot-plagiata",
+    "h1": "Как защитить компьютерную программу от плагиата: регистрация, договоры и досудебка",
+    "primary_query": "как защитить компьютерную программу от плагиата",
+    "secondary_queries": [
+      "незаконное использование программы для эвм",
+      "доказательства копирования кода",
+      "отличие от регистрации мобильного приложения"
+    ],
+    "search_intent": "checklist",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "L32",
+    "status": "PASS",
+    "search_intent": "checklist",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "как защитить компьютерную программу от плагиата 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "как защитить компьютерную программу от плагиата ноябрь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "как защитить компьютерную программу от плагиата новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "незаконное использование программы для эвм 2026",
+      "purpose": "вторичный запрос: незаконное использование программы для эвм"
+    },
+    {
+      "id": "secondary_2",
+      "query": "доказательства копирования кода 2026",
+      "purpose": "вторичный запрос: доказательства копирования кода"
+    },
+    {
+      "id": "secondary_3",
+      "query": "отличие от регистрации мобильного приложения 2026",
+      "purpose": "вторичный запрос: отличие от регистрации мобильного приложения"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как защитить компьютерную программу от плагиата: регистрация, договоры и досудебка 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/L32-kak-zashchitit-kompyuternuyu-programmu-ot-plagiata",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}
