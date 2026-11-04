@@ -1,0 +1,484 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-04",
+    "today_ru": "04.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-06",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-04 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L31",
+    "priority": "P1",
+    "slug": "mozhno-li-zapretit-vvoz-analoga-zapatentovannogo-tovara",
+    "h1": "Можно ли запретить ввоз аналога запатентованного товара: таможня, патент и альтернативы",
+    "primary_query": "как запретить ввоз аналога запатентованного продукта",
+    "secondary_queries": [
+      "таможенный реестр объектов интеллектуальной собственности",
+      "ст 1477 гк патент",
+      "параллельный импорт"
+    ],
+    "search_intent": "comparison",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "как запретить ввоз аналога запатентованного продукта 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Параллельный импорт 2026: что разрешено и запрещено по новому перечню ...",
+          "url": "https://harant.ru/blog/yuridicheskie-novosti/sankczii-i-parallelnyj-import-chto-razresheno-segodnya/",
+          "snippet": ""
+        },
+        {
+          "title": "Параллельный импорт: правила ввоза для юрлиц в 2026 году |",
+          "url": "https://avlog.ru/blog/parallelnyj-import-aktualnye-pravila-i-ogranicheniya-dlya-yurlicz-v-2026-godu/",
+          "snippet": "Параллельный импорт в России продлён до 2026 года — узнайте, какие товары останутся разрешёнными, а что будет запрещено для ввоза с мая 2026 года."
+        },
+        {
+          "title": "Параллельный импорт в 2026 году: как законно завозить товары из-за рубежа",
+          "url": "https://mef.legal/events/parallelnyj-import-v-2026-godu-kak-zakonno-zavozit-tovary-iz-za-rubezha",
+          "snippet": "В этой статье эксперты «АВЛОГ» разберут действующие правила параллельного импорта, ограничения для юрлиц и механизмы защиты интеллектуальной собственности. Вы узнаете, как легально ввезти оригинальную продукцию и избежать конфискации на таможне."
+        },
+        {
+          "title": "Параллельный Импорт И Тз — Права В 2026 — Консультация Marqa",
+          "url": "https://marqatm.ru/analytics/parallelnyj-import-tz-2026.html",
+          "snippet": "Как изменился статус параллельного импорта после санкций, какие товары можно ввозить и какие риски ждут импортёров — актуальная правовая картина."
+        },
+        {
+          "title": "Параллельный импорт в РФ сузил список товаров: что можно ввозить без ...",
+          "url": "https://pulsfid.ru/news/parallelnyy-import-v-rf-suzil-spisok-tovarov-chto-mozhno-vvozit-bez-soglasiya-pravoobladatelya-posle-mayskogo-obnovleniya-592170095",
+          "snippet": "Статья объясняет, как работает параллельный импорт, какие права сохраняет правообладатель и как защитить бренд в суде."
+        },
+        {
+          "title": "Параллельный импорт: что разрешено в 2026 году и как избежать нарушений ...",
+          "url": "https://harant.ru/blog/drugoe/sankczii-i-parallelnyj-import-chto-razresheno-segodnya-2/",
+          "snippet": "Технологии и Наука 📢 Параллельный импорт в РФ сузил список товаров после майского обновления Приказа Минпромторга № 2701. Электроника, автомобили и промышленное оборудование остались, но компьютерная техника и ..."
+        }
+      ],
+      "searched_at": "2026-11-04"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "как запретить ввоз аналога запатентованного продукта ноябрь 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Постановление Правительства Российской Федерации от 31.10.2026 № 1444 ...",
+          "url": "http://publication.pravo.gov.ru/document/0001202611010003",
+          "snippet": ""
+        },
+        {
+          "title": "Постановление Правительства Рф От 31.10.2026 N 1444",
+          "url": "https://pravo.ppt.ru/postanovlenie/pravitelstvo/n-1444-359401",
+          "snippet": "Постановление Правительства Российской Федерации от 31.10.2026 № 1444 \"О введении запрета на ввоз в Российскую Федерацию отдельных категорий товаров\" Номер опубликования: 0001202611010003"
+        },
+        {
+          "title": "Постановление Правительства Российской Федерации от 29.04.2026 № 488 ∙ ...",
+          "url": "http://www.publication.pravo.gov.ru/document/0001202604300055",
+          "snippet": "О введении запрета на ввоз в Российскую Федерацию отдельных категорий товаров. Постановление Правительства РФ от 31.10.2026 № 1444."
+        },
+        {
+          "title": "Полный разбор ограничений импорта в Россию: запреты 2024-2026",
+          "url": "https://gubregionleader.ru/ogranicheniya-na-vvoz-tovarov-v-rossiyu-v-2024-2026-godah-pravovye-osnovy-tekushhie-mery-i-poryadok-polucheniya-razreshenij.html",
+          "snippet": "\"О введении запрета на ввоз в Российскую Федерацию отдельных категорий товаров и внесении изменений в постановление Правительства Российской Федерации от 13 сентября 2012 г. № 923\""
+        },
+        {
+          "title": "О введении запрета на ввоз в Российскую Федерацию отдельных категорий ...",
+          "url": "https://www.tks.ru/news/law/2026/11/02/0001/o-vvedenii-zapreta-na-vvoz-v-rossijskuyu-federatsiyu-otdelnyih-kategorij-tovarov/",
+          "snippet": "Узнайте всё об ограничениях импорта в Россию: актуальные запреты 2024-2026, как получить разрешения и где искать контакты госорганов."
+        },
+        {
+          "title": "Федеральная таможенная служба",
+          "url": "https://customs.gov.ru/uchastnikam-ved/zaprety-i-ogranicheniya/tovary,-zapreshhennye-k-vyvozu-s-territorii-rossijskoj-federaczii-v-svyazi-s-primeneniem-speczial-nyx-ekonomicheskix-mer",
+          "snippet": "3. Настоящее постановление вступает в силу с 1 ноября 2026 г. Запрет, предусмотренный пунктом 1 настоящего постановления, действует в течение 6 месяцев."
+        }
+      ],
+      "searched_at": "2026-11-04"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "как запретить ввоз аналога запатентованного продукта новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Параллельный импорт 2026: полный список запретов и что теперь нельзя ...",
+          "url": "https://myseldon.com/ru/news/index/345461575",
+          "snippet": ""
+        },
+        {
+          "title": "Параллельный импорт: правила ввоза для юрлиц в 2026 году |",
+          "url": "https://avlog.ru/blog/parallelnyj-import-aktualnye-pravila-i-ogranicheniya-dlya-yurlicz-v-2026-godu/",
+          "snippet": "Почему параллельный импорт не отменят полностью? Несмотря на сокращение списка, параллельный импорт 2026 остается важнейшим инструментом внешней торговли."
+        },
+        {
+          "title": "Параллельный импорт в РФ сузил список товаров: что можно ввозить без ...",
+          "url": "https://pulsfid.ru/news/parallelnyy-import-v-rf-suzil-spisok-tovarov-chto-mozhno-vvozit-bez-soglasiya-pravoobladatelya-posle-mayskogo-obnovleniya-592170095",
+          "snippet": "В этой статье эксперты «АВЛОГ» разберут действующие правила параллельного импорта, ограничения для юрлиц и механизмы защиты интеллектуальной собственности. Вы узнаете, как легально ввезти оригинальную продукцию и избежать конфискации на таможне."
+        },
+        {
+          "title": "Параллельный импорт 2026: что разрешено и запрещено по новому перечню ...",
+          "url": "https://harant.ru/blog/yuridicheskie-novosti/sankczii-i-parallelnyj-import-chto-razresheno-segodnya/",
+          "snippet": "Технологии и Наука 📢 Параллельный импорт в РФ сузил список товаров после майского обновления Приказа Минпромторга № 2701. Электроника, автомобили и промышленное оборудование остались, но компьютерная техника и ..."
+        },
+        {
+          "title": "Параллельный импорт в 2026 году: как законно завозить товары из-за рубежа",
+          "url": "https://mef.legal/events/parallelnyj-import-v-2026-godu-kak-zakonno-zavozit-tovary-iz-za-rubezha",
+          "snippet": "Параллельный импорт в России продлён до 2026 года — узнайте, какие товары останутся разрешёнными, а что будет запрещено для ввоза с мая 2026 года."
+        },
+        {
+          "title": "Параллельный импорт: что разрешено в 2026 году и как избежать нарушений ...",
+          "url": "https://harant.ru/blog/drugoe/sankczii-i-parallelnyj-import-chto-razresheno-segodnya-2/",
+          "snippet": "Как изменился статус параллельного импорта после санкций, какие товары можно ввозить и какие риски ждут импортёров — актуальная правовая картина."
+        }
+      ],
+      "searched_at": "2026-11-04"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "таможенный реестр объектов интеллектуальной собственности 2026",
+      "purpose": "вторичный запрос: таможенный реестр объектов интеллектуальной собственности",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Федеральная таможенная служба",
+          "url": "https://customs.gov.ru/registers/objects-intellectual-property",
+          "snippet": ""
+        },
+        {
+          "title": "Таможенный реестр объектов интеллектуальной собственности",
+          "url": "https://www.alta.ru/rois/",
+          "snippet": "Объект интеллектуальной собственности Наименование товаров Детские пеленки разового пользования, изготовленные в основном из целлюлозного материала, прокладки для детских пеленок"
+        },
+        {
+          "title": "Таможенный реестр интеллектуальной собственности превысил 8 тысяч объектов",
+          "url": "https://www.tks.ru/news/nearby/2026/10/12/0003/tamozhennyij-reestr-intellektualnoj-sobstvennosti-prevyisil-8-tyisyach-obektov/",
+          "snippet": "Проверить, попадает ли товарный знак под защиту прав интеллектуальной собственности, можно в нашем актуальном онлайн-сервисе «Таможенный реестр объектов интеллектуальной ..."
+        },
+        {
+          "title": "Федеральная таможенная служба",
+          "url": "https://customs.gov.ru/uchastnikam-ved/chasto-zadavaemye-voprosy/chasto-zadavaemye-voprosy-po-predostavleniyu-gosudarstvennyx-uslug/vedenie-tamozhennogo-reestra-ob-ektov-intellektual-noj-sobstvennosti/document/379113",
+          "snippet": "В третьем квартале 2026 года таможенный реестр объектов интеллектуальной собственности пополнился 166 позициями. Среди новых записей - товарные знаки известных брендов и наименование места происхождения товара \"Русская водка\"."
+        },
+        {
+          "title": "База ТРОИС, таможенный реестр объектов интеллектуальной собственности ...",
+          "url": "https://www.tks.ru/db/ois/",
+          "snippet": "Заявление о включении объекта интеллектуальной собственности в таможенный реестр подлежит рассмотрению в срок, не превышающий одного месяца со дня его поступления."
+        },
+        {
+          "title": "Реестр объектов интеллектуальной собственности :: Таможня.Ру :: Tamo",
+          "url": "http://tamognia.ru/customs/register_object_intellectual_property_russia/",
+          "snippet": "Справочник содержит полные и проверенные данные об объектах интеллектуальной собственности, внесённых в Таможенный реестр ОИС. Информация систематизирована и поддерживается в актуальном состоянии. Для поиска нужного объекта воспользуйтесь фильтрами ниже."
+        }
+      ],
+      "searched_at": "2026-11-04"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "ст 1477 гк патент 2026",
+      "purpose": "вторичный запрос: ст 1477 гк патент",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Ст.1477 ГК РФ — товарный знак: текст и комментарий 2026",
+          "url": "https://marqatm.ru/analytics/st-1477-gk-rf-tz.html",
+          "snippet": ""
+        },
+        {
+          "title": "Ст.1477 Гк Рф — Актуальный Комментарий 2026 2026 | Marqa",
+          "url": "https://marqatm.ru/analytics/st-1477-gk-rf-kommentarij-2026.html",
+          "snippet": "По состоянию на май 2026 года в государственном реестре Роспатента зарегистрировано свыше 900 000 товарных знаков. Без понимания нормы статьи 1477 ГК РФ невозможно правильно оценить, кто вправе подать заявку, что именно охраняется и когда возникает монопольное право на обозначение."
+        },
+        {
+          "title": "ГК РФ часть 4 Ст. 1477. Товарный знак и знак обслуживания",
+          "url": "https://legalacts.ru/kodeks/GK-RF-chast-4/razdel-vii/glava-76/ss-2/1/statja-1477/",
+          "snippet": "Статья 1477 входит в главу 76 части четвёртой Гражданского кодекса Российской Федерации, посвящённой правам на средства индивидуализации. Ниже — официальный текст нормы в редакции, действующей по состоянию на май 2026 года."
+        },
+        {
+          "title": "Ст. 1477 ГК РФ - SudAct.ru",
+          "url": "https://sudact.ru/law/gk-rf-chast4/razdel-vii/glava-76/ss-2_3/1_1/statia-1477/",
+          "snippet": "На товарный знак, то есть на обозначение, служащее для индивидуализации товаров, признается исключительное право, удостоверяемое свидетельством на товарный знак (статья 1481)."
+        },
+        {
+          "title": "ГК РФ Глава 72. ПАТЕНТНОЕ ПРАВО \\ КонсультантПлюс",
+          "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/630108e4684aa4aacf1eaa63101d1ab76f26eca7/",
+          "snippet": "В силу ч. 1 ст. 1477 ГК РФ на товарный знак, то есть на обозначение, служащее для индивидуализации товаров юридических лиц или индивидуальных предпринимателей, признается исключительное право ..."
+        },
+        {
+          "title": "Статья 1477 ГК РФ, действующая редакция гражданского кодекса на 2026 ...",
+          "url": "https://suvorov.legal/statya-1477-gk-rf/",
+          "snippet": "Уведомить об изменениях \"Гражданский кодекс Российской Федерации (часть четвертая)\" от 18.12.2006 N 230-ФЗ (ред. от 23.07.2025) (с изм. и доп., вступ. в силу с 04.01.2026)"
+        }
+      ],
+      "searched_at": "2026-11-04"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "параллельный импорт 2026",
+      "purpose": "вторичный запрос: параллельный импорт",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Параллельный импорт в Россию в 2026 году: список и схемы",
+          "url": "https://transasia-logistics.ru/parallelnyy-import-v-rossiyu-2026-spisok-skhemy-riski/",
+          "snippet": ""
+        },
+        {
+          "title": "Параллельный импорт в 2026 году: как работает и меняется механизм",
+          "url": "https://companies.rbc.ru/news/PqQv66IKzb/parallelnyij-import-v-2026-godu-kak-rabotaet-i-menyaetsya-mehanizm/",
+          "snippet": "Актуальный перечень товаров для параллельного импорта в 2026, рабочие схемы ввоза через Китай, ОАЭ, Казахстан и риски для импортёра. Гид от экспедитора."
+        },
+        {
+          "title": "Параллельный импорт в России в 2026 году: актуальный статус, санкции и ...",
+          "url": "https://harant.ru/blog/mezhdunarodnye-voprosy/parallelnyj-import-v-rossii/",
+          "snippet": "Несмотря на сокращение объемов поставок, параллельный импорт остается важным инструментом обеспечения российского рынка отдельными категориями товаров."
+        },
+        {
+          "title": "Параллельный импорт в 2026: что можно ввозить в Россию",
+          "url": "https://pravovoi.center/juridicheskie-zametki/parallelnyy-import-2026-chto-razresheno-vvozit",
+          "snippet": "Параллельный импорт в России в 2026 году: узнайте актуальные схемы поставок, ограничения и риски для бизнеса в условиях новых санкций."
+        },
+        {
+          "title": "Параллельный импорт 2026 — перечень товаров и правила",
+          "url": "https://vitvet.com/articles/intellekt/kontrafakt/paralelnyy_import_2026/",
+          "snippet": "В 2026 году правила существенно изменились: список разрешённых товаров стал короче почти вдвое по сравнению с 2022 годом, а требования к документам — жёстче. Разбираем, что можно ввозить legально прямо сейчас, какие бренды исключили последними и какие риски грозят при нарушении правил."
+        },
+        {
+          "title": "Параллельный импорт 2026: что разрешено и запрещено по новому перечню ...",
+          "url": "https://harant.ru/blog/yuridicheskie-novosti/sankczii-i-parallelnyj-import-chto-razresheno-segodnya/",
+          "snippet": "По состоянию на май 2026 года перечень товарных групп, допущенных к параллельному импорту, формирует Минпромторг России приказом, который регулярно обновляется."
+        }
+      ],
+      "searched_at": "2026-11-04"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Можно ли запретить ввоз аналога запатентованного товара: таможня, патент и альтернативы 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Запреты и ограничения перемещаемых товаров",
+          "url": "https://customs.gov.ru/uchastnikam-ved/zaprety-i-ogranicheniya",
+          "snippet": ""
+        },
+        {
+          "title": "ПЕРЕЧЕНЬ ТОВАРОВ, В ОТНОШЕНИИ КОТОРЫХ УСТАНОВЛЕН ЗАПРЕТ ВВОЗА НА ...",
+          "url": "https://www.consultant.ru/document/cons_doc_LAW_178556/427c99374e700617684573ec0d54db684f155160/",
+          "snippet": "Консультирование по вопросам соблюдения запретов и ограничений при перемещении товаров через таможенную границу ЕАЭС."
+        },
+        {
+          "title": "Постановление Правительства Российской Федерации от 31.10.2026 № 1444",
+          "url": "http://publication.pravo.gov.ru/document/0001202611010003?index=2",
+          "snippet": "Решение Коллегии Евразийской экономической комиссии от 21.04.2015 N 30 (ред. от 07.04.2026) \"О мерах нетарифного регулирования\" (вместе с \"Положением о ввозе на таможенную территорию ..."
+        },
+        {
+          "title": "Параллельный импорт в РФ сузил список товаров: что можно ввозить без ...",
+          "url": "https://pulsfid.ru/news/parallelnyy-import-v-rf-suzil-spisok-tovarov-chto-mozhno-vvozit-bez-soglasiya-pravoobladatelya-posle-mayskogo-obnovleniya-592170095",
+          "snippet": "Постановление Правительства Российской Федерации от 31.10.2026 № 1444 \"О введении запрета на ввоз в Российскую Федерацию отдельных категорий товаров\" Номер опубликования: 0001202611010003"
+        },
+        {
+          "title": "Параллельный импорт в России 2026: какие товары исключили из перечня ...",
+          "url": "https://finance.mail.ru/article/v-rossii-vstupil-v-silu-obnovlennyij-perechen-tovarov-dlya-parallelnogo-importa-69210587/",
+          "snippet": "Технологии и Наука 📢 Параллельный импорт в РФ сузил список товаров после майского обновления Приказа Минпромторга № 2701. Электроника, автомобили и промышленное оборудование остались, но компьютерная техника и ..."
+        },
+        {
+          "title": "Запреты и ограничения при ввозе \\ 2026-2025-2024 год \\ Акты, образцы ...",
+          "url": "https://www.consultant.ru/law/podborki/zaprety_i_ogranicheniya_pri_vvoze/",
+          "snippet": "В России вступили в силу поправки в перечень товаров, разрешённых к ввозу в рамках механизма параллельного импорта. Соответствующий приказ Минпромторга был утверждён в конце ноября 2025 года, часть его положений ..."
+        }
+      ],
+      "searched_at": "2026-11-04"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://harant.ru/blog/yuridicheskie-novosti/sankczii-i-parallelnyj-import-chto-razresheno-segodnya/",
+      "title": "Параллельный импорт 2026: что разрешено и запрещено по новому перечню ...",
+      "from_query": "как запретить ввоз аналога запатентованного продукта 2026"
+    },
+    {
+      "url": "https://avlog.ru/blog/parallelnyj-import-aktualnye-pravila-i-ogranicheniya-dlya-yurlicz-v-2026-godu/",
+      "title": "Параллельный импорт: правила ввоза для юрлиц в 2026 году |",
+      "from_query": "как запретить ввоз аналога запатентованного продукта 2026"
+    },
+    {
+      "url": "https://mef.legal/events/parallelnyj-import-v-2026-godu-kak-zakonno-zavozit-tovary-iz-za-rubezha",
+      "title": "Параллельный импорт в 2026 году: как законно завозить товары из-за рубежа",
+      "from_query": "как запретить ввоз аналога запатентованного продукта 2026"
+    },
+    {
+      "url": "https://marqatm.ru/analytics/parallelnyj-import-tz-2026.html",
+      "title": "Параллельный Импорт И Тз — Права В 2026 — Консультация Marqa",
+      "from_query": "как запретить ввоз аналога запатентованного продукта 2026"
+    },
+    {
+      "url": "https://pulsfid.ru/news/parallelnyy-import-v-rf-suzil-spisok-tovarov-chto-mozhno-vvozit-bez-soglasiya-pravoobladatelya-posle-mayskogo-obnovleniya-592170095",
+      "title": "Параллельный импорт в РФ сузил список товаров: что можно ввозить без ...",
+      "from_query": "как запретить ввоз аналога запатентованного продукта 2026"
+    },
+    {
+      "url": "https://harant.ru/blog/drugoe/sankczii-i-parallelnyj-import-chto-razresheno-segodnya-2/",
+      "title": "Параллельный импорт: что разрешено в 2026 году и как избежать нарушений ...",
+      "from_query": "как запретить ввоз аналога запатентованного продукта 2026"
+    },
+    {
+      "url": "http://publication.pravo.gov.ru/document/0001202611010003",
+      "title": "Постановление Правительства Российской Федерации от 31.10.2026 № 1444 ...",
+      "from_query": "как запретить ввоз аналога запатентованного продукта ноябрь 2026"
+    },
+    {
+      "url": "https://pravo.ppt.ru/postanovlenie/pravitelstvo/n-1444-359401",
+      "title": "Постановление Правительства Рф От 31.10.2026 N 1444",
+      "from_query": "как запретить ввоз аналога запатентованного продукта ноябрь 2026"
+    },
+    {
+      "url": "http://www.publication.pravo.gov.ru/document/0001202604300055",
+      "title": "Постановление Правительства Российской Федерации от 29.04.2026 № 488 ∙ ...",
+      "from_query": "как запретить ввоз аналога запатентованного продукта ноябрь 2026"
+    },
+    {
+      "url": "https://gubregionleader.ru/ogranicheniya-na-vvoz-tovarov-v-rossiyu-v-2024-2026-godah-pravovye-osnovy-tekushhie-mery-i-poryadok-polucheniya-razreshenij.html",
+      "title": "Полный разбор ограничений импорта в Россию: запреты 2024-2026",
+      "from_query": "как запретить ввоз аналога запатентованного продукта ноябрь 2026"
+    },
+    {
+      "url": "https://www.tks.ru/news/law/2026/11/02/0001/o-vvedenii-zapreta-na-vvoz-v-rossijskuyu-federatsiyu-otdelnyih-kategorij-tovarov/",
+      "title": "О введении запрета на ввоз в Российскую Федерацию отдельных категорий ...",
+      "from_query": "как запретить ввоз аналога запатентованного продукта ноябрь 2026"
+    },
+    {
+      "url": "https://customs.gov.ru/uchastnikam-ved/zaprety-i-ogranicheniya/tovary,-zapreshhennye-k-vyvozu-s-territorii-rossijskoj-federaczii-v-svyazi-s-primeneniem-speczial-nyx-ekonomicheskix-mer",
+      "title": "Федеральная таможенная служба",
+      "from_query": "как запретить ввоз аналога запатентованного продукта ноябрь 2026"
+    },
+    {
+      "url": "https://myseldon.com/ru/news/index/345461575",
+      "title": "Параллельный импорт 2026: полный список запретов и что теперь нельзя ...",
+      "from_query": "как запретить ввоз аналога запатентованного продукта новости 2026"
+    },
+    {
+      "url": "https://customs.gov.ru/registers/objects-intellectual-property",
+      "title": "Федеральная таможенная служба",
+      "from_query": "таможенный реестр объектов интеллектуальной собственности 2026"
+    },
+    {
+      "url": "https://www.alta.ru/rois/",
+      "title": "Таможенный реестр объектов интеллектуальной собственности",
+      "from_query": "таможенный реестр объектов интеллектуальной собственности 2026"
+    },
+    {
+      "url": "https://www.tks.ru/news/nearby/2026/10/12/0003/tamozhennyij-reestr-intellektualnoj-sobstvennosti-prevyisil-8-tyisyach-obektov/",
+      "title": "Таможенный реестр интеллектуальной собственности превысил 8 тысяч объектов",
+      "from_query": "таможенный реестр объектов интеллектуальной собственности 2026"
+    },
+    {
+      "url": "https://customs.gov.ru/uchastnikam-ved/chasto-zadavaemye-voprosy/chasto-zadavaemye-voprosy-po-predostavleniyu-gosudarstvennyx-uslug/vedenie-tamozhennogo-reestra-ob-ektov-intellektual-noj-sobstvennosti/document/379113",
+      "title": "Федеральная таможенная служба",
+      "from_query": "таможенный реестр объектов интеллектуальной собственности 2026"
+    },
+    {
+      "url": "https://www.tks.ru/db/ois/",
+      "title": "База ТРОИС, таможенный реестр объектов интеллектуальной собственности ...",
+      "from_query": "таможенный реестр объектов интеллектуальной собственности 2026"
+    },
+    {
+      "url": "http://tamognia.ru/customs/register_object_intellectual_property_russia/",
+      "title": "Реестр объектов интеллектуальной собственности :: Таможня.Ру :: Tamo",
+      "from_query": "таможенный реестр объектов интеллектуальной собственности 2026"
+    },
+    {
+      "url": "https://marqatm.ru/analytics/st-1477-gk-rf-tz.html",
+      "title": "Ст.1477 ГК РФ — товарный знак: текст и комментарий 2026",
+      "from_query": "ст 1477 гк патент 2026"
+    },
+    {
+      "url": "https://marqatm.ru/analytics/st-1477-gk-rf-kommentarij-2026.html",
+      "title": "Ст.1477 Гк Рф — Актуальный Комментарий 2026 2026 | Marqa",
+      "from_query": "ст 1477 гк патент 2026"
+    },
+    {
+      "url": "https://legalacts.ru/kodeks/GK-RF-chast-4/razdel-vii/glava-76/ss-2/1/statja-1477/",
+      "title": "ГК РФ часть 4 Ст. 1477. Товарный знак и знак обслуживания",
+      "from_query": "ст 1477 гк патент 2026"
+    },
+    {
+      "url": "https://sudact.ru/law/gk-rf-chast4/razdel-vii/glava-76/ss-2_3/1_1/statia-1477/",
+      "title": "Ст. 1477 ГК РФ - SudAct.ru",
+      "from_query": "ст 1477 гк патент 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/630108e4684aa4aacf1eaa63101d1ab76f26eca7/",
+      "title": "ГК РФ Глава 72. ПАТЕНТНОЕ ПРАВО \\ КонсультантПлюс",
+      "from_query": "ст 1477 гк патент 2026"
+    },
+    {
+      "url": "https://suvorov.legal/statya-1477-gk-rf/",
+      "title": "Статья 1477 ГК РФ, действующая редакция гражданского кодекса на 2026 ...",
+      "from_query": "ст 1477 гк патент 2026"
+    },
+    {
+      "url": "https://transasia-logistics.ru/parallelnyy-import-v-rossiyu-2026-spisok-skhemy-riski/",
+      "title": "Параллельный импорт в Россию в 2026 году: список и схемы",
+      "from_query": "параллельный импорт 2026"
+    },
+    {
+      "url": "https://companies.rbc.ru/news/PqQv66IKzb/parallelnyij-import-v-2026-godu-kak-rabotaet-i-menyaetsya-mehanizm/",
+      "title": "Параллельный импорт в 2026 году: как работает и меняется механизм",
+      "from_query": "параллельный импорт 2026"
+    },
+    {
+      "url": "https://harant.ru/blog/mezhdunarodnye-voprosy/parallelnyj-import-v-rossii/",
+      "title": "Параллельный импорт в России в 2026 году: актуальный статус, санкции и ...",
+      "from_query": "параллельный импорт 2026"
+    },
+    {
+      "url": "https://pravovoi.center/juridicheskie-zametki/parallelnyy-import-2026-chto-razresheno-vvozit",
+      "title": "Параллельный импорт в 2026: что можно ввозить в Россию",
+      "from_query": "параллельный импорт 2026"
+    },
+    {
+      "url": "https://vitvet.com/articles/intellekt/kontrafakt/paralelnyy_import_2026/",
+      "title": "Параллельный импорт 2026 — перечень товаров и правила",
+      "from_query": "параллельный импорт 2026"
+    },
+    {
+      "url": "https://customs.gov.ru/uchastnikam-ved/zaprety-i-ogranicheniya",
+      "title": "Запреты и ограничения перемещаемых товаров",
+      "from_query": "Можно ли запретить ввоз аналога запатентованного товара: таможня, патент и альтернативы 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_178556/427c99374e700617684573ec0d54db684f155160/",
+      "title": "ПЕРЕЧЕНЬ ТОВАРОВ, В ОТНОШЕНИИ КОТОРЫХ УСТАНОВЛЕН ЗАПРЕТ ВВОЗА НА ...",
+      "from_query": "Можно ли запретить ввоз аналога запатентованного товара: таможня, патент и альтернативы 2026"
+    },
+    {
+      "url": "http://publication.pravo.gov.ru/document/0001202611010003?index=2",
+      "title": "Постановление Правительства Российской Федерации от 31.10.2026 № 1444",
+      "from_query": "Можно ли запретить ввоз аналога запатентованного товара: таможня, патент и альтернативы 2026"
+    },
+    {
+      "url": "https://finance.mail.ru/article/v-rossii-vstupil-v-silu-obnovlennyij-perechen-tovarov-dlya-parallelnogo-importa-69210587/",
+      "title": "Параллельный импорт в России 2026: какие товары исключили из перечня ...",
+      "from_query": "Можно ли запретить ввоз аналога запатентованного товара: таможня, патент и альтернативы 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/zaprety_i_ogranicheniya_pri_vvoze/",
+      "title": "Запреты и ограничения при ввозе \\ 2026-2025-2024 год \\ Акты, образцы ...",
+      "from_query": "Можно ли запретить ввоз аналога запатентованного товара: таможня, патент и альтернативы 2026"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-04",
+    "today_ru": "04.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-06",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-04 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L31",
+    "priority": "P1",
+    "slug": "mozhno-li-zapretit-vvoz-analoga-zapatentovannogo-tovara",
+    "h1": "Можно ли запретить ввоз аналога запатентованного товара: таможня, патент и альтернативы",
+    "primary_query": "как запретить ввоз аналога запатентованного продукта",
+    "secondary_queries": [
+      "таможенный реестр объектов интеллектуальной собственности",
+      "ст 1477 гк патент",
+      "параллельный импорт"
+    ],
+    "search_intent": "comparison",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "L31",
+    "status": "PASS",
+    "search_intent": "comparison",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "как запретить ввоз аналога запатентованного продукта 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "как запретить ввоз аналога запатентованного продукта ноябрь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "как запретить ввоз аналога запатентованного продукта новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "таможенный реестр объектов интеллектуальной собственности 2026",
+      "purpose": "вторичный запрос: таможенный реестр объектов интеллектуальной собственности"
+    },
+    {
+      "id": "secondary_2",
+      "query": "ст 1477 гк патент 2026",
+      "purpose": "вторичный запрос: ст 1477 гк патент"
+    },
+    {
+      "id": "secondary_3",
+      "query": "параллельный импорт 2026",
+      "purpose": "вторичный запрос: параллельный импорт"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Можно ли запретить ввоз аналога запатентованного товара: таможня, патент и альтернативы 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/L31-mozhno-li-zapretit-vvoz-analoga-zapatentovannogo-tovara",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}
