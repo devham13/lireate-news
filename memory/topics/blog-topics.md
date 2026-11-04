@@ -826,7 +826,7 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L31 — Можно ли запретить ввоз аналога запатентованного товара
 
-- **status:** new
+- **status:** written
 - **priority:** P1
 - **site:** lireate
 - **lireate_category_id:** 8
