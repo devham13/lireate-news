@@ -1,0 +1,101 @@
+{
+  "article": "memory/blog/articles/L31-mozhno-li-zapretit-vvoz-analoga-zapatentovannogo-tovara/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 13,
+  "verified_facts_count": 3,
+  "unverified_facts_count": 10,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "Ф, 289-ФЗ и перечни Минпромторга сверены на 04.11.2026; это не индивидуальная юридическая консультация и",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2023 года",
+      "kind": "date_or_year",
+      "context": "ерки перечня. Не делайте: опираться на SEO-списки 2023 года без номера и даты приказа Минпромторга. Подайте з",
+      "verified": true,
+      "reason": "Numerical value '2023' matched in fact-bank context"
+    },
+    {
+      "fact": "3 лет",
+      "kind": "metric_or_duration",
+      "context": "мотрение - до месяца ( ТКС ); запись действует до 3 лет . Страхование ответственности - частый способ обе",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1358",
+      "kind": "large_number",
+      "context": "ировать ввоз продукта с вашим решением ( п. 2 ст. 1358 ГК РФ ), но патент в ТРОИС не вносят - таможня не",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1477",
+      "kind": "large_number",
+      "context": "ение (узел, состав, способ). Товарный знак по ст. 1477 ГК РФ - только про обозначение на товаре или упако",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "8 000",
+      "kind": "large_number",
+      "context": "Compliance до ввоза В ТРОИС на конец 2026 - свыше 8 000 объектов ( ФТС ); это знаки по ст. 334 289-ФЗ , не",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "334 289",
+      "kind": "large_number",
+      "context": "- свыше 8 000 объектов ( ФТС ); это знаки по ст. 334 289-ФЗ , не патенты ( таможенная защита ИС ). Делайте",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1359",
+      "kind": "large_number",
+      "context": "овторный ввоз может не нарушать патент ( п. 6 ст. 1359 ГК РФ ). Шаг 3: для оригинала зарубежного бренда с",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2023",
+      "kind": "large_number",
+      "context": "ерки перечня. Не делайте: опираться на SEO-списки 2023 года без номера и даты приказа Минпромторга. Подай",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "328 289",
+      "kind": "large_number",
+      "context": "ли узнаваемая упаковка, готовьте заявление по ст. 328 289-ФЗ : описание товаров, признаки легального оригин",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "300 000",
+      "kind": "large_number",
+      "context": "енности - частый способ обеспечения (ориентир от ~300 000 ₽ , обзор ТРОИС ). Соберите свидетельство на знак",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "328",
+      "kind": "large_number",
+      "context": "оверность данных: ст. 1358, 1359, 1477 ГК РФ, ст. 328 и 113 289-ФЗ, реестр ФТС и перечень параллельного",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "113 289",
+      "kind": "large_number",
+      "context": "сть данных: ст. 1358, 1359, 1477 ГК РФ, ст. 328 и 113 289-ФЗ, реестр ФТС и перечень параллельного импорта с",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
