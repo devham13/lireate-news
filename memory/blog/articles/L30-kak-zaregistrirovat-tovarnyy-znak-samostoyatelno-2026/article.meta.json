@@ -45,10 +45,24 @@
   },
   "cover_family": "lireate_collage_v1",
   "cover_scene_hint": "экран подачи заявки online.rospatent, калькулятор пошлин, стикеры «35 000 ₽» и «ИП можно»",
-  "cover_headline": "ONLINE.ROSPATENT УКЭП 2.1 2.4 2.11 35 000 ₽ DIY",
-  "cover_highlight": "35 000 ₽",
+  "cover_headline": "ПОДАЧА ТЗ ONLINE ROSPATENT УКЭП 2.1 2.4 2.11",
+  "cover_highlight": "2.11",
   "cover_sticky": "DIY ≠ гарантия",
   "cover_sticky_underline": "DIY",
+  "cover_label_chips": [
+    [
+      "online.rospatent",
+      "black"
+    ],
+    [
+      "УКЭП",
+      "white"
+    ],
+    [
+      "35 000 ₽",
+      "pink"
+    ]
+  ],
   "cover_ui_title": "Регистрация ТЗ 2026",
   "cover_ui_rows": [
     "online.rospatent",

@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "style": "collage-v1",
+  "illustrations": [
+    {
+      "slot": "inline_1",
+      "template": "bad_good",
+      "headline": "ИП, ООО или физлицо без поверенного",
+      "chips": [
+        {"icon": "tag", "text": "ИП"},
+        {"icon": "shield", "text": "ООО"},
+        {"icon": "doc", "text": "1 знак"}
+      ],
+      "sticky": {"text": "DIY ≠ гарантия", "color": "pink"},
+      "bad": {
+        "header": "BAD",
+        "lines": [
+          "Путаем ник селлера со знаком",
+          "Смешиваем логотип и слово в одной заявке",
+          "Не смотрим, кто правообладатель"
+        ]
+      },
+      "good": {
+        "header": "GOOD",
+        "lines": [
+          "Один знак — одна заявка",
+          "Заявитель = будущий правообладатель",
+          "ИП может подать сам с УКЭП"
+        ]
+      },
+      "side_checklist": ["заявитель", "УКЭП", "L07"],
+      "conclusion": {
+        "box_lines": ["один", "знак"],
+        "highlight_word": "знак",
+        "chip": "ИП vs ООО"
+      },
+      "alt": "Кто может подать заявку на товарный знак самостоятельно: ИП, ООО и один знак в заявке",
+      "figcaption": "Самостоятельная подача возможна для ИП и юрлица; в одной заявке — одно обозначение и один заявитель."
+    },
+    {
+      "slot": "inline_2",
+      "template": "checklist",
+      "headline": "Проверка до оплаты 2.1 и 2.4",
+      "chips": [
+        {"icon": "globe", "text": "L29"},
+        {"icon": "doc", "text": "L01"},
+        {"icon": "warning", "text": "1483"}
+      ],
+      "sticky": {"text": "пошлина ≠ проверка", "color": "yellow"},
+      "checklist_title": "До online.rospatent",
+      "checklist_rows": [
+        {"text": "поиск в реестрах (L29)?", "icon": "globe"},
+        {"text": "чек-лист L01 пройден?", "icon": "doc"},
+        {"text": "классы МКТУ согласованы?", "icon": "layers"},
+        {"text": "сходство по п. 6 ст. 1483?", "icon": "shield"},
+        {"text": "описание знака готово?", "icon": "tag"}
+      ],
+      "conclusion": {
+        "box_lines": ["2.1", "2.4"],
+        "highlight_word": "2.4",
+        "chip": "до подачи"
+      },
+      "alt": "Чек-лист проверки обозначения до оплаты пошлин 2.1 и 2.4 при подаче заявки",
+      "figcaption": "Пошлины 2.1 и 2.4 платят при подаче; проверка по L01/L29 снижает риск отказа, но не гарантирует регистрацию."
+    },
+    {
+      "slot": "inline_3",
+      "template": "process",
+      "headline": "online.rospatent и пошлины 2.11",
+      "chips": [
+        {"icon": "shield", "text": "УКЭП"},
+        {"icon": "doc", "text": "2.1"},
+        {"icon": "clock", "text": "18 мес."}
+      ],
+      "sticky": {"text": "35 000 ₽ / класс", "color": "pink"},
+      "steps": [
+        {
+          "title": "УКЭП",
+          "subtitle": "Госуслуги",
+          "chip": "подпись",
+          "variant": "icon"
+        },
+        {
+          "title": "2.1+2.4",
+          "subtitle": "при подаче",
+          "chip": "таблица",
+          "variant": "lines"
+        },
+        {
+          "title": "Экспертиза",
+          "subtitle": "18 мес.",
+          "chip": "уведомление",
+          "variant": "toggles"
+        },
+        {
+          "title": "2.11",
+          "subtitle": "регистрация",
+          "chip": "свидетельство",
+          "variant": "checklist"
+        }
+      ],
+      "conclusion": {
+        "box_lines": ["DIY", "маршрут"],
+        "highlight_word": "маршрут",
+        "chip": "L30 2026"
+      },
+      "alt": "Этапы самостоятельной регистрации: УКЭП, пошлины 2.1 и 2.4, экспертиза и 2.11",
+      "figcaption": "Подайте заявку через online.rospatent с УКЭП, оплатите пошлины по таблице Роспатента и дождитесь решения по регламенту."
+    }
+  ]
+}
