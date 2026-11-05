@@ -1,0 +1,80 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-05",
+    "today_ru": "05.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "четверг",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-07",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-05 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L35",
+    "priority": "P1",
+    "slug": "avtorskoe-voznagrazhdenie-po-gk-rf",
+    "h1": "Как оформить авторское вознаграждение по ГК РФ: виды, сроки и порядок выплат правообладателю",
+    "primary_query": "авторское вознаграждение гк",
+    "secondary_queries": [
+      "вознаграждение автору при служебном произведении",
+      "отчётность перед автором",
+      "договор авторского заказа"
+    ],
+    "search_intent": "workflow",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "L35",
+    "status": "PASS",
+    "search_intent": "workflow",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "авторское вознаграждение гк 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "авторское вознаграждение гк ноябрь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "авторское вознаграждение гк новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "вознаграждение автору при служебном произведении 2026",
+      "purpose": "вторичный запрос: вознаграждение автору при служебном произведении"
+    },
+    {
+      "id": "secondary_2",
+      "query": "отчётность перед автором 2026",
+      "purpose": "вторичный запрос: отчётность перед автором"
+    },
+    {
+      "id": "secondary_3",
+      "query": "договор авторского заказа 2026",
+      "purpose": "вторичный запрос: договор авторского заказа"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как оформить авторское вознаграждение по ГК РФ: виды, сроки и порядок выплат правообладателю 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/L35-avtorskoe-voznagrazhdenie-po-gk-rf",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}

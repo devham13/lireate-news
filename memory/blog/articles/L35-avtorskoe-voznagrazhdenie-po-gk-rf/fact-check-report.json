@@ -1,0 +1,136 @@
+{
+  "article": "memory/blog/articles/L35-avtorskoe-voznagrazhdenie-po-gk-rf/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "warning",
+  "total_extracted_facts": 18,
+  "verified_facts_count": 1,
+  "unverified_facts_count": 17,
+  "facts": [
+    {
+      "fact": "10 000 000 руб",
+      "kind": "price_or_currency",
+      "context": "по ст. 1301 - санкция за нарушение (от 10 000 до 10 000 000 руб. по подп. 1 п. 1, ред. с 04.01.2026), не гонорар",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "ет индивидуальную юридическую консультацию (05.11.2026). Для заказчика контента и HR на Лирейт: выплаты",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "1301",
+      "kind": "large_number",
+      "context": "те акт и не перепутаете гонорар с санкцией по ст. 1301 . TL;DR / Быстрый инсайт: Авторское вознаграждени",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1255",
+      "kind": "large_number",
+      "context": "ю за правомерное использование произведения ( ст. 1255 ); форма - разово, периодически или % от дохода (",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1235",
+      "kind": "large_number",
+      "context": "- разово, периодически или % от дохода ( п. 5 ст. 1235 ). В возмездной лицензии и отчуждении без размера",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1234",
+      "kind": "large_number",
+      "context": "улы договор незаключён ( п. 5 ст. 1235 , п. 3 ст. 1234 ). За служебное произведение - отдельная выплата,",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1295",
+      "kind": "large_number",
+      "context": "произведение - отдельная выплата, не оклад ( ст. 1295 ). Материал не заменяет индивидуальную юридическу",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1288",
+      "kind": "large_number",
+      "context": "е ( ст. 1234 ), часто через авторский заказ ( ст. 1288 ) Единовременная сумма или формула, момент перехо",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1286",
+      "kind": "large_number",
+      "context": "т, реклама, тираж) Лицензия на произведение ( ст. 1286 , ст. 1235 ) База расчёта, периодичность, отчёт л",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1289",
+      "kind": "large_number",
+      "context": "1288 ) Цена работ, цена прав, срок передачи ( ст. 1289 ) Сотрудник создал контент Служебное произведение",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1290",
+      "kind": "large_number",
+      "context": "лату после акта или отчёта. Делайте: аванс по ст. 1290 . Не делайте: откладывать всю сумму без даты. Учт",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 000",
+      "kind": "large_number",
+      "context": "омпенсация по ст. 1301 - санкция за нарушение (от 10 000 до 10 000 000 руб. по подп. 1 п. 1, ред. с 04.01.2",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 000 000",
+      "kind": "large_number",
+      "context": "по ст. 1301 - санкция за нарушение (от 10 000 до 10 000 000 руб. по подп. 1 п. 1, ред. с 04.01.2026), не гонор",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1370",
+      "kind": "large_number",
+      "context": "но от произведений За служебные изобретения - ст. 1370 и ПП № 654 с 01.09.2026 ( замена 1848 ); ст. 1363",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "654",
+      "kind": "large_number",
+      "context": "едений За служебные изобретения - ст. 1370 и ПП № 654 с 01.09.2026 ( замена 1848 ); ст. 1363 - про срок",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1848",
+      "kind": "large_number",
+      "context": "тения - ст. 1370 и ПП № 654 с 01.09.2026 ( замена 1848 ); ст. 1363 - про срок патента, не про гонорар ко",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1363",
+      "kind": "large_number",
+      "context": "1370 и ПП № 654 с 01.09.2026 ( замена 1848 ); ст. 1363 - про срок патента, не про гонорар копирайтера. Д",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "424",
+      "kind": "large_number",
+      "context": "тся незаключённым; правила \"разумной цены\" из ст. 424 не подставят сумму автоматически. Укажите цифру ил",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
