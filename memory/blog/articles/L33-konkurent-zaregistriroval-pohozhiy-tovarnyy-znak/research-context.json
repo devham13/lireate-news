@@ -1,0 +1,80 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-05",
+    "today_ru": "05.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "четверг",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-07",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-05 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L33",
+    "priority": "P1",
+    "slug": "konkurent-zaregistriroval-pohozhiy-tovarnyy-znak",
+    "h1": "Как действовать, если конкурент зарегистрировал похожий товарный знак: возражение, претензия и суд",
+    "primary_query": "конкурент зарегистрировал похожий товарный знак",
+    "secondary_queries": [
+      "оспаривание регистрации товарного знака",
+      "возражение против предоставления правовой охраны",
+      "претензия правообладателю товарного знака"
+    ],
+    "search_intent": "workflow",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "L33",
+    "status": "PASS",
+    "search_intent": "workflow",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "конкурент зарегистрировал похожий товарный знак 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "конкурент зарегистрировал похожий товарный знак ноябрь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "конкурент зарегистрировал похожий товарный знак новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "оспаривание регистрации товарного знака 2026",
+      "purpose": "вторичный запрос: оспаривание регистрации товарного знака"
+    },
+    {
+      "id": "secondary_2",
+      "query": "возражение против предоставления правовой охраны 2026",
+      "purpose": "вторичный запрос: возражение против предоставления правовой охраны"
+    },
+    {
+      "id": "secondary_3",
+      "query": "претензия правообладателю товарного знака 2026",
+      "purpose": "вторичный запрос: претензия правообладателю товарного знака"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как действовать, если конкурент зарегистрировал похожий товарный знак: возражение, претензия и суд 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/L33-konkurent-zaregistriroval-pohozhiy-tovarnyy-znak",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}
