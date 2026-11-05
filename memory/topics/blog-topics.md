@@ -887,7 +887,28 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ---
 
-## L34 — Авторское вознаграждение по ГК РФ: кому и как платить
+## L34 — Можно ли «запатентовать» название и логотип: патент, © и товарный знак
+
+- **status:** new
+- **priority:** P0
+- **site:** lireate
+- **lireate_category_id:** 9
+- **lireate_category_name:** Товарный знак
+- **slug:** kak-zapatentovat-nazvanie-i-logotip
+- **h1:** Можно ли «запатентовать» название и логотип и есть ли авторское право на слово
+- **primary_query:** как запатентовать логотип и название
+- **secondary_queries:** авторские права на название, как узнать кому принадлежит слово, как проверить название бизнеса, проверить название организации на уникальность, проверить бренд на уникальность онлайн, проверка наименования на уникальность, проверить название бренда на уникальность, как запатентовать свой бренд в России бесплатно
+- **search_intent:** how_to
+- **article_mode:** B
+- **angle:** T5 paid-search: слово/название как бренд → товарный знак (не патент и не © на одно слово); логотип — © на изображение + отдельно ТЗ; «бесплатно запатентовать бренд» — миф; проверка в реестрах (L01/L29) и маршрут регистрации (L30)
+- **target_service:** registraciya-tovarnogo-znaka
+- **metrika_visits:** ad-query T5 Yuri 2026-11-01 (~10 queries)
+- **internal_links:** L01, L29, L30, L06
+- **cover_scene_hint:** три колонки «патент / © / ТЗ», лупа реестра, стикер «бесплатно — миф»
+
+---
+
+## L35 — Авторское вознаграждение по ГК РФ: кому и как платить
 
 - **status:** new
 - **priority:** P1
@@ -905,3 +926,66 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 - **metrika_visits:** SEO 2026-11-02
 - **internal_links:** /dogovor_na_razrabotku_logotipa_prava_ot_dizajnera
 - **cover_scene_hint:** акт и отчёт автору, календарь сроков, ст. 1286
+
+---
+
+## L36 — «Честный знак» при импорте: сниппет, документы и типичные ошибки
+
+- **status:** new
+- **priority:** P1
+- **site:** lireate
+- **lireate_category_id:** 11
+- **lireate_category_name:** Маркировка
+- **slug:** chestnyy-znak-import-snippet-dokumenty
+- **h1:** Маркировка импорта «Честный знак»: что поправить в сниппете и какие документы проверить
+- **primary_query:** честный знак импорт
+- **secondary_queries:** честный знак импорт простыми словами, честный знак импорт с чек-листами, маркировка импорта честный знак, честный знак импорт с разбором инвойса
+- **search_intent:** checklist
+- **article_mode:** B
+- **angle:** SEO/Webmaster: доработка сниппета по импорту; чек-лист документов без дубля L22 если есть — угол «ошибки в описании и карточке»
+- **target_service:** markirovka
+- **metrika_visits:** seo-report 2026-11-02
+- **internal_links:** L22
+- **cover_scene_hint:** упаковка, код Data Matrix, таможенная декларация
+
+---
+
+## L37 — Дизайн упаковки на маркетплейсах: авторское право, ТЗ и копии карточек
+
+- **status:** new
+- **priority:** P1
+- **site:** lireate
+- **lireate_category_id:** 12
+- **lireate_category_name:** Авторское право
+- **slug:** zashchita-dizayna-upakovki-marketpleysy
+- **h1:** Как защитить дизайн упаковки на маркетплейсах: ©, промышленный образец и товарный знак
+- **primary_query:** запатентовать дизайн упаковки
+- **secondary_queries:** защита упаковки от копирования, дизайн упаковки авторские права, товарный знак на упаковке wildberries
+- **search_intent:** comparison
+- **article_mode:** B
+- **angle:** Сравнение маршрутов для SMB на WB/Ozon: не путать © макета, ТЗ элементов и патент/ПО; претензия и реестры
+- **target_service:** dogovor-avtorskij
+- **metrika_visits:** seo-report 2026-11-02
+- **internal_links:** L06, L18
+- **cover_scene_hint:** коробка на маркетплейсе, три бейджа © / ТЗ / ПО
+
+---
+
+## L38 — Проверка бренда онлайн перед регистрацией: реестры, домены и соцсети
+
+- **status:** new
+- **priority:** P2
+- **site:** lireate
+- **lireate_category_id:** 9
+- **lireate_category_name:** Товарный знак
+- **slug:** proverit-brend-onlayn-unikalnost
+- **h1:** Как проверить название бренда на уникальность онлайн: реестр, домен и соцсети
+- **primary_query:** проверить бренд на уникальность онлайн
+- **secondary_queries:** проверить название бренда на уникальность, проверка наименования на уникальность, как проверить название бизнеса
+- **search_intent:** checklist
+- **article_mode:** B
+- **angle:** Чек-лист до подачи в Роспатент; не дублировать L01 целиком — акцент на «онлайн-след» и домен (L10 — учёт НМА)
+- **target_service:** registraciya-tovarnogo-znaka
+- **metrika_visits:** ad-query cluster T5 + seo-report
+- **internal_links:** L01, L29, L10
+- **cover_scene_hint:** браузер с вкладками ФИПС, whois, соцсети
