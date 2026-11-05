@@ -889,7 +889,7 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L34 — Можно ли «запатентовать» название и логотип: патент, © и товарный знак
 
-- **status:** new
+- **status:** written
 - **priority:** P0
 - **site:** lireate
 - **lireate_category_id:** 9
