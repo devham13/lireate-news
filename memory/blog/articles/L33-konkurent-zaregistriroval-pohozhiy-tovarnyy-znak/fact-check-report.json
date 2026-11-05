@@ -1,0 +1,129 @@
+{
+  "article": "memory/blog/articles/L33-konkurent-zaregistriroval-pohozhiy-tovarnyy-znak/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 17,
+  "verified_facts_count": 3,
+  "unverified_facts_count": 14,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "in-house юриста на Лирейт. Нормы сверены на 05.11.2026; это маршрут действий, не индивидуальная консульт",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "5 лет",
+      "kind": "metric_or_duration",
+      "context": "шлина 14 000 ₽ ). По сходству ( п. 6 ст. 1483 ) - 5 лет с публикации в бюллетене . На витрине - претензия",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "30 дней",
+      "kind": "metric_or_duration",
+      "context": "тене . На витрине - претензия , иск по ст. 1515 , 30 дней до денежного иска. Подача - L08 , карта - L21 . М",
+      "verified": true,
+      "reason": "Numerical value '30' matched in fact-bank context"
+    },
+    {
+      "fact": "6 месяцев",
+      "kind": "metric_or_duration",
+      "context": "седания - в гайде L08 . Делайте: напоминание за 3-6 месяцев до конца пятилетки. Не делайте: считать 5 лет от",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1512",
+      "kind": "large_number",
+      "context": "пользования на рынке. Ниже - реестр, сроки по ст. 1512 , возражение в ППС, досудебка по ст. 1252 и суд б",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1252",
+      "kind": "large_number",
+      "context": "по ст. 1512 , возражение в ППС, досудебка по ст. 1252 и суд без смешения веток. TL;DR / Быстрый инсайт:",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1513",
+      "kind": "large_number",
+      "context": ": При чужом свидетельстве идите в ППС по ст. 1512-1513 (пошлина 14 000 ₽ ). По сходству ( п. 6 ст. 1483",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "14 000",
+      "kind": "large_number",
+      "context": "идетельстве идите в ППС по ст. 1512-1513 (пошлина 14 000 ₽ ). По сходству ( п. 6 ст. 1483 ) - 5 лет с публ",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "-1513 (пошлина 14 000 ₽ ). По сходству ( п. 6 ст. 1483 ) - 5 лет с публикации в бюллетене . На витрине -",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "1515",
+      "kind": "large_number",
+      "context": "в бюллетене . На витрине - претензия , иск по ст. 1515 , 30 дней до денежного иска. Подача - L08 , карта",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1514",
+      "kind": "large_number",
+      "context": "спользование на рынке Претензия, затем иск по ст. 1514-1515 Досудебка, арбитраж или суд общей юрисдикции",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1493",
+      "kind": "large_number",
+      "context": "рента еще на экспертизе, это другой сценарий (ст. 1493). Календарь до заседания - в гайде L08 . Делайте:",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1484",
+      "kind": "large_number",
+      "context": "на сайте, маркетплейсе или упаковке, работает ст. 1484 - это ветка претензии и иска, не ППС. Зафиксируйт",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 000",
+      "kind": "large_number",
+      "context": ", что коллегия. По ст. 1515 п. 4 - компенсация от 10 000 до 10 000 000 ₽ , убытки или двойная стоимость кон",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 000 000",
+      "kind": "large_number",
+      "context": "егия. По ст. 1515 п. 4 - компенсация от 10 000 до 10 000 000 ₽ , убытки или двойная стоимость контрафакта посл",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "198",
+      "kind": "large_number",
+      "context": "оспатента оспаривают в СИП за 3 месяца ( ч. 4 ст. 198 АПК РФ , ст. 1248 , ст. 1513 п. 4 ). Делайте: прил",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1248",
+      "kind": "large_number",
+      "context": "ают в СИП за 3 месяца ( ч. 4 ст. 198 АПК РФ , ст. 1248 , ст. 1513 п. 4 ). Делайте: приложить таблицы схо",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
