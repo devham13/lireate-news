@@ -1,6 +1,6 @@
 {
   "source": "memory/blog/articles/L34-kak-zapatentovat-nazvanie-i-logotip/article.html",
-  "total_links": 14,
+  "total_links": 15,
   "failed_count": 0,
   "privacy_policy_violations": [],
   "verdict": "pass",
@@ -43,13 +43,12 @@
     },
     {
       "url": "/rospatent-fips-proverit-tovarnyy-znak-onlayn-besplatno",
-      "status": 200,
-      "ok": true,
-      "method": "HEAD",
-      "error": null,
       "kind": "internal_relative",
-      "skipped": false,
-      "checked_url": "/rospatent-fips-proverit-tovarnyy-znak-onlayn-besplatno"
+      "status": null,
+      "ok": true,
+      "skipped": true,
+      "method": null,
+      "error": "relative link; pass --site-base to verify"
     },
     {
       "url": "https://www.klerk.ru/blogs/patent24/683176/",
@@ -71,13 +70,12 @@
     },
     {
       "url": "/mktu",
-      "status": 200,
-      "ok": true,
-      "method": "HEAD",
-      "error": null,
       "kind": "internal_relative",
-      "skipped": false,
-      "checked_url": "/mktu"
+      "status": null,
+      "ok": true,
+      "skipped": true,
+      "method": null,
+      "error": "relative link; pass --site-base to verify"
     },
     {
       "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/2e83c7a3d54808ca80d8f0b2a034caa0f7122b57/",
@@ -90,13 +88,21 @@
     },
     {
       "url": "/proverka_tovarnogo_znaka_pered_registraciey_chek_list_po_reestram_rospatenta",
-      "status": 200,
-      "ok": true,
-      "method": "HEAD",
-      "error": null,
       "kind": "internal_relative",
-      "skipped": false,
-      "checked_url": "/proverka_tovarnogo_znaka_pered_registraciey_chek_list_po_reestram_rospatenta"
+      "status": null,
+      "ok": true,
+      "skipped": true,
+      "method": null,
+      "error": "relative link; pass --site-base to verify"
+    },
+    {
+      "url": "/struktura_mktu_kak_opredelit_klass_dlya_tovara_i_uslugi",
+      "kind": "internal_relative",
+      "status": null,
+      "ok": true,
+      "skipped": true,
+      "method": null,
+      "error": "relative link; pass --site-base to verify"
     },
     {
       "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/2c3f5881920b5dc53529b5bb31e782624a107abb/",
@@ -118,23 +124,21 @@
     },
     {
       "url": "/kak-zaregistrirovat-tovarnyy-znak-samostoyatelno-2026",
-      "status": 200,
-      "ok": true,
-      "method": "HEAD",
-      "error": null,
       "kind": "internal_relative",
-      "skipped": false,
-      "checked_url": "/kak-zaregistrirovat-tovarnyy-znak-samostoyatelno-2026"
+      "status": null,
+      "ok": true,
+      "skipped": true,
+      "method": null,
+      "error": "relative link; pass --site-base to verify"
     },
     {
       "url": "/reg-tz-main",
-      "status": 200,
-      "ok": true,
-      "method": "HEAD",
-      "error": null,
       "kind": "internal_relative",
-      "skipped": false,
-      "checked_url": "/reg-tz-main"
+      "status": null,
+      "ok": true,
+      "skipped": true,
+      "method": null,
+      "error": "relative link; pass --site-base to verify"
     }
   ]
 }

@@ -59,9 +59,9 @@ verdict: PASS
 
 ## Link verify
 
-- total: 14, failed: 0
+- total: 15, failed: 0
 - site-base: `LIREATE_PUBLIC_SITE_URL`
-- fix cycle 1: `/kak-opredelit-klass-mktu` 404 → `/mktu`; rospatent.gov.ru SSL → klerk.ru/patent24; fips registers-web 403 → internal L29; FAQ rospatent → L29
+- fix cycle 2: убраны видимые коды L01/L29/L30/L06 из текста; `/blog/kak-opredelit-klass-mktu/` → `/struktura_mktu_kak_opredelit_klass_dlya_tovara_i_uslugi`; пошлины 24 500 ₽ online (п. 7 № 941); meta_ab без L30
 
 ## AI-slop scan
 
@@ -83,7 +83,7 @@ verdict: PASS
 
 ## Fix cycle
 
-- cycle 1 (GEO QA): `article.html` — whitelist HTML (`figure`→`<p><img></p>`), URL link-verify (L06 `/mktu`, klerk, L29 вместо fips/rospatent.gov.ru)
+- cycle 2 (PR #79): human-readable interlinks; canonical МКТУ URL; fees 35 000 / 24 500 ₽; schema + llms sync
 
 ## Optional (не blocker)
 
