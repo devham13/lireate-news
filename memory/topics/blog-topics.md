@@ -910,13 +910,13 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L35 — Авторское вознаграждение по ГК РФ: кому и как платить
 
-- **status:** new
+- **status:** written
 - **priority:** P1
 - **site:** lireate
 - **lireate_category_id:** 12
 - **lireate_category_name:** Авторское право
 - **slug:** avtorskoe-voznagrazhdenie-po-gk-rf
-- **h1:** Авторское вознаграждение по ГК РФ: виды, сроки и порядок выплат правообладателю
+- **h1:** Как оформить авторское вознаграждение по ГК РФ: виды, сроки и порядок выплат правообладателю
 - **primary_query:** авторское вознаграждение гк
 - **secondary_queries:** вознаграждение автору при служебном произведении, отчётность перед автором, договор авторского заказа
 - **search_intent:** workflow
