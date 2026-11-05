@@ -1,0 +1,115 @@
+{
+  "article": "memory/blog/articles/L34-kak-zapatentovat-nazvanie-i-logotip/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 15,
+  "verified_facts_count": 3,
+  "unverified_facts_count": 12,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "е слово-бренд. Словесный знак - в классах МКТУ-13–2026 ( подбор класса ). Сходство с чужим ТЗ для одноро",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "10 лет",
+      "kind": "metric_or_duration",
+      "context": "ый знак Свидетельство после регистрации Роспатент 10 лет , продление ( ст. 1491 ) Форма упаковки / изделия",
+      "verified": true,
+      "reason": "Numerical value '10' matched in fact-bank context"
+    },
+    {
+      "fact": "5 лет",
+      "kind": "metric_or_duration",
+      "context": "ень товаров и услуг под реальный ассортимент на 3-5 лет. Не делайте: полагаться на проверку \"уникальности",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "35 000",
+      "kind": "large_number",
+      "context": "е патента, © и ТЗ, проверка обозначения и минимум 35 000 ₽ пошлин без гарантии регистрации. TL;DR / Быстры",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1350",
+      "kind": "large_number",
+      "context": "регистрации. TL;DR / Быстрый инсайт: Патент ( ст. 1350 ГК РФ ) - на техническое решение или промышленный",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1259",
+      "kind": "large_number",
+      "context": "логотип-рисунок возникает при создании ( п. 4 ст. 1259 ), но не даёт монополии на название в торговле. Т",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1477",
+      "kind": "large_number",
+      "context": "ение в ваших классах МКТУ после регистрации ( ст. 1477 ). Проверка - бесплатно на Поисковой платформе (",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1491",
+      "kind": "large_number",
+      "context": "ле регистрации Роспатент 10 лет , продление ( ст. 1491 ) Форма упаковки / изделия Промышленный образец П",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "ужим ТЗ для однородных товаров - отказ ( п. 6 ст. 1483 ). Делайте: формулировать перечень товаров и услу",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "4 000",
+      "kind": "large_number",
+      "context": "е, 2.11 после решения. Минимум 1 класс: 35 000 ₽ (4 000 + 13 000 + 18 000) на бумаге или 24 500 ₽ при эле",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "13 000",
+      "kind": "large_number",
+      "context": "после решения. Минимум 1 класс: 35 000 ₽ (4 000 + 13 000 + 18 000) на бумаге или 24 500 ₽ при электронной",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "18 000",
+      "kind": "large_number",
+      "context": "ения. Минимум 1 класс: 35 000 ₽ (4 000 + 13 000 + 18 000) на бумаге или 24 500 ₽ при электронной подаче (с",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "24 500",
+      "kind": "large_number",
+      "context": "35 000 ₽ (4 000 + 13 000 + 18 000) на бумаге или 24 500 ₽ при электронной подаче (скидка 30% на 2.1, 2.4",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1486",
+      "kind": "large_number",
+      "context": "ый отдельно. Неиспользование 3 года - риск по ст. 1486 ; при спорах - компенсация по ст. 1515 . Схема по",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1515",
+      "kind": "large_number",
+      "context": "иск по ст. 1486 ; при спорах - компенсация по ст. 1515 . Схема после решения \"нужен ТЗ\": Проверка и чек-",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
