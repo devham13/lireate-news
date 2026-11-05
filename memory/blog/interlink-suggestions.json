@@ -1,6 +1,21 @@
 {
   "site_base": "https://example.com",
-  "total_articles": 37,
-  "opportunities_found": 0,
-  "suggestions": []
+  "total_articles": 38,
+  "opportunities_found": 2,
+  "suggestions": [
+    {
+      "source": "L21-osparivanie-tovarnogo-znaka-v-rospatente",
+      "target": "L33-konkurent-zaregistriroval-pohozhiy-tovarnyy-znak",
+      "keyword": "возражение против предоставления правовой охраны",
+      "context": "3 в Роспатент</b>, пока нет свидетельства. \"Куда отправлять возражение против предоставления правовой охраны\" - туда же, с <b>14 000 руб.</b> и номером свидетельства; р",
+      "link_replacement": "<a href=\"/blog/konkurent-zaregistriroval-pohozhiy-tovarnyy-znak/\">возражение против предоставления правовой охраны</a>"
+    },
+    {
+      "source": "L08-vozrazhenie-protiv-registracii-tovarnogo-znaka-sroki-poryadok",
+      "target": "L33-konkurent-zaregistriroval-pohozhiy-tovarnyy-znak",
+      "keyword": "возражение против предоставления правовой охраны",
+      "context": "ле регистрации чужого знака заинтересованное лицо подаёт <b>возражение против предоставления правовой охраны</b> по <a href=\"https://www.consultant.ru/document/cons_doc",
+      "link_replacement": "<a href=\"/blog/konkurent-zaregistriroval-pohozhiy-tovarnyy-znak/\">возражение против предоставления правовой охраны</a>"
+    }
+  ]
 }
