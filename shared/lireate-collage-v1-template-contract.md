@@ -55,6 +55,7 @@ Inline: файл `cover/inline-specs.json` (см. `memory/cover/collage-v1/inlin
 
 - запрещённые пересечения слотов (headline × sticky и т.д.);
 - **safe-area:** каждый `[data-layout-slot]` внутри `[data-layout-paper]` с отступом **20px**;
+- **thumbnail-safe:** текстовые слоты внутри пересечения center-crop для 396×300, 16:9, 4:3, 1:1 и др. (`thumbnail_safe.py`);
 - **cover:** зазор **≥16px** между `slot-arrow` и `slot-headline`;
 - минимальные размеры шрифтов и плотность квадрантов.
 

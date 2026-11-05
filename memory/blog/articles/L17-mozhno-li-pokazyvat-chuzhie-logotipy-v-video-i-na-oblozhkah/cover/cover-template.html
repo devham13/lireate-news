@@ -89,24 +89,39 @@ html, body { width: 100%; height: 100%; overflow: hidden; background: #0b1020; f
 }
 
 html, body { margin:0; width:860px; height:400px; overflow:hidden; }
-.stage { width:860px; height:400px; background:#0b1020; display:flex; align-items:center; justify-content:center; }
+.stage { width:860px; height:400px; background:#0b1020; position:relative; }
 .sheet {
   width:860px; height:400px; position:relative; box-sizing:border-box;
-  display:grid; grid-template-columns: 54% 46%; padding:20px 22px 16px 26px;
+  background: transparent;
 }
-.col-left { display:flex; align-items:center; position:relative; padding-right:12px; }
-.col-right { position:relative; min-height:100%; }
+.board-safe {
+  position:absolute;
+  left:246px; top:16px;
+  width:368px; height:368px;
+  box-sizing:border-box;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:10px 8px;
+  padding:4px 6px;
+}
+.col-headline {
+  grid-column:1; grid-row:1 / span 2;
+  display:flex; align-items:center; justify-content:center;
+  text-align:center; position:relative; min-width:0;
+}
+.col-deco {
+  grid-column:2; grid-row:1 / span 2;
+  position:relative; min-height:0; min-width:0;
+}
 .hl {
-  font-size:52px; font-weight:800; line-height:1.05; letter-spacing:-0.03em;
+  font-size:36px; font-weight:800; line-height:1.06; letter-spacing:-0.03em;
+  max-width:100%; overflow:hidden;
 }
 .hl-accent { color:#ff1f6b; }
-.hl-line { margin-bottom:0.05em; }
-.cover-arrow {
-  position:absolute; right:8px; top:58%; width:78px; height:auto; pointer-events:none;
-}
+.hl-line { margin-bottom:0.06em; word-break:break-word; hyphens:auto; }
 .cover-sticky {
-  position:absolute; top:36px; left:0; width:220px; height:140px;
-  padding:10px 12px; box-sizing:border-box; font-size:25px; line-height:1.12;
+  position:absolute; top:52px; right:0; width:154px; height:95px;
+  padding:8px 10px; box-sizing:border-box; font-size:22px; line-height:1.1;
   transform:rotate(4deg); z-index:4; box-shadow:2px 6px 14px rgba(0,0,0,.18);
   display:flex; align-items:center; justify-content:center; text-align:center;
 }
@@ -119,31 +134,39 @@ html, body { margin:0; width:860px; height:400px; overflow:hidden; }
   background:rgba(235,220,185,.88); transform:rotate(-2deg);
 }
 .slot-badge {
-  position:absolute; top:0; right:0; border:3px solid #111; padding:8px 14px;
-  font-weight:800; font-size:20px; white-space:nowrap; z-index:6; background:#fff;
+  position:absolute; top:0; right:0; border:3px solid #111; padding:6px 12px;
+  font-weight:800; font-size:18px; white-space:nowrap; z-index:6; background:#fff;
 }
 .slot-chips {
-  position:absolute; top:72px; right:18px; width:72%;
-  display:flex; flex-direction:column; align-items:flex-end; gap:10px; z-index:6;
-  pointer-events:none;
+  position:absolute; top:108px; right:0; width:100%;
+  display:flex; flex-direction:column; align-items:flex-end; gap:5px; z-index:6;
+  pointer-events:none; max-height:88px; overflow:hidden;
 }
-.chip-tilt { font-size:18px; padding:8px 16px; transform:rotate(var(--rot)); }
+.chip-tilt { font-size:18px; padding:5px 10px; transform:rotate(var(--rot)); max-width:100%; overflow:hidden; text-overflow:ellipsis; }
 .slot-ui {
-  position:absolute; bottom:8px; right:0; width:94%; z-index:5;
-  background:#fff; border-radius:12px; padding:12px 14px 10px;
-  box-shadow:0 10px 26px rgba(0,0,0,.14); border:1px solid #e5e7eb;
+  position:absolute; bottom:0; right:0; left:0; z-index:5;
+  max-height:148px;
+  background:#fff; border-radius:10px; padding:8px 10px 8px;
+  box-shadow:0 8px 22px rgba(0,0,0,.14); border:1px solid #e5e7eb;
   font-size:17px;
 }
-.slot-ui h4 { font-size:17px; margin:0 0 8px; font-weight:700; }
-.ui-row { display:flex; justify-content:space-between; align-items:center; margin:6px 0; }
-.toggle { width:36px; height:20px; border-radius:999px; background:#e5e7eb; position:relative; flex-shrink:0; }
+.slot-ui h4 { font-size:17px; margin:0 0 6px; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.ui-row { display:flex; justify-content:space-between; align-items:center; margin:4px 0; gap:6px; }
+.ui-row span:first-child { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; flex:1; min-width:0; }
+.toggle { width:32px; height:18px; border-radius:999px; background:#e5e7eb; position:relative; flex-shrink:0; }
 .toggle.on { background:#ff2d78; }
 .toggle.on::after {
-  content:''; position:absolute; right:3px; top:3px; width:14px; height:14px; background:#fff; border-radius:50%;
+  content:''; position:absolute; right:3px; top:3px; width:12px; height:12px; background:#fff; border-radius:50%;
 }
-.ui-foot { margin-top:8px; display:flex; gap:10px; justify-content:flex-end; font-size:12px; align-items:center; }
+.ui-foot { margin-top:6px; display:flex; gap:8px; justify-content:flex-end; font-size:11px; align-items:center; }
 .muted { color:#64748b; }
-.apply { background:#ff2d78; color:#fff; padding:4px 12px; border-radius:6px; font-weight:600; }
+.apply { background:#ff2d78; color:#fff; padding:3px 10px; border-radius:6px; font-weight:600; }
+.paper-torn {
+  clip-path: polygon(
+    0% 2%, 3% 0%, 8% 1%, 14% 0%, 22% 2%, 30% 0%, 38% 1%, 46% 0%, 54% 2%, 62% 0%, 70% 1%, 78% 0%, 86% 2%, 94% 0%, 100% 1%,
+    100% 98%, 97% 100%, 90% 99%, 82% 100%, 74% 98%, 66% 100%, 58% 99%, 50% 100%, 42% 98%, 34% 100%, 26% 99%, 18% 100%, 10% 98%, 2% 100%, 0% 99%
+  );
+}
 .tape-corner {
   position:absolute; width:42px; height:14px;
   background:linear-gradient(135deg,rgba(22,22,22,.88),rgba(8,8,8,.92));
@@ -159,18 +182,19 @@ html, body { margin:0; width:860px; height:400px; overflow:hidden; }
 <div class="stage">
   <div class="paper paper-torn sheet" data-layout-paper="1">
     <div class="tape-corner tape-tl"></div><div class="tape-corner tape-tr"></div>
-    <div class="col-left">
-      <div class="hl" data-layout-slot="slot-headline"><div class="hl-line">ЧУЖОЙ ЛОГОТИП В</div>
+    <div class="board-safe" id="composition" data-thumbnail-safe="1">
+      <div class="col-headline">
+        <div class="hl" data-layout-slot="slot-headline"><div class="hl-line">ЧУЖОЙ ЛОГОТИП В</div>
 <div class="hl-line">ВИДЕО И НА <span class="hl-accent">ОБЛОЖКЕ</span></div></div>
-    </div>
-    <div class="col-right">
-      <svg class="cover-arrow" data-layout-slot="slot-arrow" viewBox="0 0 100 36" aria-hidden="true"><path d="M8 28 C42 8, 58 30, 88 12" stroke="#111" fill="none" stroke-width="2.2"/><path d="M80 6l12 8-14 3" stroke="#111" fill="none" stroke-width="2"/></svg>
-      <div class="slot-badge" data-layout-slot="slot-badge">ИС</div>
-      <div class="cover-sticky hand" data-layout-slot="slot-sticky" style="background:#f7e58c"><div class="sticky-tape-beige"></div><div class="sticky-text"><span class="sticky-ul">согласие</span> до публикации</div></div>
-      <div class="slot-chips" data-layout-slot="slot-chips"><div class="torn-chip black chip-tilt" style="--rot:-6deg">можно ли исполь…</div><div class="torn-chip white chip-tilt" style="--rot:4deg">а легально ли д…</div><div class="torn-chip pink chip-tilt" style="--rot:-5deg">законность демо…</div></div>
-      <div class="slot-ui" data-layout-slot="slot-ui-card">
-        <h4>Логотип в видео</h4><div class="ui-row"><span>ТЗ ст. 1484</span><span class="toggle on"></span></div><div class="ui-row"><span>© на логотип</span><span class="toggle on"></span></div><div class="ui-row"><span>Превью / монтаж</span><span class="toggle "></span></div><div class="ui-row"><span>Лицензия</span><span class="toggle "></span></div>
-        <div class="ui-foot"><span class="muted">Сохранить</span><span class="apply">Применить</span></div>
+      </div>
+      <div class="col-deco">
+        <div class="slot-badge" data-layout-slot="slot-badge">ИС</div>
+        <div class="cover-sticky hand" data-layout-slot="slot-sticky" style="background:#f7e58c"><div class="sticky-tape-beige"></div><div class="sticky-text"><span class="sticky-ul">согласие</span> до публикации</div></div>
+        <div class="slot-chips" data-layout-slot="slot-chips"><div class="torn-chip black chip-tilt" style="--rot:-6deg">можно ли исполь…</div><div class="torn-chip white chip-tilt" style="--rot:4deg">а легально ли д…</div><div class="torn-chip pink chip-tilt" style="--rot:-5deg">законность демо…</div></div>
+        <div class="slot-ui" data-layout-slot="slot-ui-card">
+          <h4>Логотип в видео</h4><div class="ui-row"><span>ТЗ ст. 1484</span><span class="toggle on"></span></div><div class="ui-row"><span>© на логотип</span><span class="toggle on"></span></div><div class="ui-row"><span>Превью / монтаж</span><span class="toggle "></span></div><div class="ui-row"><span>Лицензия</span><span class="toggle "></span></div>
+          <div class="ui-foot"><span class="muted">Сохранить</span><span class="apply">Применить</span></div>
+        </div>
       </div>
     </div>
     <div class="brand-mark">LIREATE</div>

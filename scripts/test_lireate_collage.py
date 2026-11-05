@@ -12,6 +12,7 @@ sys.path.insert(0, str(REPO_ROOT / "scripts"))
 
 from lireate_collage.derive import category_badge, derive_cover_spec, split_headline  # noqa: E402
 from lireate_collage.eligibility import collage_allowed  # noqa: E402
+from lireate_collage.thumbnail_safe import thumbnail_safe_rect  # noqa: E402
 from lireate_collage.article_facts import scrub_inline_item  # noqa: E402
 from lireate_collage.validate import validate_cover_spec, validate_inline_item  # noqa: E402
 
@@ -76,6 +77,13 @@ class TestCollage(unittest.TestCase):
             "conclusion": {"box_lines": ["итог"]},
         }
         self.assertFalse(validate_inline_item(item))
+
+    def test_thumbnail_safe_rect(self):
+        left, top, w, h = thumbnail_safe_rect()
+        self.assertGreaterEqual(left, 200)
+        self.assertLessEqual(left + w, 660)
+        self.assertGreater(w, 300)
+        self.assertEqual(top, 20)
 
 
 if __name__ == "__main__":
