@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "#lireate-organization",
+      "name": "Лирейт"
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "#article-l17",
+      "headline": "Патентование дизайна и защита товара: промышленный образец или товарный знак",
+      "description": "Патентование дизайна в России - промышленный образец по ст. 1352 ГК РФ против товарного знака. Сравнение сроков и выбор связки ПО и ТЗ.",
+      "datePublished": "2026-10-19",
+      "dateModified": "2026-10-19",
+      "inLanguage": "ru",
+      "url": "/zashchita-dizajna-tovara-promobrazec-ili-tovarnyy-znak",
+      "author": { "@id": "#lireate-organization" },
+      "publisher": { "@id": "#lireate-organization" }
+    }
+  ]
+}
