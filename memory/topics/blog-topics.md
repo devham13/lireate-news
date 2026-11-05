@@ -868,13 +868,13 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L33 — Конкурент зарегистрировал похожий товарный знак: что делать
 
-- **status:** new
+- **status:** written
 - **priority:** P1
 - **site:** lireate
 - **lireate_category_id:** 9
 - **lireate_category_name:** Товарный знак
 - **slug:** konkurent-zaregistriroval-pohozhiy-tovarnyy-znak
-- **h1:** Конкурент зарегистрировал похожий товарный знак: возражение, претензия и суд
+- **h1:** Как действовать, если конкурент зарегистрировал похожий товарный знак: возражение, претензия и суд
 - **primary_query:** конкурент зарегистрировал похожий товарный знак
 - **secondary_queries:** оспаривание регистрации товарного знака, возражение против предоставления правовой охраны, претензия правообладателю товарного знака
 - **search_intent:** workflow
