@@ -931,7 +931,7 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L36 — «Честный знак» при импорте: сниппет, документы и типичные ошибки
 
-- **status:** new
+- **status:** written
 - **priority:** P1
 - **site:** lireate
 - **lireate_category_id:** 11
