@@ -1,0 +1,71 @@
+{
+  "topic_id": "L36",
+  "slug": "chestnyy-znak-import-snippet-dokumenty",
+  "h1": "Как исправить сниппет маркировки импорта \"Честный знак\": документы и типичные ошибки",
+  "title": "Как исправить сниппет маркировки импорта \"Честный знак\": документы и типичные ошибки",
+  "description": "Сниппет ошибки в Честном знаке при импорте: ЕРВК с 01.03.2026, заказ КМ \"Ввезен в РФ\", графа 31 ДТ, ввод с ФТС, FtsGoodsReleaseMarkRes_orh и support@crpt.ru. Чеклист документов и 7 шагов.",
+  "keywords": [
+    "как исправить сниппет честный знак импорт",
+    "честный знак импорт простыми словами",
+    "маркировка импорта честный знак",
+    "импорт с ФТС честный знак",
+    "графа 31 декларация маркировка",
+    "FtsGoodsReleaseMarkRes attachment"
+  ],
+  "primary_query": "как исправить сниппет честный знак импорт",
+  "secondary_queries": [
+    "честный знак импорт простыми словами",
+    "честный знак импорт с чек-листами",
+    "маркировка импорта честный знак",
+    "честный знак импорт с разбором инвойса"
+  ],
+  "char_count": 9364,
+  "article_mode": "B",
+  "site": "lireate",
+  "lireate_category_id": 11,
+  "lireate_category_name": "Маркировка",
+  "canonical_path": "/chestnyy-znak-import-snippet-dokumenty",
+  "news_list_url": "/news?num=2&category=11",
+  "anchor_variants": [
+    "как исправить сниппет ошибки честный знак при импорте",
+    "импорт с ФТС и графа 31: где рвётся цепочка с ГИС МТ",
+    "FtsGoodsReleaseMarkRes_orh attachment - что слать в support@crpt.ru"
+  ],
+  "meta_ab": {
+    "title_seo": "Как исправить сниппет честный знак импорт: документы и ошибки",
+    "title_ctr": "Сниппет в Честном знаке на импорте - 7 шагов и таблица типовых ошибок!",
+    "title_aeo": "Как исправить сниппет ошибки \"Честный знак\" при импорте с ФТС?",
+    "description_seo": "Чеклист импортёра: ЕРВК, заказ \"Ввезен в РФ\", графа 31, ввод с ФТС, сниппет FtsGoodsReleaseMarkRes_orh, пакет для support@crpt.ru. Официальные ссылки markirovka.ru.",
+    "description_ctr": "ДТ + ГИС МТ: таблица типовых сбоев, 7 шагов, XML и ID для поддержки. Без дублей ввода и лишней возни с черновиком.",
+    "description_aeo": "Исправить сниппет значит найти узел цепочки (ЕРВК, заказ КМ, графа 31, ввод) и для ошибки attachment отправить XML с ID в support@crpt.ru."
+  },
+  "cover_family": "lireate_collage_v1",
+  "cover_scene_hint": "сниппет ЧЗ, графа 31 ДТ, ЕРВК и заказ Ввезен в РФ",
+  "cover_headline": "СНИППЕТ ЧЗ НА ИМПОРТЕ: ЕРВК 2026 ЗАКАЗ КМ И ГРАФА 31",
+  "cover_highlight": "31",
+  "cover_sticky": "черновик не чинит attachment",
+  "cover_sticky_underline": "attachment",
+  "cover_label_chips": [
+    [
+      "ЕРВК",
+      "black"
+    ],
+    [
+      "Ввезен в РФ",
+      "white"
+    ],
+    [
+      "графа 31",
+      "pink"
+    ]
+  ],
+  "cover_ui_title": "Цепочка до ФТС",
+  "cover_ui_rows": [
+    "НК и GTIN",
+    "заказ КМ и нанесение",
+    "ДТ и графа 31",
+    "ввод после выпуска"
+  ],
+  "cover_style": "collage-v1",
+  "cover_renderer": "html_chromium"
+}

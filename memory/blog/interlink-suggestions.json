@@ -1,14 +1,6 @@
 {
   "site_base": "https://example.com",
-  "total_articles": 40,
-  "opportunities_found": 1,
-  "suggestions": [
-    {
-      "source": "L11-dogovor-na-razrabotku-logotipa-prava-ot-dizajnera",
-      "target": "L35-avtorskoe-voznagrazhdenie-po-gk-rf",
-      "keyword": "договор авторского заказа",
-      "context": "_blank\">ст. 1228</a>). У фрилансера нужен <b>письменный</b> договор авторского заказа (<a href=\"https://www.consultant.ru/document/cons_doc_LAW_6",
-      "link_replacement": "<a href=\"/blog/avtorskoe-voznagrazhdenie-po-gk-rf/\">договор авторского заказа</a>"
-    }
-  ]
+  "total_articles": 41,
+  "opportunities_found": 0,
+  "suggestions": []
 }

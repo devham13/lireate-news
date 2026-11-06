@@ -1,0 +1,45 @@
+{
+  "source": "memory/blog/articles/L36-chestnyy-znak-import-snippet-dokumenty/article.html",
+  "total_links": 4,
+  "failed_count": 0,
+  "privacy_policy_violations": [],
+  "verdict": "pass",
+  "links": [
+    {
+      "url": "https://markirovka.ru/knowledge/tovarnye-gruppy/bakaleinaya-produkciya/markirovka-tovarov-proizvedennykh-za-predelami-rf-import-bakaleya-igrushki-kosmetika-i-bithimiya-masla-sladosti",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://kv-ai.ru/obuchenie-po-make",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://docs.crpt.ru/gismt/%D0%97%D0%B0%D0%BA%D0%B0%D0%B7_%D0%9A%D0%9C/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://t.me/maya_pro",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    }
+  ]
+}
