@@ -19,7 +19,7 @@
     "дизайн упаковки авторские права",
     "товарный знак на упаковке wildberries"
   ],
-  "char_count": 8598,
+  "char_count": 8752,
   "article_mode": "B",
   "site": "lireate",
   "lireate_category_id": 12,
@@ -41,6 +41,8 @@
     "description_aeo": "Чтобы защитить дизайн упаковки, оформите права на макет, патент на промышленный образец для формы и товарный знак для бренда, затем используйте инструменты площадки при копии."
   },
   "cover_family": "lireate_collage_v1",
+  "cover_headline": "Защита упаковки: ©, ПО и торговый знак",
+  "cover_highlight": "торговый знак",
   "cover_scene_hint": "коробка на маркетплейсе, три бейджа © / ТЗ / ПО",
   "cover_style": "collage-v1",
   "cover_renderer": "html_chromium"

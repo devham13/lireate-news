@@ -273,6 +273,8 @@ def build_inline_html(item, width, height):
     header_class = "inline-header" + (" inline-header--full" if tmpl == "checklist" else "")
     comp_gap = 20 if tmpl == "checklist" else SECTION_GAP_PX
 
+    comp_pad_bottom = PAPER_MARGIN + 28
+
     return """<!DOCTYPE html>
 <html><head><meta charset="utf-8"><style>
 {shared}
@@ -280,12 +282,13 @@ html, body {{ margin:0; width:{w}px; height:{h}px; overflow:hidden; }}
 .stage {{ width:{w}px; height:{h}px; background:{navy}; display:flex; align-items:center; justify-content:center; }}
 .sheet {{
   width:{w}px; height:{h}px; position:relative; box-sizing:border-box;
-  background:{paper}; padding:0;
+  background:{paper}; padding:0; overflow:hidden;
 }}
 #composition {{
   position:absolute; left:0; top:0; width:{w}px; height:{h}px;
-  padding:{m}px; box-sizing:border-box;
+  padding:{m}px {m}px {mb}px {m}px; box-sizing:border-box;
   display:flex; flex-direction:column; justify-content:flex-start; gap:{gap}px;
+  overflow:hidden; min-height:0;
 }}
 .inline-header {{
   display:grid; grid-template-columns: 1fr {sticky_w}px; gap:20px; align-items:start;
@@ -448,6 +451,7 @@ h1.title {{
         w=width,
         h=height,
         m=PAPER_MARGIN,
+        mb=comp_pad_bottom,
         gap=comp_gap,
         navy="#0b1020",
         paper="#fafaf8",
