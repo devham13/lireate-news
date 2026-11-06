@@ -937,8 +937,8 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 - **lireate_category_id:** 11
 - **lireate_category_name:** Маркировка
 - **slug:** chestnyy-znak-import-snippet-dokumenty
-- **h1:** Маркировка импорта «Честный знак»: что поправить в сниппете и какие документы проверить
-- **primary_query:** честный знак импорт
+- **h1:** Как исправить сниппет маркировки импорта «Честный знак»: документы и типичные ошибки
+- **primary_query:** как исправить сниппет честный знак импорт
 - **secondary_queries:** честный знак импорт простыми словами, честный знак импорт с чек-листами, маркировка импорта честный знак, честный знак импорт с разбором инвойса
 - **search_intent:** checklist
 - **article_mode:** B
