@@ -1,0 +1,80 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-06",
+    "today_ru": "06.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "пятница",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-08",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-06 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L37",
+    "priority": "P1",
+    "slug": "zashchita-dizayna-upakovki-marketpleysy",
+    "h1": "Как защитить дизайн упаковки на маркетплейсах: ©, промышленный образец и товарный знак",
+    "primary_query": "запатентовать дизайн упаковки",
+    "secondary_queries": [
+      "защита упаковки от копирования",
+      "дизайн упаковки авторские права",
+      "товарный знак на упаковке wildberries"
+    ],
+    "search_intent": "comparison",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "L37",
+    "status": "PASS",
+    "search_intent": "comparison",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "запатентовать дизайн упаковки 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "запатентовать дизайн упаковки ноябрь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "запатентовать дизайн упаковки новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "защита упаковки от копирования 2026",
+      "purpose": "вторичный запрос: защита упаковки от копирования"
+    },
+    {
+      "id": "secondary_2",
+      "query": "дизайн упаковки авторские права 2026",
+      "purpose": "вторичный запрос: дизайн упаковки авторские права"
+    },
+    {
+      "id": "secondary_3",
+      "query": "товарный знак на упаковке wildberries 2026",
+      "purpose": "вторичный запрос: товарный знак на упаковке wildberries"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как защитить дизайн упаковки на маркетплейсах: ©, промышленный образец и товарный знак 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/L37-zashchita-dizayna-upakovki-marketpleysy",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}
