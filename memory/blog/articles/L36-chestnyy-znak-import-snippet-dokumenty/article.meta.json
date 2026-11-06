@@ -39,5 +39,33 @@
     "description_ctr": "ДТ + ГИС МТ: таблица типовых сбоев, 7 шагов, XML и ID для поддержки. Без дублей ввода и лишней возни с черновиком.",
     "description_aeo": "Исправить сниппет значит найти узел цепочки (ЕРВК, заказ КМ, графа 31, ввод) и для ошибки attachment отправить XML с ID в support@crpt.ru."
   },
-  "cover_family": "brand_collage"
+  "cover_family": "lireate_collage_v1",
+  "cover_scene_hint": "сниппет ЧЗ, графа 31 ДТ, ЕРВК и заказ Ввезен в РФ",
+  "cover_headline": "СНИППЕТ ЧЗ НА ИМПОРТЕ: ЕРВК 2026 ЗАКАЗ КМ И ГРАФА 31",
+  "cover_highlight": "31",
+  "cover_sticky": "черновик не чинит attachment",
+  "cover_sticky_underline": "attachment",
+  "cover_label_chips": [
+    [
+      "ЕРВК",
+      "black"
+    ],
+    [
+      "Ввезен в РФ",
+      "white"
+    ],
+    [
+      "графа 31",
+      "pink"
+    ]
+  ],
+  "cover_ui_title": "Цепочка до ФТС",
+  "cover_ui_rows": [
+    "НК и GTIN",
+    "заказ КМ и нанесение",
+    "ДТ и графа 31",
+    "ввод после выпуска"
+  ],
+  "cover_style": "collage-v1",
+  "cover_renderer": "html_chromium"
 }
