@@ -2,7 +2,8 @@
 """Excalibur BLOG HTML Tag Linter & Sanitizer.
 
 Enforces strict whitelist of HTML tags, prevents unclosed tags, and checks for malformed markup.
-Allowed tags: h2, h3, p, b, i, a, ul, ol, li, blockquote, table, thead, tbody, tr, th, td
+Allowed tags: h2, h3, p, b, i, a, ul, ol, li, blockquote, table, thead, tbody, tr, th, td,
+figure, figcaption (Lireate collage-v1 cover + inline)
 """
 from __future__ import annotations
 
@@ -158,7 +159,8 @@ def main() -> int:
     # Whitelist tags based on excalibur contract
     allowed_tags = {
         "h2", "h3", "p", "b", "i", "a", "ul", "ol", "li", "blockquote",
-        "table", "thead", "tbody", "tr", "th", "td", "img", "br"
+        "table", "thead", "tbody", "tr", "th", "td", "img", "br",
+        "figure", "figcaption",
     }
 
     report = lint_html_file(args.html, allowed_tags)

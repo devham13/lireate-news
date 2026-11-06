@@ -1,0 +1,87 @@
+{
+  "article": "memory/blog/articles/L37-zashchita-dizayna-upakovki-marketpleysy/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 11,
+  "verified_facts_count": 5,
+  "unverified_facts_count": 6,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "товерность данных: редакционная проверка на 06.11.2026. Показы поискового спроса в материал не включалис",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "5 лет",
+      "kind": "metric_or_duration",
+      "context": "п. 1 ст. 1352 ГК РФ ); срок исключительного права 5 лет с даты заявки, продления до 25 лет суммарно ( ст.",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "25 лет",
+      "kind": "metric_or_duration",
+      "context": "ительного права 5 лет с даты заявки, продления до 25 лет суммарно ( ст. 1363 ). Товарный знак привязывает",
+      "verified": true,
+      "reason": "Numerical value '25' matched in fact-bank context"
+    },
+    {
+      "fact": "6 ч",
+      "kind": "metric_or_duration",
+      "context": "однородным товарам даёт основание для отказа ( п. 6 ч. 1 ст. 1483 ). Подробное сравнение ПО и знака для",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "12 месяцев",
+      "kind": "metric_or_duration",
+      "context": "ассовый показ финала без плана по п. 4 ст. 1352 - 12 месяцев после своего раскрытия дают окно, но срок докажет",
+      "verified": true,
+      "reason": "Numerical value '12' matched in fact-bank context"
+    },
+    {
+      "fact": "10 дней",
+      "kind": "metric_or_duration",
+      "context": "нал \"цифровой арбитраж\"; ориентир ответа продавца 10 дней встречался в обзорах - сверьте оферту ( Клерк ).",
+      "verified": true,
+      "reason": "Numerical value '10' matched in fact-bank context"
+    },
+    {
+      "fact": "1352",
+      "kind": "large_number",
+      "context": "оригинальный по существенным признакам ( п. 1 ст. 1352 ГК РФ ); срок исключительного права 5 лет с даты з",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1363",
+      "kind": "large_number",
+      "context": "с даты заявки, продления до 25 лет суммарно ( ст. 1363 ). Товарный знак привязывает слово, логотип или к",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1354",
+      "kind": "large_number",
+      "context": "стрированные обозначения. Ниже - обзор ГК РФ, ст. 1354 ГК РФ (объём охраны по патенту на промышленный обр",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1259",
+      "kind": "large_number",
+      "context": "аж - могут входить в объекты авторских прав ( ст. 1259 ГК РФ ). Оно защищает выражение идеи, а не \"любую",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "товарам даёт основание для отказа ( п. 6 ч. 1 ст. 1483 ). Подробное сравнение ПО и знака для формы товар",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    }
+  ]
+}

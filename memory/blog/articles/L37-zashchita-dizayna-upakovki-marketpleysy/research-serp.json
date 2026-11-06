@@ -1,0 +1,428 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-06",
+    "today_ru": "06.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "пятница",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-08",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-06 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L37",
+    "priority": "P1",
+    "slug": "zashchita-dizayna-upakovki-marketpleysy",
+    "h1": "Как защитить дизайн упаковки на маркетплейсах: ©, промышленный образец и товарный знак",
+    "primary_query": "запатентовать дизайн упаковки",
+    "secondary_queries": [
+      "защита упаковки от копирования",
+      "дизайн упаковки авторские права",
+      "товарный знак на упаковке wildberries"
+    ],
+    "search_intent": "comparison",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "запатентовать дизайн упаковки 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Промышленный образец: как запатентовать дизайн товара в 2026 году",
+          "url": "https://checkroi.ru/blog/promyshlennyy-obrazets/",
+          "snippet": ""
+        },
+        {
+          "title": "Патент на промышленный образец: защита дизайна | Qbrand",
+          "url": "https://qbrand.ru/uslugi/patent-na-promyshlennyj-obrazec/",
+          "snippet": "В статье разбираем, что им можно закрыть, чем он отличается от товарного знака и авторского права, как подать заявку в Роспатент, сколько стоят пошлины в 2026 году и когда удобнее ..."
+        },
+        {
+          "title": "Как запатентовать дизайн и форму тары, упаковки и контейнеров ...",
+          "url": "https://prilan.ru/blog/patents/promyshlennyy-obrazets-dlya-tary-upakovok-i-konteynerov-protsess-patentovaniya-v-rospatente/",
+          "snippet": "Можно ли запатентовать дизайн упаковки? Да. Форму и облик упаковки защищают как промышленный образец, а логотип и название на ней регистрируют отдельно как товарный знак."
+        },
+        {
+          "title": "Как запатентовать новый вид упаковки: пошаговое руководство - А-Логистик",
+          "url": "https://aerogruz-logistic.ru/kak-zapatentovat-novyj-vid-upakovki-poshagovoe-rukovodstvo/",
+          "snippet": "Для получения патента на визуальные признаки бутылок, узоров на коробках или конструкции поддонов, обеспечивающего защиту уникального дизайна, необходимо пройти несколько этапов ..."
+        },
+        {
+          "title": "Тренды упаковки 2026-2027: дизайн и технологии",
+          "url": "https://www.komupak.ru/blog/analitika-o-kartone/trendy-upakovki-2026-2027-ot-dofaminovogo-dizajna-do-umnyh-konstrukcij",
+          "snippet": "Разбираем, как оформить патент на новый вид упаковки, подготовить документы, подтвердить новизну и защитить решение от копирования конкурентами."
+        },
+        {
+          "title": "Патент на дизайн, одежду и упаковку: что защищает промышленный образец ...",
+          "url": "https://inilaw.com/blog/patenty/patent-na-dizajn-odezhdu-i-upakovku-chto-zashhishhaet-promyshlennyj-obrazec/",
+          "snippet": "Какие тренды упаковки актуальны в 2026 году и что ждёт отрасль в 2027? Дофаминовый дизайн, распаковка, персонализация, экологичность и новые технологии."
+        }
+      ],
+      "searched_at": "2026-11-06"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "запатентовать дизайн упаковки ноябрь 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как запатентовать дизайн и форму тары, упаковки и контейнеров ...",
+          "url": "https://prilan.ru/blog/patents/promyshlennyy-obrazets-dlya-tary-upakovok-i-konteynerov-protsess-patentovaniya-v-rospatente/",
+          "snippet": ""
+        },
+        {
+          "title": "Промышленный образец: как запатентовать дизайн товара в 2026 году",
+          "url": "https://checkroi.ru/blog/promyshlennyy-obrazets/",
+          "snippet": "Узнайте, как защитить уникальный дизайн и форму различных предметов для упаковки, контейнеров и тары для первозки, через патентование в 09 Классе МКПО. Подробная инструкция от ..."
+        },
+        {
+          "title": "Как запатентовать новый вид упаковки: пошаговое руководство - А-Логистик",
+          "url": "https://aerogruz-logistic.ru/kak-zapatentovat-novyj-vid-upakovki-poshagovoe-rukovodstvo/",
+          "snippet": "Промышленный образец защищает форму, упаковку и рисунок товара от копий. Что можно запатентовать, пошлины Роспатента от 1500 до 15 000 ₽ и сроки экспертизы."
+        },
+        {
+          "title": "Патент на промышленный образец: защита дизайна | Qbrand",
+          "url": "https://qbrand.ru/uslugi/patent-na-promyshlennyj-obrazec/",
+          "snippet": "Разбираем, как оформить патент на новый вид упаковки, подготовить документы, подтвердить новизну и защитить решение от копирования конкурентами."
+        },
+        {
+          "title": "Стоимость и сроки патентования дизайна упаковки в Роспатенте",
+          "url": "https://gpg.ru/magazine/patents/stoimost-i-sroki-patentovaniya-dizayna-upakovki-v-rospatente.html",
+          "snippet": "Можно ли запатентовать дизайн упаковки? Да. Форму и облик упаковки защищают как промышленный образец, а логотип и название на ней регистрируют отдельно как товарный знак."
+        },
+        {
+          "title": "Регистрация патента в России 2026: пошлины, сроки, порядок",
+          "url": "https://wcr-consulting.com/blog/2026/07/20/registraciya-patenta/",
+          "snippet": "Узнайте о процессе, сроках и стоимости патентования дизайна упаковки в Роспатенте. Как защитить уникальность вашего бренда и повысить конкурентоспособность."
+        }
+      ],
+      "searched_at": "2026-11-06"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "запатентовать дизайн упаковки новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Тренды Креативного Дизайна Упаковки 2026 | Gvpak",
+          "url": "https://www.gvpak.com/ru/blogs/5-most-creative-packaging-design-trends-2026-creative-directions-shaping-packaging-this-year",
+          "snippet": ""
+        },
+        {
+          "title": "Тренды 2026 года в дизайне упаковки товаров: как выделиться на ...",
+          "url": "https://axelpack.ru/trendy-2026-goda-v-dizajne-upakovki-tovarov",
+          "snippet": "Ознакомьтесь с 5 креативными трендами в дизайне упаковки на 2026 год: от дизайна упаковки с использованием искусственного интеллекта и многоразовых систем до биоразлагаемых ..."
+        },
+        {
+          "title": "Тренды дизайна упаковки 2026 | New Media",
+          "url": "https://newmedia.ua/ru/design/trendy-v-dizayne-upakovki-na-2026-god-chto-budet-tseplyat-na-polke-i-v-lente/",
+          "snippet": "В 2026 году это фундаментальный принцип, который пронизывает весь процесс создания упаковки. Потребители стали более осознанными: они внимательно изучают состав материалов, интересуются возможностями переработки и готовы платить больше за продукты, которые не вредят окружающей среде."
+        },
+        {
+          "title": "10 трендов в дизайне упаковки в 2026, по версии Pentawards",
+          "url": "https://vc.ru/marketing/3055950-trendy-v-dizayne-upakovki-po-versii-pentawards",
+          "snippet": "Тренды дизайна упаковки 2026: 8 ключевых трендов, 12 практических приемов и чеклист для брендов, чтобы сделать упаковку читаемой, узнаваемой и вау."
+        },
+        {
+          "title": "Тренды упаковки 2026-2027: дизайн и технологии",
+          "url": "https://www.komupak.ru/blog/analitika-o-kartone/trendy-upakovki-2026-2027-ot-dofaminovogo-dizajna-do-umnyh-konstrukcij",
+          "snippet": "Я изучила свежий отчёт Pentawards и собрала десять трендов, которые помогают понять, как меняется дизайн упаковки и какие визуальные приёмы бренды будут всё активнее использовать в 2026 году."
+        },
+        {
+          "title": "Тренды дизайна упаковки 2025-2026: что работает в России",
+          "url": "https://tppack.ru/stati/trendy-dizajna-upakovki-2025-2026-chto-rabotaet-v-rossii/",
+          "snippet": "Какие тренды упаковки актуальны в 2026 году и что ждёт отрасль в 2027? Дофаминовый дизайн, распаковка, персонализация, экологичность и новые технологии."
+        }
+      ],
+      "searched_at": "2026-11-06"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "защита упаковки от копирования 2026",
+      "purpose": "вторичный запрос: защита упаковки от копирования",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Защита прав на дизайн упаковки подарков от копирования",
+          "url": "https://vfs.consulting/ip/zashhita-prav-na-upakovku-podarkov-ot-kopirovanija-dizajn/",
+          "snippet": ""
+        },
+        {
+          "title": "Как защитить упаковку и внешний вид товара от копирования",
+          "url": "https://blagin-ip.ru/materialy/zashchita-upakovki-i-vneshnego-vida-tovara",
+          "snippet": "Узнайте, как защитить дизайн упаковки подарков от копирования в России. Инструкция по регистрации патента, авторских прав и борьбе с плагиатом в суде."
+        },
+        {
+          "title": "Как защитить бренд от копирования: полное руководство",
+          "url": "https://nevskylaw.ru/knowledge/kak-zashchitit-brend-ot-kopirovaniya/",
+          "snippet": "Как защитить дизайн упаковки, этикетку, форму товара и флакона: товарный знак, промышленный образец, авторское право, договор с дизайнером, доказательства и защита от копирования."
+        },
+        {
+          "title": "Копирование упаковки: защита от имитации и недобросовестной конкуренции",
+          "url": "https://lyratetrademark.ru/2026/01/19/oshibaetes-esli-dumaete-chto-kopirovanie-upakovki-eto-prosto-uznajte-kak-zashhitit-svoj-brend-i-izbezhat-nedobrosovestnoj-konkurenczii/",
+          "snippet": "Как защитить бренд от копирования конкурентами в 2026 году? Регистрация товарного знака, защита в интернете, на маркетплейсах и в суде. Пошаговое руководство для бизнеса в России."
+        },
+        {
+          "title": "Как бороться с копированием дизайна упаковки: защита бренда, дизайн и ...",
+          "url": "https://stm-endorphin.ru/articles/kak-borotsya-s-kopirovaniem-dizayna-upakovki",
+          "snippet": "Прямо из «Советы и лайфхаки» работает железно: документируйте уникальность дизайна и упаковки, храните эскизы, фотографии и документы, подтверждающие дату создания."
+        },
+        {
+          "title": "Правовая охрана дизайна упаковки товара: выбор между промышленным ...",
+          "url": "https://pravo163.ru/pravovaya-ohrana-dizajna-upakovki-tovara-vybor-mezhdu-promyshlennym-obrazczom-tovarnym-znakom-i-avtorskim-pravom-kriterii-ohranosposobnosti/",
+          "snippet": "В этой статье разберём, почему защита дизайна упаковки — это управленческая задача, а не каприз дизайнера; какие риски создаёт копирование дизайна; и как выстроить систему, в которой вопрос \"как защитить дизайн упаковки\" решается заранее, а не после того, как похожая банка уже стоит рядом в выдаче. Упаковка — это ваш \"немой продавец\"."
+        }
+      ],
+      "searched_at": "2026-11-06"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "дизайн упаковки авторские права 2026",
+      "purpose": "вторичный запрос: дизайн упаковки авторские права",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Правовая охрана дизайна упаковки товара: выбор между промышленным ...",
+          "url": "https://pravo163.ru/pravovaya-ohrana-dizajna-upakovki-tovara-vybor-mezhdu-promyshlennym-obrazczom-tovarnym-znakom-i-avtorskim-pravom-kriterii-ohranosposobnosti/",
+          "snippet": ""
+        },
+        {
+          "title": "Авторские права на дизайн упаковки — защита продукта",
+          "url": "https://marqatm.ru/analytics/ap-dizajn-upakovki-zaschita.html",
+          "snippet": "Авторское право предоставляет третий, принципиально иной способ охраны дизайна упаковки. В соответствии со статьёй 1259 ГК РФ, произведения дизайна прямо отнесены к объектам авторских прав."
+        },
+        {
+          "title": "Как защитить дизайн товара в 2026-2027 году: промышленный образец ...",
+          "url": "https://www.klerk.ru/blogs/roskom24/698954/",
+          "snippet": "Проверим, кому принадлежат права на ваш дизайн и какие инструменты защиты уже доступны."
+        },
+        {
+          "title": "Защита дизайна упаковки и этикетки: какие права работают в России",
+          "url": "https://urindustria.ru/zasita-dizajna-upakovki-i-etiketki-kakie-prava-rabotaut-v-rossii",
+          "snippet": "Патент 24 поможет рассчитать стоимость защиты дизайна с учетом вашего товара, упаковки, логотипа, авторских прав и возможной подачи заявки на промышленный образец."
+        },
+        {
+          "title": "Скопировали дизайн упаковки продукта — как защитить права",
+          "url": "https://nevskylaw.ru/knowledge/skopirovali-upakovku-produkta-dizayn/",
+          "snippet": "В России дизайн упаковки и этикетки можно защитить тремя способами: промышленный образец, авторское право и товарный знак. Каждый из них имеет свои правила, сроки и эффективность."
+        },
+        {
+          "title": "Претензия за дизайн упаковки — как защититься",
+          "url": "https://nevskylaw.ru/knowledge/pretenziya-za-dizajn-upakovki-kak-zashchititsya/",
+          "snippet": "Узнайте, какие права нарушены, как зафиксировать факт, составить претензию и добиться компенсации. Актуальная инструкция для бизнеса в России на 2026 год."
+        }
+      ],
+      "searched_at": "2026-11-06"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "товарный знак на упаковке wildberries 2026",
+      "purpose": "вторичный запрос: товарный знак на упаковке wildberries",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Товарный знак для Wildberries в 2026 году: классы МКТУ и штрафы",
+          "url": "https://www.business-gazeta.ru/article/703233",
+          "snippet": ""
+        },
+        {
+          "title": "Wildberries зарегистрировала товарный знак Wibe до 2034 года",
+          "url": "https://ria.ru/20261015/wildberries-2124749229.html",
+          "snippet": "Чтобы спасти оборотные средства и сохранить рейтинг витрины, продавцу необходимо зарегистрировать товарный знак для Wildberries."
+        },
+        {
+          "title": "RWB зарегистрировала товарный знак Wibe",
+          "url": "https://www.sostav.ru/publication/wildberries-zaregistriroval-tovarnyj-znak-wibe-87766.html",
+          "snippet": "Компания Wildberries (входит в группу РВБ) зарегистрировала в России товарный знак Wibe до 2034 года, свидетельствует электронная база Роспатента, которую изучило РИА Новости. Согласно..."
+        },
+        {
+          "title": "Wildberries зарегистрировала в России товарный знак Wibe до 2034 года ...",
+          "url": "https://1prime.ru/20261015/wildberries-874296218.html",
+          "snippet": "RWB (объединенная компания Wildberries и Russ) зарегистрировала товарный знак Wibe. Компания подала заявку на регистрацию в октябре 2024 года. Решение о регистрации было принято в августе 2026 года."
+        },
+        {
+          "title": "Онлайн-ритейлер Wildberries зарегистрировал товарный знак Wibe",
+          "url": "https://www.retail.ru/news/onlayn-riteyler-wildberries-zaregistriroval-tovarnyy-znak-wibe-15-oktyabrya-2026-283361/",
+          "snippet": "Компания Wildberries (входит в группу РВБ) зарегистрировала в России товарный знак Wibe до 2034 года, свидетельствует электронная база Роспатента, которую изучило РИА Новости. Согласно документам, заявка на регистрацию обозначения поступила от ООО \"РВБ\" 3 октября 2024 года."
+        },
+        {
+          "title": "Нужен ли товарный знак для Wildberries и Ozon в 2026 и 2027 годах",
+          "url": "https://www.klerk.ru/blogs/propatentonlajn/708652/",
+          "snippet": "RWB (объединенная компания Wildberries и Russ) зарегистрировала товарный знак Wibe. Согласно документам, ООО «РВБ» подала заявку на регистрацию обозначения 3 октября 2024 года, а государственная регистрация товарного знака состоялась 15 октября 2026 года."
+        }
+      ],
+      "searched_at": "2026-11-06"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как защитить дизайн упаковки на маркетплейсах: ©, промышленный образец и товарный знак 2026",
+      "purpose": "SERP по H1",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-06"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://checkroi.ru/blog/promyshlennyy-obrazets/",
+      "title": "Промышленный образец: как запатентовать дизайн товара в 2026 году",
+      "from_query": "запатентовать дизайн упаковки 2026"
+    },
+    {
+      "url": "https://qbrand.ru/uslugi/patent-na-promyshlennyj-obrazec/",
+      "title": "Патент на промышленный образец: защита дизайна | Qbrand",
+      "from_query": "запатентовать дизайн упаковки 2026"
+    },
+    {
+      "url": "https://prilan.ru/blog/patents/promyshlennyy-obrazets-dlya-tary-upakovok-i-konteynerov-protsess-patentovaniya-v-rospatente/",
+      "title": "Как запатентовать дизайн и форму тары, упаковки и контейнеров ...",
+      "from_query": "запатентовать дизайн упаковки 2026"
+    },
+    {
+      "url": "https://aerogruz-logistic.ru/kak-zapatentovat-novyj-vid-upakovki-poshagovoe-rukovodstvo/",
+      "title": "Как запатентовать новый вид упаковки: пошаговое руководство - А-Логистик",
+      "from_query": "запатентовать дизайн упаковки 2026"
+    },
+    {
+      "url": "https://www.komupak.ru/blog/analitika-o-kartone/trendy-upakovki-2026-2027-ot-dofaminovogo-dizajna-do-umnyh-konstrukcij",
+      "title": "Тренды упаковки 2026-2027: дизайн и технологии",
+      "from_query": "запатентовать дизайн упаковки 2026"
+    },
+    {
+      "url": "https://inilaw.com/blog/patenty/patent-na-dizajn-odezhdu-i-upakovku-chto-zashhishhaet-promyshlennyj-obrazec/",
+      "title": "Патент на дизайн, одежду и упаковку: что защищает промышленный образец ...",
+      "from_query": "запатентовать дизайн упаковки 2026"
+    },
+    {
+      "url": "https://gpg.ru/magazine/patents/stoimost-i-sroki-patentovaniya-dizayna-upakovki-v-rospatente.html",
+      "title": "Стоимость и сроки патентования дизайна упаковки в Роспатенте",
+      "from_query": "запатентовать дизайн упаковки ноябрь 2026"
+    },
+    {
+      "url": "https://wcr-consulting.com/blog/2026/07/20/registraciya-patenta/",
+      "title": "Регистрация патента в России 2026: пошлины, сроки, порядок",
+      "from_query": "запатентовать дизайн упаковки ноябрь 2026"
+    },
+    {
+      "url": "https://www.gvpak.com/ru/blogs/5-most-creative-packaging-design-trends-2026-creative-directions-shaping-packaging-this-year",
+      "title": "Тренды Креативного Дизайна Упаковки 2026 | Gvpak",
+      "from_query": "запатентовать дизайн упаковки новости 2026"
+    },
+    {
+      "url": "https://axelpack.ru/trendy-2026-goda-v-dizajne-upakovki-tovarov",
+      "title": "Тренды 2026 года в дизайне упаковки товаров: как выделиться на ...",
+      "from_query": "запатентовать дизайн упаковки новости 2026"
+    },
+    {
+      "url": "https://newmedia.ua/ru/design/trendy-v-dizayne-upakovki-na-2026-god-chto-budet-tseplyat-na-polke-i-v-lente/",
+      "title": "Тренды дизайна упаковки 2026 | New Media",
+      "from_query": "запатентовать дизайн упаковки новости 2026"
+    },
+    {
+      "url": "https://vc.ru/marketing/3055950-trendy-v-dizayne-upakovki-po-versii-pentawards",
+      "title": "10 трендов в дизайне упаковки в 2026, по версии Pentawards",
+      "from_query": "запатентовать дизайн упаковки новости 2026"
+    },
+    {
+      "url": "https://tppack.ru/stati/trendy-dizajna-upakovki-2025-2026-chto-rabotaet-v-rossii/",
+      "title": "Тренды дизайна упаковки 2025-2026: что работает в России",
+      "from_query": "запатентовать дизайн упаковки новости 2026"
+    },
+    {
+      "url": "https://vfs.consulting/ip/zashhita-prav-na-upakovku-podarkov-ot-kopirovanija-dizajn/",
+      "title": "Защита прав на дизайн упаковки подарков от копирования",
+      "from_query": "защита упаковки от копирования 2026"
+    },
+    {
+      "url": "https://blagin-ip.ru/materialy/zashchita-upakovki-i-vneshnego-vida-tovara",
+      "title": "Как защитить упаковку и внешний вид товара от копирования",
+      "from_query": "защита упаковки от копирования 2026"
+    },
+    {
+      "url": "https://nevskylaw.ru/knowledge/kak-zashchitit-brend-ot-kopirovaniya/",
+      "title": "Как защитить бренд от копирования: полное руководство",
+      "from_query": "защита упаковки от копирования 2026"
+    },
+    {
+      "url": "https://lyratetrademark.ru/2026/01/19/oshibaetes-esli-dumaete-chto-kopirovanie-upakovki-eto-prosto-uznajte-kak-zashhitit-svoj-brend-i-izbezhat-nedobrosovestnoj-konkurenczii/",
+      "title": "Копирование упаковки: защита от имитации и недобросовестной конкуренции",
+      "from_query": "защита упаковки от копирования 2026"
+    },
+    {
+      "url": "https://stm-endorphin.ru/articles/kak-borotsya-s-kopirovaniem-dizayna-upakovki",
+      "title": "Как бороться с копированием дизайна упаковки: защита бренда, дизайн и ...",
+      "from_query": "защита упаковки от копирования 2026"
+    },
+    {
+      "url": "https://pravo163.ru/pravovaya-ohrana-dizajna-upakovki-tovara-vybor-mezhdu-promyshlennym-obrazczom-tovarnym-znakom-i-avtorskim-pravom-kriterii-ohranosposobnosti/",
+      "title": "Правовая охрана дизайна упаковки товара: выбор между промышленным ...",
+      "from_query": "защита упаковки от копирования 2026"
+    },
+    {
+      "url": "https://marqatm.ru/analytics/ap-dizajn-upakovki-zaschita.html",
+      "title": "Авторские права на дизайн упаковки — защита продукта",
+      "from_query": "дизайн упаковки авторские права 2026"
+    },
+    {
+      "url": "https://www.klerk.ru/blogs/roskom24/698954/",
+      "title": "Как защитить дизайн товара в 2026-2027 году: промышленный образец ...",
+      "from_query": "дизайн упаковки авторские права 2026"
+    },
+    {
+      "url": "https://urindustria.ru/zasita-dizajna-upakovki-i-etiketki-kakie-prava-rabotaut-v-rossii",
+      "title": "Защита дизайна упаковки и этикетки: какие права работают в России",
+      "from_query": "дизайн упаковки авторские права 2026"
+    },
+    {
+      "url": "https://nevskylaw.ru/knowledge/skopirovali-upakovku-produkta-dizayn/",
+      "title": "Скопировали дизайн упаковки продукта — как защитить права",
+      "from_query": "дизайн упаковки авторские права 2026"
+    },
+    {
+      "url": "https://nevskylaw.ru/knowledge/pretenziya-za-dizajn-upakovki-kak-zashchititsya/",
+      "title": "Претензия за дизайн упаковки — как защититься",
+      "from_query": "дизайн упаковки авторские права 2026"
+    },
+    {
+      "url": "https://www.business-gazeta.ru/article/703233",
+      "title": "Товарный знак для Wildberries в 2026 году: классы МКТУ и штрафы",
+      "from_query": "товарный знак на упаковке wildberries 2026"
+    },
+    {
+      "url": "https://ria.ru/20261015/wildberries-2124749229.html",
+      "title": "Wildberries зарегистрировала товарный знак Wibe до 2034 года",
+      "from_query": "товарный знак на упаковке wildberries 2026"
+    },
+    {
+      "url": "https://www.sostav.ru/publication/wildberries-zaregistriroval-tovarnyj-znak-wibe-87766.html",
+      "title": "RWB зарегистрировала товарный знак Wibe",
+      "from_query": "товарный знак на упаковке wildberries 2026"
+    },
+    {
+      "url": "https://1prime.ru/20261015/wildberries-874296218.html",
+      "title": "Wildberries зарегистрировала в России товарный знак Wibe до 2034 года ...",
+      "from_query": "товарный знак на упаковке wildberries 2026"
+    },
+    {
+      "url": "https://www.retail.ru/news/onlayn-riteyler-wildberries-zaregistriroval-tovarnyy-znak-wibe-15-oktyabrya-2026-283361/",
+      "title": "Онлайн-ритейлер Wildberries зарегистрировал товарный знак Wibe",
+      "from_query": "товарный знак на упаковке wildberries 2026"
+    },
+    {
+      "url": "https://www.klerk.ru/blogs/propatentonlajn/708652/",
+      "title": "Нужен ли товарный знак для Wildberries и Ozon в 2026 и 2027 годах",
+      "from_query": "товарный знак на упаковке wildberries 2026"
+    }
+  ]
+}

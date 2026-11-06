@@ -1,6 +1,14 @@
 {
   "site_base": "https://example.com",
-  "total_articles": 41,
-  "opportunities_found": 0,
-  "suggestions": []
+  "total_articles": 42,
+  "opportunities_found": 1,
+  "suggestions": [
+    {
+      "source": "L37-zashchita-dizayna-upakovki-marketpleysy",
+      "target": "L06-kak-opredelit-klass-mktu",
+      "keyword": "классы мкту",
+      "context": "td>       <td>Слово, лого, комбо на этикетке</td>       <td>Классы МКТУ и отсутствие смешения (<a href=\"/mktu\">гайд по классам</a>)",
+      "link_replacement": "<a href=\"/blog/kak-opredelit-klass-mktu/\">Классы МКТУ</a>"
+    }
+  ]
 }

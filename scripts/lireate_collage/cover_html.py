@@ -77,9 +77,28 @@ html, body {{ margin:0; width:{w}px; height:{h}px; overflow:hidden; }}
 .stage {{ width:{w}px; height:{h}px; background:#0b1020; display:flex; align-items:center; justify-content:center; }}
 .sheet {{
   width:{sw}px; height:{sh}px; position:relative; box-sizing:border-box;
-  display:grid; grid-template-columns: 54% 46%; padding:20px 22px 16px 26px;
+  display:grid; grid-template-columns: 54% 46%; padding:20px 22px 32px 26px;
 }}
-.col-left {{ display:flex; align-items:center; position:relative; padding-right:12px; }}
+.sheet::after {{
+  content:'';
+  position:absolute; z-index:2; pointer-events:none;
+  bottom:22px; right:16px; width:38%; height:22%;
+  background:repeating-linear-gradient(
+    -42deg,
+    rgba(15,23,42,.07) 0 3px,
+    transparent 3px 10px
+  );
+  border-radius:6px;
+}}
+.col-left {{
+  display:flex; flex-direction:column; justify-content:space-between; align-items:stretch;
+  align-self:stretch; min-height:100%; position:relative; padding-right:12px; padding-bottom:4px;
+}}
+.left-memo {{
+  margin-top:auto; padding:12px 14px; border:3px dashed #64748b; border-radius:10px;
+  background:linear-gradient(135deg,#f1f5f9 0%,#e2e8f0 100%);
+  font-size:18px; font-weight:700; line-height:1.22; color:#0f172a;
+}}
 .col-right {{ position:relative; min-height:100%; }}
 .hl {{
   font-size:{hl_px}px; font-weight:800; line-height:1.05; letter-spacing:-0.03em;
@@ -114,7 +133,7 @@ html, body {{ margin:0; width:{w}px; height:{h}px; overflow:hidden; }}
 }}
 .chip-tilt {{ font-size:18px; padding:8px 16px; transform:rotate(var(--rot)); }}
 .slot-ui {{
-  position:absolute; bottom:8px; right:0; width:94%; z-index:5;
+  position:absolute; bottom:22px; right:0; width:94%; z-index:5;
   background:#fff; border-radius:12px; padding:12px 14px 10px;
   box-shadow:0 10px 26px rgba(0,0,0,.14); border:1px solid #e5e7eb;
   font-size:17px;
@@ -146,6 +165,7 @@ html, body {{ margin:0; width:{w}px; height:{h}px; overflow:hidden; }}
     <div class="tape-corner tape-tl"></div><div class="tape-corner tape-tr"></div>
     <div class="col-left">
       <div class="hl" data-layout-slot="slot-headline">{headline}</div>
+      <div class="left-memo" data-layout-slot="slot-left-memo">WB / Ozon · карточка · жалоба</div>
     </div>
     <div class="col-right">
       {arrow}
