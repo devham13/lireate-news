@@ -1,0 +1,52 @@
+{
+  "article": "memory/blog/articles/L36-chestnyy-znak-import-snippet-dokumenty/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 6,
+  "verified_facts_count": 1,
+  "unverified_facts_count": 5,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "ФТС\" после положительного решения ФТС. С 1 марта 2026 проверяют уведомление о начале деятельности в ЕРВК",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "150 000",
+      "kind": "large_number",
+      "context": "большинства ТГ (не мех): до 10 GTIN в заявке, до 150 000 КМ на GTIN в веб-СУЗ, до 100 активных заказов; цен",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "100",
+      "kind": "large_number",
+      "context": "TIN в заявке, до 150 000 КМ на GTIN в веб-СУЗ, до 100 активных заказов; цена кода в открытых материалах",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "14 000",
+      "kind": "large_number",
+      "context": "от XML ограничен по строкам и мегабайтам (порядка 14 000 КМ / 100 000 строк / 4 МБ в материалах сообщества",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "100 000",
+      "kind": "large_number",
+      "context": "ичен по строкам и мегабайтам (порядка 14 000 КМ / 100 000 строк / 4 МБ в материалах сообщества - сверьте по",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "469",
+      "kind": "large_number",
+      "context": "мпортный GTIN часто без ГС1 РУС; для префикса 460-469 обычно нужна регистрация в ГС1. Уточните по группе",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
