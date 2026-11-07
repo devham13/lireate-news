@@ -973,7 +973,7 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L38 — Проверка бренда онлайн перед регистрацией: реестры, домены и соцсети
 
-- **status:** new
+- **status:** written
 - **priority:** P2
 - **site:** lireate
 - **lireate_category_id:** 9
