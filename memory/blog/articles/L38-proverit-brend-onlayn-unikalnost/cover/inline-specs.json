@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "style": "collage-v1",
+  "illustrations": [
+    {
+      "slot": "inline_1",
+      "template": "bad_good",
+      "headline": "Свободный домен vs бренд",
+      "chips": [
+        {"icon": "globe", "text": "whois"},
+        {"icon": "shield", "text": "ТЗ"},
+        {"icon": "doc", "text": "1483"}
+      ],
+      "sticky": {"text": "домен ≠ товарный знак", "color": "pink"},
+      "bad": {
+        "header": "BAD",
+        "lines": [
+          "whois свободен — едем дальше",
+          "Только одно написание имени",
+          "Ник в соцсети = свобода знака"
+        ]
+      },
+      "good": {
+        "header": "GOOD",
+        "lines": [
+          "Платформа + МКТУ + заявки",
+          "Список форм до поиска",
+          "Четыре слоя, не один URL"
+        ]
+      },
+      "side_checklist": ["кириллица", "латиница", "ники"],
+      "conclusion": {
+        "box_lines": ["домен", "не ТЗ"],
+        "highlight_word": "не ТЗ",
+        "chip": "п. 6 ст. 1483"
+      },
+      "alt": "Сравнение ошибки «свободный whois» и правильной проверки бренда в реестре Роспатента и четырёх слоях онлайн",
+      "figcaption": "Свободный .ru не доказывает свободу знака; соберите варианты написания и пройдите реестр до логотипа и сайта."
+    },
+    {
+      "slot": "inline_2",
+      "template": "process",
+      "headline": "Поисковая платформа Роспатента",
+      "chips": [
+        {"icon": "globe", "text": "11.12.2023"},
+        {"icon": "layers", "text": "МКТУ"},
+        {"icon": "shield", "text": "заявка"}
+      ],
+      "sticky": {"text": "бесплатно 24/7", "color": "yellow"},
+      "steps": [
+        {
+          "title": "Варианты",
+          "subtitle": "из списка имён",
+          "chip": "текст",
+          "variant": "icon"
+        },
+        {
+          "title": "Классы",
+          "subtitle": "нужные МКТУ",
+          "chip": "35 / 25",
+          "variant": "lines"
+        },
+        {
+          "title": "Карточки",
+          "subtitle": "действует + заявка",
+          "chip": "номер",
+          "variant": "toggles"
+        },
+        {
+          "title": "Скрин",
+          "subtitle": "дата и URL",
+          "chip": "доказ.",
+          "variant": "checklist"
+        }
+      ],
+      "conclusion": {
+        "box_lines": ["заявки", "тоже риск"],
+        "highlight_word": "заявки",
+        "chip": "searchplatform"
+      },
+      "alt": "Шаги поиска названия в бесплатной Поисковой платформе Роспатента с классами МКТУ и фиксацией заявок",
+      "figcaption": "С 11.12.2023 текстовый поиск на платформе круглосуточный; отмечайте и действующие ТЗ, и чужие заявки в ваших классах."
+    },
+    {
+      "slot": "inline_3",
+      "template": "checklist",
+      "headline": "ФИПС: номер, не маска",
+      "chips": [
+        {"icon": "doc", "text": "ФИПС"},
+        {"icon": "warning", "text": "без *?"},
+        {"icon": "shield", "text": "статус"}
+      ],
+      "sticky": {"text": "только точный №", "color": "yellow"},
+      "checklist_title": "После платформы",
+      "checklist_rows": [
+        {"text": "скопировать № свидетельства", "icon": "doc"},
+        {"text": "реестр ТЗ на ФИПС", "icon": "globe"},
+        {"text": "сверить МКТУ и статус", "icon": "shield"},
+        {"text": "скрин с датой и URL", "icon": "layers"}
+      ],
+      "conclusion": {
+        "box_lines": ["номер", "из карточки"],
+        "highlight_word": "номер",
+        "chip": "registers-web"
+      },
+      "alt": "Чек-лист сверки номера товарного знака в открытых реестрах ФИПС без масок подстановки",
+      "figcaption": "В registers-web ищут по номеру с платформы; символы *, ?, >, <, - в запросе не работают."
+    }
+  ]
+}

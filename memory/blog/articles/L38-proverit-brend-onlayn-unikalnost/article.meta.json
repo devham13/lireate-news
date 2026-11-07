@@ -43,6 +43,31 @@
     "description_aeo": "Чтобы проверить бренд онлайн, пройдите searchplatform.rospatent.gov.ru, egrul.nalog.ru, whois и ручной обход соцсетей; реестры не взаимозаменяемы."
   },
   "cover_family": "lireate_collage_v1",
+  "cover_headline": "ДОМЕН СВОБОДЕН? ПРОВЕРЬТЕ ЧЕТЫРЕ СЛОЯ ОНЛАЙН",
+  "cover_highlight": "ОНЛАЙН",
+  "cover_sticky": "домен ≠ товарный знак",
+  "cover_sticky_underline": "знак",
+  "cover_label_chips": [
+    [
+      "ФИПС",
+      "black"
+    ],
+    [
+      "ЕГРЮЛ",
+      "white"
+    ],
+    [
+      "whois",
+      "pink"
+    ]
+  ],
+  "cover_ui_title": "Онлайн-след бренда",
+  "cover_ui_rows": [
+    "Платформа ТЗ",
+    "Домен .ru / .рф",
+    "Ники в соцсетях"
+  ],
   "cover_scene_hint": "вкладки ФИПС, whois, соцсети в браузере",
-  "cover_style": "collage-v1"
+  "cover_style": "collage-v1",
+  "cover_renderer": "html_chromium"
 }
