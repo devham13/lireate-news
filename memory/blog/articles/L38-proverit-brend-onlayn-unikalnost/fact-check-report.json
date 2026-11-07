@@ -1,0 +1,45 @@
+{
+  "article": "memory/blog/articles/L38-proverit-brend-onlayn-unikalnost/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 5,
+  "verified_facts_count": 5,
+  "unverified_facts_count": 0,
+  "facts": [
+    {
+      "fact": "46 200 руб",
+      "kind": "price_or_currency",
+      "context": "я первого решения; платная предоценка на ФИПС (от 46 200 руб. за класс по тарифам ) - при жёлтой зоне. Для экс",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "Гайд для предпринимателя. Нормы сверены на 07.11.2026; это не индивидуальная юридическая консультация.",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2023",
+      "kind": "date_or_year",
+      "context": "бесплатной Поисковой платформе Роспатента С 11.12.2023 текстовый поиск по базе товарных знаков РФ идёт на",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "во, а не только побуквенное совпадение ( п. 6 ст. 1483 ГК РФ ). Проверьте название в бесплатной Поисковой",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "46 200",
+      "kind": "large_number",
+      "context": "я первого решения; платная предоценка на ФИПС (от 46 200 руб. за класс по тарифам ) - при жёлтой зоне. Для",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    }
+  ]
+}
