@@ -1,0 +1,31 @@
+{
+  "headline_lines": [
+    "ОТЧУЖДЕНИЕ ТОВАРНОГО ЗНАКА",
+    "15 000 ₽ РЕЕСТР"
+  ],
+  "highlight": "15 000 ₽",
+  "sticky_text": "право после записи в реестре",
+  "sticky_underline": "реестре",
+  "sticky_color": "yellow",
+  "badge_label": "ТЗ",
+  "label_chips": [
+    [
+      "1488",
+      "black"
+    ],
+    [
+      "3.11",
+      "white"
+    ],
+    [
+      "1234",
+      "pink"
+    ]
+  ],
+  "ui_card_title": "Договор + реестр",
+  "ui_card_rows": [
+    "Ст. 1234 п. 4",
+    "15 000 ₽",
+    "68 раб. дн."
+  ]
+}
