@@ -109,42 +109,36 @@
     {
       "slot": "inline_4",
       "template": "process",
-      "headline": "Ст. 1497: вилка",
+      "headline": "Ст. 1497",
       "chips": [
         {"icon": "doc", "text": "1497"},
         {"icon": "shield", "text": "приоритет"},
         {"icon": "layers", "text": "форма"}
       ],
-      "sticky": {"text": "существенное = новая заявка", "color": "pink"},
+      "sticky": {"text": "новая заявка", "color": "pink"},
       "steps": [
         {
           "title": "Сравнить",
-          "subtitle": "старый и новый",
-          "chip": "макет",
+          "subtitle": "макеты",
+          "chip": "PDF",
           "variant": "icon"
         },
         {
           "title": "Косметика",
-          "subtitle": "линии, мелкий текст",
+          "subtitle": "штрихи",
           "chip": "форма",
           "variant": "lines"
         },
         {
           "title": "Доминанта",
-          "subtitle": "смена слова/символа",
+          "subtitle": "смена знака",
           "chip": "новая",
           "variant": "toggles"
-        },
-        {
-          "title": "Подать",
-          "subtitle": "уточнение или №2",
-          "chip": "заявка",
-          "variant": "checklist"
         }
       ],
       "conclusion": {
-        "box_lines": ["существенное", "новая заявка"],
-        "highlight_word": "существенное",
+        "box_lines": ["1497", "вилка"],
+        "highlight_word": "вилка",
         "chip": "ГАРАНТ"
       },
       "alt": "Вилка ст. 1497: незначительные изменения логотипа в заявке против подачи новой заявки при смене доминирующего элемента",
