@@ -1,0 +1,94 @@
+{
+  "article": "memory/blog/articles/L41-otchuzhdenie-tovarnogo-znaka-dogovor-reestr/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 12,
+  "verified_facts_count": 2,
+  "unverified_facts_count": 10,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "сделки по долям. Нормы и пошлины сверены на 09.11.2026; материал не заменяет индивидуальную юридическую",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "10 лет",
+      "kind": "metric_or_duration",
+      "context": "указан старый правообладатель. Срок действия ТЗ (10 лет) не обнуляется из-за отчуждения; продление по ст.",
+      "verified": true,
+      "reason": "Numerical value '10' matched in fact-bank context"
+    },
+    {
+      "fact": "1234",
+      "kind": "large_number",
+      "context": "когда покупатель станет правообладателем. По ст. 1234 п. 4 ГК РФ право переходит только после госрегистр",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "15 000",
+      "kind": "large_number",
+      "context": "- проверка знака, сравнение с лицензией, пошлина 15 000 ₽ по п. 3.11, подача заявления и сроки до 45 рабо",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1488",
+      "kind": "large_number",
+      "context": "лючительного права на зарегистрированный ТЗ ( ст. 1488 ) в письменном договоре ( ст. 1490 ). Без записи",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1490",
+      "kind": "large_number",
+      "context": "анный ТЗ ( ст. 1488 ) в письменном договоре ( ст. 1490 ). Без записи в реестре переход несостоялся ( ст.",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1232",
+      "kind": "large_number",
+      "context": "). Без записи в реестре переход несостоялся ( ст. 1232 п. 6 ). Пошлина п. 3.11 : 15 000 ₽ + 13 000 ₽ за к",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "13 000",
+      "kind": "large_number",
+      "context": "я ( ст. 1232 п. 6 ). Пошлина п. 3.11 : 15 000 ₽ + 13 000 ₽ за каждый доп. ТЗ; срок услуги - до 68 раб. дн.",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "3 000",
+      "kind": "large_number",
+      "context": "иказ № 371). Это не лицензия и не смена адреса за 3 000 ₽. Для продавца и покупателя бренда: ИП, ООО, уча",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1489",
+      "kind": "large_number",
+      "context": "аком на срок без смены владельца - лицензия ( ст. 1489 ), для неё другой договор и та же линия регистрац",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1492",
+      "kind": "large_number",
+      "context": "может быть юрлицом, ИП или иным субъектом из ст. 1492 . Делайте: запросить у продавца копии договоров с",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1481",
+      "kind": "large_number",
+      "context": "не обнуляется из-за отчуждения; продление по ст. 1481 считается от даты первоначальной регистрации. Наст",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
