@@ -12,6 +12,7 @@ verdict: PASS
 | Скрипт | Verdict |
 |--------|---------|
 | lireate_collage_publish_gate.py | PASS |
+| hosting inline-04 | см. cover/hosting-deploy.md — gap в lireate_hosting_images.py (слоты 01–03) |
 | excalibur_blog_html_linter.py | PASS |
 | excalibur_blog_link_verify.py | PASS |
 | excalibur_blog_slop_detector.py | WARNING (6 long sentences) |

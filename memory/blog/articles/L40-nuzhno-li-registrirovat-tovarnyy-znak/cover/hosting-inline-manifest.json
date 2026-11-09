@@ -1,0 +1,32 @@
+{
+  "seo_url": "nuzhno-li-registrirovat-tovarnyy-znak",
+  "docroot_pattern": "/images/{seo_url}_inline_{nn}.jpg",
+  "slots": [
+    {
+      "slot": "inline_1",
+      "local": "cover/inline-01.png",
+      "remote": "/images/nuzhno-li-registrirovat-tovarnyy-znak_inline_01.jpg",
+      "in_lireate_hosting_images_py": true
+    },
+    {
+      "slot": "inline_2",
+      "local": "cover/inline-02.png",
+      "remote": "/images/nuzhno-li-registrirovat-tovarnyy-znak_inline_02.jpg",
+      "in_lireate_hosting_images_py": true
+    },
+    {
+      "slot": "inline_3",
+      "local": "cover/inline-03.png",
+      "remote": "/images/nuzhno-li-registrirovat-tovarnyy-znak_inline_03.jpg",
+      "in_lireate_hosting_images_py": true
+    },
+    {
+      "slot": "inline_4",
+      "local": "cover/inline-04.png",
+      "remote": "/images/nuzhno-li-registrirovat-tovarnyy-znak_inline_04.jpg",
+      "in_lireate_hosting_images_py": false,
+      "publish_gap": "scripts/lireate_hosting_images.py _HOSTING_INLINE_FILES (also lireate_publish_bundle.py build_image_map)"
+    }
+  ],
+  "sftp_bundle": "cover/hosting-sftp/"
+}
