@@ -1,13 +1,13 @@
 {
-  "site_base": "https://lireate.ru",
-  "total_articles": 45,
+  "site_base": "https://example.com",
+  "total_articles": 46,
   "opportunities_found": 1,
   "suggestions": [
     {
-      "source": "L40-nuzhno-li-registrirovat-tovarnyy-znak",
+      "source": "L41-otchuzhdenie-tovarnogo-znaka-dogovor-reestr",
       "target": "L06-kak-opredelit-klass-mktu",
       "keyword": "классы мкту",
-      "context": "ры и услуги, для которых имя реально используется - будущие классы МКТУ.</li>   <li>Отметьте, где имя уже «светится»: сайт, соцсети",
+      "context": "оверьте номер регистрации, дату окончания 10-летнего срока, классы МКТУ, зарегистрированные лицензии и запись о залоге. Покупатель",
       "link_replacement": "<a href=\"/blog/kak-opredelit-klass-mktu/\">классы МКТУ</a>"
     }
   ]
