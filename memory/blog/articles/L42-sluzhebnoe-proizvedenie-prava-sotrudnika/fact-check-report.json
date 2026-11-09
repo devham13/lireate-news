@@ -1,0 +1,66 @@
+{
+  "article": "memory/blog/articles/L42-sluzhebnoe-proizvedenie-prava-sotrudnika/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 8,
+  "verified_facts_count": 2,
+  "unverified_facts_count": 6,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "теля маркетинга на Лирейт. Нормы сверены на 09.11.2026; это не индивидуальная юридическая консультация.",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "3 лет",
+      "kind": "metric_or_duration",
+      "context": "предоставления в распоряжение Спор о старте срока 3 лет Делайте: в акте перечислить файлы. Не делайте: пр",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "30 месяцев",
+      "kind": "metric_or_duration",
+      "context": "ПП ВС № 10 ). Делайте: напоминание в календаре за 30 месяцев. Не делайте: держать макет \"в столе\" без тайны. З",
+      "verified": true,
+      "reason": "Numerical value '30' matched in fact-bank context"
+    },
+    {
+      "fact": "1295",
+      "kind": "large_number",
+      "context": "мках трудовых обязанностей , чаще срабатывает ст. 1295 ГК РФ : исключительное право у работодателя, но то",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1288",
+      "kind": "large_number",
+      "context": "вните режим штатника (ст. 1295) и подрядчика (ст. 1288) Ситуация Норма ГК РФ Исключительное право по умо",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1234",
+      "kind": "large_number",
+      "context": "приёма Фрилансер, самозанятый, ИП ст. 1288 , ст. 1234 Автор, пока нет отчуждения Авторский заказ, акт, п",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "105",
+      "kind": "large_number",
+      "context": "пуска. Отсчёт - от сдачи макета, не от найма ( п. 105 ПП ВС № 10 ). Делайте: напоминание в календаре за",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1255",
+      "kind": "large_number",
+      "context": "редакция Лирейт. Достоверность данных: нормы ст. 1255, 1295 ГК РФ сверены с публикациями КонсультантПлю",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
