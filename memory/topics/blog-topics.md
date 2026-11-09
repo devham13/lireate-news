@@ -1057,7 +1057,7 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L42 — Служебное произведение сотрудника: права на дизайн и контент
 
-- **status:** new
+- **status:** written
 - **priority:** P2
 - **site:** lireate
 - **lireate_category_id:** 17
