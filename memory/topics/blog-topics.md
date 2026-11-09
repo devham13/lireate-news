@@ -994,7 +994,7 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L39 — Доработка логотипа перед регистрацией товарного знака
 
-- **status:** new
+- **status:** written
 - **priority:** P1
 - **site:** lireate
 - **lireate_category_id:** 10
