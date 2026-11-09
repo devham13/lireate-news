@@ -1,0 +1,504 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-09",
+    "today_ru": "09.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "понедельник",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-11",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-09 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L41",
+    "priority": "P2",
+    "slug": "otchuzhdenie-tovarnogo-znaka-dogovor-reestr",
+    "h1": "Как передать товарный знак по договору отчуждения: порядок, сроки и регистрация в Роспатенте",
+    "primary_query": "договор отчуждения товарного знака",
+    "secondary_queries": [
+      "продажа товарного знака",
+      "передача прав на бренд",
+      "регистрация отчуждения в роспатенте",
+      "смена правообладателя товарного знака"
+    ],
+    "search_intent": "workflow",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "договор отчуждения товарного знака 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Договор отчуждения товарного знака: как передать права на бренд и ...",
+          "url": "https://www.klerk.ru/blogs/roskom24/696720/",
+          "snippet": ""
+        },
+        {
+          "title": "Договор отчуждения товарного знака",
+          "url": "https://vitvet.com/articles/tovarnyj-znak/dogovory/dogovor-otchuzhdeniya/",
+          "snippet": "Разбираем, как работает договор отчуждения товарного знака, когда он нужен, что обязательно указать в договоре, какие документы подаются в Роспатент и какие ошибки чаще всего мешают ..."
+        },
+        {
+          "title": "Договор отчуждения товарного знака - образец, пример составления ...",
+          "url": "https://www.pravovik24.ru/documents/dogovory/dogovor-avtorskikh-prav/dogovor-otchuzhdeniya-tovarnogo-znaka/",
+          "snippet": "Договор отчуждения исключительного права на товарный знак - это соглашение, по которому правообладатель передаёт покупателю все права на обозначение в полном объёме и навсегда (статья 1488 Гражданского кодекса Российской Федерации)."
+        },
+        {
+          "title": "Договор отчуждения товарного знака: как оформить | IPbot",
+          "url": "https://ipbot.ru/articles/dogovor-otchuzhdeniya-tz/",
+          "snippet": "📄 Договор отчуждения товарного знака образец бланка и пример составления. 📥 Скачайте шаблон бесплатно. Нужен документ? Закажите бесплатную консультацию юриста!"
+        },
+        {
+          "title": "Отчуждение товарного знака \\ 2026-2025-2024 год \\ Акты, образцы, формы ...",
+          "url": "https://www.consultant.ru/law/podborki/otchuzhdenie_tovarnogo_znaka/",
+          "snippet": "Как оформить договор отчуждения исключительного права на товарный знак. Существенные условия, ограничения, регистрация в Роспатенте, пошлины и налоги."
+        },
+        {
+          "title": "Регистрация отчуждения права на товарный знак \\ 2026-2025-2024 год ...",
+          "url": "https://www.consultant.ru/law/podborki/registraciya_otchuzhdeniya_prava_na_tovarnyj_znak/",
+          "snippet": "Форма: Договор об отчуждении исключительного права на товарный знак (образец заполнения) (Подготовлен для системы КонсультантПлюс, 2026)"
+        }
+      ],
+      "searched_at": "2026-11-09"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "договор отчуждения товарного знака ноябрь 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Договор отчуждения товарного знака с регистрацией в Роспатенте",
+          "url": "https://zhelezno.com/uslugi/otchuzhdenie-prav-na-tovarnyj-znak",
+          "snippet": ""
+        },
+        {
+          "title": "Договор отчуждения товарного знака - образец, пример составления ...",
+          "url": "https://www.pravovik24.ru/documents/dogovory/dogovor-avtorskikh-prav/dogovor-otchuzhdeniya-tovarnogo-znaka/",
+          "snippet": "Какова процедура передачи прав на товарный знак? Чтобы договор продажи товарного знака вошёл в силу, его регистрируют в патентном ведомстве с внесением записи в Госреестр товарных знаков."
+        },
+        {
+          "title": "Отчуждение товарного знака: договор и Роспатент",
+          "url": "https://nevskylaw.ru/knowledge/otchuzhdenie-tovarnogo-znaka-registraciya-i-poshliny-v-rospatente/",
+          "snippet": "📄 Договор отчуждения товарного знака образец бланка и пример составления. 📥 Скачайте шаблон бесплатно. Нужен документ? Закажите бесплатную консультацию юриста!"
+        },
+        {
+          "title": "Договор отчуждения товарного знака: как передать права на бренд и ...",
+          "url": "https://www.klerk.ru/blogs/roskom24/696720/",
+          "snippet": "Как проверить товарный знак, составить договор отчуждения, подать документы в Роспатент, рассчитать пошлину и определить момент перехода права."
+        },
+        {
+          "title": "Договор отчуждения товарного знака: как оформить | IPbot",
+          "url": "https://ipbot.ru/articles/dogovor-otchuzhdeniya-tz/",
+          "snippet": "Разбираем, как работает договор отчуждения товарного знака, когда он нужен, что обязательно указать в договоре, какие документы подаются в Роспатент и какие ошибки чаще всего мешают ..."
+        },
+        {
+          "title": "Договор отчуждения товарного знака",
+          "url": "https://vitvet.com/articles/tovarnyj-znak/dogovory/dogovor-otchuzhdeniya/",
+          "snippet": "Как оформить договор отчуждения исключительного права на товарный знак. Существенные условия, ограничения, регистрация в Роспатенте, пошлины и налоги."
+        }
+      ],
+      "searched_at": "2026-11-09"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "договор отчуждения товарного знака новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Договор отчуждения товарного знака: как передать права на бренд и ...",
+          "url": "https://www.klerk.ru/blogs/roskom24/696720/",
+          "snippet": ""
+        },
+        {
+          "title": "Договор отчуждения товарного знака",
+          "url": "https://vitvet.com/articles/tovarnyj-znak/dogovory/dogovor-otchuzhdeniya/",
+          "snippet": "Разбираем, как работает договор отчуждения товарного знака, когда он нужен, что обязательно указать в договоре, какие документы подаются в Роспатент и какие ошибки чаще всего мешают ..."
+        },
+        {
+          "title": "Передача прав на товарный знак — договор отчуждения и лицензия",
+          "url": "https://vitvet.com/articles/intellekt/tovarnye_znaki/peredacha_prav_na_tovarnyi_znak/",
+          "snippet": "По состоянию на май 2026 года переход права вступает в силу только после государственной регистрации договора в Роспатенте - без этой записи сделка юридически не состоялась."
+        },
+        {
+          "title": "Договор отчуждения товарного знака: как оформить | IPbot",
+          "url": "https://ipbot.ru/articles/dogovor-otchuzhdeniya-tz/",
+          "snippet": "Два способа передачи ТЗ: полное отчуждение и лицензионный договор. Отличия, налоги, процедура регистрации в Роспатенте."
+        },
+        {
+          "title": "Отчуждение товарного знака: договор и Роспатент",
+          "url": "https://nevskylaw.ru/knowledge/otchuzhdenie-tovarnogo-znaka-registraciya-i-poshliny-v-rospatente/",
+          "snippet": "Как оформить договор отчуждения исключительного права на товарный знак. Существенные условия, ограничения, регистрация в Роспатенте, пошлины и налоги."
+        },
+        {
+          "title": "Передача товарного знака: отчуждение и регистрация в Роспатенте в 2026",
+          "url": "https://aleflegal.ru/%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8/12-otchuzhdenie-tovarnogo-znaka-rospatent.html",
+          "snippet": "Как проверить товарный знак, составить договор отчуждения, подать документы в Роспатент, рассчитать пошлину и определить момент перехода права."
+        }
+      ],
+      "searched_at": "2026-11-09"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "продажа товарного знака 2026",
+      "purpose": "вторичный запрос: продажа товарного знака",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как Продать Товарный Знак В 2026: Пошаговая Инструкция И Пошлины | Gpg",
+          "url": "https://gpg.ru/magazine/trademark/kak-prodat-tovarnyy-znak-poshagovoe-rukovodstvo-dlya-pravoobladatelya.html",
+          "snippet": ""
+        },
+        {
+          "title": "Регистрация товарного знака 2026: пошлины, сроки, отказы",
+          "url": "https://wcr-consulting.com/blog/2026/07/20/registraciya-tovarnogo-znaka/",
+          "snippet": "Пошаговое руководство по продаже товарного знака в 2026 году: как составить договор об отчуждении, зарегистрировать в Роспатенте, сколько стоят пошлины и что делать при отказе."
+        },
+        {
+          "title": "Продление товарного знака в 2026 году: сроки, госпошлины и как не ...",
+          "url": "https://www.klerk.ru/blogs/patent24/685945/",
+          "snippet": "Как зарегистрировать товарный знак в Роспатенте в 2026 году: актуальные пошлины после реформы, сроки, кто может подать заявку и за что отказывают."
+        },
+        {
+          "title": "Регистрация товарного знака в 2026 году: цена, сроки, пошаговая ...",
+          "url": "https://regtz.ru/registratsiya-tovarnogo-znaka-2026/",
+          "snippet": "Продление товарного знака в 2026 году: сроки, госпошлины и как не потерять права В России исключительное право на товарный знак действует 10 лет с даты подачи заявки."
+        },
+        {
+          "title": "Продать товарный знак: пошаговая инструкция",
+          "url": "https://www.znakoved.ru/articles/prodat_tovarnyj_znak_poshagovaya_instrukciya/",
+          "snippet": "2026 год — переходный для регистрации товарных знаков в России. С 4 октября 2025 года вступила в силу новая разбивка пошлин Роспатента, с 1 января 2026 — 13-я редакция МКТУ. Заявки, поданные по старым правилам, дорабатываются; новые подаются уже с учётом изменений."
+        },
+        {
+          "title": "Изменения по товарным знакам и ИС в 2026-2027: пошлины, штрафы, ИИ | Qbrand",
+          "url": "https://qbrand.ru/blog/izmeneniya-tovarnyj-znak-2026-2027/",
+          "snippet": "Содержание: Условия продажи товарного знака. Алгоритм продажи товарного знака. Проконсультируйтесь у юристов. Назначьте цену на товарный знак. Детальная проработка процедуры продажи."
+        }
+      ],
+      "searched_at": "2026-11-09"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "передача прав на бренд 2026",
+      "purpose": "вторичный запрос: передача прав на бренд",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Договор отчуждения товарного знака: как передать права на бренд и ...",
+          "url": "https://www.klerk.ru/blogs/roskom24/696720/",
+          "snippet": ""
+        },
+        {
+          "title": "Передача прав на товарный знак: полный гайд 2026 года",
+          "url": "https://www.rinfin.ru/blog/peredacha-prav-na-tovarnyy-znak-chto-nuzhno-uchityvat/",
+          "snippet": "Разбираем, как работает договор отчуждения товарного знака, когда он нужен, что обязательно указать в договоре, какие документы подаются в Роспатент и какие ошибки чаще всего мешают зарегистрировать переход права."
+        },
+        {
+          "title": "Передача Товарного Знака: Договор И Регистрация | Wcr",
+          "url": "https://wcr-consulting.com/blog/2025/11/15/how-to-transfer-a-trademark-between-companies-or-partners/",
+          "snippet": "Это означает, что риск незаконного использования вашего бренда стал значительно выше, а значит, и правильное оформление передачи прав приобретает особую актуальность."
+        },
+        {
+          "title": "Как Продать Товарный Знак В 2026: Пошаговая Инструкция И Пошлины | Gpg",
+          "url": "https://gpg.ru/magazine/trademark/kak-prodat-tovarnyy-znak-poshagovoe-rukovodstvo-dlya-pravoobladatelya.html",
+          "snippet": "Передача товарного знака: как оформить договор, зарегистрировать переход прав и избежать рисков при продаже бизнеса или реорганизации."
+        },
+        {
+          "title": "Бренд 2026: Как оформить права и не потерять бизнес",
+          "url": "https://24h-yurspravka.ru/dogovory-svyazannye-s-tovarnym-znakom-razrabotka-i-liczenzirovanie-2026.html",
+          "snippet": "Пошаговое руководство по продаже товарного знака в 2026 году: как составить договор об отчуждении, зарегистрировать в Роспатенте, сколько стоят пошлины и что делать при отказе."
+        },
+        {
+          "title": "Передача прав на товарный знак 2026: отчуждение, лицензия, классы МКТУ",
+          "url": "https://ru.scribd.com/document/1070423265/%D0%9F%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B0-%D0%BF%D1%80%D0%B0%D0%B2-%D0%BD%D0%B0-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BD%D1%8B%D0%B9-%D0%B7%D0%BD%D0%B0%D0%BA-2026-%D0%BE%D1%82%D1%87%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BB%D0%B8%D1%86%D0%B5%D0%BD%D0%B7%D0%B8%D1%8F-%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D1%8B-%D0%9C%D0%9A%D0%A2%D0%A3",
+          "snippet": "В этой статье мы подробно разберем виды договоров, их структуру, важные нюансы заполнения и юридические последствия, опираясь на актуальное законодательство РФ (ГК РФ) и практику 2026 года․"
+        }
+      ],
+      "searched_at": "2026-11-09"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "регистрация отчуждения в роспатенте 2026",
+      "purpose": "вторичный запрос: регистрация отчуждения в роспатенте",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Регистрация отчуждения товарного знака в Роспатенте",
+          "url": "https://www.dvitex.ru/poleznoe/biznes/intellektualnaya-sobstvennost/registratsiya-otchuzhdeniya-tovarnogo-znaka-v-rospatente/",
+          "snippet": ""
+        },
+        {
+          "title": "Передача товарного знака: отчуждение и регистрация в Роспатенте в 2026",
+          "url": "https://aleflegal.ru/%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8/12-otchuzhdenie-tovarnogo-znaka-rospatent.html",
+          "snippet": "Ответ на вопрос читайте в статье. Юристы также разработали пошаговую инструкцию по регистрации отчуждения прав на товарный знак в Роспатенте."
+        },
+        {
+          "title": "Договор отчуждения товарного знака: как передать права на бренд и ...",
+          "url": "https://www.klerk.ru/blogs/roskom24/696720/",
+          "snippet": "Как передать товарный знак другому лицу: договор об отчуждении по ст. 1488 ГК РФ, обязательная регистрация перехода права в Роспатенте, порядок и частые ошибки."
+        },
+        {
+          "title": "Госпошлины и сроки регистрации отчуждения прав в Роспатенте",
+          "url": "https://vfs.consulting/ip/stoimost-registracii-dogovora-otchuzhdenija-prav/",
+          "snippet": "Разбираем, как работает договор отчуждения товарного знака, когда он нужен, что обязательно указать в договоре, какие документы подаются в Роспатент и какие ошибки чаще всего мешают ..."
+        },
+        {
+          "title": "Роспатент. Госуслуги",
+          "url": "https://rospatent.gov.ru/ru/stateservices",
+          "snippet": "Роспатент регистрирует переход исключительного права на товарный знак, патент, программу для ЭВМ или другой объект интеллектуальной собственности только на основании зарегистрированного договора отчуждения."
+        },
+        {
+          "title": "Регистрация отчуждения товарного знака в Роспатенте",
+          "url": "https://legalquest.ru/yuridicheskie-stati/registratsiya-otchuzhdeniya-tovarnogo-znaka-v-rospatente.html",
+          "snippet": "Госуслуги: регистрация объектов интеллектуальной собственности, ознакомление с документами заявки, регистрация распоряжения и перехода исключительного права и прочие услуги на сайте."
+        }
+      ],
+      "searched_at": "2026-11-09"
+    },
+    {
+      "query_id": "secondary_4",
+      "query": "смена правообладателя товарного знака 2026",
+      "purpose": "вторичный запрос: смена правообладателя товарного знака",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Внесение изменений в товарный знак: смена адреса и правообладателя ...",
+          "url": "https://astral.ru/aj/elem/kak-vnesti-izmeneniya-v-tovarnyy-znak-podrobnaya-poshagovaya-instruktsiya/",
+          "snippet": ""
+        },
+        {
+          "title": "Переоформление товарного знака — смена владельца",
+          "url": "https://vitvet.com/articles/intellekt/tovarnye_znaki/pereoformlenie_tovarnogo_znaka/",
+          "snippet": "Пошаговая инструкция, как внести изменения в товарный знак: смена адреса, наименования правообладателя, элементов. Образец заявления, актуальные размеры госпошлин, сроки."
+        },
+        {
+          "title": "Смена наименования правообладателя товарного знака \\ 2026-2025-2024 год ...",
+          "url": "https://www.consultant.ru/law/podborki/smena_naimenovaniya_pravoobladatelya_tovarnogo_znaka/",
+          "snippet": "Смена правообладателя происходит при продаже бизнеса, реорганизации компании, наследовании, разделе имущества супругов или в рамках лицензионных отношений. Без регистрации перехода права новый владелец не вправе защищать знак от нарушителей и распоряжаться им."
+        },
+        {
+          "title": "Внесение изменений в реестр товарных знаков ФИПС в 2026 году",
+          "url": "https://www.dvitex.ru/poleznoe/biznes/intellektualnaya-sobstvennost/vnesenie-izmeneniy-v-reestr-tovarnykh-znakov-fips/",
+          "snippet": "Подборка наиболее важных документов по запросу Смена наименования правообладателя товарного знака (нормативно-правовые акты, формы, статьи, консультации экспертов и многое другое)."
+        },
+        {
+          "title": "Внесение изменений в государственные реестры товарных знаков",
+          "url": "https://rospatent.gov.ru/ru/stateservices/vnesenie-izmeneniy-v-gosudarstvennye-reestry-tovarnyh-znakov",
+          "snippet": "Юристы разработали пошаговую инструкцию по регистрации изменений в реестре товарных знаков в Роспатенте."
+        },
+        {
+          "title": "Изменение сведений о правообладателе товарного знака | Пошаговая инструкция",
+          "url": "https://prilan.ru/blog/trademark/smena-vladeltsa-tovarnogo-znaka-kak-ne-poteryat-brend-pri-prodazhe-reorganizatsii-i-nasledstve/",
+          "snippet": "Внесение изменений в государственные реестры товарных знаков, географических указаний, наименований мест происхождения товаров, Перечень общеизвестных ТЗ, а также в свидетельства."
+        }
+      ],
+      "searched_at": "2026-11-09"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как передать товарный знак по договору отчуждения: порядок, сроки и регистрация в Роспатенте 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Отчуждение товарного знака: договор и Роспатент",
+          "url": "https://nevskylaw.ru/knowledge/otchuzhdenie-tovarnogo-znaka-registraciya-i-poshliny-v-rospatente/",
+          "snippet": ""
+        },
+        {
+          "title": "Договор отчуждения товарного знака: как передать права на бренд и ...",
+          "url": "https://www.klerk.ru/blogs/roskom24/696720/",
+          "snippet": "До подписания проверьте знак, правообладателя, срок охраны, перечень товаров и услуг, лицензии, залоги и споры. В договоре точно идентифицируйте регистрацию, объём передачи, цену или способ её определения, порядок расчётов, заверения и обязанности сторон при регистрации."
+        },
+        {
+          "title": "Передача товарного знака: отчуждение и регистрация в Роспатенте в 2026",
+          "url": "https://aleflegal.ru/%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8/12-otchuzhdenie-tovarnogo-znaka-rospatent.html",
+          "snippet": "Разбираем, как работает договор отчуждения товарного знака, когда он нужен, что обязательно указать в договоре, какие документы подаются в Роспатент и какие ошибки чаще всего мешают ..."
+        },
+        {
+          "title": "Договор отчуждения товарного знака: как оформить | IPbot",
+          "url": "https://ipbot.ru/articles/dogovor-otchuzhdeniya-tz/",
+          "snippet": "Как передать товарный знак другому лицу: договор об отчуждении по ст. 1488 ГК РФ, обязательная регистрация перехода права в Роспатенте, порядок и частые ошибки."
+        },
+        {
+          "title": "Государственная регистрация распоряжения по договору",
+          "url": "https://rospatent.gov.ru/ru/stateservices/gosudarstvennaya-registraciya-rasporyazheniya-po-dogovoru",
+          "snippet": "Как оформить договор отчуждения исключительного права на товарный знак. Существенные условия, ограничения, регистрация в Роспатенте, пошлины и налоги. Договор отчуждения исключительного права на товарный знак — это полная передача права от одного лица другому (ст. 1488 ГК РФ)."
+        },
+        {
+          "title": "Как Продать Товарный Знак В 2026: Пошаговая Инструкция И Пошлины | Gpg",
+          "url": "https://gpg.ru/magazine/trademark/kak-prodat-tovarnyy-znak-poshagovoe-rukovodstvo-dlya-pravoobladatelya.html",
+          "snippet": "Государственная регистрация распоряжения по договору исключительным правом на изобретение, полезную модель, промышленный образец, товарный знак, знак обслуживания ..."
+        }
+      ],
+      "searched_at": "2026-11-09"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://www.klerk.ru/blogs/roskom24/696720/",
+      "title": "Договор отчуждения товарного знака: как передать права на бренд и ...",
+      "from_query": "договор отчуждения товарного знака 2026"
+    },
+    {
+      "url": "https://vitvet.com/articles/tovarnyj-znak/dogovory/dogovor-otchuzhdeniya/",
+      "title": "Договор отчуждения товарного знака",
+      "from_query": "договор отчуждения товарного знака 2026"
+    },
+    {
+      "url": "https://www.pravovik24.ru/documents/dogovory/dogovor-avtorskikh-prav/dogovor-otchuzhdeniya-tovarnogo-znaka/",
+      "title": "Договор отчуждения товарного знака - образец, пример составления ...",
+      "from_query": "договор отчуждения товарного знака 2026"
+    },
+    {
+      "url": "https://ipbot.ru/articles/dogovor-otchuzhdeniya-tz/",
+      "title": "Договор отчуждения товарного знака: как оформить | IPbot",
+      "from_query": "договор отчуждения товарного знака 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/otchuzhdenie_tovarnogo_znaka/",
+      "title": "Отчуждение товарного знака \\ 2026-2025-2024 год \\ Акты, образцы, формы ...",
+      "from_query": "договор отчуждения товарного знака 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/registraciya_otchuzhdeniya_prava_na_tovarnyj_znak/",
+      "title": "Регистрация отчуждения права на товарный знак \\ 2026-2025-2024 год ...",
+      "from_query": "договор отчуждения товарного знака 2026"
+    },
+    {
+      "url": "https://zhelezno.com/uslugi/otchuzhdenie-prav-na-tovarnyj-znak",
+      "title": "Договор отчуждения товарного знака с регистрацией в Роспатенте",
+      "from_query": "договор отчуждения товарного знака ноябрь 2026"
+    },
+    {
+      "url": "https://nevskylaw.ru/knowledge/otchuzhdenie-tovarnogo-znaka-registraciya-i-poshliny-v-rospatente/",
+      "title": "Отчуждение товарного знака: договор и Роспатент",
+      "from_query": "договор отчуждения товарного знака ноябрь 2026"
+    },
+    {
+      "url": "https://vitvet.com/articles/intellekt/tovarnye_znaki/peredacha_prav_na_tovarnyi_znak/",
+      "title": "Передача прав на товарный знак — договор отчуждения и лицензия",
+      "from_query": "договор отчуждения товарного знака новости 2026"
+    },
+    {
+      "url": "https://aleflegal.ru/%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8/12-otchuzhdenie-tovarnogo-znaka-rospatent.html",
+      "title": "Передача товарного знака: отчуждение и регистрация в Роспатенте в 2026",
+      "from_query": "договор отчуждения товарного знака новости 2026"
+    },
+    {
+      "url": "https://gpg.ru/magazine/trademark/kak-prodat-tovarnyy-znak-poshagovoe-rukovodstvo-dlya-pravoobladatelya.html",
+      "title": "Как Продать Товарный Знак В 2026: Пошаговая Инструкция И Пошлины | Gpg",
+      "from_query": "продажа товарного знака 2026"
+    },
+    {
+      "url": "https://wcr-consulting.com/blog/2026/07/20/registraciya-tovarnogo-znaka/",
+      "title": "Регистрация товарного знака 2026: пошлины, сроки, отказы",
+      "from_query": "продажа товарного знака 2026"
+    },
+    {
+      "url": "https://www.klerk.ru/blogs/patent24/685945/",
+      "title": "Продление товарного знака в 2026 году: сроки, госпошлины и как не ...",
+      "from_query": "продажа товарного знака 2026"
+    },
+    {
+      "url": "https://regtz.ru/registratsiya-tovarnogo-znaka-2026/",
+      "title": "Регистрация товарного знака в 2026 году: цена, сроки, пошаговая ...",
+      "from_query": "продажа товарного знака 2026"
+    },
+    {
+      "url": "https://www.znakoved.ru/articles/prodat_tovarnyj_znak_poshagovaya_instrukciya/",
+      "title": "Продать товарный знак: пошаговая инструкция",
+      "from_query": "продажа товарного знака 2026"
+    },
+    {
+      "url": "https://qbrand.ru/blog/izmeneniya-tovarnyj-znak-2026-2027/",
+      "title": "Изменения по товарным знакам и ИС в 2026-2027: пошлины, штрафы, ИИ | Qbrand",
+      "from_query": "продажа товарного знака 2026"
+    },
+    {
+      "url": "https://www.rinfin.ru/blog/peredacha-prav-na-tovarnyy-znak-chto-nuzhno-uchityvat/",
+      "title": "Передача прав на товарный знак: полный гайд 2026 года",
+      "from_query": "передача прав на бренд 2026"
+    },
+    {
+      "url": "https://wcr-consulting.com/blog/2025/11/15/how-to-transfer-a-trademark-between-companies-or-partners/",
+      "title": "Передача Товарного Знака: Договор И Регистрация | Wcr",
+      "from_query": "передача прав на бренд 2026"
+    },
+    {
+      "url": "https://24h-yurspravka.ru/dogovory-svyazannye-s-tovarnym-znakom-razrabotka-i-liczenzirovanie-2026.html",
+      "title": "Бренд 2026: Как оформить права и не потерять бизнес",
+      "from_query": "передача прав на бренд 2026"
+    },
+    {
+      "url": "https://ru.scribd.com/document/1070423265/%D0%9F%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B0-%D0%BF%D1%80%D0%B0%D0%B2-%D0%BD%D0%B0-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BD%D1%8B%D0%B9-%D0%B7%D0%BD%D0%B0%D0%BA-2026-%D0%BE%D1%82%D1%87%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BB%D0%B8%D1%86%D0%B5%D0%BD%D0%B7%D0%B8%D1%8F-%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D1%8B-%D0%9C%D0%9A%D0%A2%D0%A3",
+      "title": "Передача прав на товарный знак 2026: отчуждение, лицензия, классы МКТУ",
+      "from_query": "передача прав на бренд 2026"
+    },
+    {
+      "url": "https://www.dvitex.ru/poleznoe/biznes/intellektualnaya-sobstvennost/registratsiya-otchuzhdeniya-tovarnogo-znaka-v-rospatente/",
+      "title": "Регистрация отчуждения товарного знака в Роспатенте",
+      "from_query": "регистрация отчуждения в роспатенте 2026"
+    },
+    {
+      "url": "https://vfs.consulting/ip/stoimost-registracii-dogovora-otchuzhdenija-prav/",
+      "title": "Госпошлины и сроки регистрации отчуждения прав в Роспатенте",
+      "from_query": "регистрация отчуждения в роспатенте 2026"
+    },
+    {
+      "url": "https://rospatent.gov.ru/ru/stateservices",
+      "title": "Роспатент. Госуслуги",
+      "from_query": "регистрация отчуждения в роспатенте 2026"
+    },
+    {
+      "url": "https://legalquest.ru/yuridicheskie-stati/registratsiya-otchuzhdeniya-tovarnogo-znaka-v-rospatente.html",
+      "title": "Регистрация отчуждения товарного знака в Роспатенте",
+      "from_query": "регистрация отчуждения в роспатенте 2026"
+    },
+    {
+      "url": "https://astral.ru/aj/elem/kak-vnesti-izmeneniya-v-tovarnyy-znak-podrobnaya-poshagovaya-instruktsiya/",
+      "title": "Внесение изменений в товарный знак: смена адреса и правообладателя ...",
+      "from_query": "смена правообладателя товарного знака 2026"
+    },
+    {
+      "url": "https://vitvet.com/articles/intellekt/tovarnye_znaki/pereoformlenie_tovarnogo_znaka/",
+      "title": "Переоформление товарного знака — смена владельца",
+      "from_query": "смена правообладателя товарного знака 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/smena_naimenovaniya_pravoobladatelya_tovarnogo_znaka/",
+      "title": "Смена наименования правообладателя товарного знака \\ 2026-2025-2024 год ...",
+      "from_query": "смена правообладателя товарного знака 2026"
+    },
+    {
+      "url": "https://www.dvitex.ru/poleznoe/biznes/intellektualnaya-sobstvennost/vnesenie-izmeneniy-v-reestr-tovarnykh-znakov-fips/",
+      "title": "Внесение изменений в реестр товарных знаков ФИПС в 2026 году",
+      "from_query": "смена правообладателя товарного знака 2026"
+    },
+    {
+      "url": "https://rospatent.gov.ru/ru/stateservices/vnesenie-izmeneniy-v-gosudarstvennye-reestry-tovarnyh-znakov",
+      "title": "Внесение изменений в государственные реестры товарных знаков",
+      "from_query": "смена правообладателя товарного знака 2026"
+    },
+    {
+      "url": "https://prilan.ru/blog/trademark/smena-vladeltsa-tovarnogo-znaka-kak-ne-poteryat-brend-pri-prodazhe-reorganizatsii-i-nasledstve/",
+      "title": "Изменение сведений о правообладателе товарного знака | Пошаговая инструкция",
+      "from_query": "смена правообладателя товарного знака 2026"
+    },
+    {
+      "url": "https://rospatent.gov.ru/ru/stateservices/gosudarstvennaya-registraciya-rasporyazheniya-po-dogovoru",
+      "title": "Государственная регистрация распоряжения по договору",
+      "from_query": "Как передать товарный знак по договору отчуждения: порядок, сроки и регистрация в Роспатенте 2026"
+    }
+  ]
+}

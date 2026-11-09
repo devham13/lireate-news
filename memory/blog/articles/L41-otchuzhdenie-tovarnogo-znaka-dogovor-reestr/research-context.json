@@ -1,0 +1,86 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-09",
+    "today_ru": "09.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "понедельник",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-11",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-09 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L41",
+    "priority": "P2",
+    "slug": "otchuzhdenie-tovarnogo-znaka-dogovor-reestr",
+    "h1": "Как передать товарный знак по договору отчуждения: порядок, сроки и регистрация в Роспатенте",
+    "primary_query": "договор отчуждения товарного знака",
+    "secondary_queries": [
+      "продажа товарного знака",
+      "передача прав на бренд",
+      "регистрация отчуждения в роспатенте",
+      "смена правообладателя товарного знака"
+    ],
+    "search_intent": "workflow",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "L41",
+    "status": "PASS",
+    "search_intent": "workflow",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "договор отчуждения товарного знака 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "договор отчуждения товарного знака ноябрь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "договор отчуждения товарного знака новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "продажа товарного знака 2026",
+      "purpose": "вторичный запрос: продажа товарного знака"
+    },
+    {
+      "id": "secondary_2",
+      "query": "передача прав на бренд 2026",
+      "purpose": "вторичный запрос: передача прав на бренд"
+    },
+    {
+      "id": "secondary_3",
+      "query": "регистрация отчуждения в роспатенте 2026",
+      "purpose": "вторичный запрос: регистрация отчуждения в роспатенте"
+    },
+    {
+      "id": "secondary_4",
+      "query": "смена правообладателя товарного знака 2026",
+      "purpose": "вторичный запрос: смена правообладателя товарного знака"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как передать товарный знак по договору отчуждения: порядок, сроки и регистрация в Роспатенте 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/L41-otchuzhdenie-tovarnogo-znaka-dogovor-reestr",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}

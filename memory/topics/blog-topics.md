@@ -1036,7 +1036,7 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L41 — Отчуждение товарного знака: договор и запись в реестре
 
-- **status:** new
+- **status:** written
 - **priority:** P2
 - **site:** lireate
 - **lireate_category_id:** 9

@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "style": "collage-v1",
+  "illustrations": [
+    {
+      "slot": "inline_1",
+      "template": "bad_good",
+      "headline": "Подпись ≠ владелец",
+      "chips": [
+        {"icon": "doc", "text": "1234"},
+        {"icon": "shield", "text": "1490"},
+        {"icon": "layers", "text": "отчуждение"}
+      ],
+      "sticky": {"text": "право после записи", "color": "pink"},
+      "bad": {
+        "header": "BAD",
+        "lines": [
+          "Сделка закрыта по подписи",
+          "Лицензия вместо отчуждения",
+          "Нет заявления в Роспатент"
+        ]
+      },
+      "good": {
+        "header": "GOOD",
+        "lines": [
+          "Письменный договор 1490",
+          "Ст. 1234 п. 4 — запись",
+          "Отдельный пункт в купле-продаже"
+        ]
+      },
+      "side_checklist": ["M&A", "ИП→ООО", "бренд"],
+      "conclusion": {
+        "box_lines": ["госрегистрация", "обязательна"],
+        "highlight_word": "госрегистрация",
+        "chip": "ст. 1234"
+      },
+      "alt": "Сравнение ошибки «достаточно подписи» и правильного договора отчуждения с регистрацией в реестре",
+      "figcaption": "Исключительное право переходит не в день подписания, а после записи распоряжения в реестре Роспатента."
+    },
+    {
+      "slot": "inline_2",
+      "template": "process",
+      "headline": "Три процедуры",
+      "chips": [
+        {"icon": "doc", "text": "1488"},
+        {"icon": "layers", "text": "1489"},
+        {"icon": "warning", "text": "2.18"}
+      ],
+      "sticky": {"text": "не путать 3.11", "color": "yellow"},
+      "steps": [
+        {"title": "Отчуждение", "subtitle": "новый владелец", "chip": "3.11", "variant": "icon"},
+        {"title": "Лицензия", "subtitle": "владелец прежний", "chip": "3.10", "variant": "lines"},
+        {"title": "Адрес", "subtitle": "тот же ТЗ", "chip": "3 000", "variant": "toggles"},
+        {"title": "Реестр", "subtitle": "online", "chip": "rospatent", "variant": "checklist"}
+      ],
+      "conclusion": {
+        "box_lines": ["15 000", "≠ 3 000"],
+        "highlight_word": "3 000",
+        "chip": "п. 2.18"
+      },
+      "alt": "Схема отличия отчуждения, лицензии и изменения сведений в реестре с разными пошлинами",
+      "figcaption": "Смена лица в реестре — только отчуждение и регистрация распоряжения, не заявка на изменение адреса."
+    },
+    {
+      "slot": "inline_3",
+      "template": "checklist",
+      "headline": "Риски 1488",
+      "chips": [
+        {"icon": "warning", "text": "п. 2"},
+        {"icon": "shield", "text": "залог"},
+        {"icon": "globe", "text": "реестр"}
+      ],
+      "sticky": {"text": "до договора", "color": "yellow"},
+      "checklist_title": "Проверка",
+      "checklist_rows": [
+        {"text": "залог без согласия кредитора", "icon": "shield"},
+        {"text": "введение в заблуждение п. 2", "icon": "warning"},
+        {"text": "лицензии и НМПТ в реестре", "icon": "doc"},
+        {"text": "классы МКТУ и срок 10 лет", "icon": "layers"}
+      ],
+      "conclusion": {
+        "box_lines": ["отказ", "возможен"],
+        "highlight_word": "отказ",
+        "chip": "ст. 1488"
+      },
+      "alt": "Чек-лист ограничений ст. 1488 и проверки реестра перед договором отчуждения",
+      "figcaption": "Перед сделкой сверьте запись о залоге, лицензиях и риск отказа по п. 2 ст. 1488."
+    }
+  ]
+}
