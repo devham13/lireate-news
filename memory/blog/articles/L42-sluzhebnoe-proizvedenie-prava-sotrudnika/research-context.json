@@ -1,0 +1,86 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-09",
+    "today_ru": "09.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "понедельник",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-11",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-09 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L42",
+    "priority": "P2",
+    "slug": "sluzhebnoe-proizvedenie-prava-sotrudnika",
+    "h1": "Служебное произведение по ГК РФ: как оформить права на логотип, тексты и дизайн от сотрудника",
+    "primary_query": "служебное произведение исключительные права работодатель",
+    "secondary_queries": [
+      "передача прав на логотип от сотрудника",
+      "авторские права в трудовом договоре",
+      "дизайн созданный дизайнером в штате",
+      "ст 1295 гк рф"
+    ],
+    "search_intent": "checklist",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "L42",
+    "status": "PASS",
+    "search_intent": "checklist",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "служебное произведение исключительные права работодатель 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "служебное произведение исключительные права работодатель ноябрь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "служебное произведение исключительные права работодатель новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "передача прав на логотип от сотрудника 2026",
+      "purpose": "вторичный запрос: передача прав на логотип от сотрудника"
+    },
+    {
+      "id": "secondary_2",
+      "query": "авторские права в трудовом договоре 2026",
+      "purpose": "вторичный запрос: авторские права в трудовом договоре"
+    },
+    {
+      "id": "secondary_3",
+      "query": "дизайн созданный дизайнером в штате 2026",
+      "purpose": "вторичный запрос: дизайн созданный дизайнером в штате"
+    },
+    {
+      "id": "secondary_4",
+      "query": "ст 1295 гк рф 2026",
+      "purpose": "вторичный запрос: ст 1295 гк рф"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Служебное произведение по ГК РФ: как оформить права на логотип, тексты и дизайн от сотрудника 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/L42-sluzhebnoe-proizvedenie-prava-sotrudnika",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}
