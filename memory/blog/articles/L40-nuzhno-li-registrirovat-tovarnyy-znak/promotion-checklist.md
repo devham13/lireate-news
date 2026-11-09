@@ -7,4 +7,4 @@ Live URL: https://lireate.ru/nuzhno-li-registrirovat-tovarnyy-znak
 
 - [ ] Live URL 200, обложка collage-v1
 - [ ] JSON-LD из schema.jsonld
-- [ ] Внутренние ссылки L30, L01
+- [ ] Внутренние ссылки на самостоятельную регистрацию и чек-лист реестров

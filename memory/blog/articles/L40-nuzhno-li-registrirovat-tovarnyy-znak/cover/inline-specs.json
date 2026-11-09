@@ -25,7 +25,7 @@
         "lines": [
           "Классы МКТУ + заявка 2.1/2.4",
           "Свидетельство 10 лет",
-          "L01 до пошлин"
+          "Проверка до пошлин"
         ]
       },
       "side_checklist": ["бренд", "юрлицо", "упаковка"],
@@ -50,7 +50,7 @@
       "steps": [
         {"title": "ЕГРЮЛ", "subtitle": "фирменное имя", "chip": "ООО", "variant": "icon"},
         {"title": "Упаковка", "subtitle": "имя товара", "chip": "бренд", "variant": "lines"},
-        {"title": "L01", "subtitle": "реестр ТЗ", "chip": "1483", "variant": "toggles"},
+        {"title": "Реестры", "subtitle": "проверка ТЗ", "chip": "1483", "variant": "toggles"},
         {"title": "Заявка", "subtitle": "от заявителя", "chip": "1492", "variant": "checklist"}
       ],
       "conclusion": {
@@ -97,7 +97,7 @@
       ],
       "sticky": {"text": "не ст. 1401", "color": "pink"},
       "steps": [
-        {"title": "L01", "subtitle": "базовая проверка", "chip": "бесплатно", "variant": "icon"},
+        {"title": "Реестры", "subtitle": "базовая проверка", "chip": "бесплатно", "variant": "icon"},
         {"title": "ФИПС", "subtitle": "заказ поиска", "chip": "прайс", "variant": "lines"},
         {"title": "Заявка", "subtitle": "с результатами", "chip": "online", "variant": "toggles"},
         {"title": "Решение", "subtitle": "1483 возможен", "chip": "отказ", "variant": "checklist"}
