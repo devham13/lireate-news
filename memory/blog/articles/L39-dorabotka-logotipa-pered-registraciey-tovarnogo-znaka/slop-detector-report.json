@@ -1,0 +1,18 @@
+{
+  "verdict": "pass",
+  "total_slop_hits": 0,
+  "slop_hits": [],
+  "total_over_long_sentences": 1,
+  "over_long_sentences": [
+    {
+      "sentence": "1) Оригинальный символ, асимметрия, фантазийная графика букв Смена оттенка у шаблонной иконки Описательный элемент Уменьшить долю, вынести в неохраняемую подпись, усилить охраняемый рисунок Переставить то же слово в другой угол Сходство до смешения (п",
+      "word_count": 33
+    }
+  ],
+  "readability": {
+    "score": 50.9,
+    "level": "Standard (Intellectual editorial/expert text)",
+    "avg_sentence_len": 8.5,
+    "avg_syllables_per_word": 2.4
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "source": "memory/blog/articles/L39-dorabotka-logotipa-pered-registraciey-tovarnogo-znaka/article.html",
+  "total_links": 15,
+  "failed_count": 0,
+  "privacy_policy_violations": [],
+  "verdict": "pass",
+  "links": [
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/2e83c7a3d54808ca80d8f0b2a034caa0f7122b57/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/61492e549b74454d23ef1957e8beb8e3097ce6b3/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/proverka_tovarnogo_znaka_pered_registraciey_chek_list_po_reestram_rospatenta",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/proverka_tovarnogo_znaka_pered_registraciey_chek_list_po_reestram_rospatenta"
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_345486/f62e2cc52916ff33a82a3c2c280fb78b8b355230/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_345486/87586f859a785b9270a2bdd9842e58e0a3faba6b/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/42114f8819a5a871c211331ca2b2d5ae1ebda818/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/otnositelnyie_osnovaniya_otkaza_v_registracii_tz_otvet_ekspertize",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/otnositelnyie_osnovaniya_otkaza_v_registracii_tz_otvet_ekspertize"
+    },
+    {
+      "url": "https://searchplatform.rospatent.gov.ru/trademarks",
+      "status": 200,
+      "ok": true,
+      "method": "GET",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_345486/d67449efd499426c198fee9bc8dbcc37f2a704d3/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/dogovor_na_razrabotku_logotipa_kak_poluchit_prava_ot_dizaynera",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/dogovor_na_razrabotku_logotipa_kak_poluchit_prava_ot_dizaynera"
+    },
+    {
+      "url": "https://online.rospatent.gov.ru/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/dorabotka_tovarnogo_znaka_kak_dorabotat_logotip_i_naimenovanie",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/dorabotka_tovarnogo_znaka_kak_dorabotat_logotip_i_naimenovanie"
+    },
+    {
+      "url": "https://base.garant.ru/57593045/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/reg-tz-main",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/reg-tz-main"
+    },
+    {
+      "url": "/news?num=2&category=10",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/news?num=2&category=10"
+    }
+  ]
+}
