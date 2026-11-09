@@ -1,0 +1,31 @@
+{
+  "headline_lines": [
+    "СЛУЖЕБНОЕ ПРОИЗВЕДЕНИЕ СТ",
+    "1295 ПРАВА РАБОТОДАТЕЛЬ"
+  ],
+  "highlight": "1295",
+  "sticky_text": "3 года на использование",
+  "sticky_underline": "3 года",
+  "sticky_color": "yellow",
+  "badge_label": "©",
+  "label_chips": [
+    [
+      "1295",
+      "black"
+    ],
+    [
+      "ТД",
+      "white"
+    ],
+    [
+      "акт",
+      "pink"
+    ]
+  ],
+  "ui_card_title": "Пакет HR",
+  "ui_card_rows": [
+    "должностка",
+    "задание",
+    "акт сдачи"
+  ]
+}

@@ -1,14 +1,6 @@
 {
   "site_base": "https://example.com",
-  "total_articles": 46,
-  "opportunities_found": 1,
-  "suggestions": [
-    {
-      "source": "L41-otchuzhdenie-tovarnogo-znaka-dogovor-reestr",
-      "target": "L06-kak-opredelit-klass-mktu",
-      "keyword": "классы мкту",
-      "context": "оверьте номер регистрации, дату окончания 10-летнего срока, классы МКТУ, зарегистрированные лицензии и запись о залоге. Покупатель",
-      "link_replacement": "<a href=\"/blog/kak-opredelit-klass-mktu/\">классы МКТУ</a>"
-    }
-  ]
+  "total_articles": 47,
+  "opportunities_found": 0,
+  "suggestions": []
 }
