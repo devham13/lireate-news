@@ -1,13 +1,13 @@
 {
-  "site_base": "https://example.com",
-  "total_articles": 44,
+  "site_base": "https://lireate.ru",
+  "total_articles": 45,
   "opportunities_found": 1,
   "suggestions": [
     {
-      "source": "L39-dorabotka-logotipa-pered-registraciey-tovarnogo-znaka",
+      "source": "L40-nuzhno-li-registrirovat-tovarnyy-znak",
       "target": "L06-kak-opredelit-klass-mktu",
       "keyword": "классы мкту",
-      "context": "доработки макета и чистого прохода L01 подготовьте заявку и классы МКТУ. Если нужно сопровождение экспертизы с патентными поверенны",
+      "context": "ры и услуги, для которых имя реально используется - будущие классы МКТУ.</li>   <li>Отметьте, где имя уже «светится»: сайт, соцсети",
       "link_replacement": "<a href=\"/blog/kak-opredelit-klass-mktu/\">классы МКТУ</a>"
     }
   ]

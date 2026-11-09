@@ -1,0 +1,170 @@
+{
+  "source": "memory/blog/articles/L40-nuzhno-li-registrirovat-tovarnyy-znak/article.html",
+  "total_links": 17,
+  "failed_count": 0,
+  "privacy_policy_violations": [],
+  "verdict": "pass",
+  "links": [
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/630108e4684aa4aacf1eaa63101d1ab76f26eca7/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/30f7a92f2b3a6dbdc47e64cbde0b28f0f8e88a23/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.gosuslugi.ru/life/details/registraciya_tovarnogo_znaka",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://lireate.ru/kak-zaregistrirovat-tovarnyy-znak-samostoyatelno-2026",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://lireate.ru/kak-zaregistrirovat-tovarnyy-znak-samostoyatelno-2026"
+    },
+    {
+      "url": "https://lireate.ru/proverka_tovarnogo_znaka_pered_registraciey_chek_list_po_reestram_rospatenta",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://lireate.ru/proverka_tovarnogo_znaka_pered_registraciey_chek_list_po_reestram_rospatenta"
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/42114f8819a5a871c211331ca2b2d5ae1ebda818/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/2e83c7a3d54808ca80d8f0b2a034caa0f7122b57/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/ba40f188a9dca425520a1e3a935f95845df06ca8/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://lireate.ru/chto_delat_esli_tovarnyy_znak_zanyat",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://lireate.ru/chto_delat_esli_tovarnyy_znak_zanyat"
+    },
+    {
+      "url": "https://lireate.ru/dorabotka-logotipa-pered-registraciey-tovarnogo-znaka",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://lireate.ru/dorabotka-logotipa-pered-registraciey-tovarnogo-znaka"
+    },
+    {
+      "url": "https://lireate.ru/otnositelnyie_osnovaniya_otkaza_v_registracii_tz_otvet_ekspertize",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://lireate.ru/otnositelnyie_osnovaniya_otkaza_v_registracii_tz_otvet_ekspertize"
+    },
+    {
+      "url": "https://pravo.ppt.ru/prikaz/rospatent/n-161-70915",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/61492e549b74454d23ef1957e8beb8e3097ce6b3/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/91dd8dc920d643d529df15c98ceec11d48404e8c/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://lireate.ru/reg-tz-main",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://lireate.ru/reg-tz-main"
+    },
+    {
+      "url": "https://lireate.ru/news?num=2&category=9",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://lireate.ru/news?num=2&category=9"
+    },
+    {
+      "url": "https://lireate.ru/osparivanie_tovarnogo_znaka_v_rospatente_kak_podat_vozrazhenie",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://lireate.ru/osparivanie_tovarnogo_znaka_v_rospatente_kak_podat_vozrazhenie"
+    }
+  ]
+}
