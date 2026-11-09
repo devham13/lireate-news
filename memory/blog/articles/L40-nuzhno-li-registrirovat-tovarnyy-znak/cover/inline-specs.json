@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "style": "collage-v1",
+  "illustrations": [
+    {
+      "slot": "inline_1",
+      "template": "bad_good",
+      "headline": "Вывеска ≠ ТЗ",
+      "chips": [
+        {"icon": "shield", "text": "1477"},
+        {"icon": "doc", "text": "ЕГРЮЛ"},
+        {"icon": "layers", "text": "МКТУ"}
+      ],
+      "sticky": {"text": "ИП не монополия", "color": "pink"},
+      "bad": {
+        "header": "BAD",
+        "lines": [
+          "Записали ООО — имя защищено",
+          "Вывеска без реестра Роспатента",
+          "TM на коробке до свидетельства"
+        ]
+      },
+      "good": {
+        "header": "GOOD",
+        "lines": [
+          "Классы МКТУ + заявка 2.1/2.4",
+          "Свидетельство 10 лет",
+          "L01 до пошлин"
+        ]
+      },
+      "side_checklist": ["бренд", "юрлицо", "упаковка"],
+      "conclusion": {
+        "box_lines": ["регистрация", "отдельно"],
+        "highlight_word": "отдельно",
+        "chip": "ст. 1481"
+      },
+      "alt": "Сравнение ошибки «достаточно вывески» и правильной регистрации товарного знака в Роспатенте",
+      "figcaption": "Название в ЕГРЮЛ и картинка на сайте не заменяют государственную регистрацию обозначения."
+    },
+    {
+      "slot": "inline_2",
+      "template": "process",
+      "headline": "Фирма и бренд",
+      "chips": [
+        {"icon": "doc", "text": "ЕГРЮЛ"},
+        {"icon": "globe", "text": "бренд"},
+        {"icon": "shield", "text": "ТЗ"}
+      ],
+      "sticky": {"text": "два слоя", "color": "yellow"},
+      "steps": [
+        {"title": "ЕГРЮЛ", "subtitle": "фирменное имя", "chip": "ООО", "variant": "icon"},
+        {"title": "Упаковка", "subtitle": "имя товара", "chip": "бренд", "variant": "lines"},
+        {"title": "L01", "subtitle": "реестр ТЗ", "chip": "1483", "variant": "toggles"},
+        {"title": "Заявка", "subtitle": "от заявителя", "chip": "1492", "variant": "checklist"}
+      ],
+      "conclusion": {
+        "box_lines": ["фирма", "≠ ТЗ"],
+        "highlight_word": "≠ ТЗ",
+        "chip": "п. 6 1483"
+      },
+      "alt": "Этапы от фирменного наименования в ЕГРЮЛ до отдельной заявки на товарный знак",
+      "figcaption": "Совпадение букв в выписке и на этикетке не означает одну правовую защиту."
+    },
+    {
+      "slot": "inline_3",
+      "template": "checklist",
+      "headline": "Латиница и кириллица",
+      "chips": [
+        {"icon": "globe", "text": "EN"},
+        {"icon": "doc", "text": "RU"},
+        {"icon": "warning", "text": "1483"}
+      ],
+      "sticky": {"text": "ищите оба", "color": "yellow"},
+      "checklist_title": "До заявки",
+      "checklist_rows": [
+        {"text": "поиск латиницы на платформе", "icon": "globe"},
+        {"text": "поиск кириллицы", "icon": "doc"},
+        {"text": "транслит и созвучия", "icon": "layers"},
+        {"text": "описательность на EN", "icon": "warning"}
+      ],
+      "conclusion": {
+        "box_lines": ["две", "заявки?"],
+        "highlight_word": "две",
+        "chip": "словесный"
+      },
+      "alt": "Чек-лист проверки товарного знака латиницей и кириллицей перед подачей",
+      "figcaption": "Английское написание и русское для экспертизы могут оказаться разными обозначениями."
+    },
+    {
+      "slot": "inline_4",
+      "template": "process",
+      "headline": "Ускорение ФИПС",
+      "chips": [
+        {"icon": "layers", "text": "поиск"},
+        {"icon": "shield", "text": "1499"},
+        {"icon": "doc", "text": "2.1+2.4"}
+      ],
+      "sticky": {"text": "не ст. 1401", "color": "pink"},
+      "steps": [
+        {"title": "L01", "subtitle": "базовая проверка", "chip": "бесплатно", "variant": "icon"},
+        {"title": "ФИПС", "subtitle": "заказ поиска", "chip": "прайс", "variant": "lines"},
+        {"title": "Заявка", "subtitle": "с результатами", "chip": "online", "variant": "toggles"},
+        {"title": "Решение", "subtitle": "1483 возможен", "chip": "отказ", "variant": "checklist"}
+      ],
+      "conclusion": {
+        "box_lines": ["быстрее", "≠ гарантия"],
+        "highlight_word": "гарантия",
+        "chip": "fips.ru"
+      },
+      "alt": "Схема ускоренного рассмотрения заявки на товарный знак через поиск ФИПС",
+      "figcaption": "Ускорение платит за поиск и сжатие срока экспертизы, но не отменяет абсолютные отказы по ст. 1483."
+    }
+  ]
+}

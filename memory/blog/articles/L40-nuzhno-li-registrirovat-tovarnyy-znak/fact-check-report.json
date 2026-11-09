@@ -1,0 +1,94 @@
+{
+  "article": "memory/blog/articles/L40-nuzhno-li-registrirovat-tovarnyy-znak/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 12,
+  "verified_facts_count": 4,
+  "unverified_facts_count": 8,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "ию бренда. Нормы ГК РФ и пошлины сверены на 09.11.2026; это не индивидуальная юридическая консультация и",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "18 месяцев",
+      "kind": "metric_or_duration",
+      "context": "тента; стандартный предельный срок услуги - около 18 месяцев и 2 недель ( карточка госуслуги ). Пошаговая пода",
+      "verified": true,
+      "reason": "Numerical value '18' matched in fact-bank context"
+    },
+    {
+      "fact": "2 недель",
+      "kind": "metric_or_duration",
+      "context": "ртный предельный срок услуги - около 18 месяцев и 2 недель ( карточка госуслуги ). Пошаговая подача - в L30",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 лет",
+      "kind": "metric_or_duration",
+      "context": "ка, две экспертизы по ст. 1499 и свидетельство на 10 лет ; основания отказа - ст. 1483 . Запишите, что име",
+      "verified": true,
+      "reason": "Numerical value '10' matched in fact-bank context"
+    },
+    {
+      "fact": "6 месяцев",
+      "kind": "metric_or_duration",
+      "context": "е время на ответы экспертизы: уведомление даёт до 6 месяцев на доводы ( п. 3 ст. 1499 ). После свидетельства",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1477",
+      "kind": "large_number",
+      "context": "имя в одних классах МКТУ после регистрации ( ст. 1477 , ст. 1481 ). Название в ЕГРЮЛ и вывеска сами по",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1481",
+      "kind": "large_number",
+      "context": "х классах МКТУ после регистрации ( ст. 1477 , ст. 1481 ). Название в ЕГРЮЛ и вывеска сами по себе это не",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1401",
+      "kind": "large_number",
+      "context": "бренд на латинице. Ускорение - не «скидка по ст. 1401 ГК РФ» (эта норма про секретные изобретения ), а п",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1499",
+      "kind": "large_number",
+      "context": "я ИП. Регистрация - заявка, две экспертизы по ст. 1499 и свидетельство на 10 лет ; основания отказа - ст.",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "свидетельство на 10 лет ; основания отказа - ст. 1483 . Запишите, что именно хотите охранить: только сл",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "1492",
+      "kind": "large_number",
+      "context": "будет заявителем: ИП, ООО или другое лицо из ст. 1492 . Делайте: думать о ТЗ как о «правах на имя в кон",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1497",
+      "kind": "large_number",
+      "context": "я в 2–3 месяца , если нет долгой переписки по ст. 1497 . Ст. 1401 к ТЗ не относится (секретные изобретен",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
