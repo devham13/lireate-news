@@ -27,6 +27,7 @@ SLOT_FILES = {
     "inline_1": "inline-01.png",
     "inline_2": "inline-02.png",
     "inline_3": "inline-03.png",
+    "inline_4": "inline-04.png",
 }
 
 GOOGLE_FONTS = (

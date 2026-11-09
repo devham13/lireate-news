@@ -1,0 +1,59 @@
+{
+  "article": "memory/blog/articles/L39-dorabotka-logotipa-pered-registraciey-tovarnogo-znaka/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 7,
+  "verified_facts_count": 4,
+  "unverified_facts_count": 3,
+  "facts": [
+    {
+      "fact": "46 200 руб",
+      "kind": "price_or_currency",
+      "context": "нцепция - чаще новая заявка. Предоценка ФИПС - от 46 200 руб. за класс (fips.ru) до полной пошлины. Сопоставьт",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "льца бренда и маркетолога. Нормы сверены на 09.11.2026; это не индивидуальная юридическая консультация.",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "6 месяцев",
+      "kind": "metric_or_duration",
+      "context": "овая подача (ст. 1497). После уведомления ответ - 6 месяцев с даты направления ( ст. 1499 ); см. L07 . Матери",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "истрацией товарного знака - правка макета под ст. 1483 ГК РФ и методику ФИПС, а не \"подкрутить цвет\". Ниж",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "1497",
+      "kind": "large_number",
+      "context": "что менять в файле, когда хватит уточнения по ст. 1497 , а когда нужна новая заявка. Вы пройдёте чек-лис",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1499",
+      "kind": "large_number",
+      "context": "мления ответ - 6 месяцев с даты направления ( ст. 1499 ); см. L07 . Материал для владельца бренда и марк",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "46 200",
+      "kind": "large_number",
+      "context": "нцепция - чаще новая заявка. Предоценка ФИПС - от 46 200 руб. за класс (fips.ru) до полной пошлины. Сопоста",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    }
+  ]
+}

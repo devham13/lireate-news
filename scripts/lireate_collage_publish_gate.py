@@ -97,9 +97,12 @@ def validate_collage_publish(article_dir, html=None, meta=None):
             errors.append("inline-specs need >= {0} illustrations".format(MIN_INLINE_FIGURES))
         for item in ill:
             slot = item.get("slot") or ""
-            fname = {"inline_1": "inline-01.png", "inline_2": "inline-02.png", "inline_3": "inline-03.png"}.get(
-                slot
-            )
+            fname = {
+                "inline_1": "inline-01.png",
+                "inline_2": "inline-02.png",
+                "inline_3": "inline-03.png",
+                "inline_4": "inline-04.png",
+            }.get(slot)
             if fname and not (article_dir / "cover" / fname).is_file():
                 errors.append("missing cover/{0} for slot {1}".format(fname, slot))
 

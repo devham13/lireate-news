@@ -1,27 +1,13 @@
 {
   "site_base": "https://example.com",
-  "total_articles": 43,
-  "opportunities_found": 3,
+  "total_articles": 44,
+  "opportunities_found": 1,
   "suggestions": [
     {
-      "source": "L38-proverit-brend-onlayn-unikalnost",
-      "target": "L34-kak-zapatentovat-nazvanie-i-logotip",
-      "keyword": "проверить бренд на уникальность онлайн",
-      "context": "ой товарный знак в том же классе или занятый ник в соцсети. Проверить бренд на уникальность онлайн можно за один вечер, если пройти четыре независимых слоя: р",
-      "link_replacement": "<a href=\"/blog/kak-zapatentovat-nazvanie-i-logotip/\">Проверить бренд на уникальность онлайн</a>"
-    },
-    {
-      "source": "L37-zashchita-dizayna-upakovki-marketpleysy",
+      "source": "L39-dorabotka-logotipa-pered-registraciey-tovarnogo-znaka",
       "target": "L06-kak-opredelit-klass-mktu",
       "keyword": "классы мкту",
-      "context": "td>       <td>Слово, лого, комбо на этикетке</td>       <td>Классы МКТУ и отсутствие смешения (<a href=\"/mktu\">гайд по классам</a>)",
-      "link_replacement": "<a href=\"/blog/kak-opredelit-klass-mktu/\">Классы МКТУ</a>"
-    },
-    {
-      "source": "L38-proverit-brend-onlayn-unikalnost",
-      "target": "L06-kak-opredelit-klass-mktu",
-      "keyword": "классы мкту",
-      "context": "тформа умеет искать по тексту, звучанию и смыслу; выбирайте классы МКТУ, в которых планируете продавать товары или оказывать услуги",
+      "context": "доработки макета и чистого прохода L01 подготовьте заявку и классы МКТУ. Если нужно сопровождение экспертизы с патентными поверенны",
       "link_replacement": "<a href=\"/blog/kak-opredelit-klass-mktu/\">классы МКТУ</a>"
     }
   ]
