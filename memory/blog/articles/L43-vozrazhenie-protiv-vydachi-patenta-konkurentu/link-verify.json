@@ -1,0 +1,144 @@
+{
+  "source": "memory/blog/articles/L43-vozrazhenie-protiv-vydachi-patenta-konkurentu/article.html",
+  "total_links": 15,
+  "failed_count": 0,
+  "privacy_policy_violations": [],
+  "verdict": "pass",
+  "links": [
+    {
+      "url": "/news?num=2&category=20",
+      "kind": "internal_relative",
+      "status": null,
+      "ok": true,
+      "skipped": true,
+      "method": null,
+      "error": "relative link; pass --site-base to verify"
+    },
+    {
+      "url": "/news?num=2&category=9",
+      "kind": "internal_relative",
+      "status": null,
+      "ok": true,
+      "skipped": true,
+      "method": null,
+      "error": "relative link; pass --site-base to verify"
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/5165407c76b4c777c440202b6de4a21821c2095f/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/4b30fa7ca4e5733597a1bc9b2b12351cc5c430e6/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/2ea7c0702823314f4e4d04bd1e8db5ccf4b695f6/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/d64961e488e2fc6119b55f68178ea9051a94353f/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://patent-family.ru/journal/patenty/palata-po-patentnym-sporam/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/574e802022e9f2f17a7365ee06e6e2192d73516b/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://searchplatform.rospatent.gov.ru/patents",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_487430/8fc527f897d9582cf7202cbdeb16625354d7fd01/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.garant.ru/products/ipo/prime/doc/406310961/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/d2dcd2977e647a08c6f2a264994c10c8b51bee1a/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://base.garant.ru/12163962/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/patent",
+      "kind": "internal_relative",
+      "status": null,
+      "ok": true,
+      "skipped": true,
+      "method": null,
+      "error": "relative link; pass --site-base to verify"
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    }
+  ]
+}
