@@ -1,63 +1,6 @@
 {
   "site_base": "https://example.com",
-  "total_articles": 50,
-  "opportunities_found": 8,
-  "suggestions": [
-    {
-      "source": "L37-zashchita-dizayna-upakovki-marketpleysy",
-      "target": "L06-kak-opredelit-klass-mktu",
-      "keyword": "классы мкту",
-      "context": "um=2&category=12\">\"Авторское право\" на Лирейт</a> и сверьте классы МКТУ по <a href=\"/mktu\">отдельному гайду</a>; проверку имени в к",
-      "link_replacement": "<a href=\"/blog/kak-opredelit-klass-mktu/\">классы МКТУ</a>"
-    },
-    {
-      "source": "L15-dosrochnoe-prekrashchenie-tovarnogo-znaka-neispolzovanie",
-      "target": "L06-kak-opredelit-klass-mktu",
-      "keyword": "классы мкту",
-      "context": "нак мешает выходу на рынок.</p>  <p><b>Делайте:</b> связать классы МКТУ из вашего продукта с классами в свидетельстве ответчика. <b",
-      "link_replacement": "<a href=\"/blog/kak-opredelit-klass-mktu/\">классы МКТУ</a>"
-    },
-    {
-      "source": "L25-registraciya-brenda-odezhdy-mktu",
-      "target": "L06-kak-opredelit-klass-mktu",
-      "keyword": "классы мкту",
-      "context": "ный эксперт по SEO/GEO).<br>   <b>Достоверность данных:</b> классы МКТУ, пошлины и этапы экспертизы сверены с публикациями Роспатен",
-      "link_replacement": "<a href=\"/blog/kak-opredelit-klass-mktu/\">классы МКТУ</a>"
-    },
-    {
-      "source": "L02-otvet-na-pretenziyu-pravoobladatelya-tovarnogo-znaka",
-      "target": "L06-kak-opredelit-klass-mktu",
-      "keyword": "классы мкту",
-      "context": "нарушения.<br>   <b>2.</b> ТЗ № ___ зарегистрирован на ___ (классы МКТУ ___), статус по реестру ФИПС: ___.<br>   <b>3.</b> Обозначе",
-      "link_replacement": "<a href=\"/blog/kak-opredelit-klass-mktu/\">классы МКТУ</a>"
-    },
-    {
-      "source": "L29-rospatent-fips-proverit-tovarnyy-znak-onlayn-besplatno",
-      "target": "L06-kak-opredelit-klass-mktu",
-      "keyword": "классы мкту",
-      "context": "кириллица, латиница, слоги через дефис.</li>   <li>Выберите классы МКТУ по вашему ассортименту (актуальная редакция на <a href=\"htt",
-      "link_replacement": "<a href=\"/blog/kak-opredelit-klass-mktu/\">классы МКТУ</a>"
-    },
-    {
-      "source": "L38-proverit-brend-onlayn-unikalnost",
-      "target": "L06-kak-opredelit-klass-mktu",
-      "keyword": "классы мкту",
-      "context": "аждый вариант названия из списка.</li>   <li>Укажите нужные классы МКТУ - знак может быть занят в 35-м и свободен в 25-м.</li>   <l",
-      "link_replacement": "<a href=\"/blog/kak-opredelit-klass-mktu/\">классы МКТУ</a>"
-    },
-    {
-      "source": "L44-znak-obsluzhivaniya-registraciya-uslugi-mktu",
-      "target": "L06-kak-opredelit-klass-mktu",
-      "keyword": "классы мкту",
-      "context": "blank\">п. 2 ст. 1477</a>)</td>     </tr>     <tr>       <td>Классы МКТУ</td>       <td><b>1-34</b></td>       <td><b>35-45</b></td>",
-      "link_replacement": "<a href=\"/blog/kak-opredelit-klass-mktu/\">Классы МКТУ</a>"
-    },
-    {
-      "source": "L18-kak-proverit-brend-na-wildberries-svoboden-li-tovarnyy-znak",
-      "target": "L06-kak-opredelit-klass-mktu",
-      "keyword": "классы мкту",
-      "context": "ы и повседневная одежда часто близки). Роспатент смотрит на классы МКТУ, но спор возможен и в соседних классах, если покупатель мож",
-      "link_replacement": "<a href=\"/blog/kak-opredelit-klass-mktu/\">классы МКТУ</a>"
-    }
-  ]
+  "total_articles": 51,
+  "opportunities_found": 0,
+  "suggestions": []
 }
