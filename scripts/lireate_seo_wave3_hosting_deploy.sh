@@ -63,7 +63,23 @@ if ! grep -q "lireate-seo-pre-template" "$INDEX"; then
   sed -i '/\$template = template(\$db, \$temp);/i require __DIR__ . '"'"'/data/lireate-seo-pre-template.inc.php'"'"';' "$INDEX"
 fi
 
-# main.php og guard: apply manually if needed (hosting-seo/template/main.php.og-guard.patch).
+MAIN="$DOCROOT/template/main.php"
+if [[ -f "$MAIN" ]] && ! grep -q "lireate_seo_render_head_tags" "$MAIN"; then
+  bak "$MAIN"
+  SNIP="$REPO/hosting-seo/template/main.php.seo-head.snippet.php"
+  awk -v snip="$SNIP" '
+    /<meta name="description"/ && !done {
+      print
+      while ((getline line < snip) > 0) print line
+      close(snip)
+      done=1
+      next
+    }
+    { print }
+  ' "$MAIN" >"${MAIN}.tmp" && mv "${MAIN}.tmp" "$MAIN"
+  php -l "$MAIN" >/dev/null
+fi
+# Optional og guard: hosting-seo/template/main.php.og-guard.patch (manual).
 
 bak "$DOCROOT/robots.txt"
 sed "s|https://example.invalid|${SITE%/}|g" "$REPO/docs/proposals/robots.lireate-site.txt" >"$DOCROOT/robots.txt"
