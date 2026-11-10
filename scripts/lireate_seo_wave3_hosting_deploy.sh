@@ -83,7 +83,7 @@ BACKUP_DIR="$DOCROOT/data/backups-seo4-$(date +%Y%m%d)"
 mkdir -p "$BACKUP_DIR"
 php "$REPO/scripts/lireate_seo_mktu_descriptions.php" "$DOCROOT" --apply | tee "$BACKUP_DIR/mktu-descriptions.json"
 LANDING_BAK="$BACKUP_DIR/pages-registracija_torgovyh_marok_i_logotipov.sql"
-php -r "require '$DOCROOT/data/db.php'; \$m=new mysqli(DB_SERVER,DB_USER,DB_PASS,DB_NAME); \$id=105; \$r=\$m->query('SELECT * FROM pages WHERE id=105'); \$row=\$r->fetch_assoc(); file_put_contents('$LANDING_BAK', json_encode(\$row, JSON_UNESCAPED_UNICODE));"
+php -r "require '$DOCROOT/data/db.php'; \$m=new mysqli(DB_SERVER,DB_USER,DB_PASS,DB_NAME); \$r=\$m->query('SELECT * FROM pages WHERE id=105'); \$row=\$r->fetch_assoc(); file_put_contents('$LANDING_BAK', json_encode(\$row, JSON_UNESCAPED_UNICODE));"
 php "$REPO/scripts/lireate_seo_fee_update.php" "$DOCROOT" --apply | tee "$BACKUP_DIR/fee-update.json"
 
 NEWS_BAK="$BACKUP_DIR/news-table.sql"

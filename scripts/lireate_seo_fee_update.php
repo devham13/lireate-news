@@ -31,20 +31,21 @@ $patterns = array(
 );
 
 $tables = array(
-    array('table' => 'pages', 'slug' => 'registracija_torgovyh_marok_i_logotipov', 'col' => 'full_story'),
+    array('table' => 'pages', 'slug' => 'registracija_torgovyh_marok_i_logotipov', 'col' => 'text'),
     array('table' => 'news', 'slug' => null, 'col' => 'full_story'),
 );
 
 $report = array('hits' => array(), 'updated' => array());
 foreach ($tables as $spec) {
     if ($spec['slug'] !== null) {
-        $st = $mysqli->prepare("SELECT id, seo_url, full_story FROM `{$spec['table']}` WHERE seo_url=? LIMIT 1");
+        $col = $spec['col'];
+        $st = $mysqli->prepare("SELECT id, seo_url, `{$col}` AS body FROM `{$spec['table']}` WHERE seo_url=? LIMIT 1");
         $st->bind_param('s', $spec['slug']);
         $st->execute();
         $rows = $st->get_result()->fetch_all(MYSQLI_ASSOC);
     } else {
         $q = $mysqli->query(
-            "SELECT id, seo_url, full_story FROM news WHERE full_story LIKE '%20 000%'"
+            "SELECT id, seo_url, full_story AS body FROM news WHERE full_story LIKE '%20 000%'"
             . " OR full_story LIKE '%20&nbsp;000%' OR full_story LIKE '%20000%'"
         );
         $rows = array();
@@ -53,7 +54,7 @@ foreach ($tables as $spec) {
         }
     }
     foreach ($rows as $row) {
-        $body = $row['full_story'];
+        $body = $row['body'];
         $newBody = $body;
         foreach ($patterns as $from => $to) {
             if (strpos($newBody, $from) !== false) {
@@ -66,7 +67,8 @@ foreach ($tables as $spec) {
                 if ($dumpPath !== '' && $spec['table'] === 'pages' && $row['seo_url'] === 'registracija_torgovyh_marok_i_logotipov') {
                     file_put_contents($dumpPath, $mysqli->real_escape_string($body));
                 }
-                $up = $mysqli->prepare("UPDATE `{$spec['table']}` SET full_story=? WHERE id=?");
+                $col = $spec['col'];
+                $up = $mysqli->prepare("UPDATE `{$spec['table']}` SET `{$col}`=? WHERE id=?");
                 $up->bind_param('si', $newBody, $row['id']);
                 $up->execute();
                 $report['updated'][] = $row['seo_url'];
