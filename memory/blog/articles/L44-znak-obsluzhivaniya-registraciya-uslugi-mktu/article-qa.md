@@ -60,7 +60,7 @@ verdict: PASS
 ## Link verify
 
 - total: 16, failed: 0
-site-base: публичный домен Lireate (переменная окружения при verify)
+- site-base: публичный домен Lireate (переменная окружения при verify)
 - fix cycle 1: `/kak-opredelit-klass-mktu` (404) → `/mktu`; rospatent.gov.ru/dues + stateservices (SSL) → Consultant 82755 + Госуслуги; fips.ru MKTU/прайс (403) → open-data classifier + `/rospatent-fips-proverit-...`; law.ru (302) → Consultant ПП 1459
 
 ## GEO QA fixes applied (fix cycle 1)

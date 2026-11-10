@@ -141,7 +141,7 @@
       "skipped": false
     },
     {
-      "url": "/news",
+      "url": "/news?num=2&category=9",
       "status": 200,
       "ok": true,
       "method": "HEAD",
