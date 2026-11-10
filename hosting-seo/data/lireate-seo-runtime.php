@@ -166,4 +166,31 @@ if (!function_exists('lireate_seo_init_globals')) {
     }
 }
 
+if (!function_exists('lireate_seo_ob_filter_html')) {
+    function lireate_seo_ob_filter_html($html)
+    {
+        if (empty($GLOBALS['lireate_seo_og_done'])) {
+            return $html;
+        }
+        return preg_replace_callback(
+            '/\s*(<meta\s+property="og:image"[^>]*>\s*)'
+            . '(?:<meta\s+property="og:image:type"[^>]*>\s*)?'
+            . '(?:<meta\s+property="og:image:width"[^>]*>\s*)?'
+            . '(?:<meta\s+property="og:image:height"[^>]*>\s*)?/is',
+            function ($m) {
+                if (stripos($m[0], 'http://') !== false) {
+                    return "\n";
+                }
+                return $m[0];
+            },
+            $html
+        );
+    }
+}
+
 lireate_seo_init_globals();
+
+if (PHP_SAPI !== 'cli' && empty($GLOBALS['lireate_seo_outer_ob'])) {
+    $GLOBALS['lireate_seo_outer_ob'] = true;
+    ob_start('lireate_seo_ob_filter_html');
+}
