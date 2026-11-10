@@ -1099,7 +1099,7 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L44 — Знак обслуживания для услуг: регистрация и классы МКТУ
 
-- **status:** new
+- **status:** written
 - **priority:** P2
 - **site:** lireate
 - **lireate_category_id:** 9
