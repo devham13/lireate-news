@@ -1,9 +1,9 @@
 {
   "headline_lines": [
     "ПОДАЧА ТЗ ONLINE ROSPATENT",
-    "УКЭП 2.1 2.4 2.11"
+    "УКЭП · пп. 2.1 · 2.4 · 2.11"
   ],
-  "highlight": "2.11",
+  "highlight": "",
   "sticky_text": "DIY ≠ гарантия",
   "sticky_underline": "DIY",
   "sticky_color": "yellow",
@@ -26,6 +26,6 @@
   "ui_card_rows": [
     "online.rospatent",
     "МКТУ-13",
-    "2.1 + 2.4 + 2.11"
+    "пп. 2.1 · 2.4 · 2.11"
   ]
 }
