@@ -215,7 +215,4 @@ $lb_schema_meta = array(
 <?php
 if (function_exists('lireate_seo_render_article_schema_scripts')) {
     lireate_seo_render_article_schema_scripts($lb_schema_meta);
-} else {
-    $lb_jsonld = lireate_blog_article_jsonld($lb_schema_meta);
-    echo '<script type="application/ld+json">' . json_encode($lb_jsonld, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) . "</script>\n";
 }

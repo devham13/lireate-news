@@ -43,6 +43,9 @@ if [[ -f "$TPL_LAYOUT" ]]; then
   bak "$TPL_LAYOUT"
   cp -a "$REPO/hosting-seo/patches/pages/blog/_shared/lireate-blog-layout.inc.php" "$TPL_LAYOUT"
 fi
+CMS_INC="$DOCROOT/template/page/news/lireate-blog-cms.inc.php"
+bak "$CMS_INC"
+cp -a "$REPO/hosting-seo/patches/template/page/news/lireate-blog-cms.inc.php" "$CMS_INC"
 
 mkdir -p "$DOCROOT/pages" "$DOCROOT/template/page"
 bak "$DOCROOT/pages/avtor-page.inc.php"
@@ -60,11 +63,7 @@ if ! grep -q "lireate-seo-pre-template" "$INDEX"; then
   sed -i '/\$template = template(\$db, \$temp);/i require __DIR__ . '"'"'/data/lireate-seo-pre-template.inc.php'"'"';' "$INDEX"
 fi
 
-MAIN="$DOCROOT/template/main.php"
-if [[ -f "$MAIN" ]] && ! grep -q "lireate_seo_og_done" "$MAIN"; then
-  bak "$MAIN"
-  perl -0pi -e 's/\t<meta property="og:url" content=.*?<meta property="og:description" content="\{description\}"\/>.*?/\t<?php if (empty($GLOBALS['"'"'lireate_seo_og_done'"'"'])) : ?>\n\t<meta property="og:url" content='"'"'<?="http:\/\/". $_SERVER["SERVER_NAME"] . $uri_parts[0];?>'"'"'\/>\n\t<meta property="og:type" content="website"\/>\n\t<meta property="og:title" content="{title}"\/>\n\t<meta property="og:description" content="{description}"\/>\n\t<?php endif; ?>/s' "$MAIN" || true
-fi
+# main.php og guard: apply manually if needed (hosting-seo/template/main.php.og-guard.patch).
 
 bak "$DOCROOT/robots.txt"
 sed "s|https://example.invalid|${SITE%/}|g" "$REPO/docs/proposals/robots.lireate-site.txt" >"$DOCROOT/robots.txt"
