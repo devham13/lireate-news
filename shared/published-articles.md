@@ -7,3 +7,4 @@
 | 2026-06-11 | B03 | podklyuchenie-mcp-cursor | https://mayai.ru/podklyuchenie-mcp-cursor/ | published |
 | 2026-06-11 | B04 | geo-optimizaciya-sajta-2026 | https://mayai.ru/geo-optimizaciya-sajta-2026/ | published |
 | 2026-06-11 | B05 | avtonomnyj-kontent-zavod-nejroseti | https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/ | published |
+| 2026-11-10 | L47 | prodlenie-tovarnogo-znaka-gosposhlina | /prodlenie_tovarnogo_znaka_gosposhlina | written |

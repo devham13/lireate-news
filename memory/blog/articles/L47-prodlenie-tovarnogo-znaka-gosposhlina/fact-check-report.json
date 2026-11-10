@@ -1,0 +1,206 @@
+{
+  "article": "memory/blog/articles/L47-prodlenie-tovarnogo-znaka-gosposhlina/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 28,
+  "verified_facts_count": 6,
+  "unverified_facts_count": 22,
+  "facts": [
+    {
+      "fact": "2025",
+      "kind": "date_or_year",
+      "context": "ы сверены с таблицей Роспатента (обновление 03.10.2025, надбавка 500 ₽ за позицию перечня свыше 10 в кла",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "10.2025) и приложением № 1 к ПП РФ № 941 на 10.11.2026. Не индивидуальная юридическая консультация. Отве",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2024",
+      "kind": "date_or_year",
+      "context": "лин Прекращена ( ст. 1514 ) На Госуслугах с 01.02.2024 работает авторасчёт; п. 2.25 юридически отдельный,",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 лет",
+      "kind": "metric_or_duration",
+      "context": "при регистрации (несколько этапов) и потом раз в 10 лет при продлении. Ниже вы проверите миф, посчитаете",
+      "verified": true,
+      "reason": "Numerical value '10' matched in fact-bank context"
+    },
+    {
+      "fact": "18 месяцев",
+      "kind": "metric_or_duration",
+      "context": "аявки - получите ориентир окончания охраны. За 12-18 месяцев до этой даты поставьте напоминание в календарь: Р",
+      "verified": true,
+      "reason": "Numerical value '18' matched in fact-bank context"
+    },
+    {
+      "fact": "6 месяцев",
+      "kind": "metric_or_duration",
+      "context": "а по желанию Последний год или с п. 2.25 Льготные 6 месяцев после истечения 2.25 3 000 ₽ сверх п. 2.22 Если с",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "18 мес",
+      "kind": "metric_or_duration",
+      "context": "ав. Схема продления: реестр (дата заявки) → за 12-18 мес. напоминание → проверка перечня → расчёт 2.22 → п",
+      "verified": true,
+      "reason": "Numerical value '18' matched in fact-bank context"
+    },
+    {
+      "fact": "6 мес",
+      "kind": "metric_or_duration",
+      "context": "вление + оплата 2.22 Цель - продление без разрыва 6 мес. после истечения Заявление + 2.22 + 2.25 Возможен",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1491",
+      "kind": "large_number",
+      "context": "спошлины за поддержание товарного знака нет ( ст. 1491 ГК РФ). Охрана длится 10 лет с даты подачи заявки",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "22 000",
+      "kind": "large_number",
+      "context": "ие - заявление правообладателя + оплата п. 2.22 ( 22 000 ₽ база за цикл) в последний год действия или в ль",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "3 000",
+      "kind": "large_number",
+      "context": "ых 6 месяцах после истечения с доплатой п. 2.25 ( 3 000 ₽ ). Разовые платежи при первой регистрации (пп.",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "941",
+      "kind": "large_number",
+      "context": "классе с 04.10.2025) и приложением № 1 к ПП РФ № 941 на 10.11.2026. Не индивидуальная юридическая консу",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2 850",
+      "kind": "large_number",
+      "context": "патент\". Не делайте: закладывать в план фиктивные 2 850 ₽ в год - такого обязательного платежа за ТЗ нет.",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "35 000",
+      "kind": "large_number",
+      "context": ".4 , 2.11 ; для одного класса на бумаге это часто 35 000 ₽ . Подробности - в гайде по регистрации 2026 . Д",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1 4 000",
+      "kind": "large_number",
+      "context": "аза (2026) Когда Подача + формальная экспертиза 2.1 4 000 ₽ + 1 000 ₽/класс свыше 1-го При подаче заявки Эк",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1 000",
+      "kind": "large_number",
+      "context": "огда Подача + формальная экспертиза 2.1 4 000 ₽ + 1 000 ₽/класс свыше 1-го При подаче заявки Экспертиза п",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "4 13 000",
+      "kind": "large_number",
+      "context": "е 1-го При подаче заявки Экспертиза по существу 2.4 13 000 ₽ + 2 500 ₽/класс свыше 1-го + 500 ₽/позиция свыш",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2 500",
+      "kind": "large_number",
+      "context": "даче заявки Экспертиза по существу 2.4 13 000 ₽ + 2 500 ₽/класс свыше 1-го + 500 ₽/позиция свыше 10 В ход",
+      "verified": true,
+      "reason": "Numerical value '2500' matched in fact-bank context"
+    },
+    {
+      "fact": "11 18 000",
+      "kind": "large_number",
+      "context": "страции Регистрация + электронное свидетельство 2.11 18 000 ₽ + 2 000 ₽/класс свыше 5-го После положительного",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2 000",
+      "kind": "large_number",
+      "context": "рация + электронное свидетельство 2.11 18 000 ₽ + 2 000 ₽/класс свыше 5-го После положительного решения П",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "22 22 000",
+      "kind": "large_number",
+      "context": "осле положительного решения Продление на 10 лет 2.22 22 000 ₽ + 2 000 ₽/класс свыше 5-го + 500 ₽/позиция свыш",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "25 3 000",
+      "kind": "large_number",
+      "context": "ли с п. 2.25 Льготные 6 месяцев после истечения 2.25 3 000 ₽ сверх п. 2.22 Если срок уже истёк Сократить пер",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "16 3 000",
+      "kind": "large_number",
+      "context": "сли срок уже истёк Сократить перечень в реестре 2.16 3 000 ₽ за изменение До продления, если перечень раздут",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1514",
+      "kind": "large_number",
+      "context": "Новая заявка, полный цикл пошлин Прекращена ( ст. 1514 ) На Госуслугах с 01.02.2024 работает авторасчёт;",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "22 000 22 000",
+      "kind": "large_number",
+      "context": "25 . Сценарий Расчёт Итого 1 класс, до 10 позиций 22 000 22 000 ₽ 1 класс, 15 позиций 22 000 + 5×500 24 500 ₽ 7 к",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "500 24 500",
+      "kind": "large_number",
+      "context": "ий 22 000 22 000 ₽ 1 класс, 15 позиций 22 000 + 5×500 24 500 ₽ 7 классов, до 10 позиций в каждом 22 000 + 2×2",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2 000 26 000",
+      "kind": "large_number",
+      "context": "00 ₽ 7 классов, до 10 позиций в каждом 22 000 + 2×2 000 26 000 ₽ Опоздание + льготные 6 мес. 22 000 + 3 000 (п.",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "25 000",
+      "kind": "large_number",
+      "context": "здание + льготные 6 мес. 22 000 + 3 000 (п. 2.25) 25 000 ₽ минимум Выгрузите перечень из реестра по каждом",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
