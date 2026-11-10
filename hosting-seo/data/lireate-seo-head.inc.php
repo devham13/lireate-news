@@ -3,6 +3,30 @@
  * Canonical, robots, Open Graph, home Organization JSON-LD (articles: JSON-LD in layout tail).
  */
 
+if (!function_exists('lireate_seo_ob_filter_html')) {
+    function lireate_seo_ob_filter_html($html)
+    {
+        if (empty($GLOBALS['lireate_seo_og_done'])) {
+            return $html;
+        }
+        $html = preg_replace(
+            '/\s*<meta\s+property="og:url"[^>]*>\s*<meta\s+property="og:type"[^>]*>\s*<meta\s+property="og:title"[^>]*>\s*<meta\s+property="og:description"[^>]*>\s*/is',
+            "\n",
+            $html,
+            1
+        );
+        $html = preg_replace(
+            '/\s*<meta\s+property="og:image"[^>]*http:\/\/[^>]+>\s*'
+            . '(?:<meta\s+property="og:image:type"[^>]+>\s*)?'
+            . '(?:<meta\s+property="og:image:width"[^>]+>\s*)?'
+            . '(?:<meta\s+property="og:image:height"[^>]+>\s*)?/is',
+            "\n",
+            $html
+        );
+        return $html;
+    }
+}
+
 if (!function_exists('lireate_seo_bootstrap')) {
     function lireate_seo_bootstrap()
     {
@@ -110,6 +134,11 @@ if (!function_exists('lireate_seo_render_head_tags')) {
             if ($json !== '') {
                 echo '<script type="application/ld+json">' . $json . "</script>\n";
             }
+        }
+
+        if (!empty($GLOBALS['lireate_seo_og_done']) && empty($GLOBALS['lireate_seo_ob_filter'])) {
+            $GLOBALS['lireate_seo_ob_filter'] = true;
+            ob_start('lireate_seo_ob_filter_html');
         }
     }
 }
