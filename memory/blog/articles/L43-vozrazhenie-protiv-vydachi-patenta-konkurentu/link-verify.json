@@ -7,21 +7,23 @@
   "links": [
     {
       "url": "/news?num=2&category=20",
-      "kind": "internal_relative",
-      "status": null,
+      "status": 200,
       "ok": true,
-      "skipped": true,
-      "method": null,
-      "error": "relative link; pass --site-base to verify"
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/news?num=2&category=20"
     },
     {
       "url": "/news?num=2&category=9",
-      "kind": "internal_relative",
-      "status": null,
+      "status": 200,
       "ok": true,
-      "skipped": true,
-      "method": null,
-      "error": "relative link; pass --site-base to verify"
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/news?num=2&category=9"
     },
     {
       "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/5165407c76b4c777c440202b6de4a21821c2095f/",
@@ -124,12 +126,13 @@
     },
     {
       "url": "/patent",
-      "kind": "internal_relative",
-      "status": null,
+      "status": 200,
       "ok": true,
-      "skipped": true,
-      "method": null,
-      "error": "relative link; pass --site-base to verify"
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/patent"
     },
     {
       "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/",
