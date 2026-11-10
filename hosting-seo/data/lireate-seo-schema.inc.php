@@ -69,6 +69,23 @@ if (!function_exists('lireate_seo_extract_faq_pairs')) {
     }
 }
 
+if (!function_exists('lireate_seo_absolutize_image_url')) {
+    function lireate_seo_absolutize_image_url($src)
+    {
+        $src = trim((string) $src);
+        if ($src === '') {
+            return '';
+        }
+        if (preg_match('#^https?://#i', $src)) {
+            return function_exists('lireate_seo_https_url')
+                ? lireate_seo_https_url($src)
+                : preg_replace('#^http:#i', 'https:', $src);
+        }
+        $base = lireate_seo_schema_public_base();
+        return $base . '/' . ltrim($src, '/');
+    }
+}
+
 if (!function_exists('lireate_seo_first_https_image')) {
     function lireate_seo_first_https_image($html, $coverHtml = '')
     {
@@ -77,19 +94,164 @@ if (!function_exists('lireate_seo_first_https_image')) {
             if ($chunk === '') {
                 continue;
             }
-            if (preg_match('/<img[^>]+src=["\']([^"\']+)["\']/iu', $chunk, $m)) {
-                $src = trim($m[1]);
-                if ($src === '') {
-                    continue;
+            if (!preg_match_all('/<img[^>]+src=["\']([^"\']+)["\']/iu', $chunk, $all)) {
+                continue;
+            }
+            foreach ($all[1] as $src) {
+                $src = trim($src);
+                if ($src !== '' && stripos($src, '/template/images/blog/') !== false) {
+                    return lireate_seo_absolutize_image_url($src);
                 }
-                if (preg_match('#^https?://#i', $src)) {
-                    return preg_replace('#^http:#i', 'https:', $src);
-                }
-                $base = lireate_seo_schema_public_base();
-                return $base . '/' . ltrim($src, '/');
+            }
+            if (!empty($all[1][0])) {
+                return lireate_seo_absolutize_image_url($all[1][0]);
             }
         }
         return '';
+    }
+}
+
+if (!function_exists('lireate_seo_db_mysqli')) {
+    function lireate_seo_db_mysqli()
+    {
+        static $mysqli = null;
+        static $failed = false;
+        if ($failed) {
+            return null;
+        }
+        if ($mysqli instanceof mysqli) {
+            return $mysqli;
+        }
+        $docroot = isset($_SERVER['DOCUMENT_ROOT']) ? rtrim((string) $_SERVER['DOCUMENT_ROOT'], '/') : '';
+        $dbFile = $docroot . '/data/db.php';
+        if ($docroot === '' || !is_file($dbFile)) {
+            $failed = true;
+            return null;
+        }
+        require_once $dbFile;
+        if (!defined('DB_SERVER') || !defined('DB_USER') || !defined('DB_NAME')) {
+            $failed = true;
+            return null;
+        }
+        $pass = defined('DB_PASS') ? DB_PASS : '';
+        $mysqli = @new mysqli(DB_SERVER, DB_USER, $pass, DB_NAME);
+        if ($mysqli->connect_errno) {
+            $mysqli = null;
+            $failed = true;
+            return null;
+        }
+        if (!$mysqli->set_charset('utf8mb4')) {
+            $mysqli->set_charset('utf8');
+        }
+        return $mysqli;
+    }
+}
+
+if (!function_exists('lireate_seo_fetch_news_by_slug')) {
+    function lireate_seo_fetch_news_by_slug($slug)
+    {
+        $slug = trim((string) $slug);
+        if ($slug === '') {
+            return null;
+        }
+        $mysqli = lireate_seo_db_mysqli();
+        if (!$mysqli) {
+            return null;
+        }
+        $st = $mysqli->prepare('SELECT name, full_story, seo_title, seo_description, datetime FROM news WHERE seo_url=? AND active=1 LIMIT 1');
+        if (!$st) {
+            return null;
+        }
+        $st->bind_param('s', $slug);
+        $st->execute();
+        $row = $st->get_result()->fetch_assoc();
+        return is_array($row) ? $row : null;
+    }
+}
+
+if (!function_exists('lireate_seo_fetch_page_by_slug')) {
+    function lireate_seo_fetch_page_by_slug($slug)
+    {
+        $slug = trim((string) $slug);
+        if ($slug === '') {
+            return null;
+        }
+        $mysqli = lireate_seo_db_mysqli();
+        if (!$mysqli) {
+            return null;
+        }
+        $st = $mysqli->prepare('SELECT name, seo_title, seo_description FROM pages WHERE seo_url=? AND active=1 LIMIT 1');
+        if (!$st) {
+            return null;
+        }
+        $st->bind_param('s', $slug);
+        $st->execute();
+        $row = $st->get_result()->fetch_assoc();
+        return is_array($row) ? $row : null;
+    }
+}
+
+if (!function_exists('lireate_seo_prepare_og_globals')) {
+    function lireate_seo_prepare_og_globals()
+    {
+        if (!empty($GLOBALS['lireate_seo_og']) && is_array($GLOBALS['lireate_seo_og'])) {
+            return;
+        }
+        $path = function_exists('lireate_seo_request_path') ? lireate_seo_request_path() : '/';
+        $kind = function_exists('lireate_seo_page_kind') ? lireate_seo_page_kind($path) : 'other';
+        $base = lireate_seo_schema_public_base();
+        $canonical = '';
+        if (!empty($GLOBALS['lireate_canonical_url'])) {
+            $canonical = lireate_seo_https_url($GLOBALS['lireate_canonical_url']);
+        } elseif (function_exists('lireate_seo_canonical_from_path')) {
+            $canonical = lireate_seo_https_url(lireate_seo_canonical_from_path($path));
+        }
+        $defaultImage = function_exists('lireate_seo_default_og_image')
+            ? lireate_seo_default_og_image()
+            : lireate_seo_https_url($base . '/images/OG_image.jpg');
+
+        if ($kind === 'article') {
+            $slug = trim($path, '/');
+            $parts = explode('/', $slug);
+            $slug = $parts[0];
+            $row = lireate_seo_fetch_news_by_slug($slug);
+            if (is_array($row) && function_exists('lireate_seo_bind_news_article')) {
+                lireate_seo_bind_news_article(
+                    $row,
+                    array(
+                        'seo_title' => isset($row['seo_title']) ? $row['seo_title'] : '',
+                        'seo_description' => isset($row['seo_description']) ? $row['seo_description'] : '',
+                    )
+                );
+                return;
+            }
+        }
+
+        $title = '';
+        $desc = '';
+        if ($kind === 'home') {
+            $title = 'ООО «ЛИРЕЙТ» — регистрация товарных знаков';
+            $desc = 'Патентное бюро в Зеленодольске: регистрация и защита товарных знаков, международные заявки, сопровождение в Роспатенте.';
+        } elseif ($kind === 'service' || $kind === 'other' || $kind === 'cms') {
+            $slug = trim($path, '/');
+            if ($slug !== '' && strpos($slug, '/') === false) {
+                $pageRow = lireate_seo_fetch_page_by_slug($slug);
+                if (is_array($pageRow)) {
+                    $title = isset($pageRow['seo_title']) && $pageRow['seo_title'] !== ''
+                        ? $pageRow['seo_title']
+                        : (isset($pageRow['name']) ? $pageRow['name'] : '');
+                    $desc = isset($pageRow['seo_description']) ? $pageRow['seo_description'] : '';
+                }
+            }
+        }
+
+        $GLOBALS['lireate_seo_og'] = array(
+            'type' => 'website',
+            'title' => $title,
+            'description' => $desc,
+            'url' => $canonical !== '' ? $canonical : lireate_seo_https_url($base . '/'),
+            'image' => $defaultImage,
+        );
     }
 }
 
@@ -159,7 +321,9 @@ if (!function_exists('lireate_seo_bind_news_article')) {
         $seoUrl = isset($row['seo_url']) ? trim((string) $row['seo_url']) : '';
         $canonical = $seoUrl !== '' ? $base . '/' . trim($seoUrl, '/') . '/' : '';
         if (!empty($GLOBALS['lireate_canonical_url'])) {
-            $canonical = $GLOBALS['lireate_canonical_url'];
+            $canonical = function_exists('lireate_seo_https_url')
+                ? lireate_seo_https_url($GLOBALS['lireate_canonical_url'])
+                : $GLOBALS['lireate_canonical_url'];
         }
         $title = isset($seo['seo_title']) ? $seo['seo_title'] : (isset($row['seo_title']) ? $row['seo_title'] : (isset($row['name']) ? $row['name'] : ''));
         $desc = isset($seo['seo_description']) ? $seo['seo_description'] : (isset($row['seo_description']) ? $row['seo_description'] : '');
@@ -179,12 +343,15 @@ if (!function_exists('lireate_seo_bind_news_article')) {
             'author_role' => defined('LIREATE_BLOG_AUTHOR_ROLE') ? LIREATE_BLOG_AUTHOR_ROLE : 'Генеральный директор',
             'author_url' => $base . '/avtor/',
         );
+        $fallbackImage = function_exists('lireate_seo_default_og_image')
+            ? lireate_seo_default_og_image()
+            : lireate_seo_https_url($base . '/images/OG_image.jpg');
         $GLOBALS['lireate_seo_og'] = array(
             'type' => 'article',
             'title' => $title,
             'description' => $desc,
-            'url' => $canonical,
-            'image' => $image !== '' ? $image : $base . '/images/OG_image.jpg',
+            'url' => function_exists('lireate_seo_https_url') ? lireate_seo_https_url($canonical) : $canonical,
+            'image' => $image !== '' ? lireate_seo_absolutize_image_url($image) : $fallbackImage,
         );
     }
 }
