@@ -31,6 +31,7 @@ if (!function_exists('lireate_seo_cms_slashless')) {
             'reviews', 'portfolio', 'o_kompanii', 'partners', 'payment', 'personalArea',
             'spasibo', 'reg-tz-main', 'poisk_tovarnyh_znakov', 'ekspertiza_tovarnogo_znaka',
             'mezhdunarodnaja_registracija_tovarnogo_znaka',
+            'avtor',
         );
     }
 }
@@ -92,6 +93,52 @@ if (!function_exists('lireate_seo_canonical_from_path')) {
     }
 }
 
+if (!function_exists('lireate_seo_https_url')) {
+    function lireate_seo_https_url($url)
+    {
+        $url = trim((string) $url);
+        if ($url === '') {
+            return '';
+        }
+        return preg_replace('#^http:#i', 'https:', $url);
+    }
+}
+
+if (!function_exists('lireate_seo_page_kind')) {
+    /**
+     * @return string home|cms|service|article|other
+     */
+    function lireate_seo_page_kind($request_path = null)
+    {
+        $path = $request_path !== null ? (string) $request_path : lireate_seo_request_path();
+        $trimmed = trim($path, '/');
+        if ($trimmed === '') {
+            return 'home';
+        }
+        $segments = explode('/', $trimmed);
+        $first = $segments[0];
+        if (count($segments) === 1) {
+            if (in_array($first, lireate_seo_cms_slashless(), true)) {
+                return 'cms';
+            }
+            if (in_array($first, lireate_seo_service_with_slash(), true)) {
+                return 'service';
+            }
+            if (preg_match('/^[a-zA-Z0-9_\-]+$/', $first)) {
+                return 'article';
+            }
+        }
+        return 'other';
+    }
+}
+
+if (!function_exists('lireate_seo_default_og_image')) {
+    function lireate_seo_default_og_image()
+    {
+        return lireate_seo_https_url(lireate_seo_public_base() . '/images/OG_image.jpg');
+    }
+}
+
 if (!function_exists('lireate_seo_init_globals')) {
     function lireate_seo_init_globals()
     {
@@ -119,4 +166,28 @@ if (!function_exists('lireate_seo_init_globals')) {
     }
 }
 
+if (!function_exists('lireate_seo_ob_filter_html')) {
+    function lireate_seo_ob_filter_html($html)
+    {
+        return preg_replace_callback(
+            '/\s*(<meta\s+property="og:image"[^>]*>\s*)'
+            . '(?:<meta\s+property="og:image:type"[^>]*>\s*)?'
+            . '(?:<meta\s+property="og:image:width"[^>]*>\s*)?'
+            . '(?:<meta\s+property="og:image:height"[^>]*>\s*)?/is',
+            function ($m) {
+                if (stripos($m[0], 'http://') !== false) {
+                    return "\n";
+                }
+                return $m[0];
+            },
+            $html
+        );
+    }
+}
+
 lireate_seo_init_globals();
+
+if (PHP_SAPI !== 'cli' && empty($GLOBALS['lireate_seo_outer_ob'])) {
+    $GLOBALS['lireate_seo_outer_ob'] = true;
+    ob_start('lireate_seo_ob_filter_html');
+}

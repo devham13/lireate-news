@@ -9,7 +9,7 @@
 | L39 | `/dorabotka_tovarnogo_znaka_kak_dorabotat_logotip_i_naimenovanie/` (144 / 6.2) | **Развести** | Старая — общая доработка; L39 — PDF/кабинет и ст. 1497. Ссылка + title в PR. |
 | L10 | `/domennoe_imya_kak_nematerialnyiy_aktiv/` (69 / 9.1) | **Развести** | L10 — ФСБУ 14/2022 и учёт; старая — НМА в общем. Перекрёстная ссылка при публикации. |
 | L20 | `/registraciya_mobilnogo_prilozheniya_v_rospatente/` (61 / 10.5) | **Развести** | L20 — ЭВМ vs ТЗ в 2026; старая — общий патентный гайд. |
-| L19 | `/chto_delat_esli_tovarnyiy_znak_zanyat/` (41 / 6.8) | **301** (после согласования) | Почти тот же URL и интент; старая в выдаче. Новую снять из sitemap, 301 не применяли. |
+| L19 | `/chto_delat_esli_tovarnyiy_znak_zanyat/` (41 / 6.8) | **301 → legacy** | Полный дубль; L19 (`chto_delat_esli_tovarnyy_znak_zanyat`) → **301** на legacy, slug L19 **исключён** из sitemap. |
 | L02 | `/otvet_na_pretenziyu_o_narushenii_…` (36 / 11.3) | **Развести** | L02 — срок 30 дней и образец 2026; старая — нужен ли ответ. |
 | L05 | `/sposobyi_zaschityi_izobreteniy_i_sekretov…` (32 / 8.4) | **Развести** | L05 — патент/ноу-хау/публикация; старая — без сравнительной таблицы. |
 | L11 | `/kak_oformit_avtorskie_prava_na_logotip/` … | **Развести** | L11 — договор с дизайнером; legacy — оформление прав. |
@@ -28,4 +28,4 @@
 | L30, L34, L40 | `/registraciya_tovarnogo_znaka/`, reg-tz-main | **Развести** | L — DIY/осмысление; услуга — под ключ. Ссылки на `/registraciya_tovarnogo_znaka/` в PR. |
 | L47 | `/prodlenie_tovarnogo_znaka/` | **Развести** | L47 — пошлины 2026; услуга — сопровождение. |
 
-**Полный дубль (кандидат 301):** только L19 → `/chto_delat_esli_tovarnyiy_znak_zanyat/` (внедрение редиректа и sitemap — отдельным шагом после выкладки PR).
+**Полный дубль (301 внедрён):** L19 → `/chto_delat_esli_tovarnyiy_znak_zanyat/`. Остальные пары — **развести** (title/H1/description и перекрёстные ссылки, без 301).

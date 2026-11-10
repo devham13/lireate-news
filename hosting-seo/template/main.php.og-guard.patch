@@ -1,0 +1,13 @@
+--- a/template/main.php
++++ b/template/main.php
+@@
+-	<meta property="og:url" content='<?="http://". $_SERVER["SERVER_NAME"] . $uri_parts[0];?>'/>
+-	<meta property="og:type" content="website"/>
+-	<meta property="og:title" content="{title}"/><!--"Юридическая защита Вашей интеллектуальной собственности" />-->
+-	<meta property="og:description" content="{description}"/><!--"Услуги в сфере гражданского права по охране и защите интеллектуальной собственности. Юридическая поддержка в Роспатенте, ФАСе, ФТС, Суде по интеллектуальным правам (СИП) и во всех судебных инстанциях." />-->
++	<?php if (empty($GLOBALS['lireate_seo_og_done'])) : ?>
++	<meta property="og:url" content='<?="http://". $_SERVER["SERVER_NAME"] . $uri_parts[0];?>'/>
++	<meta property="og:type" content="website"/>
++	<meta property="og:title" content="{title}"/>
++	<meta property="og:description" content="{description}"/>
++	<?php endif; ?>
