@@ -92,9 +92,28 @@ html, body { margin:0; width:860px; height:400px; overflow:hidden; }
 .stage { width:860px; height:400px; background:#0b1020; display:flex; align-items:center; justify-content:center; }
 .sheet {
   width:860px; height:400px; position:relative; box-sizing:border-box;
-  display:grid; grid-template-columns: 54% 46%; padding:20px 22px 16px 26px;
+  display:grid; grid-template-columns: 54% 46%; padding:20px 22px 32px 26px;
 }
-.col-left { display:flex; align-items:center; position:relative; padding-right:12px; }
+.sheet::after {
+  content:'';
+  position:absolute; z-index:2; pointer-events:none;
+  bottom:22px; right:16px; width:38%; height:22%;
+  background:repeating-linear-gradient(
+    -42deg,
+    rgba(15,23,42,.07) 0 3px,
+    transparent 3px 10px
+  );
+  border-radius:6px;
+}
+.col-left {
+  display:flex; flex-direction:column; justify-content:space-between; align-items:stretch;
+  align-self:stretch; min-height:100%; position:relative; padding-right:12px; padding-bottom:4px;
+}
+.left-memo {
+  margin-top:auto; padding:12px 14px; border:3px dashed #64748b; border-radius:10px;
+  background:linear-gradient(135deg,#f1f5f9 0%,#e2e8f0 100%);
+  font-size:18px; font-weight:700; line-height:1.22; color:#0f172a;
+}
 .col-right { position:relative; min-height:100%; }
 .hl {
   font-size:52px; font-weight:800; line-height:1.05; letter-spacing:-0.03em;
@@ -129,7 +148,7 @@ html, body { margin:0; width:860px; height:400px; overflow:hidden; }
 }
 .chip-tilt { font-size:18px; padding:8px 16px; transform:rotate(var(--rot)); }
 .slot-ui {
-  position:absolute; bottom:8px; right:0; width:94%; z-index:5;
+  position:absolute; bottom:22px; right:0; width:94%; z-index:5;
   background:#fff; border-radius:12px; padding:12px 14px 10px;
   box-shadow:0 10px 26px rgba(0,0,0,.14); border:1px solid #e5e7eb;
   font-size:17px;
@@ -162,14 +181,15 @@ html, body { margin:0; width:860px; height:400px; overflow:hidden; }
     <div class="col-left">
       <div class="hl" data-layout-slot="slot-headline"><div class="hl-line">ПОДАЧА ТЗ ONLINE ROSPATENT</div>
 <div class="hl-line">УКЭП 2.1 2.4 <span class="hl-accent">2.11</span></div></div>
+      <div class="left-memo" data-layout-slot="slot-left-memo">WB / Ozon · карточка · жалоба</div>
     </div>
     <div class="col-right">
       <svg class="cover-arrow" data-layout-slot="slot-arrow" viewBox="0 0 100 36" aria-hidden="true"><path d="M8 28 C42 8, 58 30, 88 12" stroke="#111" fill="none" stroke-width="2.2"/><path d="M80 6l12 8-14 3" stroke="#111" fill="none" stroke-width="2"/></svg>
       <div class="slot-badge" data-layout-slot="slot-badge">ТЗ</div>
       <div class="cover-sticky hand" data-layout-slot="slot-sticky" style="background:#f7e58c"><div class="sticky-tape-beige"></div><div class="sticky-text"><span class="sticky-ul">DIY</span> ≠ гарантия</div></div>
-      <div class="slot-chips" data-layout-slot="slot-chips"><div class="torn-chip black chip-tilt" style="--rot:-6deg">online.rospatent</div><div class="torn-chip white chip-tilt" style="--rot:4deg">УКЭП</div><div class="torn-chip pink chip-tilt" style="--rot:-5deg">35 000 / 24 500 ₽</div></div>
+      <div class="slot-chips" data-layout-slot="slot-chips"><div class="torn-chip black chip-tilt" style="--rot:-6deg">online.rospatent</div><div class="torn-chip white chip-tilt" style="--rot:4deg">УКЭП</div><div class="torn-chip pink chip-tilt" style="--rot:-5deg">35 000 ₽</div></div>
       <div class="slot-ui" data-layout-slot="slot-ui-card">
-        <h4>Регистрация ТЗ 2026</h4><div class="ui-row"><span>online.rospatent</span><span class="toggle on"></span></div><div class="ui-row"><span>МКТУ-13</span><span class="toggle on"></span></div><div class="ui-row"><span>2.1 + 2.4</span><span class="toggle "></span></div><div class="ui-row"><span>18 мес. + 2 нед.</span><span class="toggle "></span></div>
+        <h4>Регистрация ТЗ 2026</h4><div class="ui-row"><span>online.rospatent</span><span class="toggle on"></span></div><div class="ui-row"><span>МКТУ-13</span><span class="toggle on"></span></div><div class="ui-row"><span>2.1 + 2.4 + 2.11</span><span class="toggle "></span></div>
         <div class="ui-foot"><span class="muted">Сохранить</span><span class="apply">Применить</span></div>
       </div>
     </div>
