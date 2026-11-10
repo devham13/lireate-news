@@ -15,7 +15,8 @@
     {"path": "/mezhdunarodnaja_registracija_tovarnogo_znaka/", "lastmod_source": "site"},
     {"path": "/registraciya_tovarnogo_znaka_v_kitae/", "lastmod_source": "site"},
     {"path": "/registracija_torgovyh_marok_i_logotipov/", "lastmod_source": "site"},
-    {"path": "/news", "lastmod_source": "articles_max"}
+    {"path": "/news", "lastmod_source": "articles_max"},
+    {"path": "/avtor/", "lastmod_source": "site"}
   ],
   "exclude_article_slugs": [
     "chto_delat_esli_tovarnyy_znak_zanyat",

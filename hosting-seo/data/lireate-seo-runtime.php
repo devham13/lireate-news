@@ -31,6 +31,7 @@ if (!function_exists('lireate_seo_cms_slashless')) {
             'reviews', 'portfolio', 'o_kompanii', 'partners', 'payment', 'personalArea',
             'spasibo', 'reg-tz-main', 'poisk_tovarnyh_znakov', 'ekspertiza_tovarnogo_znaka',
             'mezhdunarodnaja_registracija_tovarnogo_znaka',
+            'avtor',
         );
     }
 }
