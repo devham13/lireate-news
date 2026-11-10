@@ -21,8 +21,8 @@ cd "$REPO"
 # SEO PHP + htaccess fragments
 for pair in "hosting-seo/data/lireate-seo-runtime.php:data/lireate-seo-runtime.php" \
             "hosting-seo/data/lireate-seo-head.inc.php:data/lireate-seo-head.inc.php"; do
-  src="$REPO/$pair"
-  dst="$DOCROOT/${pair#*:}"
+  src="$REPO/${pair%%:*}"
+  dst="$DOCROOT/${pair##*:}"
   bak "$dst"
   cp -a "$src" "$dst"
 done
