@@ -1,0 +1,86 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-10",
+    "today_ru": "10.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "вторник",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-12",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-10 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L50",
+    "priority": "P2",
+    "slug": "prodazha-tovarnogo-znaka-dogovor-nalogi",
+    "h1": "Как продать товарный знак: договор отчуждения, запись в Роспатенте и налоговые риски",
+    "primary_query": "продать товарный знак",
+    "secondary_queries": [
+      "продажа товарного знака договор",
+      "оценка товарного знака для продажи",
+      "налог при продаже товарного знака",
+      "передать товарный знак покупателю реестр"
+    ],
+    "search_intent": "workflow",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "L50",
+    "status": "PASS",
+    "search_intent": "workflow",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "продать товарный знак 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "продать товарный знак ноябрь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "продать товарный знак новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "продажа товарного знака договор 2026",
+      "purpose": "вторичный запрос: продажа товарного знака договор"
+    },
+    {
+      "id": "secondary_2",
+      "query": "оценка товарного знака для продажи 2026",
+      "purpose": "вторичный запрос: оценка товарного знака для продажи"
+    },
+    {
+      "id": "secondary_3",
+      "query": "налог при продаже товарного знака 2026",
+      "purpose": "вторичный запрос: налог при продаже товарного знака"
+    },
+    {
+      "id": "secondary_4",
+      "query": "передать товарный знак покупателю реестр 2026",
+      "purpose": "вторичный запрос: передать товарный знак покупателю реестр"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как продать товарный знак: договор отчуждения, запись в Роспатенте и налоговые риски 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/L50-prodazha-tovarnogo-znaka-dogovor-nalogi",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}

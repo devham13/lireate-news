@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "style": "collage-v1",
+  "illustrations": [
+    {
+      "slot": "inline_1",
+      "template": "bad_good",
+      "headline": "Продажа ≠ лицензия",
+      "chips": [
+        {"icon": "doc", "text": "1488"},
+        {"icon": "layers", "text": "отчуждение"},
+        {"icon": "shield", "text": "лицензия"}
+      ],
+      "sticky": {"text": "владелец в реестре", "color": "pink"},
+      "bad": {
+        "header": "BAD",
+        "lines": [
+          "Купля-продажа логотипа без ТЗ",
+          "Лицензия вместо полной продажи",
+          "Новая заявка вместо сделки"
+        ]
+      },
+      "good": {
+        "header": "GOOD",
+        "lines": [
+          "Отчуждение по ст. 1488",
+          "Владелец меняется в реестре",
+          "Лицензия — право остаётся у вас"
+        ]
+      },
+      "side_checklist": ["продажа", "лицензия", "заявка"],
+      "conclusion": {
+        "box_lines": ["не", "логотип"],
+        "highlight_word": "логотип",
+        "chip": "отчуждение"
+      },
+      "alt": "Сравнение ошибки «купля-продажи логотипа» и правильного выбора между отчуждением, лицензией и новой заявкой",
+      "figcaption": "Чтобы продать товарный знак, нужно отчуждение, а не договор на использование или новая регистрация."
+    },
+    {
+      "slot": "inline_2",
+      "template": "checklist",
+      "headline": "Due diligence",
+      "chips": [
+        {"icon": "calendar", "text": "10 лет"},
+        {"icon": "doc", "text": "1491"},
+        {"icon": "warning", "text": "п. 2"}
+      ],
+      "sticky": {"text": "до цены", "color": "yellow"},
+      "checklist_title": "Реестр",
+      "checklist_rows": [
+        {"text": "срок охраны 10 лет", "icon": "calendar"},
+        {"text": "запись о залоге", "icon": "shield"},
+        {"text": "лицензии третьих лиц", "icon": "doc"},
+        {"text": "риск ст. 1488 п. 2", "icon": "warning"}
+      ],
+      "conclusion": {
+        "box_lines": ["выписка", "в договор"],
+        "highlight_word": "выписка",
+        "chip": "reestra"
+      },
+      "alt": "Чек-лист проверки товарного знака в реестре перед продажей: срок, залог и лицензии",
+      "figcaption": "Перед переговорами о цене сверьте действующий срок, залог и зарегистрированные лицензии в Роспатенте."
+    },
+    {
+      "slot": "inline_3",
+      "template": "process",
+      "headline": "Налоги и пошлина",
+      "chips": [
+        {"icon": "doc", "text": "3.11"},
+        {"icon": "warning", "text": "НДС"},
+        {"icon": "layers", "text": "НДФЛ"}
+      ],
+      "sticky": {"text": "до подписания", "color": "pink"},
+      "steps": [
+        {"title": "ОСНО", "subtitle": "НДС 20%", "chip": "146 НК", "variant": "icon"},
+        {"title": "Физлицо", "subtitle": "НДФЛ 13%", "chip": "228 НК", "variant": "lines"},
+        {"title": "Пошлина", "subtitle": "за отчуждение", "chip": "15 000", "variant": "toggles"},
+        {"title": "Реестр", "subtitle": "госрегистрация", "chip": "1234", "variant": "checklist"}
+      ],
+      "conclusion": {
+        "box_lines": ["15 000 ₽", "п. 3.11"],
+        "highlight_word": "3.11",
+        "chip": "отчуждение"
+      },
+      "alt": "Схема налогов при продаже товарного знака и пошлины 15 000 ₽ по п. 3.11",
+      "figcaption": "Налоги зависят от режима продавца; пошлина за регистрацию отчуждения — 15 000 ₽ за первый знак."
+    }
+  ]
+}

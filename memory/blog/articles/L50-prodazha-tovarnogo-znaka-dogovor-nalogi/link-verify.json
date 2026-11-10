@@ -1,0 +1,178 @@
+{
+  "source": "memory/blog/articles/L50-prodazha-tovarnogo-znaka-dogovor-nalogi/article.html",
+  "total_links": 18,
+  "failed_count": 0,
+  "privacy_policy_violations": [],
+  "verdict": "pass",
+  "links": [
+    {
+      "url": "/document/cons_doc_LAW_64629/8d9ea55407a15f91512959f63b08e463ceba5454/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/document/cons_doc_LAW_64629/d557fbbb1a225a3e06a142e699eb9dad9ffe7a37/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/document/cons_doc_LAW_64629/26479f35ea4ceb422ecc82a4aeb1aab94d70e92f/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/blogs/patent24/683176/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/kak-zaregistrirovat-tovarnyy-znak-samostoyatelno-2026",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/kak-zaregistrirovat-tovarnyy-znak-samostoyatelno-2026"
+    },
+    {
+      "url": "/otchuzhdenie-tovarnogo-znaka-dogovor-reestr",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/otchuzhdenie-tovarnogo-znaka-dogovor-reestr"
+    },
+    {
+      "url": "/document/cons_doc_LAW_64629/b750f79795c779e92bb91e22a676aa4017c4f459/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/prodlenie_tovarnogo_znaka_gosposhlina",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/prodlenie_tovarnogo_znaka_gosposhlina"
+    },
+    {
+      "url": "/trademarks",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/chto_delat_esli_tovarnyy_znak_zanyat",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/chto_delat_esli_tovarnyy_znak_zanyat"
+    },
+    {
+      "url": "/nuzhno-li-registrirovat-tovarnyy-znak",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/nuzhno-li-registrirovat-tovarnyy-znak"
+    },
+    {
+      "url": "/document/cons_doc_LAW_433817/2ff7a8c72de3994f30496a0ccbb1ddafdaddf518/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/document/cons_doc_LAW_64629/fdc59b28ee833cde980c9281e107bcaa6308bf1a/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/reg-tz-main",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/reg-tz-main"
+    },
+    {
+      "url": "/document/cons_doc_LAW_28165/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/408182169/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/news?num=2&category=9",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/news?num=2&category=9"
+    }
+  ]
+}

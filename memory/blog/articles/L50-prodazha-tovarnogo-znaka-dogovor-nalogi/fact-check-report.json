@@ -1,0 +1,122 @@
+{
+  "article": "memory/blog/articles/L50-prodazha-tovarnogo-znaka-dogovor-nalogi/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 16,
+  "verified_facts_count": 4,
+  "unverified_facts_count": 12,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": ": ИП, ООО, иногда физлицо. Нормы сверены на 10.11.2026 . Не юридическая и не налоговая консультация; рас",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2025 г",
+      "kind": "date_or_year",
+      "context": "тоимости НМА ст. 268 НК РФ ; ставка прибыли 25% с 2025 г. УСН НДС при снятии с освобождения; доход на УСН",
+      "verified": true,
+      "reason": "Numerical value '2025' matched in fact-bank context"
+    },
+    {
+      "fact": "10 лет",
+      "kind": "metric_or_duration",
+      "context": "купать можно только действующий знак: срок охраны 10 лет с даты подачи заявки ( ст. 1491 ). Просроченный б",
+      "verified": true,
+      "reason": "Numerical value '10' matched in fact-bank context"
+    },
+    {
+      "fact": "15 000",
+      "kind": "large_number",
+      "context": "овор об отчуждении исключительного права, пошлина 15 000 ₽ по п. 3.11 и госрегистрация . До записи в реест",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1488",
+      "kind": "large_number",
+      "context": "ь товарный знак значит оформить отчуждение по ст. 1488 ГК РФ и зарегистрировать договор в Роспатенте ( ст",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1490",
+      "kind": "large_number",
+      "context": "РФ и зарегистрировать договор в Роспатенте ( ст. 1490 ). Право у покупателя возникает только после госр",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1234",
+      "kind": "large_number",
+      "context": "ателя возникает только после госрегистрации ( ст. 1234 п. 4 ). Пошлина п. 3.11 : 15 000 ₽ за первый знак",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1491",
+      "kind": "large_number",
+      "context": "ак: срок охраны 10 лет с даты подачи заявки ( ст. 1491 ). Просроченный без продления продать нельзя - сн",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1232",
+      "kind": "large_number",
+      "context": ". Без регистрации переход права несостоялся ( ст. 1232 п. 6 ). Договор и пакет в ведомство - на регистрац",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "146",
+      "kind": "large_number",
+      "context": "ия Отчуждение - передача имущественных прав ( ст. 146 НК РФ ). Льгота пп. 26 п. 2 ст. 149 - про лицензии",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "268",
+      "kind": "large_number",
+      "context": "ыль с разницы цены и остаточной стоимости НМА ст. 268 НК РФ ; ставка прибыли 25% с 2025 г. УСН НДС при с",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2025",
+      "kind": "large_number",
+      "context": "тоимости НМА ст. 268 НК РФ ; ставка прибыли 25% с 2025 г. УСН НДС при снятии с освобождения; доход на УСН",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "228",
+      "kind": "large_number",
+      "context": "одавец, ИП-покупатель не удерживает как агент ст. 228 НК РФ ; 13% (15% при доходе свыше 5 млн ₽/год) Дох",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "13 000",
+      "kind": "large_number",
+      "context": "ию 15 000 ₽ за первый товарный знак в заявлении и 13 000 ₽ за каждый следующий ( п. 3.11 ). Бумажное свиде",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "3 000",
+      "kind": "large_number",
+      "context": "( п. 3.11 ). Бумажное свидетельство по желанию - +3 000 ₽ . Ориентир по сроку услуги - 68 рабочих дней ,",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "13 500",
+      "kind": "large_number",
+      "context": "латежа. Не делайте: тиражировать устаревшие суммы 13 500 ₽ из старых SEO-статей без сверки с таблицей Росп",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

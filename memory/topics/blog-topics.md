@@ -1225,7 +1225,7 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L50 — Продажа товарного знака: договор отчуждения, реестр и налоги
 
-- **status:** new
+- **status:** written
 - **priority:** P2
 - **site:** lireate
 - **lireate_category_id:** 9
