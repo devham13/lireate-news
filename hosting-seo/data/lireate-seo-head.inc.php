@@ -15,14 +15,25 @@ if (!function_exists('lireate_seo_ob_filter_html')) {
             $html,
             1
         );
-        $html = preg_replace(
-            '/\s*<meta\s+property="og:image"[^>]*http:\/\/[^>]+>\s*'
-            . '(?:<meta\s+property="og:image:type"[^>]+>\s*)?'
-            . '(?:<meta\s+property="og:image:width"[^>]+>\s*)?'
-            . '(?:<meta\s+property="og:image:height"[^>]+>\s*)?/is',
-            "\n",
+        $html = preg_replace_callback(
+            '/\s*(<meta\s+property="og:image"[^>]*>\s*)'
+            . '(?:<meta\s+property="og:image:type"[^>]*>\s*)?'
+            . '(?:<meta\s+property="og:image:width"[^>]*>\s*)?'
+            . '(?:<meta\s+property="og:image:height"[^>]*>\s*)?/is',
+            function ($m) {
+                if (stripos($m[0], 'http://') !== false) {
+                    return "\n";
+                }
+                return $m[0];
+            },
             $html
         );
+        if (preg_match_all('/<meta\s+property="og:image"\s+content="([^"]+)"\s*\/?>/i', $html, $imgs) && count($imgs[0]) > 1) {
+            $keep = $imgs[0][0];
+            $html = preg_replace('/<meta\s+property="og:image"[^>]*\/?>/i', '', $html);
+            $html = preg_replace('/<meta\s+property="og:image:(?:type|width|height)"[^>]*\/?>/i', '', $html);
+            $html = preg_replace('/<\/head>/i', $keep . "\n</head>", $html, 1);
+        }
         return $html;
     }
 }
