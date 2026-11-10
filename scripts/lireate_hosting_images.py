@@ -8,6 +8,7 @@ _HOSTING_INLINE_FILES = (
     ("cover/inline-01.png", "_inline_01.jpg"),
     ("cover/inline-02.png", "_inline_02.jpg"),
     ("cover/inline-03.png", "_inline_03.jpg"),
+    ("cover/inline-04.png", "_inline_04.jpg"),
 )
 
 COVER_SOURCE = "cover/cover.png"

@@ -13,6 +13,7 @@ from pathlib import Path
 from xml.sax.saxutils import escape
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
+SITEMAP_STATIC_JSON = REPO_ROOT / "shared" / "lireate-sitemap-static.json"
 INDEXNOW_ENDPOINT = "https://yandex.com/indexnow"
 
 
@@ -51,20 +52,51 @@ def datetime_to_lastmod(ts):
     return datetime.fromtimestamp(n, tz=timezone.utc).strftime("%Y-%m-%d")
 
 
-def build_sitemap_xml(site_url, entries, news_list_path="/news/"):
+def load_sitemap_static_config(path=None):
+    path = Path(path) if path else SITEMAP_STATIC_JSON
+    if not path.is_file():
+        return {"paths": [], "exclude_article_slugs": [], "dedupe_article_slugs": []}
+    data = json.loads(path.read_text(encoding="utf-8"))
+    return {
+        "paths": data.get("paths") or [],
+        "exclude_article_slugs": set(data.get("exclude_article_slugs") or []),
+        "dedupe_article_slugs": set(data.get("dedupe_article_slugs") or []),
+    }
+
+
+def _static_loc(base, path):
+    path = (path or "/").strip()
+    if path == "/":
+        return base + "/"
+    if not path.startswith("/"):
+        path = "/" + path
+    return base + path
+
+
+def build_sitemap_xml(site_url, entries, static_config=None, news_list_path="/news"):
     """
     entries: list of dicts with seo_url, datetime (unix int).
+  static_config: from load_sitemap_static_config() or None.
     """
     base, _host = _site_base(site_url)
     if not base:
         raise ValueError("LIREATE_PUBLIC_SITE_URL required for sitemap")
 
+    cfg = static_config if static_config is not None else load_sitemap_static_config()
+    exclude = cfg.get("exclude_article_slugs") or set()
+    dedupe_once = cfg.get("dedupe_article_slugs") or set()
+    seen_dedupe = set()
     url_nodes = []
     max_ts = 0
+
     for row in entries or []:
         seo = (row.get("seo_url") or "").strip().strip("/")
-        if not seo:
+        if not seo or seo in exclude:
             continue
+        if seo in dedupe_once:
+            if seo in seen_dedupe:
+                continue
+            seen_dedupe.add(seo)
         ts = row.get("datetime") or 0
         try:
             ts = int(ts)
@@ -72,7 +104,8 @@ def build_sitemap_xml(site_url, entries, news_list_path="/news/"):
             ts = 0
         if ts > max_ts:
             max_ts = ts
-        loc = escape("{0}/{1}/".format(base, seo))
+        loc_raw = "{0}/{1}/".format(base, seo)
+        loc = escape(loc_raw)
         lastmod = datetime_to_lastmod(ts)
         if lastmod:
             url_nodes.append(
@@ -83,22 +116,32 @@ def build_sitemap_xml(site_url, entries, news_list_path="/news/"):
         else:
             url_nodes.append("  <url>\n    <loc>{0}</loc>\n  </url>".format(loc))
 
-    news_path = news_list_path if news_list_path.startswith("/") else "/" + news_list_path
-    if not news_path.endswith("/"):
-        news_path += "/"
-    news_loc = escape(base + news_path)
-    if max_ts:
-        news_lastmod = datetime_to_lastmod(max_ts)
-        url_nodes.insert(
+    site_lastmod = datetime_to_lastmod(max_ts) if max_ts else datetime.now(tz=timezone.utc).strftime("%Y-%m-%d")
+    static_nodes = []
+    news_in_static = False
+    for item in cfg.get("paths") or []:
+        p = item.get("path") if isinstance(item, dict) else item
+        if not p:
+            continue
+        if p.rstrip("/") == "/news" or p == "/news/":
+            news_in_static = True
+        loc = escape(_static_loc(base, p))
+        src = item.get("lastmod_source") if isinstance(item, dict) else "site"
+        lm = site_lastmod if src == "articles_max" and max_ts else site_lastmod
+        static_nodes.append(
+            "  <url>\n    <loc>{0}</loc>\n    <lastmod>{1}</lastmod>\n  </url>".format(loc, lm)
+        )
+
+    if not news_in_static:
+        news_path = news_list_path if news_list_path.startswith("/") else "/" + news_list_path
+        static_nodes.insert(
             0,
             "  <url>\n    <loc>{0}</loc>\n    <lastmod>{1}</lastmod>\n  </url>".format(
-                news_loc, news_lastmod
+                escape(_static_loc(base, news_path)), site_lastmod
             ),
         )
-    else:
-        url_nodes.insert(0, "  <url>\n    <loc>{0}</loc>\n  </url>".format(news_loc))
 
-    body = "\n".join(url_nodes)
+    body = "\n".join(static_nodes + url_nodes)
     return (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'

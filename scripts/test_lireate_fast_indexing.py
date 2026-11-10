@@ -32,7 +32,8 @@ class TestFastIndexing(unittest.TestCase):
             [{"seo_url": "test_slug", "datetime": 1700000000}],
         )
         self.assertIn('<?xml version="1.0"', xml)
-        self.assertIn("<loc>https://example.test/news/</loc>", xml)
+        self.assertIn("<loc>https://example.test/</loc>", xml)
+        self.assertIn("<loc>https://example.test/news</loc>", xml)
         self.assertIn("<loc>https://example.test/test_slug/</loc>", xml)
         self.assertIn("<lastmod>", xml)
         self.assertNotIn("librend.ru", xml)
