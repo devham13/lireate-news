@@ -16,7 +16,9 @@ PY="$(cat "${LIREATE_AUTOPUB_HOME:-$HOME/lireate-autopub}/.python-interpreter")"
 
 bak() {
   local f="$1"
-  [[ -f "$f" ]] && cp -a "$f" "${f}.${BAK_SUFFIX}"
+  if [[ -f "$f" ]]; then
+    cp -a "$f" "${f}.${BAK_SUFFIX}"
+  fi
 }
 
 cd "$REPO"
