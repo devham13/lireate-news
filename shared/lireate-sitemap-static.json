@@ -18,7 +18,8 @@
     {"path": "/news", "lastmod_source": "articles_max"}
   ],
   "exclude_article_slugs": [
-    "chto_delat_esli_tovarnyy_znak_zanyat"
+    "chto_delat_esli_tovarnyy_znak_zanyat",
+    "chuzhoy_logotip_ili_nazvanie_v_video"
   ],
   "dedupe_article_slugs": [
     "zaschita_firmennogo_stilya"
