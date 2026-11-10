@@ -86,8 +86,8 @@ LANDING_BAK="$BACKUP_DIR/pages-registracija_torgovyh_marok_i_logotipov.sql"
 php -r "require '$DOCROOT/data/db.php'; \$m=new mysqli(DB_SERVER,DB_USER,DB_PASS,DB_NAME); \$r=\$m->query('SELECT * FROM pages WHERE id=105'); \$row=\$r->fetch_assoc(); file_put_contents('$LANDING_BAK', json_encode(\$row, JSON_UNESCAPED_UNICODE));"
 php "$REPO/scripts/lireate_seo_fee_update.php" "$DOCROOT" --apply | tee "$BACKUP_DIR/fee-update.json"
 
-NEWS_BAK="$BACKUP_DIR/news-table.sql"
-php -r "require '$DOCROOT/data/db.php';" && mysqldump -h"${DB_SERVER:-localhost}" -u"${DB_USER}" -p"${DB_PASS}" "${DB_NAME}" news >"$NEWS_BAK" 2>/dev/null || true
+NEWS_BAK="$BACKUP_DIR/news-table.json"
+php -r "require '$DOCROOT/data/db.php'; \$m=new mysqli(DB_SERVER,DB_USER,DB_PASS,DB_NAME); \$r=\$m->query('SELECT id,seo_url,full_story FROM news'); \$rows=[]; while(\$x=\$r->fetch_assoc())\$rows[]=\$x; file_put_contents('$NEWS_BAK', json_encode(\$rows, JSON_UNESCAPED_UNICODE));"
 
 "$PY" "$REPO/scripts/lireate_seo_internal_links.py" --docroot "$DOCROOT" --apply --backup "$NEWS_BAK" | tee "$BACKUP_DIR/internal-links.json"
 
