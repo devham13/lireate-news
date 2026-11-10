@@ -180,7 +180,7 @@ if (!function_exists('lireate_seo_fetch_page_by_slug')) {
         if (!$mysqli) {
             return null;
         }
-        $st = $mysqli->prepare('SELECT name, seo_title, seo_description FROM pages WHERE seo_url=? AND active=1 LIMIT 1');
+        $st = $mysqli->prepare('SELECT name, seo_title, seo_description FROM pages WHERE seo_url=? LIMIT 1');
         if (!$st) {
             return null;
         }
