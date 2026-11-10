@@ -1,0 +1,418 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-10",
+    "today_ru": "10.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "вторник",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-12",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-10 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L43",
+    "priority": "P2",
+    "slug": "vozrazhenie-protiv-vydachi-patenta-konkurentu",
+    "h1": "Как подать возражение против выдачи патента конкуренту: сроки, основания и порядок в Роспатенте",
+    "primary_query": "возражение против выдачи патента",
+    "secondary_queries": [
+      "оспорить патент конкурента",
+      "возражение в патентное ведомство против предоставления правовой охраны",
+      "срок подачи возражения против патента"
+    ],
+    "search_intent": "workflow",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "возражение против выдачи патента 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Возражение против выдачи патента. Подготовка, подача, участие в ...",
+          "url": "https://www.start-patent.ru/opposition-patent",
+          "snippet": ""
+        },
+        {
+          "title": "Письмо о нарушении патента: что делать в 2026 году",
+          "url": "https://nevskylaw.ru/knowledge/prishlo-pismo-o-narushenii-patenta-ot-neznakomoy-kompanii/",
+          "snippet": "(Информация актуальна на 12.02.2021 г.) Служба патентования Старт-Патент оказывает помощь в подготовке и подачи возражений против выдачи патентов."
+        },
+        {
+          "title": "Возражение в Палату по патентным спорам: порядок и сроки",
+          "url": "https://vfs.consulting/ip/sostavlenie-vozrazhenija-v-palatu-po-patentnym-sporam-stoimost/",
+          "snippet": "Получили письмо о нарушении патента от незнакомой компании? Разбираем по шагам: как проверить законность претензии, распознать патентного тролля и защитить бизнес."
+        },
+        {
+          "title": "Палата по патентным спорам: как подать возражение и какие шансы",
+          "url": "https://patent-family.ru/journal/patenty/palata-po-patentnym-sporam/",
+          "snippet": "Палата по патентным спорам (ППС) — специализированное подразделение Роспатента, которое в административном порядке рассматривает возражения против решений экспертизы и заявления о признании недействительными патентов, товарных знаков и других объектов интеллектуальной собственности."
+        },
+        {
+          "title": "Как составить ответ на претензию по патенту — инструкция",
+          "url": "https://nevskylaw.ru/knowledge/otvet-na-pretenziyu-po-patentu-kak-sostavit/",
+          "snippet": "Возражения рассматривает Роспатент в административном порядке — внутри самого патентного ведомства, до всякого суда. Материалы готовит и заседания коллегий проводит подведомственный ему ФИПС, где сохранилось отделение с историческим названием «Палата по патентным спорам»."
+        },
+        {
+          "title": "Оспаривание решения Палаты по патентным спорам — порядок и сроки возражения",
+          "url": "https://lyratetrademark.ru/2026/04/04/ne-znaete-kak-osporit-reshenie-rospatenta-uznajte-o-srokah-i-poryadke-podachi-vozrazhenij-v-palatu-po-patentnym-sporam/",
+          "snippet": "Узнайте, как грамотно составить ответ, оспорить требования и защитить бизнес. Пошаговая инструкция с образцами от патентных юристов — актуально для РФ в 2026 году."
+        }
+      ],
+      "searched_at": "2026-11-10"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "возражение против выдачи патента ноябрь 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Возражение против выдачи патента. Подготовка, подача, участие в ...",
+          "url": "https://www.start-patent.ru/opposition-patent",
+          "snippet": ""
+        },
+        {
+          "title": "Возражение в Палату по патентным спорам: порядок и сроки",
+          "url": "https://vfs.consulting/ip/sostavlenie-vozrazhenija-v-palatu-po-patentnym-sporam-stoimost/",
+          "snippet": "В ответ на поданное возражение патентообладатель имеет право представить отзыв, который направляется в Роспатент и должен быть предоставлен заявителю не позднее чем за 10 дней до заседания."
+        },
+        {
+          "title": "Подача возражений | Патентно-правовая фирма «Нева-Патент»",
+          "url": "https://www.nevapatent.ru/services/ipenf/reexamination/",
+          "snippet": "Палата по патентным спорам (ППС) — специализированное подразделение Роспатента, которое в административном порядке рассматривает возражения против решений экспертизы и заявления о признании недействительными патентов, товарных знаков и других объектов интеллектуальной собственности."
+        },
+        {
+          "title": "Палата по патентным спорам: возражение, сроки и порядок рассмотрения ...",
+          "url": "https://artpatent.ru/articles/zashchita-brenda/palata-po-patentnym-sporam-kak-podat-vozrazhenie-i-osporit-reshenie-rospatent/",
+          "snippet": "Согласно действующему законодательству, в Палату по патентным спорам могут быть поданы следующие возражения и заявления: Возражение на решение об отказе в выдаче патента или о выдаче патента на изобретение, полезную модель, промышленный образец."
+        },
+        {
+          "title": "Письмо о нарушении патента: что делать в 2026 году",
+          "url": "https://nevskylaw.ru/knowledge/prishlo-pismo-o-narushenii-patenta-ot-neznakomoy-kompanii/",
+          "snippet": "Какие споры рассматривают коллегии Палаты по патентным спорам, как подать возражение в Роспатент, какие сроки проверить и как проходит заседание."
+        },
+        {
+          "title": "Палата по патентным спорам: как подать возражение и какие шансы",
+          "url": "https://patent-family.ru/journal/patenty/palata-po-patentnym-sporam/",
+          "snippet": "Получили письмо о нарушении патента от незнакомой компании? Разбираем по шагам: как проверить законность претензии, распознать патентного тролля и защитить бизнес."
+        }
+      ],
+      "searched_at": "2026-11-10"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "возражение против выдачи патента новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Система обмена данными под судом. Изобретатель пошел против \"Яндекса\" и ...",
+          "url": "https://www.comnews.ru/content/246778/2026-08-07/2026-w32/1007/sistema-obmena-dannymi-pod-sudom-izobretatel-poshel-protiv-yandeksa-i-rospatenta",
+          "snippet": ""
+        },
+        {
+          "title": "26.06.2026 - fips.ru",
+          "url": "https://www1.fips.ru/about/otdelenie-palata-po-patentnym-sporam/resheniya-federalnoy-sluzhby-po-intellektualnoy-sobstvennosti-prinimaemye-po-rezultatam-rassmotreniya/26062026.php",
+          "snippet": "Изобретатель пошел против \"Яндекса\" и Роспатента. Суд принял к рассмотрению иск Дмитрия Полетаева, который оспаривает решение Роспатента об аннулировании его патента на \"Систему обмена данных\"."
+        },
+        {
+          "title": "Роспатент признал недействительным последний патент на Трикафту",
+          "url": "https://vademec.ru/news/2026/07/23/rospatent-priznal-nedeystvitelnym-posledniy-patent-na-trikaftu/",
+          "snippet": "Решение Роспатента от 26.06.2026 по заявке № 2019764305, принятое по результатам рассмотрения на заседании коллегии Палаты по патентным спорам 01.06.2026 возражения от 20.06.2024, поданного ООО НПП ..."
+        },
+        {
+          "title": "«Фармасинтез» решил добиться отмены патента на комбинацию антибиотиков ...",
+          "url": "https://gxpnews.net/2026/08/farmasintez-reshil-dobitsya-otmeny-patenta-na-kombinacziyu-antibiotikov/",
+          "snippet": "Роспатент удовлетворил возражение «Медицинской исследовательской компании» («МИК») против действия на территории России патента американской Vertex Pharmaceuticals на группу изобретений № 2734876."
+        },
+        {
+          "title": "Роспатент аннулировал последний патент Vertex на Трикафту в РФ",
+          "url": "https://www.kommersant.ru/doc/8835584",
+          "snippet": "Федеральная служба ранее отклонила возражение производителя против выдачи этого патента, и теперь спор перешел в судебную инстанцию. Предварительное заседание назначено на 14 сентября. В своем иске «Фармасинтез» просит признать решение Роспатента от 26 июня 2026 года недействительным."
+        },
+        {
+          "title": "25.04.2026 - new.fips.ru",
+          "url": "https://new.fips.ru/about/otdelenie-palata-po-patentnym-sporam/resheniya-federalnoy-sluzhby-po-intellektualnoy-sobstvennosti-prinimaemye-po-rezultatam-rassmotreniya/25042026.php",
+          "snippet": "Возражение против выдачи патента МИК подала в апреле 2023 года. Компания утверждала, что описание изобретения не содержит достаточных сведений для воспроизведения всех заявленных соединений..."
+        }
+      ],
+      "searched_at": "2026-11-10"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "оспорить патент конкурента 2026",
+      "purpose": "вторичный запрос: оспорить патент конкурента",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как оспорить патент конкурента: пошлины и сроки",
+          "url": "https://vfs.consulting/ip/osparivanie-chuzhogo-patenta-cena/",
+          "snippet": ""
+        },
+        {
+          "title": "Нарушение патента конкурентом: как взыскать компенсацию",
+          "url": "https://advokat-digin.ru/poleznoe/staty/kak-vzyiskat-kompensacziyu-za-narushenie-patenta-konkurentom/",
+          "snippet": "Сроки, экспертиза, судебная практика. Патент конкурента, который блокирует продажи или развитие бизнеса, можно оспорить."
+        },
+        {
+          "title": "Патентные споры производителя оборудования - Юрист | Ветров и партнёры",
+          "url": "https://vitvet.com/articles/proizvodstvo_oborudovaniya/patentnye-spory-proizvoditelya-oborudovaniya/",
+          "snippet": "Нарушение патента конкурентом? Узнайте, как доказать нарушение и взыскать компенсацию до 10 млн ₽ по новым правилам 2026 года. Запишитесь на консультацию по телефону +7 (495) 517-11-96."
+        },
+        {
+          "title": "Как оспорить патент конкурента: основания и порядок",
+          "url": "https://burocultura.ru/pravovaya-chast/poleznoe/kak-osporit-patent-konkurenta",
+          "snippet": "Защита изобретений от копирования, оспаривание патента конкурента, взыскание компенсации за нарушение патентных прав и запрет производства контрафактного оборудования - ключевые инструменты, которые разбирает эта статья. Как возникает патентный спор у производителя оборудования?"
+        },
+        {
+          "title": "Оспаривание патента конкурента в ППС | Услуги патентного адвоката",
+          "url": "https://vfs.consulting/services/osparivanie-patenta-konkurenta-v-palate-po-patentnym-sporam-advokat/",
+          "snippet": "если вам предъявили претензию о нарушении патентных прав, первый шаг — не платить и не спорить о факте использования, а проверить, был ли патент вообще действителен на законных основаниях."
+        },
+        {
+          "title": "Как Оспорить Патент Конкурента: Стратегия И Кейс Gpg Против Canon",
+          "url": "https://gpg.ru/magazine/evaluation/patentnye-voyny-v-rossii-strategiya-osparivaniya-patenta-konkurenta.html",
+          "snippet": "Помощь адвоката при оспаривании патента конкурента в Палате по патентным спорам (ППС). Аннулирование патентов, защита бизнеса. Цены на услуги юриста."
+        }
+      ],
+      "searched_at": "2026-11-10"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "возражение в патентное ведомство против предоставления правовой охраны 2026",
+      "purpose": "вторичный запрос: возражение в патентное ведомство против предоставления правовой охраны",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Возражение против предоставления правовой охраны товарному знаку ...",
+          "url": "https://www.bashukchichkanov.com/press/vozrazhenie-protiv-predostavleniya-pravovoy-okhrany-tovarnomu-znaku-osnovaniya-poryadok-i-praktika/",
+          "snippet": ""
+        },
+        {
+          "title": "Возражение против предоставления правовой охраны товарному знаку \\ 2026 ...",
+          "url": "https://www.consultant.ru/law/podborki/vozrazhenie_protiv_predostavleniya_pravovoj_ohrany_tovarnomu_znaku/",
+          "snippet": "Возражение — это официальное требование заинтересованного лица об аннулировании правовой охраны знака полностью или в отношении части товаров/услуг. Процедура применяется, когда есть убедительные доказательства того, что регистрация была произведена с нарушением норм права."
+        },
+        {
+          "title": "Возражение в роспатент \\ 2026-2025-2024 год \\ Акты, образцы, формы ...",
+          "url": "https://www.consultant.ru/law/podborki/vozrazhenie_v_rospatent/",
+          "snippet": "В соответствии с порядком оспаривания и признания недействительным предоставления правовой охраны товарному знаку, установленным п. 2 ст. 1513 ГК РФ, возражение против предоставления правовой охраны товарному знаку подается заинтересованным лицом."
+        },
+        {
+          "title": "Палата по патентным спорам: как подать возражение и какие шансы",
+          "url": "https://patent-family.ru/journal/patenty/palata-po-patentnym-sporam/",
+          "snippet": "Форма: Возражение в Федеральную службу по интеллектуальной собственности против предоставления правовой охраны товарному знаку (Подготовлен для системы КонсультантПлюс, 2026)"
+        },
+        {
+          "title": "Самостоятельная процедура подачи возражения.",
+          "url": "https://intellectprava.ru/samostoyatelnaya-procedura-podachi-vozrazheniya",
+          "snippet": "Возражения рассматривает Роспатент в административном порядке — внутри самого патентного ведомства, до всякого суда. Материалы готовит и заседания коллегий проводит подведомственный ему ФИПС, где сохранилось отделение с историческим названием «Палата по патентным спорам»."
+        },
+        {
+          "title": "Возражение против регистрации товарного знака в Роспатенте",
+          "url": "https://vitvet.com/articles/tovarnyj-znak/zashchita/vozrazhenie/",
+          "snippet": "Подробное руководство по процедуре подачи возражения и оспаривания отказа в выдаче товарного знака в Роспатенте."
+        }
+      ],
+      "searched_at": "2026-11-10"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "срок подачи возражения против патента 2026",
+      "purpose": "вторичный запрос: срок подачи возражения против патента",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Самостоятельная процедура подачи возражения.",
+          "url": "https://intellectprava.ru/samostoyatelnaya-procedura-podachi-vozrazheniya",
+          "snippet": ""
+        },
+        {
+          "title": "Роспатент. Порядок обжалования",
+          "url": "https://rospatent.gov.ru/ru/activities/appeal",
+          "snippet": "Возражение на решение экспертизы заявленного обозначения подаётся в Роспатент в течение четырёх месяцев со дня направления заявителю решения (пункт 1 статьи 1500 Гражданского кодекса Российской Федерации)."
+        },
+        {
+          "title": "Палата по патентным спорам: как подать возражение и какие шансы",
+          "url": "https://patent-family.ru/journal/patenty/palata-po-patentnym-sporam/",
+          "snippet": "Предметом жалобы могут являться действие (бездействие) и (или) решения, принятые (осуществляемые) должностным лицом Роспатента, при предоставлении государственной услуги, в том числе в следующих случаях: 1) нарушение срока регистрации заявки; 2) нарушение срока предоставления государственной услуги; 3) требование у заявителя документов,..."
+        },
+        {
+          "title": "Оспаривание решения Палаты по патентным спорам — порядок и сроки возражения",
+          "url": "https://lyratetrademark.ru/2026/04/04/ne-znaete-kak-osporit-reshenie-rospatenta-uznajte-o-srokah-i-poryadke-podachi-vozrazhenij-v-palatu-po-patentnym-sporam/",
+          "snippet": "Возражение на отказ по товарному знаку Роспатент удовлетворяет примерно в половине случаев, по изобретению — вдвое реже. Как подать возражение, какие пошлины и сроки."
+        },
+        {
+          "title": "Оспаривание решения Роспатента: сроки, ППС и СИП",
+          "url": "https://vfs.consulting/ip/jurist-po-sporam-s-rospatentom-stoimost/",
+          "snippet": "По данным, которые обычно цитируют в практических разъяснениях, возражение на решение Роспатента по патентам можно подать в течение 7 месяцев с даты получения решения об отказе."
+        },
+        {
+          "title": "Возражение на решение Роспатента - цены на услуги и сроки",
+          "url": "https://zuykov.com/patents/vozrazheniya-protiv-reshenii-rospatenta/",
+          "snippet": "Получение решения ППС — удовлетворение возражения либо оставление отказа в силе. Возражение подаётся в течение четырёх месяцев с даты получения уведомления об отказе."
+        }
+      ],
+      "searched_at": "2026-11-10"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как подать возражение против выдачи патента конкуренту: сроки, основания и порядок в Роспатенте 2026",
+      "purpose": "SERP по H1",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-10"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://www.start-patent.ru/opposition-patent",
+      "title": "Возражение против выдачи патента. Подготовка, подача, участие в ...",
+      "from_query": "возражение против выдачи патента 2026"
+    },
+    {
+      "url": "https://nevskylaw.ru/knowledge/prishlo-pismo-o-narushenii-patenta-ot-neznakomoy-kompanii/",
+      "title": "Письмо о нарушении патента: что делать в 2026 году",
+      "from_query": "возражение против выдачи патента 2026"
+    },
+    {
+      "url": "https://vfs.consulting/ip/sostavlenie-vozrazhenija-v-palatu-po-patentnym-sporam-stoimost/",
+      "title": "Возражение в Палату по патентным спорам: порядок и сроки",
+      "from_query": "возражение против выдачи патента 2026"
+    },
+    {
+      "url": "https://patent-family.ru/journal/patenty/palata-po-patentnym-sporam/",
+      "title": "Палата по патентным спорам: как подать возражение и какие шансы",
+      "from_query": "возражение против выдачи патента 2026"
+    },
+    {
+      "url": "https://nevskylaw.ru/knowledge/otvet-na-pretenziyu-po-patentu-kak-sostavit/",
+      "title": "Как составить ответ на претензию по патенту — инструкция",
+      "from_query": "возражение против выдачи патента 2026"
+    },
+    {
+      "url": "https://lyratetrademark.ru/2026/04/04/ne-znaete-kak-osporit-reshenie-rospatenta-uznajte-o-srokah-i-poryadke-podachi-vozrazhenij-v-palatu-po-patentnym-sporam/",
+      "title": "Оспаривание решения Палаты по патентным спорам — порядок и сроки возражения",
+      "from_query": "возражение против выдачи патента 2026"
+    },
+    {
+      "url": "https://www.nevapatent.ru/services/ipenf/reexamination/",
+      "title": "Подача возражений | Патентно-правовая фирма «Нева-Патент»",
+      "from_query": "возражение против выдачи патента ноябрь 2026"
+    },
+    {
+      "url": "https://artpatent.ru/articles/zashchita-brenda/palata-po-patentnym-sporam-kak-podat-vozrazhenie-i-osporit-reshenie-rospatent/",
+      "title": "Палата по патентным спорам: возражение, сроки и порядок рассмотрения ...",
+      "from_query": "возражение против выдачи патента ноябрь 2026"
+    },
+    {
+      "url": "https://www.comnews.ru/content/246778/2026-08-07/2026-w32/1007/sistema-obmena-dannymi-pod-sudom-izobretatel-poshel-protiv-yandeksa-i-rospatenta",
+      "title": "Система обмена данными под судом. Изобретатель пошел против \"Яндекса\" и ...",
+      "from_query": "возражение против выдачи патента новости 2026"
+    },
+    {
+      "url": "https://www1.fips.ru/about/otdelenie-palata-po-patentnym-sporam/resheniya-federalnoy-sluzhby-po-intellektualnoy-sobstvennosti-prinimaemye-po-rezultatam-rassmotreniya/26062026.php",
+      "title": "26.06.2026 - fips.ru",
+      "from_query": "возражение против выдачи патента новости 2026"
+    },
+    {
+      "url": "https://vademec.ru/news/2026/07/23/rospatent-priznal-nedeystvitelnym-posledniy-patent-na-trikaftu/",
+      "title": "Роспатент признал недействительным последний патент на Трикафту",
+      "from_query": "возражение против выдачи патента новости 2026"
+    },
+    {
+      "url": "https://gxpnews.net/2026/08/farmasintez-reshil-dobitsya-otmeny-patenta-na-kombinacziyu-antibiotikov/",
+      "title": "«Фармасинтез» решил добиться отмены патента на комбинацию антибиотиков ...",
+      "from_query": "возражение против выдачи патента новости 2026"
+    },
+    {
+      "url": "https://www.kommersant.ru/doc/8835584",
+      "title": "Роспатент аннулировал последний патент Vertex на Трикафту в РФ",
+      "from_query": "возражение против выдачи патента новости 2026"
+    },
+    {
+      "url": "https://new.fips.ru/about/otdelenie-palata-po-patentnym-sporam/resheniya-federalnoy-sluzhby-po-intellektualnoy-sobstvennosti-prinimaemye-po-rezultatam-rassmotreniya/25042026.php",
+      "title": "25.04.2026 - new.fips.ru",
+      "from_query": "возражение против выдачи патента новости 2026"
+    },
+    {
+      "url": "https://vfs.consulting/ip/osparivanie-chuzhogo-patenta-cena/",
+      "title": "Как оспорить патент конкурента: пошлины и сроки",
+      "from_query": "оспорить патент конкурента 2026"
+    },
+    {
+      "url": "https://advokat-digin.ru/poleznoe/staty/kak-vzyiskat-kompensacziyu-za-narushenie-patenta-konkurentom/",
+      "title": "Нарушение патента конкурентом: как взыскать компенсацию",
+      "from_query": "оспорить патент конкурента 2026"
+    },
+    {
+      "url": "https://vitvet.com/articles/proizvodstvo_oborudovaniya/patentnye-spory-proizvoditelya-oborudovaniya/",
+      "title": "Патентные споры производителя оборудования - Юрист | Ветров и партнёры",
+      "from_query": "оспорить патент конкурента 2026"
+    },
+    {
+      "url": "https://burocultura.ru/pravovaya-chast/poleznoe/kak-osporit-patent-konkurenta",
+      "title": "Как оспорить патент конкурента: основания и порядок",
+      "from_query": "оспорить патент конкурента 2026"
+    },
+    {
+      "url": "https://vfs.consulting/services/osparivanie-patenta-konkurenta-v-palate-po-patentnym-sporam-advokat/",
+      "title": "Оспаривание патента конкурента в ППС | Услуги патентного адвоката",
+      "from_query": "оспорить патент конкурента 2026"
+    },
+    {
+      "url": "https://gpg.ru/magazine/evaluation/patentnye-voyny-v-rossii-strategiya-osparivaniya-patenta-konkurenta.html",
+      "title": "Как Оспорить Патент Конкурента: Стратегия И Кейс Gpg Против Canon",
+      "from_query": "оспорить патент конкурента 2026"
+    },
+    {
+      "url": "https://www.bashukchichkanov.com/press/vozrazhenie-protiv-predostavleniya-pravovoy-okhrany-tovarnomu-znaku-osnovaniya-poryadok-i-praktika/",
+      "title": "Возражение против предоставления правовой охраны товарному знаку ...",
+      "from_query": "возражение в патентное ведомство против предоставления правовой охраны 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/vozrazhenie_protiv_predostavleniya_pravovoj_ohrany_tovarnomu_znaku/",
+      "title": "Возражение против предоставления правовой охраны товарному знаку \\ 2026 ...",
+      "from_query": "возражение в патентное ведомство против предоставления правовой охраны 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/vozrazhenie_v_rospatent/",
+      "title": "Возражение в роспатент \\ 2026-2025-2024 год \\ Акты, образцы, формы ...",
+      "from_query": "возражение в патентное ведомство против предоставления правовой охраны 2026"
+    },
+    {
+      "url": "https://intellectprava.ru/samostoyatelnaya-procedura-podachi-vozrazheniya",
+      "title": "Самостоятельная процедура подачи возражения.",
+      "from_query": "возражение в патентное ведомство против предоставления правовой охраны 2026"
+    },
+    {
+      "url": "https://vitvet.com/articles/tovarnyj-znak/zashchita/vozrazhenie/",
+      "title": "Возражение против регистрации товарного знака в Роспатенте",
+      "from_query": "возражение в патентное ведомство против предоставления правовой охраны 2026"
+    },
+    {
+      "url": "https://rospatent.gov.ru/ru/activities/appeal",
+      "title": "Роспатент. Порядок обжалования",
+      "from_query": "срок подачи возражения против патента 2026"
+    },
+    {
+      "url": "https://vfs.consulting/ip/jurist-po-sporam-s-rospatentom-stoimost/",
+      "title": "Оспаривание решения Роспатента: сроки, ППС и СИП",
+      "from_query": "срок подачи возражения против патента 2026"
+    },
+    {
+      "url": "https://zuykov.com/patents/vozrazheniya-protiv-reshenii-rospatenta/",
+      "title": "Возражение на решение Роспатента - цены на услуги и сроки",
+      "from_query": "срок подачи возражения против патента 2026"
+    }
+  ]
+}

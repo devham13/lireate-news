@@ -1,0 +1,171 @@
+{
+  "article": "memory/blog/articles/L43-vozrazhenie-protiv-vydachi-patenta-konkurentu/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "warning",
+  "total_extracted_facts": 23,
+  "verified_facts_count": 6,
+  "unverified_facts_count": 17,
+  "facts": [
+    {
+      "fact": "7 000 руб",
+      "kind": "price_or_currency",
+      "context": "ыдачи - возражение в ППС ( ст. 1398 , п. 3.2.1 ): 7 000 руб. за независимый пункт, коллегия. \"6 месяцев для к",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "14 000 руб",
+      "kind": "price_or_currency",
+      "context": "7 месяцев п. 1.27.1 Да Чужой знак ППС по ТЗ Иные 14 000 руб. Да Делайте: смотрите карточку в реестре ФИПС - е",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "5 000 руб",
+      "kind": "price_or_currency",
+      "context": "для полезной модели и промобразца по регламенту - 5 000 руб. за пункт, для изобретения - 7 000 руб., п. 5–6 П",
+      "verified": true,
+      "reason": "Numerical value '5000' matched in fact-bank context"
+    },
+    {
+      "fact": "3 000 руб",
+      "kind": "price_or_currency",
+      "context": "езависимый пункт (п. 1.27.3) Эта статья Отказ вам 3 000 руб. × пункт (п. 1.27.1) L04 Чужой товарный знак 14 0",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "21 000 руб",
+      "kind": "price_or_currency",
+      "context": ") L08 Посчитайте независимые пункты: три пункта = 21 000 руб. пошлины. Нумеруйте доказательства как в таблице",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "5 р.",
+      "kind": "price_or_currency",
+      "context": "ю коллегии Workflow ППС: подача → регистрация (до 5 р.д.) → отзыв правообладателя (до 10 р.д. до заседан",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 р.",
+      "kind": "price_or_currency",
+      "context": "гистрация (до 5 р.д.) → отзыв правообладателя (до 10 р.д. до заседания) → заседание → при удовлетворении",
+      "verified": true,
+      "reason": "Numerical value '10' matched in fact-bank context"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": ", не ПСН и не миграционный патент. Нормы на 10.11.2026; не индивидуальная консультация. Стратегию своей",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "6 месяцев",
+      "kind": "metric_or_duration",
+      "context": "ишу устройств, а в поиске вам сулят \"оппозицию на 6 месяцев\". В России у третьего лица два пути: замечания по",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "18 месяцев",
+      "kind": "metric_or_duration",
+      "context": "Быстрый инсайт: Заявка публикуется примерно через 18 месяцев ( ст. 1385 ). До решения по заявке любое лицо мож",
+      "verified": true,
+      "reason": "Numerical value '18' matched in fact-bank context"
+    },
+    {
+      "fact": "7 месяцев",
+      "kind": "metric_or_duration",
+      "context": "кт Да Отказ вам Возражение заявителя ( ст. 1387 ) 7 месяцев п. 1.27.1 Да Чужой знак ППС по ТЗ Иные 14 000 руб",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "12 месяцев",
+      "kind": "metric_or_duration",
+      "context": "в с подачи; досрочно заявитель может попросить до 12 месяцев ( ст. 1385 ). Пока в карточке только номер заявки",
+      "verified": true,
+      "reason": "Numerical value '12' matched in fact-bank context"
+    },
+    {
+      "fact": "1385",
+      "kind": "large_number",
+      "context": "аявка публикуется примерно через 18 месяцев ( ст. 1385 ). До решения по заявке любое лицо может подать з",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1350",
+      "kind": "large_number",
+      "context": "лицо может подать замечания о несоответствии ст. 1350 ( абз. после п. 5 ст. 1386 ) без пошлины п. 1.27.",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1386",
+      "kind": "large_number",
+      "context": "я о несоответствии ст. 1350 ( абз. после п. 5 ст. 1386 ) без пошлины п. 1.27.3. После выдачи - возражени",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1398",
+      "kind": "large_number",
+      "context": "п. 1.27.3. После выдачи - возражение в ППС ( ст. 1398 , п. 3.2.1 ): 7 000 руб. за независимый пункт, ко",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "7 000",
+      "kind": "large_number",
+      "context": "ыдачи - возражение в ППС ( ст. 1398 , п. 3.2.1 ): 7 000 руб. за независимый пункт, коллегия. \"6 месяцев дл",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1387",
+      "kind": "large_number",
+      "context": "ента\" в РФ нет - это срок ответа заявителя по ст. 1387 . Материал для производителя и владельца продукта",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "14 000",
+      "kind": "large_number",
+      "context": "7 месяцев п. 1.27.1 Да Чужой знак ППС по ТЗ Иные 14 000 руб. Да Делайте: смотрите карточку в реестре ФИПС",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "5 000",
+      "kind": "large_number",
+      "context": "для полезной модели и промобразца по регламенту - 5 000 руб. за пункт, для изобретения - 7 000 руб., п. 5–",
+      "verified": true,
+      "reason": "Numerical value '5000' matched in fact-bank context"
+    },
+    {
+      "fact": "3 000",
+      "kind": "large_number",
+      "context": "езависимый пункт (п. 1.27.3) Эта статья Отказ вам 3 000 руб. × пункт (п. 1.27.1) L04 Чужой товарный знак 1",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "21 000",
+      "kind": "large_number",
+      "context": ") L08 Посчитайте независимые пункты: три пункта = 21 000 руб. пошлины. Нумеруйте доказательства как в табли",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1248",
+      "kind": "large_number",
+      "context": "Делайте: сначала Роспатент, потом суд ( п. 2 ст. 1248 ). Не делайте: платить 14 000 руб. \"по привычке\"",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

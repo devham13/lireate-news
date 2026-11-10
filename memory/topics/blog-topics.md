@@ -1078,7 +1078,7 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L43 — Возражение против выдачи патента конкуренту
 
-- **status:** new
+- **status:** written
 - **priority:** P2
 - **site:** lireate
 - **lireate_category_id:** 20
