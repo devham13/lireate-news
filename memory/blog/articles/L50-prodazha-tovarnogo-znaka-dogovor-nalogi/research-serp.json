@@ -1,0 +1,514 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-10",
+    "today_ru": "10.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "вторник",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-12",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-10 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L50",
+    "priority": "P2",
+    "slug": "prodazha-tovarnogo-znaka-dogovor-nalogi",
+    "h1": "Как продать товарный знак: договор отчуждения, запись в Роспатенте и налоговые риски",
+    "primary_query": "продать товарный знак",
+    "secondary_queries": [
+      "продажа товарного знака договор",
+      "оценка товарного знака для продажи",
+      "налог при продаже товарного знака",
+      "передать товарный знак покупателю реестр"
+    ],
+    "search_intent": "workflow",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "продать товарный знак 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как Продать Товарный Знак В 2026: Пошаговая Инструкция И Пошлины | Gpg",
+          "url": "https://gpg.ru/magazine/trademark/kak-prodat-tovarnyy-znak-poshagovoe-rukovodstvo-dlya-pravoobladatelya.html",
+          "snippet": ""
+        },
+        {
+          "title": "Как продать товарный знак: пошаговый порядок — Первознак",
+          "url": "https://pervoznak.ru/blog/prodat-tovarnyj-znak",
+          "snippet": "Пошаговое руководство по продаже товарного знака в 2026 году: как составить договор об отчуждении, зарегистрировать в Роспатенте, сколько стоят пошлины и что делать при отказе."
+        },
+        {
+          "title": "Продать товарный знак: пошаговая инструкция",
+          "url": "https://www.znakoved.ru/articles/prodat_tovarnyj_znak_poshagovaya_instrukciya/",
+          "snippet": "Разберём, как подготовить знак к сделке, кто выступает покупателем, где его искать и как провести расчёты так, чтобы не остаться ни без знака, ни без денег."
+        },
+        {
+          "title": "Как продать товарный знак: оценка, поиск покупателя и регистрация сделки",
+          "url": "https://1fbis.ru/blog/kak-prodat-tovarnyy-znak-otsenka-poisk-pokupatelya-i-oformlenie-sdelki.html",
+          "snippet": "Содержание: Условия продажи товарного знака. Алгоритм продажи товарного знака. Проконсультируйтесь у юристов. Назначьте цену на товарный знак. Детальная проработка процедуры продажи."
+        },
+        {
+          "title": "Как продать или передать товарный знак другой фирме",
+          "url": "https://ezybrand.ru/blog/kak-prodat-ili-peredat-tovarnyj-znak-drugoj-firme/",
+          "snippet": "Пошаговое руководство по продаже товарного знака в 2026: методы оценки стоимости, эффективные каналы поиска покупателя и регистрация перехода исключительного права в Роспатенте."
+        },
+        {
+          "title": "Как продать товарный знак, передача исключительных прав",
+          "url": "https://ezybrand.ru/blog/kak-prodat-tovarnyj-znak-ili-znak-obsluzhivaniya/",
+          "snippet": "Передать права на товарный знак можно тремя способами: по договору отчуждения (полная продажа права), по лицензионному договору (временное использование) или по договору коммерческой концессии (франшиза). Любой из этих договоров обязательно регистрируется в Роспатенте — без регистрации он недействителен."
+        }
+      ],
+      "searched_at": "2026-11-10"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "продать товарный знак ноябрь 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как Продать Товарный Знак В 2026: Пошаговая Инструкция И Пошлины | Gpg",
+          "url": "https://gpg.ru/magazine/trademark/kak-prodat-tovarnyy-znak-poshagovoe-rukovodstvo-dlya-pravoobladatelya.html",
+          "snippet": ""
+        },
+        {
+          "title": "Продать товарный знак: пошаговая инструкция",
+          "url": "https://www.znakoved.ru/articles/prodat_tovarnyj_znak_poshagovaya_instrukciya/",
+          "snippet": "Пошаговое руководство по продаже товарного знака в 2026 году: как составить договор об отчуждении, зарегистрировать в Роспатенте, сколько стоят пошлины и что делать при отказе."
+        },
+        {
+          "title": "Как продать товарный знак: пошаговый порядок — Первознак",
+          "url": "https://pervoznak.ru/blog/prodat-tovarnyj-znak",
+          "snippet": "Содержание: Условия продажи товарного знака. Алгоритм продажи товарного знака. Проконсультируйтесь у юристов. Назначьте цену на товарный знак. Детальная проработка процедуры продажи."
+        },
+        {
+          "title": "Как продать товарный знак: оценка, поиск покупателя и регистрация сделки",
+          "url": "https://1fbis.ru/blog/kak-prodat-tovarnyy-znak-otsenka-poisk-pokupatelya-i-oformlenie-sdelki.html",
+          "snippet": "Разберём, как подготовить знак к сделке, кто выступает покупателем, где его искать и как провести расчёты так, чтобы не остаться ни без знака, ни без денег."
+        },
+        {
+          "title": "Как продать товарный знак - Консалт-групп",
+          "url": "https://www.consult-gp.ru/kak-prodat-tovarnyy-znak.php",
+          "snippet": "Пошаговое руководство по продаже товарного знака в 2026: методы оценки стоимости, эффективные каналы поиска покупателя и регистрация перехода исключительного права в Роспатенте."
+        },
+        {
+          "title": "Продажа и покупка товарного знака: договор, регистрация, стоимость",
+          "url": "https://patent-family.ru/journal/tz/prodazha-tovarnogo-znaka/",
+          "snippet": "Товарный знак является интеллектуальной собственностью. Права собственника нематериального актива признаются и охраняются государством при условии государственной регистрации. Правами на зарегистрированный товарный знак можно свободно распоряжаться, в том числе продавать."
+        }
+      ],
+      "searched_at": "2026-11-10"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "продать товарный знак новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как Продать Товарный Знак В 2026: Пошаговая Инструкция И Пошлины | Gpg",
+          "url": "https://gpg.ru/magazine/trademark/kak-prodat-tovarnyy-znak-poshagovoe-rukovodstvo-dlya-pravoobladatelya.html",
+          "snippet": ""
+        },
+        {
+          "title": "Изменения по товарным знакам и ИС в 2026-2027: пошлины, штрафы, ИИ | Qbrand",
+          "url": "https://qbrand.ru/blog/izmeneniya-tovarnyj-znak-2026-2027/",
+          "snippet": "Пошаговое руководство по продаже товарного знака в 2026 году: как составить договор об отчуждении, зарегистрировать в Роспатенте, сколько стоят пошлины и что делать при отказе."
+        },
+        {
+          "title": "Как продать товарный знак: оценка, поиск покупателя и регистрация сделки",
+          "url": "https://1fbis.ru/blog/kak-prodat-tovarnyy-znak-otsenka-poisk-pokupatelya-i-oformlenie-sdelki.html",
+          "snippet": "Что изменилось в товарных знаках и ИС в 2026 и что ждёт в 2027: новые пошлины, компенсации до 10 млн ₽, декларация о намерении, закон об ИИ, правила для маркетплейсов."
+        },
+        {
+          "title": "Как продать товарный знак: пошаговый порядок — Первознак",
+          "url": "https://pervoznak.ru/blog/prodat-tovarnyj-znak",
+          "snippet": "Пошаговое руководство по продаже товарного знака в 2026: методы оценки стоимости, эффективные каналы поиска покупателя и регистрация перехода исключительного права в Роспатенте."
+        },
+        {
+          "title": "Регистрация товарного знака в 2026 году: новые правила и пошаговая ...",
+          "url": "https://www.klerk.ru/blogs/roskom24/671876/",
+          "snippet": "Разберём, как подготовить знак к сделке, кто выступает покупателем, где его искать и как провести расчёты так, чтобы не остаться ни без знака, ни без денег."
+        },
+        {
+          "title": "Регистрация брендов в 2026 году: декларация о намерении использовать ...",
+          "url": "https://ezybrand.ru/blog/registracziya-brendov-v-2026-godu-deklaracziya-o-namerenii-ispolzovat-tovarnyj-znak/",
+          "snippet": "О каких изменениях нужно знать, как регистрировать товарный знак в 2026 году и что необходимо предпринять для защиты своей торговой марки, рассказали ниже."
+        }
+      ],
+      "searched_at": "2026-11-10"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "продажа товарного знака договор 2026",
+      "purpose": "вторичный запрос: продажа товарного знака договор",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как Продать Товарный Знак В 2026: Пошаговая Инструкция И Пошлины | Gpg",
+          "url": "https://gpg.ru/magazine/trademark/kak-prodat-tovarnyy-znak-poshagovoe-rukovodstvo-dlya-pravoobladatelya.html",
+          "snippet": ""
+        },
+        {
+          "title": "Договор купли-продажи товарного знака - бланк и образец",
+          "url": "https://spmag.ru/blanks/dogovor-kupli-prodazhi-tovarnogo-znaka-blank-i-obrazec",
+          "snippet": "Пошаговое руководство по продаже товарного знака в 2026 году: как составить договор об отчуждении, зарегистрировать в Роспатенте, сколько стоят пошлины и что делать при отказе."
+        },
+        {
+          "title": "Пошлины за регистрацию и продление товарного знака в 2026 году: что ...",
+          "url": "https://www.dvitex.ru/poleznoe/biznes/intellektualnaya-sobstvennost/prodlenie-tovarnogo-znaka-v-year-godu-kak-ne-pereplachivat-za-nenuzhnye-tovary-i-uslugi/",
+          "snippet": "Рекомендуем наши бланк и готовый образец договора, которые легко скачать и удобно заполнять: они актуальны, полны и соответствуют всем требованиям действующего законодательства."
+        },
+        {
+          "title": "Продажа товарного знака \\ 2026-2025-2024 год \\ Акты, образцы, формы ...",
+          "url": "https://www.consultant.ru/law/podborki/prodazha_tovarnogo_znaka/",
+          "snippet": "Пошлины за продление товарного знака на 10 лет В соответствии с п. 2 ст. 1491 ГК РФ исключительное право на товарный знак действует в течение 10 лет с даты подачи заявки в Роспатент."
+        },
+        {
+          "title": "Продать товарный знак: пошаговая инструкция",
+          "url": "https://www.znakoved.ru/articles/prodat_tovarnyj_znak_poshagovaya_instrukciya/",
+          "snippet": "Подборка наиболее важных документов по вопросу Продажа товарного знака нормативно-правовые акты формы статьи консультации экспертов и многое другое."
+        },
+        {
+          "title": "Договор передачи товарного знака 2026: образец и советы юриста",
+          "url": "https://24h-yurspravka.ru/dogovor-ustupki-tovarnogo-znaka-obrazecz-2026-goda-poshagovoe-rukovodstvo-i-vazhnye-yuridicheskie-nyuansy.html",
+          "snippet": "Содержание: Условия продажи товарного знака. Алгоритм продажи товарного знака. Проконсультируйтесь у юристов. Назначьте цену на товарный знак. Детальная проработка процедуры продажи."
+        }
+      ],
+      "searched_at": "2026-11-10"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "оценка товарного знака для продажи 2026",
+      "purpose": "вторичный запрос: оценка товарного знака для продажи",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Оценка стоимости товарного знака в 2026: методы, кейсы, примеры ...",
+          "url": "https://gpg.ru/magazine/ocenka/otsenka-stoimosti-tovarnogo-znaka-metody-i-keysy.html",
+          "snippet": ""
+        },
+        {
+          "title": "Методы оценки товарных знаков в 2026 году : полный разбор",
+          "url": "https://cd-ocenka.ru/metody-otsenki-tovarnyh-znakov-v-2026-godu-polnyy-razbor",
+          "snippet": "Как оценить товарный знак: доходный, затратный и сравнительный подходы. Примеры расчета стоимости бренда, ставки роялти, дисконтирование. Кейсы известных компаний."
+        },
+        {
+          "title": "Как рассчитать стоимость товарного знака - методы оценки",
+          "url": "https://vitvet.com/articles/intellekt/tovarnye_znaki/kak_rasschitat_stoimost_tovarnogo_znaka/",
+          "snippet": "Узнайте о ключевых методах оценки товарных знаков в 2026 году. Статья охватывает актуальные подходы, методики и практики для точного определения стоимости вашего бренда."
+        },
+        {
+          "title": "Оценка товарного знака: методы, этапы, документы",
+          "url": "https://vfs.consulting/ip/ocenka-rynochnoj-stoimosti-tovarnogo-znaka-stoimost/",
+          "snippet": "Три основных подхода - затратный, сравнительный и доходный - дают разные результаты в зависимости от цели: продажа, лицензирование, залог, судебный спор или постановка на баланс. Собственники недооценивают товарный знак при продаже бизнеса и переплачивают при покупке лицензии."
+        },
+        {
+          "title": "Услуги по оценке товарного знака",
+          "url": "https://abp.legal/trademark-valuation",
+          "snippet": "Как оценивают товарный знак в России: 3 подхода, 5 этапов, документы, срок действия отчёта — 6 месяцев. Сопровождение оценки НМА — у юриста VFS."
+        },
+        {
+          "title": "Сколько Стоит Товарный Знак? Оценка Бренда | Leo Patent",
+          "url": "https://www.leopatent.com/ru/skolko-stoit-tovarnyy-znak/",
+          "snippet": "Для того чтобы поставить ТЗ на баланс, продать франшизу, получить кредит под залог ИС или отсудить компенсацию, необходима профессиональная оценка данного объекта."
+        }
+      ],
+      "searched_at": "2026-11-10"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "налог при продаже товарного знака 2026",
+      "purpose": "вторичный запрос: налог при продаже товарного знака",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Пошлины за регистрацию и продление товарного знака в 2026 году: что ...",
+          "url": "https://www.dvitex.ru/poleznoe/biznes/intellektualnaya-sobstvennost/prodlenie-tovarnogo-znaka-v-year-godu-kak-ne-pereplachivat-za-nenuzhnye-tovary-i-uslugi/",
+          "snippet": ""
+        },
+        {
+          "title": "Налоги при сделках с товарным знаком",
+          "url": "https://vitvet.com/articles/tovarnyj-znak/dogovory/nalogi-po-sdelkam/",
+          "snippet": "Пошлины за продление товарного знака на 10 лет В соответствии с п. 2 ст. 1491 ГК РФ исключительное право на товарный знак действует в течение 10 лет с даты подачи заявки в Роспатент."
+        },
+        {
+          "title": "Товарный знак в бухгалтерском и налоговом учете в 2026 году",
+          "url": "https://www.v2b.ru/articles/tovarnyy-znak-v-buhgalterskom-i-nalogovom-uchete-s-2024-goda/",
+          "snippet": "Практически это означает: если российская компания продаёт товарный знак другой российской компании, НДС со стоимости сделки не начисляется и покупателю не предъявляется."
+        },
+        {
+          "title": "Как Продать Товарный Знак В 2026: Пошаговая Инструкция И Пошлины | Gpg",
+          "url": "https://gpg.ru/magazine/trademark/kak-prodat-tovarnyy-znak-poshagovoe-rukovodstvo-dlya-pravoobladatelya.html",
+          "snippet": "Операции с товарным знаком (ТЗ) должны быть отражены в учете. В зависимости от ситуации порядок такого учета может быть разным. Ведь использование ТЗ требует различных действий, в частности, по его созданию, продлению, уплате пошлины и так далее. В статье рассмотрены понятие товарного знака и порядок учета в разных ситуациях. Содержание."
+        },
+        {
+          "title": "Продажа товарного знака ндс \\ 2026-2025-2024 год \\ Акты, образцы, формы ...",
+          "url": "https://www.consultant.ru/law/podborki/prodazha_tovarnogo_znaka_nds/",
+          "snippet": "Пошаговое руководство по продаже товарного знака в 2026 году: как составить договор об отчуждении, зарегистрировать в Роспатенте, сколько стоят пошлины и что делать при отказе."
+        },
+        {
+          "title": "Товарные знаки в бухгалтерском и налоговом учете - проводки",
+          "url": "https://nalog-nalog.ru/uchet_os_i_nma/tovarnye_znaki_v_buhgalterskom_i_nalogovom_uchete_provodki-23/",
+          "snippet": "(Издательство \"Главная книга\", 2026) При продаже товарного знака правообладатель начисляет НДС на стоимость по договору. В налоговом и бухгалтерском учете он включает в доходы выручку от продажи, а в расходы остаточную стоимость товарного знака, если он был учтен как НМА (ст. 268 НК РФ)."
+        }
+      ],
+      "searched_at": "2026-11-10"
+    },
+    {
+      "query_id": "secondary_4",
+      "query": "передать товарный знак покупателю реестр 2026",
+      "purpose": "вторичный запрос: передать товарный знак покупателю реестр",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Передача прав на товарный знак: способы и регистрация",
+          "url": "https://inmarlegal.ru/press/publications/copyrightlaw/peredacha-prav-na-tovarnyjznak/",
+          "snippet": ""
+        },
+        {
+          "title": "Регистрация перехода права на товарный знак \\ 2026-2025-2024 год \\ Акты ...",
+          "url": "https://www.consultant.ru/law/podborki/registraciya_perehoda_prava_na_tovarnyj_znak/",
+          "snippet": "Вывод для бизнеса сводится к трем тезисам. Во‑первых, «передача прав на товарный знак» — это набор юридически разных механизмов, и выбор между ними должен следовать из операционной ..."
+        },
+        {
+          "title": "Передача прав на товарный знак: договор, способы и регистрация в Роспатенте",
+          "url": "https://inilaw.com/blog/tovarnye-znaki/peredacha-tovarnogo-znaka/",
+          "snippet": "(Подготовлен для системы КонсультантПлюс, 2026) Порядок регистрации передачи права пользования товарным знаком на основании лицензионного договора регулируется Правилами ..."
+        },
+        {
+          "title": "Как Продать Товарный Знак В 2026: Пошаговая Инструкция И Пошлины | Gpg",
+          "url": "https://gpg.ru/magazine/trademark/kak-prodat-tovarnyy-znak-poshagovoe-rukovodstvo-dlya-pravoobladatelya.html",
+          "snippet": "Передача прав на товарный знак — договор отчуждения, лицензия или франчайзинг. Как оформить договор передачи товарного знака, зарегистрировать переход права в Роспатенте, сроки и ..."
+        },
+        {
+          "title": "Способы передачи прав на товарный знак в 2026 году",
+          "url": "https://www.malyi-biznes.ru/tovarniy-znak/peredacha-prav/",
+          "snippet": "Пошаговое руководство по продаже товарного знака в 2026 году: как составить договор об отчуждении, зарегистрировать в Роспатенте, сколько стоят пошлины и что делать при отказе."
+        },
+        {
+          "title": "Переход права на товарный знак \\ 2026-2025-2024 год \\ Акты, образцы ...",
+          "url": "https://www.consultant.ru/law/podborki/perehod_prava_na_tovarnyj_znak/",
+          "snippet": "Права на товарный знак допускается передавать третьим лицам (ИП или ООО). Переход прав осуществляется на основании гражданско-правового договора, на возмездной основе."
+        }
+      ],
+      "searched_at": "2026-11-10"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как продать товарный знак: договор отчуждения, запись в Роспатенте и налоговые риски 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как Продать Товарный Знак В 2026: Пошаговая Инструкция И Пошлины | Gpg",
+          "url": "https://gpg.ru/magazine/trademark/kak-prodat-tovarnyy-znak-poshagovoe-rukovodstvo-dlya-pravoobladatelya.html",
+          "snippet": ""
+        },
+        {
+          "title": "Договор отчуждения товарного знака: как оформить | IPbot",
+          "url": "https://ipbot.ru/articles/dogovor-otchuzhdeniya-tz/",
+          "snippet": "Пошаговое руководство по продаже товарного знака в 2026 году: как составить договор об отчуждении, зарегистрировать в Роспатенте, сколько стоят пошлины и что делать при отказе."
+        },
+        {
+          "title": "Передача прав на товарный знак: способы и регистрация",
+          "url": "https://inmarlegal.ru/press/publications/copyrightlaw/peredacha-prav-na-tovarnyjznak/",
+          "snippet": "Как оформить договор отчуждения исключительного права на товарный знак. Существенные условия, ограничения, регистрация в Роспатенте, пошлины и налоги."
+        },
+        {
+          "title": "Продажа и покупка товарного знака: договор, регистрация, стоимость",
+          "url": "https://patent-family.ru/journal/tz/prodazha-tovarnogo-znaka/",
+          "snippet": "Передача прав на товарный знак: отчуждение, лицензия, коммерческая концессия и залог. Регистрация в Роспатенте, риски бизнеса, позиции Верховного Суда."
+        },
+        {
+          "title": "Отчуждение товарного знака: договор и Роспатент",
+          "url": "https://nevskylaw.ru/knowledge/otchuzhdenie-tovarnogo-znaka-registraciya-i-poshliny-v-rospatente/",
+          "snippet": "Как продать или купить товарный знак: договор отчуждения, оценка стоимости, регистрация в Роспатенте, пошлины, внесение в уставный капитал. Пошаговый гайд от экспертов."
+        },
+        {
+          "title": "Договор отчуждения товарного знака: как передать права на бренд и ...",
+          "url": "https://www.klerk.ru/blogs/roskom24/696720/",
+          "snippet": "Как проверить товарный знак, составить договор отчуждения, подать документы в Роспатент, рассчитать пошлину и определить момент перехода права."
+        }
+      ],
+      "searched_at": "2026-11-10"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://gpg.ru/magazine/trademark/kak-prodat-tovarnyy-znak-poshagovoe-rukovodstvo-dlya-pravoobladatelya.html",
+      "title": "Как Продать Товарный Знак В 2026: Пошаговая Инструкция И Пошлины | Gpg",
+      "from_query": "продать товарный знак 2026"
+    },
+    {
+      "url": "https://pervoznak.ru/blog/prodat-tovarnyj-znak",
+      "title": "Как продать товарный знак: пошаговый порядок — Первознак",
+      "from_query": "продать товарный знак 2026"
+    },
+    {
+      "url": "https://www.znakoved.ru/articles/prodat_tovarnyj_znak_poshagovaya_instrukciya/",
+      "title": "Продать товарный знак: пошаговая инструкция",
+      "from_query": "продать товарный знак 2026"
+    },
+    {
+      "url": "https://1fbis.ru/blog/kak-prodat-tovarnyy-znak-otsenka-poisk-pokupatelya-i-oformlenie-sdelki.html",
+      "title": "Как продать товарный знак: оценка, поиск покупателя и регистрация сделки",
+      "from_query": "продать товарный знак 2026"
+    },
+    {
+      "url": "https://ezybrand.ru/blog/kak-prodat-ili-peredat-tovarnyj-znak-drugoj-firme/",
+      "title": "Как продать или передать товарный знак другой фирме",
+      "from_query": "продать товарный знак 2026"
+    },
+    {
+      "url": "https://ezybrand.ru/blog/kak-prodat-tovarnyj-znak-ili-znak-obsluzhivaniya/",
+      "title": "Как продать товарный знак, передача исключительных прав",
+      "from_query": "продать товарный знак 2026"
+    },
+    {
+      "url": "https://www.consult-gp.ru/kak-prodat-tovarnyy-znak.php",
+      "title": "Как продать товарный знак - Консалт-групп",
+      "from_query": "продать товарный знак ноябрь 2026"
+    },
+    {
+      "url": "https://patent-family.ru/journal/tz/prodazha-tovarnogo-znaka/",
+      "title": "Продажа и покупка товарного знака: договор, регистрация, стоимость",
+      "from_query": "продать товарный знак ноябрь 2026"
+    },
+    {
+      "url": "https://qbrand.ru/blog/izmeneniya-tovarnyj-znak-2026-2027/",
+      "title": "Изменения по товарным знакам и ИС в 2026-2027: пошлины, штрафы, ИИ | Qbrand",
+      "from_query": "продать товарный знак новости 2026"
+    },
+    {
+      "url": "https://www.klerk.ru/blogs/roskom24/671876/",
+      "title": "Регистрация товарного знака в 2026 году: новые правила и пошаговая ...",
+      "from_query": "продать товарный знак новости 2026"
+    },
+    {
+      "url": "https://ezybrand.ru/blog/registracziya-brendov-v-2026-godu-deklaracziya-o-namerenii-ispolzovat-tovarnyj-znak/",
+      "title": "Регистрация брендов в 2026 году: декларация о намерении использовать ...",
+      "from_query": "продать товарный знак новости 2026"
+    },
+    {
+      "url": "https://spmag.ru/blanks/dogovor-kupli-prodazhi-tovarnogo-znaka-blank-i-obrazec",
+      "title": "Договор купли-продажи товарного знака - бланк и образец",
+      "from_query": "продажа товарного знака договор 2026"
+    },
+    {
+      "url": "https://www.dvitex.ru/poleznoe/biznes/intellektualnaya-sobstvennost/prodlenie-tovarnogo-znaka-v-year-godu-kak-ne-pereplachivat-za-nenuzhnye-tovary-i-uslugi/",
+      "title": "Пошлины за регистрацию и продление товарного знака в 2026 году: что ...",
+      "from_query": "продажа товарного знака договор 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/prodazha_tovarnogo_znaka/",
+      "title": "Продажа товарного знака \\ 2026-2025-2024 год \\ Акты, образцы, формы ...",
+      "from_query": "продажа товарного знака договор 2026"
+    },
+    {
+      "url": "https://24h-yurspravka.ru/dogovor-ustupki-tovarnogo-znaka-obrazecz-2026-goda-poshagovoe-rukovodstvo-i-vazhnye-yuridicheskie-nyuansy.html",
+      "title": "Договор передачи товарного знака 2026: образец и советы юриста",
+      "from_query": "продажа товарного знака договор 2026"
+    },
+    {
+      "url": "https://gpg.ru/magazine/ocenka/otsenka-stoimosti-tovarnogo-znaka-metody-i-keysy.html",
+      "title": "Оценка стоимости товарного знака в 2026: методы, кейсы, примеры ...",
+      "from_query": "оценка товарного знака для продажи 2026"
+    },
+    {
+      "url": "https://cd-ocenka.ru/metody-otsenki-tovarnyh-znakov-v-2026-godu-polnyy-razbor",
+      "title": "Методы оценки товарных знаков в 2026 году : полный разбор",
+      "from_query": "оценка товарного знака для продажи 2026"
+    },
+    {
+      "url": "https://vitvet.com/articles/intellekt/tovarnye_znaki/kak_rasschitat_stoimost_tovarnogo_znaka/",
+      "title": "Как рассчитать стоимость товарного знака - методы оценки",
+      "from_query": "оценка товарного знака для продажи 2026"
+    },
+    {
+      "url": "https://vfs.consulting/ip/ocenka-rynochnoj-stoimosti-tovarnogo-znaka-stoimost/",
+      "title": "Оценка товарного знака: методы, этапы, документы",
+      "from_query": "оценка товарного знака для продажи 2026"
+    },
+    {
+      "url": "https://abp.legal/trademark-valuation",
+      "title": "Услуги по оценке товарного знака",
+      "from_query": "оценка товарного знака для продажи 2026"
+    },
+    {
+      "url": "https://www.leopatent.com/ru/skolko-stoit-tovarnyy-znak/",
+      "title": "Сколько Стоит Товарный Знак? Оценка Бренда | Leo Patent",
+      "from_query": "оценка товарного знака для продажи 2026"
+    },
+    {
+      "url": "https://vitvet.com/articles/tovarnyj-znak/dogovory/nalogi-po-sdelkam/",
+      "title": "Налоги при сделках с товарным знаком",
+      "from_query": "налог при продаже товарного знака 2026"
+    },
+    {
+      "url": "https://www.v2b.ru/articles/tovarnyy-znak-v-buhgalterskom-i-nalogovom-uchete-s-2024-goda/",
+      "title": "Товарный знак в бухгалтерском и налоговом учете в 2026 году",
+      "from_query": "налог при продаже товарного знака 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/prodazha_tovarnogo_znaka_nds/",
+      "title": "Продажа товарного знака ндс \\ 2026-2025-2024 год \\ Акты, образцы, формы ...",
+      "from_query": "налог при продаже товарного знака 2026"
+    },
+    {
+      "url": "https://nalog-nalog.ru/uchet_os_i_nma/tovarnye_znaki_v_buhgalterskom_i_nalogovom_uchete_provodki-23/",
+      "title": "Товарные знаки в бухгалтерском и налоговом учете - проводки",
+      "from_query": "налог при продаже товарного знака 2026"
+    },
+    {
+      "url": "https://inmarlegal.ru/press/publications/copyrightlaw/peredacha-prav-na-tovarnyjznak/",
+      "title": "Передача прав на товарный знак: способы и регистрация",
+      "from_query": "передать товарный знак покупателю реестр 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/registraciya_perehoda_prava_na_tovarnyj_znak/",
+      "title": "Регистрация перехода права на товарный знак \\ 2026-2025-2024 год \\ Акты ...",
+      "from_query": "передать товарный знак покупателю реестр 2026"
+    },
+    {
+      "url": "https://inilaw.com/blog/tovarnye-znaki/peredacha-tovarnogo-znaka/",
+      "title": "Передача прав на товарный знак: договор, способы и регистрация в Роспатенте",
+      "from_query": "передать товарный знак покупателю реестр 2026"
+    },
+    {
+      "url": "https://www.malyi-biznes.ru/tovarniy-znak/peredacha-prav/",
+      "title": "Способы передачи прав на товарный знак в 2026 году",
+      "from_query": "передать товарный знак покупателю реестр 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/perehod_prava_na_tovarnyj_znak/",
+      "title": "Переход права на товарный знак \\ 2026-2025-2024 год \\ Акты, образцы ...",
+      "from_query": "передать товарный знак покупателю реестр 2026"
+    },
+    {
+      "url": "https://ipbot.ru/articles/dogovor-otchuzhdeniya-tz/",
+      "title": "Договор отчуждения товарного знака: как оформить | IPbot",
+      "from_query": "Как продать товарный знак: договор отчуждения, запись в Роспатенте и налоговые риски 2026"
+    },
+    {
+      "url": "https://nevskylaw.ru/knowledge/otchuzhdenie-tovarnogo-znaka-registraciya-i-poshliny-v-rospatente/",
+      "title": "Отчуждение товарного знака: договор и Роспатент",
+      "from_query": "Как продать товарный знак: договор отчуждения, запись в Роспатенте и налоговые риски 2026"
+    },
+    {
+      "url": "https://www.klerk.ru/blogs/roskom24/696720/",
+      "title": "Договор отчуждения товарного знака: как передать права на бренд и ...",
+      "from_query": "Как продать товарный знак: договор отчуждения, запись в Роспатенте и налоговые риски 2026"
+    }
+  ]
+}
