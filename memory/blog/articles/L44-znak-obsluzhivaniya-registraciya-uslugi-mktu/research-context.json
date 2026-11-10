@@ -1,0 +1,86 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-10",
+    "today_ru": "10.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "вторник",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-12",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-10 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L44",
+    "priority": "P2",
+    "slug": "znak-obsluzhivaniya-registraciya-uslugi-mktu",
+    "h1": "Знак обслуживания для услуг: чем отличается от товарного знака и как выбрать классы МКТУ",
+    "primary_query": "знак обслуживания регистрация",
+    "secondary_queries": [
+      "товарный знак для услуг",
+      "классы мкту для услуг",
+      "регистрация бренда для салона красоты",
+      "знак обслуживания и товарный знак разница"
+    ],
+    "search_intent": "comparison",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "L44",
+    "status": "PASS",
+    "search_intent": "comparison",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "знак обслуживания регистрация 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "знак обслуживания регистрация ноябрь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "знак обслуживания регистрация новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "товарный знак для услуг 2026",
+      "purpose": "вторичный запрос: товарный знак для услуг"
+    },
+    {
+      "id": "secondary_2",
+      "query": "классы мкту для услуг 2026",
+      "purpose": "вторичный запрос: классы мкту для услуг"
+    },
+    {
+      "id": "secondary_3",
+      "query": "регистрация бренда для салона красоты 2026",
+      "purpose": "вторичный запрос: регистрация бренда для салона красоты"
+    },
+    {
+      "id": "secondary_4",
+      "query": "знак обслуживания и товарный знак разница 2026",
+      "purpose": "вторичный запрос: знак обслуживания и товарный знак разница"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Знак обслуживания для услуг: чем отличается от товарного знака и как выбрать классы МКТУ 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/L44-znak-obsluzhivaniya-registraciya-uslugi-mktu",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}

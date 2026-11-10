@@ -1,0 +1,157 @@
+{
+  "article": "memory/blog/articles/L44-znak-obsluzhivaniya-registraciya-uslugi-mktu/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 21,
+  "verified_facts_count": 9,
+  "unverified_facts_count": 12,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "верите реестр и учтете новую форму заявки с 18.08.2026 . TL;DR / Быстрый инсайт: По п. 1-2 ст. 1477 ГК Р",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2026 года",
+      "kind": "date_or_year",
+      "context": "казывают классы: 1-34 - товары, 35-45 - услуги. С 2026 года в заявках действует МКТУ-13 ; с 18.08.2026 - нова",
+      "verified": true,
+      "reason": "Numerical value '2026' matched in fact-bank context"
+    },
+    {
+      "fact": "2023",
+      "kind": "date_or_year",
+      "context": "П/ЕГРЮЛ: ИП и ООО подают от своего имени; с 29.06.2023 заявителем может быть и физлицо, включая самозанят",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2025",
+      "kind": "date_or_year",
+      "context": "йте: писать \"весь класс 44\" без позиций - с 04.10.2025 ( ПП РФ № 1459 ) пошлина за экспертизу зависит и",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "10 лет",
+      "kind": "metric_or_duration",
+      "context": "ермин для охраны услуг и работ . Экспертиза, срок 10 лет с даты заявки ( ст. 1491 ) и риск отказа при сход",
+      "verified": true,
+      "reason": "Numerical value '10' matched in fact-bank context"
+    },
+    {
+      "fact": "18 месяцев",
+      "kind": "metric_or_duration",
+      "context": "Роспатента указан предельный срок услуги порядка 18 месяцев (экспертиза по существу - до 12 месяцев после фор",
+      "verified": true,
+      "reason": "Numerical value '18' matched in fact-bank context"
+    },
+    {
+      "fact": "12 месяцев",
+      "kind": "metric_or_duration",
+      "context": "и порядка 18 месяцев (экспертиза по существу - до 12 месяцев после формальной). Полный цикл \"от черновика до с",
+      "verified": true,
+      "reason": "Numerical value '12' matched in fact-bank context"
+    },
+    {
+      "fact": "1477",
+      "kind": "large_number",
+      "context": "8.08.2026 . TL;DR / Быстрый инсайт: По п. 1-2 ст. 1477 ГК РФ товарный знак индивидуализирует товары, знак",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1491",
+      "kind": "large_number",
+      "context": "бот . Экспертиза, срок 10 лет с даты заявки ( ст. 1491 ) и риск отказа при сходстве с чужим знаком в одн",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "е с чужим знаком в однородных позициях ( п. 6 ст. 1483 ) - общие для любой заявки. Критерий Товарный зна",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "34 35",
+      "kind": "large_number",
+      "context": ") Работы, услуги ( п. 2 ст. 1477 ) Классы МКТУ 1-34 35-45 Процедура в Роспатенте Одна ( госуслуга ) Та ж",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1492",
+      "kind": "large_number",
+      "context": "еще логотипа (это влияет на состав заявки по ст. 1492 ). Сверьте заявителя с ЕГРИП/ЕГРЮЛ: ИП и ООО пода",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1459",
+      "kind": "large_number",
+      "context": "сь класс 44\" без позиций - с 04.10.2025 ( ПП РФ № 1459 ) пошлина за экспертизу зависит и от числа позици",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "44 35",
+      "kind": "large_number",
+      "context": "ы Когда добавить Салон красоты, SPA, косметология 44 35 - реклама, продвижение, онлайн-запись; 3 - своя к",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "43 35",
+      "kind": "large_number",
+      "context": "; 3 - своя косметика Кофейня, ресторан, кейтеринг 43 35 при активном брендинге; 30 - если продаете фирменн",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "41 35",
+      "kind": "large_number",
+      "context": "ю выпечку как товар Онлайн-школа, курсы, тренинги 41 35 - продвижение; 42 - если продаете доступ к своей",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "42 35",
+      "kind": "large_number",
+      "context": "е как SaaS Разработка ПО, дизайн, консалтинг в IT 42 35 - маркетинг услуг; товарные классы - если продает",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "46 200",
+      "kind": "large_number",
+      "context": "ите платную предварительную оценку ФИПС (ориентир 46 200 ₽ за словесное обозначение, 1 класс , гайде по пр",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "4 000",
+      "kind": "large_number",
+      "context": "шлины по таблице с учетом числа классов (ориентир 4 000 ₽ за подачу и формальную экспертизу по 1-му класс",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "35 000",
+      "kind": "large_number",
+      "context": "елайте: копировать чужие коммерческие \"пакеты\" по 35 000 ₽ без привязки к актуальной таблице и дате. Что д",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "386",
+      "kind": "large_number",
+      "context": "товерность данных: ст. 1477 , ст. 1492 , приказ № 386 и таблица пошлин сверены с официальными источникам",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
