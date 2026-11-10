@@ -1,0 +1,26 @@
+{
+  "paths": [
+    {"path": "/", "lastmod_source": "site"},
+    {"path": "/registraciya_tovarnogo_znaka/", "lastmod_source": "site"},
+    {"path": "/findtz/", "lastmod_source": "site"},
+    {"path": "/prodlenie_tovarnogo_znaka/", "lastmod_source": "site"},
+    {"path": "/patent", "lastmod_source": "site"},
+    {"path": "/patent_prom_obr", "lastmod_source": "site"},
+    {"path": "/mktu", "lastmod_source": "site"},
+    {"path": "/docs", "lastmod_source": "site"},
+    {"path": "/team", "lastmod_source": "site"},
+    {"path": "/kontaktyi", "lastmod_source": "site"},
+    {"path": "/poisk_tovarnyh_znakov/", "lastmod_source": "site"},
+    {"path": "/ekspertiza_tovarnogo_znaka/", "lastmod_source": "site"},
+    {"path": "/mezhdunarodnaja_registracija_tovarnogo_znaka/", "lastmod_source": "site"},
+    {"path": "/registraciya_tovarnogo_znaka_v_kitae/", "lastmod_source": "site"},
+    {"path": "/registracija_torgovyh_marok_i_logotipov/", "lastmod_source": "site"},
+    {"path": "/news", "lastmod_source": "articles_max"}
+  ],
+  "exclude_article_slugs": [
+    "chto_delat_esli_tovarnyy_znak_zanyat"
+  ],
+  "dedupe_article_slugs": [
+    "zaschita_firmennogo_stilya"
+  ]
+}

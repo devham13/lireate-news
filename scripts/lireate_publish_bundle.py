@@ -13,6 +13,7 @@ def build_image_map(article_dir, slug):
         ("cover/inline-01.png", "{0}_inline_01.png".format(base)),
         ("cover/inline-02.png", "{0}_inline_02.png".format(base)),
         ("cover/inline-03.png", "{0}_inline_03.png".format(base)),
+        ("cover/inline-04.png", "{0}_inline_04.png".format(base)),
     ]
     for rel, remote in files:
         local_path = article_dir / rel
