@@ -5,9 +5,13 @@ set -euo pipefail
 REPO="${LIREATE_REPO_DIR:-$HOME/lireate-autopub/repo}"
 ENV_FILE="${LIREATE_ENV_FILE:-$HOME/lireate-autopub/.env}"
 # shellcheck disable=SC1090
-source "$ENV_FILE"
-DOCROOT="${LIREATE_DOCROOT:?}"
+set -a
+# shellcheck source=/dev/null
+source "$ENV_FILE" 2>/dev/null || true
+set +a
+DOCROOT="${LIREATE_DOCROOT:?LIREATE_DOCROOT required}"
 SITE="${LIREATE_PUBLIC_SITE_URL:?LIREATE_PUBLIC_SITE_URL required}"
+export LIREATE_PUBLIC_SITE_URL SITE
 BAK_SUFFIX="bak-2026-11-10-seo3"
 PY="$(cat "${LIREATE_AUTOPUB_HOME:-$HOME/lireate-autopub}/.python-interpreter")"
 
