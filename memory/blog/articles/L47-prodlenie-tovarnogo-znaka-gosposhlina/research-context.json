@@ -1,0 +1,86 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-10",
+    "today_ru": "10.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "вторник",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-12",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-10 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L47",
+    "priority": "P1",
+    "slug": "prodlenie-tovarnogo-znaka-gosposhlina",
+    "h1": "Как продлить товарный знак: платят ли госпошлину каждый год, срок 10 лет и пошлины на 2026",
+    "primary_query": "госпошлину на товарный знак оплачивают каждый год",
+    "secondary_queries": [
+      "продление регистрации товарного знака",
+      "срок действия товарного знака 10 лет",
+      "пошлина за продление товарного знака",
+      "что будет если не продлить товарный знак"
+    ],
+    "search_intent": "troubleshooting",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "L47",
+    "status": "PASS",
+    "search_intent": "troubleshooting",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "госпошлину на товарный знак оплачивают каждый год 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "госпошлину на товарный знак оплачивают каждый год ноябрь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "госпошлину на товарный знак оплачивают каждый год новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "продление регистрации товарного знака 2026",
+      "purpose": "вторичный запрос: продление регистрации товарного знака"
+    },
+    {
+      "id": "secondary_2",
+      "query": "срок действия товарного знака 10 лет 2026",
+      "purpose": "вторичный запрос: срок действия товарного знака 10 лет"
+    },
+    {
+      "id": "secondary_3",
+      "query": "пошлина за продление товарного знака 2026",
+      "purpose": "вторичный запрос: пошлина за продление товарного знака"
+    },
+    {
+      "id": "secondary_4",
+      "query": "что будет если не продлить товарный знак 2026",
+      "purpose": "вторичный запрос: что будет если не продлить товарный знак"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как продлить товарный знак: платят ли госпошлину каждый год, срок 10 лет и пошлины на 2026 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/L47-prodlenie-tovarnogo-znaka-gosposhlina",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}

@@ -1,0 +1,84 @@
+{
+  "source": "memory/blog/articles/L47-prodlenie-tovarnogo-znaka-gosposhlina/article.html",
+  "total_links": 8,
+  "failed_count": 0,
+  "privacy_policy_violations": [],
+  "verdict": "pass",
+  "links": [
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/b750f79795c779e92bb91e22a676aa4017c4f459/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/kak-zaregistrirovat-tovarnyy-znak-samostoyatelno-2026",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/kak-zaregistrirovat-tovarnyy-znak-samostoyatelno-2026"
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_82755/6e4527e9675eb2bea689b9a9c7629a60fff87eef/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://searchplatform.rospatent.gov.ru/trademarks",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/nuzhno-li-registrirovat-tovarnyy-znak",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/nuzhno-li-registrirovat-tovarnyy-znak"
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/15a50188250f4533baed4194ceae6758a164667e/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/reg-tz-main",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/reg-tz-main"
+    },
+    {
+      "url": "https://www.gosuslugi.ru/life/details/prodlenie_sroka_deystviya_pravovoy_ohrany_tovarnogo_znaka",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    }
+  ]
+}
