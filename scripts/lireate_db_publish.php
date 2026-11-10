@@ -334,13 +334,14 @@ function lireate_cmd_publish($docroot)
     }
 
     if ($dupId && $forceUpdate && !$dry) {
-        $sqlUp = 'UPDATE `news` SET `name`=?, `short_story`=?, `full_story`=?, `title`=?, `seo_title`=?, `seo_keywords`=?, `seo_description`=?, `category`=?, `active`=?, `datetime`=? WHERE `id`=?';
+        // Preserve original publication time (datePublished); --update only refreshes content/meta.
+        $sqlUp = 'UPDATE `news` SET `name`=?, `short_story`=?, `full_story`=?, `title`=?, `seo_title`=?, `seo_keywords`=?, `seo_description`=?, `category`=?, `active`=? WHERE `id`=?';
         $stmtUp = $mysqli->prepare($sqlUp);
         if (!$stmtUp) {
             lireate_out(array('ok' => false, 'error' => 'update prepare failed', 'mysqli' => $mysqli->error), 2);
         }
         $stmtUp->bind_param(
-            'sssisssiiii',
+            'sssisssiii',
             $row['name'],
             $row['short_story'],
             $row['full_story'],
@@ -350,7 +351,6 @@ function lireate_cmd_publish($docroot)
             $row['seo_description'],
             $row['category'],
             $row['active'],
-            $datetime,
             $dupId
         );
         $okUp = $stmtUp->execute();
