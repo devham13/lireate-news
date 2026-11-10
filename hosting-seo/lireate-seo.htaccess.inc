@@ -25,7 +25,11 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} !/$
 RewriteCond %{REQUEST_URI} !\.[a-zA-Z0-9]{2,5}$
-RewriteCond %{REQUEST_URI} !^/(admin|template|upload|images|data|engine|registraciya_tovarnogo_znaka|findtz|prodlenie_tovarnogo_znaka) [NC]
+RewriteCond %{REQUEST_URI} !^/(admin|template|upload|images|data|engine)(/|$) [NC]
+RewriteCond %{REQUEST_URI} !^/registraciya_tovarnogo_znaka/?$ [NC]
+RewriteCond %{REQUEST_URI} !^/registraciya_tovarnogo_znaka_s_oplatoy_za_rezultat/?$ [NC]
+RewriteCond %{REQUEST_URI} !^/findtz/?$ [NC]
+RewriteCond %{REQUEST_URI} !^/prodlenie_tovarnogo_znaka/?$ [NC]
 RewriteCond %{REQUEST_URI} !^/(news|kontaktyi|docs|team|mktu|patent|patent_prom_obr|reviews|portfolio|o_kompanii|partners|payment|personalArea|spasibo|test|test2|test3|tester|check|docs2|pdf_book_1|blog|reg-tz-main)(/?)$ [NC]
 RewriteRule ^([a-zA-Z0-9_\-]+)$ /$1/ [R=301,L]
 

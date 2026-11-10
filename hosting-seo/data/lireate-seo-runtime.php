@@ -1,13 +1,11 @@
 <?php
 /**
- * LIREATE SEO runtime (2026-11-10): canonical URL + noindex flag for CMS template.
- * Included from index.php before template(); does not touch DB.
+ * LIREATE SEO runtime: canonical + noindex from REQUEST_URI (not $page — CMS sets $page=pages|404).
  */
-
 if (!function_exists('lireate_seo_public_base')) {
     function lireate_seo_public_base()
     {
-        $host = isset($_SERVER['HTTP_HOST']) ? (string) $_SERVER['HTTP_HOST'] : 'lireate.com';
+        $host = isset($_SERVER['HTTP_HOST']) ? (string) $_SERVER['HTTP_HOST'] : 'example.invalid';
         $host = preg_replace('/^www\./i', '', $host);
         return 'https://' . $host;
     }
@@ -26,7 +24,6 @@ if (!function_exists('lireate_seo_request_path')) {
 }
 
 if (!function_exists('lireate_seo_cms_slashless')) {
-    /** Pages where trailing slash breaks routing / title (not sitemap article slugs). */
     function lireate_seo_cms_slashless()
     {
         return array(
@@ -61,38 +58,42 @@ if (!function_exists('lireate_seo_noindex_paths')) {
     }
 }
 
-if (!function_exists('lireate_seo_compute_canonical')) {
-    /**
-     * @param string $page CMS view slug (from $_GET['view'] or home)
-     */
-    function lireate_seo_compute_canonical($page, $request_path)
+if (!function_exists('lireate_seo_canonical_from_path')) {
+    function lireate_seo_canonical_from_path($request_path)
     {
         $base = lireate_seo_public_base();
-        $page = trim((string) $page, '/');
-
-        if ($request_path === '/' || $page === '' || $page === $GLOBALS['cfg']['home_url']) {
+        $path = (string) $request_path;
+        $trimmed = trim($path, '/');
+        if ($trimmed === '') {
             return $base . '/';
         }
 
-        if (in_array($page, lireate_seo_cms_slashless(), true)) {
-            return $base . '/' . rawurlencode($page);
+        $segments = explode('/', $trimmed);
+        $first = $segments[0];
+
+        if ($first === '404' || $first === 'pages') {
+            return '';
         }
 
-        if (in_array($page, lireate_seo_service_with_slash(), true)) {
-            return $base . '/' . $page . '/';
+        if (count($segments) === 1 && in_array($first, lireate_seo_cms_slashless(), true)) {
+            return $base . '/' . $first;
         }
 
-        // Blog / news articles (sitemap: trailing slash).
-        if (preg_match('/^[a-zA-Z0-9_\-]+$/', $page)) {
-            return $base . '/' . $page . '/';
+        if (count($segments) === 1 && in_array($first, lireate_seo_service_with_slash(), true)) {
+            return $base . '/' . $first . '/';
         }
 
-        return $base . $request_path;
+        // Sitemap articles and legacy slugs: single path segment + trailing slash.
+        if (count($segments) === 1 && preg_match('/^[a-zA-Z0-9_\-]+$/', $first)) {
+            return $base . '/' . $first . '/';
+        }
+
+        return $base . '/' . $trimmed . '/';
     }
 }
 
 if (!function_exists('lireate_seo_init_globals')) {
-    function lireate_seo_init_globals($page)
+    function lireate_seo_init_globals()
     {
         $path = lireate_seo_request_path();
         $path_norm = rtrim($path, '/');
@@ -114,10 +115,8 @@ if (!function_exists('lireate_seo_init_globals')) {
             $GLOBALS['lireate_robots_noindex'] = true;
         }
 
-        $GLOBALS['lireate_canonical_url'] = lireate_seo_compute_canonical($page, $path);
+        $GLOBALS['lireate_canonical_url'] = lireate_seo_canonical_from_path($path);
     }
 }
 
-if (isset($page)) {
-    lireate_seo_init_globals($page);
-}
+lireate_seo_init_globals();

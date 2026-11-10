@@ -3,7 +3,7 @@
 if (!function_exists('lireate_seo_render_head_tags')) {
     function lireate_seo_render_head_tags()
     {
-        if (!empty($GLOBALS['lireate_canonical_url'])) {
+        if (!empty($GLOBALS['lireate_canonical_url']) && strpos($GLOBALS['lireate_canonical_url'], '/404') === false) {
             $c = htmlspecialchars($GLOBALS['lireate_canonical_url'], ENT_QUOTES, 'UTF-8');
             echo '<link rel="canonical" href="' . $c . "\" />\n";
         }
