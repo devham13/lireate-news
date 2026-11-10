@@ -72,7 +72,7 @@
         {"icon": "doc", "text": "2.1"},
         {"icon": "clock", "text": "18 мес."}
       ],
-      "sticky": {"text": "35 000 / 24 500 ₽", "color": "pink"},
+      "sticky": {"text": "35 000 ₽", "color": "pink"},
       "steps": [
         {
           "title": "УКЭП",

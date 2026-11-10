@@ -92,12 +92,13 @@ html, body { margin:0; width:1200px; height:675px; overflow:hidden; }
 .stage { width:1200px; height:675px; background:#0b1020; display:flex; align-items:center; justify-content:center; }
 .sheet {
   width:1200px; height:675px; position:relative; box-sizing:border-box;
-  background:#fafaf8; padding:0;
+  background:#fafaf8; padding:0; overflow:hidden;
 }
 #composition {
   position:absolute; left:0; top:0; width:1200px; height:675px;
-  padding:24px; box-sizing:border-box;
+  padding:24px 24px 52px 24px; box-sizing:border-box;
   display:flex; flex-direction:column; justify-content:flex-start; gap:20px;
+  overflow:hidden; min-height:0;
 }
 .inline-header {
   display:grid; grid-template-columns: 1fr 230px; gap:20px; align-items:start;
