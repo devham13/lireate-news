@@ -1,0 +1,564 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-11",
+    "today_ru": "11.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-13",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-11 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L45",
+    "priority": "P2",
+    "slug": "nedobrosovestnaya-konkurenciya-kopirovanie-bez-tz",
+    "h1": "Как защититься, если копируют карточку и упаковку без товарного знака: недобросовестная конкуренция и меры",
+    "primary_query": "как остановить копирование карточки товара недобросовестная конкуренция",
+    "secondary_queries": [
+      "копирование описания на маркетплейсе что делать",
+      "ст 14.6 коап рф",
+      "смешение товаров без товарного знака",
+      "копия фирменного стиля конкурента"
+    ],
+    "search_intent": "troubleshooting",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "как остановить копирование карточки товара недобросовестная конкуренция 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как защитить дизайн упаковки от копирования на маркетплейсе",
+          "url": "https://fedotov-ip.ru/faq/kak-zashchitit-dizayn-upakovki-ot-kopirovaniya-na-marketpleyse",
+          "snippet": ""
+        },
+        {
+          "title": "Защита фото товара от копирования: способы 2026",
+          "url": "https://www.gdefoto.com/stati-o-obrabotke-fotografij/zashchita-foto-tovara-ot-kopirovanija/",
+          "snippet": "Разбор защиты дизайна упаковки и карточки товара на маркетплейсе: промышленный образец, объемный или изобразительный знак, недобросовестная конкуренция."
+        },
+        {
+          "title": "Копирование карточки товара на маркетплейсе: какие права можно защитить ...",
+          "url": "https://zhelezno.com/sudy-i-pretenzii/kopirovanie-kartochki-tovara-na-marketplejse-kakie-prava-mozhno-zashhitit",
+          "snippet": "Сразу зафиксируем главную мысль, к которой мы будем возвращаться: стопроцентной технической защиты от копирования цифрового изображения не существует. Любую картинку, которая отображается на экране, можно сфотографировать, заскриншотить или сохранить."
+        },
+        {
+          "title": "Защита Карточки Wb От Клонирования — Полный Гид 2026",
+          "url": "https://marqatm.ru/analytics/zashchita-kartochki-wb-klonirovanie.html",
+          "snippet": "Разбираем, из каких элементов состоит карточка, что из них охраняется, как зафиксировать нарушение и в каком порядке действовать: жалоба площадке, претензия, иск."
+        },
+        {
+          "title": "Недобросовестная конкуренция в 2026: копирование упаковки и «похожий ...",
+          "url": "http://lyratetrademark.ru/2026/01/26/ustali-ot-nedobrosovestnoj-konkurenczii-uznajte-kak-zashhitit-svoj-brend-ot-kopirovaniya-upakovki-i-shozhih-naimenovanij-v-2026/",
+          "snippet": "Пошаговая инструкция: как защитить карточку WB от копирования # Полная защита карточки WB от клонирования включает пять последовательных шагов."
+        },
+        {
+          "title": "Копирование упаковки: защита от имитации и недобросовестной конкуренции ...",
+          "url": "https://lyratetrademark.ru/2026/01/19/oshibaetes-esli-dumaete-chto-kopirovanie-upakovki-eto-prosto-uznajte-kak-zashhitit-svoj-brend-i-izbezhat-nedobrosovestnoj-konkurenczii/",
+          "snippet": "Копирование упаковки в 2026 стало особенно неприятным из-за маркетплейсов и бесконечных «похожих карточек». Один удачный дизайн и название быстро обрастают клонами."
+        }
+      ],
+      "searched_at": "2026-11-11"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "как остановить копирование карточки товара недобросовестная конкуренция ноябрь 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Что делать, если конкурент скопировал карточку товара?",
+          "url": "https://vc.ru/id1071987/1917466-zashchita-kartochek-tovara-ot-kopirovaniya",
+          "snippet": ""
+        },
+        {
+          "title": "Эффективная защита от недобросовестной конкуренции: как защитить ...",
+          "url": "https://gpg.ru/magazine/evaluation/zashchita-ot-nedobrosovestnoy-konkurentsii-deystviya-pri-kopirovanii-upakovki-i-brenda.html",
+          "snippet": "Имея на руках свидетельство, вы не только можете запретить использовать ваш бренд, но и потребовать денежную компенсацию с нарушителя. Для этого нужно направить недобросовестному конкуренту досудебную претензию. По закону, сумма компенсации может составлять от 10 тысяч до 5 млн рублей."
+        },
+        {
+          "title": "Скопировали фото карточки товара на WB/Ozon: что делать",
+          "url": "https://nevskylaw.ru/knowledge/skopirovali-fotografii-kartochki-tovara/",
+          "snippet": "Узнайте, как эффективно защитить свой бренд и упаковку от недобросовестной конкуренции. Практические советы и юридические аспекты для бизнеса."
+        },
+        {
+          "title": "КАК ЗАЩИТИТЬ УПАКОВКУ ТОВАРА ОТ КОПИРОВАНИЯ: ПРАВОВЫЕ МЕХАНИЗМЫ",
+          "url": "https://vc.ru/id4961126/2249458-zashchita-upakovki-tovara-ot-kopirovaniya",
+          "snippet": "Если конкурент скопировал фотографии или инфографику вашей карточки на Wildberries или Ozon, не просите сразу удалить контент: сначала зафиксируйте страницу, продавца, SKU и спорные файлы."
+        },
+        {
+          "title": "Как Защитить Карточки Товара От Копирования — Rwb Среда",
+          "url": "https://sreda.rwb.ru/articles/kak-zashchitit-kartochki-tovara-ot-kopirovaniya",
+          "snippet": "После регистрации патента у владельца возникают исключительные права на дизайн упаковки, что позволяет запретить конкурентам производить и продавать товары в скопированной упаковке."
+        },
+        {
+          "title": "Недобросовестная конкуренция на маркетплейсе: что делать",
+          "url": "https://trustyone.pro/ru/materials/guides/nedobrosovestnaya-konkurentsiya-marketpleys/",
+          "snippet": "Если вы приобрели товар официально, у вас должна быть таможенная декларация и другие сопроводительные документы, которые помогут защитить вас и избежать блокировки карточки товара."
+        }
+      ],
+      "searched_at": "2026-11-11"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "как остановить копирование карточки товара недобросовестная конкуренция новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как защитить карточки товаров от копирования конкурентами на ...",
+          "url": "https://pravda-nn.ru/news/kak-zashhitit-kartochki-tovarov-ot-kopirovaniya-konkurentami-na-marketplejsah/?erid=2SDnjdtvUnP",
+          "snippet": ""
+        },
+        {
+          "title": "Копирование карточек товара, продавцы-клоны: способы защиты и опасность ...",
+          "url": "https://nris.ru/baza-znanij/blog/kak-borotsya-s-prodavcami-klonami-kotorye-kopiruyut-kartochki-tovarov-na-marketplejse/",
+          "snippet": "Но это не все. Чтобы защитить от копирования карточку товара на маркетплейсе, нужно помнить о регистрации товарного знака."
+        },
+        {
+          "title": "Копирование карточки товара на маркетплейсе: какие права можно защитить ...",
+          "url": "https://zhelezno.com/sudy-i-pretenzii/kopirovanie-kartochki-tovara-na-marketplejse-kakie-prava-mozhno-zashhitit",
+          "snippet": "Что чаще всего крадут на маркетплейсах? Какие нормы законодательства защищают честных продавцов? И как обезопасить карточки товаров от клонирования, рассказывают эксперты n'RIS в статье."
+        },
+        {
+          "title": "Как защитить дизайн упаковки от копирования на маркетплейсе",
+          "url": "https://fedotov-ip.ru/faq/kak-zashchitit-dizayn-upakovki-ot-kopirovaniya-na-marketpleyse",
+          "snippet": "Разбираем, из каких элементов состоит карточка, что из них охраняется, как зафиксировать нарушение и в каком порядке действовать: жалоба площадке, претензия, иск."
+        },
+        {
+          "title": "Скопировали товар на Wildberries: как защититься и подать жалобу",
+          "url": "https://nevskylaw.ru/knowledge/konkurenty-skopirovali-moy-tovar-na-wildberries/",
+          "snippet": "Разбор защиты дизайна упаковки и карточки товара на маркетплейсе: промышленный образец, объемный или изобразительный знак, недобросовестная конкуренция."
+        },
+        {
+          "title": "Защита Карточки Wb От Клонирования — Полный Гид 2026",
+          "url": "https://marqatm.ru/analytics/zashchita-kartochki-wb-klonirovanie.html",
+          "snippet": "В этом руководстве — пошаговый алгоритм действий для продавца, чей товар или контент скопировали на Wildberries. Скопированные фотографии, украденные описания, клоны карточек товаров и откровенный контрафакт — это реальность, с которой сталкивается каждый третий продавец на Wildberries."
+        }
+      ],
+      "searched_at": "2026-11-11"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "копирование описания на маркетплейсе что делать 2026",
+      "purpose": "вторичный запрос: копирование описания на маркетплейсе что делать",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как защитить бренд на маркетплейсе от копий и подделок",
+          "url": "https://iseller.pro/zhurnal/kak-zaschitit-brend-na-marketplace",
+          "snippet": ""
+        },
+        {
+          "title": "Товарный знак для маркетплейса: как спасти бренд от копирования",
+          "url": "https://post-pak.ru/zashchita-intellektualnoy-sobstvennosti-na-marketpleysah-gajd-2026/",
+          "snippet": "Угрозы бренду на маркетплейсе делятся на несколько типов, и у каждого своя механика. Понимать их важно, чтобы подобрать нужный инструмент защиты. Часть этих проблем пересекается с общей темой блокировок и жалоб — о ней статья как избежать блокировки."
+        },
+        {
+          "title": "Карточку Скопировали: Как Доказать Авторство На Маркетплейсе | Eseo",
+          "url": "https://eseo.su/blog/kartochku-skopirovali-chto-menyaetsya-s-1-oktyabrya-2026-i-kak-dokazat-avtorstvo-mrqvhohu",
+          "snippet": "Копирование карточки товара и кража контента на маркетплейсах — чем это грозит и что делать."
+        },
+        {
+          "title": "Защита контента на маркетплейсах: что делать продавцу при копировании ...",
+          "url": "https://sholchev.ru/blog/kak-zashitit-kontent-na-marketpleisakh-esli-ego-kopiruyut-konkurenty/",
+          "snippet": "С 1 октября 2026 маркетплейсы проверяют карточки по госреестрам. Как защитить контент от копирования и доказать авторство до того, как это станет проблемой."
+        },
+        {
+          "title": "Претензия за копирование сайта 2026: как подать и взыскать",
+          "url": "https://nevskylaw.ru/knowledge/pretenziya-za-kopirovanie-sayta-s-chego-nachat/",
+          "snippet": "Эти три способа используют для фиксации авторства и снижения рисков копирования. Первый и обязательный шаг. Это ваше доказательство первенства при возникновении спора. Перед загрузкой контента на маркетплейс сохраните исходники с метаданными: исходники макетов в рабочих форматах."
+        },
+        {
+          "title": "Авторские права на Wildberries и Ozon | КупиПрава",
+          "url": "https://buyrights.ru/blog/kak-sostavit-iskovoe-zayavlenie-o-narushenii-avtorskih-prav-obrazecz-i-poshagovaya-instrukcziya/",
+          "snippet": "Узнайте, что делать при копировании вашего сайта. Пошаговая инструкция по подаче претензии в 2026 году: от фиксации доказательств до обращения в суд."
+        }
+      ],
+      "searched_at": "2026-11-11"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "ст 14.6 коап рф 2026",
+      "purpose": "вторичный запрос: ст 14.6 коап рф",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "КоАП РФ Статья 14.6. Нарушение порядка ценообразования",
+          "url": "https://www.consultant.ru/document/cons_doc_LAW_34661/f65bdc9905e5fa0660346a596380de50fb7315a4/",
+          "snippet": ""
+        },
+        {
+          "title": "КоАП РФ Ст. 14.6. Нарушение порядка ценообразования",
+          "url": "https://legalacts.ru/kodeks/KOAP-RF/razdel-ii/glava-14/statja-14.6/",
+          "snippet": "Продажа товаров, выполнение работ либо оказание услуг при отсутствии установленной информации либо неприменение в установленных федеральными законами случаях контрольно-кассовой техники КоАП РФ, Статья 14.6.1. Утратила силу. Ст. 14.6 КоАП РФ. Нарушение порядка ценообразования."
+        },
+        {
+          "title": "Статья 14.6 КОАП РФ. Нарушение порядка ценообразования",
+          "url": "https://pravo.ppt.ru/kodeks/koap/st-14.6",
+          "snippet": "Административные правонарушения в области предпринимательской деятельности и деятельности саморегулируемых организаций. Статья 14.6. Нарушение порядка ценообразования. 1."
+        },
+        {
+          "title": "Статья 14.6. КоАП РФ Нарушение порядка ценообразования. Кодекс ...",
+          "url": "https://base.garant.ru/12125267/0c5956aa76cdf561e1333b201c6d337d/",
+          "snippet": "Ответственность за нарушение настоящей статьи предприятиями розничной торговли или индивидуальными предпринимателями не может быть возложена на производителя или поставщика табачных изделий или никотинсодержащей продукции. влечет наложение административного штрафа в размере пяти тысяч рублей."
+        },
+        {
+          "title": "Ст. 14.6 КОАП - sudact.ru",
+          "url": "https://sudact.ru/law/koap/razdel-ii/glava-14_1/statia-14.6/",
+          "snippet": "Глава 14. Административные правонарушения в области предпринимательской деятельности и деятельности саморегулируемых организаций (ст. 14.1 - 14.68) Статья 14.6. Нарушение порядка ценообразования"
+        },
+        {
+          "title": "КоАП РФ Статья 14.6. Нарушение порядка ценообразования",
+          "url": "https://www.consultant.ru/law/podborki/koap_rf_statya_14.6._narushenie_poryadka_cenoobrazovaniya/",
+          "snippet": "Административная ответственность военнослужащих, граждан, призванных на военные сборы, и лиц, имеющих специальные звания. Статья 2.6. Административная ответственность иностранных граждан, лиц без гражданства и иностранных юридических лиц. Статья 2.6.1. Административная ответственность собственников (владельцев) транспортных средств. Статья 2.6.2."
+        }
+      ],
+      "searched_at": "2026-11-11"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "смешение товаров без товарного знака 2026",
+      "purpose": "вторичный запрос: смешение товаров без товарного знака",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "За что ФАС штрафует бренды: разбор практики 2025-2026",
+          "url": "https://patent-family.ru/journal/zashchita/za-chto-fas-shtrafuet-brendy-2026/",
+          "snippet": ""
+        },
+        {
+          "title": "Смешение товарных знаков \\ 2026-2025-2024 год \\ Акты, образцы, формы ...",
+          "url": "https://www.consultant.ru/law/podborki/smeshenie_tovarnyh_znakov/",
+          "snippet": "ФАС штрафует бренды не за похожий товар, а за паразитирование на чужой узнаваемости — имитацию упаковки и смешение до путаницы."
+        },
+        {
+          "title": "Когда использование чужого товарного знака — не нарушение",
+          "url": "https://patent-family.ru/journal/tz/ispolzovanie-chuzhogo-tovarnogo-znaka-bez-narusheniya-2026/",
+          "snippet": "(КонсультантПлюс, 2026) Ряд критериев установлен для того, чтобы оценивать сходство обозначения с товарными знаками или знаками обслуживания, когда оно регистрируется в качестве такого знака. Эти критерии и правила их применения указаны в п. п. 42 - 44 Правил, утвержденных Приказом Минэкономразвития России от 20.07.2015 N 482."
+        },
+        {
+          "title": "Что грозит бизнесу за торговлю без Честного знака в 2026",
+          "url": "https://companies.rbc.ru/news/Cqaiq49QIc/chto-grozit-biznesu-za-torgovlyu-bez-chestnogo-znaka-v-2026/",
+          "snippet": "Никто не вправе использовать без разрешения правообладателя сходные с его товарным знаком обозначения в отношении товаров, для индивидуализации которых товарный знак зарегистрирован, или однородных товаров, если в результате такого использования возникнет вероятность смешения."
+        },
+        {
+          "title": "Какие товары подлежат маркировке «Честный знак» в 2026 году — список 48 ...",
+          "url": "https://markznak.ru/tovary-podlezhashchie-markirovke",
+          "snippet": "Маркировка товаров из Китая в 2026 году — это не вопрос желания. Перечень «Честного ЗНАК» охватывает уже десятки товарных групп, контроль автоматизирован, штрафы назначаются без ..."
+        },
+        {
+          "title": "Маркировка товаров с 1 марта 2026 года: новые правила и изменения ...",
+          "url": "https://saby.ru/articles/marking/markirovka_v_2026_godu",
+          "snippet": "Какие товары подлежат маркировке «Честный знак» — полный список на 2026 год 48 товарных групп: 33 уже маркируются, 6 стоят в графике с объявленными датами, 9 в эксперименте."
+        }
+      ],
+      "searched_at": "2026-11-11"
+    },
+    {
+      "query_id": "secondary_4",
+      "query": "копия фирменного стиля конкурента 2026",
+      "purpose": "вторичный запрос: копия фирменного стиля конкурента",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Тренды фирменного стиля 2026",
+          "url": "https://lz.media/blog/design/trendy-firmennogo-stilya-2026",
+          "snippet": ""
+        },
+        {
+          "title": "Тренды фирменного стиля 2026: что сейчас заказывают и от чего",
+          "url": "https://gde.expert/blog/trendy-firstil-2026",
+          "snippet": "Чтобы вы понимали, какие решения будут работать в 2026 году, команда LZ.Media в этой статье собрала и разложила «по полочкам» актуальные тенденции в области фирменного стиля."
+        },
+        {
+          "title": "Права на дизайн товара: за что бренды могут подать в суд Копировать ...",
+          "url": "https://iz.ru/2184686/2026-10-19/iurist-rasskazal-o-riskakh-kopirovaniia-dizaina-zarubezhnykh-brendov",
+          "snippet": "Актуальные тренды фирменного стиля и логотипов 2026 года: какие направления айдентики на подъёме, что выходит из моды, и как отличить живой тренд от того, что устареет за сезон."
+        },
+        {
+          "title": "Контроль фирменного стиля: тренды 2026 — Yapil",
+          "url": "https://yapil.art/articles/trend-brand-governance-trends-2026",
+          "snippet": "Юрист Варшавер: зарубежные бренды могут судиться из-за формы и принта товара"
+        },
+        {
+          "title": "Тренды брендинга 2026: фирменный стиль будущего для бизнеса | Olive ...",
+          "url": "https://olive-marketing.ru/tpost/trendy-brendinga-2026",
+          "snippet": "Разбираем тему «контроль фирменного стиля»: тренды 2026. Процесс, критерии выбора, ошибки и практический чек-лист Yapil для бизнеса."
+        },
+        {
+          "title": "15 трендов дизайна 2026: полный обзор с примерами — блог Crop media",
+          "url": "https://cropmedia.ru/tpost/15-design-trends-for-2026",
+          "snippet": "Мы не просто создаем дизайн, мы разрабатываем стратегические бренд-системы, которые будут работать на ваш бизнес сегодня и станут вашим конкурентным преимуществом в 2026 году."
+        }
+      ],
+      "searched_at": "2026-11-11"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как защититься, если копируют карточку и упаковку без товарного знака: недобросовестная конкуренция и меры 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как защитить товар от копирования на Wildberries и Ozon: права и действия",
+          "url": "https://www.zakonrf.info/articles/tovar-kopiruyut-na-marketplejs/",
+          "snippet": ""
+        },
+        {
+          "title": "КАК ЗАЩИТИТЬ УПАКОВКУ ТОВАРА ОТ КОПИРОВАНИЯ: ПРАВОВЫЕ МЕХАНИЗМЫ",
+          "url": "https://vc.ru/id4961126/2249458-zashchita-upakovki-tovara-ot-kopirovaniya",
+          "snippet": "Узнайте, как действовать, если вашу карточку товара скопировали на Wildberries или Ozon. Пошаговая инструкция, защита прав, жалоба на подделку, юридические советы."
+        },
+        {
+          "title": "КАК ЗАЩИТИТЬ УПАКОВКУ ТОВАРА ОТ КОПИРОВАНИЯ: ПРАВОВЫЕ МЕХАНИЗМЫ",
+          "url": "https://www.yurlov.ru/bureau/press/references/mailing/01-06-10-2025/",
+          "snippet": "Оригинальный дизайн упаковки - важная часть бренда и конкурентного преимущества товара. Однако на практике встречаются случаи, когда недобросовестные конкуренты копируют оформление успешного продукта, вводя покупателей в заблуждение, тем самым нанося ущерб репутации и продажам правообладателя."
+        },
+        {
+          "title": "Копирование упаковки: защита от имитации и недобросовестной конкуренции",
+          "url": "https://lyratetrademark.ru/2026/01/19/oshibaetes-esli-dumaete-chto-kopirovanie-upakovki-eto-prosto-uznajte-kak-zashhitit-svoj-brend-i-izbezhat-nedobrosovestnoj-konkurenczii/",
+          "snippet": "После регистрации патента у владельца возникают исключительные права на дизайн упаковки, что позволяет запретить конкурентам производить и продавать товары в скопированной упаковке."
+        },
+        {
+          "title": "УФАС и недобросовестная конкуренция: защита интеллектуальной ...",
+          "url": "https://vitvet.com/articles/ufas/zawita_intellektualnyh_prav/",
+          "snippet": "Быстрый ответ: Если конкурент «снял» вашу упаковку и покупатели путают товары, это может быть недобросовестная конкуренция и нарушение прав на средства индивидуализации."
+        },
+        {
+          "title": "Китайцы копируют карточки на Ozon, Wildberries и Яндекс Маркете: как ...",
+          "url": "https://ezybrand.ru/blog/kitajczy-kopiruyut-kartochki-na-ozon-wildberries-i-yandeks-markete-kak-zashhitit-svoj-kontent-brend-i-prodazhi/",
+          "snippet": "УФАС незаконное использование результатов интеллектуальной деятельности как недобросовестная конкуренция: как строится дело и защита. Конкурент копирует ваш дизайн упаковки, использует похожее до смешения название или внедряет технологию, защищённую патентом."
+        }
+      ],
+      "searched_at": "2026-11-11"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://fedotov-ip.ru/faq/kak-zashchitit-dizayn-upakovki-ot-kopirovaniya-na-marketpleyse",
+      "title": "Как защитить дизайн упаковки от копирования на маркетплейсе",
+      "from_query": "как остановить копирование карточки товара недобросовестная конкуренция 2026"
+    },
+    {
+      "url": "https://www.gdefoto.com/stati-o-obrabotke-fotografij/zashchita-foto-tovara-ot-kopirovanija/",
+      "title": "Защита фото товара от копирования: способы 2026",
+      "from_query": "как остановить копирование карточки товара недобросовестная конкуренция 2026"
+    },
+    {
+      "url": "https://zhelezno.com/sudy-i-pretenzii/kopirovanie-kartochki-tovara-na-marketplejse-kakie-prava-mozhno-zashhitit",
+      "title": "Копирование карточки товара на маркетплейсе: какие права можно защитить ...",
+      "from_query": "как остановить копирование карточки товара недобросовестная конкуренция 2026"
+    },
+    {
+      "url": "https://marqatm.ru/analytics/zashchita-kartochki-wb-klonirovanie.html",
+      "title": "Защита Карточки Wb От Клонирования — Полный Гид 2026",
+      "from_query": "как остановить копирование карточки товара недобросовестная конкуренция 2026"
+    },
+    {
+      "url": "http://lyratetrademark.ru/2026/01/26/ustali-ot-nedobrosovestnoj-konkurenczii-uznajte-kak-zashhitit-svoj-brend-ot-kopirovaniya-upakovki-i-shozhih-naimenovanij-v-2026/",
+      "title": "Недобросовестная конкуренция в 2026: копирование упаковки и «похожий ...",
+      "from_query": "как остановить копирование карточки товара недобросовестная конкуренция 2026"
+    },
+    {
+      "url": "https://lyratetrademark.ru/2026/01/19/oshibaetes-esli-dumaete-chto-kopirovanie-upakovki-eto-prosto-uznajte-kak-zashhitit-svoj-brend-i-izbezhat-nedobrosovestnoj-konkurenczii/",
+      "title": "Копирование упаковки: защита от имитации и недобросовестной конкуренции ...",
+      "from_query": "как остановить копирование карточки товара недобросовестная конкуренция 2026"
+    },
+    {
+      "url": "https://vc.ru/id1071987/1917466-zashchita-kartochek-tovara-ot-kopirovaniya",
+      "title": "Что делать, если конкурент скопировал карточку товара?",
+      "from_query": "как остановить копирование карточки товара недобросовестная конкуренция ноябрь 2026"
+    },
+    {
+      "url": "https://gpg.ru/magazine/evaluation/zashchita-ot-nedobrosovestnoy-konkurentsii-deystviya-pri-kopirovanii-upakovki-i-brenda.html",
+      "title": "Эффективная защита от недобросовестной конкуренции: как защитить ...",
+      "from_query": "как остановить копирование карточки товара недобросовестная конкуренция ноябрь 2026"
+    },
+    {
+      "url": "https://nevskylaw.ru/knowledge/skopirovali-fotografii-kartochki-tovara/",
+      "title": "Скопировали фото карточки товара на WB/Ozon: что делать",
+      "from_query": "как остановить копирование карточки товара недобросовестная конкуренция ноябрь 2026"
+    },
+    {
+      "url": "https://vc.ru/id4961126/2249458-zashchita-upakovki-tovara-ot-kopirovaniya",
+      "title": "КАК ЗАЩИТИТЬ УПАКОВКУ ТОВАРА ОТ КОПИРОВАНИЯ: ПРАВОВЫЕ МЕХАНИЗМЫ",
+      "from_query": "как остановить копирование карточки товара недобросовестная конкуренция ноябрь 2026"
+    },
+    {
+      "url": "https://sreda.rwb.ru/articles/kak-zashchitit-kartochki-tovara-ot-kopirovaniya",
+      "title": "Как Защитить Карточки Товара От Копирования — Rwb Среда",
+      "from_query": "как остановить копирование карточки товара недобросовестная конкуренция ноябрь 2026"
+    },
+    {
+      "url": "https://trustyone.pro/ru/materials/guides/nedobrosovestnaya-konkurentsiya-marketpleys/",
+      "title": "Недобросовестная конкуренция на маркетплейсе: что делать",
+      "from_query": "как остановить копирование карточки товара недобросовестная конкуренция ноябрь 2026"
+    },
+    {
+      "url": "https://pravda-nn.ru/news/kak-zashhitit-kartochki-tovarov-ot-kopirovaniya-konkurentami-na-marketplejsah/?erid=2SDnjdtvUnP",
+      "title": "Как защитить карточки товаров от копирования конкурентами на ...",
+      "from_query": "как остановить копирование карточки товара недобросовестная конкуренция новости 2026"
+    },
+    {
+      "url": "https://nris.ru/baza-znanij/blog/kak-borotsya-s-prodavcami-klonami-kotorye-kopiruyut-kartochki-tovarov-na-marketplejse/",
+      "title": "Копирование карточек товара, продавцы-клоны: способы защиты и опасность ...",
+      "from_query": "как остановить копирование карточки товара недобросовестная конкуренция новости 2026"
+    },
+    {
+      "url": "https://nevskylaw.ru/knowledge/konkurenty-skopirovali-moy-tovar-na-wildberries/",
+      "title": "Скопировали товар на Wildberries: как защититься и подать жалобу",
+      "from_query": "как остановить копирование карточки товара недобросовестная конкуренция новости 2026"
+    },
+    {
+      "url": "https://iseller.pro/zhurnal/kak-zaschitit-brend-na-marketplace",
+      "title": "Как защитить бренд на маркетплейсе от копий и подделок",
+      "from_query": "копирование описания на маркетплейсе что делать 2026"
+    },
+    {
+      "url": "https://post-pak.ru/zashchita-intellektualnoy-sobstvennosti-na-marketpleysah-gajd-2026/",
+      "title": "Товарный знак для маркетплейса: как спасти бренд от копирования",
+      "from_query": "копирование описания на маркетплейсе что делать 2026"
+    },
+    {
+      "url": "https://eseo.su/blog/kartochku-skopirovali-chto-menyaetsya-s-1-oktyabrya-2026-i-kak-dokazat-avtorstvo-mrqvhohu",
+      "title": "Карточку Скопировали: Как Доказать Авторство На Маркетплейсе | Eseo",
+      "from_query": "копирование описания на маркетплейсе что делать 2026"
+    },
+    {
+      "url": "https://sholchev.ru/blog/kak-zashitit-kontent-na-marketpleisakh-esli-ego-kopiruyut-konkurenty/",
+      "title": "Защита контента на маркетплейсах: что делать продавцу при копировании ...",
+      "from_query": "копирование описания на маркетплейсе что делать 2026"
+    },
+    {
+      "url": "https://nevskylaw.ru/knowledge/pretenziya-za-kopirovanie-sayta-s-chego-nachat/",
+      "title": "Претензия за копирование сайта 2026: как подать и взыскать",
+      "from_query": "копирование описания на маркетплейсе что делать 2026"
+    },
+    {
+      "url": "https://buyrights.ru/blog/kak-sostavit-iskovoe-zayavlenie-o-narushenii-avtorskih-prav-obrazecz-i-poshagovaya-instrukcziya/",
+      "title": "Авторские права на Wildberries и Ozon | КупиПрава",
+      "from_query": "копирование описания на маркетплейсе что делать 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_34661/f65bdc9905e5fa0660346a596380de50fb7315a4/",
+      "title": "КоАП РФ Статья 14.6. Нарушение порядка ценообразования",
+      "from_query": "ст 14.6 коап рф 2026"
+    },
+    {
+      "url": "https://legalacts.ru/kodeks/KOAP-RF/razdel-ii/glava-14/statja-14.6/",
+      "title": "КоАП РФ Ст. 14.6. Нарушение порядка ценообразования",
+      "from_query": "ст 14.6 коап рф 2026"
+    },
+    {
+      "url": "https://pravo.ppt.ru/kodeks/koap/st-14.6",
+      "title": "Статья 14.6 КОАП РФ. Нарушение порядка ценообразования",
+      "from_query": "ст 14.6 коап рф 2026"
+    },
+    {
+      "url": "https://base.garant.ru/12125267/0c5956aa76cdf561e1333b201c6d337d/",
+      "title": "Статья 14.6. КоАП РФ Нарушение порядка ценообразования. Кодекс ...",
+      "from_query": "ст 14.6 коап рф 2026"
+    },
+    {
+      "url": "https://sudact.ru/law/koap/razdel-ii/glava-14_1/statia-14.6/",
+      "title": "Ст. 14.6 КОАП - sudact.ru",
+      "from_query": "ст 14.6 коап рф 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/koap_rf_statya_14.6._narushenie_poryadka_cenoobrazovaniya/",
+      "title": "КоАП РФ Статья 14.6. Нарушение порядка ценообразования",
+      "from_query": "ст 14.6 коап рф 2026"
+    },
+    {
+      "url": "https://patent-family.ru/journal/zashchita/za-chto-fas-shtrafuet-brendy-2026/",
+      "title": "За что ФАС штрафует бренды: разбор практики 2025-2026",
+      "from_query": "смешение товаров без товарного знака 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/smeshenie_tovarnyh_znakov/",
+      "title": "Смешение товарных знаков \\ 2026-2025-2024 год \\ Акты, образцы, формы ...",
+      "from_query": "смешение товаров без товарного знака 2026"
+    },
+    {
+      "url": "https://patent-family.ru/journal/tz/ispolzovanie-chuzhogo-tovarnogo-znaka-bez-narusheniya-2026/",
+      "title": "Когда использование чужого товарного знака — не нарушение",
+      "from_query": "смешение товаров без товарного знака 2026"
+    },
+    {
+      "url": "https://companies.rbc.ru/news/Cqaiq49QIc/chto-grozit-biznesu-za-torgovlyu-bez-chestnogo-znaka-v-2026/",
+      "title": "Что грозит бизнесу за торговлю без Честного знака в 2026",
+      "from_query": "смешение товаров без товарного знака 2026"
+    },
+    {
+      "url": "https://markznak.ru/tovary-podlezhashchie-markirovke",
+      "title": "Какие товары подлежат маркировке «Честный знак» в 2026 году — список 48 ...",
+      "from_query": "смешение товаров без товарного знака 2026"
+    },
+    {
+      "url": "https://saby.ru/articles/marking/markirovka_v_2026_godu",
+      "title": "Маркировка товаров с 1 марта 2026 года: новые правила и изменения ...",
+      "from_query": "смешение товаров без товарного знака 2026"
+    },
+    {
+      "url": "https://lz.media/blog/design/trendy-firmennogo-stilya-2026",
+      "title": "Тренды фирменного стиля 2026",
+      "from_query": "копия фирменного стиля конкурента 2026"
+    },
+    {
+      "url": "https://gde.expert/blog/trendy-firstil-2026",
+      "title": "Тренды фирменного стиля 2026: что сейчас заказывают и от чего",
+      "from_query": "копия фирменного стиля конкурента 2026"
+    },
+    {
+      "url": "https://iz.ru/2184686/2026-10-19/iurist-rasskazal-o-riskakh-kopirovaniia-dizaina-zarubezhnykh-brendov",
+      "title": "Права на дизайн товара: за что бренды могут подать в суд Копировать ...",
+      "from_query": "копия фирменного стиля конкурента 2026"
+    },
+    {
+      "url": "https://yapil.art/articles/trend-brand-governance-trends-2026",
+      "title": "Контроль фирменного стиля: тренды 2026 — Yapil",
+      "from_query": "копия фирменного стиля конкурента 2026"
+    },
+    {
+      "url": "https://olive-marketing.ru/tpost/trendy-brendinga-2026",
+      "title": "Тренды брендинга 2026: фирменный стиль будущего для бизнеса | Olive ...",
+      "from_query": "копия фирменного стиля конкурента 2026"
+    },
+    {
+      "url": "https://cropmedia.ru/tpost/15-design-trends-for-2026",
+      "title": "15 трендов дизайна 2026: полный обзор с примерами — блог Crop media",
+      "from_query": "копия фирменного стиля конкурента 2026"
+    },
+    {
+      "url": "https://www.zakonrf.info/articles/tovar-kopiruyut-na-marketplejs/",
+      "title": "Как защитить товар от копирования на Wildberries и Ozon: права и действия",
+      "from_query": "Как защититься, если копируют карточку и упаковку без товарного знака: недобросовестная конкуренция и меры 2026"
+    },
+    {
+      "url": "https://www.yurlov.ru/bureau/press/references/mailing/01-06-10-2025/",
+      "title": "КАК ЗАЩИТИТЬ УПАКОВКУ ТОВАРА ОТ КОПИРОВАНИЯ: ПРАВОВЫЕ МЕХАНИЗМЫ",
+      "from_query": "Как защититься, если копируют карточку и упаковку без товарного знака: недобросовестная конкуренция и меры 2026"
+    },
+    {
+      "url": "https://vitvet.com/articles/ufas/zawita_intellektualnyh_prav/",
+      "title": "УФАС и недобросовестная конкуренция: защита интеллектуальной ...",
+      "from_query": "Как защититься, если копируют карточку и упаковку без товарного знака: недобросовестная конкуренция и меры 2026"
+    },
+    {
+      "url": "https://ezybrand.ru/blog/kitajczy-kopiruyut-kartochki-na-ozon-wildberries-i-yandeks-markete-kak-zashhitit-svoj-kontent-brend-i-prodazhi/",
+      "title": "Китайцы копируют карточки на Ozon, Wildberries и Яндекс Маркете: как ...",
+      "from_query": "Как защититься, если копируют карточку и упаковку без товарного знака: недобросовестная конкуренция и меры 2026"
+    }
+  ]
+}

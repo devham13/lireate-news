@@ -1,0 +1,54 @@
+{
+  "verdict": "warning",
+  "total_issues": 4,
+  "issues": [
+    {
+      "severity": "warning",
+      "type": "primary_secondary_cannibalization",
+      "message": "WARNING: Primary query of 'L38-proverit-brend-onlayn-unikalnost' ('проверить бренд на уникальность онлайн') highly overlaps with secondary query of 'L34-kak-zapatentovat-nazvanie-i-logotip' ('проверить бренд на уникальность онлайн'). Similarity: 100%",
+      "articles": [
+        "L34-kak-zapatentovat-nazvanie-i-logotip",
+        "L38-proverit-brend-onlayn-unikalnost"
+      ],
+      "primary_query": "проверить бренд на уникальность онлайн",
+      "secondary_query": "проверить бренд на уникальность онлайн",
+      "similarity": 1.0
+    },
+    {
+      "severity": "warning",
+      "type": "primary_secondary_cannibalization",
+      "message": "WARNING: Primary query of 'L08-vozrazhenie-protiv-registracii-tovarnogo-znaka-sroki-poryadok' ('как подать возражение против регистрации товарного знака') highly overlaps with secondary query of 'L21-osparivanie-tovarnogo-znaka-v-rospatente' ('возражение против регистрации товарного знака'). Similarity: 83%",
+      "articles": [
+        "L21-osparivanie-tovarnogo-znaka-v-rospatente",
+        "L08-vozrazhenie-protiv-registracii-tovarnogo-znaka-sroki-poryadok"
+      ],
+      "primary_query": "как подать возражение против регистрации товарного знака",
+      "secondary_query": "возражение против регистрации товарного знака",
+      "similarity": 0.83
+    },
+    {
+      "severity": "warning",
+      "type": "primary_secondary_cannibalization",
+      "message": "WARNING: Primary query of 'L22-markirovka-importa-chestnyy-znak-i-tovarnyy-znak' ('честный знак импорт') highly overlaps with secondary query of 'L36-chestnyy-znak-import-snippet-dokumenty' ('честный знак импорт с чек-листами'). Similarity: 75%",
+      "articles": [
+        "L22-markirovka-importa-chestnyy-znak-i-tovarnyy-znak",
+        "L36-chestnyy-znak-import-snippet-dokumenty"
+      ],
+      "primary_query": "честный знак импорт",
+      "secondary_query": "честный знак импорт с чек-листами",
+      "similarity": 0.75
+    },
+    {
+      "severity": "warning",
+      "type": "primary_secondary_cannibalization",
+      "message": "WARNING: Primary query of 'L22-markirovka-importa-chestnyy-znak-i-tovarnyy-znak' ('честный знак импорт') highly overlaps with secondary query of 'L36-chestnyy-znak-import-snippet-dokumenty' ('маркировка импорта честный знак'). Similarity: 75%",
+      "articles": [
+        "L22-markirovka-importa-chestnyy-znak-i-tovarnyy-znak",
+        "L36-chestnyy-znak-import-snippet-dokumenty"
+      ],
+      "primary_query": "честный знак импорт",
+      "secondary_query": "маркировка импорта честный знак",
+      "similarity": 0.75
+    }
+  ]
+}
