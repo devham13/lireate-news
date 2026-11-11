@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
-"""Normalize lx-mobile-bar on standalone service landings + link template overrides."""
+"""Exactly one lx-mobile-bar on standalone LU service landings (idempotent)."""
 import re
 import sys
 from pathlib import Path
 
 MARK_CSS = "lireate_design_service_mobile_bar_css_v1"
 MARK_SCRIPT = "lireate_design_service_mobile_bar_js_v1"
+MARK_BAR = 'data-lx-svc-mobile-bar="canonical"'
 
-CANONICAL_BAR = """<aside class="lx-mobile-bar" aria-label="Быстрый звонок и мессенджеры">
+CANONICAL_BAR = f"""<aside class="lx-mobile-bar" {MARK_BAR} aria-label="Быстрый звонок и мессенджеры">
   <a class="lx-mobile-bar-btn lx-mobile-bar-btn--call" href="tel:+79600484957">Позвонить</a>
   <a class="lx-mobile-bar-btn" href="https://t.me/lireate_patent" target="_blank" rel="noopener noreferrer" data-lx-icon="telegram" aria-label="Telegram"></a>
   <a class="lx-mobile-bar-btn lx-mobile-bar-btn--max" href="https://max.ru/u/f9LHodD0cOI8jsPagjibEve2cn5_xPW0X1sf3PhbS5TMijA78DnUeDEpUAI" target="_blank" rel="noopener noreferrer" data-lx-icon="max-white" aria-label="MAX"></a>
@@ -25,44 +26,67 @@ LANDING_INDEX = [
 ]
 
 CSS_LINK = (
-    f'  <link rel="stylesheet" href="/template/css/lireate-service-mobile-bar.css?v=20261111svc1" '
+    '  <link rel="stylesheet" href="/template/css/lireate-service-mobile-bar.css?v=20261111svc2" '
     f'/><!-- {MARK_CSS} -->\n'
 )
 
 METRIKA_SCRIPT = (
-    f'  <script defer src="/template/js/lireate-service-metrika-goals.js?v=20261111svc1"></script>'
+    '  <script defer src="/template/js/lireate-service-metrika-goals.js?v=20261111svc2"></script>'
     f'<!-- {MARK_SCRIPT} -->\n'
 )
 
 MOBILE_BAR_RE = re.compile(
-    r"<aside\s+class=\"lx-mobile-bar[^\"]*\"[\s\S]*?</aside>",
+    r"<aside\s+class=\"lx-mobile-bar[^\"]*\"[\s\S]*?</aside>\s*",
     re.I,
 )
 
 
+def strip_all_bars(text: str) -> str:
+    while MOBILE_BAR_RE.search(text):
+        text = MOBILE_BAR_RE.sub("", text, count=1)
+    return text
+
+
 def patch_html(text: str) -> str:
-    if MOBILE_BAR_RE.search(text):
-        text = MOBILE_BAR_RE.sub(CANONICAL_BAR, text, count=1)
-    else:
-        if "</body>" in text:
-            text = text.replace("</body>", CANONICAL_BAR + "\n</body>", 1)
+    text = strip_all_bars(text)
+
+    if "</body>" in text:
+        text = text.replace("</body>", CANONICAL_BAR + "\n</body>", 1)
+
+    # Dedupe template overrides (keep one).
+    while text.count(MARK_CSS) > 1:
+        idx = text.rfind(CSS_LINK.strip())
+        if idx == -1:
+            break
+        text = text[:idx] + text[idx + len(CSS_LINK.strip()) + 1 :]
 
     if MARK_CSS not in text and "</head>" in text:
         text = text.replace("</head>", CSS_LINK + "</head>", 1)
 
+    metrika_re = re.compile(
+        r'\s*<script defer src="/template/js/lireate-service-metrika-goals\.js[^"]*"></script>'
+        rf'<!-- {MARK_SCRIPT} -->\s*',
+        re.I,
+    )
+    text = metrika_re.sub("", text)
     if MARK_SCRIPT not in text and "</body>" in text:
         text = text.replace("</body>", METRIKA_SCRIPT + "</body>", 1)
 
-    # Prefer template mobile-bar.js on LU pages (≤768 behavior).
-    tpl_bar = "/template/js/lireate-service-mobile-bar.js?v=20261111svc1"
-    if tpl_bar not in text:
-        text = re.sub(
-            r'<script\s+[^>]*src="[^"]*lireate-mobile-bar\.js[^"]*"[^>]*>\s*</script>',
-            f'<script defer src="{tpl_bar}"></script>',
-            text,
-            count=1,
-            flags=re.I,
-        )
+    tpl_bar = "/template/js/lireate-service-mobile-bar.js?v=20261111svc2"
+    text = re.sub(
+        r'<script\s+[^>]*src="[^"]*lireate-mobile-bar\.js[^"]*"[^>]*>\s*</script>\s*',
+        "",
+        text,
+        flags=re.I,
+    )
+    text = re.sub(
+        r'<script defer src="/template/js/lireate-service-mobile-bar\.js[^"]*"></script>\s*',
+        "",
+        text,
+        flags=re.I,
+    )
+    if tpl_bar not in text and "</body>" in text:
+        text = text.replace("</body>", f'  <script defer src="{tpl_bar}"></script>\n</body>', 1)
 
     return text
 

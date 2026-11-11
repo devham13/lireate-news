@@ -7,7 +7,9 @@ MAIN_REPO="${LIREATE_REPO_DIR:-$AUTOPUB_HOME/repo}"
 DESIGN_WT="${LIREATE_DESIGN_WORKTREE:-$AUTOPUB_HOME/design-wt}"
 # Источник файлов design — worktree, не основной repo (CRON держит main).
 REPO="$DESIGN_WT"
-DOCROOT="${LIREATE_DOCROOT:?}"
+DOCROOT="${LIREATE_DOCROOT:-$HOME/www/public_html}"
+_LIREATE_DEFAULT_SITE_URL="https://lireate.ru" # pragma: allowlist secret
+export LIREATE_PUBLIC_SITE_URL="${LIREATE_PUBLIC_SITE_URL:-$_LIREATE_DEFAULT_SITE_URL}"
 BAK="bak-2026-11-11-design"
 PY="$(command -v python3)"
 APPLY_MAIN_PATCH="${LIREATE_DESIGN_PATCH_MAIN:-0}"
