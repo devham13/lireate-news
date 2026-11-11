@@ -89,7 +89,9 @@ if [[ "$APPLY_MAIN_PATCH" == "1" ]]; then
   if grep -q 'lireate-ux-fixes.css?v=' "$MAIN"; then
     sed -i 's|lireate-ux-fixes.css?v=[^"]*|lireate-ux-fixes.css?v=20261111design4|g' "$MAIN"
   fi
-  sed -i 's|lireate-home-dark.css?v=[^"]*|lireate-home-dark.css?v=20261111design5|g' "$MAIN" 2>/dev/null || true
+  sed -i 's|lireate-home-dark.css?v=[^"]*|lireate-home-dark.css?v=20261111design6|g' "$MAIN" 2>/dev/null || true
+  sed -i 's|lireate-home-hero.css?v=[^"]*|lireate-home-hero.css?v=20261111hero2|g' "$MAIN" 2>/dev/null || true
+  sed -i 's|lireate-home-hero.js?v=[^"]*|lireate-home-hero.js?v=20261111hero2|g' "$MAIN" 2>/dev/null || true
   sed -i 's|lireate-cms-page-dark.css?v=[^"]*|lireate-cms-page-dark.css?v=20261111design3|g' "$MAIN" 2>/dev/null || true
   sed -i 's|lireate-floating-widget-ux.js?v=[^"]*|lireate-floating-widget-ux.js?v=20261111design4|g' "$MAIN" 2>/dev/null || true
 

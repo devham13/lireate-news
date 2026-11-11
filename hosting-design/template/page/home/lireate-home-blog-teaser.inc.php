@@ -23,24 +23,25 @@ if (empty($_lx_home_blog_items) || !is_array($_lx_home_blog_items)) {
     if ($_lx_title === '' && !empty($_lx_item['title'])) {
         $_lx_title = trim((string) $_lx_item['title']);
     }
-    if ($_lx_title === '' || $_lx_title === '1') {
-        $_lx_title = trim((string) ($_lx_item['name'] ?? ''));
+    if (($_lx_title === '' || $_lx_title === '1') && isset($_lx_item['name'])) {
+        $_lx_title = trim((string) $_lx_item['name']);
     }
     if ($_lx_title === '' || $_lx_title === '1') {
         continue;
     }
     $_lx_href = lireate_home_abs_url((string) $_lx_item['seo_url']);
     $_lx_date = '';
+    $_lx_ts = 0;
     if (!empty($_lx_item['datetime'])) {
-        $ts = strtotime((string) $_lx_item['datetime']);
-        if ($ts) {
-            $_lx_date = date('d.m.Y', $ts);
+        $_lx_ts = strtotime((string) $_lx_item['datetime']);
+        if ($_lx_ts) {
+            $_lx_date = date('d.m.Y', $_lx_ts);
         }
     }
     ?>
   <article class="lireate-home-blog-card">
     <?php if ($_lx_date !== '') : ?>
-    <time class="lireate-home-blog-card-date" datetime="<?php echo htmlspecialchars(date('Y-m-d', $ts), ENT_QUOTES, 'UTF-8'); ?>"><?php echo htmlspecialchars($_lx_date, ENT_QUOTES, 'UTF-8'); ?></time>
+    <time class="lireate-home-blog-card-date" datetime="<?php echo htmlspecialchars(date('Y-m-d', $_lx_ts), ENT_QUOTES, 'UTF-8'); ?>"><?php echo htmlspecialchars($_lx_date, ENT_QUOTES, 'UTF-8'); ?></time>
     <?php endif; ?>
     <h3 class="lireate-home-blog-card-title">
       <a href="<?php echo htmlspecialchars($_lx_href, ENT_QUOTES, 'UTF-8'); ?>"><?php echo htmlspecialchars($_lx_title, ENT_QUOTES, 'UTF-8'); ?></a>
