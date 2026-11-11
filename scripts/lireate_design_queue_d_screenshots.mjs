@@ -21,6 +21,8 @@ const urls = [
 ];
 const widths = [375, 1024, 1280, 1920];
 
+import fs from "fs";
+fs.mkdirSync(outDir, { recursive: true });
 const browser = await chromium.launch({ headless: true });
 const results = [];
 for (const url of urls) {
@@ -44,7 +46,5 @@ for (const url of urls) {
   }
 }
 await browser.close();
-import fs from "fs";
-fs.mkdirSync(outDir, { recursive: true });
 fs.writeFileSync(path.join(outDir, "manifest.json"), JSON.stringify(results, null, 2));
 console.log(JSON.stringify({ outDir, count: results.length, bad: results.filter((r) => !r.dark || r.widgetOverlap) }, null, 2));
