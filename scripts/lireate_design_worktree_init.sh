@@ -10,7 +10,7 @@ DEPLOY_BRANCH="${LIREATE_DESIGN_BRANCH:-design-deploy}"
 
 [[ -d "$MAIN_REPO/.git" ]] || { echo "missing git repo: $MAIN_REPO" >&2; exit 1; }
 
-git -C "$MAIN_REPO" fetch origin "$TRACK_BRANCH"
+git -C "$MAIN_REPO" fetch origin "+$TRACK_BRANCH:refs/remotes/origin/$TRACK_BRANCH"
 
 if [[ -d "$DESIGN_WT" ]]; then
   git -C "$MAIN_REPO" worktree remove -f "$DESIGN_WT" 2>/dev/null || rm -rf "$DESIGN_WT"

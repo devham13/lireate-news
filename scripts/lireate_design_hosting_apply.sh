@@ -40,7 +40,7 @@ cd "$REPO"
 TRACK="${LIREATE_DESIGN_TRACK:-main}"
 DEPLOY_BRANCH="${LIREATE_DESIGN_BRANCH:-design-deploy}"
 if [[ "${LIREATE_SKIP_GIT_FETCH:-0}" != "1" ]]; then
-  git fetch origin "$TRACK"
+  git fetch origin "+$TRACK:refs/remotes/origin/$TRACK"
   git checkout "$DEPLOY_BRANCH" 2>/dev/null || true
   git merge --ff-only "origin/$TRACK" 2>/dev/null || git reset --hard "origin/$TRACK"
 fi
