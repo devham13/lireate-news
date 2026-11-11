@@ -1,0 +1,108 @@
+{
+  "article": "memory/blog/articles/L45-nedobrosovestnaya-konkurenciya-kopirovanie-bez-tz/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 14,
+  "verified_facts_count": 3,
+  "unverified_facts_count": 11,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "тье о нарушении ТЗ на МП . Нормы сверены на 11.11.2026; это не индивидуальная юридическая консультация,",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2025",
+      "kind": "date_or_year",
+      "context": "авнительную таблицу. Подпишите заявление: с 01.09.2025 пакет без подписи и доказательств могут оставить б",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "30 дней",
+      "kind": "metric_or_duration",
+      "context": "оформления → жалоба МП (АП) → претензия селлеру (30 дней) → заявление в УФАС (смешение) → оценка ст. 14.33",
+      "verified": true,
+      "reason": "Numerical value '30' matched in fact-bank context"
+    },
+    {
+      "fact": "1301",
+      "kind": "large_number",
+      "context": "вы опираетесь на авторский контент карточки ( ст. 1301 ГК ), на логику информационного посредника маркетп",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1253",
+      "kind": "large_number",
+      "context": "ику информационного посредника маркетплейса ( ст. 1253.1 ) и на смешение оформления по п. 2 ст. 14.6 135",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "6 135",
+      "kind": "large_number",
+      "context": "1253.1 ) и на смешение оформления по п. 2 ст. 14.6 135-ФЗ - когда копируют упаковку, цветовую схему и фи",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1515",
+      "kind": "large_number",
+      "context": "Чужой зарегистрированный знак на карточке ГК, ст. 1515 при наличии ТЗ у правообладателя Маршрут нарушения",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "44651",
+      "kind": "large_number",
+      "context": "(2) смешение оформления по п. 2 ст. 14.6 ( ФАС АК/44651/17 ); (3) регистрация ТЗ и ПО на упаковку - гайд",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1252",
+      "kind": "large_number",
+      "context": "дебной претензии между юрлицами и ИП ( п. 5.1 ст. 1252 ). Делайте: фиксировать сразу после обнаружения,",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 000",
+      "kind": "large_number",
+      "context": "при необходимости - компенсация по ст. 1301 ( от 10 000 до 10 000 000 ₽ или двукратная стоимость права - с",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 000 000",
+      "kind": "large_number",
+      "context": "одимости - компенсация по ст. 1301 ( от 10 000 до 10 000 000 ₽ или двукратная стоимость права - суд выбирает р",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "66643",
+      "kind": "large_number",
+      "context": "от ст. 14.6 (смешение оформления) - письмо ФАС АД/66643/18 . Делайте: связывать визуал на МП с офлайн-упа",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "100 000",
+      "kind": "large_number",
+      "context": "АП Возможны штрафы по ч. 1 ст. 14.33 КоАП (юрлицо 100 000-500 000 ₽ ) и ч. 2 при незаконном РИД в обороте.",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "500 000",
+      "kind": "large_number",
+      "context": "жны штрафы по ч. 1 ст. 14.33 КоАП (юрлицо 100 000-500 000 ₽ ) и ч. 2 при незаконном РИД в обороте. Делайте:",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

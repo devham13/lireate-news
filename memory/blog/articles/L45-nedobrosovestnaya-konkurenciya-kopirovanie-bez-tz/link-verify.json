@@ -1,0 +1,144 @@
+{
+  "source": "memory/blog/articles/L45-nedobrosovestnaya-konkurenciya-kopirovanie-bez-tz/article.html",
+  "total_links": 15,
+  "failed_count": 0,
+  "privacy_policy_violations": [],
+  "verdict": "pass",
+  "links": [
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_61763/6684b17798b046f060a268390ca7215273c3d448/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_34661/d62e8fe6e7ccc035c7ef846b7068f43f9182d5d7/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/narushenie-tovarnogo-znaka-na-marketpleyse/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_61763/d62e8fe6e7ccc035c7ef846b7068f43f9182d5d7/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://zhelezno.com/sudy-i-pretenzii/kopirovanie-kartochki-tovara-na-marketplejse-kakie-prava-mozhno-zashhitit",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_319253/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/zashchita_dizayna_upakovki_marketpleysy/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false
+    },
+    {
+      "url": "https://vitvet.com/articles/ufas/smeshenie_s_konkurentom/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_312739/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/sajt-klon-zashchita-brenda-v-internete/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false
+    },
+    {
+      "url": "/kak_zaschitit_tovarnyiy_znak_i_reputaciyu_biznesa_v_seti/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false
+    },
+    {
+      "url": "https://t.me/lireate_patent",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://wa.me/79600484957",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://max.ru/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    }
+  ]
+}

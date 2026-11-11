@@ -1,0 +1,86 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-11",
+    "today_ru": "11.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-13",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-11 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L45",
+    "priority": "P2",
+    "slug": "nedobrosovestnaya-konkurenciya-kopirovanie-bez-tz",
+    "h1": "Как защититься, если копируют карточку и упаковку без товарного знака: недобросовестная конкуренция и меры",
+    "primary_query": "как остановить копирование карточки товара недобросовестная конкуренция",
+    "secondary_queries": [
+      "копирование описания на маркетплейсе что делать",
+      "ст 14.6 коап рф",
+      "смешение товаров без товарного знака",
+      "копия фирменного стиля конкурента"
+    ],
+    "search_intent": "troubleshooting",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "L45",
+    "status": "PASS",
+    "search_intent": "troubleshooting",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "как остановить копирование карточки товара недобросовестная конкуренция 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "как остановить копирование карточки товара недобросовестная конкуренция ноябрь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "как остановить копирование карточки товара недобросовестная конкуренция новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "копирование описания на маркетплейсе что делать 2026",
+      "purpose": "вторичный запрос: копирование описания на маркетплейсе что делать"
+    },
+    {
+      "id": "secondary_2",
+      "query": "ст 14.6 коап рф 2026",
+      "purpose": "вторичный запрос: ст 14.6 коап рф"
+    },
+    {
+      "id": "secondary_3",
+      "query": "смешение товаров без товарного знака 2026",
+      "purpose": "вторичный запрос: смешение товаров без товарного знака"
+    },
+    {
+      "id": "secondary_4",
+      "query": "копия фирменного стиля конкурента 2026",
+      "purpose": "вторичный запрос: копия фирменного стиля конкурента"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как защититься, если копируют карточку и упаковку без товарного знака: недобросовестная конкуренция и меры 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/L45-nedobrosovestnaya-konkurenciya-kopirovanie-bez-tz",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}
