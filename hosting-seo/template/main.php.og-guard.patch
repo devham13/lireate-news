@@ -11,3 +11,4 @@
 +	<meta property="og:title" content="{title}"/>
 +	<meta property="og:description" content="{description}"/>
 +	<?php endif; ?>
++	<!-- legacy og:image block wrapped by lireate_design_patch_main.py (lireate_design_og_image_guard_v1) -->
