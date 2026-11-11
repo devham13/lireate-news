@@ -74,6 +74,11 @@ def main() -> int:
             results["checks"].append({"viewport": width, "http_status": status})
             if status != 200:
                 results["ok"] = False
+            page.wait_for_selector("#lireate-avtor h1", timeout=60000)
+            page.wait_for_function(
+                "() => document.body && document.body.classList.contains('lireate-avtor-body')",
+                timeout=60000,
+            )
             page.screenshot(path=str(ART / f"{name}.png"), full_page=True)
             if width == 1366:
                 _vis_report(page, results)
