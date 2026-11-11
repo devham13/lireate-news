@@ -56,7 +56,8 @@ def patch(text: str) -> str:
     )
     dog_new = (
         f'<a class="btn content-button red" href="/dogovory/" id="dog_but" '
-        f'style="margin-bottom:0px;" data-lx-home-more="1"><!-- {MARK} -->'
+        f'style="margin-bottom:0px;" data-lx-home-more="1">'
+        f'<!-- lireate_design_home_modal_form_btns_v1 --><!-- {MARK} -->'
     )
     text = re.sub(
         r'<div class="btn content-button red js-modal-form"[^>]*id="dog_but"[^>]*>',

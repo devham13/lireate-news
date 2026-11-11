@@ -52,6 +52,13 @@ def deploy(docroot: Path, repo_root: Path) -> int:
             shutil.copytree(assets_src, assets_dst)
         else:
             print(f"WARN assets template missing {assets_src}", file=sys.stderr)
+        htaccess_src = src_root / "service-landing.htaccess"
+        if htaccess_src.is_file():
+            ht_dst = dst_dir / ".htaccess"
+            if not ht_dst.is_file() or ht_dst.read_text(encoding="utf-8", errors="replace") != htaccess_src.read_text(
+                encoding="utf-8", errors="replace"
+            ):
+                shutil.copy2(htaccess_src, ht_dst)
     print("DEPLOY_SERVICE_LANDINGS_OK", len(changed), *changed)
     return 0
 

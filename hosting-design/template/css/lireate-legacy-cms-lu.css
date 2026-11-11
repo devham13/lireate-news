@@ -50,3 +50,17 @@ body.lireate-legacy-cms-lu .main-screen img,
 body.cms-default:has(.main-screen.main_back):not(:has(.lireate-blog-page)) .main-screen img {
   display: none !important;
 }
+
+/* lireate_legacy_contrast_hotfix_v1 */
+body.lireate-legacy-cms-lu h1.title_page,
+body.lireate-legacy-cms-lu .title_order_form {
+  color: #f5f7fb !important;
+}
+body.lireate-legacy-cms-lu .breadcrumb-ap > li,
+body.lireate-legacy-cms-lu .breadcrumb-ap > li a {
+  color: #94a3b8 !important;
+}
+body.lireate-legacy-cms-lu .breadcrumb-ap > li + li::before {
+  color: #64748b !important;
+  opacity: 1 !important;
+}

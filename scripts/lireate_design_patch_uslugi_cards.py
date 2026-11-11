@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
 """Inject dogovory + programm_evm lu-cards into uslugi lib before lu-contact."""
+import re
 import sys
 from pathlib import Path
 
 MARK = "lireate_design_uslugi_dogovory_evm_v1"
-ANCHOR = '<section class="lu-contact" id="lu-contact"'
+CONTACT_SECTION_RE = re.compile(
+    r'<section\s+class="lu-contact"\s+id="lu-contact"[^>]*>',
+    re.I,
+)
 CARDS = f"""
     <section class="lu-section" aria-labelledby="lu-is-contracts"><!-- {MARK} -->
       <div class="lu-section-head">
@@ -34,9 +38,11 @@ def patch_file(path: Path) -> bool:
     raw = path.read_text(encoding="utf-8", errors="replace")
     if MARK in raw:
         return False
-    if ANCHOR not in raw:
-        raise SystemExit(f"{path}: lu-contact anchor missing")
-    out = raw.replace(ANCHOR, CARDS + ANCHOR, 1)
+    m = CONTACT_SECTION_RE.search(raw)
+    if not m:
+        return False
+    anchor = m.group(0)
+    out = raw.replace(anchor, CARDS + anchor, 1)
     path.write_text(out, encoding="utf-8")
     return True
 
@@ -50,17 +56,20 @@ def main() -> None:
         docroot / "template/page/uslugi/lireate-uslugi-lib.php",
         docroot / "template/page/uslugi/lireate-uslugi-render.php",
     ]
-    ok = False
     for p in candidates:
-        if p.is_file():
-            if patch_file(p):
-                print("PATCHED", p)
-            ok = True
-            break
-    if not ok:
-        print("SKIP no uslugi lib", file=sys.stderr)
-        raise SystemExit(2)
-    print("USLUGI_CARDS_OK")
+        if not p.is_file():
+            continue
+        if patch_file(p):
+            print("PATCHED", p)
+            print("USLUGI_CARDS_OK")
+            return
+        if MARK in p.read_text(encoding="utf-8", errors="replace"):
+            print("USLUGI_CARDS_OK already")
+            return
+        print(f"USLUGI_CARDS_SKIP anchor missing in {p}", file=sys.stderr)
+        raise SystemExit(0)
+    print("USLUGI_CARDS_SKIP no uslugi lib", file=sys.stderr)
+    raise SystemExit(0)
 
 
 if __name__ == "__main__":
