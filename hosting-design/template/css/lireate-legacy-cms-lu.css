@@ -1,5 +1,6 @@
 /* Старые CMS-страницы (news без .lireate-blog-page): скрыть фото-hero, тёмный lu */
 body.lireate-legacy-cms-lu,
+body.lireate-cms-page-dark.lireate-legacy-cms-lu,
 body.cms-default:has(.main-screen.main_back):not(:has(.lireate-blog-page)) {
   background: #0b1020 !important;
   color: #cbd5e1 !important;
