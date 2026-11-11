@@ -47,18 +47,29 @@ fi
 
 CSS_DST="$DOCROOT/template/css"
 mkdir -p "$CSS_DST"
-for f in lireate-cms-page-dark.css lireate-cms-lu.css lireate-mktu-lu.css lireate-home-dark.css lireate-home-hero.css lireate-ux-fixes.css lireate-lu-viewport.css lireate-home-modal-lu.css lireate-legacy-article-lu.css lireate-legacy-cms-lu.css lireate-static-pages-lu.css; do
+for f in lireate-cms-page-dark.css lireate-cms-lu.css lireate-mktu-lu.css lireate-home-dark.css lireate-home-hero.css lireate-ux-fixes.css lireate-lu-viewport.css lireate-home-modal-lu.css lireate-legacy-article-lu.css lireate-legacy-cms-lu.css lireate-static-pages-lu.css lireate-service-mobile-bar.css; do
   src="$REPO/hosting-design/template/css/$f"
   [[ -f "$src" ]] || { echo "missing $src" >&2; exit 1; }
   bak "$CSS_DST/$f"
   cp -a "$src" "$CSS_DST/$f"
 done
 
-JS_DST="$DOCROOT/template/js/lireate-floating-widget-ux.js"
-src_js="$REPO/hosting-design/template/js/lireate-floating-widget-ux.js"
-if [[ -f "$src_js" ]]; then
-  bak "$JS_DST"
-  cp -a "$src_js" "$JS_DST"
+for js_f in lireate-floating-widget-ux.js lireate-service-mobile-bar.js lireate-service-metrika-goals.js; do
+  JS_DST="$DOCROOT/template/js/$js_f"
+  src_js="$REPO/hosting-design/template/js/$js_f"
+  if [[ -f "$src_js" ]]; then
+    bak "$JS_DST"
+    mkdir -p "$(dirname "$JS_DST")"
+    cp -a "$src_js" "$JS_DST"
+  fi
+done
+
+LIREATE_INC_DST="$DOCROOT/template/lireate/lireate-service-mobile-bar.inc.php"
+LIREATE_INC_SRC="$REPO/hosting-design/template/lireate/lireate-service-mobile-bar.inc.php"
+if [[ -f "$LIREATE_INC_SRC" ]]; then
+  mkdir -p "$(dirname "$LIREATE_INC_DST")"
+  bak "$LIREATE_INC_DST"
+  cp -a "$LIREATE_INC_SRC" "$LIREATE_INC_DST"
 fi
 
 HOME_DIR_DST="$DOCROOT/template/page/home"
@@ -156,6 +167,24 @@ if [[ "${LIREATE_DESIGN_PATCH_STATIC:-0}" == "1" && -f "$MAIN" ]]; then
   fi
   lireate_main_php_guard "$MAIN" || exit 1
   lireate_main_php_touch "$MAIN"
+fi
+
+if [[ "${LIREATE_DESIGN_PATCH_SERVICE_DOCK:-0}" == "1" && -f "$MAIN" ]]; then
+  lireate_main_php_guard "$MAIN" || exit 1
+  bak "$MAIN"
+  if ! "$PY" "$REPO/scripts/lireate_design_patch_service_mobile_dock.py" "$MAIN"; then
+    echo "SERVICE_DOCK_PATCH_FAIL" >&2
+    exit 1
+  fi
+  lireate_main_php_guard "$MAIN" || exit 1
+  lireate_main_php_touch "$MAIN"
+fi
+
+if [[ "${LIREATE_DESIGN_PATCH_SERVICE_LANDINGS:-0}" == "1" ]]; then
+  if ! "$PY" "$REPO/scripts/lireate_design_patch_service_landings.py" "$DOCROOT"; then
+    echo "SERVICE_LANDINGS_PATCH_FAIL" >&2
+    exit 1
+  fi
 fi
 
 if [[ "${LIREATE_DESIGN_PATCH_CMS:-0}" == "1" && -f "$MAIN" ]]; then
