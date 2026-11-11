@@ -47,7 +47,7 @@ fi
 
 CSS_DST="$DOCROOT/template/css"
 mkdir -p "$CSS_DST"
-for f in lireate-cms-page-dark.css lireate-cms-lu.css lireate-mktu-lu.css lireate-home-dark.css lireate-home-hero.css lireate-ux-fixes.css lireate-lu-viewport.css lireate-home-modal-lu.css lireate-legacy-article-lu.css lireate-legacy-cms-lu.css; do
+for f in lireate-cms-page-dark.css lireate-cms-lu.css lireate-mktu-lu.css lireate-home-dark.css lireate-home-hero.css lireate-ux-fixes.css lireate-lu-viewport.css lireate-home-modal-lu.css lireate-legacy-article-lu.css lireate-legacy-cms-lu.css lireate-static-pages-lu.css; do
   src="$REPO/hosting-design/template/css/$f"
   [[ -f "$src" ]] || { echo "missing $src" >&2; exit 1; }
   bak "$CSS_DST/$f"
@@ -145,6 +145,17 @@ if [[ -d "$CMS_DIR_SRC" ]]; then
     cp -a "$CMS_DIR_SRC/$inc" "$CMS_DIR_DST/$inc"
   fi
   done
+fi
+
+if [[ "${LIREATE_DESIGN_PATCH_STATIC:-0}" == "1" && -f "$MAIN" ]]; then
+  lireate_main_php_guard "$MAIN" || exit 1
+  bak "$MAIN"
+  if ! "$PY" "$REPO/scripts/lireate_design_patch_static_lu.py" "$MAIN"; then
+    echo "STATIC_PATCH_FAIL" >&2
+    exit 1
+  fi
+  lireate_main_php_guard "$MAIN" || exit 1
+  lireate_main_php_touch "$MAIN"
 fi
 
 if [[ "${LIREATE_DESIGN_PATCH_CMS:-0}" == "1" && -f "$MAIN" ]]; then

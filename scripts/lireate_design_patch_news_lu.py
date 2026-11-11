@@ -30,7 +30,7 @@ def patch(text: str) -> str:
                 text = text.replace(
                     old,
                     f" /* {MARK} */ if (!empty($temp['news_id']))"
-                    " echo ' lireate-legacy-article-lu';"
+                    " echo ' lireate-legacy-article-lu lireate-cms-page-dark';"
                     + old,
                     1,
                 )
@@ -40,6 +40,7 @@ def patch(text: str) -> str:
         block = (
             f'\t<?php /* {MARK} css */ if (!empty($temp["news_id"])): ?>\n'
             '\t<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" />\n'
+            '\t<link rel="stylesheet" href="/template/css/lireate-cms-page-dark.css?v=20261111design3" />\n'
             f'\t<link rel="stylesheet" href="/template/css/lireate-legacy-article-lu.css?v=20261111art2" />\n'
             f'\t<link rel="stylesheet" href="/template/css/lireate-legacy-cms-lu.css?v=20261111leg1" />\n'
             f'\t<link rel="stylesheet" href="/template/css/lireate-lu-viewport.css?v=20261111vp3" />\n'

@@ -1,0 +1,59 @@
+/* reviews / portfolio / spasibo / uslugi и прочие CMS-страницы без hero v4 */
+body.lireate-cms-page-dark.lireate-static-lu .page_container,
+body.lireate-cms-page-dark.lireate-uslugi-body .page_container,
+body.lireate-cms-page-dark.lireate-reviews-body .page_container,
+body.lireate-cms-page-dark.lireate-portfolio-body .page_container,
+body.lireate-cms-page-dark.lireate-spasibo-body .page_container {
+  background: transparent !important;
+  color: #cbd5e1 !important;
+  max-width: 1120px !important;
+  margin: 0 auto !important;
+  padding: 24px !important;
+  box-sizing: border-box;
+}
+body.lireate-cms-page-dark.lireate-reviews-body .page_container .review-item,
+body.lireate-cms-page-dark.lireate-reviews-body .page_container .reviews-item,
+body.lireate-cms-page-dark.lireate-reviews-body .page_container .item {
+  background: rgba(30, 41, 59, 0.75) !important;
+  border: 1px solid rgba(148, 163, 184, 0.2) !important;
+  border-radius: 14px !important;
+  margin-bottom: 16px !important;
+  padding: 16px !important;
+}
+body.lireate-cms-page-dark.lireate-reviews-body .page_container iframe,
+body.lireate-cms-page-dark.lireate-portfolio-body .page_container img {
+  border-radius: 12px !important;
+  max-width: 100% !important;
+  height: auto !important;
+}
+body.lireate-cms-page-dark.lireate-portfolio-body .page_container .portfolio-item,
+body.lireate-cms-page-dark.lireate-portfolio-body .page_container .item {
+  background: rgba(30, 41, 59, 0.8) !important;
+  border: 1px solid rgba(148, 163, 184, 0.22) !important;
+  border-radius: 14px !important;
+  overflow: hidden;
+}
+body.lireate-cms-page-dark.lireate-spasibo-body .page_container {
+  text-align: center !important;
+  padding-top: 48px !important;
+  padding-bottom: 64px !important;
+}
+body.lireate-cms-page-dark.lireate-spasibo-body .page_container h1,
+body.lireate-cms-page-dark.lireate-spasibo-body .page_container h2 {
+  color: #f8fafc !important;
+  font-family: "Inter", sans-serif !important;
+}
+body.lireate-cms-page-dark.lireate-uslugi-body #modals .advant,
+body.lireate-cms-page-dark.lireate-uslugi-body #modals .col {
+  background: rgba(30, 41, 59, 0.85) !important;
+  border: 1px solid rgba(148, 163, 184, 0.2) !important;
+  border-radius: 14px !important;
+  color: #f1f5f9 !important;
+  font-family: "Inter", sans-serif !important;
+}
+body.lireate-cms-page-dark.lireate-uslugi-body #modals .content-button.btn.red,
+body.lireate-cms-page-dark .page_container .content-button.btn.red {
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 55%, #6366f1 100%) !important;
+  border: 0 !important;
+  border-radius: 999px !important;
+}
