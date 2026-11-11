@@ -36,59 +36,30 @@ def _replace_once(text: str, old: str, new: str, label: str) -> str:
 def patch(text: str) -> str:
     _validate(text, "before home patch")
 
-    blog_old = (
-        '\t\t<div class="col-xs-12 col-lg-10 col-lg-offset-1">\n'
-        '\t\t\t\t<p style="margin-bottom: 30px;">В блоге мы публикуем полезные материалы'
-    )
-    blog_new = (
-        '\t\t<div class="lireate-home-blog">\n'
-        '\t\t\t<div class="lireate-home-blog-intro">\n'
-        '\t\t\t\t<p style="margin-bottom: 30px;">В блоге мы публикуем полезные материалы'
-    )
-    if MARK_BLOG not in text and blog_old in text:
-        text = _replace_once(text, blog_old, blog_new, "blog-wrap-start")
+    if MARK_BLOG not in text:
+        blog_pat = re.compile(
+            r'        \t<div class="col-xs-12 col-lg-10 col-lg-offset-1">\n'
+            r'(\t\t\t\t<p style="margin-bottom: 30px;">.*?</p>\n)'
+            r'    \t\t</div>\n    \t\t<br />',
+            re.S,
+        )
 
-    blog_close_old = (
-        '    		</div>\n'
-        '    		<br />\n'
-        '    	\t\n'
-        '\t\t<?php endif?>\n'
-        '\t\t\n'
-        '\t\t\n'
-        '\t\t\n'
-        '\t\t\n'
-        '\t\t\n'
-        '\t\t\n'
-        '\t\t\n'
-        '\t\t\n'
-        '\t\t\n'
-        '\t\t<!-- ================================================================================================-->\n'
-        '\t\t\n'
-        '\t\t<!-- =====================       РАЗДЕЛ САЙТА - РЕГИСТРАЦИЯ ТОВАРНОГО ЗНАКА'
-    )
-    blog_close_new = (
-        '    		</div>\n'
-        f'\t\t<?php /* {MARK_BLOG} */ if (is_file(dirname(__FILE__) . '
-        "'/page/home/lireate-home-blog-teaser.inc.php')) { "
-        "include dirname(__FILE__) . '/page/home/lireate-home-blog-teaser.inc.php'; } ?>\n"
-        '\t\t</div>\n'
-        '\t\t\n'
-        '\t\t<?php endif?>\n'
-        '\t\t\n'
-        '\t\t\n'
-        '\t\t\n'
-        '\t\t\n'
-        '\t\t\n'
-        '\t\t\n'
-        '\t\t\n'
-        '\t\t\n'
-        '\t\t\n'
-        '\t\t<!-- ================================================================================================-->\n'
-        '\t\t\n'
-        '\t\t<!-- =====================       РАЗДЕЛ САЙТА - РЕГИСТРАЦИЯ ТОВАРНОГО ЗНАКА'
-    )
-    if MARK_BLOG not in text and blog_close_old in text:
-        text = _replace_once(text, blog_close_old, blog_close_new, "blog-teaser")
+        def _blog_repl(m: re.Match[str]) -> str:
+            return (
+                '        \t<div class="lireate-home-blog">\n'
+                '        \t\t<div class="lireate-home-blog-intro">\n'
+                + m.group(1)
+                + '        \t\t</div>\n'
+                + f'\t\t<?php /* {MARK_BLOG} */ if (is_file(dirname(__FILE__) . '
+                "'/page/home/lireate-home-blog-teaser.inc.php')) { "
+                "include dirname(__FILE__) . '/page/home/lireate-home-blog-teaser.inc.php'; } ?>\n"
+                '        \t</div>'
+            )
+
+        text, n = blog_pat.subn(_blog_repl, text, count=1)
+        if n != 1:
+            raise SystemExit("patch home-blog: block not found")
+        _validate(text, "after home-blog")
 
     foot_old = (
         "\t\t<?php\n"
