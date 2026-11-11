@@ -210,38 +210,6 @@ if (!function_exists('lireate_seo_ob_filter_html')) {
                     );
                 }
             }
-
-            // Fallback when template/main.php omits page_container (other deploy in flight).
-            if (stripos($html, 'id="lireate-avtor"') === false) {
-                $inc = isset($_SERVER['DOCUMENT_ROOT'])
-                    ? $_SERVER['DOCUMENT_ROOT'] . '/pages/avtor-page.inc.php'
-                    : '';
-                if ($inc !== '' && is_file($inc)) {
-                    ob_start();
-                    require $inc;
-                    if (function_exists('lireate_avtor_jsonld')) {
-                        $base = function_exists('lireate_seo_schema_public_base')
-                            ? lireate_seo_schema_public_base()
-                            : lireate_seo_public_base();
-                        $json = json_encode(
-                            lireate_avtor_jsonld($base),
-                            JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES
-                        );
-                        echo '<script type="application/ld+json">' . $json . "</script>\n";
-                    }
-                    $block = (string) ob_get_clean();
-                    $needle = '<div class="container text-center content" style="padding-right: 0px;">';
-                    $pos = stripos($html, $needle);
-                    if ($pos !== false && $block !== '') {
-                        $insertAt = $pos + strlen($needle);
-                        $wrap = "\n<div class=\"row\"><div class=\"col-xs-12\"><div class=\"page_container\">\n"
-                            . $block
-                            . "\n</div></div></div>\n";
-                        $html = substr($html, 0, $insertAt) . $wrap . substr($html, $insertAt);
-                    }
-                }
-            }
-
         }
 
         return $html;

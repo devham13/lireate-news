@@ -38,7 +38,12 @@ def _vis_report(page, results: dict) -> None:
         return el ? getComputedStyle(el).display : null;
     }"""
     )
+    avtor_blocks = page.locator("#lireate-avtor").count()
+    photo_box = page.locator('#lireate-avtor img[alt="Горбачев Юрий Александрович"]').first
+    photo_bb = photo_box.bounding_box() if photo_box.count() else None
     results["visibility"] = {
+        "lireate_avtor_blocks": avtor_blocks,
+        "photo_bounding_box": photo_bb,
         "page_height": page_height,
         "page_container_display": pc_display,
         "h1_bounding_box": h1_box,
@@ -60,6 +65,10 @@ def _vis_report(page, results: dict) -> None:
     if sec_opacity is not None and float(sec_opacity) < 0.99:
         results["ok"] = False
     if pc_display == "none":
+        results["ok"] = False
+    if avtor_blocks != 1:
+        results["ok"] = False
+    if not photo_bb or photo_bb.get("width", 0) <= 0 or photo_bb.get("height", 0) <= 0:
         results["ok"] = False
 
 
@@ -108,6 +117,10 @@ def main() -> int:
         if desc != EXPECTED_DESC:
             results["ok"] = False
         if len(h1s) != 1 or h1s[0].strip() != "Горбачев Юрий Александрович":
+            results["ok"] = False
+        avtor_dom = page.locator("#lireate-avtor").count()
+        results["lireate_avtor_blocks"] = avtor_dom
+        if avtor_dom != 1:
             results["ok"] = False
         if person_blocks != 1:
             results["ok"] = False
