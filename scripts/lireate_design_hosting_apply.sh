@@ -29,8 +29,12 @@ rollback_main() {
 }
 
 cd "$REPO"
-git fetch origin main
-git merge --ff-only origin/main
+if [[ "${LIREATE_SKIP_GIT_MERGE:-0}" != "1" ]]; then
+  git fetch origin main
+  git merge --ff-only origin/main || {
+    echo "WARN: ff-only merge with origin/main failed (deploying from current checkout)" >&2
+  }
+fi
 
 CSS_DST="$DOCROOT/template/css"
 mkdir -p "$CSS_DST"
