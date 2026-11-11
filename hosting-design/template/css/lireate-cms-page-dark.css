@@ -90,6 +90,12 @@ body.lireate-cms-page-dark .main-screen {
   padding: 88px 16px 32px;
   contain: layout style;
 }
+body.lireate-cms-page-dark .main-screen.lireate-hero-v4 {
+  background-image: none !important;
+  min-height: 0 !important;
+  padding-top: 48px !important;
+  padding-bottom: 32px !important;
+}
 body.lireate-cms-page-dark .main-screen > br {
   display: none !important;
   height: 0 !important;

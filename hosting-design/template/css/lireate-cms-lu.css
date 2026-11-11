@@ -60,6 +60,71 @@ body.lireate-cms-page-dark:not(.lireate-home-dark) footer:not(.lx-site-footer) {
   padding-left: 32px !important;
   padding-right: 32px !important;
 }
+body.lireate-cms-page-dark .main-screen.lireate-cms-hero {
+  min-height: 0 !important;
+  padding: 40px 0 28px !important;
+  background: #0b1020 !important;
+  background-image: none !important;
+}
+body.lireate-cms-page-dark .main-screen.lireate-cms-hero .main-title {
+  display: none !important;
+}
+body.lireate-cms-page-dark .lireate-cms-hero__note {
+  color: #94a3b8 !important;
+  font-size: 15px !important;
+  margin: 8px 0 0 !important;
+  line-height: 1.45 !important;
+}
+body.lireate-cms-page-dark .container.content > .row.col-xs-12[style*="padding: 0px 30px"] {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px 20px;
+  padding: 0 !important;
+  max-width: 1120px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+body.lireate-cms-page-dark .container.content > .row.col-xs-12[style*="padding: 0px 30px"] > .advant {
+  padding: 24px !important;
+  margin: 0 !important;
+  width: 100% !important;
+  float: none !important;
+  box-sizing: border-box;
+}
+body.lireate-cms-page-dark .container.content h3.title,
+body.lireate-cms-page-dark .container.content .col-lg-10 h3.title {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  text-align: left !important;
+  font-size: clamp(22px, 2.4vw, 28px) !important;
+  max-width: 1120px;
+  margin-right: auto;
+}
+body.lireate-cms-page-dark .sub-title2,
+body.lireate-cms-page-dark h4.sub-title2 {
+  font: 400 16px/1.55 "Inter", sans-serif !important;
+  color: #cbd5e1 !important;
+  text-align: left !important;
+  width: 100% !important;
+  max-width: 1120px !important;
+  margin: 0 auto 12px !important;
+  padding: 0 !important;
+}
+body.lireate-cms-page-dark .container.content > .col-xs-12 > .col-xs-12 p,
+body.lireate-cms-page-dark .container.content .col-xs-12 p {
+  font: 400 16px/1.65 "Inter", sans-serif !important;
+  color: #cbd5e1 !important;
+  max-width: 72ch;
+}
+body.lireate-cms-page-dark .advant h3 {
+  color: #93c5fd !important;
+  font-weight: 700 !important;
+}
+@media (max-width: 767px) {
+  body.lireate-cms-page-dark .container.content > .row.col-xs-12[style*="padding: 0px 30px"] {
+    grid-template-columns: 1fr;
+  }
+}
 @media (max-width: 1150px) {
   body.lireate-cms-page-dark:not(.lireate-home-dark) .container.content,
   body.lireate-cms-page-dark:not(.lireate-home-dark) .content.container {

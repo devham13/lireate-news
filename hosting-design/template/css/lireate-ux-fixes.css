@@ -35,9 +35,12 @@ body.cms-default {
 #floatingBlock {
   position: fixed !important;
   right: max(14px, env(safe-area-inset-right, 0px)) !important;
-  bottom: max(18px, env(safe-area-inset-bottom, 0px)) !important;
+  bottom: max(24px, env(safe-area-inset-bottom, 0px)) !important;
   left: auto !important;
   z-index: 40;
+}
+body.lireate-cms-page-dark #floatingBlock {
+  bottom: max(24px, env(safe-area-inset-bottom, 0px)) !important;
 }
 #floatingBlock.lx-widget-dimmed {
   opacity: 0.15;
@@ -66,9 +69,12 @@ body.lireate-cms-page-dark .main-screen.main_back {
   min-height: 440px;
 }
 body.lireate-home-dark .main-screen.lireate-hero-v4,
-body.lireate-home-dark .main-screen.lireate-hero-v4#main_back {
+body.lireate-home-dark .main-screen.lireate-hero-v4#main_back,
+body.lireate-cms-page-dark .main-screen.lireate-hero-v4,
+body.lireate-cms-page-dark .main-screen.lireate-hero-v4#main_back {
   aspect-ratio: unset !important;
   background-image: none !important;
+  background-color: #0b1020 !important;
 }
 @media (max-width: 700px) {
   body.cms-default .main_back,
@@ -92,7 +98,7 @@ body.lireate-home-dark .main-screen.lireate-hero-v4#main_back {
     body.cms-default #main_back,
     body.cms-default .main-screen.main_back,
     body.lireate-home-dark .main-screen.main_back:not(.lireate-hero-v4),
-    body.lireate-cms-page-dark .main-screen.main_back {
+    body.lireate-cms-page-dark .main-screen.main_back:not(.lireate-hero-v4) {
       background-image: url("/template/images/main_back_opt_mini.webp") !important;
     }
   }
@@ -101,7 +107,7 @@ body.lireate-home-dark .main-screen.lireate-hero-v4#main_back {
     body.cms-default #main_back,
     body.cms-default .main-screen.main_back,
     body.lireate-home-dark .main-screen.main_back:not(.lireate-hero-v4),
-    body.lireate-cms-page-dark .main-screen.main_back {
+    body.lireate-cms-page-dark .main-screen.main_back:not(.lireate-hero-v4) {
       background-image: url("/template/images/main_back_opt.webp") !important;
     }
   }
