@@ -2,11 +2,7 @@
 body.lireate-home-dark.lireate-home-lu-body .page_container {
   display: block !important;
 }
-body.lireate-home-dark .container.content,
-body.lireate-home-dark .content.container {
-  padding-left: 270px !important;
-  padding-right: 0 !important;
-}
+/* padding-left shell — только в lireate-lu-viewport.css (брейкпоинт темы 1150px) */
 body.lireate-home-dark #lireate-home.lh-page {
   position: relative;
   isolation: isolate;
@@ -219,13 +215,7 @@ body.lireate-home-dark .lireate-home-blog-intro p {
   line-height: 1.65 !important;
   font-size: 16px !important;
 }
-body.lireate-home-dark .lx-site-footer {
-  margin-left: 270px !important;
-  width: calc(100% - 270px) !important;
-  box-sizing: border-box;
-  padding-left: 32px !important;
-  padding-right: 32px !important;
-}
+/* lx-site-footer offset — lireate-lu-viewport.css */
 body.lireate-home-dark .lx-site-footer-inner {
   max-width: 1120px;
   margin: 0;
@@ -248,14 +238,6 @@ body.lireate-home-dark .lireate-hero-v4__service--form {
   }
   body.lireate-home-dark .main-screen.lireate-hero-v4 {
     padding-top: 24px !important;
-  }
-}
-@media (min-width: 992px) {
-  body.lireate-home-dark .lx-site-footer {
-    margin-left: 270px !important;
-    width: calc(100% - 270px) !important;
-    padding-left: 32px !important;
-    padding-right: 32px !important;
   }
 }
 @media (max-width: 767px) {

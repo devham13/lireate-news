@@ -1,8 +1,6 @@
 /* patent / patent_prom_obr / mktu — lu-оболочка как главная и /uslugi/ */
 body.lireate-cms-page-dark:not(.lireate-home-dark) .container.content,
 body.lireate-cms-page-dark:not(.lireate-home-dark) .content.container {
-  padding-left: 270px !important;
-  padding-right: 0 !important;
   max-width: none !important;
   width: 100% !important;
   margin: 0 !important;
@@ -72,13 +70,7 @@ body.lireate-cms-page-dark:not(.lireate-home-dark) .main-title h3 {
 body.lireate-cms-page-dark:not(.lireate-home-dark) .main-button.btn {
   float: none !important;
 }
-body.lireate-cms-page-dark:not(.lireate-home-dark) footer:not(.lx-site-footer) {
-  margin-left: 270px !important;
-  width: calc(100% - 270px) !important;
-  box-sizing: border-box;
-  padding-left: 32px !important;
-  padding-right: 32px !important;
-}
+/* footer offset — lireate-lu-viewport.css */
 body.lireate-cms-page-dark .main-screen.lireate-cms-hero,
 body.lireate-cms-page-dark .main-screen.lireate-hero-v4.lireate-cms-hero,
 body.lireate-cms-page-dark #main_back.lireate-hero-v4 {

@@ -15,15 +15,7 @@ body.lireate-mktu-lu-body .wrapper-ap,
 body.lireate-mktu-lu-body #page-content-wrapper {
   background: #0b1020 !important;
 }
-body.lireate-mktu-lu-body .mktu_head,
-body.lireate-mktu-lu-body .mktu_body,
-body.lireate-mktu-lu-body .container.content > .conteinerY {
-  margin-left: 270px !important;
-  width: calc(100% - 270px) !important;
-  max-width: none !important;
-  margin-right: 0 !important;
-  box-sizing: border-box;
-}
+/* mktu shell offset — lireate-lu-viewport.css @ 1151/1251 */
 body.lireate-mktu-lu-body .container.content > .conteinerY {
   padding: 24px 32px 40px !important;
 }
@@ -76,10 +68,10 @@ body.lireate-mktu-lu-body .mktu_body {
   background: transparent !important;
   color: #cbd5e1 !important;
   max-width: none;
-  margin: 0 0 0 270px !important;
+  margin: 0 !important;
   padding: 24px 32px 40px !important;
   box-sizing: border-box;
-  width: calc(100% - 270px) !important;
+  width: 100% !important;
 }
 body.lireate-mktu-lu-body .mktu_body .conteinerY,
 body.lireate-mktu-lu-body .mktu_body .conteinerX {
@@ -192,13 +184,9 @@ body.lireate-mktu-lu-body .block_contact .content-button.btn.red {
   white-space: normal !important;
 }
 body.lireate-mktu-lu-body .lx-site-footer {
-  margin-left: 270px !important;
-  width: calc(100% - 270px) !important;
-  padding-left: 32px;
-  padding-right: 32px;
   box-sizing: border-box;
 }
-@media (max-width: 991px) {
+@media (max-width: 1150px) {
   body.lireate-mktu-lu-body .mktu_head,
   body.lireate-mktu-lu-body .mktu_body,
   body.lireate-mktu-lu-body .container.content > .conteinerY {

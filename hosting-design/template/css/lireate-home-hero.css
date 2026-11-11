@@ -209,6 +209,10 @@ body.lireate-home-dark .lireate-hero-v4__fact-lbl {
   font: 500 12px/1.35 "Inter", sans-serif !important;
   color: #94a3b8 !important;
 }
+body.lireate-cms-page-dark .lireate-hero-v4__cta,
+body.lireate-home-dark .lireate-hero-v4__cta {
+  margin-top: 22px;
+}
 body.lireate-cms-page-dark .lireate-hero-v4__cta-row,
 body.lireate-home-dark .lireate-hero-v4__cta-row {
   display: flex;

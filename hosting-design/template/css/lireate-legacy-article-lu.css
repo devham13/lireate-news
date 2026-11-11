@@ -18,8 +18,6 @@ body.lireate-legacy-article-lu .container.content {
 }
 body.cms-default:has(#articleBox .lireate-blog-page) .container.content,
 body.lireate-legacy-article-lu .container.content {
-  padding-left: 270px !important;
-  padding-right: 32px !important;
   text-align: left !important;
 }
 body.cms-default:has(#articleBox .lireate-blog-page) .container.content > .main-screen,
@@ -68,11 +66,4 @@ body.cms-default:has(#articleBox .lireate-blog-page) .main-title,
 body.lireate-legacy-article-lu .product,
 body.lireate-legacy-article-lu .main-title {
   display: none !important;
-}
-@media (max-width: 991px) {
-  body.cms-default:has(#articleBox .lireate-blog-page) .container.content,
-  body.lireate-legacy-article-lu .container.content {
-    padding-left: 16px !important;
-    padding-right: 16px !important;
-  }
 }
