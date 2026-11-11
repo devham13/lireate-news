@@ -49,12 +49,17 @@ HOME_ANCHORS = (
 DOCK_V2_BODY = "/* lireate_design_service_mobile_dock_v2 body */"
 DOCK_V1_BODY = "/* lireate_design_service_mobile_dock_v1 body */"
 
-PAGEKEY_REPLACEMENT = "<?php /* lireate_hide_pagekey_v1 */ ?>"
-PAGEKEY_PATTERNS = (
-    re.compile(r"<\?php\s+echo\s+\$temp\['pagekey'\]\s*;\s*\?>", re.I),
-    re.compile(r"<\?=\s*\$temp\['pagekey'\]\s*\?>", re.I),
-    re.compile(r"(?<![\w'\"])echo\s+\$temp\['pagekey'\]\s*;", re.I),
+PAGEKEY_COMMENT = f"/* {PAGEKEY_MARK} */"
+PAGEKEY_BOTCH_TAG = re.compile(
+    r"<\?php\s*/\*\s*lireate_hide_pagekey_v1\s*\*/\s*\?>",
+    re.I,
 )
+PAGEKEY_ECHO_LINE = re.compile(r"(?m)^(\s*)echo\s+\$temp\['pagekey'\]\s*;\s*$")
+PAGEKEY_ECHO_SHORT_TAG = re.compile(
+    r"<\?php\s+echo\s+\$temp\['pagekey'\]\s*;\s*\?>",
+    re.I,
+)
+PAGEKEY_ECHO_ECHO_TAG = re.compile(r"<\?=\s*\$temp\['pagekey'\]\s*\?>", re.I)
 
 
 def _validate(text: str, label: str) -> None:
@@ -114,16 +119,12 @@ def _normalize_legacy_body_marker(text: str) -> str:
 
 
 def _hide_pagekey(text: str) -> str:
-    if PAGEKEY_MARK in text:
-        # Strip any remaining bare echo outside marker
-        out = text
-        for pat in PAGEKEY_PATTERNS:
-            out = pat.sub(PAGEKEY_REPLACEMENT, out)
-        return out
-    out = text
-    for pat in PAGEKEY_PATTERNS:
-        out = pat.sub(PAGEKEY_REPLACEMENT, out)
-    return out
+    """Replace pagekey echo with inline PHP comment (safe inside open <?php blocks)."""
+    text = PAGEKEY_BOTCH_TAG.sub(PAGEKEY_COMMENT, text)
+    text = PAGEKEY_ECHO_LINE.sub(rf"\1{PAGEKEY_COMMENT}", text)
+    text = PAGEKEY_ECHO_SHORT_TAG.sub(PAGEKEY_COMMENT, text)
+    text = PAGEKEY_ECHO_ECHO_TAG.sub(PAGEKEY_COMMENT, text)
+    return text
 
 
 def patch(text: str) -> str:

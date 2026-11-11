@@ -13,3 +13,5 @@ node scripts/lireate_design_verify_legacy_cms_services.mjs
 ```
 
 Повторный прогон идемпотентен (повтор после #121/#127/dock).
+
+`pagekey`: только inline `/* lireate_hide_pagekey_v1 */` (без нового `<?php` внутри открытого блока ~стр. 384).
