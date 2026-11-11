@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 """After main.php patch: every lireate_design_* marker present before must remain."""
-from __future__ import annotations
-
 import re
 import sys
 from pathlib import Path
@@ -14,19 +12,27 @@ MARKER_RES = (
 )
 
 
-def extract_markers(text: str) -> set[str]:
-    found: set[str] = set()
+def extract_markers(text):
+    found = set()
     for pat in MARKER_RES:
         found.update(re.findall(pat, text))
     return found
 
 
-def home_dark_present(text: str) -> bool:
+def home_dark_present(text):
     return "lireate-home-dark" in text and "$temp['page']" in text
 
 
-def check_preserved(before: str, after: str) -> list[str]:
-    errors: list[str] = []
+def legacy_cms_body_present(text):
+    if "/* lireate_design_legacy_cms_services_v1 body */" in text:
+        return "lireate-legacy-cms-lu" in text
+    if "lireate_design_legacy_cms_services_v1" in text and "lireate-legacy-cms-lu" in text:
+        return True
+    return False
+
+
+def check_preserved(before, after):
+    errors = []
     bm = extract_markers(before)
     am = extract_markers(after)
     missing = sorted(bm - am)
@@ -34,16 +40,18 @@ def check_preserved(before: str, after: str) -> list[str]:
         errors.append("missing markers: " + ", ".join(missing))
     if home_dark_present(before) and not home_dark_present(after):
         errors.append("lireate-home-dark body echo missing")
+    if legacy_cms_body_present(before) and not legacy_cms_body_present(after):
+        errors.append("lireate-legacy-cms-lu body echo missing")
     if "page_container" in before and "page_container" not in after:
         errors.append("page_container missing")
     if len(after) < len(before) - 2000:
-        errors.append(f"suspicious shrink: {len(before)} -> {len(after)} bytes")
+        errors.append("suspicious shrink: %d -> %d bytes" % (len(before), len(after)))
     return errors
 
 
-def main() -> None:
+def main():
     if len(sys.argv) != 3:
-        print(f"Usage: {sys.argv[0]} BEFORE_MAIN AFTER_MAIN", file=sys.stderr)
+        print("Usage: %s BEFORE_MAIN AFTER_MAIN" % sys.argv[0], file=sys.stderr)
         raise SystemExit(2)
     before = Path(sys.argv[1]).read_text(encoding="utf-8", errors="replace")
     after = Path(sys.argv[2]).read_text(encoding="utf-8", errors="replace")

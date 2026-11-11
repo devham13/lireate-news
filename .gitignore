@@ -15,3 +15,7 @@ node_modules/
 .cursor/canvases/
 tests/fixtures/*.work
 tests/fixtures/*.work.*
+tests/fixtures/*.deploy-chain*
+tests/fixtures/*bak-selftest*
+tests/fixtures/*pre-design-patch*
+tests/fixtures/main-php-hosting-live-body-v1.php

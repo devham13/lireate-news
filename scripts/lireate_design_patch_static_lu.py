@@ -37,7 +37,7 @@ HERO_JS = '<script defer src="/template/js/lireate-static-hero-lu.js?v=20261111s
 CSS_BLOCK = (
     f'\t<?php /* {MARK} head */ '
     "if (in_array($temp['page'], array('reviews','portfolio','spasibo','uslugi','avtor','team','partners','kontaktyi'), true)): ?>\n"
-    '\t<link rel="stylesheet" href="/template/css/lireate-lu-viewport.css?v=20261111vp4" />\n'
+    '\t<link rel="stylesheet" href="/template/css/lireate-lu-viewport.css?v=20261111vp6" />\n'
     '\t<link rel="stylesheet" href="/template/css/lireate-static-pages-lu.css?v=20261111static3" />\n'
     f'\t{HERO_JS}\n'
     '\t<link rel="stylesheet" href="/template/css/lireate-home-modal-lu.css?v=20261111mod2" />\n'

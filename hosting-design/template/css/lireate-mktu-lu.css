@@ -78,7 +78,8 @@ body.lireate-mktu-lu-body .mktu_body .conteinerX {
   background: transparent !important;
   color: #cbd5e1 !important;
   max-width: 1120px;
-  margin: 0 !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
   padding: 0 !important;
   box-sizing: border-box;
   width: 100% !important;
@@ -100,7 +101,8 @@ body.lireate-mktu-lu-body .conteinerX {
   align-items: start;
   width: 100% !important;
   max-width: 1120px !important;
-  margin: 0 !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
   padding: 0 !important;
 }
 body.lireate-mktu-lu-body .txt-content.news-content,

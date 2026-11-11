@@ -14,7 +14,7 @@ HEAD_BLOCK = f"""\t<?php /* {MARK} css */ if (!empty($temp["news_id"])): ?>
 \t<link rel="stylesheet" href="/template/css/lireate-cms-page-dark.css?v=20261111design3" />
 \t<link rel="stylesheet" href="/template/css/lireate-legacy-article-lu.css?v=20261111art3" />
 \t<link rel="stylesheet" href="/template/css/lireate-legacy-cms-lu.css?v=20261111leg2" />
-\t<link rel="stylesheet" href="/template/css/lireate-lu-viewport.css?v=20261111vp4" />
+\t<link rel="stylesheet" href="/template/css/lireate-lu-viewport.css?v=20261111vp6" />
 \t<link rel="stylesheet" href="/template/css/lireate-home-modal-lu.css?v=20261111mod2" />
 \t<script defer src="/template/js/lireate-home-modal-lu.js?v=20261111mod2"></script>
 \t<?php endif; ?>

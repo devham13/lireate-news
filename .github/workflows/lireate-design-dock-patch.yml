@@ -19,6 +19,16 @@ on:
       - "scripts/lireate_design_patch_uslugi_cards.py"
       - "scripts/lireate_design_post_deploy_verify.sh"
       - "hosting-design/template/css/lireate-legacy-cms-lu.css"
+      - "hosting-design/template/css/lireate-lu-viewport.css"
+      - "hosting-design/template/css/lireate-cms-lu.css"
+      - "hosting-design/template/css/lireate-mktu-lu.css"
+      - "hosting-design/template/page/uslugi/lireate-uslugi-cms.inc.php"
+      - "tests/fixtures/lireate-uslugi-cms-contact-anchor.inc.php"
+      - "tests/fixtures/lireate-uslugi-cms-cards-manual.inc.php"
+      - "scripts/lireate_design_lu_column_center_selftest.sh"
+      - "scripts/lireate_design_full_deploy_main_selftest.sh"
+      - "scripts/lireate_design_resolve_python.sh"
+      - "scripts/lireate_design_main_php_marker_guard.py"
       - ".github/workflows/lireate-design-dock-patch.yml"
   pull_request:
     paths:
@@ -38,6 +48,16 @@ on:
       - "scripts/lireate_design_patch_uslugi_cards.py"
       - "scripts/lireate_design_post_deploy_verify.sh"
       - "hosting-design/template/css/lireate-legacy-cms-lu.css"
+      - "hosting-design/template/css/lireate-lu-viewport.css"
+      - "hosting-design/template/css/lireate-cms-lu.css"
+      - "hosting-design/template/css/lireate-mktu-lu.css"
+      - "hosting-design/template/page/uslugi/lireate-uslugi-cms.inc.php"
+      - "tests/fixtures/lireate-uslugi-cms-contact-anchor.inc.php"
+      - "tests/fixtures/lireate-uslugi-cms-cards-manual.inc.php"
+      - "scripts/lireate_design_lu_column_center_selftest.sh"
+      - "scripts/lireate_design_full_deploy_main_selftest.sh"
+      - "scripts/lireate_design_resolve_python.sh"
+      - "scripts/lireate_design_main_php_marker_guard.py"
       - ".github/workflows/lireate-design-dock-patch.yml"
 
 jobs:
@@ -59,3 +79,7 @@ jobs:
         run: |
           bash scripts/lireate_design_home_service_urls_selftest.sh
           bash scripts/lireate_design_uslugi_cards_selftest.sh
+      - name: LU wide column center (CSS grep)
+        run: bash scripts/lireate_design_lu_column_center_selftest.sh
+      - name: Full deploy main.php chain (legacy poisk body)
+        run: bash scripts/lireate_design_full_deploy_main_selftest.sh
