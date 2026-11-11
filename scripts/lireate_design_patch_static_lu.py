@@ -20,6 +20,10 @@ STATIC_BODY = (
     " if ($temp['page']==='reviews') echo ' lireate-reviews-body';"
     " if ($temp['page']==='portfolio') echo ' lireate-portfolio-body';"
     " if ($temp['page']==='spasibo') echo ' lireate-spasibo-body';"
+    " $_lx_ru = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '';"
+    " if (preg_match('#^/reviews(?:/|$)#', $_lx_ru)) { echo ' lireate-cms-page-dark lireate-static-lu lireate-reviews-body'; }"
+    " if (preg_match('#^/portfolio(?:/|$)#', $_lx_ru)) { echo ' lireate-cms-page-dark lireate-static-lu lireate-portfolio-body'; }"
+    " if (preg_match('#^/spasibo(?:/|$)#', $_lx_ru)) { echo ' lireate-cms-page-dark lireate-static-lu lireate-spasibo-body'; }"
 )
 
 CSS_BLOCK = (
