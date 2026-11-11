@@ -34,7 +34,7 @@ git merge --ff-only origin/main
 
 CSS_DST="$DOCROOT/template/css"
 mkdir -p "$CSS_DST"
-for f in lireate-cms-page-dark.css lireate-home-dark.css lireate-ux-fixes.css; do
+for f in lireate-cms-page-dark.css lireate-home-dark.css lireate-home-hero.css lireate-ux-fixes.css; do
   src="$REPO/hosting-design/template/css/$f"
   [[ -f "$src" ]] || { echo "missing $src" >&2; exit 1; }
   bak "$CSS_DST/$f"
@@ -48,12 +48,21 @@ if [[ -f "$src_js" ]]; then
   cp -a "$src_js" "$JS_DST"
 fi
 
-HOME_INC_DST="$DOCROOT/template/page/home/lireate-home-blog-teaser.inc.php"
-HOME_INC_SRC="$REPO/hosting-design/template/page/home/lireate-home-blog-teaser.inc.php"
-if [[ -f "$HOME_INC_SRC" ]]; then
-  mkdir -p "$(dirname "$HOME_INC_DST")"
-  bak "$HOME_INC_DST"
-  cp -a "$HOME_INC_SRC" "$HOME_INC_DST"
+HOME_DIR_DST="$DOCROOT/template/page/home"
+HOME_DIR_SRC="$REPO/hosting-design/template/page/home"
+mkdir -p "$HOME_DIR_DST"
+for inc in lireate-home-blog-teaser.inc.php lireate-home-hero.inc.php; do
+  if [[ -f "$HOME_DIR_SRC/$inc" ]]; then
+    bak "$HOME_DIR_DST/$inc"
+    cp -a "$HOME_DIR_SRC/$inc" "$HOME_DIR_DST/$inc"
+  fi
+done
+
+JS_HERO_DST="$DOCROOT/template/js/lireate-home-hero.js"
+JS_HERO_SRC="$REPO/hosting-design/template/js/lireate-home-hero.js"
+if [[ -f "$JS_HERO_SRC" ]]; then
+  bak "$JS_HERO_DST"
+  cp -a "$JS_HERO_SRC" "$JS_HERO_DST"
 fi
 
 MAIN="$DOCROOT/template/main.php"

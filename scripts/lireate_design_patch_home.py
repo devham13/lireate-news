@@ -5,6 +5,8 @@ from pathlib import Path
 
 MARK_BLOG = "lireate_design_home_blog_teaser_v1"
 MARK_FOOTER = "lireate_design_home_footer_v1"
+MARK_HERO = "lireate_design_home_hero_v4"
+MARK_ASSETS = "lireate_design_home_hero_assets_v1"
 MIN_LINES = 6000
 PAGE_CONTAINER = "page_container"
 
@@ -87,22 +89,89 @@ def patch(text: str) -> str:
     if MARK_BLOG not in text and blog_close_old in text:
         text = _replace_once(text, blog_close_old, blog_close_new, "blog-teaser")
 
-    foot_old = "\t\t    include ('./template/parts/footer.php');"
+    foot_old = (
+        "\t\t<?php\n"
+        "\t\t\t\n"
+        "\t\t    include ('./template/parts/footer.php');\n"
+        "\t\t\t    \n"
+        "\t\t?>"
+    )
     foot_new = (
-        f"\t\t<?php /* {MARK_FOOTER} */ if ($temp['page'] === 'home') {{\n"
-        "\t\t\t$_lx_ul = dirname(__FILE__) . '/page/uslugi/lireate-uslugi-lib.php';\n"
-        "\t\t\tif (is_file($_lx_ul)) { require_once $_lx_ul; }\n"
-        "\t\t\tif (function_exists('lireate_uslugi_render_footer')) {\n"
-        "\t\t\t\tlireate_uslugi_render_footer();\n"
+        "\t\t<?php\n"
+        f"\t\t\t/* {MARK_FOOTER} */\n"
+        "\t\t\tif ($temp['page'] === 'home') {\n"
+        "\t\t\t\t$_lx_ul = dirname(__FILE__) . '/page/uslugi/lireate-uslugi-lib.php';\n"
+        "\t\t\t\tif (is_file($_lx_ul)) { require_once $_lx_ul; }\n"
+        "\t\t\t\tif (function_exists('lireate_uslugi_render_footer')) {\n"
+        "\t\t\t\t\tlireate_uslugi_render_footer();\n"
+        "\t\t\t\t} else {\n"
+        "\t\t\t\t    include ('./template/parts/footer.php');\n"
+        "\t\t\t\t}\n"
         "\t\t\t} else {\n"
         "\t\t\t    include ('./template/parts/footer.php');\n"
         "\t\t\t}\n"
-        "\t\t} else {\n"
-        "\t\t    include ('./template/parts/footer.php');\n"
-        "\t\t} ?>"
+        "\t\t?>"
     )
-    if MARK_FOOTER not in text:
+    # Repair botched nested <?php from earlier deploy
+    foot_broken = "			<?php /* lireate_design_home_footer_v1 */ if ($temp['page'] === 'home') {"
+    if foot_broken in text:
+        import re
+
+        text = re.sub(
+            r"\t\t<\?php\s*\n\s*<\?php /\* lireate_design_home_footer_v1 \*/.*?\?\>\s*\n\s*\?\>",
+            foot_new,
+            text,
+            count=1,
+            flags=re.S,
+        )
+    elif MARK_FOOTER not in text:
         text = _replace_once(text, foot_old, foot_new, "home-footer")
+
+    assets_line = '\t<link rel="stylesheet" href="/template/css/lireate-home-dark.css'
+    if MARK_ASSETS not in text and assets_line in text:
+        insert_after = None
+        for marker in [
+            '\t<link rel="stylesheet" href="/template/css/lireate-home-dark.css?v=20261111design5" />\n',
+            '\t<link rel="stylesheet" href="/template/css/lireate-home-dark.css?v=20261111design3" />\n',
+        ]:
+            if marker in text:
+                insert_after = marker
+                break
+        if insert_after:
+            assets_block = (
+                insert_after
+                + f'\t<?php /* {MARK_ASSETS} */ if ($temp[\'page\'] === \'home\'): ?>\n'
+                '\t<link rel="stylesheet" href="/template/css/lireate-home-hero.css?v=20261111hero1" />\n'
+                '\t<script defer src="/template/js/lireate-home-hero.js?v=20261111hero1"></script>\n'
+                '\t<?php endif; ?>\n'
+            )
+            text = text.replace(insert_after, assets_block, 1)
+        _validate(text, "after home assets")
+
+    hero_old = (
+        '        	<div class="row main-screen main_back" id="main_back" style="margin: 0;">\n'
+        '	        	<br/>\n'
+        '	        	<br/>\n'
+        '	        	<br/>\n'
+        '	        	<div class="main-title">\n'
+        '	        		<h1>Патентное бюро «Лирейт»</h1>\n'
+        '	        		<h2>Регистрация и защита интеллектуальной собственности</h2>\n'
+        '		        	<div class="btn main-button js-modal-form" data-toggle="modal" data-frm="name,tel" data-mtitle="Оставьте заявку и мы свяжемся с вами в ближайшее время" data-tomail="Заказать обратный звонок" data-success="Мы перезвоним Вам в ближайшее время." data-btn="Отправить заявку">Бесплатная консультация</div>\n'
+        '		        	<h3 style="font-size: 14px;">Через 15 минут вы получите ответ на свой вопрос</h3>\n'
+        '	        	</div>\n'
+        '	        	<br/>\n'
+        '	        	<br/>\n'
+        '        	</div>'
+    )
+    hero_new = (
+        f'        	<div class="row main-screen lireate-hero-v4" id="main_back" style="margin: 0;">\n'
+        f'\t\t<?php /* {MARK_HERO} */ if (is_file(dirname(__FILE__) . '
+        "'/page/home/lireate-home-hero.inc.php')) { "
+        "include dirname(__FILE__) . '/page/home/lireate-home-hero.inc.php'; } ?>\n"
+        '        	</div>'
+    )
+    if MARK_HERO not in text and hero_old in text:
+        text = _replace_once(text, hero_old, hero_new, "home-hero")
 
     _validate(text, "after home patch")
     return text
