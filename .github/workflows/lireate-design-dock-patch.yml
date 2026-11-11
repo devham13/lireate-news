@@ -1,0 +1,27 @@
+name: lireate-design-dock-patch
+
+on:
+  push:
+    paths:
+      - "scripts/lireate_design_patch_service_mobile_dock.py"
+      - "scripts/lireate_design_dock_main_fixture.py"
+      - "scripts/lireate_design_service_mobile_dock_selftest.sh"
+      - "scripts/lireate_design_main_php_patch_lib.sh"
+      - ".github/workflows/lireate-design-dock-patch.yml"
+  pull_request:
+    paths:
+      - "scripts/lireate_design_patch_service_mobile_dock.py"
+      - "scripts/lireate_design_dock_main_fixture.py"
+      - "scripts/lireate_design_service_mobile_dock_selftest.sh"
+      - "scripts/lireate_design_main_php_patch_lib.sh"
+      - ".github/workflows/lireate-design-dock-patch.yml"
+
+jobs:
+  selftest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install PHP
+        run: sudo apt-get update && sudo apt-get install -y php-cli
+      - name: Service dock main.php patch selftest
+        run: bash scripts/lireate_design_service_mobile_dock_selftest.sh

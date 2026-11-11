@@ -17,6 +17,10 @@ APPLY_HOME_PATCH="${LIREATE_DESIGN_PATCH_HOME:-0}"
 
 # shellcheck source=scripts/lireate_main_php_guard.sh
 source "$REPO/scripts/lireate_main_php_guard.sh"
+# shellcheck source=scripts/lireate_design_main_php_patch_lib.sh
+source "$REPO/scripts/lireate_design_main_php_patch_lib.sh"
+export LIREATE_DESIGN_BAK_SUFFIX="$BAK"
+export LIREATE_DESIGN_PYTHON="$PY"
 
 bak() {
   local f="$1"
@@ -25,13 +29,7 @@ bak() {
 }
 
 rollback_main() {
-  local main="$1"
-  local pre="${main}.pre-design-patch"
-  if [[ -f "$pre" ]]; then
-    cp -a "$pre" "$main"
-    lireate_main_php_touch "$main"
-    echo "MAIN_ROLLBACK_OK" >&2
-  fi
+  lireate_design_rollback_main "$1" "$BAK" || true
 }
 
 if [[ ! -d "$REPO" ]]; then
@@ -102,23 +100,9 @@ fi
 MAIN="$DOCROOT/template/main.php"
 if [[ "$APPLY_MAIN_PATCH" == "1" ]]; then
   [[ -f "$MAIN" ]] || { echo "main.php missing" >&2; exit 1; }
-  lireate_main_php_guard "$MAIN" || { echo "MAIN_GUARD_PRE_FAIL" >&2; exit 1; }
-
-  bak "$MAIN"
-  cp -a "$MAIN" "${MAIN}.pre-design-patch"
-
-  if ! "$PY" "$REPO/scripts/lireate_design_patch_main.py" "$MAIN"; then
-    rollback_main "$MAIN"
+  if ! lireate_design_patch_main_php "$MAIN" "$REPO/scripts/lireate_design_patch_main.py" "design_main"; then
     exit 1
   fi
-
-  lireate_main_php_guard "$MAIN" || {
-    rollback_main "$MAIN"
-    echo "MAIN_GUARD_POST_FAIL" >&2
-    exit 1
-  }
-
-  lireate_main_php_touch "$MAIN"
 
   if grep -q 'lireate-ux-fixes.css?v=' "$MAIN"; then
     sed -i 's|lireate-ux-fixes.css?v=[^"]*|lireate-ux-fixes.css?v=20261111design4|g' "$MAIN"
@@ -129,11 +113,6 @@ if [[ "$APPLY_MAIN_PATCH" == "1" ]]; then
   sed -i 's|lireate-cms-page-dark.css?v=[^"]*|lireate-cms-page-dark.css?v=20261111design3|g' "$MAIN" 2>/dev/null || true
   sed -i 's|lireate-floating-widget-ux.js?v=[^"]*|lireate-floating-widget-ux.js?v=20261111design4|g' "$MAIN" 2>/dev/null || true
 
-  lireate_main_php_guard "$MAIN" || {
-    rollback_main "$MAIN"
-    exit 1
-  }
-  lireate_main_php_touch "$MAIN"
 else
   echo "SKIP_MAIN_PATCH (set LIREATE_DESIGN_PATCH_MAIN=1 to patch main.php)"
   if [[ -f "$MAIN" ]]; then
@@ -161,25 +140,11 @@ if [[ -d "$CMS_DIR_SRC" ]]; then
 fi
 
 if [[ "${LIREATE_DESIGN_PATCH_STATIC:-0}" == "1" && -f "$MAIN" ]]; then
-  lireate_main_php_guard "$MAIN" || exit 1
-  bak "$MAIN"
-  if ! "$PY" "$REPO/scripts/lireate_design_patch_static_lu.py" "$MAIN"; then
-    echo "STATIC_PATCH_FAIL" >&2
-    exit 1
-  fi
-  lireate_main_php_guard "$MAIN" || exit 1
-  lireate_main_php_touch "$MAIN"
+  lireate_design_patch_main_php "$MAIN" "$REPO/scripts/lireate_design_patch_static_lu.py" "static_lu" || exit 1
 fi
 
 if [[ "${LIREATE_DESIGN_PATCH_SERVICE_DOCK:-0}" == "1" && -f "$MAIN" ]]; then
-  lireate_main_php_guard "$MAIN" || exit 1
-  bak "$MAIN"
-  if ! "$PY" "$REPO/scripts/lireate_design_patch_service_mobile_dock.py" "$MAIN"; then
-    echo "SERVICE_DOCK_PATCH_FAIL" >&2
-    exit 1
-  fi
-  lireate_main_php_guard "$MAIN" || exit 1
-  lireate_main_php_touch "$MAIN"
+  lireate_design_patch_main_php "$MAIN" "$REPO/scripts/lireate_design_patch_service_mobile_dock.py" "service_dock" || exit 1
 fi
 
 if [[ "${LIREATE_DESIGN_PATCH_SERVICE_LANDINGS:-0}" == "1" ]]; then
@@ -190,33 +155,19 @@ if [[ "${LIREATE_DESIGN_PATCH_SERVICE_LANDINGS:-0}" == "1" ]]; then
 fi
 
 if [[ "${LIREATE_DESIGN_PATCH_CMS:-0}" == "1" && -f "$MAIN" ]]; then
-  lireate_main_php_guard "$MAIN" || exit 1
-  bak "$MAIN"
-  if ! "$PY" "$REPO/scripts/lireate_design_patch_cms_pages.py" "$MAIN"; then
-    echo "CMS_PATCH_FAIL" >&2
-    exit 1
-  fi
-  lireate_main_php_guard "$MAIN" || exit 1
-  lireate_main_php_touch "$MAIN"
+  lireate_design_patch_main_php "$MAIN" "$REPO/scripts/lireate_design_patch_cms_pages.py" "cms_pages" || exit 1
 fi
 
 if [[ "$APPLY_HOME_PATCH" == "1" ]]; then
   [[ -f "$MAIN" ]] || { echo "main.php missing for home patch" >&2; exit 1; }
-  lireate_main_php_guard "$MAIN" || exit 1
-  bak "$MAIN"
-  if ! "$PY" "$REPO/scripts/lireate_design_patch_home.py" "$MAIN"; then
-    echo "HOME_PATCH_FAIL" >&2
-    exit 1
-  fi
-  lireate_main_php_guard "$MAIN" || exit 1
-  lireate_main_php_touch "$MAIN"
+  lireate_design_patch_main_php "$MAIN" "$REPO/scripts/lireate_design_patch_home.py" "home" || exit 1
 else
   echo "SKIP_HOME_PATCH (set LIREATE_DESIGN_PATCH_HOME=1 for blog/footer on home)"
 fi
 
 if [[ -x "$REPO/scripts/lireate_design_post_deploy_verify.sh" ]]; then
   if ! bash "$REPO/scripts/lireate_design_post_deploy_verify.sh"; then
-    if [[ "$APPLY_MAIN_PATCH" == "1" ]]; then
+    if [[ -f "$MAIN" ]] && [[ -f "${MAIN}.pre-design-patch" ]]; then
       rollback_main "$MAIN"
     fi
     exit 1
