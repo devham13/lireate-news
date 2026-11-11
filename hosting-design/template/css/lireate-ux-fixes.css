@@ -23,6 +23,8 @@ body.cms-default {
   min-height: 63px;
 }
 /* Site-wide: only avatar, no «Пишите, мы онлайн» bubble (overlap on /avtor/, cards) */
+body.cms-default #managerMessage,
+#floatingBlock #managerMessage,
 #managerMessage {
   display: none !important;
   width: 0 !important;
