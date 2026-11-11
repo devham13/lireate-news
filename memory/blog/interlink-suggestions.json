@@ -1,14 +1,6 @@
 {
   "site_base": "https://example.com",
-  "total_articles": 54,
-  "opportunities_found": 1,
-  "suggestions": [
-    {
-      "source": "L46-licenzionnyy-dogovor-na-tovarnyy-znak",
-      "target": "L06-kak-opredelit-klass-mktu",
-      "keyword": "классы мкту",
-      "context": "чем борьба за новую заявку.</p>  <p><b>Делайте:</b> сверить классы МКТУ со свидетельством в <a href=\"https://searchplatform.rospate",
-      "link_replacement": "<a href=\"/blog/kak-opredelit-klass-mktu/\">классы МКТУ</a>"
-    }
-  ]
+  "total_articles": 55,
+  "opportunities_found": 0,
+  "suggestions": []
 }
