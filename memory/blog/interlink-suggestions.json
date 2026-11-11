@@ -1,28 +1,6 @@
 {
   "site_base": "https://example.com",
-  "total_articles": 52,
-  "opportunities_found": 3,
-  "suggestions": [
-    {
-      "source": "L29-rospatent-fips-proverit-tovarnyy-znak-onlayn-besplatno",
-      "target": "L06-kak-opredelit-klass-mktu",
-      "keyword": "классы мкту",
-      "context": "ote>   <b>Маршрут бесплатной проверки:</b><br>   Название и классы МКТУ → Поисковая платформа → номера знаков и заявок → открытые р",
-      "link_replacement": "<a href=\"/blog/kak-opredelit-klass-mktu/\">классы МКТУ</a>"
-    },
-    {
-      "source": "L38-proverit-brend-onlayn-unikalnost",
-      "target": "L06-kak-opredelit-klass-mktu",
-      "keyword": "классы мкту",
-      "context": "зелёной или согласованной жёлтой сводки подготовьте заявку, классы МКТУ и макет знака. Если нужна платная проверка перед подачей, о",
-      "link_replacement": "<a href=\"/blog/kak-opredelit-klass-mktu/\">классы МКТУ</a>"
-    },
-    {
-      "source": "L18-kak-proverit-brend-na-wildberries-svoboden-li-tovarnyy-znak",
-      "target": "L06-kak-opredelit-klass-mktu",
-      "keyword": "классы мкту",
-      "context": "Схема:</b> написание бренда → поиск WB → поиск Роспатента → классы МКТУ → вывод \"свободно / риск / занято\" → решение о регистрации",
-      "link_replacement": "<a href=\"/blog/kak-opredelit-klass-mktu/\">классы МКТУ</a>"
-    }
-  ]
+  "total_articles": 53,
+  "opportunities_found": 0,
+  "suggestions": []
 }
