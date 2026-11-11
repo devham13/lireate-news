@@ -25,33 +25,32 @@ URI_REGEX_V1 = (
     "poisk_tovarnyh_znakov|ekspertiza_tovarnogo_znaka|"
     "mezhdunarodnaja_registracija_tovarnogo_znaka|"
     "registracija_torgovyh_marok_i_logotipov|patent_prom_obr|patent|mktu|uslugi)"
-    "(?:/|$)#"
+    "(?:[/?]|$)#"
 )
 
 URI_LEGACY_REGEX = (
     "#^/(?:mktu1?|poisk_tovarnyh_znakov|ekspertiza_tovarnogo_znaka|"
     "mezhdunarodnaja_registracija_tovarnogo_znaka|"
     "registracija_torgovyh_marok_i_logotipov)"
-    "(?:/|$)#"
+    "(?:[/?]|$)#"
 )
 
 URI_LEGACY_REGEX_OLD = (
     "#^/(?:poisk_tovarnyh_znakov|ekspertiza_tovarnogo_znaka|"
     "mezhdunarodnaja_registracija_tovarnogo_znaka|"
     "registracija_torgovyh_marok_i_logotipov)"
-    "(?:/|$)#"
+    "(?:[/?]|$)#"
 )
 
 STANDALONE_LU_REGEX = (
     "#^/(?:findtz|registraciya_tovarnogo_znaka(?:_s_oplatoy_za_rezultat|_v_kitae)?|"
     "prodlenie_tovarnogo_znaka|vozrazhenie_protiv_registracii_tovarnogo_znaka|"
-    "zashchita_avtorskih_prav|dogovory|registraciya_programm_evm)(?:/|$)#"
+    "zashchita_avtorskih_prav|dogovory|registraciya_programm_evm)(?:[/?]|$)#"
 )
 
-# Only this substring inside preg_match patterns — never rewrite the whole <body> PHP block.
 STANDALONE_REGEX_OLD_TAIL = "zashchita_avtorskih_prav)(?:/|$)#"
 STANDALONE_REGEX_NEW_TAIL = (
-    "zashchita_avtorskih_prav|dogovory|registraciya_programm_evm)(?:/|$)#"
+    "zashchita_avtorskih_prav|dogovory|registraciya_programm_evm)(?:[/?]|$)#"
 )
 
 V1_BODY_SNIP = (

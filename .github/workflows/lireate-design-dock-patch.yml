@@ -28,6 +28,10 @@ on:
       - "scripts/lireate_design_lu_column_center_selftest.sh"
       - "scripts/lireate_design_full_deploy_main_selftest.sh"
       - "scripts/lireate_design_resolve_python.sh"
+      - "scripts/lireate_design_main_body_class_render.php"
+      - "scripts/lireate_design_main_body_render_selftest.sh"
+      - "scripts/lireate_design_main_uri_regex_query_upgrade.py"
+      - "scripts/lireate_design_post_deploy_verify.sh"
       - "scripts/lireate_design_main_php_marker_guard.py"
       - ".github/workflows/lireate-design-dock-patch.yml"
   pull_request:
@@ -57,6 +61,10 @@ on:
       - "scripts/lireate_design_lu_column_center_selftest.sh"
       - "scripts/lireate_design_full_deploy_main_selftest.sh"
       - "scripts/lireate_design_resolve_python.sh"
+      - "scripts/lireate_design_main_body_class_render.php"
+      - "scripts/lireate_design_main_body_render_selftest.sh"
+      - "scripts/lireate_design_main_uri_regex_query_upgrade.py"
+      - "scripts/lireate_design_post_deploy_verify.sh"
       - "scripts/lireate_design_main_php_marker_guard.py"
       - ".github/workflows/lireate-design-dock-patch.yml"
 
@@ -66,7 +74,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Install PHP
-        run: sudo apt-get update && sudo apt-get install -y php-cli
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.3"
+          coverage: none
       - name: URI legacy regex (mktu1?)
         run: python3 scripts/lireate_design_dock_uri_regex_check.py
       - name: Service dock main.php patch selftest
@@ -83,3 +94,5 @@ jobs:
         run: bash scripts/lireate_design_lu_column_center_selftest.sh
       - name: Full deploy main.php chain (legacy poisk body)
         run: bash scripts/lireate_design_full_deploy_main_selftest.sh
+      - name: Main.php body class render (home/reviews/poisk + query)
+        run: bash scripts/lireate_design_main_body_render_selftest.sh

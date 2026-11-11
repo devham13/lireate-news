@@ -27,9 +27,9 @@ STATIC_BODY = (
     " if ($temp['page']==='portfolio') echo ' lireate-portfolio-body';"
     " if ($temp['page']==='spasibo') echo ' lireate-spasibo-body';"
     " $_lx_ru = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '';"
-    " if (preg_match('#^/reviews(?:/|$)#', $_lx_ru)) { echo ' lireate-cms-page-dark lireate-static-lu lireate-reviews-body'; }"
-    " if (preg_match('#^/portfolio(?:/|$)#', $_lx_ru)) { echo ' lireate-cms-page-dark lireate-static-lu lireate-portfolio-body'; }"
-    " if (preg_match('#^/spasibo(?:/|$)#', $_lx_ru)) { echo ' lireate-cms-page-dark lireate-static-lu lireate-spasibo-body'; }"
+    " if (preg_match('#^/reviews(?:[/?]|$)#', $_lx_ru)) { echo ' lireate-cms-page-dark lireate-static-lu lireate-reviews-body'; }"
+    " if (preg_match('#^/portfolio(?:[/?]|$)#', $_lx_ru)) { echo ' lireate-cms-page-dark lireate-static-lu lireate-portfolio-body'; }"
+    " if (preg_match('#^/spasibo(?:[/?]|$)#', $_lx_ru)) { echo ' lireate-cms-page-dark lireate-static-lu lireate-spasibo-body'; }"
 )
 
 HERO_JS = '<script defer src="/template/js/lireate-static-hero-lu.js?v=20261111static3"></script>'
@@ -44,6 +44,29 @@ CSS_BLOCK = (
     '\t<script defer src="/template/js/lireate-home-modal-lu.js?v=20261111mod2"></script>\n'
     "\t<?php endif; ?>\n"
 )
+
+PARTIAL_STATIC_USLUGI = (
+    f"/* {MARK} */ if($temp['page']=='uslugi') echo ' lireate-uslugi-body';"
+)
+
+
+def _static_body_complete(text: str) -> bool:
+    return "$_lx_static" in text and "preg_match('#^/reviews" in text
+
+
+def _upgrade_static_body(text: str) -> str:
+    if PARTIAL_STATIC_USLUGI in text and not _static_body_complete(text):
+        text = text.replace(PARTIAL_STATIC_USLUGI, STATIC_BODY.strip(), 1)
+    elif MARK in text and not _static_body_complete(text):
+        # legacy stub with MARK only
+        stub = re.compile(
+            re.escape(f"/* {MARK} */") + r"\s*if\s*\(\s*\$temp\['page'\]\s*==\s*'uslugi'\s*\).*?;",
+        )
+        text, n = stub.subn(STATIC_BODY.strip(), text, count=1)
+        if n == 0 and "/* {MARK} */".format(MARK=MARK) in text:
+            pass
+    return text
+
 
 STATIC_CSS_LINK = re.compile(
     r'\t<link rel="stylesheet" href="/template/css/lireate-static-pages-lu\.css\?v=20261111static[123]" />\s*\n',
@@ -96,7 +119,8 @@ def patch(text: str) -> str:
     if body_old in text:
         text = text.replace(body_old, body_new, 1)
 
-    if MARK not in text:
+    text = _upgrade_static_body(text)
+    if not _static_body_complete(text):
         anchor = " if($temp['page']=='uslugi') echo ' lireate-uslugi-body';"
         if anchor not in text:
             anchor = "lireate_cms_dark_body_v1"

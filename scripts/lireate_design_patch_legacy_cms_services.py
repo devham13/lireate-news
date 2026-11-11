@@ -14,7 +14,7 @@ URI_REGEX = (
     "#^/(?:poisk_tovarnyh_znakov|ekspertiza_tovarnogo_znaka|"
     "mezhdunarodnaja_registracija_tovarnogo_znaka|"
     "registracija_torgovyh_marok_i_logotipov)"
-    "(?:/|$)#"
+    "(?:[/?]|$)#"
 )
 
 LEGACY_BODY_ECHO = " lireate-cms-page-dark lireate-legacy-cms-lu"
@@ -83,9 +83,11 @@ def _php_lint(content: str) -> None:
 
 
 def _has_legacy_body(text: str) -> bool:
-    if "lireate-legacy-cms-lu" not in text:
+    if "lireate-legacy-cms-lu-marker" in text:
         return False
-    if f"/* {MARK} body */" in text or BODY_SNIP_LEGACY in text:
+    if f"/* {MARK} body */" in text and "preg_match" in text and LEGACY_BODY_ECHO in text:
+        return True
+    if BODY_SNIP_LEGACY in text and "preg_match" in text:
         return True
     return bool(
         re.search(
@@ -94,6 +96,17 @@ def _has_legacy_body(text: str) -> bool:
         )
         and LEGACY_BODY_ECHO in text
     )
+
+
+def _fix_corrupt_legacy_marker_echo(text: str) -> str:
+    bad = f"/* {MARK} body */ echo ' lireate-legacy-cms-lu-marker';"
+    compact = BODY_SNIP.replace("\n", " ")
+    if bad in text:
+        return text.replace(bad, compact, 1)
+    bad2 = "echo ' lireate-legacy-cms-lu-marker';"
+    if bad2 in text and LEGACY_BODY_ECHO not in text:
+        return text.replace(bad2, compact + " ", 1)
+    return text
 
 
 def _insert_legacy_body(text: str) -> str:
@@ -129,6 +142,7 @@ def _hide_pagekey(text: str) -> str:
 
 def patch(text: str) -> str:
     _validate(text, "before legacy_cms_services")
+    text = _fix_corrupt_legacy_marker_echo(text)
     text = _normalize_legacy_body_marker(text)
     text = _insert_legacy_body(text)
     if f"{MARK} head" not in text and "</head>" in text:
