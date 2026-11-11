@@ -19,6 +19,8 @@ LANDINGS = [
     "vozrazhenie_protiv_registracii_tovarnogo_znaka/index.php",
     "registraciya_tovarnogo_znaka_v_kitae/index.php",
     "zashchita_avtorskih_prav/index.php",
+    "dogovory/index.php",
+    "registraciya_programm_evm/index.php",
 ]
 
 

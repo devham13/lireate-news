@@ -21,6 +21,7 @@ URI_REGEX_V1 = (
     "#^/(?:findtz|registraciya_tovarnogo_znaka(?:_s_oplatoy_za_rezultat)?|"
     "prodlenie_tovarnogo_znaka|vozrazhenie_protiv_registracii_tovarnogo_znaka|"
     "registraciya_tovarnogo_znaka_v_kitae|zashchita_avtorskih_prav|"
+    "dogovory|registraciya_programm_evm|"
     "poisk_tovarnyh_znakov|ekspertiza_tovarnogo_znaka|"
     "mezhdunarodnaja_registracija_tovarnogo_znaka|"
     "registracija_torgovyh_marok_i_logotipov|patent_prom_obr|patent|mktu|uslugi)"
@@ -44,7 +45,7 @@ URI_LEGACY_REGEX_OLD = (
 STANDALONE_LU_REGEX = (
     "#^/(?:findtz|registraciya_tovarnogo_znaka(?:_s_oplatoy_za_rezultat|_v_kitae)?|"
     "prodlenie_tovarnogo_znaka|vozrazhenie_protiv_registracii_tovarnogo_znaka|"
-    "zashchita_avtorskih_prav)(?:/|$)#"
+    "zashchita_avtorskih_prav|dogovory|registraciya_programm_evm)(?:/|$)#"
 )
 
 V1_BODY_SNIP = (
