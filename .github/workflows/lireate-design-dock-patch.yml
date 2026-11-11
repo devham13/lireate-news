@@ -13,6 +13,12 @@ on:
       - "scripts/lireate_design_patch_legacy_cms_services.py"
       - "scripts/lireate_design_main_php_sanitize.py"
       - "scripts/lireate_design_main_php_marker_guard.py"
+      - "scripts/lireate_design_home_service_urls_selftest.sh"
+      - "scripts/lireate_design_uslugi_cards_selftest.sh"
+      - "scripts/lireate_design_patch_home_service_urls.py"
+      - "scripts/lireate_design_patch_uslugi_cards.py"
+      - "scripts/lireate_design_post_deploy_verify.sh"
+      - "hosting-design/template/css/lireate-legacy-cms-lu.css"
       - ".github/workflows/lireate-design-dock-patch.yml"
   pull_request:
     paths:
@@ -26,6 +32,12 @@ on:
       - "scripts/lireate_design_patch_legacy_cms_services.py"
       - "scripts/lireate_design_main_php_sanitize.py"
       - "scripts/lireate_design_main_php_marker_guard.py"
+      - "scripts/lireate_design_home_service_urls_selftest.sh"
+      - "scripts/lireate_design_uslugi_cards_selftest.sh"
+      - "scripts/lireate_design_patch_home_service_urls.py"
+      - "scripts/lireate_design_patch_uslugi_cards.py"
+      - "scripts/lireate_design_post_deploy_verify.sh"
+      - "hosting-design/template/css/lireate-legacy-cms-lu.css"
       - ".github/workflows/lireate-design-dock-patch.yml"
 
 jobs:
@@ -43,3 +55,7 @@ jobs:
         run: bash scripts/lireate_design_static_lu_selftest.sh
       - name: Legacy CMS patch selftest (body + pagekey)
         run: bash scripts/lireate_design_legacy_cms_selftest.sh
+      - name: Home service URLs + uslugi cards selftests
+        run: |
+          bash scripts/lireate_design_home_service_urls_selftest.sh
+          bash scripts/lireate_design_uslugi_cards_selftest.sh

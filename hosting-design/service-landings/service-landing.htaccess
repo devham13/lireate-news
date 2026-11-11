@@ -1,0 +1,6 @@
+# LU standalone service landing (same as prodlenie_tovarnogo_znaka/)
+DirectoryIndex index.php
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^$ index.php [END]
+</IfModule>

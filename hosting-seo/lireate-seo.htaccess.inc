@@ -16,7 +16,7 @@ RewriteRule ^blog/?$ /news [R=301,L]
 RewriteRule ^(news|kontaktyi|docs|team|mktu|patent|patent_prom_obr|reviews|portfolio|o_kompanii|partners|payment|personalArea|spasibo)/$ /$1 [R=301,L]
 
 # Service landings: enforce trailing slash (matches in-page canonical)
-RewriteRule ^(registraciya_tovarnogo_znaka|registraciya_tovarnogo_znaka_s_oplatoy_za_rezultat|findtz|prodlenie_tovarnogo_znaka)$ /$1/ [R=301,L]
+RewriteRule ^(registraciya_tovarnogo_znaka|registraciya_tovarnogo_znaka_s_oplatoy_za_rezultat|findtz|prodlenie_tovarnogo_znaka|dogovory|registraciya_programm_evm)$ /$1/ [R=301,L]
 
 # Sitemap article slugs: add trailing slash (virtual CMS URLs, not files/dirs/admin)
 RewriteCond %{REQUEST_METHOD} !POST
@@ -30,6 +30,8 @@ RewriteCond %{REQUEST_URI} !^/registraciya_tovarnogo_znaka/?$ [NC]
 RewriteCond %{REQUEST_URI} !^/registraciya_tovarnogo_znaka_s_oplatoy_za_rezultat/?$ [NC]
 RewriteCond %{REQUEST_URI} !^/findtz/?$ [NC]
 RewriteCond %{REQUEST_URI} !^/prodlenie_tovarnogo_znaka/?$ [NC]
+RewriteCond %{REQUEST_URI} !^/dogovory/?$ [NC]
+RewriteCond %{REQUEST_URI} !^/registraciya_programm_evm/?$ [NC]
 RewriteCond %{REQUEST_URI} !^/(news|kontaktyi|docs|team|mktu|patent|patent_prom_obr|reviews|portfolio|o_kompanii|partners|payment|personalArea|spasibo|test|test2|test3|tester|check|docs2|pdf_book_1|blog|reg-tz-main)(/?)$ [NC]
 RewriteRule ^([a-zA-Z0-9_\-]+)$ /$1/ [R=301,L]
 

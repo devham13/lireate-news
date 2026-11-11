@@ -13,3 +13,5 @@ __pycache__/
 canvases/
 node_modules/
 .cursor/canvases/
+tests/fixtures/*.work
+tests/fixtures/*.work.*

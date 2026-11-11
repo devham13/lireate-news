@@ -98,6 +98,25 @@ if [[ -f "$JS_MODAL_SRC" ]]; then
 fi
 
 MAIN="$DOCROOT/template/main.php"
+MAIN_PRE_APPLY="${MAIN}.${BAK}-pre-apply"
+main_php_will_patch() {
+  [[ "${LIREATE_DESIGN_PATCH_MAIN:-0}" == "1" ]] && return 0
+  [[ "${LIREATE_DESIGN_PATCH_NEWS_LU:-0}" == "1" ]] && return 0
+  [[ "${LIREATE_DESIGN_PATCH_LEGACY_CMS:-0}" == "1" ]] && return 0
+  [[ "${LIREATE_DESIGN_PATCH_GLOBAL_UX:-0}" == "1" ]] && return 0
+  [[ "${LIREATE_DESIGN_PATCH_STATIC:-0}" == "1" ]] && return 0
+  [[ "${LIREATE_DESIGN_PATCH_SERVICE_DOCK:-0}" == "1" ]] && return 0
+  [[ "${LIREATE_DESIGN_PATCH_HOME_SERVICE_URLS:-0}" == "1" ]] && return 0
+  [[ "${LIREATE_DESIGN_PATCH_CMS:-0}" == "1" ]] && return 0
+  [[ "$APPLY_HOME_PATCH" == "1" ]] && return 0
+  return 1
+}
+
+if main_php_will_patch && [[ -f "$MAIN" ]]; then
+  cp -a "$MAIN" "$MAIN_PRE_APPLY"
+  echo "MAIN_PRE_APPLY_SNAPSHOT $MAIN_PRE_APPLY" >&2
+fi
+
 if [[ "$APPLY_MAIN_PATCH" == "1" ]]; then
   [[ -f "$MAIN" ]] || { echo "main.php missing" >&2; exit 1; }
   if ! lireate_design_patch_main_php "$MAIN" "$REPO/scripts/lireate_design_patch_main.py" "design_main"; then
@@ -168,6 +187,10 @@ if [[ "${LIREATE_DESIGN_DEPLOY_NEW_SERVICES:-0}" == "1" ]]; then
     echo "DEPLOY_NEW_SERVICES_FAIL" >&2
     exit 1
   fi
+  if [[ -f "$DOCROOT/.htaccess" ]]; then
+    "$PY" "$REPO/scripts/lireate_design_patch_root_htaccess_services.py" "$DOCROOT/.htaccess" \
+      || echo "ROOT_HTACCESS_PATCH_WARN" >&2
+  fi
 fi
 
 if [[ "${LIREATE_DESIGN_PATCH_SERVICE_LANDINGS:-0}" == "1" ]]; then
@@ -182,10 +205,12 @@ if [[ "${LIREATE_DESIGN_PATCH_HOME_SERVICE_URLS:-0}" == "1" && -f "$MAIN" ]]; th
 fi
 
 if [[ "${LIREATE_DESIGN_PATCH_USLUGI_CARDS:-0}" == "1" ]]; then
-  if ! "$PY" "$REPO/scripts/lireate_design_patch_uslugi_cards.py" "$DOCROOT"; then
-    echo "USLUGI_CARDS_PATCH_FAIL" >&2
-    exit 1
-  fi
+  "$PY" "$REPO/scripts/lireate_design_patch_uslugi_cards.py" "$DOCROOT" || echo "USLUGI_CARDS_PATCH_WARN" >&2
+fi
+
+if [[ "${LIREATE_DESIGN_PATCH_ROOT_HTACCESS:-0}" == "1" && -f "$DOCROOT/.htaccess" ]]; then
+  "$PY" "$REPO/scripts/lireate_design_patch_root_htaccess_services.py" "$DOCROOT/.htaccess" \
+    || echo "ROOT_HTACCESS_PATCH_WARN" >&2
 fi
 
 if [[ "${LIREATE_DESIGN_PATCH_CMS:-0}" == "1" && -f "$MAIN" ]]; then
@@ -200,8 +225,13 @@ else
 fi
 
 if [[ -x "$REPO/scripts/lireate_design_post_deploy_verify.sh" ]]; then
+  export REPO LIREATE_DOCROOT
   if ! bash "$REPO/scripts/lireate_design_post_deploy_verify.sh"; then
-    if [[ -f "$MAIN" ]] && [[ -f "${MAIN}.pre-design-patch" ]]; then
+    if [[ -f "$MAIN_PRE_APPLY" ]]; then
+      cp -a "$MAIN_PRE_APPLY" "$MAIN"
+      lireate_main_php_touch "$MAIN"
+      echo "MAIN_ROLLBACK_PRE_APPLY_OK from $MAIN_PRE_APPLY" >&2
+    elif [[ -f "$MAIN" ]]; then
       rollback_main "$MAIN"
     fi
     exit 1
