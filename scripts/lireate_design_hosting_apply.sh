@@ -54,7 +54,7 @@ for f in lireate-cms-page-dark.css lireate-cms-lu.css lireate-mktu-lu.css lireat
   cp -a "$src" "$CSS_DST/$f"
 done
 
-for js_f in lireate-floating-widget-ux.js lireate-service-mobile-bar.js lireate-service-metrika-goals.js; do
+for js_f in lireate-floating-widget-ux.js lireate-broken-images.js lireate-service-mobile-bar.js lireate-service-metrika-goals.js; do
   JS_DST="$DOCROOT/template/js/$js_f"
   src_js="$REPO/hosting-design/template/js/$js_f"
   if [[ -f "$src_js" ]]; then
@@ -137,6 +137,10 @@ if [[ -d "$CMS_DIR_SRC" ]]; then
     cp -a "$CMS_DIR_SRC/$inc" "$CMS_DIR_DST/$inc"
   fi
   done
+fi
+
+if [[ "${LIREATE_DESIGN_PATCH_BROKEN_IMAGES:-0}" == "1" && -f "$MAIN" ]]; then
+  lireate_design_patch_main_php "$MAIN" "$REPO/scripts/lireate_design_patch_broken_images.py" "broken_images" || exit 1
 fi
 
 if [[ "${LIREATE_DESIGN_PATCH_STATIC:-0}" == "1" && -f "$MAIN" ]]; then
