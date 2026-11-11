@@ -44,7 +44,7 @@ def patch(text: str) -> str:
             re.S,
         )
 
-        def _blog_repl(m: re.Match[str]) -> str:
+        def _blog_repl(m):
             return (
                 '        \t<div class="lireate-home-blog">\n'
                 '        \t\t<div class="lireate-home-blog-intro">\n'
