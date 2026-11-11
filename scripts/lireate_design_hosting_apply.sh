@@ -143,6 +143,14 @@ if [[ -d "$CMS_DIR_SRC" ]]; then
   done
 fi
 
+if [[ "${LIREATE_DESIGN_PATCH_NEWS_LU:-0}" == "1" && -f "$MAIN" ]]; then
+  lireate_design_patch_main_php "$MAIN" "$REPO/scripts/lireate_design_patch_news_lu.py" "news_lu" || exit 1
+fi
+
+if [[ "${LIREATE_DESIGN_PATCH_LEGACY_CMS:-0}" == "1" && -f "$MAIN" ]]; then
+  lireate_design_patch_main_php "$MAIN" "$REPO/scripts/lireate_design_patch_legacy_cms_services.py" "legacy_cms" || exit 1
+fi
+
 if [[ "${LIREATE_DESIGN_PATCH_BROKEN_IMAGES:-0}" == "1" && -f "$MAIN" ]]; then
   lireate_design_patch_main_php "$MAIN" "$REPO/scripts/lireate_design_patch_broken_images.py" "broken_images" || exit 1
 fi
