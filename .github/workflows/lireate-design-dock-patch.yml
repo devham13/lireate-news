@@ -74,7 +74,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Install PHP
-        run: sudo apt-get update && sudo apt-get install -y php-cli
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.3"
+          coverage: none
       - name: URI legacy regex (mktu1?)
         run: python3 scripts/lireate_design_dock_uri_regex_check.py
       - name: Service dock main.php patch selftest
