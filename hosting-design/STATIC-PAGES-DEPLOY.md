@@ -18,3 +18,5 @@ node scripts/lireate_design_static_pages_screenshots.mjs
 После любого патча `main.php`: `lireate_design_main_php_sanitize_cli.py` убирает хвост `</script>" />` (ботч v2 upgrade).
 
 Проверка: `node scripts/lireate_design_verify_stray_quote.mjs`
+
+Mobile portfolio: в `lireate-static-pages-lu.css` сброс `height` у `#face .contentBox` (`body.lireate-static-lu`, max-width 768px). Verify: `boxH`, `faceTailGap` в `verify_static_pages.mjs`.
