@@ -139,6 +139,10 @@ if [[ -d "$CMS_DIR_SRC" ]]; then
   done
 fi
 
+if [[ "${LIREATE_DESIGN_PATCH_NEWS_LU:-0}" == "1" && -f "$MAIN" ]]; then
+  lireate_design_patch_main_php "$MAIN" "$REPO/scripts/lireate_design_patch_news_lu.py" "news_lu" || exit 1
+fi
+
 if [[ "${LIREATE_DESIGN_PATCH_STATIC:-0}" == "1" && -f "$MAIN" ]]; then
   lireate_design_patch_main_php "$MAIN" "$REPO/scripts/lireate_design_patch_static_lu.py" "static_lu" || exit 1
 fi
