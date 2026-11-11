@@ -30,8 +30,9 @@ CSS_BLOCK = (
     f'\t<?php /* {MARK} head */ '
     "if (in_array($temp['page'], array('reviews','portfolio','spasibo','uslugi','avtor','team','partners','kontaktyi'), true)): ?>\n"
     '\t<link rel="stylesheet" href="/template/css/lireate-lu-viewport.css?v=20261111vp4" />\n'
-    '\t<link rel="stylesheet" href="/template/css/lireate-static-pages-lu.css?v=20261111static2" />\n'
+    '\t<link rel="stylesheet" href="/template/css/lireate-static-pages-lu.css?v=20261111static3" />\n'
     '\t<link rel="stylesheet" href="/template/css/lireate-home-modal-lu.css?v=20261111mod2" />\n'
+    '\t<script defer src="/template/js/lireate-static-hero-lu.js?v=20261111static3"></script>\n'
     '\t<script defer src="/template/js/lireate-home-modal-lu.js?v=20261111mod2"></script>\n'
     "\t<?php endif; ?>\n"
 )
@@ -79,6 +80,25 @@ def patch(text: str) -> str:
     if f"{MARK} head" not in text and "lireate-static-pages-lu.css" not in text:
         if "</head>" in text:
             text = text.replace("</head>", CSS_BLOCK + "</head>", 1)
+
+    hero_js = '<script defer src="/template/js/lireate-static-hero-lu.js?v=20261111static3"></script>'
+    if hero_js not in text and "lireate-static-pages-lu.css" in text:
+        text = text.replace(
+            "lireate-static-pages-lu.css?v=20261111static1",
+            "lireate-static-pages-lu.css?v=20261111static3",
+            1,
+        )
+        text = text.replace(
+            "lireate-static-pages-lu.css?v=20261111static2",
+            'lireate-static-pages-lu.css?v=20261111static3" />\n\t' + hero_js,
+            1,
+        )
+        if hero_js not in text:
+            text = text.replace(
+                "lireate-static-pages-lu.css?v=20261111static3",
+                'lireate-static-pages-lu.css?v=20261111static3" />\n\t' + hero_js,
+                1,
+            )
 
     return text
 

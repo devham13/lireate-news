@@ -17,7 +17,7 @@ for (const path of paths) {
   for (const w of widths) {
     const page = await browser.newPage({ viewport: { width: w, height: 900 } });
     await page.goto(site + path, { waitUntil: "domcontentloaded", timeout: 60000 });
-    const data = await page.evaluate(() => {
+    const data = await page.evaluate((p) => {
       const body = document.body;
       const h1 = document.querySelectorAll("h1").length;
       const dark =
@@ -29,10 +29,16 @@ for (const path of paths) {
       const heroVisible = hero && hero.getBoundingClientRect().height > 8;
       const bar = document.querySelectorAll(".lx-mobile-bar").length;
       const h2 = document.querySelectorAll("h2").length;
-      return { h1, h2, dark, heroVisible, bar, cls: body.className };
-    });
+      const face = document.querySelector("#face");
+      const bgMain = document.querySelector("#face .bg_main");
+      const bgMainHidden =
+        !bgMain || getComputedStyle(bgMain).display === "none" || bgMain.offsetHeight < 2;
+      const faceBg = face ? getComputedStyle(face).backgroundColor : "";
+      return { h1, h2, dark, heroVisible, bar, cls: body.className, bgMainHidden, faceBg, path: p };
+    }, path);
     const headingOk = data.h1 === 1 || (path === "/spasibo/" && data.h1 === 0 && data.h2 >= 1);
-    const ok = headingOk && data.dark && !data.heroVisible;
+    const faceOk = path === "/spasibo/" || data.h1 >= 1;
+    const ok = headingOk && data.dark && !data.heroVisible && faceOk;
     console.log(ok ? "OK" : "FAIL", path, w, data);
     if (!ok) fail++;
     await page.close();
