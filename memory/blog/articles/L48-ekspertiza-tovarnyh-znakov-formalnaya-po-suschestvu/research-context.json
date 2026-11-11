@@ -1,0 +1,86 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-11",
+    "today_ru": "11.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-13",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-11 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L48",
+    "priority": "P2",
+    "slug": "ekspertiza-tovarnyh-znakov-formalnaya-po-suschestvu",
+    "h1": "Как проходит экспертиза товарных знаков: формальная стадия и по существу, сроки и типовые отказы",
+    "primary_query": "как проходит экспертиза товарных знаков",
+    "secondary_queries": [
+      "формальная экспертиза товарного знака",
+      "экспертиза по существу товарный знак",
+      "сроки экспертизы товарного знака роспатент",
+      "отказ в экспертизе товарного знака"
+    ],
+    "search_intent": "workflow",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "L48",
+    "status": "PASS",
+    "search_intent": "workflow",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "как проходит экспертиза товарных знаков 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "как проходит экспертиза товарных знаков ноябрь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "как проходит экспертиза товарных знаков новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "формальная экспертиза товарного знака 2026",
+      "purpose": "вторичный запрос: формальная экспертиза товарного знака"
+    },
+    {
+      "id": "secondary_2",
+      "query": "экспертиза по существу товарный знак 2026",
+      "purpose": "вторичный запрос: экспертиза по существу товарный знак"
+    },
+    {
+      "id": "secondary_3",
+      "query": "сроки экспертизы товарного знака роспатент 2026",
+      "purpose": "вторичный запрос: сроки экспертизы товарного знака роспатент"
+    },
+    {
+      "id": "secondary_4",
+      "query": "отказ в экспертизе товарного знака 2026",
+      "purpose": "вторичный запрос: отказ в экспертизе товарного знака"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как проходит экспертиза товарных знаков: формальная стадия и по существу, сроки и типовые отказы 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/L48-ekspertiza-tovarnyh-znakov-formalnaya-po-suschestvu",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}
