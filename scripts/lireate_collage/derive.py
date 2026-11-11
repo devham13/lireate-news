@@ -131,4 +131,6 @@ def derive_cover_spec(meta):
         "label_chips": label_chips,
         "ui_card_title": ui_title,
         "ui_card_rows": ui_rows[:4],
+        "stage_background": meta.get("cover_stage_background") or "#0b1020",
+        "left_memo": meta.get("cover_left_memo") or "",
     }
