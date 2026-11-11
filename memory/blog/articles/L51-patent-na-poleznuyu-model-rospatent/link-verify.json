@@ -1,0 +1,174 @@
+{
+  "source": "memory/blog/articles/L51-patent-na-poleznuyu-model-rospatent/article.html",
+  "total_links": 18,
+  "failed_count": 0,
+  "privacy_policy_violations": [],
+  "verdict": "pass",
+  "links": [
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/0860a4528690b4fcd09e759150c045c205b0eac3/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/5ee3b3731d5fb679d70f8daace4adcec989485fe/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_487430/8fc527f897d9582cf7202cbdeb16625354d7fd01/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/9e7ee220e4fac9a5158bb4406a5cb4e224e5122e/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/acb8f26752d1e1d48515a26abfc8d77fe06d768d/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/patent",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/patent"
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/4b30fa7ca4e5733597a1bc9b2b12351cc5c430e6/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/5165407c76b4c777c440202b6de4a21821c2095f/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://searchplatform.rospatent.gov.ru/patents",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.gosuslugi.ru/life/details/gosudarstvennaya_registratsiya_poleznoy_modeli_i_vydacha_patenta_na_poleznuyu_model",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_192301/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://online.rospatent.gov.ru/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/12e02733191adb8856b997ec97f216bf9be51e08/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/otkazali_v_vyidache_patenta_chto_delat_dalshe_sroki_pps_i_povtornaya_zayavka/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/otkazali_v_vyidache_patenta_chto_delat_dalshe_sroki_pps_i_povtornaya_zayavka/"
+    },
+    {
+      "url": "/vozrazhenie_protiv_vydachi_patenta_konkurentu/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/vozrazhenie_protiv_vydachi_patenta_konkurentu/"
+    },
+    {
+      "url": "https://t.me/lireate_patent",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://wa.me/79600484957",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://max.ru/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    }
+  ]
+}
