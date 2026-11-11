@@ -74,7 +74,7 @@ CRON и `lireate_hosting_cron.sh` требуют **`main`** в `~/lireate-autopu
 cd ~/lireate-autopub/repo && git pull origin main
 bash scripts/lireate_design_worktree_init.sh   # создаёт ~/lireate-autopub/design-wt
 export LIREATE_ENV_FILE=~/lireate-autopub/.env
-export LIREATE_DESIGN_BRANCH=cursor/home-v3-layout-fix-181e   # или main после merge
+# Ветка design-deploy в worktree (отдельно от main в repo — иначе git worktree конфликтует)
 bash scripts/lireate_design_hosting_apply.sh
 ```
 
