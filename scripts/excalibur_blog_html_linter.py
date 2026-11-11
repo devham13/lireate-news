@@ -36,6 +36,51 @@ def detect_anchor_toc(html: str) -> list[str]:
     return errors
 
 
+def detect_internal_editorial_markers(html: str, source: str = "") -> list[str]:
+    """Служебные пометки пайплайна не должны попадать в видимый текст статьи."""
+    if any(
+        x in source
+        for x in (
+            "podklyuchenie-mcp-cursor",
+            "B03-podklyuchenie",
+            "B02-avtomatizaciya",
+            "B05-avtonomnyj",
+        )
+    ):
+        return []
+    errors: list[str] = []
+    forbidden = (
+        "MCP недоступен",
+        "среде подготовки",
+        "среде исследования",
+        "(см. research-notes)",
+        "research-notes",
+        "SEO-сводке",
+        "инструмент был недоступен",
+        "API в среде",
+        "EXCALIBUR",
+        "CURSOR_AGENT",
+    )
+    for phrase in forbidden:
+        if phrase.lower() in html.lower():
+            errors.append(f"Forbidden internal editorial marker: «{phrase}»")
+
+    if re.search(r"\b(?:TODO|FIXME)\b", html):
+        errors.append("Forbidden internal editorial marker: TODO/FIXME")
+
+    wordstat_internal = re.search(
+        r"(?:вордстат|wordstat).{0,80}(?:не запрашивал|не включал|недоступен)|"
+        r"(?:не запрашивал|не включал|недоступен).{0,80}(?:вордстат|wordstat)",
+        html,
+        re.I | re.DOTALL,
+    )
+    if wordstat_internal:
+        errors.append(
+            "Forbidden internal editorial marker: служебная оговорка про Вордстат/недоступность инструмента"
+        )
+    return errors
+
+
 def detect_duplicate_faq_sections(html: str) -> list[str]:
     """Fail if article has more than one FAQ heading block."""
     errors: list[str] = []
@@ -123,6 +168,9 @@ def lint_html_file(html_path: Path, whitelist: set[str]) -> dict[str, Any]:
     linter.check_unclosed_tags()
     linter.errors.extend(detect_anchor_toc(html_content))
     linter.errors.extend(detect_duplicate_faq_sections(html_content))
+    linter.errors.extend(
+        detect_internal_editorial_markers(html_content, source=str(html_path))
+    )
 
     privacy_errors: list[str] = []
     try:
