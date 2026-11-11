@@ -1,11 +1,22 @@
 /* Home hero v4 — тёмный, без фото, фиксированная высота (CLS) */
-body.lireate-cms-page-dark .main-screen.lireate-hero-v4,
+body.lireate-cms-page-dark .container.content > .main-screen.lireate-hero-v4 {
+  padding: 48px 32px 32px !important;
+}
 body.lireate-home-dark .main-screen.lireate-hero-v4 {
   background: #0b1020 !important;
   background-image: none !important;
   min-height: 520px;
   max-height: none;
   padding: 88px 0 36px;
+  overflow: hidden;
+  display: block;
+  contain: layout style paint;
+}
+body.lireate-cms-page-dark .main-screen.lireate-hero-v4 {
+  background: #0b1020 !important;
+  background-image: none !important;
+  min-height: 520px;
+  max-height: none;
   overflow: hidden;
   display: block;
   contain: layout style paint;
