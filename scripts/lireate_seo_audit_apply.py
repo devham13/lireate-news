@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """Apply audit 2026-11-11 DB/content fixes on LIREATE hosting (news + pages)."""
 
-from __future__ import annotations
-
 import argparse
 import json
 import re
@@ -13,7 +11,7 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parents[1]
 
 
-def php_query(docroot: str) -> list[dict]:
+def php_query(docroot):
     code = r"""
 require $argv[1].'/data/db.php';
 $m=new mysqli(DB_SERVER,DB_USER,DB_PASS,DB_NAME);
@@ -38,7 +36,7 @@ echo json_encode($out, JSON_UNESCAPED_UNICODE);
     return json.loads(proc.stdout)
 
 
-def php_apply(docroot: str, payload: dict) -> dict:
+def php_apply(docroot, payload):
     raw = json.dumps(payload, ensure_ascii=False)
     code = r"""
 require $argv[1].'/data/db.php';
@@ -73,20 +71,20 @@ echo json_encode($stats);
     return json.loads(proc.stdout)
 
 
-def replace_links(html: str, pairs: list[list[str]]) -> str:
+def replace_links(html, pairs):
     out = html
     for old, new in pairs:
         out = out.replace(old, new)
     return out
 
 
-def demote_first_h1(html: str) -> str:
+def demote_first_h1(html):
     return re.sub(r"(?is)<h1(\s[^>]*)?>", r"<h2\1>", html, count=1).replace(
         "</h1>", "</h2>", 1
     )
 
 
-def main() -> int:
+def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--docroot", required=True)
     ap.add_argument("--dry-run", action="store_true")
