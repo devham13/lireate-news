@@ -26,8 +26,9 @@ echo json_encode($out, JSON_UNESCAPED_UNICODE);
 """
     proc = subprocess.run(
         ["php", "-r", code, docroot],
-        capture_output=True,
-        text=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        universal_newlines=True,
         check=False,
     )
     if proc.returncode != 0:
