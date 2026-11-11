@@ -8,7 +8,7 @@ if (!site) {
   process.exit(2);
 }
 
-const paths = ["/reviews/", "/portfolio/", "/spasibo/"];
+const paths = ["/reviews/", "/portfolio/", "/spasibo/", "/uslugi/"];
 const widths = [375, 1024, 1280];
 const browser = await chromium.launch({ headless: true });
 let fail = 0;
@@ -17,6 +17,13 @@ for (const path of paths) {
   for (const w of widths) {
     const page = await browser.newPage({ viewport: { width: w, height: 900 } });
     await page.goto(site + path, { waitUntil: "domcontentloaded", timeout: 60000 });
+    const content = await page.content();
+    if (content.includes('</script>" />') || content.includes("</script>\" />")) {
+      console.log("FAIL", path, w, "stray_script_quote_tail");
+      fail++;
+      await page.close();
+      continue;
+    }
     const data = await page.evaluate((p) => {
       const body = document.body;
       const h1 = document.querySelectorAll("h1").length;
@@ -34,11 +41,42 @@ for (const path of paths) {
       const bgMainHidden =
         !bgMain || getComputedStyle(bgMain).display === "none" || bgMain.offsetHeight < 2;
       const faceBg = face ? getComputedStyle(face).backgroundColor : "";
-      return { h1, h2, dark, heroVisible, bar, cls: body.className, bgMainHidden, faceBg, path: p };
+      let strayText = false;
+      const tw = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+      let node;
+      while ((node = tw.nextNode())) {
+        const t = (node.textContent || "").trim();
+        if (t === '" />' || t === '"/>' ) {
+          strayText = true;
+          break;
+        }
+      }
+      const faceH = face ? face.getBoundingClientRect().height : 0;
+      return {
+        h1,
+        h2,
+        dark,
+        heroVisible,
+        bar,
+        cls: body.className,
+        bgMainHidden,
+        faceBg,
+        path: p,
+        strayText,
+        faceH,
+      };
     }, path);
     const headingOk = data.h1 === 1 || (path === "/spasibo/" && data.h1 === 0 && data.h2 >= 1);
     const faceOk = path === "/spasibo/" || data.h1 >= 1;
-    const ok = headingOk && data.dark && !data.heroVisible && faceOk;
+    const faceHeightOk =
+      path !== "/portfolio/" || w > 768 || (data.faceH > 0 && data.faceH < 280);
+    let ok;
+    if (path === "/uslugi/") {
+      ok = !data.strayText;
+    } else {
+      ok =
+        headingOk && data.dark && !data.heroVisible && faceOk && !data.strayText && faceHeightOk;
+    }
     console.log(ok ? "OK" : "FAIL", path, w, data);
     if (!ok) fail++;
     await page.close();

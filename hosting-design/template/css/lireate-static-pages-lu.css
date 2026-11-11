@@ -54,14 +54,27 @@ body.lireate-spasibo-body .txt-content > p > a {
   text-decoration: none !important;
 }
 
-body.lireate-spasibo-body .page_container .lx-thanks-contacts,
-body.lireate-spasibo-body .page_container p:last-of-type a[href^="tel:"] {
-  display: block !important;
-  margin-top: 12px !important;
+body.lireate-spasibo-body .page_container .lx-thanks-contacts {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 12px 20px !important;
+  margin-top: 16px !important;
   background: none !important;
   padding: 0 !important;
   font-weight: 500 !important;
+}
+
+body.lireate-spasibo-body .page_container .lx-thanks-contacts a {
+  display: inline-block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: none !important;
+  border-radius: 0 !important;
   color: #cbd5e1 !important;
+  font-weight: 500 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 3px !important;
 }
 
 /* Legacy main-screen hero (если есть) */
@@ -199,10 +212,23 @@ body.lireate-portfolio-body .page_container a {
 
 @media (max-width: 768px) {
   body.lireate-reviews-body #face,
-  body.lireate-portfolio-body #face {
+  body.lireate-portfolio-body #face,
+  body.lireate-portfolio-body section#face.sectionPadding {
     margin: 0 -16px !important;
     width: calc(100% + 32px) !important;
-    padding: 36px 16px 28px !important;
+    padding: 28px 16px 14px !important;
+    min-height: 0 !important;
+    max-height: none !important;
+  }
+
+  body.lireate-portfolio-body #face .contentBox,
+  body.lireate-reviews-body #face .contentBox {
+    padding-bottom: 0 !important;
+  }
+
+  body.lireate-portfolio-body #face .titleDesc:last-child,
+  body.lireate-reviews-body #face .titleDesc:last-child {
+    margin-bottom: 0 !important;
   }
   body.lireate-reviews-body .page_container,
   body.lireate-portfolio-body .page_container,
