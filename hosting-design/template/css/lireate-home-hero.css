@@ -1,6 +1,6 @@
 /* Home hero v4 — тёмный, без фото, фиксированная высота (CLS) */
 body.lireate-cms-page-dark .container.content > .main-screen.lireate-hero-v4 {
-  padding: 48px 32px 32px !important;
+  padding: 48px 24px 32px !important;
 }
 body.lireate-home-dark .main-screen.lireate-hero-v4 {
   background: #0b1020 !important;

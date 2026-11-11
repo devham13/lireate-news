@@ -24,8 +24,8 @@ body.lireate-cms-page-dark:not(.lireate-home-dark) .container.content > .col-xs-
 }
 body.lireate-cms-page-dark:not(.lireate-home-dark) .container.content > .main-screen {
   max-width: 100% !important;
-  padding-left: 32px !important;
-  padding-right: 32px !important;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
   margin-left: 0 !important;
   margin-right: 0 !important;
   width: 100% !important;
@@ -75,7 +75,7 @@ body.lireate-cms-page-dark .main-screen.lireate-cms-hero,
 body.lireate-cms-page-dark .main-screen.lireate-hero-v4.lireate-cms-hero,
 body.lireate-cms-page-dark #main_back.lireate-hero-v4 {
   min-height: 0 !important;
-  padding: 48px 32px 32px !important;
+  padding: 48px 24px 32px !important;
   background: #0b1020 !important;
   background-image: none !important;
   background-size: auto !important;

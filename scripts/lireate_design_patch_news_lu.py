@@ -40,8 +40,11 @@ def patch(text: str) -> str:
         block = (
             f'\t<?php /* {MARK} css */ if (!empty($temp["news_id"])): ?>\n'
             '\t<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" />\n'
-            f'\t<link rel="stylesheet" href="/template/css/lireate-legacy-article-lu.css?v=20261111art1" />\n'
-            f'\t<link rel="stylesheet" href="/template/css/lireate-lu-viewport.css?v=20261111vp1" />\n'
+            f'\t<link rel="stylesheet" href="/template/css/lireate-legacy-article-lu.css?v=20261111art2" />\n'
+            f'\t<link rel="stylesheet" href="/template/css/lireate-legacy-cms-lu.css?v=20261111leg1" />\n'
+            f'\t<link rel="stylesheet" href="/template/css/lireate-lu-viewport.css?v=20261111vp3" />\n'
+            f'\t<link rel="stylesheet" href="/template/css/lireate-home-modal-lu.css?v=20261111mod2" />\n'
+            f'\t<script defer src="/template/js/lireate-home-modal-lu.js?v=20261111mod2"></script>\n'
             "\t<?php endif; ?>\n"
         )
         if head_anchor in text:
