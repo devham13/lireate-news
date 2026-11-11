@@ -1,7 +1,8 @@
 # Promotion checklist — L46 licenzionnyy-dogovor-na-tovarnyy-znak
 
 Дата публикации: 2026-11-11  
-Live URL: `{PUBLIC_SITE_URL}/licenzionnyy-dogovor-na-tovarnyy-znak` (заполнить после publish)  
+**Ожидаемый URL (после CRON INSERT):** `{PUBLIC_SITE_URL}/licenzionnyy-dogovor-na-tovarnyy-znak`  
+Live URL: _не опубликовано (git-only prep 2026-11-11)_  
 Рубрика: Товарный знак (`category_id=9`) — `{PUBLIC_SITE_URL}/news?num=2&category=9`
 
 Excalibur создаёт этот файл после `✅ ARTICLE OK` (до или после выкладки на Lireate /news).
@@ -10,7 +11,7 @@ Excalibur создаёт этот файл после `✅ ARTICLE OK` (до и�
 
 - [ ] Открыть live URL — title, excerpt, featured image, FAQ
 - [ ] View source — JSON-LD BlogPosting + FAQPage (`schema.jsonld`)
-- [ ] Проверить internal links из статьи (200): L41 (`/otchuzhdenie-tovarnogo-znaka-dogovor-reestr/`); L40 (`/nuzhno-li-registrirovat-tovarnyy-znak/`); L19 (`/chto_delat_esli_tovarnyiy_znak_zanyat/`); L03 (`/kak_zaregistrirovat_brend_na_ozon_i_wildberries_proverka_imeni_i_nuzhen_li_tz/`); L06 (`/kak-opredelit-klass-mktu/` или `/blog/kak-opredelit-klass-mktu/` после interlinker); CTA `/registraciya_tovarnogo_znaka/`
+- [ ] Проверить internal links из статьи (200): L41 (`/otchuzhdenie-tovarnogo-znaka-dogovor-reestr/`); L40 (`/nuzhno-li-registrirovat-tovarnyy-znak/`); L19 (`/chto_delat_esli_tovarnyiy_znak_zanyat/`); L03 (`/kak_zaregistrirovat_brend_na_ozon_i_wildberries_proverka_imeni_i_nuzhen_li_tz/`); МКТУ (`/struktura_mktu_kak_opredelit_klass_dlya_tovara_i_uslugi/` — live; L06 `/kak-opredelit-klass-mktu/` после деплоя); CTA `/registraciya_tovarnogo_znaka/`
 - [ ] Яндекс.Вебмастер / GSC — URL отправлен (если настроено)
 - [ ] Выложить `llms.txt` / `llms-full.txt` в корень сайта (артефакты в каталоге статьи и `memory/blog/lireate-site/`)
 
@@ -46,4 +47,6 @@ Excalibur создаёт этот файл после `✅ ARTICLE OK` (до и�
 
 ## Notes
 
-Indexer (2026-11-11): `excalibur_blog_interlinker.py --apply --blog-dir memory/blog/articles --site-base $LIREATE_PUBLIC_SITE_URL` (--article-dir в CLI не поддерживается) — **1** автоматическая вставка **L46→L06** («классы МКТУ» → `/blog/kak-opredelit-klass-mktu/`). Inbound на L46 — **0**. `memory/blog/interlink-suggestions.json` обновлён. llms: полная перегенерация `memory/blog/llms.txt` + `llms-full.txt` (54 статьи, `https://example.com/blog/{slug}/`); `memory/blog/lireate-site/` — **49** L-статей с `canonical_path` (добавлен L46 `/licenzionnyy-dogovor-na-tovarnyy-znak`); копии `llms.txt` / `llms-full.txt` в каталоге L46. Live publish не выполнялся.
+Indexer (2026-11-11): interlinker — **1** вставка L46→L06; inbound **0**; llms **54** статей; `lireate-site/` **49** L*.
+
+Hosting publish prep (2026-11-11): `excalibur_blog_link_verify.py --site-base $LIREATE_PUBLIC_SITE_URL` → **pass** (20 ссылок; `privacy_policy_violations: []`). Fix: ссылка «классы МКТУ» → live `/struktura_mktu_kak_opredelit_klass_dlya_tovara_i_uslugi/` (L06 в git ещё не на хостинге). `lireate_hosting_publish.py --dry-run` → **DRY_RUN** (seo_url `licenzionnyy-dogovor-na-tovarnyy-znak`, category **9**, 6 image files). `lireate-publish-result.json` + `publish-bundle/` в каталоге статьи. **БД INSERT не выполнялся**; `shared/published-articles-lireate.md` не трогали. Live после merge → CRON `lireate_hosting_cron.sh`.
