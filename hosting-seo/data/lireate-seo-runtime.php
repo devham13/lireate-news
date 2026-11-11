@@ -29,9 +29,7 @@ if (!function_exists('lireate_seo_cms_slashless')) {
         return array(
             'news', 'kontaktyi', 'docs', 'team', 'mktu', 'patent', 'patent_prom_obr',
             'reviews', 'portfolio', 'o_kompanii', 'partners', 'payment', 'personalArea',
-            'spasibo', 'reg-tz-main', 'poisk_tovarnyh_znakov', 'ekspertiza_tovarnogo_znaka',
-            'mezhdunarodnaja_registracija_tovarnogo_znaka',
-            'avtor',
+            'spasibo', 'reg-tz-main',
         );
     }
 }
@@ -44,6 +42,11 @@ if (!function_exists('lireate_seo_service_with_slash')) {
             'registraciya_tovarnogo_znaka_s_oplatoy_za_rezultat',
             'findtz',
             'prodlenie_tovarnogo_znaka',
+            'poisk_tovarnyh_znakov',
+            'ekspertiza_tovarnogo_znaka',
+            'mezhdunarodnaja_registracija_tovarnogo_znaka',
+            'registracija_torgovyh_marok_i_logotipov',
+            'avtor',
         );
     }
 }

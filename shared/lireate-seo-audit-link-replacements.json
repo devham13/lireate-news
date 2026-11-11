@@ -1,0 +1,13 @@
+{
+  "href_replacements": [
+    ["/vozrazhenie-protiv-registracii-tovarnogo-znaka/", "/vozrazhenie_protiv_registracii_tovarnogo_znaka/"],
+    ["/vozrazhenie-protiv-registracii-tovarnogo-znaka", "/vozrazhenie_protiv_registracii_tovarnogo_znaka/"],
+    ["/chto_delat_esli_tovarnyy_znak_zanyat/", "/chto_delat_esli_tovarnyiy_znak_zanyat/"],
+    ["/chto_delat_esli_tovarnyy_znak_zanyat", "/chto_delat_esli_tovarnyiy_znak_zanyat/"],
+    ["/dogovor_na_razrabotku_logotipa_kak_poluchit_prava_ot_dizajnera/", "/dogovor_na_razrabotku_logotipa_kak_poluchit_prava_ot_dizaynera/"],
+    ["/dogovor-na-razrabotku-logotipa-prava-ot-dizajnera/", "/dogovor_na_razrabotku_logotipa_kak_poluchit_prava_ot_dizaynera/"],
+    ["/rezhim-kommercheskoj-tajny-kak-vvesti/", "/rezhim_kommercheskoy_taynyi_kak_vvesti_chtobyi_dokazat_razglashenie/"],
+    ["/sposoby-zashchity-izobreteniya/", "/sposobyi_zaschityi_izobreteniya_patent_nou_xau_ili_publikaciya/"],
+    ["./favicon.svg", "/favicon.svg"]
+  ]
+}

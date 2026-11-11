@@ -1,6 +1,6 @@
 # --- LIREATE SEO 2026-11-10 (do not remove backups: *.bak-2026-11-10-seo) ---
 
-# www -> https (single hop; replaces legacy http:// apex redirect)
+# www -> https apex (also used when port rule already forced HTTPS on www host)
 RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
 RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
 

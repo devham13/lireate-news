@@ -191,6 +191,103 @@ if (!function_exists('lireate_seo_fetch_page_by_slug')) {
     }
 }
 
+if (!function_exists('lireate_seo_audit_meta_config')) {
+    function lireate_seo_audit_meta_config()
+    {
+        static $cfg = null;
+        if ($cfg !== null) {
+            return $cfg;
+        }
+        $cfg = array('news' => array(), 'pages' => array());
+        $docroot = isset($_SERVER['DOCUMENT_ROOT']) ? rtrim((string) $_SERVER['DOCUMENT_ROOT'], '/') : '';
+        $candidates = array();
+        if ($docroot !== '') {
+            $candidates[] = $docroot . '/data/lireate-seo-audit-meta.json';
+        }
+        $candidates[] = dirname(__DIR__) . '/../shared/lireate-seo-audit-meta.json';
+        foreach ($candidates as $file) {
+            if (!is_file($file)) {
+                continue;
+            }
+            $raw = file_get_contents($file);
+            if ($raw === false || $raw === '') {
+                continue;
+            }
+            $decoded = json_decode($raw, true);
+            if (is_array($decoded)) {
+                if (!empty($decoded['news']) && is_array($decoded['news'])) {
+                    $cfg['news'] = $decoded['news'];
+                }
+                if (!empty($decoded['pages']) && is_array($decoded['pages'])) {
+                    $cfg['pages'] = $decoded['pages'];
+                }
+            }
+            break;
+        }
+        return $cfg;
+    }
+}
+
+if (!function_exists('lireate_seo_service_landings')) {
+    function lireate_seo_service_landings()
+    {
+        return array(
+            'poisk_tovarnyh_znakov' => 'Поиск товарных знаков',
+            'ekspertiza_tovarnogo_znaka' => 'Экспертиза товарного знака',
+            'mezhdunarodnaja_registracija_tovarnogo_znaka' => 'Международная регистрация товарного знака',
+            'registracija_torgovyh_marok_i_logotipov' => 'Регистрация торговых марок и логотипов',
+            'patent' => 'Патентование изобретений',
+            'patent_prom_obr' => 'Промышленные образцы',
+        );
+    }
+}
+
+if (!function_exists('lireate_seo_render_service_schema_scripts')) {
+    function lireate_seo_render_service_schema_scripts($slug, $title, $canonical)
+    {
+        if (!empty($GLOBALS['lireate_seo_service_schema_rendered'])) {
+            return;
+        }
+        $landings = lireate_seo_service_landings();
+        if (!isset($landings[$slug])) {
+            return;
+        }
+        $base = lireate_seo_schema_public_base();
+        $name = $title !== '' ? $title : $landings[$slug];
+        $canonical = $canonical !== '' ? $canonical : ($base . '/' . $slug . '/');
+        $graph = array(
+            '@context' => 'https://schema.org',
+            '@graph' => array(
+                array(
+                    '@type' => 'BreadcrumbList',
+                    'itemListElement' => array(
+                        array('@type' => 'ListItem', 'position' => 1, 'name' => 'Главная', 'item' => $base . '/'),
+                        array('@type' => 'ListItem', 'position' => 2, 'name' => 'Услуги', 'item' => $base . '/uslugi/'),
+                        array('@type' => 'ListItem', 'position' => 3, 'name' => $name, 'item' => $canonical),
+                    ),
+                ),
+                array(
+                    '@type' => 'Service',
+                    'name' => $name,
+                    'url' => $canonical,
+                    'provider' => array(
+                        '@type' => 'Organization',
+                        'name' => 'ООО «ЛИРЕЙТ»',
+                        'url' => $base . '/',
+                    ),
+                    'areaServed' => 'RU',
+                ),
+            ),
+        );
+        $json = lireate_seo_jsonld_encode($graph);
+        if ($json === '') {
+            return;
+        }
+        echo '<script type="application/ld+json">' . $json . "</script>\n";
+        $GLOBALS['lireate_seo_service_schema_rendered'] = true;
+    }
+}
+
 if (!function_exists('lireate_seo_prepare_og_globals')) {
     function lireate_seo_prepare_og_globals()
     {
@@ -200,6 +297,7 @@ if (!function_exists('lireate_seo_prepare_og_globals')) {
         $path = function_exists('lireate_seo_request_path') ? lireate_seo_request_path() : '/';
         $kind = function_exists('lireate_seo_page_kind') ? lireate_seo_page_kind($path) : 'other';
         $base = lireate_seo_schema_public_base();
+        $metaCfg = lireate_seo_audit_meta_config();
         $canonical = '';
         if (!empty($GLOBALS['lireate_canonical_url'])) {
             $canonical = lireate_seo_https_url($GLOBALS['lireate_canonical_url']);
@@ -216,11 +314,15 @@ if (!function_exists('lireate_seo_prepare_og_globals')) {
             $slug = $parts[0];
             $row = lireate_seo_fetch_news_by_slug($slug);
             if (is_array($row) && function_exists('lireate_seo_bind_news_article')) {
+                $seoDesc = isset($row['seo_description']) ? $row['seo_description'] : '';
+                if ($seoDesc === '' && isset($metaCfg['news'][$slug])) {
+                    $seoDesc = (string) $metaCfg['news'][$slug];
+                }
                 lireate_seo_bind_news_article(
                     $row,
                     array(
                         'seo_title' => isset($row['seo_title']) ? $row['seo_title'] : '',
-                        'seo_description' => isset($row['seo_description']) ? $row['seo_description'] : '',
+                        'seo_description' => $seoDesc,
                     )
                 );
                 return;
@@ -234,13 +336,21 @@ if (!function_exists('lireate_seo_prepare_og_globals')) {
             $desc = 'Патентное бюро в Зеленодольске: регистрация и защита товарных знаков, международные заявки, сопровождение в Роспатенте.';
         } elseif ($kind === 'service' || $kind === 'other' || $kind === 'cms') {
             $slug = trim($path, '/');
-            if ($slug !== '' && strpos($slug, '/') === false) {
-                $pageRow = lireate_seo_fetch_page_by_slug($slug);
+            $parts = explode('/', $slug);
+            $slugOne = $parts[0];
+            if ($slugOne !== '' && count($parts) === 1) {
+                $pageRow = lireate_seo_fetch_page_by_slug($slugOne);
                 if (is_array($pageRow)) {
                     $title = isset($pageRow['seo_title']) && $pageRow['seo_title'] !== ''
                         ? $pageRow['seo_title']
                         : (isset($pageRow['name']) ? $pageRow['name'] : '');
                     $desc = isset($pageRow['seo_description']) ? $pageRow['seo_description'] : '';
+                }
+                if ($desc === '' && isset($metaCfg['pages'][$slugOne])) {
+                    $desc = (string) $metaCfg['pages'][$slugOne];
+                }
+                if ($title === '' && isset(lireate_seo_service_landings()[$slugOne])) {
+                    $title = lireate_seo_service_landings()[$slugOne];
                 }
             }
         }

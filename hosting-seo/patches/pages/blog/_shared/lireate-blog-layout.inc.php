@@ -192,10 +192,30 @@ $lb_schema_meta = array(
           $ccover = lireate_blog_resolve_cover_url($ccover_raw);
           $cexcerpt = isset($card['excerpt']) ? $card['excerpt'] : '';
           $cover_fallback = ($ccover === '');
-          $cover_style = $cover_fallback ? '' : 'background-image:url(\'' . lireate_blog_h($ccover) . '\')';
+          $cover_webp = '';
+          if ($ccover !== '') {
+              $pathOnly = parse_url($ccover, PHP_URL_PATH);
+              if ($pathOnly === null || $pathOnly === false) {
+                  $pathOnly = $ccover;
+              }
+              if (preg_match('#^/template/images/blog/#', $pathOnly)) {
+                  $abs = (isset($_SERVER['DOCUMENT_ROOT']) ? rtrim($_SERVER['DOCUMENT_ROOT'], '/') : '') . $pathOnly;
+                  if ($abs !== '' && is_file($abs)) {
+                      $stem = preg_replace('/\.[a-z0-9]+$/i', '', $abs);
+                      if (is_file($stem . '-preview480.webp')) {
+                          $cover_webp = str_replace(basename($pathOnly), basename($stem) . '-preview480.webp', $pathOnly);
+                      }
+                  }
+              }
+          }
           ?>
       <article class="lireate-blog-card">
-        <a class="lireate-blog-card-cover<?php echo $cover_fallback ? ' lireate-blog-card-cover--fallback' : ''; ?>" href="<?php echo lireate_blog_h($curl); ?>"<?php echo $cover_style !== '' ? ' style="' . $cover_style . '"' : ''; ?>>
+        <a class="lireate-blog-card-cover<?php echo $cover_fallback ? ' lireate-blog-card-cover--fallback' : ''; ?>" href="<?php echo lireate_blog_h($curl); ?>">
+          <?php if (!$cover_fallback && $cover_webp !== '') : ?>
+          <img src="<?php echo lireate_blog_h($cover_webp); ?>" alt="" loading="lazy" decoding="async" width="480" height="270" class="lireate-blog-card-cover-img" />
+          <?php elseif (!$cover_fallback) : ?>
+          <img src="<?php echo lireate_blog_h($ccover); ?>" alt="" loading="lazy" decoding="async" width="480" height="270" class="lireate-blog-card-cover-img" />
+          <?php endif; ?>
           <?php if ($cover_fallback) : ?><span class="lireate-blog-card-cover-brand" aria-hidden="true">LIREATE</span><?php endif; ?>
           <?php if ($ctag !== '') : ?><span class="lireate-blog-card-tag"><?php echo lireate_blog_h($ctag); ?></span><?php endif; ?>
         </a>
