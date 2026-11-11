@@ -51,7 +51,7 @@ fi
 HOME_DIR_DST="$DOCROOT/template/page/home"
 HOME_DIR_SRC="$REPO/hosting-design/template/page/home"
 mkdir -p "$HOME_DIR_DST"
-for inc in lireate-home-blog-teaser.inc.php lireate-home-hero.inc.php; do
+for inc in lireate-home-blog-teaser.inc.php lireate-home-hero.inc.php lireate-home-url.inc.php; do
   if [[ -f "$HOME_DIR_SRC/$inc" ]]; then
     bak "$HOME_DIR_DST/$inc"
     cp -a "$HOME_DIR_SRC/$inc" "$HOME_DIR_DST/$inc"
@@ -103,7 +103,9 @@ else
   if [[ -f "$MAIN" ]]; then
     lireate_main_php_guard "$MAIN" || exit 1
     sed -i 's|lireate-ux-fixes.css?v=[^"]*|lireate-ux-fixes.css?v=20261111design4|g' "$MAIN" 2>/dev/null || true
-    sed -i 's|lireate-home-dark.css?v=[^"]*|lireate-home-dark.css?v=20261111design5|g' "$MAIN" 2>/dev/null || true
+    sed -i 's|lireate-home-dark.css?v=[^"]*|lireate-home-dark.css?v=20261111design6|g' "$MAIN" 2>/dev/null || true
+    sed -i 's|lireate-home-hero.css?v=[^"]*|lireate-home-hero.css?v=20261111hero2|g' "$MAIN" 2>/dev/null || true
+    sed -i 's|lireate-home-hero.js?v=[^"]*|lireate-home-hero.js?v=20261111hero2|g' "$MAIN" 2>/dev/null || true
     sed -i 's|lireate-floating-widget-ux.js?v=[^"]*|lireate-floating-widget-ux.js?v=20261111design4|g' "$MAIN" 2>/dev/null || true
     lireate_main_php_guard "$MAIN" || exit 1
     lireate_main_php_touch "$MAIN"

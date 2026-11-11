@@ -82,8 +82,8 @@ body.lireate-home-dark .lireate-hero-v4__inner {
   position: relative;
   z-index: 1;
   max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 body.lireate-home-dark .lireate-hero-v4__head h1 {
@@ -218,12 +218,12 @@ body.lireate-home-dark.lx-home-js.lx-motion-ok .lireate-hero-v4__cta { animation
   to { opacity: 1; transform: none; }
 }
 body.lireate-home-dark.lx-home-js .lireate-home-reveal {
-  opacity: 0;
+  opacity: 1;
   transform: translateY(14px);
-  transition: opacity 0.45s ease, transform 0.45s ease;
+  transition: transform 0.45s ease;
+  visibility: visible;
 }
 body.lireate-home-dark.lx-home-js .lireate-home-reveal.is-inview {
-  opacity: 1;
   transform: none;
 }
 @media (prefers-reduced-motion: reduce) {

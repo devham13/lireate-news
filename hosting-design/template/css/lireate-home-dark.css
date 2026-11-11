@@ -31,10 +31,21 @@ body.lireate-home-dark .container.content [class*="col-"] {
   background: transparent !important;
   border-color: rgba(255, 255, 255, 0.08);
 }
+body.lireate-home-dark,
+body.lireate-home-dark .wrapper,
+body.lireate-home-dark .wrapper-ap,
+body.lireate-home-dark .page_container,
 body.lireate-home-dark .container.content,
-body.lireate-home-dark .container.content :is(h1, h2, h3, h4, p, li, span, a, strong, div, ol, ul),
+body.lireate-home-dark .container.content :is(h1, h2, h3, h4, p, li, span, a, strong, div, ol, ul, button),
 body.lireate-home-dark #modals,
-body.lireate-home-dark .product {
+body.lireate-home-dark #modals :is(h3, p, li, a, span, div, ol),
+body.lireate-home-dark .product,
+body.lireate-home-dark .advant,
+body.lireate-home-dark .main-title,
+body.lireate-home-dark .lireate-home-blog,
+body.lireate-home-dark .lx-site-footer,
+body.lireate-home-dark .sub-title,
+body.lireate-home-dark h3.title {
   font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif !important;
 }
 body.lireate-home-dark #leftSideBar :is(a, div, span, p, li, nav) {
@@ -66,17 +77,33 @@ body.lireate-home-dark::before {
     radial-gradient(ellipse 80% 50% at 12% -8%, rgba(59, 130, 246, 0.18), transparent 55%),
     radial-gradient(ellipse 60% 45% at 88% 2%, rgba(139, 92, 246, 0.14), transparent 50%);
 }
+/* Как /uslugi/: контент справа от меню, без центрирования под сайдбар */
+body.lireate-home-dark .content {
+  padding-left: 270px !important;
+  padding-right: 0 !important;
+  box-sizing: border-box;
+}
 body.lireate-home-dark .container.content {
   position: relative;
   z-index: 1;
-  max-width: 1100px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: none !important;
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 32px !important;
+  padding-right: 32px !important;
   box-sizing: border-box;
   float: none !important;
+  text-align: left !important;
+}
+@media (max-width: 1150px) {
+  body.lireate-home-dark .content {
+    padding-left: 0 !important;
+  }
+  body.lireate-home-dark .container.content {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
 }
 body.lireate-home-dark .container.content > .row.col-xs-12,
 body.lireate-home-dark .container.content > .col-xs-12.col-lg-10,
@@ -303,14 +330,25 @@ body.lireate-home-dark .lx-site-footer {
   margin-top: 32px;
   width: 100%;
 }
+body.lireate-home-dark body.lireate-home-dark,
 body.lireate-home-dark #page-content-wrapper,
 body.lireate-home-dark .wrapper-ap,
 body.lireate-home-dark html {
   background: #0b1020 !important;
 }
+body.lireate-home-dark {
+  padding-bottom: 0 !important;
+  min-height: auto !important;
+}
 body.lireate-home-dark .page_container {
   padding-bottom: 0 !important;
   margin-bottom: 0 !important;
+  min-height: 0 !important;
+}
+body.lireate-home-dark .wrapper,
+body.lireate-home-dark .wrapper-ap {
+  min-height: 0 !important;
+  padding-bottom: 0 !important;
 }
 /* Блог на главной */
 body.lireate-home-dark .lireate-home-blog {
@@ -337,6 +375,11 @@ body.lireate-home-dark .lireate-home-blog-card {
   flex-direction: column;
   gap: 8px;
   min-height: 100%;
+}
+body.lireate-home-dark .lireate-home-blog-card-date {
+  font: 500 12px/1.2 "Inter", sans-serif !important;
+  color: #64748b !important;
+  margin: 0;
 }
 body.lireate-home-dark .lireate-home-blog-card-title {
   font: 700 17px/1.35 "Inter", sans-serif !important;

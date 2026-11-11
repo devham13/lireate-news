@@ -82,11 +82,19 @@
 
   var revealSel =
     '.container.content > .row.col-xs-12, .container.content > #modals, .container.content > .col-xs-12.col-lg-10, .container.content > .product, .lireate-home-blog';
+  function markRevealIfVisible(el) {
+    var r = el.getBoundingClientRect();
+    if (r.top < window.innerHeight * 0.94) {
+      el.classList.add('is-inview');
+    }
+  }
+
   document.querySelectorAll(revealSel).forEach(function (node) {
     if (node.classList.contains('lireate-hero-v4')) {
       return;
     }
     node.classList.add('lireate-home-reveal');
+    markRevealIfVisible(node);
   });
 
   var revealObs = new IntersectionObserver(
