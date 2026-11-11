@@ -1120,7 +1120,7 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L45 — Недобросовестная конкуренция без своего товарного знака
 
-- **status:** new
+- **status:** written
 - **priority:** P2
 - **site:** lireate
 - **lireate_category_id:** 15
