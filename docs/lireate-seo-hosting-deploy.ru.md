@@ -7,7 +7,8 @@
 | Переменная | Путь (типично) |
 |------------|----------------|
 | `LIREATE_DOCROOT` | `/var/www/<user>/data/www/public_html` |
-| Автопаб | `~/lireate-autopub/repo` |
+| Автопаб (CRON, **только `main`**) | `~/lireate-autopub/repo` |
+| Дизайн-деплой (worktree, feature-ветка) | `~/lireate-autopub/design-wt` |
 
 ## Wave 1 / каноникал / htaccess (уже на сервере)
 
@@ -64,6 +65,18 @@ cd ~/lireate-autopub/repo
 ```
 
 `--update` **не** меняет `news.datetime` (см. `scripts/lireate_db_publish.php`).
+
+## Дизайн (LU CSS) — не трогать ветку CRON
+
+CRON и `lireate_hosting_cron.sh` требуют **`main`** в `~/lireate-autopub/repo` без локальных правок в `hosting-design/`.
+
+```bash
+cd ~/lireate-autopub/repo && git pull origin main
+bash scripts/lireate_design_worktree_init.sh   # создаёт ~/lireate-autopub/design-wt
+export LIREATE_ENV_FILE=~/lireate-autopub/.env
+export LIREATE_DESIGN_BRANCH=cursor/home-v3-layout-fix-181e   # или main после merge
+bash scripts/lireate_design_hosting_apply.sh
+```
 
 ## Диагностика
 

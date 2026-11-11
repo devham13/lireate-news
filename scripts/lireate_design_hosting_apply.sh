@@ -2,7 +2,11 @@
 # Design deploy — CSS/JS + OPTIONAL safe main.php patch. Backups *.bak-2026-11-11-design
 set -euo pipefail
 
-REPO="${LIREATE_REPO_DIR:-$HOME/lireate-autopub/repo}"
+AUTOPUB_HOME="${LIREATE_AUTOPUB_HOME:-$HOME/lireate-autopub}"
+MAIN_REPO="${LIREATE_REPO_DIR:-$AUTOPUB_HOME/repo}"
+DESIGN_WT="${LIREATE_DESIGN_WORKTREE:-$AUTOPUB_HOME/design-wt}"
+# Источник файлов design — worktree, не основной repo (CRON держит main).
+REPO="$DESIGN_WT"
 DOCROOT="${LIREATE_DOCROOT:?}"
 BAK="bak-2026-11-11-design"
 PY="$(command -v python3)"
@@ -28,11 +32,17 @@ rollback_main() {
   fi
 }
 
+if [[ ! -d "$REPO" ]]; then
+  echo "Design worktree missing; run: bash $MAIN_REPO/scripts/lireate_design_worktree_init.sh" >&2
+  exit 1
+fi
 cd "$REPO"
-if [[ "${LIREATE_SKIP_GIT_MERGE:-0}" != "1" ]]; then
-  git fetch origin main
-  git merge --ff-only origin/main || {
-    echo "WARN: ff-only merge with origin/main failed (deploying from current checkout)" >&2
+BRANCH="${LIREATE_DESIGN_BRANCH:-cursor/home-v3-layout-fix-181e}"
+if [[ "${LIREATE_SKIP_GIT_FETCH:-0}" != "1" ]]; then
+  git fetch origin "$BRANCH"
+  git checkout "$BRANCH" 2>/dev/null || true
+  git pull --ff-only origin "$BRANCH" 2>/dev/null || {
+    echo "WARN: could not ff-only pull $BRANCH (deploying current worktree HEAD)" >&2
   }
 fi
 
@@ -67,6 +77,14 @@ JS_HERO_SRC="$REPO/hosting-design/template/js/lireate-home-hero.js"
 if [[ -f "$JS_HERO_SRC" ]]; then
   bak "$JS_HERO_DST"
   cp -a "$JS_HERO_SRC" "$JS_HERO_DST"
+fi
+
+JS_MODAL_DST="$DOCROOT/template/js/lireate-home-modal-lu.js"
+JS_MODAL_SRC="$REPO/hosting-design/template/js/lireate-home-modal-lu.js"
+if [[ -f "$JS_MODAL_SRC" ]]; then
+  bak "$JS_MODAL_DST"
+  mkdir -p "$(dirname "$JS_MODAL_DST")"
+  cp -a "$JS_MODAL_SRC" "$JS_MODAL_DST"
 fi
 
 MAIN="$DOCROOT/template/main.php"
