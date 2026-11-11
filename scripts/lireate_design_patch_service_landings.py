@@ -48,10 +48,9 @@ METRIKA_SCRIPT = (
 )
 
 EMPTY_STICKY_BODY = (
-    "<?php\n"
-    f"/* {MARK_STICKY} — canonical bar only in index.php "
-    '(data-lx-svc-mobile-bar="canonical"). */'
-    "\n"
+    "<?php\n/* "
+    + MARK_STICKY
+    + ' — canonical bar only in index.php (data-lx-svc-mobile-bar="canonical"). */\n'
 )
 
 MOBILE_BAR_RE = re.compile(
@@ -105,7 +104,7 @@ def patch_html(text: str) -> str:
         flags=re.I,
     )
     if tpl_bar not in text and "</body>" in text:
-        text = text.replace("</body>", f'  <script defer src="{tpl_bar}"></script>\n</body>", 1)
+        text = text.replace("</body>", '  <script defer src="' + tpl_bar + '"></script>\n</body>', 1)
 
     return text
 
