@@ -54,6 +54,14 @@ lireate_design_patch_main_php() {
     rm -f "$work"
     return 1
   fi
+  if [[ -f "$REPO/scripts/lireate_design_main_php_sanitize_cli.py" ]]; then
+  if ! "$py" "$REPO/scripts/lireate_design_main_php_sanitize_cli.py" "$work"; then
+    echo "MAIN_PHP_SANITIZE_FAIL ${label}" >&2
+    lireate_design_rollback_main "$main" "$bak_suffix" || true
+    rm -f "$work"
+    return 1
+  fi
+  fi
   if ! php -l "$work" >/dev/null 2>&1; then
     echo "MAIN_PHP_LINT_FAIL ${label}" >&2
     lireate_design_rollback_main "$main" "$bak_suffix" || true
