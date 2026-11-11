@@ -37,7 +37,7 @@ if [[ ! -d "$REPO" ]]; then
   exit 1
 fi
 cd "$REPO"
-BRANCH="${LIREATE_DESIGN_BRANCH:-cursor/home-v3-layout-fix-181e}"
+BRANCH="${LIREATE_DESIGN_BRANCH:-main}"
 if [[ "${LIREATE_SKIP_GIT_FETCH:-0}" != "1" ]]; then
   git fetch origin "$BRANCH"
   git checkout "$BRANCH" 2>/dev/null || true

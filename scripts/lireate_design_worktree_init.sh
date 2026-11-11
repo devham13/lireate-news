@@ -5,7 +5,7 @@ set -euo pipefail
 AUTOPUB_HOME="${LIREATE_AUTOPUB_HOME:-$HOME/lireate-autopub}"
 MAIN_REPO="${LIREATE_REPO_DIR:-$AUTOPUB_HOME/repo}"
 DESIGN_WT="${LIREATE_DESIGN_WORKTREE:-$AUTOPUB_HOME/design-wt}"
-BRANCH="${LIREATE_DESIGN_BRANCH:-cursor/home-v3-layout-fix-181e}"
+BRANCH="${LIREATE_DESIGN_BRANCH:-main}"
 
 [[ -d "$MAIN_REPO/.git" ]] || { echo "missing git repo: $MAIN_REPO" >&2; exit 1; }
 
