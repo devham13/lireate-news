@@ -7,6 +7,9 @@ on:
       - "scripts/lireate_design_dock_main_fixture.py"
       - "scripts/lireate_design_service_mobile_dock_selftest.sh"
       - "scripts/lireate_design_main_php_patch_lib.sh"
+      - "scripts/lireate_design_patch_static_lu.py"
+      - "scripts/lireate_design_static_lu_selftest.sh"
+      - "scripts/lireate_design_main_php_sanitize.py"
       - ".github/workflows/lireate-design-dock-patch.yml"
   pull_request:
     paths:
@@ -14,6 +17,9 @@ on:
       - "scripts/lireate_design_dock_main_fixture.py"
       - "scripts/lireate_design_service_mobile_dock_selftest.sh"
       - "scripts/lireate_design_main_php_patch_lib.sh"
+      - "scripts/lireate_design_patch_static_lu.py"
+      - "scripts/lireate_design_static_lu_selftest.sh"
+      - "scripts/lireate_design_main_php_sanitize.py"
       - ".github/workflows/lireate-design-dock-patch.yml"
 
 jobs:
@@ -27,3 +33,5 @@ jobs:
         run: python3 scripts/lireate_design_dock_uri_regex_check.py
       - name: Service dock main.php patch selftest
         run: bash scripts/lireate_design_service_mobile_dock_selftest.sh
+      - name: Static LU patch selftest (no stray quote)
+        run: bash scripts/lireate_design_static_lu_selftest.sh

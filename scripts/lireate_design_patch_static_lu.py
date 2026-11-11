@@ -4,6 +4,12 @@ import re
 import sys
 from pathlib import Path
 
+_SCRIPTS = Path(__file__).resolve().parent
+if str(_SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS))
+
+from lireate_design_main_php_sanitize import sanitize_main_php_head  # noqa: E402
+
 MARK = "lireate_design_static_lu_v1"
 MARK_PAGES = "lireate_design_cms_dark_pages_v2"
 MIN_LINES = 6000
@@ -26,22 +32,47 @@ STATIC_BODY = (
     " if (preg_match('#^/spasibo(?:/|$)#', $_lx_ru)) { echo ' lireate-cms-page-dark lireate-static-lu lireate-spasibo-body'; }"
 )
 
+HERO_JS = '<script defer src="/template/js/lireate-static-hero-lu.js?v=20261111static3"></script>'
+
 CSS_BLOCK = (
     f'\t<?php /* {MARK} head */ '
     "if (in_array($temp['page'], array('reviews','portfolio','spasibo','uslugi','avtor','team','partners','kontaktyi'), true)): ?>\n"
     '\t<link rel="stylesheet" href="/template/css/lireate-lu-viewport.css?v=20261111vp4" />\n'
-    '\t<link rel="stylesheet" href="/template/css/lireate-static-pages-lu.css?v=20261111static1" />\n'
+    '\t<link rel="stylesheet" href="/template/css/lireate-static-pages-lu.css?v=20261111static3" />\n'
+    f'\t{HERO_JS}\n'
     '\t<link rel="stylesheet" href="/template/css/lireate-home-modal-lu.css?v=20261111mod2" />\n'
     '\t<script defer src="/template/js/lireate-home-modal-lu.js?v=20261111mod2"></script>\n'
     "\t<?php endif; ?>\n"
 )
+
+STATIC_CSS_LINK = re.compile(
+    r'\t<link rel="stylesheet" href="/template/css/lireate-static-pages-lu\.css\?v=20261111static[123]" />\s*\n',
+    re.I,
+)
+
+
+def _upgrade_static_hero_js(text: str) -> str:
+    if HERO_JS in text:
+        return text
+    if "lireate-static-pages-lu.css" not in text:
+        return text
+
+    def _after_link(m: re.Match) -> str:
+        line = m.group(0)
+        if 'v=20261111static3' not in line:
+            line = re.sub(r"v=20261111static[12]", "v=20261111static3", line)
+        return line + f"\t{HERO_JS}\n"
+
+    text2, n = STATIC_CSS_LINK.subn(_after_link, text, count=1)
+    return text2 if n else text
 
 
 def patch(text: str) -> str:
     if text.count("\n") < MIN_LINES:
         raise SystemExit("main.php too short")
 
-    # Expand cms dark pages array (idempotent marker)
+    text = sanitize_main_php_head(text)
+
     broken = "array(home'"
     if broken in text:
         text = text.replace(broken, "array('home'", 1)
@@ -80,6 +111,8 @@ def patch(text: str) -> str:
         if "</head>" in text:
             text = text.replace("</head>", CSS_BLOCK + "</head>", 1)
 
+    text = _upgrade_static_hero_js(text)
+    text = sanitize_main_php_head(text)
     return text
 
 
