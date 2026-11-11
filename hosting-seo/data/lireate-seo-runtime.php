@@ -241,6 +241,7 @@ if (!function_exists('lireate_seo_ob_filter_html')) {
                     }
                 }
             }
+
         }
 
         return $html;
