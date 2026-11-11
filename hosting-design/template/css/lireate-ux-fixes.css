@@ -118,12 +118,18 @@ body.lireate-cms-page-dark .main-screen.lireate-hero-v4#main_back {
     background-image: url("/template/images/patent_back_opt_mini.webp") !important;
   }
 }
-body.lireate-svc-body {
+/* lireate-service-mobile-bar.css owns svc dock padding at ≤768px */
+body.lireate-svc-body:not(.lireate-service-mobile-dock) {
   padding-bottom: calc(88px + env(safe-area-inset-bottom, 0px));
 }
-@media (min-width: 961px) {
+@media (min-width: 769px) {
   body.lireate-svc-body {
     padding-bottom: 0;
+  }
+}
+@media (max-width: 768px) {
+  body.lireate-service-mobile-dock.cms-default {
+    padding-bottom: calc(88px + env(safe-area-inset-bottom, 0px));
   }
 }
 
