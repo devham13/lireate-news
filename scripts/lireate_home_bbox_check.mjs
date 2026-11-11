@@ -22,7 +22,12 @@ const browser = await chromium.launch({ headless: true });
 for (const w of widths) {
   const page = await browser.newPage({ viewport: { width: w, height: 900 } });
   await page.goto(site + "/?bbox=" + w, { waitUntil: "networkidle", timeout: 120000 });
-  const rep = await page.evaluate((menuMin) => {
+  const rep = await page.evaluate(() => {
+    const overlap = (a, b) =>
+      a.left < b.right &&
+      a.right > b.left &&
+      a.top < b.bottom &&
+      a.bottom > b.top;
     const menu = document.getElementById("leftSideBar");
     const mr = menu && menu.getBoundingClientRect().width > 50 ? menu.getBoundingClientRect().right : 0;
     const sel = [
