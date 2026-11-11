@@ -14,8 +14,10 @@ MARK_OG = "lireate_design_og_image_guard_v1"
 MARK_HEAD = "lireate-cms-dark-head-v1"
 MARK_BODY = "lireate_cms_dark_body_v1"
 MARK_JS = "lireate-cms-dark-skip-main-screen-height"
+MARK_CMS_LU = "lireate_design_cms_lu_assets_v1"
+CMS_LU_PAGES_PHP = "array('patent','patent_prom_obr','mktu','mktu1')"
 
-MIN_LINES = 5000
+MIN_LINES = 6000
 PAGE_CONTAINER = "page_container"
 
 CMS_DARK_PAGES_PHP = "array('home','patent','patent_prom_obr','mktu','mktu1')"
@@ -79,6 +81,9 @@ def patch(text: str, *, heroes: bool = False) -> str:
         '\t<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />\n'
         '\t<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" />\n'
         '\t<link rel="stylesheet" href="/template/css/lireate-cms-page-dark.css?v=20261111design3" />\n'
+        f"\t<?php /* {MARK_CMS_LU} */ if (in_array($temp['page'], {CMS_LU_PAGES_PHP}, true)): ?>\n"
+        '\t<link rel="stylesheet" href="/template/css/lireate-cms-lu.css?v=20261111lu2" />\n'
+        "\t<?php endif; ?>\n"
         "\t<?php if ($temp['page'] === 'home'): ?>\n"
         '\t<link rel="stylesheet" href="/template/css/lireate-home-dark.css?v=20261111design3" />\n'
         "\t<?php endif; ?>\n"
@@ -100,6 +105,24 @@ def patch(text: str, *, heroes: bool = False) -> str:
             head_anchor = "    <?php endif; ?>\n    \n\t\n</head>"
             head_insert = "    <?php endif; ?>\n" + head_block + "    \n\t\n</head>"
             text = _replace_once(text, head_anchor, head_insert, "head-cms-css")
+
+    if MARK_CMS_LU not in text and MARK_HEAD in text and "lireate-cms-lu.css" not in text:
+        cms_lu_snip = (
+            f"\t<?php /* {MARK_CMS_LU} */ if (in_array($temp['page'], {CMS_LU_PAGES_PHP}, true)): ?>\n"
+            '\t<link rel="stylesheet" href="/template/css/lireate-cms-lu.css?v=20261111lu2" />\n'
+            "\t<?php endif; ?>\n"
+        )
+        home_if = "\t<?php if ($temp['page'] === 'home'): ?>\n"
+        if home_if in text:
+            text = text.replace(home_if, cms_lu_snip + home_if, 1)
+        else:
+            cms_block_end = f"\t<?php /* {MARK_HEAD}"
+            idx = text.find(cms_block_end)
+            if idx == -1:
+                raise SystemExit("patch cms-lu: head block anchor missing")
+            endif_home = text.find("\t<?php endif; ?>\n", idx)
+            if endif_home != -1:
+                text = text[:endif_home] + cms_lu_snip + text[endif_home:]
 
     js_old = "\t\t\t$(window).resize(function() {\n\t\t\t    $('.main-screen').height($(window).height());\n\t\t\t});"
     js_new = (

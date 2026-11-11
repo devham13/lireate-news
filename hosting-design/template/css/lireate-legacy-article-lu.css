@@ -1,0 +1,69 @@
+/* CMS-статьи с #articleBox .lireate-blog-page — тёмная оболочка (SEO-текст не трогаем) */
+body.cms-default:has(#articleBox .lireate-blog-page),
+body.lireate-legacy-article-lu {
+  background: #0b1020 !important;
+  color: #cbd5e1 !important;
+  font-family: "Inter", system-ui, sans-serif !important;
+}
+body.cms-default:has(#articleBox .lireate-blog-page) #wrapper-ap,
+body.cms-default:has(#articleBox .lireate-blog-page) .wrapper,
+body.cms-default:has(#articleBox .lireate-blog-page) .page_container,
+body.cms-default:has(#articleBox .lireate-blog-page) .container.content,
+body.lireate-legacy-article-lu #wrapper-ap,
+body.lireate-legacy-article-lu .wrapper,
+body.lireate-legacy-article-lu .page_container,
+body.lireate-legacy-article-lu .container.content {
+  background: #0b1020 !important;
+  color: #cbd5e1 !important;
+}
+body.cms-default:has(#articleBox .lireate-blog-page) .container.content,
+body.lireate-legacy-article-lu .container.content {
+  text-align: left !important;
+}
+body.cms-default:has(#articleBox .lireate-blog-page) .container.content > .main-screen,
+body.cms-default:has(#articleBox .lireate-blog-page) #main_back,
+body.lireate-legacy-article-lu .container.content > .main-screen,
+body.lireate-legacy-article-lu #main_back {
+  display: none !important;
+}
+body.cms-default:has(#articleBox .lireate-blog-page) #articleBox,
+body.lireate-legacy-article-lu #articleBox {
+  padding: 28px 0 48px !important;
+  margin: 0 auto !important;
+  max-width: none !important;
+  background: transparent !important;
+}
+body.cms-default:has(#articleBox .lireate-blog-page) .lireate-blog-h1,
+body.lireate-legacy-article-lu .lireate-blog-h1 {
+  font-family: "Inter", sans-serif !important;
+  font-weight: 800 !important;
+  color: #f8fafc !important;
+}
+body.cms-default:has(#articleBox .lireate-blog-page) .lireate-blog-prose,
+body.cms-default:has(#articleBox .lireate-blog-page) #textBox,
+body.lireate-legacy-article-lu .lireate-blog-prose,
+body.lireate-legacy-article-lu #textBox {
+  max-width: 760px !important;
+  font-family: "Inter", sans-serif !important;
+  color: #cbd5e1 !important;
+  font-size: 16px !important;
+  line-height: 1.65 !important;
+}
+body.cms-default:has(#articleBox .lireate-blog-page) .lireate-blog-prose p,
+body.lireate-legacy-article-lu .lireate-blog-prose p {
+  color: #cbd5e1 !important;
+  background: transparent !important;
+  font-family: "Inter", sans-serif !important;
+  font-size: 16px !important;
+  text-align: left !important;
+}
+body.cms-default:has(#articleBox .lireate-blog-page) .lireate-blog-prose img[src*="/images/"],
+body.lireate-legacy-article-lu .lireate-blog-prose img[src*="/images/"] {
+  display: none !important;
+}
+body.cms-default:has(#articleBox .lireate-blog-page) .product,
+body.cms-default:has(#articleBox .lireate-blog-page) .main-title,
+body.lireate-legacy-article-lu .product,
+body.lireate-legacy-article-lu .main-title {
+  display: none !important;
+}

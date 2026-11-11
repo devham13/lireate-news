@@ -90,13 +90,19 @@ body.lireate-cms-page-dark .main-screen {
   padding: 88px 16px 32px;
   contain: layout style;
 }
+body.lireate-cms-page-dark .main-screen.lireate-hero-v4 {
+  background-image: none !important;
+  min-height: 0 !important;
+  padding-top: 48px !important;
+  padding-bottom: 32px !important;
+}
 body.lireate-cms-page-dark .main-screen > br {
   display: none !important;
   height: 0 !important;
   margin: 0 !important;
   line-height: 0 !important;
 }
-body.lireate-cms-page-dark .main-screen::after {
+body.lireate-cms-page-dark .main-screen:not(.lireate-hero-v4)::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -108,6 +114,10 @@ body.lireate-cms-page-dark .main-screen::after {
   );
   pointer-events: none;
   z-index: 0;
+}
+body.lireate-cms-page-dark .main-screen.lireate-hero-v4::after {
+  display: none !important;
+  content: none !important;
 }
 body.lireate-cms-page-dark .main-screen > *:not(br) {
   position: relative;
@@ -220,8 +230,13 @@ body.lireate-cms-page-dark .breadcrumb-ap > li a {
 
 body.lireate-cms-page-dark h3.title,
 body.lireate-cms-page-dark h2.sub-title,
-body.lireate-cms-page-dark h3.sub-title {
+body.lireate-cms-page-dark h3.sub-title,
+body.lireate-cms-page-dark .sub-title2 {
   color: #f1f5f9 !important;
+}
+body.lireate-cms-page-dark .container.content p,
+body.lireate-cms-page-dark .sub-title2 {
+  color: #cbd5e1 !important;
 }
 body.lireate-cms-page-dark .advant {
   background: rgba(15, 23, 42, 0.85) !important;

@@ -3,7 +3,7 @@
 import sys
 from pathlib import Path
 
-MIN_LINES = 5000
+MIN_LINES = 6000
 HERO_ATTR = 'class="row main-screen main_back" id="main_back"'
 
 
