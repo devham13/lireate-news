@@ -51,7 +51,7 @@ fi
 HOME_DIR_DST="$DOCROOT/template/page/home"
 HOME_DIR_SRC="$REPO/hosting-design/template/page/home"
 mkdir -p "$HOME_DIR_DST"
-for inc in lireate-home-blog-teaser.inc.php lireate-home-hero.inc.php lireate-home-url.inc.php; do
+for inc in lireate-home-blog-teaser.inc.php lireate-home-hero.inc.php lireate-home-url.inc.php lireate-home-lu.css; do
   if [[ -f "$HOME_DIR_SRC/$inc" ]]; then
     bak "$HOME_DIR_DST/$inc"
     cp -a "$HOME_DIR_SRC/$inc" "$HOME_DIR_DST/$inc"

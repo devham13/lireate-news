@@ -1,0 +1,180 @@
+/* Главная — lu-* оболочка (как /uslugi/). body.lireate-home-dark */
+body.lireate-home-dark.lireate-home-lu-body .page_container {
+  display: block !important;
+}
+body.lireate-home-dark .container.content,
+body.lireate-home-dark .content.container {
+  padding-left: 270px !important;
+  padding-right: 0 !important;
+}
+body.lireate-home-dark #lireate-home.lh-page {
+  position: relative;
+  isolation: isolate;
+  overflow-x: clip;
+  color: #cbd5e1;
+  margin: 0;
+  padding: 0;
+}
+body.lireate-home-dark #lireate-home .lh-wrap,
+body.lireate-home-dark #lireate-home.lu-page .lu-wrap {
+  max-width: 1120px;
+  margin: 0;
+  padding: 0 32px 32px;
+  box-sizing: border-box;
+}
+body.lireate-home-dark .main-screen.lireate-hero-v4 {
+  margin: 0 !important;
+  width: 100% !important;
+  padding-top: 48px !important;
+  padding-bottom: 28px !important;
+  min-height: 0 !important;
+}
+body.lireate-home-dark #lireate-home .lireate-hero-v4__inner {
+  max-width: none;
+  padding: 0;
+}
+body.lireate-home-dark .lu-section-head,
+body.lireate-home-dark .lh-section-head {
+  margin: 40px 0 20px;
+}
+body.lireate-home-dark h3.title,
+body.lireate-home-dark #lireate-home .lu-h2 {
+  font-size: clamp(22px, 2.4vw, 30px) !important;
+  font-weight: 800 !important;
+  color: #f1f5f9 !important;
+  margin: 0 0 12px !important;
+  text-align: left !important;
+}
+body.lireate-home-dark #modals {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  padding: 0 !important;
+  width: 100% !important;
+  margin: 0 0 8px !important;
+}
+@media (min-width: 992px) {
+  body.lireate-home-dark #modals {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+body.lireate-home-dark #modals > .advant {
+  margin: 0 !important;
+  width: 100% !important;
+  float: none !important;
+  padding: 20px 22px !important;
+  border-radius: 14px;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+body.lireate-home-dark #modals > .row.col-xs-12,
+body.lireate-home-dark #modals > .col-xs-12.col-lg-10,
+body.lireate-home-dark #modals > .col-xs-12.col-lg-6 {
+  grid-column: 1 / -1;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  float: none !important;
+}
+body.lireate-home-dark .lh-why-grid {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: stretch;
+  width: 100% !important;
+  margin: 0 0 28px !important;
+  padding: 0 !important;
+  float: none !important;
+  clear: both;
+  box-sizing: border-box;
+}
+body.lireate-home-dark .lh-why-grid > .advant {
+  margin: 0 !important;
+  width: 100% !important;
+  float: none !important;
+  box-sizing: border-box;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+body.lireate-home-dark .lh-why-grid .advant ol {
+  margin: 0;
+  padding: 0 0 0 1.25em;
+  list-style-position: outside;
+  overflow: hidden;
+}
+body.lireate-home-dark .lh-why-grid .advant ol li {
+  margin-bottom: 10px;
+  padding-left: 0.25em;
+}
+body.lireate-home-dark .lh-why-grid .cert {
+  flex: 1;
+  min-height: 280px;
+  margin: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body.lireate-home-dark .product.lh-product {
+  clear: both !important;
+  width: 100% !important;
+  margin: 32px 0 24px !important;
+  float: none !important;
+  position: relative;
+  z-index: 1;
+}
+body.lireate-home-dark .lireate-home-blog-intro {
+  max-width: 760px;
+}
+body.lireate-home-dark .lireate-home-blog-intro p {
+  line-height: 1.65 !important;
+  font-size: 16px !important;
+}
+body.lireate-home-dark .lx-site-footer {
+  margin-left: 270px !important;
+  width: calc(100% - 270px) !important;
+  box-sizing: border-box;
+  padding-left: 32px !important;
+  padding-right: 32px !important;
+}
+body.lireate-home-dark .lx-site-footer-inner {
+  max-width: 1120px;
+  margin: 0;
+}
+body.lireate-home-dark .lireate-hero-v4__service--form {
+  cursor: pointer;
+  border: none;
+  font: inherit;
+  text-align: left;
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+}
+@media (max-width: 1150px) {
+  body.lireate-home-dark .container.content,
+  body.lireate-home-dark .content.container {
+    padding-left: 0 !important;
+  }
+  body.lireate-home-dark #lireate-home .lh-wrap,
+  body.lireate-home-dark #lireate-home.lu-page .lu-wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  body.lireate-home-dark .lx-site-footer {
+    margin-left: 0 !important;
+    width: 100% !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  body.lireate-home-dark .main-screen.lireate-hero-v4 {
+    padding-top: 24px !important;
+  }
+}
+@media (max-width: 767px) {
+  body.lireate-home-dark .lh-why-grid {
+    grid-template-columns: 1fr;
+  }
+  body.lireate-home-dark #modals {
+    grid-template-columns: 1fr;
+  }
+}

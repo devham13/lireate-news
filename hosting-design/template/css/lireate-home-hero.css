@@ -238,8 +238,9 @@ body.lireate-home-dark.lx-home-js .lireate-home-reveal.is-inview {
 }
 @media (max-width: 767px) {
   body.lireate-home-dark .main-screen.lireate-hero-v4 {
-    min-height: 680px;
-    padding-top: 96px;
+    min-height: 0;
+    padding-top: 24px;
+    padding-bottom: 20px;
   }
 }
 @media (min-width: 992px) {
