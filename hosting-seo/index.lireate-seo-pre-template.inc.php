@@ -32,6 +32,9 @@ if (is_file($_lireate_seo_page_meta)) {
 $__lb_path = function_exists('lireate_seo_request_path') ? lireate_seo_request_path() : '/';
 if ($__lb_path === '/avtor' || $__lb_path === '/avtor/') {
     $GLOBALS['lireate_seo_page'] = 'avtor';
+    if (isset($temp) && is_array($temp)) {
+        $temp['apsw'] = false;
+    }
     if (function_exists('lireate_seo_apply_static_page_meta_to_cfg')) {
         lireate_seo_apply_static_page_meta_to_cfg('avtor', $cfg, $seo_title, $seo_description);
     }
