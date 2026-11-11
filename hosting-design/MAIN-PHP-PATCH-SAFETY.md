@@ -14,7 +14,7 @@
 3. Hero — отдельно `lireate_design_patch_heroes.py` (хвост сохраняется).
 4. Перед/после: `lireate_main_php_guard.sh` — `wc -l` ≥ 5000, `page_container`, `php -l`.
 4b. Патчи main.php идут через `lireate_design_main_php_patch_lib.sh` (копия `.patch-work` → guard/php -l → `mv`; при ошибке откат из `.pre-design-patch` / `*.bak-2026-11-11-design`).
-5b. **Инцидент 2026-11-11 #118:** dock v2 нельзя было апгрейдить regex по body — только точная замена v1-сниппета. См. `scripts/lireate_design_service_mobile_dock_selftest.sh`.
+5b. **Инцидент 2026-11-11 #118 / #130:** в `_replace_body_snip` запрещена подмена по первому `?>` после маркера body (режет static/news/home на строке `<body>`). Только точечная замена `STANDALONE_REGEX_OLD_TAIL` → `NEW_TAIL` или полная замена v1-сниппета. После любого патча: `lireate_design_main_php_marker_guard.py`. См. `lireate_design_service_mobile_dock_selftest.sh` (fixture `main-php-v120-dock-v2-body-drift.php`).
 5. После: `lireate_design_post_deploy_verify.sh` — 10 URL, ровно один `<h1>`.
 6. `touch template/main.php` после записи (opcache).
 

@@ -15,6 +15,8 @@ urls=(
   "/kontaktyi"
   "/registraciya_tovarnogo_znaka/"
   "/avtor/"
+  "/reviews/"
+  "/poisk_tovarnyh_znakov/"
 )
 
 # One blog article (static fallback if env unset)
@@ -39,6 +41,32 @@ for path in "${urls[@]}"; do
   else
     echo "VERIFY_OK h1=1 url=$url"
   fi
+  case "$path" in
+    /)
+      if ! printf '%s' "$html" | grep -qi 'lireate-home-dark'; then
+        echo "VERIFY_FAIL home missing lireate-home-dark in HTML" >&2
+        fail=1
+      else
+        echo "VERIFY_OK body_class home=lireate-home-dark"
+      fi
+      ;;
+    /reviews/)
+      if ! printf '%s' "$html" | grep -qi 'lireate-static-lu'; then
+        echo "VERIFY_FAIL reviews missing lireate-static-lu" >&2
+        fail=1
+      else
+        echo "VERIFY_OK body_class reviews=lireate-static-lu"
+      fi
+      ;;
+    /poisk_tovarnyh_znakov/)
+      if ! printf '%s' "$html" | grep -qi 'lireate-legacy-cms-lu'; then
+        echo "VERIFY_FAIL poisk missing lireate-legacy-cms-lu" >&2
+        fail=1
+      else
+        echo "VERIFY_OK body_class poisk=lireate-legacy-cms-lu"
+      fi
+      ;;
+  esac
 done
 
 if [[ "$fail" -ne 0 ]]; then

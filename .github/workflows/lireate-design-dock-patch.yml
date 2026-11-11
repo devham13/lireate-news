@@ -12,6 +12,7 @@ on:
       - "scripts/lireate_design_legacy_cms_selftest.sh"
       - "scripts/lireate_design_patch_legacy_cms_services.py"
       - "scripts/lireate_design_main_php_sanitize.py"
+      - "scripts/lireate_design_main_php_marker_guard.py"
       - ".github/workflows/lireate-design-dock-patch.yml"
   pull_request:
     paths:
@@ -24,6 +25,7 @@ on:
       - "scripts/lireate_design_legacy_cms_selftest.sh"
       - "scripts/lireate_design_patch_legacy_cms_services.py"
       - "scripts/lireate_design_main_php_sanitize.py"
+      - "scripts/lireate_design_main_php_marker_guard.py"
       - ".github/workflows/lireate-design-dock-patch.yml"
 
 jobs:

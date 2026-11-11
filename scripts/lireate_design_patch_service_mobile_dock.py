@@ -48,6 +48,12 @@ STANDALONE_LU_REGEX = (
     "zashchita_avtorskih_prav|dogovory|registraciya_programm_evm)(?:/|$)#"
 )
 
+# Only this substring inside preg_match patterns — never rewrite the whole <body> PHP block.
+STANDALONE_REGEX_OLD_TAIL = "zashchita_avtorskih_prav)(?:/|$)#"
+STANDALONE_REGEX_NEW_TAIL = (
+    "zashchita_avtorskih_prav|dogovory|registraciya_programm_evm)(?:/|$)#"
+)
+
 V1_BODY_SNIP = (
     f" /* {MARK} body */ $_lx_svc_dock_pg = {CMS_PAGES_PHP};\n"
     f" if (in_array($temp['page'], $_lx_svc_dock_pg, true)) echo ' lireate-svc-body lireate-service-mobile-dock';\n"
@@ -141,7 +147,16 @@ def _replace_marked_php_block(text: str, old: str, new: str) -> str:
     return text
 
 
+def _extend_standalone_lu_regex(text: str) -> str:
+    if STANDALONE_REGEX_NEW_TAIL in text:
+        return text
+    if STANDALONE_REGEX_OLD_TAIL not in text:
+        return text
+    return text.replace(STANDALONE_REGEX_OLD_TAIL, STANDALONE_REGEX_NEW_TAIL)
+
+
 def _replace_body_snip(text: str) -> str:
+    text = _extend_standalone_lu_regex(text)
     compact_v2 = BODY_SNIP.replace("\n", " ")
     if compact_v2 in text or BODY_SNIP in text:
         return text
@@ -151,12 +166,16 @@ def _replace_body_snip(text: str) -> str:
     if compact_v1 in text:
         return text.replace(compact_v1, compact_v2, 1)
     if f"/* {MARK2} body */" in text:
-        start = text.find(f"/* {MARK2} body */")
-        end = text.find("?>", start)
-        if end == -1:
-            raise SystemExit("dock v2 body block: ?> not found after marker")
-        return text[:start] + compact_v2 + text[end:]
-    if f"/* {MARK} body */" in text and V1_BODY_SNIP not in text:
+        if STANDALONE_REGEX_OLD_TAIL in text:
+            return _extend_standalone_lu_regex(text)
+        if STANDALONE_REGEX_NEW_TAIL in text:
+            return text
+        raise SystemExit(
+            "dock v2 body marker present but body snippet mismatch (main.php corrupt); "
+            "restore main.php.bak-2026-11-11-design before re-run — "
+            "do not truncate to ?>"
+        )
+    if f"/* {MARK} body */" in text and V1_BODY_SNIP not in text and compact_v1 not in text:
         raise SystemExit(
             "dock v1 body marker present but body snippet mismatch (main.php corrupt); "
             "restore main.php.bak-2026-11-11-design before re-run"
@@ -171,6 +190,7 @@ def _upgrade_legacy_uri_regex(text: str) -> str:
 
 
 def _upgrade_dock_blocks(text: str) -> str:
+    text = _extend_standalone_lu_regex(text)
     text = _upgrade_legacy_uri_regex(text)
     text = _replace_marked_php_block(text, V1_HEAD_BLOCK, HEAD_BLOCK)
     text = _replace_marked_php_block(text, V1_FOOTER_BLOCK, FOOTER_BLOCK)
