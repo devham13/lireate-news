@@ -1,0 +1,22 @@
+{
+  "verdict": "pass",
+  "total_slop_hits": 0,
+  "slop_hits": [],
+  "total_over_long_sentences": 2,
+  "over_long_sentences": [
+    {
+      "sentence": "Ниже по номеру заявки вы определите стадию, поймёте тип письма, срок ответа и куда идти за тактикой ответа экспертизе, не путая её с возражением против чужого знака",
+      "word_count": 27
+    },
+    {
+      "sentence": ") → регистрация или отказ Пройдите формальную стадию: пошлины, месяц и запрос на 3 месяца После поступления заявки Роспатент сначала проверяет, уплачены ли пошлины за подачу и экспертизу (пп",
+      "word_count": 26
+    }
+  ],
+  "readability": {
+    "score": 51.0,
+    "level": "Standard (Intellectual editorial/expert text)",
+    "avg_sentence_len": 8.5,
+    "avg_syllables_per_word": 2.4
+  }
+}

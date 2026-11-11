@@ -1183,14 +1183,14 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L48 — Экспертиза товарных знаков: формальная и по существу, сроки и отказы
 
-- **status:** new
+- **status:** written
 - **priority:** P2
 - **site:** lireate
 - **lireate_category_id:** 9
 - **lireate_category_name:** Товарный знак
 - **slug:** ekspertiza-tovarnyh-znakov-formalnaya-po-suschestvu
-- **h1:** Экспертиза товарных знаков: что проверяют на формальной стадии и по существу, сроки и типовые отказы
-- **primary_query:** экспертиза товарных знаков
+- **h1:** Как проходит экспертиза товарных знаков: формальная стадия и по существу, сроки и типовые отказы
+- **primary_query:** как проходит экспертиза товарных знаков
 - **secondary_queries:** формальная экспертиза товарного знака, экспертиза по существу товарный знак, сроки экспертизы товарного знака роспатент, отказ в экспертизе товарного знака
 - **search_intent:** workflow
 - **article_mode:** B

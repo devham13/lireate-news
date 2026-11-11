@@ -1,0 +1,150 @@
+{
+  "article": "memory/blog/articles/L48-ekspertiza-tovarnyh-znakov-formalnaya-po-suschestvu/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 20,
+  "verified_facts_count": 5,
+  "unverified_facts_count": 15,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "сание госуслуги и Правила подачи сверены на 11.11.2026 Частые вопросы Сколько длится формальная экспертиз",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "1 мес",
+      "kind": "metric_or_duration",
+      "context": "ого знака. TL;DR / Быстрый инсайт: Формальная (до 1 мес., без сходства) → принятие → по существу (до 12 м",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "12 мес",
+      "kind": "metric_or_duration",
+      "context": "мес., без сходства) → принятие → по существу (до 12 мес.) → регистрация или отказ. Запросы - 3 мес. ; уве",
+      "verified": true,
+      "reason": "Numerical value '12' matched in fact-bank context"
+    },
+    {
+      "fact": "3 мес",
+      "kind": "metric_or_duration",
+      "context": "у (до 12 мес.) → регистрация или отказ. Запросы - 3 мес. ; уведомление по п. 3 ст. 1499 - 6 мес. на довод",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "6 мес",
+      "kind": "metric_or_duration",
+      "context": "Запросы - 3 мес. ; уведомление по п. 3 ст. 1499 - 6 мес. на доводы; решение об отказе - возражение 4 мес.",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "4 мес",
+      "kind": "metric_or_duration",
+      "context": "6 мес. на доводы; решение об отказе - возражение 4 мес. ( ст. 1500 ). Подача заявки - отдельный гайд . И",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2 нед",
+      "kind": "metric_or_duration",
+      "context": "дения: Подача заявки → проверка уплаты пошлин (до 2 нед.) → формальная экспертиза (до 1 мес.) → принятие",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "3 месяцев",
+      "kind": "metric_or_duration",
+      "context": "олнительных материалов . Ответить нужно в течение 3 месяцев с даты направления запроса; иначе заявку могут пр",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "12 месяцев",
+      "kind": "metric_or_duration",
+      "context": "Дождитесь экспертизы по существу и поймите лимит 12 месяцев Экспертиза по существу товарный знак - это провер",
+      "verified": true,
+      "reason": "Numerical value '12' matched in fact-bank context"
+    },
+    {
+      "fact": "18 месяцев",
+      "kind": "metric_or_duration",
+      "context": "потолок госуслуги \"от приёма до свидетельства\" - 18 месяцев и 2 недели , он растягивается, если вы отвечаете",
+      "verified": true,
+      "reason": "Numerical value '18' matched in fact-bank context"
+    },
+    {
+      "fact": "6 месяцев",
+      "kind": "metric_or_duration",
+      "context": "истрации; доводы учитывают, если подать в течение 6 месяцев со дня направления уведомления. Разбор относитель",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2 месяцев",
+      "kind": "metric_or_duration",
+      "context": "мотрение ваших доводов после уведомления - ещё до 2 месяцев с даты их поступления. Делайте: в названии папки",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1498",
+      "kind": "large_number",
+      "context": "товарных знаков - это два этапа: формальная ( ст. 1498 ) и по существу ( ст. 1499 ). Ниже по номеру заяв",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1499",
+      "kind": "large_number",
+      "context": "тапа: формальная ( ст. 1498 ) и по существу ( ст. 1499 ). Ниже по номеру заявки вы определите стадию, по",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1500",
+      "kind": "large_number",
+      "context": "воды; решение об отказе - возражение 4 мес. ( ст. 1500 ). Подача заявки - отдельный гайд . Инструкция дл",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "уже проверяет, подпадает ли знак под запреты ст. 1483 ГК РФ, в том числе сходство с ранними ТЗ в однород",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "1492",
+      "kind": "large_number",
+      "context": "ии фиксируется официальная дата подачи ( п. 8 ст. 1492 через п. 2 ст. 1498): от неё считают приоритет и с",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1493",
+      "kind": "large_number",
+      "context": "явки третьи лица могут направить обращение по ст. 1493 - это не ваш ответ на отказ; см. возражение проти",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1497",
+      "kind": "large_number",
+      "context": "мотрению, если эксперт не направлял запрос по ст. 1497 и уведомление по п. 3 ст. 1499. Общий потолок госу",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1512",
+      "kind": "large_number",
+      "context": "зом, не путать с возражением третьего лица по ст. 1512 (см. ППС и чужой знак ). Рассмотрение ваших довод",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
