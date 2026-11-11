@@ -127,22 +127,24 @@ def patch(text: str) -> str:
     if MARK_CMS_FOOTER not in text and foot_if_old in text and "lireate_design_home_footer_v1" in text:
         text = text.replace(foot_if_old, foot_if_new, 1)
 
+    _validate(text, "after cms patch")
+    return text
+
+
+def _strip_hero_orphans(text: str) -> str:
     orphan_pat = re.compile(
         r"(<\?php include dirname\(__FILE__\) \. '/page/cms/lireate-cms-hero-[^']+'; \?>\s*"
         r"</div>\s*)"
         r"(?:\s*<br\s*/?>\s*){2,4}\s*</div>",
         re.S,
     )
-    text = orphan_pat.sub(r"\1", text)
-
-    _validate(text, "after cms patch")
-    return text
+    return orphan_pat.sub(r"\1", text)
 
 
 def main() -> None:
     path = Path(sys.argv[1])
     raw = path.read_text(encoding="utf-8", errors="replace")
-    updated = patch(raw)
+    updated = _strip_hero_orphans(patch(raw))
     if updated == raw:
         print("UNCHANGED")
         return
