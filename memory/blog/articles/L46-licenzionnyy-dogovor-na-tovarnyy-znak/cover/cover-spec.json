@@ -1,0 +1,33 @@
+{
+  "headline_lines": [
+    "ЛИЦЕНЗИЯ НА ТОВАРНЫЙ",
+    "ЗНАК 15 000 ₽"
+  ],
+  "highlight": "15 000 ₽",
+  "sticky_text": "простая / исключительная",
+  "sticky_underline": "исключительная",
+  "sticky_color": "yellow",
+  "badge_label": "ТЗ",
+  "label_chips": [
+    [
+      "3.10",
+      "black"
+    ],
+    [
+      "1236",
+      "white"
+    ],
+    [
+      "1490",
+      "pink"
+    ]
+  ],
+  "ui_card_title": "Договор + реестр",
+  "ui_card_rows": [
+    "ст. 1489",
+    "15 000 ₽",
+    "письменная форма"
+  ],
+  "stage_background": "#0b1020",
+  "left_memo": ""
+}
