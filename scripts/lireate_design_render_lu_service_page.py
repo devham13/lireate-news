@@ -11,6 +11,11 @@ from typing import Any
 
 SITE = os.environ.get("LIREATE_PUBLIC_SITE_URL", "https://lireate.invalid").rstrip("/")
 DUES_TABLE = "https://rospatent.gov.ru/ru/activities/dues/table"
+NK_333_30 = (
+    "https://www.consultant.ru/document/cons_doc_LAW_28165/"
+    "2401c8f5ae279ddb026b3249beb2198a5b59a78f/"
+)
+CONTACT_FACTS = "С 2015 года · 15 специалистов · ответ за 15 минут"
 CSS_SHARED = "assets/lireate-shared/lireate-service-dark.css?v=20261111svc"
 BAR_CSS = "/template/css/lireate-service-mobile-bar.css?v=20261111svc3"
 BAR_JS = "/template/js/lireate-service-mobile-bar.js?v=20261111svc3"
@@ -148,7 +153,7 @@ def _contact_form(cfg: dict[str, Any]) -> str:
       <span class="lx-section-label">Контакт</span>
       <h2>Заявка и мессенджеры</h2>
       <p>Телефон: <a href="tel:+79600484957">+7 (960) 048-49-57</a></p>
-      <p class="lx-contact-facts">Работаем с 2015 года · 15 патентных поверенных · ответим за 15 минут</p>
+      <p class="lx-contact-facts">{CONTACT_FACTS}</p>
       <div class="lx-msg-grid">
         <a class="lx-msg-btn" id="link-telegram" href="https://t.me/lireate_patent" target="_blank" rel="noopener noreferrer" data-lx-icon="telegram" data-lx-ym-goal="perehod_v_telegramm"><span>Telegram</span></a>
         <a class="lx-msg-btn" id="link-whatsapp" href="https://wa.me/79600484957" target="_blank" rel="noopener noreferrer" data-lx-icon="whatsapp" data-lx-ym-goal="perehod_v_messendzher"><span>WhatsApp</span></a>
@@ -370,18 +375,19 @@ DOGOVORY_BODY = f"""
 <section class="lx-section lx-reveal" id="terms">
   <span class="lx-section-label">Сроки</span>
   <h2>Ориентиры по срокам</h2>
-  <p>Подготовка договора — обычно <strong>3–7 рабочих дней</strong> после брифа. Госрегистрация распоряжения — по регламенту Роспатента (ориентир <strong>до 68 рабочих дней</strong> на услугу регистрации распоряжения; сверяйте на <a href="{DUES_TABLE}" target="_blank" rel="noopener noreferrer">rospatent.gov.ru</a>).</p>
+  <p>Подготовка договора — обычно <strong>3–7 рабочих дней</strong> после брифа. Госрегистрация распоряжения — по регламенту Роспатента; ориентир по сроку услуги — <strong>до 68 рабочих дней</strong>.</p>
 </section>
 
 <section class="lx-section lx-reveal" id="pricing">
   <span class="lx-section-label">Стоимость</span>
   <h2>Пошлины Роспатента и услуги LIREATE</h2>
   <div class="lx-price-grid">
-    <div class="lx-price-card"><strong>за 15 минут</strong><span>Рассчитаем стоимость сопровождения после брифа — без фиктивных цен на сайте</span></div>
-    <div class="lx-price-card"><strong>п. 3.10</strong><span>Регистрация лицензионного договора (в т.ч. коммерческая концессия): <strong>15&nbsp;000&nbsp;₽</strong> + <strong>13&nbsp;000&nbsp;₽</strong> за каждый дополнительный объект в заявлении — <a href="{DUES_TABLE}" target="_blank" rel="noopener noreferrer">таблица пошлин</a></span></div>
-    <div class="lx-price-card"><strong>п. 3.11</strong><span>Регистрация договора об отчуждении: <strong>15&nbsp;000&nbsp;₽</strong> + <strong>13&nbsp;000&nbsp;₽</strong> за каждый дополнительный объект — <a href="{DUES_TABLE}" target="_blank" rel="noopener noreferrer">таблица пошлин</a></span></div>
+    <div class="lx-price-card"><strong>за 15 минут</strong><span>Рассчитаем стоимость сопровождения после брифа</span></div>
+    <div class="lx-price-card"><strong>п. 3.10</strong><span><strong>Товарный знак:</strong> регистрация лицензии (в т.ч. коммерческая концессия) — <strong>15&nbsp;000&nbsp;₽</strong> + <strong>13&nbsp;000&nbsp;₽</strong> за каждый дополнительный знак <strong>в одном заявлении</strong> — <a href="{DUES_TABLE}" target="_blank" rel="noopener noreferrer">п. 3.10–3.11 ПП РФ № 941</a></span></div>
+    <div class="lx-price-card"><strong>п. 3.11</strong><span><strong>Товарный знак:</strong> регистрация договора об отчуждении — <strong>15&nbsp;000&nbsp;₽</strong> + <strong>13&nbsp;000&nbsp;₽</strong> за каждый дополнительный знак <strong>в одном заявлении</strong> — <a href="{DUES_TABLE}" target="_blank" rel="noopener noreferrer">таблица пошлин Роспатента</a></span></div>
+    <div class="lx-price-card"><strong>ст. 333.30</strong><span><strong>Программа для ЭВМ или БД:</strong> регистрация договора об отчуждении, залога или перехода права — <strong>5&nbsp;000&nbsp;₽</strong> + <strong>3&nbsp;000&nbsp;₽</strong> за каждый объект сверх первого — <a href="{NK_333_30}" target="_blank" rel="noopener noreferrer">НК РФ, ст. 333.30</a></span></div>
   </div>
-  <p class="lx-calc-note">Указаны только официальные госпошлины из приложения к ПП РФ № 941. Суммы сверяйте на момент оплаты. Услуги LIREATE оплачиваются отдельно.</p>
+  <p class="lx-calc-note">Госпошлины: товарные знаки — по ПП РФ № 941; программы и базы данных — по <a href="{NK_333_30}" target="_blank" rel="noopener noreferrer">ст. 333.30 НК РФ</a> (ред. 389-ФЗ, с 01.01.2025). Сопровождение LIREATE оплачивается отдельно; стоимость назовём за 15 минут.</p>
   <a class="lx-btn lx-btn-primary" href="#contact">Рассчитать стоимость за 15 минут</a>
 </section>
 
@@ -445,11 +451,12 @@ EVM_BODY = f"""
   <span class="lx-section-label">Стоимость</span>
   <h2>Пошлины и сопровождение LIREATE</h2>
   <div class="lx-price-grid">
-    <div class="lx-price-card"><strong>за 15 минут</strong><span>Рассчитаем стоимость сопровождения — без выдуманных прайсов на сайте</span></div>
-    <div class="lx-price-card"><strong>5&nbsp;000&nbsp;₽</strong><span>Госпошлина за регистрацию программы для ЭВМ или базы данных (сверьте пункт в <a href="{DUES_TABLE}" target="_blank" rel="noopener noreferrer">таблице пошлин</a> Роспатента на дату оплаты)</span></div>
-    <div class="lx-price-card"><strong>1&nbsp;300&nbsp;₽</strong><span>Дубликат свидетельства — по сведениям на странице госуслуги Роспатента; точную сумму сверьте в <a href="{DUES_TABLE}" target="_blank" rel="noopener noreferrer">таблице</a></span></div>
+    <div class="lx-price-card"><strong>за 15 минут</strong><span>Рассчитаем стоимость сопровождения после брифа</span></div>
+    <div class="lx-price-card"><strong>5&nbsp;000&nbsp;₽</strong><span>Регистрация программы для ЭВМ или базы данных — по <a href="{NK_333_30}" target="_blank" rel="noopener noreferrer">ст. 333.30 НК РФ</a></span></div>
+    <div class="lx-price-card"><strong>3&nbsp;000&nbsp;₽</strong><span>Регистрация изменений в реестр — за каждое изменение по <a href="{NK_333_30}" target="_blank" rel="noopener noreferrer">ст. 333.30 НК РФ</a></span></div>
+    <div class="lx-price-card"><strong>5&nbsp;000&nbsp;₽ + 3&nbsp;000&nbsp;₽</strong><span>Регистрация отчуждения или залога по договору и перехода права без договора: <strong>5&nbsp;000&nbsp;₽</strong> за первый объект и <strong>3&nbsp;000&nbsp;₽</strong> за каждый следующий — <a href="{NK_333_30}" target="_blank" rel="noopener noreferrer">ст. 333.30 НК РФ</a></span></div>
   </div>
-  <p class="lx-calc-note">Цифры пошлин — только с официальной таблицы. Услуги LIREATE не являются офертой.</p>
+  <p class="lx-calc-note">Госпошлины — по <a href="{NK_333_30}" target="_blank" rel="noopener noreferrer">ст. 333.30 НК РФ</a> (ред. 389-ФЗ, с 01.01.2025). Сопровождение LIREATE оплачивается отдельно; стоимость назовём за 15 минут.</p>
   <a class="lx-btn lx-btn-primary" href="#contact">Рассчитать стоимость за 15 минут</a>
 </section>
 
@@ -512,15 +519,15 @@ PAGES: dict[str, dict[str, Any]] = {
         "faq": [
             {
                 "q": "Нужно ли регистрировать лицензию в Роспатенте?",
-                "a": "Для ряда объектов (например, товарный знак) договор о распоряжении исключительным правом подлежит госрегистрации (ст. 1490, 1232 ГК РФ). Пошлина — п. 3.10 таблицы на rospatent.gov.ru.",
+                "a": "Для товарного знака договор о распоряжении исключительным правом подлежит госрегистрации (ст. 1490, 1232 ГК РФ). Пошлина лицензии — п. 3.10 приложения к ПП РФ № 941.",
             },
             {
                 "q": "Чем отличается лицензия от отчуждения?",
-                "a": "Лицензия сохраняет правообладателя и даёт право использования. Отчуждение переводит исключительное право другой стороне; регистрация — по п. 3.11.",
+                "a": "Лицензия сохраняет правообладателя и даёт право использования. Отчуждение переводит исключительное право другой стороне; по товарному знаку регистрация отчуждения — по п. 3.11 ПП РФ № 941.",
             },
             {
                 "q": "Сколько стоит подготовка договора в LIREATE?",
-                "a": "Зависит от объекта и объёма. Рассчитаем за 15 минут после брифа — на сайте фиксированных цен нет.",
+                "a": "Зависит от объекта и объёма сделки. Стоимость сопровождения рассчитаем за 15 минут после брифа.",
             },
             {
                 "q": "Можно ли зарегистрировать договор авторского заказа?",
@@ -528,7 +535,7 @@ PAGES: dict[str, dict[str, Any]] = {
             },
             {
                 "q": "Какие пошлины за регистрацию распоряжения?",
-                "a": "П. 3.10 и 3.11 приложения к ПП РФ № 941: 15 000 ₽ за первый объект и 13 000 ₽ за каждый дополнительный в одной заявлении. Сверяйте на https://rospatent.gov.ru/ru/activities/dues/table",
+                "a": "Товарный знак: п. 3.10 и 3.11 ПП РФ № 941 — 15 000 ₽ за первый знак и 13 000 ₽ за каждый дополнительный в одном заявлении. Программа для ЭВМ или БД: ст. 333.30 НК РФ — 5 000 ₽ за первый объект и 3 000 ₽ за каждый следующий при регистрации отчуждения, залога или перехода права.",
             },
         ],
         "body_sections": DOGOVORY_BODY,
@@ -547,7 +554,7 @@ PAGES: dict[str, dict[str, Any]] = {
         "kpi": [
             {"b": "ст. 1262", "s": "госрегистрация по желанию"},
             {"b": "62 дн.", "s": "предельный срок услуги"},
-            {"b": "5 000 ₽", "s": "ориентир пошлины — таблица"},
+            {"b": "ст. 333.30", "s": "госпошлины НК РФ"},
         ],
         "feed": [
             "Аудит прав на код и БД",
@@ -579,7 +586,7 @@ PAGES: dict[str, dict[str, Any]] = {
             },
             {
                 "q": "Сколько стоит госпошлина за регистрацию ПО?",
-                "a": "На странице госуслуги Роспатента указана пошлина 5 000 ₽ за регистрацию программы или БД. Точный пункт и сумму сверьте в таблице пошлин на rospatent.gov.ru на дату оплаты.",
+                "a": "Регистрация программы для ЭВМ или базы данных — 5 000 ₽ по ст. 333.30 НК РФ (ред. 389-ФЗ, с 01.01.2025). Изменения в реестр — 3 000 ₽ за каждое изменение.",
             },
             {
                 "q": "Можно ли в одной заявке зарегистрировать программу и базу данных?",
