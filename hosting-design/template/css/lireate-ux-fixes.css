@@ -47,11 +47,18 @@ body.cms-default .main-screen.main_back {
   background-size: cover;
   background-position: center;
 }
+body.lireate-home-dark .main-screen.main_back {
+  aspect-ratio: unset;
+  min-height: 440px;
+}
 @media (max-width: 700px) {
   body.cms-default .main_back,
   body.cms-default #main_back,
   body.cms-default .main-screen.main_back {
     min-height: 220px;
+  }
+  body.lireate-home-dark .main-screen.main_back {
+    min-height: 460px;
   }
   #patent_top_box,
   .patent_top_box {
