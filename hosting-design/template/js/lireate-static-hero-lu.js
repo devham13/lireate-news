@@ -27,7 +27,7 @@
       contacts.style.textAlign = "center";
       contacts.style.marginTop = "16px";
       contacts.innerHTML =
-        '<a href="tel:+74999384595">+7 (499) 938-45-95</a> · <a href="tel:+79600484957">+7 960 048-49-57</a>';
+        '<a href="tel:+74999384595">+7 (499) 938-45-95</a><a href="tel:+79600484957">+7 960 048-49-57</a>';
       txt.appendChild(contacts);
     }
     var home = txt && txt.querySelector('a[href*="lireate"], a[href="/"]');
