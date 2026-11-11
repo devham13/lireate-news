@@ -23,6 +23,9 @@ on:
       - "hosting-design/template/css/lireate-cms-lu.css"
       - "hosting-design/template/css/lireate-mktu-lu.css"
       - "scripts/lireate_design_lu_column_center_selftest.sh"
+      - "scripts/lireate_design_full_deploy_main_selftest.sh"
+      - "scripts/lireate_design_resolve_python.sh"
+      - "scripts/lireate_design_main_php_marker_guard.py"
       - ".github/workflows/lireate-design-dock-patch.yml"
   pull_request:
     paths:
@@ -46,6 +49,9 @@ on:
       - "hosting-design/template/css/lireate-cms-lu.css"
       - "hosting-design/template/css/lireate-mktu-lu.css"
       - "scripts/lireate_design_lu_column_center_selftest.sh"
+      - "scripts/lireate_design_full_deploy_main_selftest.sh"
+      - "scripts/lireate_design_resolve_python.sh"
+      - "scripts/lireate_design_main_php_marker_guard.py"
       - ".github/workflows/lireate-design-dock-patch.yml"
 
 jobs:
@@ -69,3 +75,5 @@ jobs:
           bash scripts/lireate_design_uslugi_cards_selftest.sh
       - name: LU wide column center (CSS grep)
         run: bash scripts/lireate_design_lu_column_center_selftest.sh
+      - name: Full deploy main.php chain (legacy poisk body)
+        run: bash scripts/lireate_design_full_deploy_main_selftest.sh

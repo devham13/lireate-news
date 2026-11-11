@@ -11,7 +11,18 @@ DOCROOT="${LIREATE_DOCROOT:-$HOME/www/public_html}"
 _LIREATE_DEFAULT_SITE_URL="https://lireate.ru" # pragma: allowlist secret
 export LIREATE_PUBLIC_SITE_URL="${LIREATE_PUBLIC_SITE_URL:-$_LIREATE_DEFAULT_SITE_URL}"
 BAK="bak-2026-11-11-design"
-PY="$(command -v python3)"
+_RESOLVE_ROOT="$REPO"
+if [[ ! -f "$_RESOLVE_ROOT/scripts/lireate_design_resolve_python.sh" ]]; then
+  _RESOLVE_ROOT="$MAIN_REPO"
+fi
+# shellcheck source=scripts/lireate_design_resolve_python.sh
+source "$_RESOLVE_ROOT/scripts/lireate_design_resolve_python.sh" 2>/dev/null || true
+if declare -f lireate_design_resolve_python >/dev/null; then
+  PY="$(lireate_design_resolve_python)"
+else
+  PY="$(command -v python3)"
+fi
+echo "LIREATE_DESIGN_PYTHON=$PY" >&2
 APPLY_MAIN_PATCH="${LIREATE_DESIGN_PATCH_MAIN:-0}"
 APPLY_HOME_PATCH="${LIREATE_DESIGN_PATCH_HOME:-0}"
 
@@ -132,7 +143,7 @@ if [[ "$APPLY_MAIN_PATCH" == "1" ]]; then
   sed -i 's|lireate-cms-page-dark.css?v=[^"]*|lireate-cms-page-dark.css?v=20261111design3|g' "$MAIN" 2>/dev/null || true
   sed -i 's|lireate-floating-widget-ux.js?v=[^"]*|lireate-floating-widget-ux.js?v=20261111design4|g' "$MAIN" 2>/dev/null || true
   sed -i 's|lireate-static-pages-lu.css?v=[^"]*|lireate-static-pages-lu.css?v=20261111static3|g' "$MAIN" 2>/dev/null || true
-  sed -i 's|lireate-lu-viewport.css?v=[^"]*|lireate-lu-viewport.css?v=20261111vp5|g' "$MAIN" 2>/dev/null || true
+  sed -i 's|lireate-lu-viewport.css?v=[^"]*|lireate-lu-viewport.css?v=20261111vp6|g' "$MAIN" 2>/dev/null || true
   sed -i 's|lireate-static-hero-lu.js?v=[^"]*|lireate-static-hero-lu.js?v=20261111static3|g' "$MAIN" 2>/dev/null || true
 
 else
@@ -145,7 +156,7 @@ else
     sed -i 's|lireate-home-hero.js?v=[^"]*|lireate-home-hero.js?v=20261111hero2|g' "$MAIN" 2>/dev/null || true
     sed -i 's|lireate-floating-widget-ux.js?v=[^"]*|lireate-floating-widget-ux.js?v=20261111design4|g' "$MAIN" 2>/dev/null || true
     sed -i 's|lireate-static-pages-lu.css?v=[^"]*|lireate-static-pages-lu.css?v=20261111static3|g' "$MAIN" 2>/dev/null || true
-  sed -i 's|lireate-lu-viewport.css?v=[^"]*|lireate-lu-viewport.css?v=20261111vp5|g' "$MAIN" 2>/dev/null || true
+  sed -i 's|lireate-lu-viewport.css?v=[^"]*|lireate-lu-viewport.css?v=20261111vp6|g' "$MAIN" 2>/dev/null || true
     sed -i 's|lireate-static-hero-lu.js?v=[^"]*|lireate-static-hero-lu.js?v=20261111static3|g' "$MAIN" 2>/dev/null || true
     lireate_main_php_guard "$MAIN" || exit 1
     lireate_main_php_touch "$MAIN"

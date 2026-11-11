@@ -34,7 +34,7 @@ HEAD_BLOCK = f"""\t<?php /* {MARK} head */ $_lx_leg_svc_ru = isset($_SERVER['REQ
 \t<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" />
 \t<link rel="stylesheet" href="/template/css/lireate-cms-page-dark.css?v=20261111design3" />
 \t<link rel="stylesheet" href="/template/css/lireate-legacy-cms-lu.css?v=20261111leg3" />
-\t<link rel="stylesheet" href="/template/css/lireate-lu-viewport.css?v=20261111vp5" />
+\t<link rel="stylesheet" href="/template/css/lireate-lu-viewport.css?v=20261111vp6" />
 \t<link rel="stylesheet" href="/template/css/lireate-home-modal-lu.css?v=20261111mod2" />
 \t<script defer src="/template/js/lireate-home-modal-lu.js?v=20261111mod2"></script>
 \t<?php endif; ?>

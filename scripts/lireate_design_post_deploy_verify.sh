@@ -31,6 +31,7 @@ curl_code() {
 verify_page() {
   local path="$1"
   local need_body_grep="${2:-}"
+  local alt_body_grep="${3:-}"
   local url="${SITE}${path}"
   local tries=1
   local sleep_s=0
@@ -62,7 +63,13 @@ verify_page() {
       return 1
     fi
     if [[ -n "$need_body_grep" ]]; then
-      if ! printf '%s' "$html" | grep -qi "$need_body_grep"; then
+      local found=0
+      if printf '%s' "$html" | grep -qi "$need_body_grep"; then
+        found=1
+      elif [[ -n "$alt_body_grep" ]] && printf '%s' "$html" | grep -qi "$alt_body_grep"; then
+        found=1
+      fi
+      if [[ "$found" -ne 1 ]]; then
         if [[ "$attempt" -lt "$tries" ]]; then
           echo "VERIFY_RETRY body_marker missing ($need_body_grep) attempt=$attempt/$tries url=$url" >&2
           sleep "$sleep_s"
@@ -90,7 +97,7 @@ urls=(
   "/kontaktyi"
   "/registraciya_tovarnogo_znaka/"
   "/avtor/"
-  "/reviews/"
+  "/reviews"
   "/poisk_tovarnyh_znakov/"
 )
 
@@ -99,13 +106,17 @@ urls+=("$ARTICLE_PATH")
 
 fail=0
 for path in "${urls[@]}"; do
+  marker=""
+  alt_marker=""
   case "$path" in
     /) marker="lireate-home-dark" ;;
-    /reviews/) marker="lireate-static-lu" ;;
-    /poisk_tovarnyh_znakov/) marker="lireate-legacy-cms-lu" ;;
-    *) marker="" ;;
+    /reviews) marker="lireate-static-lu" ;;
+    /poisk_tovarnyh_znakov/)
+      marker="lireate-legacy-cms-lu"
+      alt_marker="lireate_design_legacy_cms_services_v1"
+      ;;
   esac
-  if ! verify_page "$path" "$marker"; then
+  if ! verify_page "$path" "$marker" "$alt_marker"; then
     fail=1
   fi
 done

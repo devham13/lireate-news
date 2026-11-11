@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
 """Invalidate opcache for a PHP file (hosting PHP 3.6+)."""
-from __future__ import annotations
-
 import subprocess
 import sys
 from pathlib import Path
 
 
-def main() -> None:
+def main():
     if len(sys.argv) < 2:
         raise SystemExit(2)
     path = str(Path(sys.argv[1]).resolve())

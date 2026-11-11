@@ -26,7 +26,7 @@ const pages = [
 const widths = [375, 768, 1024, 1366, 1600, 1920];
 
 function centeredEnough(box, vw, sidebarRight) {
-  if (vw < 1400) return { ok: true, reason: "below-1400" };
+  if (vw < 1500) return { ok: true, reason: "below-1500" };
   const paneLeft = sidebarRight > 50 ? sidebarRight : 20;
   const paneRight = vw - 32;
   const paneMid = (paneLeft + paneRight) / 2;
@@ -46,7 +46,7 @@ for (const { path, slug, sel } of pages) {
     const page = await browser.newPage({ viewport: { width: w, height: 900 } });
     await page.goto(`${site}${path}?qa=${Date.now()}`, { waitUntil: "networkidle", timeout: 120000 });
     await page.waitForTimeout(400);
-    if (w >= 1400) {
+    if (w >= 1500) {
       await page.addStyleTag({ content: fixCss, id: "lireate-lu-column-center-fix" });
       await page.waitForTimeout(250);
     }

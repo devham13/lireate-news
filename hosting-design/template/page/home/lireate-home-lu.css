@@ -15,7 +15,8 @@ body.lireate-home-dark #lireate-home .lh-wrap,
 body.lireate-home-dark #lireate-home.lu-page .lu-wrap {
   max-width: none;
   width: 100%;
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 32px 32px;
   box-sizing: border-box;
 }
