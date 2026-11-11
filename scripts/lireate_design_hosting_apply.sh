@@ -218,6 +218,13 @@ if [[ "${LIREATE_DESIGN_PATCH_HOME_SERVICE_URLS:-0}" == "1" && -f "$MAIN" ]]; th
 fi
 
 if [[ "${LIREATE_DESIGN_PATCH_USLUGI_CARDS:-0}" == "1" ]]; then
+  USLUGI_CMS_SRC="$REPO/hosting-design/template/page/uslugi/lireate-uslugi-cms.inc.php"
+  USLUGI_CMS_DST="$DOCROOT/template/page/uslugi/lireate-uslugi-cms.inc.php"
+  if [[ -f "$USLUGI_CMS_SRC" && ! -f "$USLUGI_CMS_DST" ]]; then
+    mkdir -p "$(dirname "$USLUGI_CMS_DST")"
+    bak "$USLUGI_CMS_DST"
+    cp -a "$USLUGI_CMS_SRC" "$USLUGI_CMS_DST"
+  fi
   "$PY" "$REPO/scripts/lireate_design_patch_uslugi_cards.py" "$DOCROOT" || echo "USLUGI_CARDS_PATCH_WARN" >&2
 fi
 

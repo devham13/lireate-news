@@ -10,13 +10,21 @@ BODY_RETRIES="${LIREATE_VERIFY_BODY_RETRIES:-10}"
 BODY_SLEEP="${LIREATE_VERIFY_BODY_SLEEP:-15}"
 DOCROOT="${LIREATE_DOCROOT:-}"
 
-if [[ -n "$DOCROOT" && -f "$DOCROOT/template/main.php" ]]; then
-  PY="$(command -v python3)"
-  INV="$REPO/scripts/lireate_design_opcache_invalidate_cli.py"
-  if [[ -n "${REPO:-}" && -f "$INV" ]]; then
-  "$PY" "$INV" "$DOCROOT/template/main.php" 2>/dev/null || true
-  fi
+VERIFY_PY="${LIREATE_DESIGN_PYTHON:-}"
+if [[ -z "$VERIFY_PY" && -f "$REPO/scripts/lireate_design_resolve_python.sh" ]]; then
+  # shellcheck source=scripts/lireate_design_resolve_python.sh
+  source "$REPO/scripts/lireate_design_resolve_python.sh"
+  VERIFY_PY="$(lireate_design_resolve_python)"
 fi
+VERIFY_PY="${VERIFY_PY:-$(command -v python3)}"
+INV="$REPO/scripts/lireate_design_opcache_invalidate_cli.py"
+
+lireate_verify_invalidate_opcache() {
+  if [[ -n "$DOCROOT" && -f "$DOCROOT/template/main.php" && -f "$INV" ]]; then
+    "$VERIFY_PY" "$INV" "$DOCROOT/template/main.php" 2>/dev/null || true
+  fi
+}
+lireate_verify_invalidate_opcache
 
 curl_fetch() {
   local url="$1"
@@ -41,6 +49,17 @@ verify_page() {
   fi
   local attempt html code h1c
   for ((attempt = 1; attempt <= tries; attempt++)); do
+    if [[ -n "$need_body_grep" ]]; then
+      lireate_verify_invalidate_opcache
+      local qa="lireate_verify=${attempt}-$(date +%s)"
+      if [[ "$path" == "/" ]]; then
+        url="${SITE}/?${qa}"
+      elif [[ "$path" == */ ]]; then
+        url="${SITE}${path}?${qa}"
+      else
+        url="${SITE}${path}?${qa}"
+      fi
+    fi
     html="$(curl_fetch "$url")"
     code="$(curl_code "$url")"
     if [[ "$code" != "200" ]]; then
@@ -109,7 +128,7 @@ for path in "${urls[@]}"; do
   marker=""
   alt_marker=""
   case "$path" in
-    /) marker="lireate-home-dark" ;;
+    /) marker="lireate-home-dark"; alt_marker="lireate-home-lu-body" ;;
     /reviews) marker="lireate-static-lu" ;;
     /poisk_tovarnyh_znakov/)
       marker="lireate-legacy-cms-lu"
