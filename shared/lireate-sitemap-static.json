@@ -17,11 +17,20 @@
     {"path": "/registracija_torgovyh_marok_i_logotipov/", "lastmod_source": "site"},
     {"path": "/news", "lastmod_source": "articles_max"},
     {"path": "/avtor/", "lastmod_source": "site"},
-    {"path": "/uslugi/", "lastmod_source": "site"}
+    {"path": "/uslugi/", "lastmod_source": "site"},
+    {"path": "/vozrazhenie_protiv_registracii_tovarnogo_znaka/", "lastmod_source": "site"},
+    {"path": "/zashchita_avtorskih_prav/", "lastmod_source": "site"},
+    {"path": "/portfolio", "lastmod_source": "site"},
+    {"path": "/reviews", "lastmod_source": "site"}
   ],
   "exclude_article_slugs": [
     "chto_delat_esli_tovarnyy_znak_zanyat",
-    "chuzhoy_logotip_ili_nazvanie_v_video"
+    "chuzhoy_logotip_ili_nazvanie_v_video",
+    "kak_proverit_zaregistrirovan_li_tovarnyiy_znak2023",
+    "kak_proverit_zaregistrirovan_li_tovarnyiy_znak_2023",
+    "dogovor_avtorskogo_zakaza_chto_nuzhno_znat",
+    "otvet_na_pretenziyu_o_narushenii_isklyuchitelnyix_prav_na_tovarnyiy_znak",
+    "otvet_na_pretenziyu_o_narushenii_isklyuchitelnyix_prav_na_tovarnyiy_znak_nuzhen_li"
   ],
   "dedupe_article_slugs": [
     "zaschita_firmennogo_stilya"

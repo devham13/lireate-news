@@ -1,0 +1,31 @@
+{
+  "news": {
+    "fas_mozhet_primenit_meryi_k_yandeksu_izza_reklamnogo_slogana": "Может ли ФАС предъявить претензии к Яндексу из‑за рекламного слогана: практика антимонопольного контроля, риски для рекламодателя и что проверить до запуска кампании.",
+    "chestnyiy_znak_import_chek_list_markirovki_i_tovarnogo_znaka": "Чек-лист импорта маркированного товара: Честный знак, GTIN, Data Matrix до ФТС, роль товарного знака в документах и типовые ошибки при ввозе.",
+    "chek_list_importera_chestnyiy_znak_data_matrix_i_tovarnyiy_znak_na_upakovke": "Импорт с маркировкой: что проверить на упаковке — Data Matrix, GTIN, соответствие знаку бренда и связка с декларацией до подачи в ФТС.",
+    "otvet_na_pretenziyu_o_narushenii_isklyuchitelnyix_prav_na_tovarnyiy_znak": "Ответ на претензию правообладателя: сроки, структура письма без признания нарушения, доказательства и риски молчания.",
+    "esli_otkazali_patent_chto_delat_dalshe_sroki_i_pps_rospatenta": "Отказ Роспатента по патенту: сроки на возражение в ППС, доработка формулы и когда имеет смысл повторная заявка.",
+    "sposobyi_zaschityi_izobreteniya_patent_nou_xau_ili_publikaciya": "Патент, ноу-хау или публикация: краткое сравнение сроков, стоимости и уровня защиты для изобретения в России.",
+    "pps_i_st_1493_kogda_obraschenie_kogda_vozrazhenie_protiv_chuzhogo_tz": "Ст. 1493 и ППС: когда подавать обращение на экспертизе, когда возражение после регистрации чужого знака и чем отличаются сроки.",
+    "kak_podat_zayavku_po_madridskoy_sisteme_iz_rossii_poshlinyi_i_poryadok": "Мадридская заявка из России: базовый знак, ММ2, пошлины ВОИС в CHF и порядок подачи через Роспатент пошагово.",
+    "chek_list_mozhno_li_publikovat_foto_kartin_i_rabot_xudozhnika_bez_naru": "Сокращённый чек-лист публикации фото картин: срок охраны, музейные правила и риски для коммерческого использования.",
+    "kak_podat_isk_o_neispolzovanii_tovarnogo_znaka_st_1486_i_sip": "Иск о неиспользовании знака по ст. 1486: подготовка предложения, пауза 2 месяца и подача в СИП в течение 30 дней.",
+    "kak_ispravit_snippet_chestnyiy_znak_import_dokumentyi_i_oshibki": "Ошибки маркировки при импорте в Честном знаке: ЕРВК, комплект документов и как устранить сниппет до выпуска товара."
+  },
+  "pages": {
+    "patent": "Патентование изобретений и полезных моделей в Роспатенте: подготовка заявки, экспертиза, госпошлины и сопровождение LIREATE.",
+    "patent_prom_obr": "Регистрация промышленных образцов: оформление заявки, проверка новизны и сопровождение в Роспатенте до получения патента.",
+    "mktu": "Классы МКТУ 1–45 на сайте LIREATE: расшифровка товаров и услуг для заявки на товарный знак и подбора перечня.",
+    "docs": "Документы и шаблоны LIREATE: доверенности, ходатайства и образцы для подачи в Роспатент и суд.",
+    "team": "Команда патентного бюро LIREATE: поверенные и юристы по товарным знакам, патентам и авторскому праву.",
+    "kontaktyi": "Контакты LIREATE в Зеленодольске и Москве: телефоны, e-mail и форма связи с патентным бюро.",
+    "uslugi": "Услуги LIREATE: регистрация и защита товарных знаков, патентов, авторских прав и споры в Роспатенте и суде.",
+    "avtor": "Юрий Горбачев — автор статей LIREATE о товарных знаках, патентах и защите интеллектуальной собственности."
+  },
+  "h1_demote_slug": [
+    "etapyi_registracii_tovarnogo_znaka",
+    "registraciya_tovarnogo_znaka_v_rossii",
+    "kak_izbezhat_otkaza_pri_registracii_tovarnogo_znaka",
+    "kak_ya_mogu_zaschitit_svoy_biznesplan_i_biznesmodel_ot_kopirovaniya"
+  ]
+}

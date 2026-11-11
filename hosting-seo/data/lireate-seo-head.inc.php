@@ -112,5 +112,15 @@ if (!function_exists('lireate_seo_render_head_tags')) {
             }
         }
 
+        if (function_exists('lireate_seo_render_service_schema_scripts') && function_exists('lireate_seo_request_path')) {
+            $slug = trim(lireate_seo_request_path(), '/');
+            $slugOne = $slug !== '' ? explode('/', $slug)[0] : '';
+            $canonical = !empty($GLOBALS['lireate_canonical_url']) ? (string) $GLOBALS['lireate_canonical_url'] : '';
+            $ogTitle = ($og !== null && isset($og['title'])) ? (string) $og['title'] : '';
+            if ($slugOne !== '') {
+                lireate_seo_render_service_schema_scripts($slugOne, $ogTitle, $canonical);
+            }
+        }
+
     }
 }
