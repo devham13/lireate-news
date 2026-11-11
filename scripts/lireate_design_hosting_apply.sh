@@ -69,11 +69,11 @@ if [[ "$APPLY_MAIN_PATCH" == "1" ]]; then
   lireate_main_php_touch "$MAIN"
 
   if grep -q 'lireate-ux-fixes.css?v=' "$MAIN"; then
-    sed -i 's|lireate-ux-fixes.css?v=[^"]*|lireate-ux-fixes.css?v=20261111design3|g' "$MAIN"
+    sed -i 's|lireate-ux-fixes.css?v=[^"]*|lireate-ux-fixes.css?v=20261111design4|g' "$MAIN"
   fi
   sed -i 's|lireate-home-dark.css?v=[^"]*|lireate-home-dark.css?v=20261111design3|g' "$MAIN" 2>/dev/null || true
   sed -i 's|lireate-cms-page-dark.css?v=[^"]*|lireate-cms-page-dark.css?v=20261111design3|g' "$MAIN" 2>/dev/null || true
-  sed -i 's|lireate-floating-widget-ux.js?v=[^"]*|lireate-floating-widget-ux.js?v=20261111design3|g' "$MAIN" 2>/dev/null || true
+  sed -i 's|lireate-floating-widget-ux.js?v=[^"]*|lireate-floating-widget-ux.js?v=20261111design4|g' "$MAIN" 2>/dev/null || true
 
   lireate_main_php_guard "$MAIN" || {
     rollback_main "$MAIN"
@@ -82,6 +82,13 @@ if [[ "$APPLY_MAIN_PATCH" == "1" ]]; then
   lireate_main_php_touch "$MAIN"
 else
   echo "SKIP_MAIN_PATCH (set LIREATE_DESIGN_PATCH_MAIN=1 to patch main.php)"
+  if [[ -f "$MAIN" ]]; then
+    lireate_main_php_guard "$MAIN" || exit 1
+    sed -i 's|lireate-ux-fixes.css?v=[^"]*|lireate-ux-fixes.css?v=20261111design4|g' "$MAIN" 2>/dev/null || true
+    sed -i 's|lireate-floating-widget-ux.js?v=[^"]*|lireate-floating-widget-ux.js?v=20261111design4|g' "$MAIN" 2>/dev/null || true
+    lireate_main_php_guard "$MAIN" || exit 1
+    lireate_main_php_touch "$MAIN"
+  fi
 fi
 
 if [[ -x "$REPO/scripts/lireate_design_post_deploy_verify.sh" ]]; then
