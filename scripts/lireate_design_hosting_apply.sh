@@ -163,9 +163,27 @@ if [[ "${LIREATE_DESIGN_PATCH_SERVICE_DOCK:-0}" == "1" && -f "$MAIN" ]]; then
   lireate_design_patch_main_php "$MAIN" "$REPO/scripts/lireate_design_patch_service_mobile_dock.py" "service_dock" || exit 1
 fi
 
+if [[ "${LIREATE_DESIGN_DEPLOY_NEW_SERVICES:-0}" == "1" ]]; then
+  if ! "$PY" "$REPO/scripts/lireate_design_deploy_service_landings.py" "$DOCROOT" "$REPO"; then
+    echo "DEPLOY_NEW_SERVICES_FAIL" >&2
+    exit 1
+  fi
+fi
+
 if [[ "${LIREATE_DESIGN_PATCH_SERVICE_LANDINGS:-0}" == "1" ]]; then
   if ! "$PY" "$REPO/scripts/lireate_design_patch_service_landings.py" "$DOCROOT" "$REPO"; then
     echo "SERVICE_LANDINGS_PATCH_FAIL" >&2
+    exit 1
+  fi
+fi
+
+if [[ "${LIREATE_DESIGN_PATCH_HOME_SERVICE_URLS:-0}" == "1" && -f "$MAIN" ]]; then
+  lireate_design_patch_main_php "$MAIN" "$REPO/scripts/lireate_design_patch_home_service_urls.py" "home_svc_urls" || exit 1
+fi
+
+if [[ "${LIREATE_DESIGN_PATCH_USLUGI_CARDS:-0}" == "1" ]]; then
+  if ! "$PY" "$REPO/scripts/lireate_design_patch_uslugi_cards.py" "$DOCROOT"; then
+    echo "USLUGI_CARDS_PATCH_FAIL" >&2
     exit 1
   fi
 fi

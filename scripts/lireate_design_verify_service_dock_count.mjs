@@ -16,6 +16,8 @@ const paths = [
   "/vozrazhenie_protiv_registracii_tovarnogo_znaka/",
   "/registraciya_tovarnogo_znaka_v_kitae/",
   "/zashchita_avtorskih_prav/",
+  "/dogovory/",
+  "/registraciya_programm_evm/",
   "/poisk_tovarnyh_znakov/",
   "/ekspertiza_tovarnogo_znaka/",
   "/mezhdunarodnaja_registracija_tovarnogo_znaka/",

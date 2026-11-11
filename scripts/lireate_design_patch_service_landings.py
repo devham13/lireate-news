@@ -24,6 +24,13 @@ LANDING_INDEX = [
     "vozrazhenie_protiv_registracii_tovarnogo_znaka/index.php",
     "registraciya_tovarnogo_znaka_v_kitae/index.php",
     "zashchita_avtorskih_prav/index.php",
+    "dogovory/index.php",
+    "registraciya_programm_evm/index.php",
+]
+
+STICKY_EXTRA = [
+    "dogovory/blocks/lireate-sticky-mobile.inc.php",
+    "registraciya_programm_evm/blocks/lireate-sticky-mobile.inc.php",
 ]
 
 # Empty sticky includes (no second lx-mobile-bar).
@@ -35,7 +42,7 @@ STICKY_REL_PATHS = [
     "registraciya_tovarnogo_znaka_v_kitae/blocks/lireate-sticky-mobile.inc.php",
     "zashchita_avtorskih_prav/blocks/lireate-sticky-mobile.inc.php",
     "registraciya_tovarnogo_znaka/blocks/lireate-sticky-mobile-landing.inc.php",
-]
+] + STICKY_EXTRA
 
 CSS_LINK = (
     '  <link rel="stylesheet" href="/template/css/lireate-service-mobile-bar.css?v=20261111svc3" '

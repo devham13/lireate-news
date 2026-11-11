@@ -30,26 +30,13 @@ $_lx_btn = 'Отправить заявку';
       </span>
       <span class="lireate-hero-v4__service-txt">Патенты</span>
     </a>
-    <a class="lireate-hero-v4__service lireate-hero-v4__service--form js-modal-form" href="#"
-      data-toggle="modal" data-frm="name,tel"
-      data-mtitle="<?php echo htmlspecialchars($_lx_mtitle, ENT_QUOTES, 'UTF-8'); ?>"
-      data-tomail="Программы ЭВМ"
-      data-success="<?php echo htmlspecialchars($_lx_success, ENT_QUOTES, 'UTF-8'); ?>"
-      data-btn="<?php echo htmlspecialchars($_lx_btn, ENT_QUOTES, 'UTF-8'); ?>"
-      role="button">
+    <a class="lireate-hero-v4__service" href="<?php echo htmlspecialchars(lireate_home_abs_url('/registraciya_programm_evm/'), ENT_QUOTES, 'UTF-8'); ?>">
       <span class="lireate-hero-v4__service-ico" aria-hidden="true">
         <svg viewBox="0 0 24 24" width="28" height="28" focusable="false"><path fill="currentColor" d="M8 6l-4 4 4 4v-3h6V9H8V6zm8 12l4-4-4-4v3H10v2h6v3z"/></svg>
       </span>
       <span class="lireate-hero-v4__service-txt">Программы ЭВМ</span>
     </a>
-    <a class="lireate-hero-v4__service lireate-hero-v4__service--form js-modal-form" href="#"
-      data-toggle="modal"
-      data-frm="name,tel"
-      data-mtitle="<?php echo htmlspecialchars($_lx_mtitle, ENT_QUOTES, 'UTF-8'); ?>"
-      data-tomail="Договоры"
-      data-success="<?php echo htmlspecialchars($_lx_success, ENT_QUOTES, 'UTF-8'); ?>"
-      data-btn="<?php echo htmlspecialchars($_lx_btn, ENT_QUOTES, 'UTF-8'); ?>"
-      role="button">
+    <a class="lireate-hero-v4__service" href="<?php echo htmlspecialchars(lireate_home_abs_url('/dogovory/'), ENT_QUOTES, 'UTF-8'); ?>">
       <span class="lireate-hero-v4__service-ico" aria-hidden="true">
         <svg viewBox="0 0 24 24" width="28" height="28" focusable="false"><path fill="currentColor" d="M6 2h9l5 5v15H6V2zm8 1v5h5M8 12h8v2H8v-2zm0 4h6v2H8v-2zm10-9.5 3.5 3.5"/></svg>
       </span>
