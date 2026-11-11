@@ -67,3 +67,29 @@ body.lireate-legacy-article-lu .product,
 body.lireate-legacy-article-lu .main-title {
   display: none !important;
 }
+
+/* Гибрид: новый .lireate-blog-page внутри legacy #articleBox (инлайн-стили CMS) */
+#articleBox:has(.lireate-blog-page),
+body.lireate-legacy-article-lu #articleBox:has(.lireate-blog-page) {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+#articleBox:has(.lireate-blog-page) > h1,
+#articleBox:has(.lireate-blog-page) > .imgBlock,
+#articleBox:has(.lireate-blog-page) > #articleInfo,
+#articleBox:has(.lireate-blog-page) > #faceImg {
+  display: none !important;
+}
+#articleBox .lireate-blog-page {
+  margin: 0 auto !important;
+  max-width: 1120px !important;
+}
+@media (max-width: 768px) {
+  #articleBox .lireate-blog-page {
+    padding-left: max(16px, env(safe-area-inset-left, 0px)) !important;
+    padding-right: max(16px, env(safe-area-inset-right, 0px)) !important;
+  }
+}
