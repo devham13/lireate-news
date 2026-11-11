@@ -60,11 +60,14 @@ body.lireate-cms-page-dark:not(.lireate-home-dark) footer:not(.lx-site-footer) {
   padding-left: 32px !important;
   padding-right: 32px !important;
 }
-body.lireate-cms-page-dark .main-screen.lireate-cms-hero {
+body.lireate-cms-page-dark .main-screen.lireate-cms-hero,
+body.lireate-cms-page-dark .main-screen.lireate-hero-v4.lireate-cms-hero,
+body.lireate-cms-page-dark #main_back.lireate-hero-v4 {
   min-height: 0 !important;
   padding: 40px 0 28px !important;
   background: #0b1020 !important;
   background-image: none !important;
+  background-size: auto !important;
 }
 body.lireate-cms-page-dark .main-screen.lireate-cms-hero .main-title {
   display: none !important;

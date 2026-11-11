@@ -38,7 +38,7 @@ fi
 
 CSS_DST="$DOCROOT/template/css"
 mkdir -p "$CSS_DST"
-for f in lireate-cms-page-dark.css lireate-cms-lu.css lireate-home-dark.css lireate-home-hero.css lireate-ux-fixes.css; do
+for f in lireate-cms-page-dark.css lireate-cms-lu.css lireate-mktu-lu.css lireate-home-dark.css lireate-home-hero.css lireate-ux-fixes.css; do
   src="$REPO/hosting-design/template/css/$f"
   [[ -f "$src" ]] || { echo "missing $src" >&2; exit 1; }
   bak "$CSS_DST/$f"
@@ -116,6 +116,29 @@ else
     lireate_main_php_guard "$MAIN" || exit 1
     lireate_main_php_touch "$MAIN"
   fi
+fi
+
+CMS_DIR_DST="$DOCROOT/template/page/cms"
+CMS_DIR_SRC="$REPO/hosting-design/template/page/cms"
+if [[ -d "$CMS_DIR_SRC" ]]; then
+  mkdir -p "$CMS_DIR_DST"
+  for inc in lireate-cms-hero-facts.inc.php lireate-cms-hero-patent.inc.php lireate-cms-hero-patent-prom.inc.php; do
+  if [[ -f "$CMS_DIR_SRC/$inc" ]]; then
+    bak "$CMS_DIR_DST/$inc"
+    cp -a "$CMS_DIR_SRC/$inc" "$CMS_DIR_DST/$inc"
+  fi
+  done
+fi
+
+if [[ "${LIREATE_DESIGN_PATCH_CMS:-0}" == "1" && -f "$MAIN" ]]; then
+  lireate_main_php_guard "$MAIN" || exit 1
+  bak "$MAIN"
+  if ! "$PY" "$REPO/scripts/lireate_design_patch_cms_pages.py" "$MAIN"; then
+    echo "CMS_PATCH_FAIL" >&2
+    exit 1
+  fi
+  lireate_main_php_guard "$MAIN" || exit 1
+  lireate_main_php_touch "$MAIN"
 fi
 
 if [[ "$APPLY_HOME_PATCH" == "1" ]]; then

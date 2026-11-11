@@ -37,7 +37,7 @@ def patch(text: str) -> str:
             r'<div class="main-title">.*?'
             + re.escape(h1_fragment)
             + r".*?</div>\s*"
-            r"(?:<br\s*/?>\s*){0,3}\s*"
+            r"(?:<br\s*/?>\s*){2,4}\s*"
             r"</div>",
             re.S,
         )
@@ -126,6 +126,14 @@ def patch(text: str) -> str:
     )
     if MARK_CMS_FOOTER not in text and foot_if_old in text and "lireate_design_home_footer_v1" in text:
         text = text.replace(foot_if_old, foot_if_new, 1)
+
+    orphan_pat = re.compile(
+        r"(<\?php include dirname\(__FILE__\) \. '/page/cms/lireate-cms-hero-[^']+'; \?>\s*"
+        r"</div>\s*)"
+        r"(?:\s*<br\s*/?>\s*){2,4}\s*</div>",
+        re.S,
+    )
+    text = orphan_pat.sub(r"\1", text)
 
     _validate(text, "after cms patch")
     return text
