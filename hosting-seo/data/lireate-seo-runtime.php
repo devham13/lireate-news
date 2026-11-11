@@ -172,7 +172,7 @@ if (!function_exists('lireate_seo_init_globals')) {
 if (!function_exists('lireate_seo_ob_filter_html')) {
     function lireate_seo_ob_filter_html($html)
     {
-        return preg_replace_callback(
+        $html = preg_replace_callback(
             '/\s*(<meta\s+property="og:image"[^>]*>\s*)'
             . '(?:<meta\s+property="og:image:type"[^>]*>\s*)?'
             . '(?:<meta\s+property="og:image:width"[^>]*>\s*)?'
@@ -185,6 +185,34 @@ if (!function_exists('lireate_seo_ob_filter_html')) {
             },
             $html
         );
+
+        $path = function_exists('lireate_seo_request_path') ? lireate_seo_request_path() : '';
+        if ($path === '/avtor' || $path === '/avtor/') {
+            $_meta_inc = dirname(__FILE__) . '/lireate-seo-page-meta.inc.php';
+            if (is_file($_meta_inc)) {
+                require_once $_meta_inc;
+            }
+            $static = function_exists('lireate_seo_static_page_meta')
+                ? lireate_seo_static_page_meta('avtor')
+                : null;
+            if (is_array($static)) {
+                if (!empty($static['title'])) {
+                    $t = htmlspecialchars((string) $static['title'], ENT_QUOTES, 'UTF-8');
+                    $html = preg_replace('/<title>[^<]*<\\/title>/i', '<title>' . $t . '</title>', $html, 1);
+                }
+                if (!empty($static['description'])) {
+                    $d = htmlspecialchars((string) $static['description'], ENT_QUOTES, 'UTF-8');
+                    $html = preg_replace(
+                        '/<meta\\s+name="description"\\s+content="[^"]*"/i',
+                        '<meta name="description" content="' . $d . '"',
+                        $html,
+                        1
+                    );
+                }
+            }
+        }
+
+        return $html;
     }
 }
 
