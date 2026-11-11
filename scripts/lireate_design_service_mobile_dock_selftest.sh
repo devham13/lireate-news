@@ -18,6 +18,7 @@ cp -a "$FIXTURE" "$WORK"
 lireate_main_php_guard "$WORK"
 php -l "$WORK" >/dev/null
 grep -q 'lireate_design_service_mobile_dock_v2 body' "$WORK"
+"$PY" "$REPO/scripts/lireate_design_dock_uri_regex_check.py"
 ! grep -q 'lireate_design_service_mobile_dock_v1 body' "$WORK" || {
   echo "FAIL: v1 body marker still present" >&2
   exit 1

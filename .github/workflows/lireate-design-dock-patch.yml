@@ -23,5 +23,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Install PHP
         run: sudo apt-get update && sudo apt-get install -y php-cli
+      - name: URI legacy regex (mktu1?)
+        run: python3 scripts/lireate_design_dock_uri_regex_check.py
       - name: Service dock main.php patch selftest
         run: bash scripts/lireate_design_service_mobile_dock_selftest.sh
