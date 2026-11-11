@@ -11,6 +11,7 @@ MARK_ASSETS = "lireate_design_home_hero_assets_v1"
 MARK_LU = "lireate_design_home_lu_wrap_v1"
 MARK_WHY = "lireate_design_home_why_grid_v1"
 MARK_MODAL_BTNS = "lireate_design_home_modal_form_btns_v1"
+MARK_MODALS_ROW = "lireate_design_home_modals_row_v1"
 MIN_LINES = 6000
 PAGE_CONTAINER = "page_container"
 
@@ -108,7 +109,7 @@ def patch(text: str) -> str:
         assets_block = (
             f'\\1\t<?php /* {MARK_ASSETS} */ if ($temp[\'page\'] === \'home\'): ?>\n'
             '\t<link rel="stylesheet" href="/template/page/uslugi/lireate-uslugi.css?v=20261111luhome" />\n'
-            '\t<link rel="stylesheet" href="/template/page/home/lireate-home-lu.css?v=20261111luhome" />\n'
+            '\t<link rel="stylesheet" href="/template/page/home/lireate-home-lu.css?v=20261111lu2" />\n'
             '\t<link rel="stylesheet" href="/template/css/lireate-home-hero.css?v=20261111hero3" />\n'
             '\t<script defer src="/template/js/lireate-home-hero.js?v=20261111hero3"></script>\n'
             '\t<script>document.documentElement.classList.add("lireate-home-lu-html");if(document.body){document.body.classList.add("lireate-home-lu-body");}</script>\n'
@@ -126,7 +127,7 @@ def patch(text: str) -> str:
         assets_block = (
             f'\t<?php /* {MARK_ASSETS} */ if ($temp[\'page\'] === \'home\'): ?>\n'
             '\t<link rel="stylesheet" href="/template/page/uslugi/lireate-uslugi.css?v=20261111luhome" />\n'
-            '\t<link rel="stylesheet" href="/template/page/home/lireate-home-lu.css?v=20261111luhome" />\n'
+            '\t<link rel="stylesheet" href="/template/page/home/lireate-home-lu.css?v=20261111lu2" />\n'
             '\t<link rel="stylesheet" href="/template/css/lireate-home-hero.css?v=20261111hero3" />\n'
             '\t<script defer src="/template/js/lireate-home-hero.js?v=20261111hero3"></script>\n'
             '\t<script>document.documentElement.classList.add("lireate-home-lu-html");if(document.body){document.body.classList.add("lireate-home-lu-body");}</script>\n'
@@ -174,6 +175,14 @@ def patch(text: str) -> str:
         if why_old in text:
             text = text.replace(why_old, why_new, 1)
         _validate(text, "after home-why")
+
+    modals_old = '<div class="row col-xs-12" style="padding: 0px 30px;" id="modals">'
+    modals_new = (
+        f'<div class="row col-xs-12 lh-modals" id="modals"><!-- {MARK_MODALS_ROW} -->'
+    )
+    if MARK_MODALS_ROW not in text and modals_old in text:
+        text = text.replace(modals_old, modals_new, 1)
+        _validate(text, "after home-modals-row")
 
     if MARK_MODAL_BTNS not in text:
         text = text.replace(

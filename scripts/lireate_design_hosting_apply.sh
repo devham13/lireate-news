@@ -38,7 +38,7 @@ fi
 
 CSS_DST="$DOCROOT/template/css"
 mkdir -p "$CSS_DST"
-for f in lireate-cms-page-dark.css lireate-home-dark.css lireate-home-hero.css lireate-ux-fixes.css; do
+for f in lireate-cms-page-dark.css lireate-cms-lu.css lireate-home-dark.css lireate-home-hero.css lireate-ux-fixes.css; do
   src="$REPO/hosting-design/template/css/$f"
   [[ -f "$src" ]] || { echo "missing $src" >&2; exit 1; }
   bak "$CSS_DST/$f"

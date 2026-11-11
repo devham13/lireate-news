@@ -45,27 +45,48 @@ body.lireate-home-dark #lireate-home .lu-h2 {
   margin: 0 0 12px !important;
   text-align: left !important;
 }
-body.lireate-home-dark #modals {
+body.lireate-home-dark #lireate-home #modals.lh-modals,
+body.lireate-home-dark #lireate-home #modals {
   display: grid !important;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
+  gap: 16px 20px;
   padding: 0 !important;
   width: 100% !important;
-  margin: 0 0 8px !important;
+  margin: 0 0 28px !important;
 }
 @media (min-width: 992px) {
-  body.lireate-home-dark #modals {
+  body.lireate-home-dark #lireate-home #modals {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 24px;
   }
 }
-body.lireate-home-dark #modals > .advant {
+body.lireate-home-dark #lireate-home #modals > .advant.col-lg-6,
+body.lireate-home-dark #lireate-home #modals > .col-xs-12.col-lg-6.advant {
   margin: 0 !important;
   width: 100% !important;
   float: none !important;
-  padding: 20px 22px !important;
+  padding: 24px !important;
   border-radius: 14px;
-  min-height: 100%;
   box-sizing: border-box;
+  display: flex !important;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+  min-height: 200px;
+}
+body.lireate-home-dark #lireate-home #modals > .advant p {
+  flex: 1 1 auto;
+  margin: 0 !important;
+}
+body.lireate-home-dark #lireate-home #modals > .advant .content-button {
+  margin-top: auto !important;
+  margin-bottom: 4px !important;
+  align-self: flex-start;
+  width: auto !important;
+  max-width: 100%;
+}
+body.lireate-home-dark #lireate-home #modals > .advant h3 {
+  margin: 0 0 4px !important;
 }
 body.lireate-home-dark #modals > .row.col-xs-12,
 body.lireate-home-dark #modals > .col-xs-12.col-lg-10,
@@ -75,6 +96,43 @@ body.lireate-home-dark #modals > .col-xs-12.col-lg-6 {
   margin: 0 !important;
   padding: 0 !important;
   float: none !important;
+}
+body.lireate-home-dark #lireate-home .lh-wrap > .row.col-xs-12 {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+body.lireate-home-dark #lireate-home .lh-wrap > .row.col-xs-12 h3.title {
+  margin: 36px 0 16px !important;
+  padding: 0 !important;
+  text-align: left !important;
+  width: 100% !important;
+}
+body.lireate-home-dark #lireate-home .lh-wrap [class*="offset"] {
+  margin-left: 0 !important;
+}
+body.lireate-home-dark #lireate-home .lh-wrap .col-xs-10,
+body.lireate-home-dark #lireate-home .lh-wrap .col-lg-8,
+body.lireate-home-dark #lireate-home .lh-wrap .col-lg-10,
+body.lireate-home-dark #lireate-home .lh-wrap .col-lg-6 {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  float: none !important;
+}
+body.lireate-home-dark .product.lh-product {
+  padding: 24px !important;
+  margin: 24px 0 12px !important;
+}
+body.lireate-home-dark .product.lh-product h2.sub-title {
+  text-align: left !important;
+  margin: 0 0 8px !important;
+  width: 100% !important;
+}
+body.lireate-home-dark .lireate-home-blog {
+  margin-top: 8px !important;
+  gap: 14px !important;
 }
 body.lireate-home-dark .lh-why-grid {
   display: grid !important;
@@ -96,16 +154,38 @@ body.lireate-home-dark .lh-why-grid > .advant {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  padding: 24px !important;
 }
 body.lireate-home-dark .lh-why-grid .advant ol {
-  margin: 0;
-  padding: 0 0 0 1.25em;
-  list-style-position: outside;
-  overflow: hidden;
+  margin: auto 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
 }
 body.lireate-home-dark .lh-why-grid .advant ol li {
-  margin-bottom: 10px;
-  padding-left: 0.25em;
+  position: relative;
+  margin: 0 0 12px;
+  padding: 0 0 0 28px;
+  line-height: 1.5;
+}
+body.lireate-home-dark .lh-why-grid .advant ol li:last-child {
+  margin-bottom: 0;
+}
+body.lireate-home-dark .lh-why-grid .advant ol li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0.05em;
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  background: rgba(99, 102, 241, 0.22);
+  color: #93c5fd;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
 }
 body.lireate-home-dark .lh-why-grid .cert {
   flex: 1;
