@@ -1,4 +1,4 @@
-/* Lu-shell: синхрон с темой (#leftSideBar left:-270 при max-width:1150px в main.php) */
+/* Lu-shell: синхрон с темой (#leftSideBar left:-270 при max-width:1150px в main.php). lireate_lu_column_center_v1 @1400px */
 /* ≤1150: меню скрыто — контент на всю ширину, gutter 24–32px */
 /* 1151–1250: сайдбар 240px | ≥1251: сайдбар 270px */
 
@@ -161,7 +161,21 @@ body.lireate-cms-page-dark:not(.lireate-home-dark) .container.content > *:not(.m
 @media (min-width: 1400px) {
   body.lireate-home-dark #lireate-home .lh-wrap,
   body.lireate-home-dark #lireate-home.lu-page .lu-wrap {
-    max-width: 1120px;
+    max-width: 1120px !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  body.lireate-mktu-lu-body .mktu_head,
+  body.lireate-mktu-lu-body .mktu_body,
+  body.lireate-mktu-lu-body .container.content > .conteinerY,
+  body.lireate-mktu-lu-body .lx-site-footer {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+    max-width: 1120px !important;
+    box-sizing: border-box;
   }
 }
 

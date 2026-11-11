@@ -132,6 +132,7 @@ if [[ "$APPLY_MAIN_PATCH" == "1" ]]; then
   sed -i 's|lireate-cms-page-dark.css?v=[^"]*|lireate-cms-page-dark.css?v=20261111design3|g' "$MAIN" 2>/dev/null || true
   sed -i 's|lireate-floating-widget-ux.js?v=[^"]*|lireate-floating-widget-ux.js?v=20261111design4|g' "$MAIN" 2>/dev/null || true
   sed -i 's|lireate-static-pages-lu.css?v=[^"]*|lireate-static-pages-lu.css?v=20261111static3|g' "$MAIN" 2>/dev/null || true
+  sed -i 's|lireate-lu-viewport.css?v=[^"]*|lireate-lu-viewport.css?v=20261111vp5|g' "$MAIN" 2>/dev/null || true
   sed -i 's|lireate-static-hero-lu.js?v=[^"]*|lireate-static-hero-lu.js?v=20261111static3|g' "$MAIN" 2>/dev/null || true
 
 else
@@ -144,6 +145,7 @@ else
     sed -i 's|lireate-home-hero.js?v=[^"]*|lireate-home-hero.js?v=20261111hero2|g' "$MAIN" 2>/dev/null || true
     sed -i 's|lireate-floating-widget-ux.js?v=[^"]*|lireate-floating-widget-ux.js?v=20261111design4|g' "$MAIN" 2>/dev/null || true
     sed -i 's|lireate-static-pages-lu.css?v=[^"]*|lireate-static-pages-lu.css?v=20261111static3|g' "$MAIN" 2>/dev/null || true
+  sed -i 's|lireate-lu-viewport.css?v=[^"]*|lireate-lu-viewport.css?v=20261111vp5|g' "$MAIN" 2>/dev/null || true
     sed -i 's|lireate-static-hero-lu.js?v=[^"]*|lireate-static-hero-lu.js?v=20261111static3|g' "$MAIN" 2>/dev/null || true
     lireate_main_php_guard "$MAIN" || exit 1
     lireate_main_php_touch "$MAIN"

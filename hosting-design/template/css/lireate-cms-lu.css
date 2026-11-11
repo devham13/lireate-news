@@ -8,7 +8,7 @@ body.lireate-cms-page-dark:not(.lireate-home-dark) .content.container {
 }
 body.lireate-cms-page-dark:not(.lireate-home-dark) .container.content > *:not(.main-screen):not(#leftSideBar) {
   max-width: 1120px;
-  margin-left: 0 !important;
+  margin-left: auto !important;
   margin-right: auto !important;
   padding-left: 32px !important;
   padding-right: 32px !important;
@@ -38,7 +38,8 @@ body.lireate-cms-page-dark .main-screen.lireate-hero-v4.row {
 }
 body.lireate-cms-page-dark .main-screen.lireate-hero-v4 .lireate-hero-v4__inner {
   max-width: 1120px;
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
 }
 body.lireate-cms-page-dark:not(.lireate-home-dark) .container.content [class*="col-lg-offset"],
@@ -102,7 +103,7 @@ body.lireate-cms-page-dark .container.content > .row.col-xs-12[style*="padding: 
   gap: 16px 20px;
   padding: 0 !important;
   max-width: 1120px !important;
-  margin-left: 0 !important;
+  margin-left: auto !important;
   margin-right: auto !important;
   width: 100% !important;
 }

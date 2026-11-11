@@ -19,6 +19,10 @@ on:
       - "scripts/lireate_design_patch_uslugi_cards.py"
       - "scripts/lireate_design_post_deploy_verify.sh"
       - "hosting-design/template/css/lireate-legacy-cms-lu.css"
+      - "hosting-design/template/css/lireate-lu-viewport.css"
+      - "hosting-design/template/css/lireate-cms-lu.css"
+      - "hosting-design/template/css/lireate-mktu-lu.css"
+      - "scripts/lireate_design_lu_column_center_selftest.sh"
       - ".github/workflows/lireate-design-dock-patch.yml"
   pull_request:
     paths:
@@ -38,6 +42,10 @@ on:
       - "scripts/lireate_design_patch_uslugi_cards.py"
       - "scripts/lireate_design_post_deploy_verify.sh"
       - "hosting-design/template/css/lireate-legacy-cms-lu.css"
+      - "hosting-design/template/css/lireate-lu-viewport.css"
+      - "hosting-design/template/css/lireate-cms-lu.css"
+      - "hosting-design/template/css/lireate-mktu-lu.css"
+      - "scripts/lireate_design_lu_column_center_selftest.sh"
       - ".github/workflows/lireate-design-dock-patch.yml"
 
 jobs:
@@ -59,3 +67,5 @@ jobs:
         run: |
           bash scripts/lireate_design_home_service_urls_selftest.sh
           bash scripts/lireate_design_uslugi_cards_selftest.sh
+      - name: LU wide column center (CSS grep)
+        run: bash scripts/lireate_design_lu_column_center_selftest.sh

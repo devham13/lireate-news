@@ -218,7 +218,7 @@ body.lireate-home-dark .lireate-home-blog-intro p {
 /* lx-site-footer offset — lireate-lu-viewport.css */
 body.lireate-home-dark .lx-site-footer-inner {
   max-width: 1120px;
-  margin: 0;
+  margin: 0 auto;
 }
 body.lireate-home-dark .lireate-hero-v4__service--form {
   cursor: pointer;
