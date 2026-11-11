@@ -94,6 +94,15 @@ body.lireate-cms-page-dark .container.content > .row.col-xs-12[style*="padding: 
   float: none !important;
   box-sizing: border-box;
 }
+body.lireate-cms-page-dark .container.content > .row.col-xs-12 > .col-xs-12.col-lg-10,
+body.lireate-cms-page-dark .container.content > .row.col-xs-12 > .col-xs-12.col-lg-10.col-lg-offset-1 {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  width: 100% !important;
+  max-width: 1120px !important;
+  float: none !important;
+}
 body.lireate-cms-page-dark .container.content h3.title,
 body.lireate-cms-page-dark .container.content .col-lg-10 h3.title {
   margin-left: 0 !important;
