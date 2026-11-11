@@ -63,8 +63,19 @@ $lu_h = function_exists('lireate_uslugi_h') ? 'lireate_uslugi_h' : 'lireate_avto
 <link rel="stylesheet" href="/template/page/uslugi/lireate-uslugi.css?v=<?php echo call_user_func($lu_h, $lu_v); ?>">
 <link rel="stylesheet" href="/template/page/avtor/lireate-avtor.css?v=<?php echo call_user_func($lu_h, $lu_v); ?>">
 <script>
-document.documentElement.classList.add('lireate-uslugi-html');
-if (document.body) { document.body.classList.add('lireate-uslugi-body'); }
+(function () {
+  function applyLireateAvtorBodyClass() {
+    document.documentElement.classList.add('lireate-avtor-html');
+    if (document.body) {
+      document.body.classList.add('lireate-avtor-body');
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', applyLireateAvtorBodyClass);
+  } else {
+    applyLireateAvtorBodyClass();
+  }
+})();
 </script>
 <div id="lireate-avtor" class="lu-page">
   <div class="lu-glow" aria-hidden="true"></div>

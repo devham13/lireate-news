@@ -1,9 +1,66 @@
-/* /avtor/ — тёмная страница автора (база: lireate-uslugi.css). */
-body.lireate-uslugi-body #lireate-avtor {
+/* /avtor/ — тёмная страница (lu-* из lireate-uslugi.css; НЕ lireate-uslugi-body — иначе .page_container { display:none }). */
+html.lireate-avtor-html,
+body.lireate-avtor-body {
+  background: #0b1020 !important;
+  color: #9ca8c4;
+}
+body.lireate-avtor-body,
+body.lireate-avtor-body #leftSideBar,
+body.lireate-avtor-body #leftSideBar :is(a, div, span, p, li, nav),
+body.lireate-avtor-body #lireate-avtor.lu-page,
+body.lireate-avtor-body #lireate-avtor.lu-page :is(h1, h2, h3, h4, p, a, span, strong, li, div, small, summary) {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif !important;
+}
+body.lireate-avtor-body #leftSideBar :is(.fa, [class^="fa-"], [class*=" fa-"]) {
+  font-family: FontAwesome !important;
+}
+body.lireate-avtor-body .wrapper,
+body.lireate-avtor-body .content,
+body.lireate-avtor-body .container.content,
+body.lireate-avtor-body .page_container,
+body.lireate-avtor-body #lireate-avtor {
+  background: #0b1020 !important;
+}
+body.lireate-avtor-body .page_container {
+  display: block !important;
+}
+body.lireate-avtor-body .container.content {
+  text-align: left !important;
+  padding-right: 0 !important;
+  max-width: none !important;
+}
+body.lireate-avtor-body .container.content > .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+body.lireate-avtor-body .container.content > .row > .col-xs-12 {
+  padding-left: 0;
+  padding-right: 0;
+  float: none;
+}
+body.lireate-avtor-body footer:not(.lx-site-footer),
+body.lireate-avtor-body .footer-ap {
+  display: none !important;
+}
+body.lireate-avtor-body {
+  padding-bottom: 0 !important;
+}
+#lireate-avtor {
   margin: 0;
   padding: 0;
   border: 0;
   overflow-x: clip;
+  position: relative;
+  isolation: isolate;
+  color: #9ca8c4;
+  font-size: 16px;
+  line-height: 1.65;
+}
+body.lireate-avtor-body #lireate-avtor .lx-site-footer {
+  margin-top: 48px;
+  padding: 32px 32px 40px !important;
+  background: #0b1020 !important;
+  border-top: 1px solid rgba(148, 163, 184, 0.15);
 }
 
 .la-hero {
