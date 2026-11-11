@@ -29,7 +29,8 @@ for (const url of urls) {
   for (const w of widths) {
     const page = await browser.newPage({ viewport: { width: w, height: w < 500 ? 812 : 900 } });
     const full = `${site}${url}?qa=${Date.now()}`;
-    await page.goto(full, { waitUntil: "networkidle", timeout: 120000 });
+    await page.goto(full, { waitUntil: "domcontentloaded", timeout: 90000 });
+    await page.waitForTimeout(800);
     const dark = await page.evaluate(() => document.body.classList.contains("lireate-cms-page-dark"));
     const overlap = await page.evaluate(() => {
       const w = document.getElementById("floatingBlock");
