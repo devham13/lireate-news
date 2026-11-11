@@ -51,7 +51,26 @@ for (const path of paths) {
           break;
         }
       }
+      const box = face ? face.querySelector(".contentBox") : null;
       const faceH = face ? face.getBoundingClientRect().height : 0;
+      const boxH = box ? box.getBoundingClientRect().height : 0;
+      let faceTailGap = 0;
+      if (face && box) {
+        const stats = box.querySelectorAll(".titleDesc");
+        let last = null;
+        for (let i = stats.length - 1; i >= 0; i--) {
+          const el = stats[i];
+          if (el && getComputedStyle(el).display !== "none" && (el.textContent || "").trim()) {
+            last = el;
+            break;
+          }
+        }
+        if (last) {
+          const faceBot = face.getBoundingClientRect().bottom;
+          const lastBot = last.getBoundingClientRect().bottom;
+          faceTailGap = Math.max(0, Math.round(faceBot - lastBot));
+        }
+      }
       return {
         h1,
         h2,
@@ -64,18 +83,27 @@ for (const path of paths) {
         path: p,
         strayText,
         faceH,
+        boxH,
+        faceTailGap,
       };
     }, path);
     const headingOk = data.h1 === 1 || (path === "/spasibo/" && data.h1 === 0 && data.h2 >= 1);
     const faceOk = path === "/spasibo/" || data.h1 >= 1;
-    const faceHeightOk =
-      path !== "/portfolio/" || w > 768 || (data.faceH > 0 && data.faceH < 280);
+    const portfolioMobileOk =
+      path !== "/portfolio/" ||
+      w > 768 ||
+      (data.boxH > 0 && data.boxH < 320 && data.faceH < 340 && data.faceTailGap < 80);
     let ok;
     if (path === "/uslugi/") {
       ok = !data.strayText;
     } else {
       ok =
-        headingOk && data.dark && !data.heroVisible && faceOk && !data.strayText && faceHeightOk;
+        headingOk &&
+        data.dark &&
+        !data.heroVisible &&
+        faceOk &&
+        !data.strayText &&
+        portfolioMobileOk;
     }
     console.log(ok ? "OK" : "FAIL", path, w, data);
     if (!ok) fail++;

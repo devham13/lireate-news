@@ -230,6 +230,13 @@ body.lireate-portfolio-body .page_container a {
   body.lireate-reviews-body #face .titleDesc:last-child {
     margin-bottom: 0 !important;
   }
+
+  body.lireate-static-lu #face,
+  body.lireate-static-lu #face .contentBox {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
   body.lireate-reviews-body .page_container,
   body.lireate-portfolio-body .page_container,
   body.lireate-spasibo-body .page_container {
