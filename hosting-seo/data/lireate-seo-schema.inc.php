@@ -288,6 +288,11 @@ if (!function_exists('lireate_seo_render_service_schema_scripts')) {
     }
 }
 
+$_lireate_seo_page_meta_inc = dirname(__FILE__) . '/lireate-seo-page-meta.inc.php';
+if (is_file($_lireate_seo_page_meta_inc)) {
+    require_once $_lireate_seo_page_meta_inc;
+}
+
 if (!function_exists('lireate_seo_prepare_og_globals')) {
     function lireate_seo_prepare_og_globals()
     {
@@ -307,6 +312,7 @@ if (!function_exists('lireate_seo_prepare_og_globals')) {
         $defaultImage = function_exists('lireate_seo_default_og_image')
             ? lireate_seo_default_og_image()
             : lireate_seo_https_url($base . '/images/OG_image.jpg');
+        $ogImage = $defaultImage;
 
         if ($kind === 'article') {
             $slug = trim($path, '/');
@@ -339,12 +345,30 @@ if (!function_exists('lireate_seo_prepare_og_globals')) {
             $parts = explode('/', $slug);
             $slugOne = $parts[0];
             if ($slugOne !== '' && count($parts) === 1) {
+                if (function_exists('lireate_seo_static_page_meta')) {
+                    $staticMeta = lireate_seo_static_page_meta($slugOne);
+                    if (is_array($staticMeta)) {
+                        if (!empty($staticMeta['title'])) {
+                            $title = $staticMeta['title'];
+                        }
+                        if (!empty($staticMeta['description'])) {
+                            $desc = $staticMeta['description'];
+                        }
+                        if (!empty($staticMeta['image'])) {
+                            $ogImage = lireate_seo_https_url($base . '/' . ltrim($staticMeta['image'], '/'));
+                        }
+                    }
+                }
                 $pageRow = lireate_seo_fetch_page_by_slug($slugOne);
                 if (is_array($pageRow)) {
-                    $title = isset($pageRow['seo_title']) && $pageRow['seo_title'] !== ''
-                        ? $pageRow['seo_title']
-                        : (isset($pageRow['name']) ? $pageRow['name'] : '');
-                    $desc = isset($pageRow['seo_description']) ? $pageRow['seo_description'] : '';
+                    if ($title === '') {
+                        $title = isset($pageRow['seo_title']) && $pageRow['seo_title'] !== ''
+                            ? $pageRow['seo_title']
+                            : (isset($pageRow['name']) ? $pageRow['name'] : '');
+                    }
+                    if ($desc === '') {
+                        $desc = isset($pageRow['seo_description']) ? $pageRow['seo_description'] : '';
+                    }
                 }
                 if ($desc === '' && isset($metaCfg['pages'][$slugOne])) {
                     $desc = (string) $metaCfg['pages'][$slugOne];
@@ -360,7 +384,7 @@ if (!function_exists('lireate_seo_prepare_og_globals')) {
             'title' => $title,
             'description' => $desc,
             'url' => $canonical !== '' ? $canonical : lireate_seo_https_url($base . '/'),
-            'image' => $defaultImage,
+            'image' => $ogImage !== '' ? $ogImage : $defaultImage,
         );
     }
 }

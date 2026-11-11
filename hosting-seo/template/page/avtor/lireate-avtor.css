@@ -1,0 +1,162 @@
+/* /avtor/ — тёмная страница автора (база: lireate-uslugi.css). */
+body.lireate-uslugi-body #lireate-avtor {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow-x: clip;
+}
+
+.la-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 350px);
+  gap: 40px;
+  align-items: start;
+  padding: 8px 0 32px;
+}
+
+.la-photo {
+  margin: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  background: rgba(15, 23, 42, 0.6);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.35);
+}
+
+.la-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 350px;
+}
+
+.la-role {
+  margin: 12px 0 0;
+  font-size: 17px;
+  line-height: 1.5;
+  color: #cbd5e1;
+}
+
+.la-prose {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #9ca8c4;
+}
+
+.la-prose p {
+  margin: 0 0 16px;
+}
+
+.la-list {
+  margin: 0 0 20px;
+  padding: 0 0 0 1.2em;
+  color: #9ca8c4;
+}
+
+.la-list li {
+  margin: 0 0 10px;
+}
+
+.la-pub-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.la-pub-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 18px 20px;
+  border-radius: 14px;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: rgba(15, 23, 42, 0.55);
+  text-decoration: none;
+  color: #e2e8f0;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.la-pub-card:hover,
+.la-pub-card:focus-visible {
+  border-color: rgba(96, 165, 250, 0.45);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  color: #f8fafc;
+}
+
+.la-pub-card strong {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.la-pub-card span {
+  font-size: 13px;
+  color: #94a3b8;
+  line-height: 1.45;
+}
+
+.la-contacts {
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  background: rgba(15, 23, 42, 0.5);
+}
+
+.la-contacts p {
+  margin: 0 0 12px;
+}
+
+.la-contacts a {
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+.la-contacts a:hover {
+  text-decoration: underline;
+}
+
+.la-nav-links {
+  margin-top: 16px;
+  font-size: 15px;
+}
+
+.la-nav-links a {
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+.la-nav-links a:hover {
+  text-decoration: underline;
+}
+
+.la-nav-links span {
+  color: #64748b;
+  margin: 0 8px;
+}
+
+@media (max-width: 900px) {
+  .la-hero {
+    grid-template-columns: 1fr;
+  }
+  .la-photo {
+    max-width: 280px;
+    justify-self: start;
+  }
+}
+
+@media (max-width: 768px) {
+  .la-pub-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 375px) {
+  .lu-wrap {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .la-photo {
+    max-width: 100%;
+  }
+}
