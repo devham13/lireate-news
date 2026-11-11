@@ -8,7 +8,8 @@ const outDir = process.argv[3];
 let slug = process.argv[4] || "page";
 try {
   const u = new URL(url);
-  const base = u.pathname.replace(/\/$/, "").split("/").filter(Boolean).pop() || "home";
+  const parts = u.pathname.replace(/\/$/, "").split("/").filter(Boolean);
+  const base = parts.length ? parts[parts.length - 1] : "home";
   if (slug === "page") slug = base;
 } catch {
   /* keep slug */

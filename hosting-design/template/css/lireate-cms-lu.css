@@ -17,6 +17,12 @@ body.lireate-cms-page-dark:not(.lireate-home-dark) .container.content > *:not(.m
   box-sizing: border-box;
   width: 100% !important;
   float: none !important;
+  clear: both !important;
+}
+body.lireate-cms-page-dark:not(.lireate-home-dark) .container.content > .col-xs-12 {
+  padding-left: 32px !important;
+  padding-right: 32px !important;
+  margin-left: 0 !important;
 }
 body.lireate-cms-page-dark:not(.lireate-home-dark) .container.content > .main-screen {
   max-width: 100% !important;
@@ -203,8 +209,12 @@ body.lireate-cms-page-dark .row.delimiter2 .sub-title {
   font: 400 16px/1.6 "Inter", sans-serif !important;
 }
 @media (max-width: 767px) {
-  body.lireate-cms-page-dark .container.content > .row.col-xs-12[style*="padding: 0px 30px"] {
+  body.lireate-cms-page-dark .container.content > .row.col-xs-12[style*="padding: 0px 30px"]:has(> .advant) {
     grid-template-columns: 1fr;
+  }
+  body.lireate-cms-page-dark .container.content > .row.col-xs-12[style*="padding: 0px 30px"]:has(> .advant) > .advant {
+    min-width: 0 !important;
+    overflow-wrap: anywhere;
   }
 }
 @media (max-width: 1150px) {

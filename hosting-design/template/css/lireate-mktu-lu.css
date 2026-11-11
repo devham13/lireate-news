@@ -110,11 +110,18 @@ body.lireate-mktu-lu-body .txt-content h3 {
   font-weight: 700 !important;
   text-transform: none !important;
 }
-body.lireate-mktu-lu-body .left_block {
+body.lireate-mktu-lu-body .conteinerX .left_block {
   order: 2;
-  width: 100% !important;
+  width: 320px !important;
+  min-width: 280px !important;
   max-width: 320px !important;
-  min-width: 0;
+  flex: 0 0 320px !important;
+  box-sizing: border-box;
+}
+body.lireate-mktu-lu-body .left_block .block_contact,
+body.lireate-mktu-lu-body .left_block > div {
+  width: 100% !important;
+  max-width: 100% !important;
   box-sizing: border-box;
 }
 body.lireate-mktu-lu-body .txt-content.news-content {

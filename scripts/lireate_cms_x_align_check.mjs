@@ -56,7 +56,8 @@ for (const { path, slug, expect, tol } of pages) {
     const okX =
       w < 1150
         ? true
-        : rep.xs.length === 0 || rep.xs.every((x) => Math.abs(x - ref) <= tol);
+        : rep.xs.length === 0 ||
+          rep.xs.every((x) => Math.abs(x - rep.ref) <= tol);
     console.log(JSON.stringify({ slug, ...rep, okX }));
     if (!okX || rep.overflow.length) fail = 1;
     await page.close();
