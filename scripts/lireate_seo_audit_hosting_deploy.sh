@@ -167,6 +167,9 @@ else:
     print({'indexnow':'skipped'})
 "
 
+"$PY" "$REPO/scripts/lireate_remove_facebook_pixel.py" --docroot "$DOCROOT"
+php -l "$DOCROOT/template/main.php" >/dev/null
+
 curl -sf -o /dev/null -w "home:%{http_code}\n" "${SITE%/}/"
 curl -sf -o /dev/null -w "poisk:%{http_code}\n" "${SITE%/}/poisk_tovarnyh_znakov/"
 for s in PHP_errors.log cookie.txt everest.zip; do
