@@ -109,7 +109,7 @@ def patch(text: str) -> str:
         assets_block = (
             f'\\1\t<?php /* {MARK_ASSETS} */ if ($temp[\'page\'] === \'home\'): ?>\n'
             '\t<link rel="stylesheet" href="/template/page/uslugi/lireate-uslugi.css?v=20261111luhome" />\n'
-            '\t<link rel="stylesheet" href="/template/page/home/lireate-home-lu.css?v=20261111lu2" />\n'
+            '\t<link rel="stylesheet" href="/template/page/home/lireate-home-lu.css?v=20261111lu3" />\n'
             '\t<link rel="stylesheet" href="/template/css/lireate-home-hero.css?v=20261111hero3" />\n'
             '\t<script defer src="/template/js/lireate-home-hero.js?v=20261111hero3"></script>\n'
             '\t<script>document.documentElement.classList.add("lireate-home-lu-html");if(document.body){document.body.classList.add("lireate-home-lu-body");}</script>\n'
@@ -127,7 +127,7 @@ def patch(text: str) -> str:
         assets_block = (
             f'\t<?php /* {MARK_ASSETS} */ if ($temp[\'page\'] === \'home\'): ?>\n'
             '\t<link rel="stylesheet" href="/template/page/uslugi/lireate-uslugi.css?v=20261111luhome" />\n'
-            '\t<link rel="stylesheet" href="/template/page/home/lireate-home-lu.css?v=20261111lu2" />\n'
+            '\t<link rel="stylesheet" href="/template/page/home/lireate-home-lu.css?v=20261111lu3" />\n'
             '\t<link rel="stylesheet" href="/template/css/lireate-home-hero.css?v=20261111hero3" />\n'
             '\t<script defer src="/template/js/lireate-home-hero.js?v=20261111hero3"></script>\n'
             '\t<script>document.documentElement.classList.add("lireate-home-lu-html");if(document.body){document.body.classList.add("lireate-home-lu-body");}</script>\n'

@@ -28,50 +28,57 @@ def _validate(text: str, label: str) -> None:
 def patch(text: str) -> str:
     _validate(text, "before cms patch")
 
-    patent_old = (
-        '\t\t\t<div class="row main-screen main_back" id="main_back" style="margin: 0;">\n'
-        "\t        	<br/>\n"
-        "\t        	<br/>\n"
-        "\t        	<br/>\n"
-        '\t        	<div class="main-title">\n'
-        "\t        		<h1>Запатентуем Ваше изобретение в России и во всём мире</h1>\n"
-        "\t	        	<h2>Защищаем единое целое идею и техническое решение.</h2>\n"
-        "\t	        	<h3>Мы знаем, как получить защиту уже завтра.</h3>\n"
-        '\t	        	<div class="btn main-button js-modal-form" data-toggle="modal" data-frm="name,tel" data-mtitle="Оставьте заявку и мы свяжемся с вами в ближайшее время" data-tomail="Заказать обратный звонок" data-success="Мы перезвоним Вам в ближайшее время." data-btn="Отправить заявку">Интересно? Обращайтесь!</div>\n'
-        "\t        	</div>\n"
-        "\t        	<br/>\n"
-        "\t        	<br/>\n"
-        "\t        	</div>"
-    )
-    patent_new = (
-        f'\t\t\t<div class="row main-screen main_back lireate-hero-v4 lireate-cms-hero" id="main_back" style="margin: 0;"><!-- {MARK_PATENT_HERO} -->\n'
-        "\t\t<?php include dirname(__FILE__) . '/page/cms/lireate-cms-hero-patent.inc.php'; ?>\n"
-        "\t        	</div>"
-    )
-    if MARK_PATENT_HERO not in text and patent_old in text:
-        text = text.replace(patent_old, patent_new, 1)
+    def _swap_hero(block: str, marker: str, include_name: str, h1_fragment: str) -> str:
+        if marker in block:
+            return block
+        pat = re.compile(
+            r'<div class="row main-screen main_back" id="main_back" style="margin: 0;">\s*'
+            r"(?:<br\s*/?>\s*){2,4}\s*"
+            r'<div class="main-title">.*?'
+            + re.escape(h1_fragment)
+            + r".*?</div>\s*"
+            r"(?:<br\s*/?>\s*){0,3}\s*"
+            r"</div>",
+            re.S,
+        )
+        repl = (
+            f'<div class="row main-screen main_back lireate-hero-v4 lireate-cms-hero" id="main_back" '
+            f'style="margin: 0;"><!-- {marker} -->\n'
+            f"\t\t<?php include dirname(__FILE__) . '/page/cms/{include_name}'; ?>\n"
+            "\t        </div>"
+        )
+        new_block, n = pat.subn(repl, block, count=1)
+        return new_block if n else block
 
-    prom_old = (
-        '\t\t\t<div class="row main-screen main_back" id="main_back" style="margin: 0;">\n'
-        "\t        	<br/>\n"
-        "\t        	<br/>\n"
-        "\t        	<br/>\n"
-        '\t        	<div class="main-title">\n'
-        "\t        		<h1>Патентуем дизайн и внешний вид вашего продукта с получением свидетельства на промышленный образец</h1>\n"
-        "\t	        	<h2>Давайте посчитаем, сколько это будет стоить?</h2>\n"
-        '\t	        	<div class="btn main-button js-modal-form" data-toggle="modal" data-frm="name,tel" data-mtitle="Оставьте заявку и мы свяжемся с вами в ближайшее время" data-tomail="Рассчитать" data-success="Мы перезвоним Вам в ближайшее время." data-btn="Рассчитать">Рассчитать</div>\n'
-        "\t        	</div>\n"
-        "\t        	<br/>\n"
-        "\t        	<br/>\n"
-        "\t        	</div>"
-    )
-    prom_new = (
-        f'\t\t\t<div class="row main-screen main_back lireate-hero-v4 lireate-cms-hero" id="main_back" style="margin: 0;"><!-- {MARK_PROM_HERO} -->\n'
-        "\t\t<?php include dirname(__FILE__) . '/page/cms/lireate-cms-hero-patent-prom.inc.php'; ?>\n"
-        "\t        	</div>"
-    )
-    if MARK_PROM_HERO not in text and prom_old in text:
-        text = text.replace(prom_old, prom_new, 1)
+    anchor_patent = "\t\t<?php if($temp['page']=='patent'):?>"
+    pos_p = text.find(anchor_patent)
+    if pos_p != -1:
+        end_p = text.find("\t\t<?php if($temp['page']=='patent_prom_obr'):?>", pos_p)
+        if end_p != -1:
+            seg = text[pos_p:end_p]
+            seg2 = _swap_hero(
+                seg,
+                MARK_PATENT_HERO,
+                "lireate-cms-hero-patent.inc.php",
+                "Запатентуем Ваше изобретение",
+            )
+            if seg2 != seg:
+                text = text[:pos_p] + seg2 + text[end_p:]
+
+    anchor_prom = "\t\t<?php if($temp['page']=='patent_prom_obr'):?>"
+    pos_r = text.find(anchor_prom)
+    if pos_r != -1:
+        end_r = text.find("\t\t<?php if($temp['page']", pos_r + len(anchor_prom))
+        if end_r != -1:
+            seg = text[pos_r:end_r]
+            seg2 = _swap_hero(
+                seg,
+                MARK_PROM_HERO,
+                "lireate-cms-hero-patent-prom.inc.php",
+                "Патентуем дизайн и внешний вид",
+            )
+            if seg2 != seg:
+                text = text[:pos_r] + seg2 + text[end_r:]
 
     mktu_body_snip = (
         f" /* {MARK_MKTU_BODY} */ "
