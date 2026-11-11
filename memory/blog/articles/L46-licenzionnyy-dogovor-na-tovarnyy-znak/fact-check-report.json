@@ -1,0 +1,108 @@
+{
+  "article": "memory/blog/articles/L46-licenzionnyy-dogovor-na-tovarnyy-znak/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 14,
+  "verified_facts_count": 2,
+  "unverified_facts_count": 12,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "илера и селлера. Нормы и пошлины сверены на 11.11.2026; материал не заменяет индивидуальную консультацию",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "5 лет",
+      "kind": "metric_or_duration",
+      "context": "ТЗ; если срок не указан, общее правило лицензий: 5 лет (п. 4 ст. 1235), если стороны не выбрали иной. Во",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1232",
+      "kind": "large_number",
+      "context": "сможет противопоставить право третьим лицам ( ст. 1232 п. 6 ). Устная договорённость не заменяет письменн",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1490",
+      "kind": "large_number",
+      "context": "договорённость не заменяет письменную форму ( ст. 1490 ). Ниже вы выберете вид лицензии, соберёте услови",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "15 000",
+      "kind": "large_number",
+      "context": "те вид лицензии, соберёте условия по ГК, оплатите 15 000 ₽ по п. 3.10 и подадите заявление на регистрацию",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1236",
+      "kind": "large_number",
+      "context": "одажа знака. Виды: исключительная и простая ( ст. 1236 ); молчание в договоре = простая . Нужна письменн",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "13 000",
+      "kind": "large_number",
+      "context": "аво несостоявшееся . Пошлина п. 3.10 : 15 000 ₽ + 13 000 ₽ за каждый доп. ТЗ в заявлении. Для правообладат",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1489",
+      "kind": "large_number",
+      "context": "одписанием Процедура Эффект Пошлина Лицензия (ст. 1489) Владелец прежний, есть пользователь п. 3.10: 15",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1488",
+      "kind": "large_number",
+      "context": "блица ; канон — rospatent.gov.ru) Отчуждение (ст. 1488) Новый правообладатель п. 3.11: 15 000 ₽ + 13 000",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1238",
+      "kind": "large_number",
+      "context": "асть прав дальше (субдилер, субфранчайзи). По ст. 1238 нужно письменное согласие лицензиара; объём прав с",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1235",
+      "kind": "large_number",
+      "context": "ловий договор не считается заключённым ( п. 6 ст. 1235 ). Для лицензии на ТЗ по ст. 1489 нужны: Предмет:",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1484",
+      "kind": "large_number",
+      "context": "ером свидетельства , способы использования по ст. 1484 (товары, упаковка, реклама, интернет и др.). Пере",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "нее лицензия с согласия правообладателя (п. 6 ст. 1483), чем борьба за новую заявку. Делайте: сверить кл",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "13 500",
+      "kind": "large_number",
+      "context": "новый ТЗ и с п. 3.11 при отчуждении. Старые цифры 13 500 ₽ в калькуляторах сверяйте с таблицей на rospaten",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

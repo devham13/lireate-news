@@ -1,0 +1,514 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-11",
+    "today_ru": "11.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-13",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-11 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L46",
+    "priority": "P2",
+    "slug": "licenzionnyy-dogovor-na-tovarnyy-znak",
+    "h1": "Как оформить лицензионный договор на товарный знак: виды лицензии, обязательные условия и регистрация в Роспатенте",
+    "primary_query": "как оформить лицензионный договор на товарный знак",
+    "secondary_queries": [
+      "исключительная лицензия товарный знак",
+      "сублицензия товарный знак",
+      "регистрация лицензии в роспатенте",
+      "образец лицензии на использование бренда"
+    ],
+    "search_intent": "workflow",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "как оформить лицензионный договор на товарный знак 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Лицензионный Договор На Товарный Знак: Регистрация 2026 | Gpg",
+          "url": "https://gpg.ru/magazine/trademark/litsenzionnyy-dogovor-na-tovarnyy-znak-kak-oformit-i-zaregistrirovat-v-2026-godu.html",
+          "snippet": ""
+        },
+        {
+          "title": "Лицензионный договор на товарный знак: гайд 2026 | Qbrand",
+          "url": "https://qbrand.ru/blog/licenzionnyj-dogovor-na-tovarnyj-znak/",
+          "snippet": "Как заключить лицензионный договор на товарный знак и зарегистрировать его в Роспатенте в 2026 году: виды лицензий, существенные условия, сроки и порядок регистрации."
+        },
+        {
+          "title": "Лицензионный договор на товарный знак: как передать право использования ...",
+          "url": "https://www.klerk.ru/blogs/roskom24/697158/",
+          "snippet": "Когда нужна лицензия на ТЗ, как её правильно оформить и зарегистрировать в Роспатенте, пошлина 15 000 ₽, виды, налоги, типовые ошибки и риски."
+        },
+        {
+          "title": "Лицензионный договор на товарный знак | конструктор онлайн 2026 | Примадок",
+          "url": "https://primadoc.ru/doc/licenzionnyy-dogovor/na-tovarnyy-znak",
+          "snippet": "Разбираем, когда нужен лицензионный договор, чем он отличается от отчуждения, какие условия в нем обязательно указать, как проходит регистрация в Роспатенте и какие ошибки могут сделать использование бренда рискованным."
+        },
+        {
+          "title": "Лицензионный договор на товарный знак: виды, регистрация",
+          "url": "https://ipbot.ru/articles/licenzionnyj-dogovor-tz/",
+          "snippet": "Составьте «Лицензионный договор на товарный знак» по нормам РФ онлайн за пару минут: шаблон с подсказками, DOCX и PDF."
+        },
+        {
+          "title": "Образец лицензионного договора на товарный знак \\ 2026-2025-2024 год ...",
+          "url": "https://www.consultant.ru/law/podborki/obrazec_licenzionnogo_dogovora_na_tovarnyj_znak/",
+          "snippet": "Как оформить лицензионный договор на товарный знак. Виды лицензий, обязательная регистрация в Роспатенте, стоимость и образец."
+        }
+      ],
+      "searched_at": "2026-11-11"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "как оформить лицензионный договор на товарный знак ноябрь 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Лицензионный Договор На Товарный Знак: Регистрация 2026 | Gpg",
+          "url": "https://gpg.ru/magazine/trademark/litsenzionnyy-dogovor-na-tovarnyy-znak-kak-oformit-i-zaregistrirovat-v-2026-godu.html",
+          "snippet": ""
+        },
+        {
+          "title": "Лицензионный договор на товарный знак: гайд 2026 | Qbrand",
+          "url": "https://qbrand.ru/blog/licenzionnyj-dogovor-na-tovarnyj-znak/",
+          "snippet": "Как заключить лицензионный договор на товарный знак и зарегистрировать его в Роспатенте в 2026 году: виды лицензий, существенные условия, сроки и порядок регистрации."
+        },
+        {
+          "title": "Лицензионный договор на товарный знак: как передать право использования ...",
+          "url": "https://www.klerk.ru/blogs/roskom24/697158/",
+          "snippet": "Когда нужна лицензия на ТЗ, как её правильно оформить и зарегистрировать в Роспатенте, пошлина 15 000 ₽, виды, налоги, типовые ошибки и риски."
+        },
+        {
+          "title": "Регистрация лицензионного договора на товарный знак в Роспатенте ...",
+          "url": "https://legium.pro/blog/%D1%80%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%BB%D0%B8%D1%86%D0%B5%D0%BD%D0%B7%D0%B8%D0%BE%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B0-%D0%BD%D0%B0-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BD%D1%8B%D0%B9-%D0%B7%D0%BD%D0%B0%D0%BA-%D0%B2-%D1%80%D0%BE%D1%81%D0%BF%D0%B0%D1%82%D0%B5%D0%BD%D1%82%D0%B5-%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0-%D0%B8-%D1%81%D1%80%D0%BE%D0%BA%D0%B8",
+          "snippet": "Лицензионный договор на товарный знак — это рабочий инструмент для бизнеса, который хочет развивать бренд через партнеров, дилеров, производителей, маркетплейсы или франшизную ..."
+        },
+        {
+          "title": "Лицензионный договор на товарный знак: как оформить, зарегистрировать и ...",
+          "url": "https://решено.tech/guides/licenzionniy-dogovor-tovarnyy-znak",
+          "snippet": "Пошаговое руководство по регистрации лицензионного договора в Роспатенте в 2026 году: перечень документов, сроки действия и требования к оформлению."
+        },
+        {
+          "title": "Лицензионный договор об использовании товарного знака: образец 2026",
+          "url": "https://prodogovory.ru/docs/licenzionnye-dogovory/litsenzionnyy-dogovor-na-tovarnyy-znak",
+          "snippet": "Лицензионный договор — это правовой инструмент для передачи права использования товарного знака. Он нужен в трёх типичных ситуациях:"
+        }
+      ],
+      "searched_at": "2026-11-11"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "как оформить лицензионный договор на товарный знак новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Лицензионный Договор На Товарный Знак: Регистрация 2026 | Gpg",
+          "url": "https://gpg.ru/magazine/trademark/litsenzionnyy-dogovor-na-tovarnyy-znak-kak-oformit-i-zaregistrirovat-v-2026-godu.html",
+          "snippet": ""
+        },
+        {
+          "title": "Лицензионный договор на товарный знак: гайд 2026 | Qbrand",
+          "url": "https://qbrand.ru/blog/licenzionnyj-dogovor-na-tovarnyj-znak/",
+          "snippet": "Как заключить лицензионный договор на товарный знак и зарегистрировать его в Роспатенте в 2026 году: виды лицензий, существенные условия, сроки и порядок регистрации."
+        },
+        {
+          "title": "Лицензионный договор на товарный знак: как передать право использования ...",
+          "url": "https://www.klerk.ru/blogs/roskom24/697158/",
+          "snippet": "Когда нужна лицензия на ТЗ, как её правильно оформить и зарегистрировать в Роспатенте, пошлина 15 000 ₽, виды, налоги, типовые ошибки и риски."
+        },
+        {
+          "title": "Регистрация лицензионного договора на товарный знак в Роспатенте ...",
+          "url": "https://legium.pro/blog/%D1%80%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%BB%D0%B8%D1%86%D0%B5%D0%BD%D0%B7%D0%B8%D0%BE%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B0-%D0%BD%D0%B0-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BD%D1%8B%D0%B9-%D0%B7%D0%BD%D0%B0%D0%BA-%D0%B2-%D1%80%D0%BE%D1%81%D0%BF%D0%B0%D1%82%D0%B5%D0%BD%D1%82%D0%B5-%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0-%D0%B8-%D1%81%D1%80%D0%BE%D0%BA%D0%B8",
+          "snippet": "Если правообладатель хочет легально предоставить другой компании или ИП право использовать зарегистрированный товарный знак, нужно заключить лицензионный договор и зарегистрировать ..."
+        },
+        {
+          "title": "Лицензионный договор на товарный знак — образец 2026",
+          "url": "https://marqatm.ru/analytics/licenzionnyj-dogovor-na-tz.html",
+          "snippet": "Пошаговое руководство по регистрации лицензионного договора в Роспатенте в 2026 году: перечень документов, сроки действия и требования к оформлению."
+        },
+        {
+          "title": "Лицензионный договор на товарный знак: виды, регистрация",
+          "url": "https://ipbot.ru/articles/licenzionnyj-dogovor-tz/",
+          "snippet": "Подготовим и зарегистрируем лицензионный договор в Роспатенте — от проверки условий до внесения записи в реестр."
+        }
+      ],
+      "searched_at": "2026-11-11"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "исключительная лицензия товарный знак 2026",
+      "purpose": "вторичный запрос: исключительная лицензия товарный знак",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Исключительная лицензия на товарный знак: договор 2026",
+          "url": "https://prodogovory.ru/docs/licenzionnye-dogovory/litsenziya-na-tovarnyy-znak-isklyuchitelnaya",
+          "snippet": ""
+        },
+        {
+          "title": "Виды лицензий на товарный знак - vitvet.com",
+          "url": "https://vitvet.com/articles/tovarnyj-znak/dogovory/vidy-licenzij/",
+          "snippet": "Договор исключительной лицензии на использование товарного знака - отличия от неисключительной, контроль качества лицензиара. Word, PDF."
+        },
+        {
+          "title": "Лицензионный Договор На Товарный Знак: Регистрация 2026 | Gpg",
+          "url": "https://gpg.ru/magazine/trademark/litsenzionnyy-dogovor-na-tovarnyy-znak-kak-oformit-i-zaregistrirovat-v-2026-godu.html",
+          "snippet": "По состоянию на май 2026 года российское законодательство предусматривает два основных вида лицензий: исключительную и неисключительную. Выбор между ними определяет, сохранит ли правообладатель возможность самостоятельно использовать знак и выдавать лицензии третьим лицам."
+        },
+        {
+          "title": "Исключительная и неисключительная лицензия 2026 — разбор юриста | Legal ...",
+          "url": "https://legalwording.ru/ru/articles/isklyuchitelnaya-i-neisklyuchitelnaya-liczenzii",
+          "snippet": "Как заключить лицензионный договор на товарный знак и зарегистрировать его в Роспатенте в 2026 году: виды лицензий, существенные условия, сроки и порядок регистрации."
+        },
+        {
+          "title": "Образец лицензионного договора на товарный знак 2026",
+          "url": "https://marqatm.ru/analytics/obrazec-licenzionnogo-dogovora-tz.html",
+          "snippet": "Простая (неисключительная) лицензия предоставляет лицензиату право использования РИД с сохранением за лицензиаром права выдавать аналогичные лицензии иным лицам. Исключительная лицензия исключает выдачу таких же лицензий другим лицам в пределах согласованных территорий, сроков и способов использования (см. статья 1236 ГК РФ)."
+        },
+        {
+          "title": "Что такое исключительная лицензия на товарный знак",
+          "url": "https://marqatm.ru/analytics/chto-takoe-isklyuchitelnaya-licenziya-tz.html",
+          "snippet": "Составим лицензионный договор с нуля и зарегистрируем его в Роспатенте — без ошибок в существенных условиях."
+        }
+      ],
+      "searched_at": "2026-11-11"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "сублицензия товарный знак 2026",
+      "purpose": "вторичный запрос: сублицензия товарный знак",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Сублицензионный договор на товарный знак: шаблон 2026 | Legal Wording",
+          "url": "https://legalwording.ru/ru/documents/subliczenzionnyj-dogovor-na-tovarnyj-znak",
+          "snippet": ""
+        },
+        {
+          "title": "Сублицензия на товарный знак",
+          "url": "https://vitvet.com/articles/tovarnyj-znak/dogovory/sublicenziya/",
+          "snippet": "Сублицензионный договор на товарный знак по ст. 1238 ГК РФ: образец, регистрация в Роспатенте, роялти, контроль качества."
+        },
+        {
+          "title": "Сублицензионный договор на использование товарного знака",
+          "url": "https://www.consultant.ru/law/podborki/sublicenzionnyj_dogovor_na_ispolzovanie_tovarnogo_znaka/",
+          "snippet": "По состоянию на май 2026 года требования к форме и регистрации сублицензионного договора остаются прежними: Роспатент регистрирует предоставление права использования товарного знака, в том числе по сублицензии."
+        },
+        {
+          "title": "Лицензионный договор на товарный знак: гайд 2026 | Qbrand",
+          "url": "https://qbrand.ru/blog/licenzionnyj-dogovor-na-tovarnyj-znak/",
+          "snippet": "(КонсультантПлюс, 2026) Нет, закон не предусматривает регистрацию сублицензионных договоров. Но в ряде случаев потребуется зарегистрировать предоставление права использования объекта интеллектуальной собственности по такому договору."
+        },
+        {
+          "title": "Лицензия на товарный знак \\ 2026-2025-2024 год \\ Акты, образцы, формы ...",
+          "url": "https://www.consultant.ru/law/podborki/licenziya_na_tovarnyj_znak/",
+          "snippet": "Когда нужна лицензия на ТЗ, как её правильно оформить и зарегистрировать в Роспатенте, пошлина 15 000 ₽, виды, налоги, типовые ошибки и риски."
+        },
+        {
+          "title": "Лицензионный Договор На Товарный Знак: Регистрация 2026 | Gpg",
+          "url": "https://gpg.ru/magazine/trademark/litsenzionnyy-dogovor-na-tovarnyy-znak-kak-oformit-i-zaregistrirovat-v-2026-godu.html",
+          "snippet": "Подборка наиболее важных документов по запросу Лицензия на товарный знак (нормативно-правовые акты, формы, статьи, консультации экспертов и многое другое)."
+        }
+      ],
+      "searched_at": "2026-11-11"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "регистрация лицензии в роспатенте 2026",
+      "purpose": "вторичный запрос: регистрация лицензии в роспатенте",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как зарегистрировать договор в Роспатенте в 2026 году?",
+          "url": "https://www.dvitex.ru/poleznoe/biznes/intellektualnaya-sobstvennost/kak-zaregistrirovat-dogovor-v-rospatente/",
+          "snippet": ""
+        },
+        {
+          "title": "Регистрация - rospatent.gov.ru",
+          "url": "https://rospatent.gov.ru/ru/client/registration/",
+          "snippet": "В настоящей статье юристы рассказывают, когда договор в сфере интеллектуальной собственности нужно регистрировать, какой порядок, стоимость и сроки регистрации."
+        },
+        {
+          "title": "Регистрация лицензионного договора в Роспатенте",
+          "url": "https://legalwording.ru/ru/articles/registracziya-liczenzionnogo-dogovora-v-rospatente",
+          "snippet": "Внесение изменений в государственные реестры Признание товарного знака общеизвестным в РФ Публикация решений судов Аттестация и регистрация патентных поверенных РФ"
+        },
+        {
+          "title": "Регистрация лицензионных договоров в Роспатенте",
+          "url": "https://www.dvitex.ru/poleznoe/biznes/intellektualnaya-sobstvennost/registratsiya-litsenzionnykh-dogovorov-v-rospatente/",
+          "snippet": "Пошаговый разбор регистрации лицензии в Роспатенте: документы, пошлины, сроки 45 дней, основания отказа, последствия отсутствия регистрации, FAQ."
+        },
+        {
+          "title": "Регистрация лицензионного договора и франшизы в Роспатенте 2026 — Бюро ИС",
+          "url": "https://regtz.ru/contracts/",
+          "snippet": "Ответ на вопрос читайте в статье. Юристы также разработали пошаговую инструкцию по регистрации лицензионных договоров в Роспатенте."
+        },
+        {
+          "title": "Государственная регистрация распоряжения по договору",
+          "url": "https://rospatent.gov.ru/ru/stateservices/gosudarstvennaya-registraciya-rasporyazheniya-po-dogovoru",
+          "snippet": "Подготовка и регистрация в Роспатенте лицензионных договоров, договоров отчуждения исключительного права, коммерческой концессии (франчайзинг), залога ИС."
+        }
+      ],
+      "searched_at": "2026-11-11"
+    },
+    {
+      "query_id": "secondary_4",
+      "query": "образец лицензии на использование бренда 2026",
+      "purpose": "вторичный запрос: образец лицензии на использование бренда",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Лицензионный договор об использовании товарного знака",
+          "url": "https://secrets.tbank.ru/documents/licenzionnyj-dogovor-ob-ispolzovanii-tovarnogo-znaka/",
+          "snippet": ""
+        },
+        {
+          "title": "Лицензионный договор на использование товарного знака: образец 2026",
+          "url": "https://prodogovory.ru/docs/licenzionnye-dogovory/litsenzionnyy-dogovor-na-ispolzovanie-tovarnogo-znaka",
+          "snippet": "Скачайте актуальный образец для заполнения лицензионного договора об использовании товарного знака в формате DOCX. Шаблоны на сайте соответствуют текущему законодательству РФ."
+        },
+        {
+          "title": "Образец лицензионного договора на товарный знак",
+          "url": "https://www.consultant.ru/law/podborki/obrazec_licenzionnogo_dogovora_na_tovarnyj_znak/",
+          "snippet": "Готовый образец лицензионного договора на использование товарного знака - порядок расчётов, права сторон, проверка качества, регистрация. Скачать Word, PDF."
+        },
+        {
+          "title": "Лицензионный договор о предоставлении права на использование товарного ...",
+          "url": "https://www.moedelo.org/blanki/item/licenzionnyj-dogovor-o-predostavlenii-prava-na-ispolzovanie-tovarnogo-znaka",
+          "snippet": "Подборка наиболее важных документов по запросу Образец лицензионного договора на товарный знак (нормативно-правовые акты, формы, статьи, консультации экспертов и многое другое)."
+        },
+        {
+          "title": "Лицензионные договоры: скачать шаблоны и образцы бесплатно",
+          "url": "https://amulex.ru/docs/contracts/licenzionnye-dogovory",
+          "snippet": "Лицензионный договор о предоставлении права на использование товарного знака, редакция 1 от 09.11.2026. Скачать с примером заполнения бланк на «Моё дело». Заходите!"
+        },
+        {
+          "title": "Лицензионный договор на право использования товарного знака - образец ...",
+          "url": "https://dogovor-obrazets.ru/%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80/%D0%9B%D0%B8%D1%86%D0%B5%D0%BD%D0%B7%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9_%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80_%D0%BD%D0%B0_%D0%BF%D1%80%D0%B0%D0%B2%D0%BE_%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F_%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BD%D0%BE%D0%B3%D0%BE_%D0%B7%D0%BD%D0%B0%D0%BA%D0%B0",
+          "snippet": "Образцы лицензионных договоров. Лицензионный договор на ПО, товарный знак, контент. Скачайте бесплатно в Word или PDF. Актуально на 2026 год."
+        }
+      ],
+      "searched_at": "2026-11-11"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как оформить лицензионный договор на товарный знак: виды лицензии, обязательные условия и регистрация в Роспатенте 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Лицензионный договор на товарный знак: условия и регистрация",
+          "url": "https://nevskylaw.ru/knowledge/licenzionnyy-dogovor-na-tovarnyy-znak/",
+          "snippet": ""
+        },
+        {
+          "title": "Лицензионный Договор На Товарный Знак: Регистрация 2026 | Gpg",
+          "url": "https://gpg.ru/magazine/trademark/litsenzionnyy-dogovor-na-tovarnyy-znak-kak-oformit-i-zaregistrirovat-v-2026-godu.html",
+          "snippet": "Как составить лицензионный договор на товарный знак: существенные условия, виды лицензии и регистрация предоставления права в Роспатенте."
+        },
+        {
+          "title": "Лицензионный договор на товарный знак: виды, регистрация",
+          "url": "https://ipbot.ru/articles/licenzionnyj-dogovor-tz/",
+          "snippet": "Как заключить лицензионный договор на товарный знак и зарегистрировать его в Роспатенте в 2026 году: виды лицензий, существенные условия, сроки и порядок регистрации."
+        },
+        {
+          "title": "Регистрация лицензионного договора на товарный знак",
+          "url": "https://www.consultant.ru/law/podborki/registraciya_licenzionnogo_dogovora_na_tovarnyj_znak/",
+          "snippet": "Как оформить лицензионный договор на товарный знак. Виды лицензий, обязательная регистрация в Роспатенте, стоимость и образец. Лицензионный договор на товарный знак позволяет правообладателю предоставить другому лицу право использования своего знака, сохраняя за собой исключительное право."
+        },
+        {
+          "title": "Лицензионный договор на товарный знак: образец и регистрация",
+          "url": "https://vitvet.com/articles/tovarnyj-znak/dogovory/licenzionnyj-dogovor/",
+          "snippet": "Таким образом, для признания в составе расходов в целях налогообложения прибыли выплат за пользование товарным знаком лицензионный договор на передачу права его использования должен быть зарегистрирован в Роспатенте."
+        },
+        {
+          "title": "Лицензионный договор на товарный знак: гайд 2026 | Qbrand",
+          "url": "https://qbrand.ru/blog/licenzionnyj-dogovor-na-tovarnyj-znak/",
+          "snippet": "В этой статье разбираем структуру договора, виды лицензий, порядок регистрации в Роспатенте и типичные ошибки сторон. Что такое лицензионный договор на товарный знак и чем он отличается от договора отчуждения? Лицензионный договор на товарный знак предоставляет лицензиату право использования знака, но не передаёт само исключительное право."
+        }
+      ],
+      "searched_at": "2026-11-11"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://gpg.ru/magazine/trademark/litsenzionnyy-dogovor-na-tovarnyy-znak-kak-oformit-i-zaregistrirovat-v-2026-godu.html",
+      "title": "Лицензионный Договор На Товарный Знак: Регистрация 2026 | Gpg",
+      "from_query": "как оформить лицензионный договор на товарный знак 2026"
+    },
+    {
+      "url": "https://qbrand.ru/blog/licenzionnyj-dogovor-na-tovarnyj-znak/",
+      "title": "Лицензионный договор на товарный знак: гайд 2026 | Qbrand",
+      "from_query": "как оформить лицензионный договор на товарный знак 2026"
+    },
+    {
+      "url": "https://www.klerk.ru/blogs/roskom24/697158/",
+      "title": "Лицензионный договор на товарный знак: как передать право использования ...",
+      "from_query": "как оформить лицензионный договор на товарный знак 2026"
+    },
+    {
+      "url": "https://primadoc.ru/doc/licenzionnyy-dogovor/na-tovarnyy-znak",
+      "title": "Лицензионный договор на товарный знак | конструктор онлайн 2026 | Примадок",
+      "from_query": "как оформить лицензионный договор на товарный знак 2026"
+    },
+    {
+      "url": "https://ipbot.ru/articles/licenzionnyj-dogovor-tz/",
+      "title": "Лицензионный договор на товарный знак: виды, регистрация",
+      "from_query": "как оформить лицензионный договор на товарный знак 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/obrazec_licenzionnogo_dogovora_na_tovarnyj_znak/",
+      "title": "Образец лицензионного договора на товарный знак \\ 2026-2025-2024 год ...",
+      "from_query": "как оформить лицензионный договор на товарный знак 2026"
+    },
+    {
+      "url": "https://legium.pro/blog/%D1%80%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%BB%D0%B8%D1%86%D0%B5%D0%BD%D0%B7%D0%B8%D0%BE%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B0-%D0%BD%D0%B0-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BD%D1%8B%D0%B9-%D0%B7%D0%BD%D0%B0%D0%BA-%D0%B2-%D1%80%D0%BE%D1%81%D0%BF%D0%B0%D1%82%D0%B5%D0%BD%D1%82%D0%B5-%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0-%D0%B8-%D1%81%D1%80%D0%BE%D0%BA%D0%B8",
+      "title": "Регистрация лицензионного договора на товарный знак в Роспатенте ...",
+      "from_query": "как оформить лицензионный договор на товарный знак ноябрь 2026"
+    },
+    {
+      "url": "https://решено.tech/guides/licenzionniy-dogovor-tovarnyy-znak",
+      "title": "Лицензионный договор на товарный знак: как оформить, зарегистрировать и ...",
+      "from_query": "как оформить лицензионный договор на товарный знак ноябрь 2026"
+    },
+    {
+      "url": "https://prodogovory.ru/docs/licenzionnye-dogovory/litsenzionnyy-dogovor-na-tovarnyy-znak",
+      "title": "Лицензионный договор об использовании товарного знака: образец 2026",
+      "from_query": "как оформить лицензионный договор на товарный знак ноябрь 2026"
+    },
+    {
+      "url": "https://marqatm.ru/analytics/licenzionnyj-dogovor-na-tz.html",
+      "title": "Лицензионный договор на товарный знак — образец 2026",
+      "from_query": "как оформить лицензионный договор на товарный знак новости 2026"
+    },
+    {
+      "url": "https://prodogovory.ru/docs/licenzionnye-dogovory/litsenziya-na-tovarnyy-znak-isklyuchitelnaya",
+      "title": "Исключительная лицензия на товарный знак: договор 2026",
+      "from_query": "исключительная лицензия товарный знак 2026"
+    },
+    {
+      "url": "https://vitvet.com/articles/tovarnyj-znak/dogovory/vidy-licenzij/",
+      "title": "Виды лицензий на товарный знак - vitvet.com",
+      "from_query": "исключительная лицензия товарный знак 2026"
+    },
+    {
+      "url": "https://legalwording.ru/ru/articles/isklyuchitelnaya-i-neisklyuchitelnaya-liczenzii",
+      "title": "Исключительная и неисключительная лицензия 2026 — разбор юриста | Legal ...",
+      "from_query": "исключительная лицензия товарный знак 2026"
+    },
+    {
+      "url": "https://marqatm.ru/analytics/obrazec-licenzionnogo-dogovora-tz.html",
+      "title": "Образец лицензионного договора на товарный знак 2026",
+      "from_query": "исключительная лицензия товарный знак 2026"
+    },
+    {
+      "url": "https://marqatm.ru/analytics/chto-takoe-isklyuchitelnaya-licenziya-tz.html",
+      "title": "Что такое исключительная лицензия на товарный знак",
+      "from_query": "исключительная лицензия товарный знак 2026"
+    },
+    {
+      "url": "https://legalwording.ru/ru/documents/subliczenzionnyj-dogovor-na-tovarnyj-znak",
+      "title": "Сублицензионный договор на товарный знак: шаблон 2026 | Legal Wording",
+      "from_query": "сублицензия товарный знак 2026"
+    },
+    {
+      "url": "https://vitvet.com/articles/tovarnyj-znak/dogovory/sublicenziya/",
+      "title": "Сублицензия на товарный знак",
+      "from_query": "сублицензия товарный знак 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/sublicenzionnyj_dogovor_na_ispolzovanie_tovarnogo_znaka/",
+      "title": "Сублицензионный договор на использование товарного знака",
+      "from_query": "сублицензия товарный знак 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/licenziya_na_tovarnyj_znak/",
+      "title": "Лицензия на товарный знак \\ 2026-2025-2024 год \\ Акты, образцы, формы ...",
+      "from_query": "сублицензия товарный знак 2026"
+    },
+    {
+      "url": "https://www.dvitex.ru/poleznoe/biznes/intellektualnaya-sobstvennost/kak-zaregistrirovat-dogovor-v-rospatente/",
+      "title": "Как зарегистрировать договор в Роспатенте в 2026 году?",
+      "from_query": "регистрация лицензии в роспатенте 2026"
+    },
+    {
+      "url": "https://rospatent.gov.ru/ru/client/registration/",
+      "title": "Регистрация - rospatent.gov.ru",
+      "from_query": "регистрация лицензии в роспатенте 2026"
+    },
+    {
+      "url": "https://legalwording.ru/ru/articles/registracziya-liczenzionnogo-dogovora-v-rospatente",
+      "title": "Регистрация лицензионного договора в Роспатенте",
+      "from_query": "регистрация лицензии в роспатенте 2026"
+    },
+    {
+      "url": "https://www.dvitex.ru/poleznoe/biznes/intellektualnaya-sobstvennost/registratsiya-litsenzionnykh-dogovorov-v-rospatente/",
+      "title": "Регистрация лицензионных договоров в Роспатенте",
+      "from_query": "регистрация лицензии в роспатенте 2026"
+    },
+    {
+      "url": "https://regtz.ru/contracts/",
+      "title": "Регистрация лицензионного договора и франшизы в Роспатенте 2026 — Бюро ИС",
+      "from_query": "регистрация лицензии в роспатенте 2026"
+    },
+    {
+      "url": "https://rospatent.gov.ru/ru/stateservices/gosudarstvennaya-registraciya-rasporyazheniya-po-dogovoru",
+      "title": "Государственная регистрация распоряжения по договору",
+      "from_query": "регистрация лицензии в роспатенте 2026"
+    },
+    {
+      "url": "https://secrets.tbank.ru/documents/licenzionnyj-dogovor-ob-ispolzovanii-tovarnogo-znaka/",
+      "title": "Лицензионный договор об использовании товарного знака",
+      "from_query": "образец лицензии на использование бренда 2026"
+    },
+    {
+      "url": "https://prodogovory.ru/docs/licenzionnye-dogovory/litsenzionnyy-dogovor-na-ispolzovanie-tovarnogo-znaka",
+      "title": "Лицензионный договор на использование товарного знака: образец 2026",
+      "from_query": "образец лицензии на использование бренда 2026"
+    },
+    {
+      "url": "https://www.moedelo.org/blanki/item/licenzionnyj-dogovor-o-predostavlenii-prava-na-ispolzovanie-tovarnogo-znaka",
+      "title": "Лицензионный договор о предоставлении права на использование товарного ...",
+      "from_query": "образец лицензии на использование бренда 2026"
+    },
+    {
+      "url": "https://amulex.ru/docs/contracts/licenzionnye-dogovory",
+      "title": "Лицензионные договоры: скачать шаблоны и образцы бесплатно",
+      "from_query": "образец лицензии на использование бренда 2026"
+    },
+    {
+      "url": "https://dogovor-obrazets.ru/%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80/%D0%9B%D0%B8%D1%86%D0%B5%D0%BD%D0%B7%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9_%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80_%D0%BD%D0%B0_%D0%BF%D1%80%D0%B0%D0%B2%D0%BE_%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F_%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BD%D0%BE%D0%B3%D0%BE_%D0%B7%D0%BD%D0%B0%D0%BA%D0%B0",
+      "title": "Лицензионный договор на право использования товарного знака - образец ...",
+      "from_query": "образец лицензии на использование бренда 2026"
+    },
+    {
+      "url": "https://nevskylaw.ru/knowledge/licenzionnyy-dogovor-na-tovarnyy-znak/",
+      "title": "Лицензионный договор на товарный знак: условия и регистрация",
+      "from_query": "Как оформить лицензионный договор на товарный знак: виды лицензии, обязательные условия и регистрация в Роспатенте 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/registraciya_licenzionnogo_dogovora_na_tovarnyj_znak/",
+      "title": "Регистрация лицензионного договора на товарный знак",
+      "from_query": "Как оформить лицензионный договор на товарный знак: виды лицензии, обязательные условия и регистрация в Роспатенте 2026"
+    },
+    {
+      "url": "https://vitvet.com/articles/tovarnyj-znak/dogovory/licenzionnyj-dogovor/",
+      "title": "Лицензионный договор на товарный знак: образец и регистрация",
+      "from_query": "Как оформить лицензионный договор на товарный знак: виды лицензии, обязательные условия и регистрация в Роспатенте 2026"
+    }
+  ]
+}
