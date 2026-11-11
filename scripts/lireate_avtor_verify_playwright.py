@@ -1,15 +1,13 @@
 #!/usr/bin/env python3
-"""Smoke + screenshots for /avtor/ on the public Lireate site."""
+"""Smoke + visibility + screenshots for /avtor/ on the public Lireate site."""
 from __future__ import annotations
 
 import json
-import re
+import os
 import sys
 from pathlib import Path
 
 from playwright.sync_api import sync_playwright
-
-import os
 
 _base = os.environ.get("LIREATE_PUBLIC_SITE_URL", "").rstrip("/")
 if not _base:
@@ -23,6 +21,55 @@ EXPECTED_DESC = (
     "Юрий Горбачев — директор и управляющий партнёр ООО «ЛИРЕЙТ»: товарные знаки, "
     "патенты, авторское право и споры. Статьи на vc.ru, в Т—Ж, на Клерке и Хабре."
 )
+MIN_PAGE_HEIGHT = 1500
+
+
+def _vis_report(page, results: dict) -> None:
+    h1 = page.locator("#lireate-avtor h1.lu-h1").first
+    sec = page.locator("#lireate-avtor .lu-section").first
+    page_height = page.evaluate("() => document.documentElement.scrollHeight")
+    h1_box = h1.bounding_box() if h1.count() else None
+    sec_box = sec.bounding_box() if sec.count() else None
+    h1_opacity = h1.evaluate("el => getComputedStyle(el).opacity") if h1.count() else None
+    sec_opacity = sec.evaluate("el => getComputedStyle(el).opacity") if sec.count() else None
+    pc_display = page.evaluate(
+        """() => {
+        const el = document.querySelector('.page_container');
+        return el ? getComputedStyle(el).display : null;
+    }"""
+    )
+    avtor_blocks = page.locator("#lireate-avtor").count()
+    photo_box = page.locator('#lireate-avtor img[alt="Горбачев Юрий Александрович"]').first
+    photo_bb = photo_box.bounding_box() if photo_box.count() else None
+    results["visibility"] = {
+        "lireate_avtor_blocks": avtor_blocks,
+        "photo_bounding_box": photo_bb,
+        "page_height": page_height,
+        "page_container_display": pc_display,
+        "h1_bounding_box": h1_box,
+        "h1_opacity": h1_opacity,
+        "section_bounding_box": sec_box,
+        "section_opacity": sec_opacity,
+        "body_has_lireate_avtor_body": page.evaluate(
+            "() => document.body.classList.contains('lireate-avtor-body')"
+        ),
+    }
+    if page_height < MIN_PAGE_HEIGHT:
+        results["ok"] = False
+    if not h1_box or h1_box.get("width", 0) <= 0 or h1_box.get("height", 0) <= 0:
+        results["ok"] = False
+    if not sec_box or sec_box.get("width", 0) <= 0 or sec_box.get("height", 0) <= 0:
+        results["ok"] = False
+    if h1_opacity is not None and float(h1_opacity) < 0.99:
+        results["ok"] = False
+    if sec_opacity is not None and float(sec_opacity) < 0.99:
+        results["ok"] = False
+    if pc_display == "none":
+        results["ok"] = False
+    if avtor_blocks != 1:
+        results["ok"] = False
+    if not photo_bb or photo_bb.get("width", 0) <= 0 or photo_bb.get("height", 0) <= 0:
+        results["ok"] = False
 
 
 def main() -> int:
@@ -36,16 +83,27 @@ def main() -> int:
             results["checks"].append({"viewport": width, "http_status": status})
             if status != 200:
                 results["ok"] = False
+            page.wait_for_selector("#lireate-avtor h1", timeout=60000)
+            page.wait_for_function(
+                "() => document.body && document.body.classList.contains('lireate-avtor-body')",
+                timeout=60000,
+            )
             page.screenshot(path=str(ART / f"{name}.png"), full_page=True)
+            if width == 1366:
+                _vis_report(page, results)
             page.close()
         page = browser.new_page(viewport={"width": 1366, "height": 900})
         page.goto(SITE, wait_until="domcontentloaded", timeout=120000)
         title = page.title()
         desc = page.locator('meta[name="description"]').get_attribute("content") or ""
-        h1s = page.locator("h1").all_text_contents()
+        h1s = page.locator("#lireate-avtor h1").all_text_contents()
         robots = page.locator('meta[name="robots"]').count()
         ld = page.locator('script[type="application/ld+json"]').all_text_contents()
-        person_blocks = sum(1 for block in ld if '"@type":"Person"' in block.replace(" ", "") or '"@type": "Person"' in block)
+        person_blocks = sum(
+            1
+            for block in ld
+            if '"@type":"Person"' in block.replace(" ", "") or '"@type": "Person"' in block
+        )
         img_ok = page.locator('img[alt="Горбачев Юрий Александрович"]').count() >= 1
         results["title"] = title
         results["description"] = desc
@@ -59,6 +117,10 @@ def main() -> int:
         if desc != EXPECTED_DESC:
             results["ok"] = False
         if len(h1s) != 1 or h1s[0].strip() != "Горбачев Юрий Александрович":
+            results["ok"] = False
+        avtor_dom = page.locator("#lireate-avtor").count()
+        results["lireate_avtor_blocks"] = avtor_dom
+        if avtor_dom != 1:
             results["ok"] = False
         if person_blocks != 1:
             results["ok"] = False
