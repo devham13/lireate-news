@@ -62,6 +62,8 @@ def build_cover_html(spec, width, height):
 
     hl_px = max(44, int(height * 0.13))
     sw, sh = width, height
+    stage_bg = (spec.get("stage_background") or "#0b1020").strip()
+    left_memo = (spec.get("left_memo") or "").strip() or "ФИПС · заявка · пошлины"
 
     arrow_svg = (
         '<svg class="cover-arrow" data-layout-slot="slot-arrow" viewBox="0 0 100 36" aria-hidden="true">'
@@ -74,7 +76,7 @@ def build_cover_html(spec, width, height):
 <html><head><meta charset="utf-8"><style>
 {shared}
 html, body {{ margin:0; width:{w}px; height:{h}px; overflow:hidden; }}
-.stage {{ width:{w}px; height:{h}px; background:#0b1020; display:flex; align-items:center; justify-content:center; }}
+.stage {{ width:{w}px; height:{h}px; background:{stage_bg}; display:flex; align-items:center; justify-content:center; }}
 .sheet {{
   width:{sw}px; height:{sh}px; position:relative; box-sizing:border-box;
   display:grid; grid-template-columns: 54% 46%; padding:20px 22px 32px 26px;
@@ -165,7 +167,7 @@ html, body {{ margin:0; width:{w}px; height:{h}px; overflow:hidden; }}
     <div class="tape-corner tape-tl"></div><div class="tape-corner tape-tr"></div>
     <div class="col-left">
       <div class="hl" data-layout-slot="slot-headline">{headline}</div>
-      <div class="left-memo" data-layout-slot="slot-left-memo">WB / Ozon · карточка · жалоба</div>
+      <div class="left-memo" data-layout-slot="slot-left-memo">{left_memo}</div>
     </div>
     <div class="col-right">
       {arrow}
@@ -184,6 +186,8 @@ html, body {{ margin:0; width:{w}px; height:{h}px; overflow:hidden; }}
         shared=shared_styles(),
         w=width,
         h=height,
+        stage_bg=stage_bg,
+        left_memo=_esc(left_memo),
         sw=sw,
         sh=sh,
         hl_px=hl_px,

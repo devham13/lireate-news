@@ -1,0 +1,206 @@
+{
+  "article": "memory/blog/articles/L51-patent-na-poleznuyu-model-rospatent/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 28,
+  "verified_facts_count": 6,
+  "unverified_facts_count": 22,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "айд для изготовителя с прототипом. Нормы на 11.11.2026 ; не заменяет поверенного, исход заявки не предре",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2027",
+      "kind": "date_or_year",
+      "context": "вместе до старта экспертизы по существу. С 01.01.2027 п. 1 ст. 1351 меняется ( примечание Консультант )",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 лет",
+      "kind": "metric_or_duration",
+      "context": "именимость , без изобретательского уровня. Срок - 10 лет ( ст. 1363 ). Минимум до электронного патента при",
+      "verified": true,
+      "reason": "Numerical value '10' matched in fact-bank context"
+    },
+    {
+      "fact": "20 лет",
+      "kind": "metric_or_duration",
+      "context": "зобретательский уровень Срок 10 лет с даты подачи 20 лет Экспертиза по существу После формальной, без хода",
+      "verified": true,
+      "reason": "Numerical value '20' matched in fact-bank context"
+    },
+    {
+      "fact": "3 лет",
+      "kind": "metric_or_duration",
+      "context": "ле формальной, без ходатайства По ходатайству, до 3 лет ( ст. 1386 ) Льгота после собственного раскрытия",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "6 месяцев",
+      "kind": "metric_or_duration",
+      "context": "( ст. 1386 ) Льгота после собственного раскрытия 6 месяцев ( п. 3 ст. 1351 ) 12 месяцев ( п. 3 ст. 1350 ) Де",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "12 месяцев",
+      "kind": "metric_or_duration",
+      "context": "обственного раскрытия 6 месяцев ( п. 3 ст. 1351 ) 12 месяцев ( п. 3 ст. 1350 ) Делайте: сформулировать, какой",
+      "verified": true,
+      "reason": "Numerical value '12' matched in fact-bank context"
+    },
+    {
+      "fact": "17 месяцев",
+      "kind": "metric_or_duration",
+      "context": "истрация. На странице госуслуги предельный срок - 17 месяцев 2 недели , формальная экспертиза - до 2 месяцев п",
+      "verified": true,
+      "reason": "Numerical value '17' matched in fact-bank context"
+    },
+    {
+      "fact": "2 месяцев",
+      "kind": "metric_or_duration",
+      "context": "17 месяцев 2 недели , формальная экспертиза - до 2 месяцев после пошлин. Это потолок регламента, не средний",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "3 месяцев",
+      "kind": "metric_or_duration",
+      "context": "йте: тянуть с ответом на запрос экспертизы дольше 3 месяцев. Соберите заявку: описание, формула и чертежи по",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1351",
+      "kind": "large_number",
+      "context": "нятого и товарный знак. На практике охрана по ст. 1351 ГК РФ даётся на устройство с новизной и промышленн",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1376",
+      "kind": "large_number",
+      "context": "зную модель от изобретения, соберёте пакет по ст. 1376 , оплатите пошлины по таблице Роспатента и пройдё",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1363",
+      "kind": "large_number",
+      "context": "без изобретательского уровня. Срок - 10 лет ( ст. 1363 ). Минимум до электронного патента при ≤10 пункта",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2 000",
+      "kind": "large_number",
+      "context": "до электронного патента при ≤10 пунктах формулы: 2 000 + 3 000 + 10 000 = 15 000 ₽ (пп. 1.2 , 1.9 , 1.17",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "3 000",
+      "kind": "large_number",
+      "context": "тронного патента при ≤10 пунктах формулы: 2 000 + 3 000 + 10 000 = 15 000 ₽ (пп. 1.2 , 1.9 , 1.17 на rosp",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 000",
+      "kind": "large_number",
+      "context": "патента при ≤10 пунктах формулы: 2 000 + 3 000 + 10 000 = 15 000 ₽ (пп. 1.2 , 1.9 , 1.17 на rospatent.gov",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "15 000",
+      "kind": "large_number",
+      "context": "при ≤10 пунктах формулы: 2 000 + 3 000 + 10 000 = 15 000 ₽ (пп. 1.2 , 1.9 , 1.17 на rospatent.gov.ru ). Эк",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1390",
+      "kind": "large_number",
+      "context": "для ПМ идёт автоматически после формальной ( ст. 1390 ). Гайд для изготовителя с прототипом. Нормы на 1",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1350",
+      "kind": "large_number",
+      "context": "п. 1 ) Техническое решение в любой области ( ст. 1350 ) Патентоспособность Новизна + промышленная приме",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1386",
+      "kind": "large_number",
+      "context": "й, без ходатайства По ходатайству, до 3 лет ( ст. 1386 ) Льгота после собственного раскрытия 6 месяцев (",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "5 000",
+      "kind": "large_number",
+      "context": "документ ( п. 3 ст. 1376 ). Оплата п. 1.2 + 1.9 (5 000 ₽ при ≤10 пунктах) до экспертизы по существу; пп.",
+      "verified": true,
+      "reason": "Numerical value '5000' matched in fact-bank context"
+    },
+    {
+      "fact": "701",
+      "kind": "large_number",
+      "context": "Соберите заявку: описание, формула и чертежи по № 701 Состав заявки - ст. 1376 : заявление, описание , ф",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1 000",
+      "kind": "large_number",
+      "context": "истрация заявки + формальная экспертиза 2 000 ₽ + 1 000 ₽ за пункт формулы свыше 10 1.9 Решение по экспер",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 1",
+      "kind": "large_number",
+      "context": "спертиза 2 000 ₽ + 1 000 ₽ за пункт формулы свыше 10 1.9 Решение по экспертизе по существу ПМ 3 000 ₽ 1.",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "5 10 000",
+      "kind": "large_number",
+      "context": "гистрация, публикация, электронный патент, годы 1-5 10 000 ₽ 1.18.1 Патент на бумаге (по ходатайству) 3 000",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "4 000",
+      "kind": "large_number",
+      "context": "Поддержание 6-10-й годы (от даты подачи) 3 000 / 4 000 / 4 000 / 6 000 / 6 000 ₽ Минимум до электронного",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "6 000",
+      "kind": "large_number",
+      "context": "0-й годы (от даты подачи) 3 000 / 4 000 / 4 000 / 6 000 / 6 000 ₽ Минимум до электронного патента при ≤10",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1247",
+      "kind": "large_number",
+      "context": "о или с Лирейт Резидент ведёт дела сам ( п. 1 ст. 1247 ); иностранцу обычно нужен поверенный ( п. 2 ). П",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
