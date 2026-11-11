@@ -28,6 +28,13 @@ URI_REGEX_V1 = (
 )
 
 URI_LEGACY_REGEX = (
+    "#^/(?:mktu1?|poisk_tovarnyh_znakov|ekspertiza_tovarnogo_znaka|"
+    "mezhdunarodnaja_registracija_tovarnogo_znaka|"
+    "registracija_torgovyh_marok_i_logotipov)"
+    "(?:/|$)#"
+)
+
+URI_LEGACY_REGEX_OLD = (
     "#^/(?:poisk_tovarnyh_znakov|ekspertiza_tovarnogo_znaka|"
     "mezhdunarodnaja_registracija_tovarnogo_znaka|"
     "registracija_torgovyh_marok_i_logotipov)"
@@ -90,6 +97,7 @@ def _dock_condition_php() -> str:
 \t}}"""
 
 
+# URI_LEGACY_REGEX appears 3×: head/footer dock condition + body else-branch.
 HEAD_BLOCK = f"""\t<?php /* {MARK2} head */ {_dock_condition_php()}
 \tif ($_lx_svc_dock): ?>
 \t<link rel="stylesheet" href="/template/css/lireate-service-mobile-bar.css?v=20261111svc3" />
@@ -155,7 +163,14 @@ def _replace_body_snip(text: str) -> str:
     return text
 
 
+def _upgrade_legacy_uri_regex(text: str) -> str:
+    if URI_LEGACY_REGEX_OLD in text:
+        return text.replace(URI_LEGACY_REGEX_OLD, URI_LEGACY_REGEX)
+    return text
+
+
 def _upgrade_dock_blocks(text: str) -> str:
+    text = _upgrade_legacy_uri_regex(text)
     text = _replace_marked_php_block(text, V1_HEAD_BLOCK, HEAD_BLOCK)
     text = _replace_marked_php_block(text, V1_FOOTER_BLOCK, FOOTER_BLOCK)
     if f"/* {MARK2} head */" in text and V1_HEAD_BLOCK not in text:
@@ -199,7 +214,12 @@ def patch(text: str, *, min_lines: int = MIN_LINES) -> str:
 def _php_lint(content: str) -> None:
     tmp = Path("/tmp/lireate-main-php-lint.php")
     tmp.write_text(content, encoding="utf-8")
-    r = subprocess.run(["php", "-l", str(tmp)], capture_output=True, text=True)
+    r = subprocess.run(
+        ["php", "-l", str(tmp)],
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        universal_newlines=True,
+    )
     if r.returncode != 0:
         raise SystemExit(f"php -l failed: {r.stderr or r.stdout}")
 

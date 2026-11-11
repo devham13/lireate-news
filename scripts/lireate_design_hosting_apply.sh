@@ -148,7 +148,7 @@ if [[ "${LIREATE_DESIGN_PATCH_SERVICE_DOCK:-0}" == "1" && -f "$MAIN" ]]; then
 fi
 
 if [[ "${LIREATE_DESIGN_PATCH_SERVICE_LANDINGS:-0}" == "1" ]]; then
-  if ! "$PY" "$REPO/scripts/lireate_design_patch_service_landings.py" "$DOCROOT"; then
+  if ! "$PY" "$REPO/scripts/lireate_design_patch_service_landings.py" "$DOCROOT" "$REPO"; then
     echo "SERVICE_LANDINGS_PATCH_FAIL" >&2
     exit 1
   fi
