@@ -198,14 +198,14 @@ body.lireate-mktu-lu-body .lx-site-footer {
   padding-right: 32px;
   box-sizing: border-box;
 }
-@media (max-width: 1150px) {
+@media (max-width: 991px) {
   body.lireate-mktu-lu-body .mktu_head,
   body.lireate-mktu-lu-body .mktu_body,
-  body.lireate-mktu-lu-body .conteinerY {
+  body.lireate-mktu-lu-body .container.content > .conteinerY {
     margin-left: 0 !important;
     width: 100% !important;
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
   }
   body.lireate-mktu-lu-body .conteinerX {
     grid-template-columns: 1fr;

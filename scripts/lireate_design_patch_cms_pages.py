@@ -98,7 +98,8 @@ def patch(text: str) -> str:
         '\t<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />\n'
         '\t<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" />\n'
         '\t<link rel="stylesheet" href="/template/css/lireate-cms-page-dark.css?v=20261111design4" />\n'
-        '\t<link rel="stylesheet" href="/template/css/lireate-cms-lu.css?v=20261111lu7" />\n'
+        '\t<link rel="stylesheet" href="/template/css/lireate-cms-lu.css?v=20261111lu8" />\n'
+        '\t<link rel="stylesheet" href="/template/css/lireate-lu-viewport.css?v=20261111vp1" />\n'
         '\t<link rel="stylesheet" href="/template/css/lireate-mktu-lu.css?v=20261111mktu4" />\n'
         "\t<?php endif; ?>\n"
     )
@@ -109,8 +110,9 @@ def patch(text: str) -> str:
 
     hero_assets = (
         f"\t<?php /* {MARK_CMS_HERO_ASSETS} */ if (in_array($temp['page'], array('patent','patent_prom_obr'), true)): ?>\n"
-        '\t<link rel="stylesheet" href="/template/css/lireate-home-hero.css?v=20261111hero7" />\n'
-        '\t<script defer src="/template/js/lireate-home-hero.js?v=20261111hero7"></script>\n'
+        '\t<link rel="stylesheet" href="/template/css/lireate-lu-viewport.css?v=20261111vp1" />\n'
+        '\t<link rel="stylesheet" href="/template/css/lireate-home-hero.css?v=20261111hero8" />\n'
+        '\t<script defer src="/template/js/lireate-home-hero.js?v=20261111hero8"></script>\n'
         "\t<?php endif; ?>\n"
     )
     if MARK_CMS_HERO_ASSETS not in text and MARK_MKTU_HEAD in text:

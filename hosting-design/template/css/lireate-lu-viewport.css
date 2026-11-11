@@ -1,0 +1,92 @@
+/* Общие брейкпоинты lu: меню 270px с 992px, max-width 1120px только ≥1400px */
+@media (min-width: 992px) {
+  body.lireate-home-dark .container.content,
+  body.lireate-home-dark .content.container,
+  body.lireate-cms-page-dark:not(.lireate-home-dark) .container.content,
+  body.lireate-cms-page-dark:not(.lireate-home-dark) .content.container {
+    padding-left: 270px !important;
+    padding-right: 32px !important;
+    width: 100% !important;
+    max-width: none !important;
+    box-sizing: border-box;
+  }
+  body.lireate-home-dark .main-screen.lireate-hero-v4,
+  body.lireate-cms-page-dark .container.content > .main-screen.lireate-hero-v4 {
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 991px) {
+  body.lireate-home-dark .container.content,
+  body.lireate-home-dark .content.container,
+  body.lireate-cms-page-dark:not(.lireate-home-dark) .container.content,
+  body.lireate-cms-page-dark:not(.lireate-home-dark) .content.container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  body.lireate-home-dark #lireate-home .lh-wrap,
+  body.lireate-home-dark #lireate-home.lu-page .lu-wrap {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  body.lireate-cms-page-dark:not(.lireate-home-dark) .container.content > .main-screen {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+  body.lireate-home-dark #lireate-home .lh-wrap,
+  body.lireate-home-dark #lireate-home.lu-page .lu-wrap {
+    max-width: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+    box-sizing: border-box;
+  }
+  body.lireate-cms-page-dark:not(.lireate-home-dark) .container.content > *:not(.main-screen):not(#leftSideBar) {
+    max-width: none !important;
+    width: 100% !important;
+  }
+  body.lireate-cms-page-dark .container.content > .row.col-xs-12[style*="padding: 0px 30px"]:has(> .advant) {
+    max-width: none !important;
+    width: 100% !important;
+  }
+  body.lireate-cms-page-dark .delimiter2 .sub-title,
+  body.lireate-cms-page-dark .row.delimiter2 {
+    max-width: none !important;
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  body.lireate-home-dark #lireate-home .lh-wrap,
+  body.lireate-home-dark #lireate-home.lu-page .lu-wrap {
+    max-width: 1120px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  body.lireate-home-dark .container.content [class*="col-lg-"],
+  body.lireate-home-dark #lireate-home .lh-wrap [class*="col-lg-"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    float: none !important;
+  }
+}
+
+@media (min-width: 992px) {
+  body.lireate-mktu-lu-body .mktu_head,
+  body.lireate-mktu-lu-body .mktu_body,
+  body.lireate-mktu-lu-body .container.content > .conteinerY {
+    margin-left: 270px !important;
+    width: calc(100% - 270px) !important;
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+    box-sizing: border-box;
+  }
+}
