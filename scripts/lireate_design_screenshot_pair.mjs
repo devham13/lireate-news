@@ -5,7 +5,14 @@ import path from "node:path";
 
 const url = process.argv[2];
 const outDir = process.argv[3];
-const slug = process.argv[4] || "page";
+let slug = process.argv[4] || "page";
+try {
+  const u = new URL(url);
+  const base = u.pathname.replace(/\/$/, "").split("/").filter(Boolean).pop() || "home";
+  if (slug === "page") slug = base;
+} catch {
+  /* keep slug */
+}
 if (!url || !outDir) process.exit(2);
 await mkdir(outDir, { recursive: true });
 const browser = await chromium.launch({ headless: true });

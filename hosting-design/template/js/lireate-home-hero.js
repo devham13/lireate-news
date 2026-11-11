@@ -2,7 +2,10 @@
   'use strict';
 
   var body = document.body;
-  if (!body || !body.classList.contains('lireate-home-dark')) {
+  var isHome = body && body.classList.contains('lireate-home-dark');
+  var isCmsHero = body && body.classList.contains('lireate-cms-page-dark') &&
+    document.querySelector('.main-screen.lireate-hero-v4');
+  if (!body || (!isHome && !isCmsHero)) {
     return;
   }
 

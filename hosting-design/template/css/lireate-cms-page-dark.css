@@ -102,7 +102,7 @@ body.lireate-cms-page-dark .main-screen > br {
   margin: 0 !important;
   line-height: 0 !important;
 }
-body.lireate-cms-page-dark .main-screen::after {
+body.lireate-cms-page-dark .main-screen:not(.lireate-hero-v4)::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -114,6 +114,10 @@ body.lireate-cms-page-dark .main-screen::after {
   );
   pointer-events: none;
   z-index: 0;
+}
+body.lireate-cms-page-dark .main-screen.lireate-hero-v4::after {
+  display: none !important;
+  content: none !important;
 }
 body.lireate-cms-page-dark .main-screen > *:not(br) {
   position: relative;
