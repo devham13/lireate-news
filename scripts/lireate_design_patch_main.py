@@ -15,7 +15,7 @@ MARK_HEAD = "lireate-cms-dark-head-v1"
 MARK_BODY = "lireate_cms_dark_body_v1"
 MARK_JS = "lireate-cms-dark-skip-main-screen-height"
 
-MIN_LINES = 5000
+MIN_LINES = 6000
 PAGE_CONTAINER = "page_container"
 
 CMS_DARK_PAGES_PHP = "array('home','patent','patent_prom_obr','mktu','mktu1')"

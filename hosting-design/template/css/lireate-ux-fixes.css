@@ -22,9 +22,22 @@ body.cms-default {
   min-width: 63px;
   min-height: 63px;
 }
+/* Site-wide: only avatar, no «Пишите, мы онлайн» bubble (overlap on /avtor/, cards) */
 #managerMessage {
-  max-width: min(240px, calc(100vw - 110px));
-  white-space: normal;
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  visibility: hidden !important;
+}
+#floatingBlock {
+  position: fixed !important;
+  right: max(14px, env(safe-area-inset-right, 0px)) !important;
+  bottom: max(18px, env(safe-area-inset-bottom, 0px)) !important;
+  left: auto !important;
+  z-index: 40;
 }
 #floatingBlock.lx-widget-dimmed {
   opacity: 0.15;
@@ -47,7 +60,8 @@ body.cms-default .main-screen.main_back {
   background-size: cover;
   background-position: center;
 }
-body.lireate-home-dark .main-screen.main_back {
+body.lireate-home-dark .main-screen.main_back,
+body.lireate-cms-page-dark .main-screen.main_back {
   aspect-ratio: unset;
   min-height: 440px;
 }
@@ -57,7 +71,8 @@ body.lireate-home-dark .main-screen.main_back {
   body.cms-default .main-screen.main_back {
     min-height: 220px;
   }
-  body.lireate-home-dark .main-screen.main_back {
+  body.lireate-home-dark .main-screen.main_back,
+  body.lireate-cms-page-dark .main-screen.main_back {
     min-height: 460px;
   }
   #patent_top_box,
@@ -71,7 +86,8 @@ body.lireate-home-dark .main-screen.main_back {
     body.cms-default .main_back,
     body.cms-default #main_back,
     body.cms-default .main-screen.main_back,
-    body.lireate-home-dark .main-screen.main_back {
+    body.lireate-home-dark .main-screen.main_back,
+    body.lireate-cms-page-dark .main-screen.main_back {
       background-image: url("/template/images/main_back_opt_mini.webp") !important;
     }
   }
@@ -79,7 +95,8 @@ body.lireate-home-dark .main-screen.main_back {
     body.cms-default .main_back,
     body.cms-default #main_back,
     body.cms-default .main-screen.main_back,
-    body.lireate-home-dark .main-screen.main_back {
+    body.lireate-home-dark .main-screen.main_back,
+    body.lireate-cms-page-dark .main-screen.main_back {
       background-image: url("/template/images/main_back_opt.webp") !important;
     }
   }

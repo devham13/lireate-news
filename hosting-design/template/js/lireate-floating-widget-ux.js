@@ -5,15 +5,10 @@
 
   var manager = document.getElementById('manager_icon');
   var message = document.getElementById('managerMessage');
-  var body = document.body;
-  var isHome = body && body.classList.contains('lireate-home-dark');
-  var isCmsDark = body && body.classList.contains('lireate-cms-page-dark');
-
   if (manager) {
     manager.setAttribute('aria-hidden', 'false');
   }
-
-  if ((isHome || isCmsDark) && message) {
+  if (message) {
     message.setAttribute('aria-hidden', 'true');
     block.classList.add('lx-widget-icons-only');
   }
@@ -40,10 +35,9 @@
   }
 
   function targetsOverlapContent() {
-    if (!isCmsDark) return false;
     var rect = block.getBoundingClientRect();
     var nodes = document.querySelectorAll(
-      '#modals .advant, #modals .content-button, .main-title',
+      '#modals .advant, #modals .content-button, .main-title, .lu-page, #lireate-avtor, .lu-wrap, .txt-content',
     );
     for (var i = 0; i < nodes.length; i++) {
       var r = nodes[i].getBoundingClientRect();
@@ -54,9 +48,7 @@
   }
 
   function updateWidget() {
-    var hide =
-      targetsOverlapForm() ||
-      (isCmsDark && targetsOverlapContent());
+    var hide = targetsOverlapForm() || targetsOverlapContent();
     if (hide) {
       block.classList.add('lx-widget-hidden');
     } else {
@@ -66,7 +58,7 @@
 
   if ('IntersectionObserver' in window) {
     var watch = document.querySelectorAll(
-      'form, .g-recaptcha, #recaptcha, .recaptcha, #modals .advant, .main-title',
+      'form, .g-recaptcha, #recaptcha, .recaptcha, #modals .advant, .main-title, .lu-page, #lireate-avtor',
     );
     if (watch.length) {
       var obs = new IntersectionObserver(
