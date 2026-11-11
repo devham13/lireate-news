@@ -322,7 +322,19 @@ body.lireate-home-dark footer:not(.lx-site-footer) {
 }
 body.lireate-home-dark .lx-site-footer {
   margin-top: 32px;
-  width: 100%;
+  margin-left: 270px;
+  width: calc(100% - 270px);
+  box-sizing: border-box;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+@media (max-width: 1150px) {
+  body.lireate-home-dark .lx-site-footer {
+    margin-left: 0;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 body.lireate-home-dark body.lireate-home-dark,
 body.lireate-home-dark #page-content-wrapper,
