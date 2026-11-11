@@ -244,6 +244,11 @@ else
   echo "SKIP_HOME_PATCH (set LIREATE_DESIGN_PATCH_HOME=1 for blog/footer on home)"
 fi
 
+if [[ -f "$MAIN" && -f "$REPO/scripts/lireate_design_main_uri_regex_query_upgrade.py" ]]; then
+  "$PY" "$REPO/scripts/lireate_design_main_uri_regex_query_upgrade.py" "$MAIN" 2>/dev/null || true
+  lireate_main_php_touch "$MAIN" 2>/dev/null || true
+fi
+
 if [[ -x "$REPO/scripts/lireate_design_post_deploy_verify.sh" ]]; then
   export REPO LIREATE_DOCROOT
   if ! bash "$REPO/scripts/lireate_design_post_deploy_verify.sh"; then

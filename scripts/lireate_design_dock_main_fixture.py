@@ -62,10 +62,9 @@ def main() -> None:
         "if (in_array($temp['page'], array('home','patent','patent_prom_obr','mktu','mktu1'), true)) "
         "echo ' lireate-cms-page-dark'; "
         f"{v2_compact} "
-        "/* lireate_design_static_lu_v1 */ if($temp['page']=='uslugi') echo ' lireate-uslugi-body'; "
         "/* lireate_design_news_lu_v1 */ if($temp['page']=='news') echo ' lireate-news-lu-body'; "
         "/* lireate_design_legacy_cms_services_v1 body */ "
-        "echo ' lireate-legacy-cms-lu-marker'; "
+        ""
         " if ($temp['page']==='home') echo ' lireate-home-dark';"
         '?>\">\n'
         "<main>Fixture v2 drift</main>\n"
