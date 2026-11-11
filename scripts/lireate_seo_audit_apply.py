@@ -20,7 +20,7 @@ $m->set_charset('utf8mb4');
 $out=['news'=>[],'pages'=>[]];
 $r=$m->query('SELECT id,seo_url,full_story,seo_description FROM news WHERE active=1');
 while($row=$r->fetch_assoc()) $out['news'][]=$row;
-$r=$m->query('SELECT id,seo_url,full_story,seo_description FROM pages');
+$r=$m->query('SELECT id,seo_url,text AS full_story,seo_description FROM pages');
 while($row=$r->fetch_assoc()) $out['pages'][]=$row;
 echo json_encode($out, JSON_UNESCAPED_UNICODE);
 """
@@ -62,8 +62,9 @@ echo json_encode($stats);
     proc = subprocess.run(
         ["php", "-r", code, docroot],
         input=raw,
-        capture_output=True,
-        text=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        universal_newlines=True,
         check=False,
     )
     if proc.returncode != 0:
