@@ -54,6 +54,15 @@ lireate_design_patch_main_php() {
     rm -f "$work"
     return 1
   fi
+  local marker_guard="${LIREATE_DESIGN_MARKER_GUARD:-${REPO:-}/scripts/lireate_design_main_php_marker_guard.py}"
+  if [[ -n "${REPO:-}" && -f "$marker_guard" ]]; then
+    if ! "$py" "$marker_guard" "${main}.pre-design-patch" "$work"; then
+      echo "MAIN_MARKER_GUARD_FAIL ${label}" >&2
+      lireate_design_rollback_main "$main" "$bak_suffix" || true
+      rm -f "$work"
+      return 1
+    fi
+  fi
   if [[ -f "$REPO/scripts/lireate_design_main_php_sanitize_cli.py" ]]; then
   if ! "$py" "$REPO/scripts/lireate_design_main_php_sanitize_cli.py" "$work"; then
     echo "MAIN_PHP_SANITIZE_FAIL ${label}" >&2
