@@ -8,11 +8,10 @@ MARK = "lireate_design_static_lu_v1"
 MARK_PAGES = "lireate_design_cms_dark_pages_v2"
 MIN_LINES = 6000
 
-DARK_PAGES = (
-    "home','patent','patent_prom_obr','mktu','mktu1',"
-    "'reviews','portfolio','spasibo','uslugi','avtor','team','partners','kontaktyi'"
+DARK_ARRAY = (
+    "array('home','patent','patent_prom_obr','mktu','mktu1',"
+    "'reviews','portfolio','spasibo','uslugi','avtor','team','partners','kontaktyi')"
 )
-DARK_ARRAY = f"array({DARK_PAGES})"
 
 STATIC_BODY = (
     f" /* {MARK} */ "
@@ -39,6 +38,9 @@ def patch(text: str) -> str:
         raise SystemExit("main.php too short")
 
     # Expand cms dark pages array (idempotent marker)
+    broken = "array(home'"
+    if broken in text:
+        text = text.replace(broken, "array('home'", 1)
     if MARK_PAGES not in text:
         text, n = re.subn(
             r"array\('home','patent','patent_prom_obr','mktu','mktu1'\)",
@@ -46,15 +48,18 @@ def patch(text: str) -> str:
             text,
             count=1,
         )
-        if n != 1:
-            text, n2 = re.subn(
-                r"array\([^)]*'mktu1'[^)]*\)",
-                f"/* {MARK_PAGES} */ {DARK_ARRAY}",
-                text,
-                count=1,
-            )
-            if n2 != 1:
-                raise SystemExit("cms dark pages array not found")
+        if n != 1 and MARK_PAGES not in text:
+            raise SystemExit("cms dark pages array not found")
+    body_old = (
+        "if (in_array($temp['page'], array('home','patent','patent_prom_obr','mktu','mktu1'), true))"
+        " echo ' lireate-cms-page-dark';"
+    )
+    body_new = (
+        f"/* {MARK_PAGES} body */ if (in_array($temp['page'], {DARK_ARRAY}, true))"
+        " echo ' lireate-cms-page-dark';"
+    )
+    if body_old in text:
+        text = text.replace(body_old, body_new, 1)
 
     if MARK not in text:
         anchor = " if($temp['page']=='uslugi') echo ' lireate-uslugi-body';"
