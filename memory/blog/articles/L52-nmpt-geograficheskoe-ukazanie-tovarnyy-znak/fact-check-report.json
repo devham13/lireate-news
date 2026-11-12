@@ -2,14 +2,21 @@
   "article": "memory/blog/articles/L52-nmpt-geograficheskoe-ukazanie-tovarnyy-znak/article.html",
   "fact_bank_source": "memory/brief/fact-bank.md",
   "verdict": "pass",
-  "total_extracted_facts": 23,
+  "total_extracted_facts": 25,
   "verified_facts_count": 3,
-  "unverified_facts_count": 20,
+  "unverified_facts_count": 22,
   "facts": [
+    {
+      "fact": "2024",
+      "kind": "date_or_year",
+      "context": "₽ ; скидка за электронную подачу отменена с 05.10.2024 (ПП РФ № 1278). Нормы на 12.11.2026 ; не юридичес",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
     {
       "fact": "2026",
       "kind": "date_or_year",
-      "context": "atent.gov.ru ), онлайн минус 30% . Нормы на 12.11.2026 ; не юридическая консультация. Базовый поиск ТЗ -",
+      "context": "енена с 05.10.2024 (ПП РФ № 1278). Нормы на 12.11.2026 ; не юридическая консультация. Базовый поиск ТЗ -",
       "verified": true,
       "reason": "Exact match found in fact-bank"
     },
@@ -23,14 +30,21 @@
     {
       "fact": "2019",
       "kind": "date_or_year",
-      "context": "т\" суды учли неоднородность мёда и мяса ( СИП-645/2019 ). Топоним HAWAII для чая отклонили по п. 3 ( ППС",
+      "context": "т\" суды учли неоднородность мёда и мяса ( СИП-645/2019 ). Топоним HAWAII для чая отклонили по п. 3 (реше",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2020",
+      "kind": "date_or_year",
+      "context": "екта (регламент приказа Роспатента № 101 от 22.07.2020). Этап Пункт пошлин Сумма Заявка, формальная эксп",
       "verified": false,
       "reason": "No matching fact or number found in fact-bank"
     },
     {
       "fact": "2025",
       "kind": "date_or_year",
-      "context": "). Топоним HAWAII для чая отклонили по п. 3 ( ППС 2025 ). Делайте: прогонять топоним через тест \"фантази",
+      "context": "акие пошлины за регистрацию НМПТ/ГУ в Роспатенте (2025-2026)? Ориентир полного трека: 3 000 ₽ (п. 2.3 )",
       "verified": true,
       "reason": "Exact match found in fact-bank"
     },
@@ -65,21 +79,35 @@
     {
       "fact": "3 000",
       "kind": "large_number",
-      "context": "е место производства - по п. 3 . Пошлины ГУ/НМПТ: 3 000 + 13 000 + 18 000 ₽ (пп. 2.3, 2.5, 2.13 на rospat",
+      "context": "е место производства - по п. 3 . Пошлины ГУ/НМПТ: 3 000 + 13 000 + 18 000 ₽ (пп. 2.3, 2.5, 2.13 по таблиц",
       "verified": false,
       "reason": "No matching fact or number found in fact-bank"
     },
     {
       "fact": "13 000",
       "kind": "large_number",
-      "context": "производства - по п. 3 . Пошлины ГУ/НМПТ: 3 000 + 13 000 + 18 000 ₽ (пп. 2.3, 2.5, 2.13 на rospatent.gov.r",
+      "context": "производства - по п. 3 . Пошлины ГУ/НМПТ: 3 000 + 13 000 + 18 000 ₽ (пп. 2.3, 2.5, 2.13 по таблице Роспате",
       "verified": false,
       "reason": "No matching fact or number found in fact-bank"
     },
     {
       "fact": "18 000",
       "kind": "large_number",
-      "context": "тва - по п. 3 . Пошлины ГУ/НМПТ: 3 000 + 13 000 + 18 000 ₽ (пп. 2.3, 2.5, 2.13 на rospatent.gov.ru ), онла",
+      "context": "тва - по п. 3 . Пошлины ГУ/НМПТ: 3 000 + 13 000 + 18 000 ₽ (пп. 2.3, 2.5, 2.13 по таблице Роспатента ), ит",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "34 000",
+      "kind": "large_number",
+      "context": "пп. 2.3, 2.5, 2.13 по таблице Роспатента ), итого 34 000 ₽ ; скидка за электронную подачу отменена с 05.10",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1278",
+      "kind": "large_number",
+      "context": "электронную подачу отменена с 05.10.2024 (ПП РФ № 1278). Нормы на 12.11.2026 ; не юридическая консультац",
       "verified": false,
       "reason": "No matching fact or number found in fact-bank"
     },
@@ -114,49 +142,35 @@
     {
       "fact": "1522",
       "kind": "large_number",
-      "context": "тента. ГУ подаёт объединение производителей ( ст. 1522 ); для НМПТ - заключение органа субъекта ( приказ",
+      "context": "одачи. ГУ подаёт объединение производителей ( ст. 1522 ); для НМПТ - заключение органа субъекта (регламе",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "101",
+      "kind": "large_number",
+      "context": "е органа субъекта (регламент приказа Роспатента № 101 от 22.07.2020). Этап Пункт пошлин Сумма Заявка, фо",
       "verified": false,
       "reason": "No matching fact or number found in fact-bank"
     },
     {
       "fact": "3 3 000",
       "kind": "large_number",
-      "context": "подача (−30%) Заявка, формальная экспертиза п. 2.3 3 000 ₽ 1 050 ₽ Экспертиза обозначения п. 2.5 13 000 ₽",
-      "verified": false,
-      "reason": "No matching fact or number found in fact-bank"
-    },
-    {
-      "fact": "1 050",
-      "kind": "large_number",
-      "context": "30%) Заявка, формальная экспертиза п. 2.3 3 000 ₽ 1 050 ₽ Экспертиза обозначения п. 2.5 13 000 ₽ 3 780 ₽",
+      "context": "т пошлин Сумма Заявка, формальная экспертиза п. 2.3 3 000 ₽ Экспертиза обозначения п. 2.5 13 000 ₽ Регистра",
       "verified": false,
       "reason": "No matching fact or number found in fact-bank"
     },
     {
       "fact": "5 13 000",
       "kind": "large_number",
-      "context": ". 2.3 3 000 ₽ 1 050 ₽ Экспертиза обозначения п. 2.5 13 000 ₽ 3 780 ₽ Регистрация и свидетельство п. 2.13 18",
-      "verified": false,
-      "reason": "No matching fact or number found in fact-bank"
-    },
-    {
-      "fact": "3 780",
-      "kind": "large_number",
-      "context": "₽ 1 050 ₽ Экспертиза обозначения п. 2.5 13 000 ₽ 3 780 ₽ Регистрация и свидетельство п. 2.13 18 000 ₽ 6",
+      "context": "ертиза п. 2.3 3 000 ₽ Экспертиза обозначения п. 2.5 13 000 ₽ Регистрация и свидетельство п. 2.13 18 000 ₽ С",
       "verified": false,
       "reason": "No matching fact or number found in fact-bank"
     },
     {
       "fact": "13 18 000",
       "kind": "large_number",
-      "context": "13 000 ₽ 3 780 ₽ Регистрация и свидетельство п. 2.13 18 000 ₽ 6 300 ₽ Откройте открытые реестры ФИПС - раздел",
-      "verified": false,
-      "reason": "No matching fact or number found in fact-bank"
-    },
-    {
-      "fact": "6 300",
-      "kind": "large_number",
-      "context": "80 ₽ Регистрация и свидетельство п. 2.13 18 000 ₽ 6 300 ₽ Откройте открытые реестры ФИПС - раздел \"Геогра",
+      "context": "п. 2.5 13 000 ₽ Регистрация и свидетельство п. 2.13 18 000 ₽ С 05.10.2024 (ПП РФ № 1278) скидка за электронн",
       "verified": false,
       "reason": "No matching fact or number found in fact-bank"
     },

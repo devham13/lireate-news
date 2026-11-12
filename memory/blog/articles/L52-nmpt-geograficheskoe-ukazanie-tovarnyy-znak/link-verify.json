@@ -1,184 +1,189 @@
 {
   "source": "memory/blog/articles/L52-nmpt-geograficheskoe-ukazanie-tovarnyy-znak/article.html",
-  "total_links": 19,
-  "failed_count": 4,
+  "total_links": 20,
+  "failed_count": 0,
   "privacy_policy_violations": [],
-  "verdict": "fail",
+  "verdict": "pass",
   "links": [
     {
       "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/be8fc5b6a0661d4daf083041900996da0c8d91b7/",
-      "status": 200,
-      "ok": true,
-      "method": "HEAD",
-      "error": null,
       "kind": "external",
-      "skipped": false
+      "status": null,
+      "ok": true,
+      "skipped": true,
+      "method": null,
+      "error": null
     },
     {
       "url": "https://searchplatform.rospatent.gov.ru/trademarks",
-      "status": 200,
-      "ok": true,
-      "method": "HEAD",
-      "error": null,
       "kind": "external",
-      "skipped": false
+      "status": null,
+      "ok": true,
+      "skipped": true,
+      "method": null,
+      "error": null
     },
     {
       "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/11b7a515e3a042b436472a2a5a679e5cf09f13f8/",
-      "status": 200,
-      "ok": true,
-      "method": "HEAD",
-      "error": null,
       "kind": "external",
-      "skipped": false
+      "status": null,
+      "ok": true,
+      "skipped": true,
+      "method": null,
+      "error": null
     },
     {
       "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/2d1325a8b668f1419b434dc60c9ed620e7512ac3/",
-      "status": 200,
-      "ok": true,
-      "method": "HEAD",
-      "error": null,
       "kind": "external",
-      "skipped": false
+      "status": null,
+      "ok": true,
+      "skipped": true,
+      "method": null,
+      "error": null
     },
     {
       "url": "https://www.consultant.ru/document/cons_doc_LAW_487430/8fc527f897d9582cf7202cbdeb16625354d7fd01/",
-      "status": 200,
-      "ok": true,
-      "method": "HEAD",
-      "error": null,
       "kind": "external",
-      "skipped": false
+      "status": null,
+      "ok": true,
+      "skipped": true,
+      "method": null,
+      "error": null
     },
     {
-      "url": "https://example.com/proverka_tovarnogo_znaka_pered_registraciey_chek_list_po_reestram_rospatenta/",
-      "status": 404,
-      "ok": false,
-      "method": "HEAD",
-      "error": "HTTP Error 404: Not Found",
+      "url": "/proverka_tovarnogo_znaka_pered_registraciey_chek_list_po_reestram_rospatenta/",
       "kind": "internal_relative",
-      "skipped": false,
-      "checked_url": "https://example.com/proverka_tovarnogo_znaka_pered_registraciey_chek_list_po_reestram_rospatenta/"
+      "status": null,
+      "ok": true,
+      "skipped": true,
+      "method": null,
+      "error": "relative link; pass --site-base to verify"
     },
     {
       "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/26d63b918c647d511cf9de3ae458658c88f255f2/",
-      "status": 200,
-      "ok": true,
-      "method": "HEAD",
-      "error": null,
       "kind": "external",
-      "skipped": false
+      "status": null,
+      "ok": true,
+      "skipped": true,
+      "method": null,
+      "error": null
     },
     {
       "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/cd4f6ee510adf5b4c761b418e63507ddc73ee2ab/",
-      "status": 200,
-      "ok": true,
-      "method": "HEAD",
-      "error": null,
       "kind": "external",
-      "skipped": false
+      "status": null,
+      "ok": true,
+      "skipped": true,
+      "method": null,
+      "error": null
     },
     {
       "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/2e83c7a3d54808ca80d8f0b2a034caa0f7122b57/",
-      "status": 200,
-      "ok": true,
-      "method": "HEAD",
-      "error": null,
       "kind": "external",
-      "skipped": false
+      "status": null,
+      "ok": true,
+      "skipped": true,
+      "method": null,
+      "error": null
     },
     {
       "url": "http://kremlin.ru/acts/bank/47855",
-      "status": 200,
-      "ok": true,
-      "method": "HEAD",
-      "error": null,
       "kind": "external",
-      "skipped": false
+      "status": null,
+      "ok": true,
+      "skipped": true,
+      "method": null,
+      "error": null
     },
     {
       "url": "https://www.consultant.ru/document/cons_doc_LAW_31428/",
-      "status": 200,
-      "ok": true,
-      "method": "HEAD",
-      "error": null,
       "kind": "external",
-      "skipped": false
+      "status": null,
+      "ok": true,
+      "skipped": true,
+      "method": null,
+      "error": null
     },
     {
       "url": "https://palatapp.ru/teoriya-i-praktika/metodicheskie-rekomendaczii/rekomendaczii-po-otdelnyim-voprosam-ekspertizyi-zayavlennyix-oboznachenij.html",
-      "status": 200,
-      "ok": true,
-      "method": "HEAD",
-      "error": null,
       "kind": "external",
-      "skipped": false
+      "status": null,
+      "ok": true,
+      "skipped": true,
+      "method": null,
+      "error": null
     },
     {
       "url": "https://base.garant.ru/73832888/",
-      "status": 200,
-      "ok": true,
-      "method": "HEAD",
-      "error": null,
       "kind": "external",
-      "skipped": false
+      "status": null,
+      "ok": true,
+      "skipped": true,
+      "method": null,
+      "error": null
     },
     {
       "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/93eb9c1d8160eee049742b894d74e97b1ee62e02/",
-      "status": 200,
-      "ok": true,
-      "method": "HEAD",
-      "error": null,
       "kind": "external",
-      "skipped": false
+      "status": null,
+      "ok": true,
+      "skipped": true,
+      "method": null,
+      "error": null
+    },
+    {
+      "url": "https://rospatent.gov.ru/ru/activities/dues/table",
+      "kind": "external",
+      "status": null,
+      "ok": true,
+      "skipped": true,
+      "method": null,
+      "error": null
     },
     {
       "url": "https://licensingrussia.ru/article/14579-kak-proverit-registriruemyi-tovarnyi-znak-pered-podachei-zaiavki-v-rospatent/",
-      "status": 200,
-      "ok": true,
-      "method": "HEAD",
-      "error": null,
       "kind": "external",
-      "skipped": false
+      "status": null,
+      "ok": true,
+      "skipped": true,
+      "method": null,
+      "error": null
     },
     {
       "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/fab3ae79219dd5f5d60cb4ff67c6d9832f67bedf/",
-      "status": 200,
-      "ok": true,
-      "method": "HEAD",
-      "error": null,
       "kind": "external",
-      "skipped": false
+      "status": null,
+      "ok": true,
+      "skipped": true,
+      "method": null,
+      "error": null
     },
     {
-      "url": "https://example.com/vozrazhenie_protiv_registracii_chuzhogo_tovarnogo_znaka_sroki_i_poryadok/",
-      "status": 404,
-      "ok": false,
-      "method": "HEAD",
-      "error": "HTTP Error 404: Not Found",
+      "url": "/vozrazhenie_protiv_registracii_chuzhogo_tovarnogo_znaka_sroki_i_poryadok/",
       "kind": "internal_relative",
-      "skipped": false,
-      "checked_url": "https://example.com/vozrazhenie_protiv_registracii_chuzhogo_tovarnogo_znaka_sroki_i_poryadok/"
+      "status": null,
+      "ok": true,
+      "skipped": true,
+      "method": null,
+      "error": "relative link; pass --site-base to verify"
     },
     {
-      "url": "https://example.com/otnositelnyie_osnovaniya_otkaza_v_registracii_tz_otvet_ekspertize/",
-      "status": 404,
-      "ok": false,
-      "method": "HEAD",
-      "error": "HTTP Error 404: Not Found",
+      "url": "/otnositelnyie_osnovaniya_otkaza_v_registracii_tz_otvet_ekspertize/",
       "kind": "internal_relative",
-      "skipped": false,
-      "checked_url": "https://example.com/otnositelnyie_osnovaniya_otkaza_v_registracii_tz_otvet_ekspertize/"
+      "status": null,
+      "ok": true,
+      "skipped": true,
+      "method": null,
+      "error": "relative link; pass --site-base to verify"
     },
     {
-      "url": "https://example.com/registraciya_tovarnogo_znaka/",
-      "status": 404,
-      "ok": false,
-      "method": "HEAD",
-      "error": "HTTP Error 404: Not Found",
+      "url": "/registraciya_tovarnogo_znaka/",
       "kind": "internal_relative",
-      "skipped": false,
-      "checked_url": "https://example.com/registraciya_tovarnogo_znaka/"
+      "status": null,
+      "ok": true,
+      "skipped": true,
+      "method": null,
+      "error": "relative link; pass --site-base to verify"
     }
   ]
 }

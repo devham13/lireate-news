@@ -52,7 +52,7 @@
 | 2 | [IPC Magazine — ГУ/НМПТ и ТЗ](https://ipcmagazine.ru/articles/1797696/) | Аналитика | Баланс интересов ТЗ vs НМПТ | Не чек-лист заявителя |
 | 3 | [КонсультантПлюс, ст. 1483](https://www.consultant.ru/document/cons_doc_LAW_64629/2e83c7a3d54808ca80d8f0b2a034caa0f7122b57/) | НПА | Канон п. 1, 3, 7, 8 | Не how-to |
 | 4 | [КонсультантПлюс, ст. 1516](https://www.consultant.ru/document/cons_doc_LAW_64629/11b7a515e3a042b436472a2a5a679e5cf09f13f8/) | НПА | Определения ГУ и НМПТ | — |
-| 5 | [Роспатент — таблица пошлин](https://rospatent.gov.ru/ru/activities/dues/table) | Официально | Пошлины 2.3, 2.5, 2.13, скидка −30% online | — |
+| 5 | [Роспатент — таблица пошлин](https://rospatent.gov.ru/ru/activities/dues/table) | Официально | Пошлины 2.3, 2.5, 2.13 (полные суммы; e‑скидка отменена 05.10.2024) | — |
 | 6 | [ФИПС — открытые реестры](https://www.fips.ru/registers-web/) | Официально | Реестр ГУ и НМПТ, заявок | С cloud-IP возможен 403 на registers-doc-view |
 | 7 | [Поисковая платформа Роспатента](https://searchplatform.rospatent.gov.ru/trademarks) | Официально | Кросс-поиск ТЗ, заявок | Нужно отдельно искать ГУ/НМПТ |
 | 8 | [Руководство ФИПС, п. 7 ст. 1483](https://www.consultant.ru/document/cons_doc_LAW_304256/20e99d9b71c2ba714294c6977f9cf43d97a10fa0/) | Методика | NMPT в экспертизе ТЗ | PDF FIPS |
@@ -97,10 +97,10 @@
 | **Знак охраны** (словесные формулы + эмблемы) — п. 1 ст. 1520; эмблемы утверждены приказом Роспатента № 94 | [ст. 1520](https://www.consultant.ru/document/cons_doc_LAW_64629/26d63b918c647d511cf9de3ae458658c88f255f2/) · [приказ № 94](https://www.consultant.ru/document/cons_doc_LAW_360921/2ff7a8c72de3994f30496a0ccbb1ddafdaddf518/) | 2020 | да |
 | Заявка на ГУ может подаваться **объединением производителей**; к заявке — документы о производстве/обороте и использовании обозначения членами | [ст. 1522 п. 3](https://www.consultant.ru/document/cons_doc_LAW_64629/93eb9c1d8160eee049742b894d74e97b1ee62e02/) | 2026 | да |
 | Для НМПТ на территории РФ — **заключение уполномоченного органа** субъекта РФ (регламент в приказе Роспатента № 101) | [приказ № 101, FIPS](https://www1.fips.ru/documents/npa-rf/prikazy-rospatenta/prikaz-rospatenta-ot-22-07-2020-101.php) | 22.07.2020 | да |
-| Пошлина: регистрация заявки на ГУ/НМПТ (формальная экспертиза) — **3 000 ₽** (онлайн **1 050 ₽**) | [rospatent.gov.ru/dues/table п. 2.3](https://rospatent.gov.ru/ru/activities/dues/table) | опубл. 03.10.2025 | да |
-| Экспертиза обозначения ГУ/НМПТ — **13 000 ₽** (онлайн **3 780 ₽**) | [та же таблица п. 2.5](https://rospatent.gov.ru/ru/activities/dues/table) | 2025–2026 | да |
-| Регистрация ГУ/НМПТ + выдача электронного свидетельства — **18 000 ₽** (онлайн **6 300 ₽**) | [та же таблица п. 2.13](https://rospatent.gov.ru/ru/activities/dues/table) | 2025–2026 | да |
-| Скидка **30%** при электронной подаче — в таблице Роспатента (колонки e‑подачи) | [rospatent.gov.ru/dues/table](https://rospatent.gov.ru/ru/activities/dues/table) | 2025 | да |
+| Пошлина: регистрация заявки на ГУ/НМПТ (формальная экспертиза) — **3 000 ₽** (п. 2.3) | [rospatent.gov.ru/dues/table п. 2.3](https://rospatent.gov.ru/ru/activities/dues/table) | опубл. 03.10.2025 | да |
+| Экспертиза обозначения ГУ/НМПТ — **13 000 ₽** (п. 2.5) | [та же таблица п. 2.5](https://rospatent.gov.ru/ru/activities/dues/table) | 2025–2026 | да |
+| Регистрация ГУ/НМПТ + выдача электронного свидетельства — **18 000 ₽** (п. 2.13) | [та же таблица п. 2.13](https://rospatent.gov.ru/ru/activities/dues/table) | 2025–2026 | да |
+| Скидка за электронную подачу **отменена** с **05.10.2024** (ПП РФ № 1278); в действующей таблице — полные суммы | [rospatent.gov.ru/dues/table](https://rospatent.gov.ru/ru/activities/dues/table) | 2024–2026 | да |
 | Открытый реестр: **«Географические указания и наименования места происхождения товаров»** + реестр заявок | [fips.ru/registers-web](https://www.fips.ru/registers-web/) | актуально | да |
 | БД **RUGP** — библиографические данные НМПТ с 1996 г. | [fips.ru RUGP](https://fips.ru/elektronnye-servisy/informatsionno-poiskovaya-sistema/naimenovaniya-mest-proiskhozhdeniya-tovarov-rugp.php) | 2026 | да |
 | Рекомендации № 39: географическое имя **фантазийное / описательное / смешанное** зависит от **перечня товаров**; для товаров, связанных с регионом, охрана часто недоступна | [КонсультантПлюс закон № 39](https://www.consultant.ru/document/cons_doc_LAW_31428/) · [разд. 2.4 palatapp](https://palatapp.ru/teoriya-i-praktika/metodicheskie-rekomendaczii/rekomendaczii-po-otdelnyim-voprosam-ekspertizyi-zayavlennyix-oboznachenij.html) | методика | да |
