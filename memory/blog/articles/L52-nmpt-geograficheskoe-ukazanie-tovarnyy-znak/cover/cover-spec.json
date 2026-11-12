@@ -1,0 +1,33 @@
+{
+  "headline_lines": [
+    "НМПТ И ТОВАРНЫЙ",
+    "ЗНАК: МЕСТО ПРОИЗВОДСТВА"
+  ],
+  "highlight": "НМПТ",
+  "sticky_text": "три режима топонима",
+  "sticky_underline": "топонима",
+  "sticky_color": "yellow",
+  "badge_label": "ТЗ",
+  "label_chips": [
+    [
+      "1516",
+      "black"
+    ],
+    [
+      "2.3",
+      "white"
+    ],
+    [
+      "ГУ",
+      "pink"
+    ]
+  ],
+  "ui_card_title": "ТЗ vs НМПТ",
+  "ui_card_rows": [
+    "реестр ФИПС",
+    "34 000 ₽",
+    "чек-лист"
+  ],
+  "stage_background": "#ffffff",
+  "left_memo": "ФИПС · реестр ГУ · гл. 76"
+}
