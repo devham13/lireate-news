@@ -37,7 +37,8 @@ def build_full_story(name, seo_url, body_html, lead_style="template"):
 
 
 def build_news_row(meta, body_html, lead_style="template"):
-    name = (meta.get("title") or meta.get("h1") or meta.get("slug") or "").strip()
+    default_name = meta.get("title") or meta.get("h1") or meta.get("slug") or ""
+    name = (meta.get("lireate_display_name") or default_name).strip()
     seo_url = translit_seo_url(name)
     explicit = (meta.get("lireate_seo_url") or "").strip()
     if explicit:
