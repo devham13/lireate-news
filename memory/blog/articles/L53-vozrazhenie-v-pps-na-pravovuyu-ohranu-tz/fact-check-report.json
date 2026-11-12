@@ -1,0 +1,164 @@
+{
+  "article": "memory/blog/articles/L53-vozrazhenie-v-pps-na-pravovuyu-ohranu-tz/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "warning",
+  "total_extracted_facts": 22,
+  "verified_facts_count": 3,
+  "unverified_facts_count": 19,
+  "facts": [
+    {
+      "fact": "14 000 руб",
+      "kind": "price_or_currency",
+      "context": "512 (подп. 3.2.10 Правил ППС 644/261 ). Пошлина - 14 000 руб. (п. 2.28.4). Типичный спор о сходстве (п. 6 ст.",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "9 000 руб",
+      "kind": "price_or_currency",
+      "context": "ллетене. Это не возражение заявителя по ст. 1500 (9 000 руб., 4 месяца). ППС - коллегии при Роспатенте; \"пода",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "13 500 руб",
+      "kind": "price_or_currency",
+      "context": "ла ППС. Не делайте: считать пошлину \"за класс\" по 13 500 руб. из старых статей - для оспаривания охраны действ",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "ртизе - ст. 1493 и две стадии . Материал на 12.11.2026 не заменяет консультацию поверенного. Разведите тр",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2023",
+      "kind": "date_or_year",
+      "context": "ковой платформе Роспатента (круглосуточно с 11.12.2023) или в открытых реестрах ФИПС. Нужны номер свидет",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "5 лет",
+      "kind": "metric_or_duration",
+      "context": "28.4). Типичный спор о сходстве (п. 6 ст. 1483) - 5 лет с публикации регистрации в бюллетене. Это не возр",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1512 5 лет",
+      "kind": "metric_or_duration",
+      "context": "детельство на чужой знак ст. 1513 , основания ст. 1512 5 лет или весь срок охраны (см. ниже) 14 000 руб. (п. 2",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 5 лет",
+      "kind": "metric_or_duration",
+      "context": "1512 п. 2) П. 6, 7, 10 Сходство знаков, НМПТ, п. 10 5 лет с публикации сведений о гос. регистрации в бюллет",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2 месяцев",
+      "kind": "metric_or_duration",
+      "context": "их дней , исправление недостатков по запросу - до 2 месяцев ( п. 8-12 Правил ). Дождитесь уведомления о засед",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1500",
+      "kind": "large_number",
+      "context": "заявка, вам нужно не возражение заявителя по ст. 1500 и не обращение по ст. 1493, а возражение против пр",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1493",
+      "kind": "large_number",
+      "context": "жение заявителя по ст. 1500 и не обращение по ст. 1493, а возражение против предоставления правовой охра",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1512",
+      "kind": "large_number",
+      "context": "против предоставления правовой охраны в ППС (ст. 1512-1513). Дальше вы отличите три процедуры, проверит",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1513",
+      "kind": "large_number",
+      "context": "ив предоставления правовой охраны в ППС (ст. 1512-1513). Дальше вы отличите три процедуры, проверите сро",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "14 000",
+      "kind": "large_number",
+      "context": "512 (подп. 3.2.10 Правил ППС 644/261 ). Пошлина - 14 000 руб. (п. 2.28.4). Типичный спор о сходстве (п. 6 с",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": ". (п. 2.28.4). Типичный спор о сходстве (п. 6 ст. 1483) - 5 лет с публикации регистрации в бюллетене. Эт",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "9 000",
+      "kind": "large_number",
+      "context": "ллетене. Это не возражение заявителя по ст. 1500 (9 000 руб., 4 месяца). ППС - коллегии при Роспатенте; \"п",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1500 4",
+      "kind": "large_number",
+      "context": "воей заявки Отказ или решение по своей заявке ст. 1500 4 месяца 9 000 руб. (п. 2.28.2), см. гайд по отказу",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1512 5",
+      "kind": "large_number",
+      "context": "детельство на чужой знак ст. 1513 , основания ст. 1512 5 лет или весь срок охраны (см. ниже) 14 000 руб. (п",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 5",
+      "kind": "large_number",
+      "context": "1512 п. 2) П. 6, 7, 10 Сходство знаков, НМПТ, п. 10 5 лет с публикации сведений о гос. регистрации в бюл",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "13 500",
+      "kind": "large_number",
+      "context": "ла ППС. Не делайте: считать пошлину \"за класс\" по 13 500 руб. из старых статей - для оспаривания охраны дей",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1248",
+      "kind": "large_number",
+      "context": "п. 4 ст. 1513 ). Административный порядок по ст. 1248 идёт до суда по существу спора о знаке, а не вмест",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "261",
+      "kind": "large_number",
+      "context": ": ст. 1500, 1512-1513, 1483 п. 6, Правила ППС 644/261 и пошлина 2.28.4 сверены с КонсультантПлюс, ГАРАНТ",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

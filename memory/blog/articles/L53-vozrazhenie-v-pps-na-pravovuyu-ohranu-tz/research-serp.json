@@ -1,0 +1,260 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-12",
+    "today_ru": "12.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "четверг",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-14",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-12 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L53",
+    "priority": "P2",
+    "slug": "vozrazhenie-v-pps-na-pravovuyu-ohranu-tz",
+    "h1": "Как подать возражение в ППС на предоставление правовой охраны товарному знаку: сроки и основания",
+    "primary_query": "возражение в ппс на предоставление правовой охраны",
+    "secondary_queries": [
+      "палата по патентным спорам товарный знак",
+      "возражение против регистрации товарного знака",
+      "срок подачи возражения в роспатент"
+    ],
+    "search_intent": "workflow",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "возражение в ппс на предоставление правовой охраны 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-12"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "возражение в ппс на предоставление правовой охраны ноябрь 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-12"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "возражение в ппс на предоставление правовой охраны новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-12"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "палата по патентным спорам товарный знак 2026",
+      "purpose": "вторичный запрос: палата по патентным спорам товарный знак",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Поиск решений палаты по патентным спорам Роспатента",
+          "url": "https://ip.niizis.ru/search",
+          "snippet": ""
+        },
+        {
+          "title": "ФИПС - Федеральное государственное бюджетное учреждение Федеральный ...",
+          "url": "https://fips.ru/",
+          "snippet": "Проведение научных и прикладных исследований широкого спектра. Подготовка доказательных баз для разбирательств в сфере интеллектуальной собственности."
+        },
+        {
+          "title": "DOC Заключение Палаты по патентным спорам от 04.05.2026 (Приложение к ...",
+          "url": "https://www.consultant.ru/cons/cgi/online.cgi?req=doc&base=RGSS&n=90536",
+          "snippet": "В Отделении ВПТБ состоялась тематическая встреча «Новые подходы к рассмотрению заявок и выдаче патентов на промышленные образцы». праздничные дни - выходные дни."
+        },
+        {
+          "title": "09.09.2026 - new.fips.ru",
+          "url": "https://new.fips.ru/about/otdelenie-palata-po-patentnym-sporam/resheniya-federalnoy-sluzhby-po-intellektualnoy-sobstvennosti-prinimaemye-po-rezultatam-rassmotreniya/09092026.php",
+          "snippet": "Роспатентом 15.05.2025 принято решение об отказе в государственной регистрации товарного знака по заявке N 2024769573."
+        },
+        {
+          "title": "Палата по патентным спорам - fips.ru",
+          "url": "https://www1.fips.ru/about/otdelenie-palata-po-patentnym-sporam/?PAGEN_1=2",
+          "snippet": "Решение Роспатента от 09.09.2026 по заявке № 2022712832, принятое по результатам рассмотрения на заседании коллегии Палаты по патентным спорам 20.07.2026 возражения от 18.03.2024, поданного ООО \"Техносервис ..."
+        },
+        {
+          "title": "Палата по патентным спорам: как подать возражение и какие шансы",
+          "url": "https://patent-family.ru/journal/patenty/palata-po-patentnym-sporam/",
+          "snippet": "Протокол совещания у руководителя Роспатента от 19 марта 2020 г. № СВ-5 \"О организации работы Отделения \"Палата по патентным спорам\" в связи с исполнением поручений Правительства Российской Федерации, направленных на борьбу с распространением новой коронавирусной инфекции."
+        }
+      ],
+      "searched_at": "2026-11-12"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "возражение против регистрации товарного знака 2026",
+      "purpose": "вторичный запрос: возражение против регистрации товарного знака",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Возражение против регистрации товарного знака \\ 2026-2025-2024 год ...",
+          "url": "https://www.consultant.ru/law/podborki/vozrazhenie_protiv_registracii_tovarnogo_znaka/",
+          "snippet": ""
+        },
+        {
+          "title": "Возражение товарный знак \\ 2026-2025-2024 год \\ Акты, образцы, формы ...",
+          "url": "https://www.consultant.ru/law/podborki/vozrazhenie_tovarnyj_znak/",
+          "snippet": "Подборка наиболее важных документов по запросу Возражение против регистрации товарного знака (нормативно-правовые акты, формы, статьи, консультации экспертов и многое другое). Вопрос: Как подать заявку на регистрацию товарного знака?"
+        },
+        {
+          "title": "Возражение против регистрации товарного знака: как подать и что ...",
+          "url": "http://lyratetrademark.ru/2026/01/05/poluchite-poshagovoe-rukovodstvo-po-podache-vozrazheniya-protiv-registraczii-tovarnogo-znaka-sovety-tipichnye-oshibki-i-sekrety-uspeshnoj-zashhity-vashego-brenda/",
+          "snippet": "Форма: Возражение в Федеральную службу по интеллектуальной собственности против предоставления правовой охраны товарному знаку (Подготовлен для системы КонсультантПлюс, 2026)"
+        },
+        {
+          "title": "Возражение против регистрации товарного знака в Роспатенте",
+          "url": "https://vitvet.com/articles/tovarnyj-znak/zashchita/vozrazhenie/",
+          "snippet": "Если коротко и по-честному: после этого текста у вас сложится рабочая схема, как подать возражение, что приложить к заявлению, где чаще всего люди ломают себе нервы и как заранее проверить регистрацию товарного знака, чтобы не бегать с огнетушителем, когда уже полыхнуло."
+        },
+        {
+          "title": "Возражение против предоставления правовой охраны товарному знаку ...",
+          "url": "https://www.bashukchichkanov.com/press/vozrazhenie-protiv-predostavleniya-pravovoy-okhrany-tovarnomu-znaku-osnovaniya-poryadok-i-praktika/",
+          "snippet": "По состоянию на май 2026 года процедура рассматривается Палатой по патентным спорам и позволяет заинтересованному лицу заблокировать регистрацию обозначения, которое нарушает его права или противоречит требованиям закона."
+        },
+        {
+          "title": "Как подать возражение против регистрации товарного знака",
+          "url": "https://zhelezno.com/zashchitit-brend/vozrazhenie-protiv-registracii",
+          "snippet": "В статье мы расскажем, кто вправе возражать и подавать возражения против регистрации товарного знака, какие основание и статья ГК РФ (1512, 1513) это предусматривают, как проходит подача в ..."
+        }
+      ],
+      "searched_at": "2026-11-12"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "срок подачи возражения в роспатент 2026",
+      "purpose": "вторичный запрос: срок подачи возражения в роспатент",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Самостоятельная процедура подачи возражения.",
+          "url": "https://intellectprava.ru/samostoyatelnaya-procedura-podachi-vozrazheniya",
+          "snippet": ""
+        },
+        {
+          "title": "Возражение против регистрации товарного знака в Роспатенте",
+          "url": "https://vitvet.com/articles/tovarnyj-znak/zashchita/vozrazhenie/",
+          "snippet": "Возражение на решение экспертизы заявленного обозначения подаётся в Роспатент в течение четырёх месяцев со дня направления заявителю решения (пункт 1 статьи 1500 Гражданского кодекса Российской Федерации)."
+        },
+        {
+          "title": "Возражение против предоставления правовой охраны товарному знаку ...",
+          "url": "https://www.bashukchichkanov.com/press/vozrazhenie-protiv-predostavleniya-pravovoy-okhrany-tovarnomu-znaku-osnovaniya-poryadok-i-praktika/",
+          "snippet": "Срок подачи не ограничен конкретной датой: возражение принимается с момента публикации сведений о заявке в официальном бюллетене Роспатента и до даты государственной регистрации знака (статья 1500 ГК РФ)."
+        },
+        {
+          "title": "Срок обжалования решения Роспатента \\ 2026-2025-2024 год \\ Акты ...",
+          "url": "https://www.consultant.ru/law/podborki/srok_obzhalovaniya_resheniya_rospatenta/",
+          "snippet": "Статья 1513 ГК РФ (порядок оспаривания) Данная статья определяет процедуру: кто, куда и в какие сроки может подавать возражение."
+        },
+        {
+          "title": "Палата по патентным спорам: как подать возражение и какие шансы",
+          "url": "https://patent-family.ru/journal/patenty/palata-po-patentnym-sporam/",
+          "snippet": "Оспаривание решений возможно в течение ограниченного срока - в течение трех месяцев со дня направления соответствующего решения Роспатента."
+        },
+        {
+          "title": "Возражение в Роспатент после отказа: как обжаловать решение",
+          "url": "https://ipbot.ru/articles/vozrazhenie-rospatent/",
+          "snippet": "Возражение на отказ по товарному знаку Роспатент удовлетворяет примерно в половине случаев, по изобретению — вдвое реже. Как подать возражение, какие пошлины и сроки."
+        }
+      ],
+      "searched_at": "2026-11-12"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как подать возражение в ППС на предоставление правовой охраны товарному знаку: сроки и основания 2026",
+      "purpose": "SERP по H1",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-12"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://ip.niizis.ru/search",
+      "title": "Поиск решений палаты по патентным спорам Роспатента",
+      "from_query": "палата по патентным спорам товарный знак 2026"
+    },
+    {
+      "url": "https://fips.ru/",
+      "title": "ФИПС - Федеральное государственное бюджетное учреждение Федеральный ...",
+      "from_query": "палата по патентным спорам товарный знак 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/cons/cgi/online.cgi?req=doc&base=RGSS&n=90536",
+      "title": "DOC Заключение Палаты по патентным спорам от 04.05.2026 (Приложение к ...",
+      "from_query": "палата по патентным спорам товарный знак 2026"
+    },
+    {
+      "url": "https://new.fips.ru/about/otdelenie-palata-po-patentnym-sporam/resheniya-federalnoy-sluzhby-po-intellektualnoy-sobstvennosti-prinimaemye-po-rezultatam-rassmotreniya/09092026.php",
+      "title": "09.09.2026 - new.fips.ru",
+      "from_query": "палата по патентным спорам товарный знак 2026"
+    },
+    {
+      "url": "https://www1.fips.ru/about/otdelenie-palata-po-patentnym-sporam/?PAGEN_1=2",
+      "title": "Палата по патентным спорам - fips.ru",
+      "from_query": "палата по патентным спорам товарный знак 2026"
+    },
+    {
+      "url": "https://patent-family.ru/journal/patenty/palata-po-patentnym-sporam/",
+      "title": "Палата по патентным спорам: как подать возражение и какие шансы",
+      "from_query": "палата по патентным спорам товарный знак 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/vozrazhenie_protiv_registracii_tovarnogo_znaka/",
+      "title": "Возражение против регистрации товарного знака \\ 2026-2025-2024 год ...",
+      "from_query": "возражение против регистрации товарного знака 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/vozrazhenie_tovarnyj_znak/",
+      "title": "Возражение товарный знак \\ 2026-2025-2024 год \\ Акты, образцы, формы ...",
+      "from_query": "возражение против регистрации товарного знака 2026"
+    },
+    {
+      "url": "http://lyratetrademark.ru/2026/01/05/poluchite-poshagovoe-rukovodstvo-po-podache-vozrazheniya-protiv-registraczii-tovarnogo-znaka-sovety-tipichnye-oshibki-i-sekrety-uspeshnoj-zashhity-vashego-brenda/",
+      "title": "Возражение против регистрации товарного знака: как подать и что ...",
+      "from_query": "возражение против регистрации товарного знака 2026"
+    },
+    {
+      "url": "https://vitvet.com/articles/tovarnyj-znak/zashchita/vozrazhenie/",
+      "title": "Возражение против регистрации товарного знака в Роспатенте",
+      "from_query": "возражение против регистрации товарного знака 2026"
+    },
+    {
+      "url": "https://www.bashukchichkanov.com/press/vozrazhenie-protiv-predostavleniya-pravovoy-okhrany-tovarnomu-znaku-osnovaniya-poryadok-i-praktika/",
+      "title": "Возражение против предоставления правовой охраны товарному знаку ...",
+      "from_query": "возражение против регистрации товарного знака 2026"
+    },
+    {
+      "url": "https://zhelezno.com/zashchitit-brend/vozrazhenie-protiv-registracii",
+      "title": "Как подать возражение против регистрации товарного знака",
+      "from_query": "возражение против регистрации товарного знака 2026"
+    },
+    {
+      "url": "https://intellectprava.ru/samostoyatelnaya-procedura-podachi-vozrazheniya",
+      "title": "Самостоятельная процедура подачи возражения.",
+      "from_query": "срок подачи возражения в роспатент 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/law/podborki/srok_obzhalovaniya_resheniya_rospatenta/",
+      "title": "Срок обжалования решения Роспатента \\ 2026-2025-2024 год \\ Акты ...",
+      "from_query": "срок подачи возражения в роспатент 2026"
+    },
+    {
+      "url": "https://ipbot.ru/articles/vozrazhenie-rospatent/",
+      "title": "Возражение в Роспатент после отказа: как обжаловать решение",
+      "from_query": "срок подачи возражения в роспатент 2026"
+    }
+  ]
+}

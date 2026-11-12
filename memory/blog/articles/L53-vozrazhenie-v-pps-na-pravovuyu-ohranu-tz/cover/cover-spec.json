@@ -1,0 +1,33 @@
+{
+  "headline_lines": [
+    "ВОЗРАЖЕНИЕ В",
+    "ППС: ЧУЖОЕ СВИДЕТЕЛЬСТВО"
+  ],
+  "highlight": "ППС",
+  "sticky_text": "ст. 1513 не путать со 1500",
+  "sticky_underline": "1513",
+  "sticky_color": "yellow",
+  "badge_label": "ТЗ",
+  "label_chips": [
+    [
+      "1512",
+      "black"
+    ],
+    [
+      "2.28.4",
+      "white"
+    ],
+    [
+      "14 000",
+      "pink"
+    ]
+  ],
+  "ui_card_title": "1493 / 1500 / 1513",
+  "ui_card_rows": [
+    "реестр ФИПС",
+    "14 000 руб.",
+    "срок 5 лет"
+  ],
+  "stage_background": "#ffffff",
+  "left_memo": "Роспатент · ППС · реестр ТЗ"
+}
