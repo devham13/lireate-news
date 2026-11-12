@@ -1,0 +1,101 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "#lireate-organization",
+      "name": "Лирейт"
+    },
+    {
+      "@type": "Person",
+      "@id": "#author-artur-horoshev",
+      "name": "Артур Хорошев",
+      "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Maya AI"
+      },
+      "sameAs": [
+        "https://kv-ai.ru/artur-horosheff",
+        "https://mayai.ru/obo-mne/",
+        "https://t.me/maya_pro",
+        "https://t.me/horosheff"
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "#article-l49",
+      "headline": "Сравнение: регистрация товарного знака на физлицо, ИП или ООО - как выбрать правообладателя",
+      "description": "Одна процедура Роспатента, разные последствия: таблица ФЛ, ИП, ООО и самозанятого, 193-ФЗ, 35 000 ₽ пошлин, лицензия или отчуждение в компанию.",
+      "datePublished": "2026-11-12",
+      "dateModified": "2026-11-12",
+      "inLanguage": "ru",
+      "url": "/registraciya-tovarnogo-znaka-na-fizicheskoe-lico",
+      "image": "/template/images/blog/registraciya-tovarnogo-znaka-na-fizicheskoe-lico.jpg",
+      "author": { "@id": "#author-artur-horoshev" },
+      "publisher": { "@id": "#lireate-organization" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "#faq-l49",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Можно ли зарегистрировать товарный знак на обычное физлицо без ИП?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Гражданин подаёт заявку с СНИЛС (FAQ Роспатента). Самозанятый идёт как гражданин."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем отличается регистрация на ИП и на гражданина с СНИЛС?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Пошлины и сроки те же; в заявке - ОГРНИП или СНИЛС. После закрытия ИП знак остаётся у вас, если не отчуждали."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что будет со знаком, если закрыть ИП?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "После 193-ФЗ закрытие ИП не гасит знак по ст. 1514. Обновите использование в классах МКТУ."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "На кого лучше оформить бренд для маркетплейса?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "На продавца в реестре и в договоре с площадкой. Иначе - лицензия или отчуждение до масштабирования продаж."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как передать знак с физлица на ООО?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Договор отчуждения, регистрация в Роспатент, пошлина п. 3.11 (15 000 ₽). Детали - в гайде по отчуждению товарного знака."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужна ли лицензия, если владелец знака - я, а продаёт ООО?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. Без лицензии или отчуждения использование ООО - риск по ст. 1484."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Самозанятому регистрировать на себя как на ФЛ или открывать ИП?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для заявки хватит гражданина с СНИЛС; ИП - вопрос налогов и договоров, не Роспатента."
+          }
+        }
+      ]
+    }
+  ]
+}
