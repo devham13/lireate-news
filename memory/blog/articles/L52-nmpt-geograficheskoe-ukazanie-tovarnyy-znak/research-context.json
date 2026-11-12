@@ -1,0 +1,42 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "today_iso": "2026-11-12",
+    "year": 2026,
+    "freshness_window": "prefer_sources_after_2026-11-01",
+    "tz": "Europe/Moscow"
+  },
+  "topic": {
+    "topic_id": "L52",
+    "slug": "nmpt-geograficheskoe-ukazanie-tovarnyy-znak",
+    "h1": "Товарный знак и место производства: НМПТ, географическое указание и коллизии с брендом",
+    "primary_query": "товарные знаки связанные с местом производства",
+    "search_intent": "comparison",
+    "article_mode": "B",
+    "site": "lireate"
+  },
+  "utility_gate": {
+    "status": "BLOCK",
+    "note": "excalibur_blog_utility_gate.py и research_start.py блокируют primary_query без маркера «как/чек-лист»; карточка L52 имеет search_intent comparison и h2 с чек-листом — исследование выполнено по поручению Директора, research gate 2: utility_verdict PASS в research-notes.md"
+  },
+  "search_queries": [
+    {
+      "id": "primary",
+      "query": "товарные знаки связанные с местом производства",
+      "purpose": "primary_query"
+    },
+    {
+      "id": "nmpt_reg",
+      "query": "НМПТ регистрация пошлина 2026",
+      "purpose": "secondary"
+    },
+    {
+      "id": "st1483",
+      "query": "ст 1483 п 7 географическое указание товарный знак",
+      "purpose": "legal"
+    }
+  ],
+  "output_dir": "memory/blog/articles/L52-nmpt-geograficheskoe-ukazanie-tovarnyy-znak",
+  "next_step": "research-notes.md заполнен subagent excalibur-blog-research"
+}

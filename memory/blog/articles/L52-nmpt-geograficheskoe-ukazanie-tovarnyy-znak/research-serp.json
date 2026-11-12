@@ -1,0 +1,19 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": { "today_iso": "2026-11-12", "year": 2026 },
+  "topic_id": "L52",
+  "note": "SERP приоритетно собран через WebSearch (шаг 0 research_start не выполнен из-за UTILITY TOPIC BLOCKER на primary_query)",
+  "searches": [],
+  "unique_urls": [
+    "https://www.consultant.ru/document/cons_doc_LAW_64629/2e83c7a3d54808ca80d8f0b2a034caa0f7122b57/",
+    "https://www.consultant.ru/document/cons_doc_LAW_64629/11b7a515e3a042b436472a2a5a679e5cf09f13f8/",
+    "https://rospatent.gov.ru/ru/activities/dues/table",
+    "https://www.fips.ru/registers-web/",
+    "https://searchplatform.rospatent.gov.ru/trademarks",
+    "https://pravo.ru/opinion/252013/",
+    "https://palatapp.ru/teoriya-i-praktika/metodicheskie-rekomendaczii/rekomendaczii-po-otdelnyim-voprosam-ekspertizyi-zayavlennyix-oboznachenij.html",
+    "https://base.garant.ru/73832888/",
+    "https://www.fips.ru/pps/27_12_25/2025%D0%9202346.pdf"
+  ],
+  "errors": []
+}
