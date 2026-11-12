@@ -1,0 +1,32 @@
+{
+  "headline_lines": [
+    "СМЕШЕНИЕ: ГРАФИЧЕСКИЙ ЗНАК"
+  ],
+  "highlight": "СМЕШЕНИЕ",
+  "sticky_text": "правка до пошлин",
+  "sticky_underline": "43",
+  "sticky_color": "yellow",
+  "badge_label": "ТЗ",
+  "label_chips": [
+    [
+      "п. 43",
+      "black"
+    ],
+    [
+      "Вена",
+      "white"
+    ],
+    [
+      "1497",
+      "pink"
+    ]
+  ],
+  "ui_card_title": "поиск → матрица → правка",
+  "ui_card_rows": [
+    "изображение + Вена",
+    "5 признаков п. 43",
+    "согласие / новая заявка"
+  ],
+  "stage_background": "#ffffff",
+  "left_memo": "Роспатент · п. 43 · JPG"
+}

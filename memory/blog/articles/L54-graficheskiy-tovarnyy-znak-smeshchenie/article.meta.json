@@ -44,13 +44,22 @@
   "cover_headline": "СМЕШЕНИЕ: ГРАФИЧЕСКИЙ ЗНАК",
   "cover_stage_background": "#ffffff",
   "cover_left_memo": "Роспатент · п. 43 · JPG",
-  "cover_highlight": "смешение",
+  "cover_highlight": "СМЕШЕНИЕ",
   "cover_sticky": "правка до пошлин",
   "cover_sticky_underline": "43",
   "cover_label_chips": [
-    ["п. 43", "black"],
-    ["Вена", "white"],
-    ["1497", "pink"]
+    [
+      "п. 43",
+      "black"
+    ],
+    [
+      "Вена",
+      "white"
+    ],
+    [
+      "1497",
+      "pink"
+    ]
   ],
   "cover_ui_title": "поиск → матрица → правка",
   "cover_ui_rows": [
