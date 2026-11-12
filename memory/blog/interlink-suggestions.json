@@ -1,6 +1,21 @@
 {
   "site_base": "https://example.com",
-  "total_articles": 56,
-  "opportunities_found": 0,
-  "suggestions": []
+  "total_articles": 58,
+  "opportunities_found": 2,
+  "suggestions": [
+    {
+      "source": "L53-vozrazhenie-v-pps-na-pravovuyu-ohranu-tz",
+      "target": "L06-kak-opredelit-klass-mktu",
+      "keyword": "классы мкту",
+      "context": "ует\", дата публикации регистрации в официальном бюллетене и классы МКТУ (группы товаров и услуг). Алгоритм сравнения со своим обозн",
+      "link_replacement": "<a href=\"/blog/kak-opredelit-klass-mktu/\">классы МКТУ</a>"
+    },
+    {
+      "source": "L53-vozrazhenie-v-pps-na-pravovuyu-ohranu-tz",
+      "target": "L33-konkurent-zaregistriroval-pohozhiy-tovarnyy-znak",
+      "keyword": "возражение против предоставления правовой охраны",
+      "context": "ение заявителя по ст. 1500 и не обращение по ст. 1493, а <b>возражение против предоставления правовой охраны</b> в ППС (ст. 1512-1513). Дальше вы отличите три процедуры",
+      "link_replacement": "<a href=\"/blog/konkurent-zaregistriroval-pohozhiy-tovarnyy-znak/\">возражение против предоставления правовой охраны</a>"
+    }
+  ]
 }
