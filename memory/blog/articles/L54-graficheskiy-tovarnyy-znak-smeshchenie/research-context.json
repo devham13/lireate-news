@@ -1,0 +1,80 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-12",
+    "today_ru": "12.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "четверг",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-14",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-12 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L54",
+    "priority": "P2",
+    "slug": "graficheskiy-tovarnyy-znak-smeshchenie",
+    "h1": "Как снизить риск смешения: графический товарный знак перед подачей в Роспатент",
+    "primary_query": "как снизить риск смешения графического товарного знака до подачи в Роспатент",
+    "secondary_queries": [
+      "сходство изобразительных знаков",
+      "доработка логотипа перед регистрацией",
+      "визуальное сходство товарных знаков"
+    ],
+    "search_intent": "troubleshooting",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "L54",
+    "status": "PASS",
+    "search_intent": "troubleshooting",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "как снизить риск смешения графического товарного знака до подачи в Роспатент 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "как снизить риск смешения графического товарного знака до подачи в Роспатент ноябрь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "как снизить риск смешения графического товарного знака до подачи в Роспатент новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "сходство изобразительных знаков 2026",
+      "purpose": "вторичный запрос: сходство изобразительных знаков"
+    },
+    {
+      "id": "secondary_2",
+      "query": "доработка логотипа перед регистрацией 2026",
+      "purpose": "вторичный запрос: доработка логотипа перед регистрацией"
+    },
+    {
+      "id": "secondary_3",
+      "query": "визуальное сходство товарных знаков 2026",
+      "purpose": "вторичный запрос: визуальное сходство товарных знаков"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как снизить риск смешения: графический товарный знак перед подачей в Роспатент 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/L54-graficheskiy-tovarnyy-znak-smeshchenie",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}

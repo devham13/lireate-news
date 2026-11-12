@@ -1,0 +1,52 @@
+{
+  "article": "memory/blog/articles/L54-graficheskiy-tovarnyy-znak-smeshchenie/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 6,
+  "verified_facts_count": 4,
+  "unverified_facts_count": 2,
+  "facts": [
+    {
+      "fact": "2023",
+      "kind": "date_or_year",
+      "context": "а не по одному пикселю. Бесплатный поиск с 11.12.2023 - на searchplatform.rospatent.gov.ru : вкладка \"И",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": ". Абсолютные риски - в гайде L39 . Нормы на 12.11.2026; не консультация поверенного. Определите, когда м",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "до пошлин, экспертиза может отказать по п. 6 ст. 1483 . Ниже вы загрузите макет в поиск по изображению,",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "1497",
+      "kind": "large_number",
+      "context": "доминирующей графики = часто новая заявка по ст. 1497 . Сначала общий поиск из чек-листа L01 ; здесь то",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "482",
+      "kind": "large_number",
+      "context": ". Заполните таблицу пяти признаков п. 43 Правил № 482 Для изобразительных знаков экспертиза сравнивает п",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "46 200",
+      "kind": "large_number",
+      "context": "ная зона, крупный бренд Предоценка ФИПС (1 класс, 46 200 ₽ ) См. тарифы предоценки (сводка ГАРАНТ) Меняетс",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    }
+  ]
+}
