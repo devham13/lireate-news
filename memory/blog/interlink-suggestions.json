@@ -1,21 +1,21 @@
 {
   "site_base": "https://example.com",
-  "total_articles": 58,
+  "total_articles": 59,
   "opportunities_found": 2,
   "suggestions": [
     {
-      "source": "L53-vozrazhenie-v-pps-na-pravovuyu-ohranu-tz",
+      "source": "L54-graficheskiy-tovarnyy-znak-smeshchenie",
       "target": "L06-kak-opredelit-klass-mktu",
       "keyword": "классы мкту",
-      "context": "ует\", дата публикации регистрации в официальном бюллетене и классы МКТУ (группы товаров и услуг). Алгоритм сравнения со своим обозн",
+      "context": "<p>Тревожный сигнал - <b>близкое впечатление</b> + те же классы МКТУ + риск путаницы. ИИ-поиск ранжирует кандидатов и <b>не заме",
       "link_replacement": "<a href=\"/blog/kak-opredelit-klass-mktu/\">классы МКТУ</a>"
     },
     {
-      "source": "L53-vozrazhenie-v-pps-na-pravovuyu-ohranu-tz",
-      "target": "L33-konkurent-zaregistriroval-pohozhiy-tovarnyy-znak",
-      "keyword": "возражение против предоставления правовой охраны",
-      "context": "ение заявителя по ст. 1500 и не обращение по ст. 1493, а <b>возражение против предоставления правовой охраны</b> в ППС (ст. 1512-1513). Дальше вы отличите три процедуры",
-      "link_replacement": "<a href=\"/blog/konkurent-zaregistriroval-pohozhiy-tovarnyy-znak/\">возражение против предоставления правовой охраны</a>"
+      "source": "L39-dorabotka-logotipa-pered-registraciey-tovarnogo-znaka",
+      "target": "L54-graficheskiy-tovarnyy-znak-smeshchenie",
+      "keyword": "доработка логотипа перед регистрацией",
+      "context": "бая графика, описательность или сходство с чужим знаком. <b>Доработка логотипа перед регистрацией товарного знака</b> - правка макета под <a href=\"https://ww",
+      "link_replacement": "<a href=\"/blog/graficheskiy-tovarnyy-znak-smeshchenie/\">Доработка логотипа перед регистрацией</a>"
     }
   ]
 }

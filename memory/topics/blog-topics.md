@@ -1341,14 +1341,14 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L54 — Графический товарный знак и смешение: как снизить риск отказа
 
-- **status:** new
+- **status:** written
 - **priority:** P2
 - **site:** lireate
 - **lireate_category_id:** 9
 - **lireate_category_name:** Товарный знак
 - **slug:** graficheskiy-tovarnyy-znak-smeshchenie
-- **h1:** Графический товарный знак до степени смешения: что изменить до подачи в Роспатент
-- **primary_query:** графический товарный знак до степени смешения что можно сделать
+- **h1:** Как снизить риск смешения: графический товарный знак перед подачей в Роспатент
+- **primary_query:** как снизить риск смешения графического товарного знака до подачи в Роспатент
 - **secondary_queries:** сходство изобразительных знаков; доработка логотипа перед регистрацией; визуальное сходство товарных знаков
 - **search_intent:** troubleshooting
 - **article_mode:** B
