@@ -1,0 +1,80 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-12",
+    "today_ru": "12.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "четверг",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-14",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-12 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L53",
+    "priority": "P2",
+    "slug": "vozrazhenie-v-pps-na-pravovuyu-ohranu-tz",
+    "h1": "Как подать возражение в ППС на предоставление правовой охраны товарному знаку: сроки и основания",
+    "primary_query": "возражение в ппс на предоставление правовой охраны",
+    "secondary_queries": [
+      "палата по патентным спорам товарный знак",
+      "возражение против регистрации товарного знака",
+      "срок подачи возражения в роспатент"
+    ],
+    "search_intent": "workflow",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "L53",
+    "status": "PASS",
+    "search_intent": "workflow",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "возражение в ппс на предоставление правовой охраны 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "возражение в ппс на предоставление правовой охраны ноябрь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "возражение в ппс на предоставление правовой охраны новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "палата по патентным спорам товарный знак 2026",
+      "purpose": "вторичный запрос: палата по патентным спорам товарный знак"
+    },
+    {
+      "id": "secondary_2",
+      "query": "возражение против регистрации товарного знака 2026",
+      "purpose": "вторичный запрос: возражение против регистрации товарного знака"
+    },
+    {
+      "id": "secondary_3",
+      "query": "срок подачи возражения в роспатент 2026",
+      "purpose": "вторичный запрос: срок подачи возражения в роспатент"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как подать возражение в ППС на предоставление правовой охраны товарному знаку: сроки и основания 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/L53-vozrazhenie-v-pps-na-pravovuyu-ohranu-tz",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}

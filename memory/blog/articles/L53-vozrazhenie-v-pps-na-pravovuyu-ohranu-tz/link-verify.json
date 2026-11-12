@@ -1,0 +1,157 @@
+{
+  "source": "memory/blog/articles/L53-vozrazhenie-v-pps-na-pravovuyu-ohranu-tz/article.html",
+  "total_links": 16,
+  "failed_count": 0,
+  "privacy_policy_violations": [],
+  "verdict": "pass",
+  "links": [
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/65a4af0cccfa200fb361da6e731356a369a0ed8e/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/fab3ae79219dd5f5d60cb4ff67c6d9832f67bedf/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://base.garant.ru/74563620/53f89421bbdaf741eb2d1ecc4ddb4c33/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/osparivanie_tovarnogo_znaka_v_rospatente_kak_podat_vozrazhenie",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/osparivanie_tovarnogo_znaka_v_rospatente_kak_podat_vozrazhenie"
+    },
+    {
+      "url": "/vozrazhenie_protiv_registracii_chuzhogo_tovarnogo_znaka_sroki_i_poryadok",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/vozrazhenie_protiv_registracii_chuzhogo_tovarnogo_znaka_sroki_i_poryadok"
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/04d8518205401260b478eea8470dd73a41a97085/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/otnositelnyie_osnovaniya_otkaza_v_registracii_tz_otvet_ekspertize",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/otnositelnyie_osnovaniya_otkaza_v_registracii_tz_otvet_ekspertize"
+    },
+    {
+      "url": "https://searchplatform.rospatent.gov.ru/trademarks",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/proverka_tovarnogo_znaka_pered_registraciey_chek_list_po_reestram_rospatenta",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/proverka_tovarnogo_znaka_pered_registraciey_chek_list_po_reestram_rospatenta"
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/2e83c7a3d54808ca80d8f0b2a034caa0f7122b57/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://licensingrussia.ru/article/14579-kak-proverit-registriruemyi-tovarnyi-znak-pered-podachei-zaiavki-v-rospatent/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.klerk.ru/blogs/patent24/683176/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://t.me/lireate_patent",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://wa.me/79600484957",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://max.ru/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    }
+  ]
+}
