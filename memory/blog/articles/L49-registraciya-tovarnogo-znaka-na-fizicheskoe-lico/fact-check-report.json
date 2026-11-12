@@ -1,0 +1,115 @@
+{
+  "article": "memory/blog/articles/L49-registraciya-tovarnogo-znaka-na-fizicheskoe-lico/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 15,
+  "verified_facts_count": 3,
+  "unverified_facts_count": 12,
+  "facts": [
+    {
+      "fact": "2023",
+      "kind": "date_or_year",
+      "context": "иты в заявке и правила после регистрации. С 29.06.2023 (федеральный закон 193-ФЗ ) гражданин без ИП може",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "ерены с FAQ Роспатента и таблицей пошлин на 12.11.2026; налоги и сделки - с вашим бухгалтером. Разберите",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "10 лет",
+      "kind": "metric_or_duration",
+      "context": "я ИП и ООО: экспертиза, пошлины, свидетельство на 10 лет ( ст. 1491 ). Отличаются не сроки, а реквизиты в",
+      "verified": true,
+      "reason": "Numerical value '10' matched in fact-bank context"
+    },
+    {
+      "fact": "35 000",
+      "kind": "large_number",
+      "context": "Минимум госпошлин на новую заявку в один класс - 35 000 ₽ (пп. 2.1, 2.4, 2.11); передача знака в ООО - от",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "15 000",
+      "kind": "large_number",
+      "context": "11); передача знака в ООО - отчуждение с пошлиной 15 000 ₽ (п. 3.11) или лицензия с учётом п. 3.10. Самоза",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1491",
+      "kind": "large_number",
+      "context": "кспертиза, пошлины, свидетельство на 10 лет ( ст. 1491 ). Отличаются не сроки, а реквизиты в реестре и т",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1492",
+      "kind": "large_number",
+      "context": "-ФЗ С 29.06.2023 ( 193-ФЗ ) заявитель по п. 1 ст. 1492 - юрлицо или гражданин ( FAQ Роспатента ). Самоза",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "4 000",
+      "kind": "large_number",
+      "context": "нимум пошлин на новую заявку (1 класс) 35 000 ₽ : 4 000 + 13 000 + 18 000 (пп. 2.1, 2.4, 2.11 таблицы Рос",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "13 000",
+      "kind": "large_number",
+      "context": "шлин на новую заявку (1 класс) 35 000 ₽ : 4 000 + 13 000 + 18 000 (пп. 2.1, 2.4, 2.11 таблицы Роспатента)",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "18 000",
+      "kind": "large_number",
+      "context": "овую заявку (1 класс) 35 000 ₽ : 4 000 + 13 000 + 18 000 (пп. 2.1, 2.4, 2.11 таблицы Роспатента) Контроль",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1514",
+      "kind": "large_number",
+      "context": "ИП не повод досрочно гасить знак по п. 4 п. 1 ст. 1514; знак остаётся у гражданина См. колонку ФЛ после",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1486",
+      "kind": "large_number",
+      "context": "ма) - иначе через три года неиспользования по ст. 1486 заинтересованное лицо может подать на прекращение",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1484",
+      "kind": "large_number",
+      "context": "использование чужого исключительного права ( ст. 1484 ). Маркетплейс. Сверьте свидетельство и договор с",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1234",
+      "kind": "large_number",
+      "context": "ООО после государственной регистрации ( п. 4 ст. 1234 , п. 2 ст. 1490 ), а не в момент подписания бумаг",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1490",
+      "kind": "large_number",
+      "context": "арственной регистрации ( п. 4 ст. 1234 , п. 2 ст. 1490 ), а не в момент подписания бумаг. Пошлина п. 3.1",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
