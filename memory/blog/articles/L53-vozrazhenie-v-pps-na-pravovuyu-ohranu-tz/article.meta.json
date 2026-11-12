@@ -39,6 +39,33 @@
     "description_aeo": "Чтобы оспорить правовую охрану зарегистрированного товарного знака, подайте возражение в ППС по ст. 1512 с пошлиной 14 000 руб. и докажите заинтересованность."
   },
   "cover_family": "lireate_collage_v1",
+  "cover_headline": "ВОЗРАЖЕНИЕ В ППС: ЧУЖОЕ СВИДЕТЕЛЬСТВО",
+  "cover_stage_background": "#ffffff",
+  "cover_left_memo": "Роспатент · ППС · реестр ТЗ",
+  "cover_highlight": "ППС",
+  "cover_sticky": "ст. 1513 не путать со 1500",
+  "cover_sticky_underline": "1513",
+  "cover_label_chips": [
+    [
+      "1512",
+      "black"
+    ],
+    [
+      "2.28.4",
+      "white"
+    ],
+    [
+      "14 000",
+      "pink"
+    ]
+  ],
+  "cover_ui_title": "1493 / 1500 / 1513",
+  "cover_ui_rows": [
+    "реестр ФИПС",
+    "14 000 руб.",
+    "срок 5 лет"
+  ],
   "cover_scene_hint": "логотип ППС, календарь 5 лет, папка возражения",
-  "cover_style": "collage-v1"
+  "cover_style": "collage-v1",
+  "cover_renderer": "html_chromium"
 }
