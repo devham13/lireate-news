@@ -1,0 +1,130 @@
+{
+  "source": "memory/blog/articles/L49-registraciya-tovarnogo-znaka-na-fizicheskoe-lico/article.html",
+  "total_links": 13,
+  "failed_count": 0,
+  "privacy_policy_violations": [],
+  "verdict": "pass",
+  "links": [
+    {
+      "url": "/kak-zaregistrirovat-tovarnyy-znak-samostoyatelno-2026/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/kak-zaregistrirovat-tovarnyy-znak-samostoyatelno-2026/"
+    },
+    {
+      "url": "/otchuzhdenie-tovarnogo-znaka-dogovor-reestr/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/otchuzhdenie-tovarnogo-znaka-dogovor-reestr/"
+    },
+    {
+      "url": "https://www.gosuslugi.ru/life/details/registraciya_tovarnogo_znaka",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/b750f79795c779e92bb91e22a676aa4017c4f459/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "http://kremlin.ru/acts/bank/48001",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/15a50188250f4533baed4194ceae6758a164667e/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/chto_delat_esli_tovarnyiy_znak_zanyat/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/chto_delat_esli_tovarnyiy_znak_zanyat/"
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/2c3f5881920b5dc53529b5bb31e782624a107abb/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://searchplatform.rospatent.gov.ru/trademarks",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/registraciya_tovarnogo_znaka/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/registraciya_tovarnogo_znaka/"
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/26479f35ea4ceb422ecc82a4aeb1aab94d70e92f/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/d557fbbb1a225a3e06a142e699eb9dad9ffe7a37/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    }
+  ]
+}

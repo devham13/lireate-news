@@ -1,0 +1,86 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-12",
+    "today_ru": "12.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "четверг",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-14",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-12 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L49",
+    "priority": "P2",
+    "slug": "registraciya-tovarnogo-znaka-na-fizicheskoe-lico",
+    "h1": "Сравнение: регистрация товарного знака на физлицо, ИП или ООО — как выбрать правообладателя",
+    "primary_query": "регистрация товарного знака на физическое лицо",
+    "secondary_queries": [
+      "товарный знак на физлицо или ип",
+      "зарегистрировать бренд на себя физлицо",
+      "правообладатель товарного знака физическое лицо",
+      "передача знака с физлица на компанию"
+    ],
+    "search_intent": "comparison",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "L49",
+    "status": "PASS",
+    "search_intent": "comparison",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "регистрация товарного знака на физическое лицо 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "регистрация товарного знака на физическое лицо ноябрь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "регистрация товарного знака на физическое лицо новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "товарный знак на физлицо или ип 2026",
+      "purpose": "вторичный запрос: товарный знак на физлицо или ип"
+    },
+    {
+      "id": "secondary_2",
+      "query": "зарегистрировать бренд на себя физлицо 2026",
+      "purpose": "вторичный запрос: зарегистрировать бренд на себя физлицо"
+    },
+    {
+      "id": "secondary_3",
+      "query": "правообладатель товарного знака физическое лицо 2026",
+      "purpose": "вторичный запрос: правообладатель товарного знака физическое лицо"
+    },
+    {
+      "id": "secondary_4",
+      "query": "передача знака с физлица на компанию 2026",
+      "purpose": "вторичный запрос: передача знака с физлица на компанию"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Сравнение: регистрация товарного знака на физлицо, ИП или ООО — как выбрать правообладателя 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/L49-registraciya-tovarnogo-znaka-na-fizicheskoe-lico",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}
