@@ -1,0 +1,92 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-12",
+    "today_ru": "12.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "четверг",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-14",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-12 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L52",
+    "priority": "P1",
+    "slug": "nmpt-geograficheskoe-ukazanie-tovarnyy-znak",
+    "h1": "Как совместить товарный знак и место производства: НМПТ, географическое указание и коллизии с брендом",
+    "primary_query": "товарные знаки связанные с местом производства",
+    "secondary_queries": [
+      "наименование места происхождения товара",
+      "географическое указание",
+      "НМПТ регистрация",
+      "конфликт товарного знака с НМПТ",
+      "иван чай товарный знак суд"
+    ],
+    "search_intent": "comparison",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "L52",
+    "status": "PASS",
+    "search_intent": "comparison",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "товарные знаки связанные с местом производства 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "товарные знаки связанные с местом производства ноябрь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "товарные знаки связанные с местом производства новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "наименование места происхождения товара 2026",
+      "purpose": "вторичный запрос: наименование места происхождения товара"
+    },
+    {
+      "id": "secondary_2",
+      "query": "географическое указание 2026",
+      "purpose": "вторичный запрос: географическое указание"
+    },
+    {
+      "id": "secondary_3",
+      "query": "НМПТ регистрация 2026",
+      "purpose": "вторичный запрос: НМПТ регистрация"
+    },
+    {
+      "id": "secondary_4",
+      "query": "конфликт товарного знака с НМПТ 2026",
+      "purpose": "вторичный запрос: конфликт товарного знака с НМПТ"
+    },
+    {
+      "id": "secondary_5",
+      "query": "иван чай товарный знак суд 2026",
+      "purpose": "вторичный запрос: иван чай товарный знак суд"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как совместить товарный знак и место производства: НМПТ, географическое указание и коллизии с брендом 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/L52-nmpt-geograficheskoe-ukazanie-tovarnyy-znak",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}

@@ -1,0 +1,185 @@
+{
+  "article": "memory/blog/articles/L52-nmpt-geograficheskoe-ukazanie-tovarnyy-znak/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 25,
+  "verified_facts_count": 3,
+  "unverified_facts_count": 22,
+  "facts": [
+    {
+      "fact": "2024",
+      "kind": "date_or_year",
+      "context": "₽ ; скидка за электронную подачу отменена с 05.10.2024 (ПП РФ № 1278). Нормы на 12.11.2026 ; не юридичес",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "енена с 05.10.2024 (ПП РФ № 1278). Нормы на 12.11.2026 ; не юридическая консультация. Базовый поиск ТЗ -",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2022",
+      "kind": "date_or_year",
+      "context": "няемый ГУ/НМПТ на однородные товары П. 7 (с 28.05.2022 - с учётом однородности , 143-ФЗ ) Отказ; исключе",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2019",
+      "kind": "date_or_year",
+      "context": "т\" суды учли неоднородность мёда и мяса ( СИП-645/2019 ). Топоним HAWAII для чая отклонили по п. 3 (реше",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2020",
+      "kind": "date_or_year",
+      "context": "екта (регламент приказа Роспатента № 101 от 22.07.2020). Этап Пункт пошлин Сумма Заявка, формальная эксп",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2025",
+      "kind": "date_or_year",
+      "context": "акие пошлины за регистрацию НМПТ/ГУ в Роспатенте (2025-2026)? Ориентир полного трека: 3 000 ₽ (п. 2.3 )",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "5 лет",
+      "kind": "metric_or_duration",
+      "context": "рам, не по слухам. Чужой ТЗ оспаривают отдельно ( 5 лет по ст. 1512 ) - см. возражение против регистрации",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "ет про конфликт товарного знака с НМПТ и п. 7 ст. 1483 . Пока не ясно, нужен ли вам товарный знак , геог",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "1516",
+      "kind": "large_number",
+      "context": "бренд в выбранных классах МКТУ. ГУ и НМПТ по ст. 1516 закрепляют связь товара с территорией и особыми св",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1519",
+      "kind": "large_number",
+      "context": "ственного реестра , отчуждение ГУ запрещено ( ст. 1519 ). Чужой охраняемый НМПТ/ГУ на однородные товары",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "3 000",
+      "kind": "large_number",
+      "context": "е место производства - по п. 3 . Пошлины ГУ/НМПТ: 3 000 + 13 000 + 18 000 ₽ (пп. 2.3, 2.5, 2.13 по таблиц",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "13 000",
+      "kind": "large_number",
+      "context": "производства - по п. 3 . Пошлины ГУ/НМПТ: 3 000 + 13 000 + 18 000 ₽ (пп. 2.3, 2.5, 2.13 по таблице Роспате",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "18 000",
+      "kind": "large_number",
+      "context": "тва - по п. 3 . Пошлины ГУ/НМПТ: 3 000 + 13 000 + 18 000 ₽ (пп. 2.3, 2.5, 2.13 по таблице Роспатента ), ит",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "34 000",
+      "kind": "large_number",
+      "context": "пп. 2.3, 2.5, 2.13 по таблице Роспатента ), итого 34 000 ₽ ; скидка за электронную подачу отменена с 05.10",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1278",
+      "kind": "large_number",
+      "context": "электронную подачу отменена с 05.10.2024 (ПП РФ № 1278). Нормы на 12.11.2026 ; не юридическая консультац",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1520",
+      "kind": "large_number",
+      "context": "едопустимо . Маркировка со знаком охраны - по ст. 1520 . Новое ГУ/НМПТ нельзя, если оно сходно с ранним",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 000",
+      "kind": "large_number",
+      "context": "п. 2 пп. 3 ст. 1516 ). За нарушение - компенсация 10 000-5 000 000 ₽ ( ст. 1537 ). Проверьте право использ",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "5 000 000",
+      "kind": "large_number",
+      "context": ". 3 ст. 1516 ). За нарушение - компенсация 10 000-5 000 000 ₽ ( ст. 1537 ). Проверьте право использования в р",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1537",
+      "kind": "large_number",
+      "context": "нарушение - компенсация 10 000-5 000 000 ₽ ( ст. 1537 ). Проверьте право использования в реестре (произ",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1522",
+      "kind": "large_number",
+      "context": "одачи. ГУ подаёт объединение производителей ( ст. 1522 ); для НМПТ - заключение органа субъекта (регламе",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "101",
+      "kind": "large_number",
+      "context": "е органа субъекта (регламент приказа Роспатента № 101 от 22.07.2020). Этап Пункт пошлин Сумма Заявка, фо",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "3 3 000",
+      "kind": "large_number",
+      "context": "т пошлин Сумма Заявка, формальная экспертиза п. 2.3 3 000 ₽ Экспертиза обозначения п. 2.5 13 000 ₽ Регистра",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "5 13 000",
+      "kind": "large_number",
+      "context": "ертиза п. 2.3 3 000 ₽ Экспертиза обозначения п. 2.5 13 000 ₽ Регистрация и свидетельство п. 2.13 18 000 ₽ С",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "13 18 000",
+      "kind": "large_number",
+      "context": "п. 2.5 13 000 ₽ Регистрация и свидетельство п. 2.13 18 000 ₽ С 05.10.2024 (ПП РФ № 1278) скидка за электронн",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1512",
+      "kind": "large_number",
+      "context": "ухам. Чужой ТЗ оспаривают отдельно ( 5 лет по ст. 1512 ) - см. возражение против регистрации . Делайте:",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
