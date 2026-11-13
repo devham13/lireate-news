@@ -1,0 +1,87 @@
+{
+  "article": "memory/blog/articles/L59-kak-dobavit-brend-na-wildberries-seller/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "warning",
+  "total_extracted_facts": 11,
+  "verified_facts_count": 8,
+  "unverified_facts_count": 3,
+  "facts": [
+    {
+      "fact": "2 р.",
+      "kind": "price_or_currency",
+      "context": "реестре Создать бренд (\"Мои бренды\") Модерация до 2 р.д. Обычно нет на старте Стать представителем (\"Рос",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "30 р.",
+      "kind": "price_or_currency",
+      "context": "Стать представителем (\"Рост продаж → Бренды\") До 30 р.д. Да , действующее свидетельство Значок \"Оригинал",
+      "verified": true,
+      "reason": "Numerical value '30' matched in fact-bank context"
+    },
+    {
+      "fact": "46 200 руб",
+      "kind": "price_or_currency",
+      "context": "сти по одному классу можно заказать в ФИПС (тариф 46 200 руб. на 15 р.д. по сводке тарифов ГАРАНТ , октябрь 20",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "15 р.",
+      "kind": "price_or_currency",
+      "context": "лассу можно заказать в ФИПС (тариф 46 200 руб. на 15 р.д. по сводке тарифов ГАРАНТ , октябрь 2026). Для п",
+      "verified": true,
+      "reason": "Numerical value '15' matched in fact-bank context"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": ". Инструкции WB и нормы о знаках сверены на 13.11.2026; материал не заменяет индивидуальную консультацию",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2027",
+      "kind": "date_or_year",
+      "context": "Сверка карточек с госреестром усиливается с 01.03.2027 (ПП РФ № 821). Этот гайд - только Wildberries. Ес",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2023",
+      "kind": "date_or_year",
+      "context": "ковой платформе Роспатента (круглосуточно с 11.12.2023) и при сомнении пройдите чек-лист L01 . Не делайт",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "100",
+      "kind": "large_number",
+      "context": "обавить\" из карточки. Логотип - JPG 120×50 px, до 100 Кб . Модерация - до 2 рабочих дней в \"Заявки\". Про",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "вать похожее имя на однородных товарах ( п. 6 ст. 1483 ГК РФ ). Не делайте: называть шаг \"Создать бренд\"",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "46 200",
+      "kind": "large_number",
+      "context": "сти по одному классу можно заказать в ФИПС (тариф 46 200 руб. на 15 р.д. по сводке тарифов ГАРАНТ , октябрь",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "821",
+      "kind": "large_number",
+      "context": "о платформенной экономике. По разделу IX ПП РФ № 821 с 01.03.2027 маркетплейсы усиливают сверку прав на",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    }
+  ]
+}
