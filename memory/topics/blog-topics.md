@@ -1404,14 +1404,14 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L57 — Нарицательные бренды: риск обобщения названия и потери охраны
 
-- **status:** new
+- **status:** written
 - **priority:** P2
 - **site:** lireate
 - **lireate_category_id:** 9
 - **lireate_category_name:** Товарный знак
 - **slug:** naricatelnye-brendy-aspirin-obobshchenie
-- **h1:** Когда название бренда становится нарицательным: аспирин, ксерокс и риски для товарного знака
-- **primary_query:** бренды которые стали нарицательными
+- **h1:** Как не потерять охрану бренда: когда название становится нарицательным (аспирин, ксерокс) и риски для товарного знака
+- **primary_query:** как не допустить обобщения бренда нарицательное наименование
 - **secondary_queries:** нарицательное наименование товарный знак; общеупотребительное обозначение ст 1483; как не потерять охрану бренда
 - **search_intent:** troubleshooting
 - **article_mode:** B

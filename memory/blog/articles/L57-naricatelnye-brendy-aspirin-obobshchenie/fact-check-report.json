@@ -1,0 +1,73 @@
+{
+  "article": "memory/blog/articles/L57-naricatelnye-brendy-aspirin-obobshchenie/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 9,
+  "verified_facts_count": 4,
+  "unverified_facts_count": 5,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "азательств, чтобы знак оставался маркой. На 13.11.2026; не юруслуга. TL;DR / Быстрый инсайт: Нарицательн",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2025",
+      "kind": "date_or_year",
+      "context": "и. Суд смотрит совокупность и географию ( СИП-226/2025 ). Делайте: раз в квартал сохранять скрины выдачи",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "30 дней",
+      "kind": "metric_or_duration",
+      "context": "ие: предложение по 1486 → 2 месяца → иск в СИП за 30 дней. Корректное использование (упаковка, договоры, ре",
+      "verified": true,
+      "reason": "Numerical value '30' matched in fact-bank context"
+    },
+    {
+      "fact": "7 дней",
+      "kind": "metric_or_duration",
+      "context": "ие производителя. Сигнал Где смотреть Действие за 7 дней Бренд без родового слова Сайт, VK, баннеры Замени",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1514",
+      "kind": "large_number",
+      "context": "товара. Тогда охрану оспаривают по п. 6 п. 1 ст. 1514 или отказывают в регистрации по п. 1 ст. 1483 ГК Р",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "ст. 1514 или отказывают в регистрации по п. 1 ст. 1483 ГК РФ. Ниже - как не допустить обобщения: самотест",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "1486",
+      "kind": "large_number",
+      "context": "ну могут снять по п. 6 п. 1 ст. 1514 . Это не ст. 1486 (иск в СИП за неиспользование, см. L15 ). Профила",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1486 3",
+      "kind": "large_number",
+      "context": "вление в Роспатент от конкурента, спор до СИП ст. 1486 3 года без использования Письмо → СИП; гайд по неисп",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1512",
+      "kind": "large_number",
+      "context": "без актов и макетов; путать процедуры ППС по ст. 1512 с заявлением по обобщению. Оцените сигнал: внутри",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

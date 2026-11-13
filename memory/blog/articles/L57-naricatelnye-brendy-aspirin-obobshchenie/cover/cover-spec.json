@@ -1,0 +1,32 @@
+{
+  "headline_lines": [
+    "НЕ ДОПУСТИТЬ GUIDELINES ОБОБЩЕНИЯ"
+  ],
+  "highlight": "GUIDELINES",
+  "sticky_text": "МАРКА ≠ КАТЕГОРИЯ",
+  "sticky_underline": "МАРКА",
+  "sticky_color": "yellow",
+  "badge_label": "ТЗ",
+  "label_chips": [
+    [
+      "1483",
+      "black"
+    ],
+    [
+      "1514",
+      "white"
+    ],
+    [
+      "марка",
+      "pink"
+    ]
+  ],
+  "ui_card_title": "Анти-обобщение бренда",
+  "ui_card_rows": [
+    "самотест флаги",
+    "guidelines",
+    "архив СМИ"
+  ],
+  "stage_background": "#0b1020",
+  "left_memo": ""
+}

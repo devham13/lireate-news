@@ -1,0 +1,153 @@
+{
+  "source": "memory/blog/articles/L57-naricatelnye-brendy-aspirin-obobshchenie/article.html",
+  "total_links": 16,
+  "failed_count": 0,
+  "privacy_policy_violations": [],
+  "verdict": "pass",
+  "links": [
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/15a50188250f4533baed4194ceae6758a164667e/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/2e83c7a3d54808ca80d8f0b2a034caa0f7122b57/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/2c3f5881920b5dc53529b5bb31e782624a107abb/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.bbc.com/russian/business/2014/05/140528_brand_genericide",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/proverka_tovarnogo_znaka_pered_registraciey_chek_list_po_reestram_rospatenta/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false
+    },
+    {
+      "url": "/nuzhno-li-registrirovat-tovarnyy-znak/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false
+    },
+    {
+      "url": "https://palatapp.ru/teoriya-i-praktika/metodicheskie-rekomendaczii/metodicheskie-rekomendaczii-po-voprosam-otneseniya-zayavlennyix-oboznachenij,-tovarnyix-znakov-i-znakov-obsluzhivaniya-k-kategorii-voshedshix-vo-vseobshhee-upotreblenie-kak-oboznacheniya-tovarov-i-uslug-opredelennogo-vida.html",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://base.garant.ru/412638201/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://civius.ru/knowledge-base/short-answers/tovarnyy-znak-stanovitsya-naritsatelnym-deystviya-vladeltsa/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://mille-law.com/chto-budet-yesli-ne-sledit-za-ispolzovaniyem-svoyego-tz/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/fab3ae79219dd5f5d60cb4ff67c6d9832f67bedf/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.forbes.ru/brandvoice/ipquorum/395341-brend-kak-imya-naricatelnoe-mechta-marketologa-ili-koshmar-yurista",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://patentus.ru/media/statyi/ss/kakie-nazvaniya-nelzya-ispolzovat-kak-tovarnye-znaki/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.inta.org/wp-content/uploads/public-files/resources/practice-research/AVOIDINGGENERICIDE.pdf",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://searchplatform.rospatent.gov.ru/trademarks",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/registraciya_tovarnogo_znaka/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false
+    }
+  ]
+}
