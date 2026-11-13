@@ -1,35 +1,6 @@
 {
   "site_base": "https://example.com",
-  "total_articles": 62,
-  "opportunities_found": 4,
-  "suggestions": [
-    {
-      "source": "L18-kak-proverit-brend-na-wildberries-svoboden-li-tovarnyy-znak",
-      "target": "L59-kak-dobavit-brend-na-wildberries-seller",
-      "keyword": "бренд на вайлдберриз как добавить",
-      "context": "учётом однородности товаров.</blockquote>  <p>Селлеры ищут \"бренд на вайлдберриз как добавить\" и путают свободную строку в карточке с юридической безопас",
-      "link_replacement": "<a href=\"/blog/kak-dobavit-brend-na-wildberries-seller/\">бренд на вайлдберриз как добавить</a>"
-    },
-    {
-      "source": "L59-kak-dobavit-brend-na-wildberries-seller",
-      "target": "L06-kak-opredelit-klass-mktu",
-      "keyword": "классы мкту",
-      "context": "здать бренд\".</p>  <p><b>Делайте:</b> перед подачей сверить классы МКТУ и обозначение с карточками. Предварительную оценку охраносп",
-      "link_replacement": "<a href=\"/blog/kak-opredelit-klass-mktu/\">классы МКТУ</a>"
-    },
-    {
-      "source": "L56-tamozhennyy-reestr-tovarnogo-znaka-fts",
-      "target": "L31-mozhno-li-zapretit-vvoz-analoga-zapatentovannogo-tovara",
-      "keyword": "таможенный реестр объектов интеллектуальной собственности",
-      "context": "lockquote><b>TL;DR / Быстрый инсайт:</b> <b>ТРОИС</b> - это таможенный реестр объектов интеллектуальной собственности ФТС России. Один товарный знак - одно заявление по <a href=",
-      "link_replacement": "<a href=\"/blog/mozhno-li-zapretit-vvoz-analoga-zapatentovannogo-tovara/\">таможенный реестр объектов интеллектуальной собственности</a>"
-    },
-    {
-      "source": "L59-kak-dobavit-brend-na-wildberries-seller",
-      "target": "L03-kak-zaregistrirovat-brend-na-ozon-i-wildberries",
-      "keyword": "как проверить есть ли такой бренд на вайлдберриз",
-      "context": "ерьте ФИПС и классы.</figcaption> </figure>   <p>Запрос \"<b>как проверить есть ли такой бренд на вайлдберриз</b>\" закрывается уже на этапе создания: при вводе имени пло",
-      "link_replacement": "<a href=\"/blog/kak-zaregistrirovat-brend-na-ozon-i-wildberries/\">как проверить есть ли такой бренд на вайлдберриз</a>"
-    }
-  ]
+  "total_articles": 63,
+  "opportunities_found": 0,
+  "suggestions": []
 }
