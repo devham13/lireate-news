@@ -1378,3 +1378,108 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 - **metrika_visits:** seo-report 2026-11: article_topic_candidates
 - **internal_links:** L09, L02, L27
 - **cover_scene_hint:** кадр видеомонтажа, чужие логотипы на таймлайне, стикер «согласие?»
+
+---
+
+## L56 — Таможенный реестр объектов интеллектуальной собственности ФТС: включение товарного знака
+
+- **status:** written
+- **priority:** P1
+- **site:** lireate
+- **lireate_category_id:** 9
+- **lireate_category_name:** Товарный знак
+- **slug:** tamozhennyy-reestr-tovarnogo-znaka-fts
+- **h1:** Таможенный реестр объектов интеллектуальной собственности ФТС: как включить товарный знак
+- **primary_query:** включение товарного знака в таможенный реестр ФТС
+- **secondary_queries:** таможенный реестр объектов интеллектуальной собственности; защита от контрафакта на границе; срок и документы
+- **search_intent:** workflow
+- **article_mode:** B
+- **angle:** ТРОИС vs патент; ст. 1252, 1487 ГК РФ; ТК ЕАЭС 328–333; приказы ФТС; документы, обеспечение; срок включения до 2 лет; связка L30, L27, L31
+- **target_service:** reg-tz-main
+- **metrika_visits:** seo-report 2026-11: коммерческая тема (нет в блоге)
+- **internal_links:** L30, L27, L31, L01
+- **cover_scene_hint:** таможенный пост, стикер ТРОИС, свидетельство ТЗ, груз с маркировкой
+
+---
+
+## L57 — Нарицательные бренды: риск обобщения названия и потери охраны
+
+- **status:** new
+- **priority:** P2
+- **site:** lireate
+- **lireate_category_id:** 9
+- **lireate_category_name:** Товарный знак
+- **slug:** naricatelnye-brendy-aspirin-obobshchenie
+- **h1:** Когда название бренда становится нарицательным: аспирин, ксерокс и риски для товарного знака
+- **primary_query:** бренды которые стали нарицательными
+- **secondary_queries:** нарицательное наименование товарный знак; общеупотребительное обозначение ст 1483; как не потерять охрану бренда
+- **search_intent:** troubleshooting
+- **article_mode:** B
+- **angle:** п. 1, 3 ст. 1483; досрочное прекращение L15; доказательства использования знака как марки
+- **target_service:** reg-tz-main
+- **metrika_visits:** seo-report 2026-11: «бренды которые стали нарицательными аспирин»
+- **internal_links:** L15, L40, L01
+- **cover_scene_hint:** словарь «нарицательное», логотип на полке, стикер «марка vs название»
+
+---
+
+## L58 — Личная переписка как объект авторского права
+
+- **status:** new
+- **priority:** P2
+- **site:** lireate
+- **lireate_category_id:** 17
+- **lireate_category_name:** Авторское право
+- **slug:** lichnaya-perepiska-avtorskoe-pravo
+- **h1:** Является ли личная переписка объектом авторского права: когда публикация без согласия — риск
+- **primary_query:** является ли личная переписка объектом авторского права
+- **secondary_queries:** публикация чужих сообщений; переписка в суде; согласие на обработку персональных данных
+- **search_intent:** checklist
+- **article_mode:** B
+- **angle:** ст. 1259, 1270, 152 ГК РФ; ПДн vs ©; добросовестность публикации
+- **target_service:** —
+- **metrika_visits:** seo-report 2026-11: last28 query
+- **internal_links:** L14, L02
+- **cover_scene_hint:** смартфон с чатом, замок «согласие», стикер 152-ФЗ
+
+---
+
+## L59 — Как добавить бренд на Wildberries селлеру: карточка и товарный знак
+
+- **status:** new
+- **priority:** P2
+- **site:** lireate
+- **lireate_category_id:** 9
+- **lireate_category_name:** Товарный знак
+- **slug:** kak-dobavit-brend-na-wildberries-seller
+- **h1:** Как добавить бренд на Wildberries: проверка имени, карточка и когда нужен товарный знак
+- **primary_query:** бренд на вайлдберриз как добавить
+- **secondary_queries:** как проверить есть ли такой бренд на вайлдберриз; регистрация бренда WB без ТЗ
+- **search_intent:** how_to
+- **article_mode:** B
+- **angle:** отличие от L18 (чек-лист свободы) — пошагово ЛК селлера; связка L03, L18
+- **target_service:** reg-tz-main
+- **metrika_visits:** seo-report 2026-11: evidence_queries
+- **internal_links:** L18, L03, L27
+- **cover_scene_hint:** ЛК WB, поле «бренд», лупа реестра Роспатента
+
+---
+
+## L60 — Изображения картин русских художников в коммерции: что можно показать
+
+- **status:** new
+- **priority:** P2
+- **site:** lireate
+- **lireate_category_id:** 17
+- **lireate_category_name:** Авторское право
+- **slug:** kartiny-russkih-hudozhnikov-kommerciya
+- **h1:** Использование изображений картин русских художников в коммерческих целях: сроки и исключения
+- **primary_query:** использование изображений картин русских художников в коммерческих целях
+- **secondary_queries:** музейное изображение в рекламе; срок охраны произведения искусства; свободное использование
+- **search_intent:** checklist
+- **article_mode:** B
+- **angle:** ст. 1272, 1282, 1314 ГК РФ; публичный домен; музейные лицензии; L13
+- **target_service:** —
+- **metrika_visits:** seo-report 2026-11: last28 query
+- **internal_links:** L13, L35
+- **cover_scene_hint:** репродукция в магазине, музейная табличка, календарь сроков ©

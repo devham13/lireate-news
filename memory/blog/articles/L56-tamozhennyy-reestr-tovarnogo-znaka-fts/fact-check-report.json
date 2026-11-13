@@ -1,0 +1,122 @@
+{
+  "article": "memory/blog/articles/L56-tamozhennyy-reestr-tovarnogo-znaka-fts/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 16,
+  "verified_facts_count": 2,
+  "unverified_facts_count": 14,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "берёте пакет и пройдёте страховку. Нормы на 13.11.2026; не заменяет консультацию поверенного. TL;DR / Бы",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2019",
+      "kind": "date_or_year",
+      "context": "варный знак Опора - ст. 328 и Приказ ФТС от 28.01.2019 № 131 (форма заявления - Прил. № 1). На один знак",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "3 лет",
+      "kind": "metric_or_duration",
+      "context": "приостановлении. Срок таможенной защиты в РФ - до 3 лет за период; в едином реестре ЕАЭС - до 2 лет. Тамо",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2 лет",
+      "kind": "metric_or_duration",
+      "context": "- до 3 лет за период; в едином реестре ЕАЭС - до 2 лет. Таможня не блокирует легальный ввоз оригинала по",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1 ч",
+      "kind": "metric_or_duration",
+      "context": "иях под контролем таможни нарушат ваши права ( п. 1 ч. 1 ст. 328 ). Делайте: отделить контрафакт (подде",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "3 месяцев",
+      "kind": "metric_or_duration",
+      "context": "овят до 1 месяца Общий срок с продлением Не более 3 месяцев (ч. 16–17 ст. 328) Не затягивать ответы на запрос",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 дней",
+      "kind": "metric_or_duration",
+      "context": "ление. При срабатывании на границе используйте 10+10 дней на меры по ст. 1252 ГК РФ. Импорт с Честным знако",
+      "verified": true,
+      "reason": "Numerical value '10' matched in fact-bank context"
+    },
+    {
+      "fact": "124",
+      "kind": "large_number",
+      "context": "ый реестр ФТС даёт окно на приостановление по ст. 124 ТК ЕАЭС . Ниже вы проверите предпосылки, разберёте",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "328",
+      "kind": "large_number",
+      "context": "оссии. Один товарный знак - одно заявление по ст. 328 ФЗ \"О таможенном регулировании\" . За само включени",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "500 000",
+      "kind": "large_number",
+      "context": "4 ). После решения о включении нужны страховка от 500 000 ₽ и подписанное обязательство о возмещении вреда",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1487",
+      "kind": "large_number",
+      "context": "ожня не блокирует легальный ввоз оригинала по ст. 1487 ГК РФ . Частая ошибка: путают 2 года (единый реест",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1252",
+      "kind": "large_number",
+      "context": "рабочих дней ; за это время заявляют меры по ст. 1252 ГК РФ . Онлайн-контур - L27 ; патент vs ТЗ - L31 .",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "334",
+      "kind": "large_number",
+      "context": "оженной охране ОИС. Достоверность данных: ст. 328–334 ФЗ \"О таможенном регулировании\", ст. 112 289-ФЗ, с",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "112 289",
+      "kind": "large_number",
+      "context": "ст. 328–334 ФЗ \"О таможенном регулировании\", ст. 112 289-ФЗ, ст. 124 ТК ЕАЭС, ст. 1252 и 1487 ГК РФ сверен",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "334 289",
+      "kind": "large_number",
+      "context": "шлина за включение в ТРОИС не взимается (ч. 2 ст. 334 289-ФЗ). Платите за подготовку пакета, представителя",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "328 289",
+      "kind": "large_number",
+      "context": "нести несколько товарных знаков? Нет. По ч. 4 ст. 328 289-ФЗ одно заявление подаётся на один объект интелле",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
