@@ -41,7 +41,32 @@
   },
   "cover_family": "lireate_collage_v1",
   "cover_scene_hint": "ЛК WB, поле «бренд», лупа реестра Роспатента",
-  "cover_headline": "Бренд на WB",
+  "cover_headline": "Бренд на Wildberries: Мои бренды",
+  "cover_stage_background": "#ffffff",
+  "cover_left_memo": "WB · JPG 120×50 · 2 р.д.",
+  "cover_highlight": "Wildberries",
+  "cover_sticky": "логотип JPG 120×50",
+  "cover_sticky_underline": "логотип",
+  "cover_label_chips": [
+    [
+      "Мои бренды",
+      "black"
+    ],
+    [
+      "120×50",
+      "white"
+    ],
+    [
+      "модерация",
+      "pink"
+    ]
+  ],
+  "cover_ui_title": "Заявка на бренд",
+  "cover_ui_rows": [
+    "Мои бренды → Создать",
+    "JPG 120×50 до 100 Кб",
+    "модерация до 2 р.д."
+  ],
   "cover_style": "collage-v1",
   "cover_renderer": "html_chromium"
 }

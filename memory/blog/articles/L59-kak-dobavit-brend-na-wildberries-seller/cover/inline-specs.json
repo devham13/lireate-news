@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "style": "collage-v1",
+  "illustrations": [
+    {
+      "slot": "inline_1",
+      "template": "bad_good",
+      "headline": "Справочник WB ≠ товарный знак",
+      "chips": [
+        {"icon": "layers", "text": "WB"},
+        {"icon": "shield", "text": "ТЗ"},
+        {"icon": "doc", "text": "ст. 1483"}
+      ],
+      "sticky": {"text": "каталог без монополии", "color": "pink"},
+      "bad": {
+        "header": "BAD",
+        "lines": [
+          "Создал бренд — права есть",
+          "Игнорировать реестр Роспатента",
+          "Ждать блокировку карточки"
+        ]
+      },
+      "good": {
+        "header": "GOOD",
+        "lines": [
+          "Справочник — только поле карточки",
+          "Проверка имени до заявки",
+          "ТЗ — для Оригинала и суда"
+        ]
+      },
+      "side_checklist": ["Мои бренды", "Оригинал", "ПП 821"],
+      "conclusion": {
+        "box_lines": ["два", "слоя"],
+        "highlight_word": "слоя",
+        "chip": "WB + ТЗ"
+      },
+      "alt": "Отличие записи бренда в справочнике Wildberries от исключительного права на товарный знак в Роспатенте",
+      "figcaption": "«Бренд в ЛК» — справочник для карточки; товарный знак — отдельная регистрация в Роспатенте."
+    },
+    {
+      "slot": "inline_2",
+      "template": "process",
+      "headline": "Проверка имени до заявки",
+      "chips": [
+        {"icon": "globe", "text": "ФИПС"},
+        {"icon": "layers", "text": "WB"},
+        {"icon": "warning", "text": "сходство"}
+      ],
+      "sticky": {"text": "имя в карточке", "color": "yellow"},
+      "steps": [
+        {"title": "Поиск на WB", "subtitle": "справочник", "chip": "Мои бренды", "variant": "icon"},
+        {"title": "Реестр ФИПС", "subtitle": "МКТУ", "chip": "1483", "variant": "lines"},
+        {"title": "Свободное имя", "subtitle": "в ЛК", "chip": "JPG", "variant": "toggles"},
+        {"title": "Заявка", "subtitle": "модерация", "chip": "2 р.д.", "variant": "checklist"}
+      ],
+      "conclusion": {
+        "box_lines": ["до", "отправки"],
+        "highlight_word": "отправки",
+        "chip": "без отказа"
+      },
+      "alt": "Пошаговая проверка названия бренда на Wildberries и в реестре товарных знаков перед созданием заявки",
+      "figcaption": "Свободное поле в ЛК не гарантирует отсутствие конфликта с чужим знаком — сверьте ФИПС и классы."
+    },
+    {
+      "slot": "inline_3",
+      "template": "checklist",
+      "headline": "Мои бренды: пакет",
+      "chips": [
+        {"icon": "doc", "text": "JPG"},
+        {"icon": "tag", "text": "120×50"},
+        {"icon": "clock", "text": "модерация"}
+      ],
+      "sticky": {"text": "логотип без срыва", "color": "pink"},
+      "checklist_title": "Перед отправкой",
+      "checklist_rows": [
+        {"text": "Товары и цены → Мои бренды", "icon": "layers"},
+        {"text": "Имя латиницей или кириллицей", "icon": "doc"},
+        {"text": "JPG 120×50 px до 100 Кб", "icon": "tag"},
+        {"text": "Статус в разделе Заявки", "icon": "clock"},
+        {"text": "Одобрено — выбор в карточке", "icon": "shield"}
+      ],
+      "conclusion": {
+        "box_lines": ["готово", "к карточке"],
+        "highlight_word": "карточке",
+        "chip": "WB"
+      },
+      "alt": "Чек-лист создания бренда в разделе Мои бренды Wildberries: логотип 120 на 50 JPG и модерация заявки",
+      "figcaption": "Технические требования WB: JPG 120×50, до 100 Кб — иначе модерация вернёт заявку."
+    }
+  ]
+}

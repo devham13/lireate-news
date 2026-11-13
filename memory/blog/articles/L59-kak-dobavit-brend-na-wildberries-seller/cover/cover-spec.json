@@ -1,0 +1,33 @@
+{
+  "headline_lines": [
+    "Бренд на",
+    "Wildberries: Мои бренды"
+  ],
+  "highlight": "Wildberries",
+  "sticky_text": "логотип JPG 120×50",
+  "sticky_underline": "логотип",
+  "sticky_color": "yellow",
+  "badge_label": "ТЗ",
+  "label_chips": [
+    [
+      "Мои бренды",
+      "black"
+    ],
+    [
+      "120×50",
+      "white"
+    ],
+    [
+      "модерация",
+      "pink"
+    ]
+  ],
+  "ui_card_title": "Заявка на бренд",
+  "ui_card_rows": [
+    "Мои бренды → Создать",
+    "JPG 120×50 до 100 Кб",
+    "модерация до 2 р.д."
+  ],
+  "stage_background": "#ffffff",
+  "left_memo": "WB · JPG 120×50 · 2 р.д."
+}
