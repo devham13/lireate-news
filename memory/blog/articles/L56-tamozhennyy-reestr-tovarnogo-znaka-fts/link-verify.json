@@ -1,0 +1,167 @@
+{
+  "source": "memory/blog/articles/L56-tamozhennyy-reestr-tovarnogo-znaka-fts/article.html",
+  "total_links": 17,
+  "failed_count": 0,
+  "privacy_policy_violations": [],
+  "verdict": "pass",
+  "links": [
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_215315/7c84bc89117f4fb40efb74b66a2bbda707169c30/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_304093/baba1980f2a71ed5e1c89cda4d4c78e875d9b41c/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_304093/f153e397e96b8b7aff1c35ea8555ffe98c51f4d0/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/d385de69e4ce009809fb698159d15e2abc56ba1c/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/proverka_tovarnogo_znaka_pered_registraciey_chek_list_po_reestram_rospatenta/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/proverka_tovarnogo_znaka_pered_registraciey_chek_list_po_reestram_rospatenta/"
+    },
+    {
+      "url": "/kak-zaregistrirovat-tovarnyy-znak-samostoyatelno-2026/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/kak-zaregistrirovat-tovarnyy-znak-samostoyatelno-2026/"
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_304093/45d61763caae488cc0ccb1022bda24b1ce9b3cd6/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_215315/33b5080ee677237c8f318590b58048b6347fdcdb/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/mozhno_li_zapretit_vvoz_analoga_zapatentovannogo_tovara/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/mozhno_li_zapretit_vvoz_analoga_zapatentovannogo_tovara/"
+    },
+    {
+      "url": "/narushenie-tovarnogo-znaka-na-marketpleyse/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/narushenie-tovarnogo-znaka-na-marketpleyse/"
+    },
+    {
+      "url": "https://do.gosuslugi.ru/services/10000004035/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.tks.ru/db/ois/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/a68c2e03d7967da86ff598906972cd025196845e/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/chek_list_markirovka_importa_chestnyiy_znak_i_tovarnyiy_znak_brenda/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/chek_list_markirovka_importa_chestnyiy_znak_i_tovarnyiy_znak_brenda/"
+    },
+    {
+      "url": "/lireate_patent",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://wa.me/79600484957",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://max.ru/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    }
+  ]
+}

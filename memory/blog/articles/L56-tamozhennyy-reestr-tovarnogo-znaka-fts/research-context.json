@@ -1,0 +1,80 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-13",
+    "today_ru": "13.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "пятница",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-15",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-13 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L56",
+    "priority": "P1",
+    "slug": "tamozhennyy-reestr-tovarnogo-znaka-fts",
+    "h1": "Таможенный реестр объектов интеллектуальной собственности ФТС: как включить товарный знак",
+    "primary_query": "включение товарного знака в таможенный реестр ФТС",
+    "secondary_queries": [
+      "таможенный реестр объектов интеллектуальной собственности",
+      "защита от контрафакта на границе",
+      "срок и документы"
+    ],
+    "search_intent": "workflow",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "L56",
+    "status": "PASS",
+    "search_intent": "workflow",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "включение товарного знака в таможенный реестр ФТС 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "включение товарного знака в таможенный реестр ФТС ноябрь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "включение товарного знака в таможенный реестр ФТС новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "таможенный реестр объектов интеллектуальной собственности 2026",
+      "purpose": "вторичный запрос: таможенный реестр объектов интеллектуальной собственности"
+    },
+    {
+      "id": "secondary_2",
+      "query": "защита от контрафакта на границе 2026",
+      "purpose": "вторичный запрос: защита от контрафакта на границе"
+    },
+    {
+      "id": "secondary_3",
+      "query": "срок и документы 2026",
+      "purpose": "вторичный запрос: срок и документы"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Таможенный реестр объектов интеллектуальной собственности ФТС: как включить товарный знак 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/L56-tamozhennyy-reestr-tovarnogo-znaka-fts",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}
