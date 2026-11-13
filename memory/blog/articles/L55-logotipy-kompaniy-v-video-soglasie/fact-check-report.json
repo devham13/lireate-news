@@ -1,0 +1,94 @@
+{
+  "article": "memory/blog/articles/L55-logotipy-kompaniy-v-video-soglasie/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 12,
+  "verified_facts_count": 1,
+  "unverified_facts_count": 11,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "те, куда перейти при претензии. Материал на 13.11.2026 не заменяет консультацию поверенного. TL;DR / Быст",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2019",
+      "kind": "date_or_year",
+      "context": "иенты\" без писем - высокий риск. В деле А40-64050/2019 ( it-lex.ru ) знак в сюжете не дал компенсации, н",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "9 ч",
+      "kind": "metric_or_duration",
+      "context": "бзор, кейс или документ От типа ролика зависит п. 9 ч. 2 ст. 2 ФЗ \"О рекламе\" и оценка органичной интег",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1484",
+      "kind": "large_number",
+      "context": "е \"красивый монтаж\", а возможная претензия по ст. 1484 (товарный знак), ст. 1270 (графика логотипа) и пр",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1270",
+      "kind": "large_number",
+      "context": "можная претензия по ст. 1484 (товарный знак), ст. 1270 (графика логотипа) и правилам добросовестного кон",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1229",
+      "kind": "large_number",
+      "context": "товарного знака: использование и смешение По ст. 1229 чужое исключительное право используют только с сог",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1489",
+      "kind": "large_number",
+      "context": "). Согласие оформляют лицензией или письмом ( ст. 1489 ). Оригинальный товар в кадре - смотрите ст. 1487",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1487",
+      "kind": "large_number",
+      "context": "1489 ). Оригинальный товар в кадре - смотрите ст. 1487 . Коллаж \"клиенты\" без писем - высокий риск. В де",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "64050",
+      "kind": "large_number",
+      "context": "аж \"клиенты\" без писем - высокий риск. В деле А40-64050/2019 ( it-lex.ru ) знак в сюжете не дал компенсац",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1515",
+      "kind": "large_number",
+      "context": "ю - по L17 . С 04.01.2026 компенсация по п. 4 ст. 1515 - 10 000-10 000 000 ₽ при доказанном нарушении, н",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 000",
+      "kind": "large_number",
+      "context": "L17 . С 04.01.2026 компенсация по п. 4 ст. 1515 - 10 000-10 000 000 ₽ при доказанном нарушении, не за кажд",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 000 000",
+      "kind": "large_number",
+      "context": "04.01.2026 компенсация по п. 4 ст. 1515 - 10 000-10 000 000 ₽ при доказанном нарушении, не за каждый фоновый",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

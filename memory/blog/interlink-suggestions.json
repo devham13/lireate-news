@@ -1,21 +1,21 @@
 {
   "site_base": "https://example.com",
-  "total_articles": 59,
+  "total_articles": 60,
   "opportunities_found": 2,
   "suggestions": [
     {
-      "source": "L54-graficheskiy-tovarnyy-znak-smeshchenie",
-      "target": "L06-kak-opredelit-klass-mktu",
-      "keyword": "классы мкту",
-      "context": "<p>Тревожный сигнал - <b>близкое впечатление</b> + те же классы МКТУ + риск путаницы. ИИ-поиск ранжирует кандидатов и <b>не заме",
-      "link_replacement": "<a href=\"/blog/kak-opredelit-klass-mktu/\">классы МКТУ</a>"
+      "source": "L55-logotipy-kompaniy-v-video-soglasie",
+      "target": "L17-mozhno-li-pokazyvat-chuzhie-logotipy-v-video-i-na-oblozhkah",
+      "keyword": "чужой логотип в видео",
+      "context": "400\"> </figure>  <blockquote><b>TL;DR / Быстрый инсайт:</b> Чужой логотип в видео проверяют по <b>трём контурам</b>: товарный знак (использов",
+      "link_replacement": "<a href=\"/blog/mozhno-li-pokazyvat-chuzhie-logotipy-v-video-i-na-oblozhkah/\">Чужой логотип в видео</a>"
     },
     {
-      "source": "L39-dorabotka-logotipa-pered-registraciey-tovarnogo-znaka",
-      "target": "L54-graficheskiy-tovarnyy-znak-smeshchenie",
-      "keyword": "доработка логотипа перед регистрацией",
-      "context": "бая графика, описательность или сходство с чужим знаком. <b>Доработка логотипа перед регистрацией товарного знака</b> - правка макета под <a href=\"https://ww",
-      "link_replacement": "<a href=\"/blog/graficheskiy-tovarnyy-znak-smeshchenie/\">Доработка логотипа перед регистрацией</a>"
+      "source": "L55-logotipy-kompaniy-v-video-soglasie",
+      "target": "L06-kak-opredelit-klass-mktu",
+      "keyword": "классы мкту",
+      "context": "marks\" target=\"_blank\">Поисковой платформе Роспатента</a> и классы МКТУ.</li>  <li>Отметьте способ показа: оригинальный товар, скач",
+      "link_replacement": "<a href=\"/blog/kak-opredelit-klass-mktu/\">классы МКТУ</a>"
     }
   ]
 }
