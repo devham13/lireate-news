@@ -1,0 +1,80 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-13",
+    "today_ru": "13.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "пятница",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-15",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-13 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L55",
+    "priority": "P2",
+    "slug": "logotipy-kompaniy-v-video-soglasie",
+    "h1": "Можно ли использовать логотипы компаний в видео: чек-лист по товарному знаку, дизайну и добросовестности",
+    "primary_query": "можно ли использовать логотипы компаний в видео — чек-лист рисков",
+    "secondary_queries": [
+      "демонстрация чужих логотипов в ролике",
+      "нарушение товарного знака в видео",
+      "упоминание бренда в контенте"
+    ],
+    "search_intent": "checklist",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "L55",
+    "status": "PASS",
+    "search_intent": "checklist",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "можно ли использовать логотипы компаний в видео — чек-лист рисков 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "можно ли использовать логотипы компаний в видео — чек-лист рисков ноябрь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "можно ли использовать логотипы компаний в видео — чек-лист рисков новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "демонстрация чужих логотипов в ролике 2026",
+      "purpose": "вторичный запрос: демонстрация чужих логотипов в ролике"
+    },
+    {
+      "id": "secondary_2",
+      "query": "нарушение товарного знака в видео 2026",
+      "purpose": "вторичный запрос: нарушение товарного знака в видео"
+    },
+    {
+      "id": "secondary_3",
+      "query": "упоминание бренда в контенте 2026",
+      "purpose": "вторичный запрос: упоминание бренда в контенте"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Можно ли использовать логотипы компаний в видео: чек-лист по товарному знаку, дизайну и добросовестности 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/L55-logotipy-kompaniy-v-video-soglasie",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}
