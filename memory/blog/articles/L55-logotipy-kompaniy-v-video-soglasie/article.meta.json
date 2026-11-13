@@ -43,16 +43,23 @@
   },
   "cover_family": "lireate_collage_v1",
   "cover_scene_hint": "кадр видеомонтажа, чужие логотипы на таймлайне, стикер «согласие?»",
-  "cover_headline": "ЛОГОТИПЫ В ВИДЕО: СОГЛАСИЕ?",
-  "cover_highlight": "ЛОГОТИПЫ",
-  "cover_sticky": "3 контура до рендера",
-  "cover_sticky_underline": "рендера",
-  "cover_ui_title": "ТЗ · © · добросовестность",
-  "cover_ui_rows": [
-    "ст. 1484 / 1487",
-    "ст. 1270 PNG",
-    "матрица форматов",
-    "1489 согласие"
+  "cover_headline": "Логотипы в видео: согласие",
+  "cover_highlight": "согласие",
+  "cover_sticky": "договор важнее скрина",
+  "cover_sticky_underline": "договор",
+  "cover_label_chips": [
+    [
+      "автор",
+      "black"
+    ],
+    [
+      "лицензия",
+      "white"
+    ],
+    [
+      "объект",
+      "pink"
+    ]
   ],
   "cover_style": "collage-v1",
   "cover_renderer": "html_chromium"
