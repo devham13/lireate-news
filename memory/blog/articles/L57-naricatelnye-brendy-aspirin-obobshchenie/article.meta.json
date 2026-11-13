@@ -42,19 +42,19 @@
   "cover_family": "lireate_collage_v1",
   "cover_scene_hint": "словарь «нарицательное», логотип на полке, стикер «марка vs название»",
   "cover_era": "Шумер",
-  "cover_headline": "БРЕНД VS ВИД ТОВАРА П 1 1483 П 6 1514",
+  "cover_headline": "НЕ ДОПУСТИТЬ GUIDELINES ОБОБЩЕНИЯ",
   "cover_highlight": "GUIDELINES",
   "cover_label_chips": [
     [
-      "п. 1 ст. 1483",
+      "1483",
       "black"
     ],
     [
-      "не 1486",
+      "1514",
       "white"
     ],
     [
-      "® + род. слово",
+      "марка",
       "pink"
     ]
   ],
@@ -62,10 +62,9 @@
   "cover_sticky_underline": "МАРКА",
   "cover_ui_title": "Анти-обобщение бренда",
   "cover_ui_rows": [
-    "Самотест 8 флагов",
-    "Brand guidelines",
-    "Договоры дилеров",
-    "Архив доказательств"
+    "самотест флаги",
+    "guidelines",
+    "архив СМИ"
   ],
   "cover_style": "collage-v1",
   "cover_renderer": "html_chromium"
