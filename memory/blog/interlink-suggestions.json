@@ -1,21 +1,28 @@
 {
   "site_base": "https://example.com",
-  "total_articles": 60,
-  "opportunities_found": 2,
+  "total_articles": 61,
+  "opportunities_found": 3,
   "suggestions": [
     {
-      "source": "L55-logotipy-kompaniy-v-video-soglasie",
-      "target": "L17-mozhno-li-pokazyvat-chuzhie-logotipy-v-video-i-na-oblozhkah",
-      "keyword": "чужой логотип в видео",
-      "context": "400\"> </figure>  <blockquote><b>TL;DR / Быстрый инсайт:</b> Чужой логотип в видео проверяют по <b>трём контурам</b>: товарный знак (использов",
-      "link_replacement": "<a href=\"/blog/mozhno-li-pokazyvat-chuzhie-logotipy-v-video-i-na-oblozhkah/\">Чужой логотип в видео</a>"
+      "source": "L56-tamozhennyy-reestr-tovarnogo-znaka-fts",
+      "target": "L31-mozhno-li-zapretit-vvoz-analoga-zapatentovannogo-tovara",
+      "keyword": "таможенный реестр объектов интеллектуальной собственности",
+      "context": "lockquote><b>TL;DR / Быстрый инсайт:</b> <b>ТРОИС</b> - это таможенный реестр объектов интеллектуальной собственности ФТС России. Один товарный знак - одно заявление по <a href=",
+      "link_replacement": "<a href=\"/blog/mozhno-li-zapretit-vvoz-analoga-zapatentovannogo-tovara/\">таможенный реестр объектов интеллектуальной собственности</a>"
     },
     {
-      "source": "L55-logotipy-kompaniy-v-video-soglasie",
-      "target": "L06-kak-opredelit-klass-mktu",
-      "keyword": "классы мкту",
-      "context": "marks\" target=\"_blank\">Поисковой платформе Роспатента</a> и классы МКТУ.</li>  <li>Отметьте способ показа: оригинальный товар, скач",
-      "link_replacement": "<a href=\"/blog/kak-opredelit-klass-mktu/\">классы МКТУ</a>"
+      "source": "L56-tamozhennyy-reestr-tovarnogo-znaka-fts",
+      "target": "L31-mozhno-li-zapretit-vvoz-analoga-zapatentovannogo-tovara",
+      "keyword": "параллельный импорт",
+      "context": "про запрет ввоза аналога по патенту?</h3> <p>L31 - патент и параллельный импорт; здесь - workflow включения <b>товарного знака</b> в ТРОИС,",
+      "link_replacement": "<a href=\"/blog/mozhno-li-zapretit-vvoz-analoga-zapatentovannogo-tovara/\">параллельный импорт</a>"
+    },
+    {
+      "source": "L31-mozhno-li-zapretit-vvoz-analoga-zapatentovannogo-tovara",
+      "target": "L56-tamozhennyy-reestr-tovarnogo-znaka-fts",
+      "keyword": "таможенный реестр объектов интеллектуальной собственности",
+      "context": "варе или упаковке, не про конструкцию внутри. <b>ТРОИС</b> (таможенный реестр объектов интеллектуальной собственности) - список ФТС, по которому таможня может <b>приостановить в",
+      "link_replacement": "<a href=\"/blog/tamozhennyy-reestr-tovarnogo-znaka-fts/\">таможенный реестр объектов интеллектуальной собственности</a>"
     }
   ]
 }
