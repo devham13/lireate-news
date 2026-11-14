@@ -43,16 +43,29 @@
   "cover_family": "lireate_collage_v1",
   "cover_scene_hint": "репродукция в магазине, музейная табличка, календарь сроков ©",
   "cover_era": "Шумер",
-  "cover_headline": "КАРТИНА В РЕКЛАМЕ 70 ЛЕТ МУЗЕЙ ДОГОВОР",
+  "cover_headline": "КАРТИНА: ДВА СЛОЯ",
   "cover_highlight": "ДВА СЛОЯ",
-  "cover_sticky": "1274 ≠ реклама",
-  "cover_sticky_underline": "1274",
+  "cover_sticky": "70 лет 1281",
+  "cover_sticky_underline": "1281",
+  "cover_label_chips": [
+    [
+      "1281",
+      "black"
+    ],
+    [
+      "1274",
+      "white"
+    ],
+    [
+      "ГТГ",
+      "pink"
+    ]
+  ],
   "cover_ui_title": "Чек-лист AP",
   "cover_ui_rows": [
-    "Картина / файл",
-    "70 лет OD",
-    "54-ФЗ музей",
-    "Лицензия"
+    "70 лет срок",
+    "файл музея",
+    "договор"
   ],
   "cover_style": "collage-v1",
   "cover_renderer": "html_chromium"
