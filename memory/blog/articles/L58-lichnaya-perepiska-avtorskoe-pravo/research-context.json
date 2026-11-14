@@ -1,0 +1,80 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-14",
+    "today_ru": "14.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "суббота",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-16",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-14 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L58",
+    "priority": "P2",
+    "slug": "lichnaya-perepiska-avtorskoe-pravo",
+    "h1": "Чек-лист: личная переписка как объект авторского права — когда публикация без согласия риск",
+    "primary_query": "является ли личная переписка объектом авторского права",
+    "secondary_queries": [
+      "публикация чужих сообщений",
+      "переписка в суде",
+      "согласие на обработку персональных данных"
+    ],
+    "search_intent": "checklist",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "L58",
+    "status": "PASS",
+    "search_intent": "checklist",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "является ли личная переписка объектом авторского права 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "является ли личная переписка объектом авторского права ноябрь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "является ли личная переписка объектом авторского права новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "публикация чужих сообщений 2026",
+      "purpose": "вторичный запрос: публикация чужих сообщений"
+    },
+    {
+      "id": "secondary_2",
+      "query": "переписка в суде 2026",
+      "purpose": "вторичный запрос: переписка в суде"
+    },
+    {
+      "id": "secondary_3",
+      "query": "согласие на обработку персональных данных 2026",
+      "purpose": "вторичный запрос: согласие на обработку персональных данных"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Чек-лист: личная переписка как объект авторского права — когда публикация без согласия риск 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/L58-lichnaya-perepiska-avtorskoe-pravo",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}
