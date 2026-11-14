@@ -1,6 +1,14 @@
 {
   "site_base": "https://example.com",
-  "total_articles": 64,
-  "opportunities_found": 0,
-  "suggestions": []
+  "total_articles": 65,
+  "opportunities_found": 1,
+  "suggestions": [
+    {
+      "source": "L17-mozhno-li-pokazyvat-chuzhie-logotipy-v-video-i-na-oblozhkah",
+      "target": "L60-kartiny-russkih-hudozhnikov-kommerciya",
+      "keyword": "свободное использование",
+      "context": "</b> считать, что \"в интернете уже есть этот логотип\" равно свободное использование.</p>  <h2>Составьте матрицу форматов: обложка, монтаж, обзо",
+      "link_replacement": "<a href=\"/blog/kartiny-russkih-hudozhnikov-kommerciya/\">свободное использование</a>"
+    }
+  ]
 }
