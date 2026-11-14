@@ -1,0 +1,101 @@
+{
+  "article": "memory/blog/articles/L58-lichnaya-perepiska-avtorskoe-pravo/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 13,
+  "verified_facts_count": 2,
+  "unverified_facts_count": 11,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "выберете пост или передачу в суд. Нормы на 14.11.2026; не юруслуга. TL;DR / Быстрый инсайт: Переписка в",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2023",
+      "kind": "date_or_year",
+      "context": "ховный суд в определении № 5-КГ22-144-К2 от 07.02.2023 указал, что незаверенный скрин не нужно отклонять",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "1259",
+      "kind": "large_number",
+      "context": "очте может быть литературным произведением по ст. 1259 , если в сообщении есть творческий текст, а не то",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1270",
+      "kind": "large_number",
+      "context": "зведение и доведение до всеобщего сведения по ст. 1270 . Отдельно действуют частная жизнь ( ст. 152.2 )",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1228",
+      "kind": "large_number",
+      "context": "- это право на результат творческого труда ( ст. 1228 ). Текст в мессенджере может попасть под охрану,",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1229",
+      "kind": "large_number",
+      "context": "убликацией. Чужой текст - только с согласия ( ст. 1229 ). Компенсация по ст. 1301 с 04.01.2026 - 10 000-",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1301",
+      "kind": "large_number",
+      "context": "олько с согласия ( ст. 1229 ). Компенсация по ст. 1301 с 04.01.2026 - 10 000-10 000 000 ₽ при нарушении ©",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 000",
+      "kind": "large_number",
+      "context": "т. 1229 ). Компенсация по ст. 1301 с 04.01.2026 - 10 000-10 000 000 ₽ при нарушении ©, а не \"за любой скри",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 000 000",
+      "kind": "large_number",
+      "context": "). Компенсация по ст. 1301 с 04.01.2026 - 10 000-10 000 000 ₽ при нарушении ©, а не \"за любой скрин\". Раздели",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1274",
+      "kind": "large_number",
+      "context": "ское Средний Средний Согласие, цитирование по ст. 1274 , анонимизация Обмен \"ок\", \"оплатил\" Низкий Средн",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "3 152",
+      "kind": "large_number",
+      "context": "е ПДн - раскрытие неопределённому кругу (п. 5 ст. 3 152-ФЗ). Для поста со скрином нужно отдельное согласи",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "137",
+      "kind": "large_number",
+      "context": "оловная оценка - только при полном составе по ст. 137 УК РФ . Проверьте рабочую переписку и коммерческую",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1 152",
+      "kind": "large_number",
+      "context": "не заменяет согласие на распространение по ст. 10.1 152-ФЗ. Укажите в документе цель, площадку и перечень",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
