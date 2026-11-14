@@ -1425,13 +1425,13 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L58 — Личная переписка как объект авторского права
 
-- **status:** new
+- **status:** written
 - **priority:** P2
 - **site:** lireate
 - **lireate_category_id:** 17
 - **lireate_category_name:** Авторское право
 - **slug:** lichnaya-perepiska-avtorskoe-pravo
-- **h1:** Является ли личная переписка объектом авторского права: когда публикация без согласия — риск
+- **h1:** Чек-лист: личная переписка как объект авторского права — когда публикация без согласия риск
 - **primary_query:** является ли личная переписка объектом авторского права
 - **secondary_queries:** публикация чужих сообщений; переписка в суде; согласие на обработку персональных данных
 - **search_intent:** checklist

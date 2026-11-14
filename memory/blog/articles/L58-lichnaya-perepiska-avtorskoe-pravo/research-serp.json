@@ -1,0 +1,153 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-14",
+    "today_ru": "14.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "суббота",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-16",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-14 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L58",
+    "priority": "P2",
+    "slug": "lichnaya-perepiska-avtorskoe-pravo",
+    "h1": "Чек-лист: личная переписка как объект авторского права — когда публикация без согласия риск",
+    "primary_query": "является ли личная переписка объектом авторского права",
+    "secondary_queries": [
+      "публикация чужих сообщений",
+      "переписка в суде",
+      "согласие на обработку персональных данных"
+    ],
+    "search_intent": "checklist",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "является ли личная переписка объектом авторского права 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-14"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "является ли личная переписка объектом авторского права ноябрь 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-14"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "является ли личная переписка объектом авторского права новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-14"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "публикация чужих сообщений 2026",
+      "purpose": "вторичный запрос: публикация чужих сообщений",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-14"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "переписка в суде 2026",
+      "purpose": "вторичный запрос: переписка в суде",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-14"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "согласие на обработку персональных данных 2026",
+      "purpose": "вторичный запрос: согласие на обработку персональных данных",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Согласие на обработку персональных данных в 2026 году: бланк и пример ...",
+          "url": "https://office.ru/documents/soglasie-na-obrabotku-personalnykh-dannykh-obrazets-i-shablon/",
+          "snippet": ""
+        },
+        {
+          "title": "Согласие на обработку персональных данных: бланк, образец 2026",
+          "url": "https://blank-obrazets.ru/soglasie_na_obrabotku_personalnyx_dannyx.htm",
+          "snippet": "Напишите текст, выражающий согласие, в свободной форме. Включите пункты, обязательные по закону и нужные именно для вашего случая. Скачайте нужный вам бланк и заполните поля."
+        },
+        {
+          "title": "Согласие на обработку персональных данных - образец в 2026 году",
+          "url": "https://nalog-nalog.ru/personalnye_dannye/soglasie_na_obrabotku_personal_nyh_dannyh_-_blank/",
+          "snippet": "Документ относится к группе «Согласие». Рекомендуем сохранить ссылку на эту страницу в своем социальном профиле или скачать файл в удобном вам формате."
+        },
+        {
+          "title": "Приложение N 2. Согласие На Обработку Персональных Данных ...",
+          "url": "https://www.consultant.ru/document/cons_doc_LAW_535797/125c0a2e3d834138d74471aa226b3a6775df3647/",
+          "snippet": "Согласие на обработку персональных данных - образец 2026 года, который можно использовать для заполнения, мы приводим в нашей статье."
+        },
+        {
+          "title": "Согласие на обработку персональных данных, образец 2026",
+          "url": "https://dogovor.expert/documents/personal-data-consent",
+          "snippet": "Приказ МВД России от 12.05.2026 N 290 \"Об утверждении формы ходатайства иностранного гражданина (лица без гражданства) о привлечении его в качестве высококвалифицированного специалиста и ..."
+        },
+        {
+          "title": "Согласие на обработку персональных данных. Образец и бланк 2026 года",
+          "url": "https://assistentus.ru/forma/soglasie-na-obrabotku-personalnyh-dannyh/",
+          "snippet": "Образец 2026 года: заполните форму — документ сформируется автоматически. Печать на листе А4, экспорт в PDF и DOCX. Согласие на обработку персональных данных: перечень данных, цели обработки, срок действия, порядок отзыва. Правовая основа — ст. 9 ФЗ № 152-ФЗ «О персональных данных»."
+        }
+      ],
+      "searched_at": "2026-11-14"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Чек-лист: личная переписка как объект авторского права — когда публикация без согласия риск 2026",
+      "purpose": "SERP по H1",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-14"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://office.ru/documents/soglasie-na-obrabotku-personalnykh-dannykh-obrazets-i-shablon/",
+      "title": "Согласие на обработку персональных данных в 2026 году: бланк и пример ...",
+      "from_query": "согласие на обработку персональных данных 2026"
+    },
+    {
+      "url": "https://blank-obrazets.ru/soglasie_na_obrabotku_personalnyx_dannyx.htm",
+      "title": "Согласие на обработку персональных данных: бланк, образец 2026",
+      "from_query": "согласие на обработку персональных данных 2026"
+    },
+    {
+      "url": "https://nalog-nalog.ru/personalnye_dannye/soglasie_na_obrabotku_personal_nyh_dannyh_-_blank/",
+      "title": "Согласие на обработку персональных данных - образец в 2026 году",
+      "from_query": "согласие на обработку персональных данных 2026"
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_535797/125c0a2e3d834138d74471aa226b3a6775df3647/",
+      "title": "Приложение N 2. Согласие На Обработку Персональных Данных ...",
+      "from_query": "согласие на обработку персональных данных 2026"
+    },
+    {
+      "url": "https://dogovor.expert/documents/personal-data-consent",
+      "title": "Согласие на обработку персональных данных, образец 2026",
+      "from_query": "согласие на обработку персональных данных 2026"
+    },
+    {
+      "url": "https://assistentus.ru/forma/soglasie-na-obrabotku-personalnyh-dannyh/",
+      "title": "Согласие на обработку персональных данных. Образец и бланк 2026 года",
+      "from_query": "согласие на обработку персональных данных 2026"
+    }
+  ]
+}

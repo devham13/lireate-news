@@ -1,0 +1,16 @@
+{
+  "topic_id": "L58",
+  "slug": "lichnaya-perepiska-avtorskoe-pravo",
+  "canonical_path": "/lichnaya-perepiska-avtorskoe-pravo",
+  "lireate_category_id": 17,
+  "lireate_category_name": "Авторское право",
+  "title": "Личная переписка и авторское право: чек-лист перед публикацией скрина",
+  "description": "Три контура риска: ст. 1259 и 1270, ст. 152.2, 152-ФЗ и ст. 10.1. Матрица типов сообщений, согласие на распространение ПДн, анонимизация, суд и полиция вместо поста.",
+  "cover_style": "collage-v1",
+  "image_map": {
+    "cover/cover.png": "/template/images/blog/l01_lichnaya_perepiska_avtorskoe_pravo_cover.png",
+    "cover/inline-01.png": "/template/images/blog/l01_lichnaya_perepiska_avtorskoe_pravo_inline_01.png",
+    "cover/inline-02.png": "/template/images/blog/l01_lichnaya_perepiska_avtorskoe_pravo_inline_02.png",
+    "cover/inline-03.png": "/template/images/blog/l01_lichnaya_perepiska_avtorskoe_pravo_inline_03.png"
+  }
+}
