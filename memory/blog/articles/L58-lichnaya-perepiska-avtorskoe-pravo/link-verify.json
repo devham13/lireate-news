@@ -6,7 +6,7 @@
   "verdict": "pass",
   "links": [
     {
-      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/be05678dc42ddc67aae5be9ba9beebd367fb9a3f/",
+      "url": "/document/cons_doc_LAW_64629/be05678dc42ddc67aae5be9ba9beebd367fb9a3f/",
       "status": 200,
       "ok": true,
       "method": "HEAD",
@@ -15,7 +15,7 @@
       "skipped": false
     },
     {
-      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/dffcf0b87b80ff38f430dc822a0074e76ccd41a0/",
+      "url": "/document/cons_doc_LAW_64629/dffcf0b87b80ff38f430dc822a0074e76ccd41a0/",
       "status": 200,
       "ok": true,
       "method": "HEAD",
@@ -24,7 +24,7 @@
       "skipped": false
     },
     {
-      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/",
+      "url": "/document/cons_doc_LAW_64629/",
       "status": 200,
       "ok": true,
       "method": "HEAD",
@@ -33,7 +33,7 @@
       "skipped": false
     },
     {
-      "url": "https://www.consultant.ru/document/cons_doc_LAW_61801/",
+      "url": "/document/cons_doc_LAW_61801/",
       "status": 200,
       "ok": true,
       "method": "HEAD",
@@ -43,15 +43,16 @@
     },
     {
       "url": "/rasprostranyaetsya_li_avtorskoe_pravo_na_perepisku/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
       "kind": "internal_relative",
-      "status": null,
-      "ok": true,
-      "skipped": true,
-      "method": null,
-      "error": "relative link; pass --site-base to verify"
+      "skipped": false,
+      "checked_url": "/rasprostranyaetsya_li_avtorskoe_pravo_na_perepisku/"
     },
     {
-      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/98ad2641f95945c4b7956150260564c8b44028d9/",
+      "url": "/document/cons_doc_LAW_64629/98ad2641f95945c4b7956150260564c8b44028d9/",
       "status": 200,
       "ok": true,
       "method": "HEAD",
@@ -60,7 +61,7 @@
       "skipped": false
     },
     {
-      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/c2f79b53ce582e92680379e2ebd23eeb9fb7855a/",
+      "url": "/document/cons_doc_LAW_64629/c2f79b53ce582e92680379e2ebd23eeb9fb7855a/",
       "status": 200,
       "ok": true,
       "method": "HEAD",
@@ -69,7 +70,7 @@
       "skipped": false
     },
     {
-      "url": "http://www.kremlin.ru/acts/bank/23532/print",
+      "url": "/acts/bank/23532/print",
       "status": 200,
       "ok": true,
       "method": "HEAD",
@@ -78,7 +79,7 @@
       "skipped": false
     },
     {
-      "url": "https://base.garant.ru/10106464/10/",
+      "url": "/10106464/10/",
       "status": 200,
       "ok": true,
       "method": "HEAD",
@@ -87,7 +88,7 @@
       "skipped": false
     },
     {
-      "url": "https://www.consultant.ru/document/cons_doc_LAW_28165/",
+      "url": "/document/cons_doc_LAW_28165/",
       "status": 200,
       "ok": true,
       "method": "HEAD",
@@ -96,7 +97,7 @@
       "skipped": false
     },
     {
-      "url": "https://www.zakonrf.info/articles/skrinshoty-i-perepiska-kak-dokazatelstva-gpk/",
+      "url": "/articles/skrinshoty-i-perepiska-kak-dokazatelstva-gpk/",
       "status": 200,
       "ok": true,
       "method": "HEAD",
@@ -105,7 +106,7 @@
       "skipped": false
     },
     {
-      "url": "https://www.consultant.ru/document/cons_doc_LAW_329896/",
+      "url": "/document/cons_doc_LAW_329896/",
       "status": 200,
       "ok": true,
       "method": "HEAD",
@@ -114,7 +115,7 @@
       "skipped": false
     },
     {
-      "url": "https://www.consultant.ru/document/cons_doc_LAW_10699/",
+      "url": "/document/cons_doc_LAW_10699/",
       "status": 200,
       "ok": true,
       "method": "HEAD",
@@ -123,7 +124,7 @@
       "skipped": false
     },
     {
-      "url": "https://www.zakonrf.info/gk/1270/",
+      "url": "/gk/1270/",
       "status": 200,
       "ok": true,
       "method": "HEAD",
@@ -133,15 +134,16 @@
     },
     {
       "url": "/otvet_na_pretenziyu_pravoobladatelya_tovarnogo_znaka_poryadok_srok_30_dney_i_obrazec/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
       "kind": "internal_relative",
-      "status": null,
-      "ok": true,
-      "skipped": true,
-      "method": null,
-      "error": "relative link; pass --site-base to verify"
+      "skipped": false,
+      "checked_url": "/otvet_na_pretenziyu_pravoobladatelya_tovarnogo_znaka_poryadok_srok_30_dney_i_obrazec/"
     },
     {
-      "url": "https://t.me/lireate_patent",
+      "url": "/lireate_patent",
       "status": 200,
       "ok": true,
       "method": "HEAD",
@@ -150,7 +152,7 @@
       "skipped": false
     },
     {
-      "url": "https://wa.me/79600484957",
+      "url": "/79600484957",
       "status": 200,
       "ok": true,
       "method": "HEAD",
@@ -159,7 +161,7 @@
       "skipped": false
     },
     {
-      "url": "https://max.ru/",
+      "url": "/",
       "status": 200,
       "ok": true,
       "method": "HEAD",
