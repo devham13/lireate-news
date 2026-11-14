@@ -1,0 +1,108 @@
+{
+  "article": "memory/blog/articles/L60-kartiny-russkih-hudozhnikov-kommerciya/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 14,
+  "verified_facts_count": 1,
+  "unverified_facts_count": 13,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "прав; владелец - музей, фотограф или банк ( гайд 2026 ). Файл из поиска не легализует макет. Запасной в",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "70 лет",
+      "kind": "metric_or_duration",
+      "context": "ительное право на картину - это жизнь автора плюс 70 лет с 1 января после смерти ( ст. 1281 ГК РФ ). После",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1281",
+      "kind": "large_number",
+      "context": "автора плюс 70 лет с 1 января после смерти ( ст. 1281 ГК РФ ). После истечения срока полотно переходит в",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1274",
+      "kind": "large_number",
+      "context": "рч не попадают в \"свободное использование\" по ст. 1274 . Для копий из госмузея действует ст. 36 закона о",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1227",
+      "kind": "large_number",
+      "context": "ь картину на товаре без оговорки в договоре ( ст. 1227, 1291 ГК ). Материал не заменяет юридическую конс",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1291",
+      "kind": "large_number",
+      "context": "ину на товаре без оговорки в договоре ( ст. 1227, 1291 ГК ). Материал не заменяет юридическую консультаци",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1276",
+      "kind": "large_number",
+      "context": "я ветка: там ближе свободное использование по ст. 1276 и осторожное применение ст. 1274. Если вы на шаге",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1282",
+      "kind": "large_number",
+      "context": "латы, но с авторством и неприкосновенностью ( ст. 1282 ). Искажающий контекст и оскорбительный коллаж -",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1266",
+      "kind": "large_number",
+      "context": "ающий контекст и оскорбительный коллаж - зона ст. 1266 . Делайте: подпись с автором и названием. Не дела",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "36 54",
+      "kind": "large_number",
+      "context": "е тиражи и сувениры - с разрешения дирекции ( ст. 36 54-ФЗ , практика СИП ), в том числе при картине в об",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "800",
+      "kind": "large_number",
+      "context": "ght ). Пушкинский: некоммерция с сайта с лимитом ~800 px; коммерция по регламенту ( usage_policy ). Дела",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1272",
+      "kind": "large_number",
+      "context": "во на рекламу образа ( ст. 1227 , ст. 1291 ); ст. 1272 не про digital-тираж. При живом сроке - лицензия п",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1301",
+      "kind": "large_number",
+      "context": "ния по гл. 69 ГК , в том числе компенсацию по ст. 1301 (пределы - по редакции на дату претензии). Претен",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1314",
+      "kind": "large_number",
+      "context": "ГТГ и ГМИИ им. Пушкина сверены на 14.11.2026; ст. 1314 к живописи не применялась. Не заменяет юридическую",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

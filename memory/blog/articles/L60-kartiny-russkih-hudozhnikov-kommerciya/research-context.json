@@ -1,0 +1,80 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-14",
+    "today_ru": "14.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "суббота",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-16",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-14 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L60",
+    "priority": "P2",
+    "slug": "kartiny-russkih-hudozhnikov-kommerciya",
+    "h1": "Чек-лист: использование изображений картин русских художников в коммерческих целях — сроки и исключения",
+    "primary_query": "чек-лист использование изображений картин русских художников в коммерческих целях",
+    "secondary_queries": [
+      "музейное изображение в рекламе",
+      "срок охраны произведения искусства",
+      "свободное использование"
+    ],
+    "search_intent": "checklist",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "L60",
+    "status": "PASS",
+    "search_intent": "checklist",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "чек-лист использование изображений картин русских художников в коммерческих целях 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "чек-лист использование изображений картин русских художников в коммерческих целях ноябрь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "чек-лист использование изображений картин русских художников в коммерческих целях новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "музейное изображение в рекламе 2026",
+      "purpose": "вторичный запрос: музейное изображение в рекламе"
+    },
+    {
+      "id": "secondary_2",
+      "query": "срок охраны произведения искусства 2026",
+      "purpose": "вторичный запрос: срок охраны произведения искусства"
+    },
+    {
+      "id": "secondary_3",
+      "query": "свободное использование 2026",
+      "purpose": "вторичный запрос: свободное использование"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Чек-лист: использование изображений картин русских художников в коммерческих целях — сроки и исключения 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/L60-kartiny-russkih-hudozhnikov-kommerciya",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}

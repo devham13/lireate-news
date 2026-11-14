@@ -1,0 +1,32 @@
+{
+  "headline_lines": [
+    "КАРТИНА: ДВА СЛОЯ"
+  ],
+  "highlight": "ДВА СЛОЯ",
+  "sticky_text": "70 лет 1281",
+  "sticky_underline": "1281",
+  "sticky_color": "yellow",
+  "badge_label": "©",
+  "label_chips": [
+    [
+      "1281",
+      "black"
+    ],
+    [
+      "1274",
+      "white"
+    ],
+    [
+      "ГТГ",
+      "pink"
+    ]
+  ],
+  "ui_card_title": "Чек-лист AP",
+  "ui_card_rows": [
+    "70 лет срок",
+    "файл музея",
+    "договор"
+  ],
+  "stage_background": "#0b1020",
+  "left_memo": ""
+}
