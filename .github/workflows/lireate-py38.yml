@@ -6,6 +6,7 @@ on:
       - "scripts/lireate_*.py"
       - "scripts/lireate_*.sh"
       - "hosting/**"
+      - "hosting-seo/**"
       - ".github/workflows/lireate-py38.yml"
   push:
     branches:
@@ -58,7 +59,10 @@ jobs:
         with:
           php-version: "5.6"
       - name: PHP 5.6 syntax (hosting endpoint)
-        run: php -l hosting/lireate-analytics/webmaster.php
+        run: |
+          php -l hosting/lireate-analytics/webmaster.php
+          php -l hosting-seo/data/lireate-seo-runtime.php
+          php scripts/lireate_seo_runtime_selftest.php
 
   compile-38:
     runs-on: ubuntu-latest
@@ -74,3 +78,5 @@ jobs:
         run: |
           php -l scripts/lireate_db_publish.php
           php -l hosting/lireate-analytics/webmaster.php
+          php -l hosting-seo/data/lireate-seo-runtime.php
+          php scripts/lireate_seo_runtime_selftest.php

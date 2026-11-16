@@ -151,6 +151,7 @@ if (!function_exists('lireate_seo_init_globals')) {
             $path_norm = '/';
         }
 
+        $preserve_robots_noindex = !empty($GLOBALS['lireate_robots_noindex']);
         $GLOBALS['lireate_robots_noindex'] = false;
         foreach (lireate_seo_noindex_paths() as $ni) {
             $ni_norm = rtrim($ni, '/');
@@ -166,6 +167,30 @@ if (!function_exists('lireate_seo_init_globals')) {
         }
 
         $GLOBALS['lireate_canonical_url'] = lireate_seo_canonical_from_path($path);
+
+        $trimmed_path = trim($path, '/');
+        if ($trimmed_path !== 'news' && strpos($trimmed_path, 'news/') === 0) {
+            $GLOBALS['lireate_robots_noindex'] = true;
+            $GLOBALS['lireate_canonical_url'] = lireate_seo_public_base() . '/news';
+        }
+
+        if ($trimmed_path === 'news' && isset($_GET['page'])) {
+            $page_raw = (string) $_GET['page'];
+            if (!ctype_digit($page_raw) || (int) $page_raw < 1) {
+                $GLOBALS['lireate_robots_noindex'] = true;
+                $GLOBALS['lireate_canonical_url'] = lireate_seo_public_base() . '/news';
+            } elseif ((int) $page_raw > 1) {
+                $has_category = isset($_GET['category']) && (string) $_GET['category'] !== '';
+                $has_num = isset($_GET['num']) && (string) $_GET['num'] !== '';
+                if (!$has_category && !$has_num) {
+                    $GLOBALS['lireate_canonical_url'] = lireate_seo_public_base() . '/news?page=' . (int) $page_raw;
+                }
+            }
+        }
+
+        if ($preserve_robots_noindex) {
+            $GLOBALS['lireate_robots_noindex'] = true;
+        }
     }
 }
 
