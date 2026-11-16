@@ -252,6 +252,92 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ---
 
+## L17 — Защита дизайна товара (обновление SEO: патентование дизайна)
+
+- **status:** written
+- **priority:** P1
+- **site:** lireate
+- **lireate_category_id:** 20
+- **lireate_category_name:** Патент
+- **slug:** zashchita-dizajna-tovara-promobrazec-ili-tovarnyy-znak
+- **h1:** Патентование дизайна и защита товара: промышленный образец или товарный знак
+- **primary_query:** патентование дизайна
+- **secondary_queries:** защита дизайна товара, промышленный образец или товарный знак, патент на дизайн товара
+- **search_intent:** comparison
+- **article_mode:** B
+- **webmaster_signal:** 32 показа / поз. ~10,2 (06.09–06.10.2026)
+- **note:** обновлена статья в `memory/blog/articles/L17-*` (из PR #23), не переписывать с нуля
+
+---
+
+## L21 — Регистрация мобильного приложения в Роспатенте
+
+- **status:** written
+- **priority:** P1
+- **site:** lireate
+- **lireate_category_id:** 19
+- **lireate_category_name:** Программа ЭВМ
+- **slug:** registraciya-mobilnogo-prilozheniya-v-rospatente
+- **h1:** Регистрация мобильного приложения в Роспатенте: программа для ЭВМ и товарный знак
+- **primary_query:** регистрация мобильного приложения в роспатенте
+- **secondary_queries:** регистрация программы для эвм, товарный знак на приложение, патент на мобильное приложение
+- **search_intent:** how_to
+- **article_mode:** B
+- **webmaster_signal:** 60 показов / поз. ~10,4 (06.09–06.10.2026)
+
+---
+
+## L22 — Регистрация бренда одежды
+
+- **status:** written
+- **priority:** P1
+- **site:** lireate
+- **lireate_category_id:** 13
+- **lireate_category_name:** Бренд
+- **slug:** registraciya-brenda-odezhdy
+- **h1:** Регистрация бренда одежды: классы МКТУ 25 и 35, проверка и сроки
+- **primary_query:** регистрация бренда одежды
+- **secondary_queries:** товарный знак на одежду, класс 25 мкту, мкту 35 продажа одежды
+- **search_intent:** checklist
+- **article_mode:** B
+- **webmaster_signal:** 26 показов / поз. ~11,5
+
+---
+
+## L23 — Сайт-клон и защита бренда в интернете
+
+- **status:** written
+- **priority:** P1
+- **site:** lireate
+- **lireate_category_id:** 12
+- **lireate_category_name:** Сайт
+- **slug:** sajt-klon-zashchita-brenda-v-internete
+- **h1:** Сайт-клон: как заблокировать и защитить бренд в интернете
+- **primary_query:** блокировка сайта клона
+- **secondary_queries:** защита бренда в интернете, претензия хостеру, товарный знак клон сайта
+- **search_intent:** workflow
+- **article_mode:** B
+- **webmaster_signal:** 24+24 показов / поз. ~12–12,5
+
+---
+
+## L24 — Защита прав на базу данных
+
+- **status:** written
+- **priority:** P1
+- **site:** lireate
+- **lireate_category_id:** 19
+- **lireate_category_name:** Программа ЭВМ
+- **slug:** zashchita-prav-na-bazu-dannyh
+- **h1:** Защита прав на базу данных: ст. 1260, 1334-1336 и регистрация в Роспатенте
+- **primary_query:** защита прав на базу данных
+- **secondary_queries:** права изготовителя базы данных, ст 1334 гк рф, регистрация базы данных роспатент
+- **search_intent:** how_to
+- **article_mode:** B
+- **webmaster_signal:** 15 показов / поз. ~9,1
+
+---
+
 ## L05 — Способы защиты изобретения: патент, ноу-хау или публикация
 
 - **status:** written
