@@ -134,7 +134,7 @@
 
 | ID | Назначение | Путь для writer (live-style slug) |
 |----|------------|-----------------------------------|
-| **L59** | Пошагово добавить бренд в ЛК WB | `/kak_dobavit_brend_na_wildberries_seller/` (уточнить `canonical_path` в meta при публикации: `kak-dobavit-brend-na-wildberries-seller`) |
+| **L59** | Пошагово добавить бренд в ЛК WB | `/kak_dobavit_brend_na_wildberries_seller/` |
 | **L03** | WB + Ozon, документы, общая стратегия | `/kak_zaregistrirovat_brend_na_ozon_i_wildberries_proverka_imeni_i_nuzhen_li_tz/` |
 | **L18** | Чек-лист: справочник WB vs реестр Роспатента | `/kak_proverit_brend_na_wildberries_svoboden_li_tovarnyy_znak/` |
 
