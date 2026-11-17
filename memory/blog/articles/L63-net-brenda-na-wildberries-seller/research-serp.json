@@ -1,0 +1,91 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-17",
+    "today_ru": "17.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "вторник",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-19",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-17 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L63",
+    "priority": "P2",
+    "slug": "net-brenda-na-wildberries-seller",
+    "h1": "Как разобраться с полем «Нет бренда» на Wildberries: карточка, модерация и товарный знак",
+    "primary_query": "как разобраться нет бренда в wildberries",
+    "secondary_queries": [
+      "продавать без бренда на WB",
+      "создать бренд в ЛК",
+      "отличие от товарного знака"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "как разобраться нет бренда в wildberries 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-17"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "как разобраться нет бренда в wildberries ноябрь 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-17"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "как разобраться нет бренда в wildberries новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-17"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "продавать без бренда на WB 2026",
+      "purpose": "вторичный запрос: продавать без бренда на WB",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-17"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "создать бренд в ЛК 2026",
+      "purpose": "вторичный запрос: создать бренд в ЛК",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-17"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "отличие от товарного знака 2026",
+      "purpose": "вторичный запрос: отличие от товарного знака",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-17"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как разобраться с полем «Нет бренда» на Wildberries: карточка, модерация и товарный знак 2026",
+      "purpose": "SERP по H1",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-17"
+    }
+  ],
+  "errors": [],
+  "unique_urls": []
+}

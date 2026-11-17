@@ -1,0 +1,148 @@
+{
+  "source": "memory/blog/articles/L63-net-brenda-na-wildberries-seller/article.html",
+  "total_links": 15,
+  "failed_count": 0,
+  "privacy_policy_violations": [],
+  "verdict": "pass",
+  "links": [
+    {
+      "url": "/kak_dobavit_brend_na_wildberries_seller/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/kak_dobavit_brend_na_wildberries_seller/"
+    },
+    {
+      "url": "/kak_zaregistrirovat_brend_na_ozon_i_wildberries_proverka_imeni_i_nuzhen_li_tz/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/kak_zaregistrirovat_brend_na_ozon_i_wildberries_proverka_imeni_i_nuzhen_li_tz/"
+    },
+    {
+      "url": "/kak_proverit_brend_na_wildberries_svoboden_li_tovarnyy_znak/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/kak_proverit_brend_na_wildberries_svoboden_li_tovarnyy_znak/"
+    },
+    {
+      "url": "https://seller.wildberries.ru/instructions/ru/am/material/how-to-create-card?recommended=true",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://marketguru.io/secrets/wb-dlya-novichkov/kartochki-tovara-na-wildberries/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://ezybrand.ru/blog/brend-v-kartochke-tovara/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://blog.click.ru/marketplejsy/kak-zapolnit-kartochku-tovara-na-wildberries/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://seller.wildberries.ru/instructions/ru/ru/material/how-to-create-brand",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/7d076153e9adb1b3534c04eb371e2f7c6df713f8/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/2e83c7a3d54808ca80d8f0b2a034caa0f7122b57/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://searchplatform.rospatent.gov.ru/trademarks",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://sellego.com/blog/stati/chem-opasna-torgovlya-bez-brenda-na-vayldberriz/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://seller.wildberries.ru/instructions/ru/ru/subcategory/brands",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://base.garant.ru/408182169/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/reg-tz-main/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/reg-tz-main"
+    }
+  ]
+}
