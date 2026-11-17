@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "style": "collage-v1",
+  "illustrations": [
+    {
+      "slot": "inline_1",
+      "template": "bad_good",
+      "headline": "«Нет бренда» — справочник WB",
+      "chips": [
+        {"icon": "layers", "text": "WB"},
+        {"icon": "shield", "text": "ТЗ"},
+        {"icon": "doc", "text": "1484"}
+      ],
+      "sticky": {"text": "не скрытая регистрация", "color": "pink"},
+      "bad": {
+        "header": "BAD",
+        "lines": [
+          "Думаю, WB зарегистрировал имя",
+          "Поле = товарный знак",
+          "Жду монополию на обозначение"
+        ]
+      },
+      "good": {
+        "header": "GOOD",
+        "lines": [
+          "Значение из каталога площадки",
+          "Для товара без марки",
+          "ТЗ — отдельно в Роспатенте"
+        ]
+      },
+      "side_checklist": ["Список", "Обязательное", "Нет бренда"],
+      "conclusion": {
+        "box_lines": ["метка", "поля"],
+        "highlight_word": "поля",
+        "chip": "WB каталог"
+      },
+      "alt": "Что означает «Нет бренда» в карточке Wildberries: справочник площадки, а не товарный знак",
+      "figcaption": "«Нет бренда» — официальный пункт списка для товара без торговой марки; это не регистрация имени и не исключительное право."
+    },
+    {
+      "slot": "inline_2",
+      "template": "process",
+      "headline": "Когда честно выбрать «Нет бренда»",
+      "chips": [
+        {"icon": "tag", "text": "ниша"},
+        {"icon": "layers", "text": "фото"},
+        {"icon": "warning", "text": "модерация"}
+      ],
+      "sticky": {"text": "сверка с упаковкой", "color": "yellow"},
+      "steps": [
+        {"title": "Образец", "subtitle": "этикетка", "chip": "фото", "variant": "icon"},
+        {"title": "Нет марки", "subtitle": "тест ниши", "chip": "OK", "variant": "toggles"},
+        {"title": "Марка есть", "subtitle": "производитель", "chip": "список", "variant": "lines"},
+        {"title": "Рост", "subtitle": "свой бренд", "chip": "L59", "variant": "checklist"}
+      ],
+      "conclusion": {
+        "box_lines": ["честно", "поле"],
+        "highlight_word": "честно",
+        "chip": "без обмана"
+      },
+      "alt": "Ситуации выбора «Нет бренда» на Wildberries: перекуп, тест ниши и марка производителя на упаковке",
+      "figcaption": "Если на коробке видна чужая марка — укажите её из справочника, а не «Нет бренда», иначе вопросы модерации."
+    },
+    {
+      "slot": "inline_3",
+      "template": "checklist",
+      "headline": "Запреты в поле «Бренд»",
+      "chips": [
+        {"icon": "warning", "text": "ИП"},
+        {"icon": "doc", "text": "SEO"},
+        {"icon": "tag", "text": "№ /"}
+      ],
+      "sticky": {"text": "поле = этикетка", "color": "pink"},
+      "checklist_title": "Модерация",
+      "checklist_rows": [
+        {"text": "Не писать ИП и SEO-ключи", "icon": "warning"},
+        {"text": "Без символов № и /", "icon": "tag"},
+        {"text": "Совпадение с фото и товаром", "icon": "layers"},
+        {"text": "Не дублировать слова", "icon": "doc"},
+        {"text": "Пустое поле — не «Нет бренда»", "icon": "clock"}
+      ],
+      "conclusion": {
+        "box_lines": ["синхрон", "этикеткой"],
+        "highlight_word": "этикеткой",
+        "chip": "WB"
+      },
+      "alt": "Запрещённые значения в поле «Бренд» на Wildberries: ИП, SEO-фразы, символы и расхождение с упаковкой",
+      "figcaption": "Подмена ключа или ИП вместо марки ведёт к блокировке; поле должно отражать то, что видит покупатель."
+    }
+  ]
+}

@@ -1530,16 +1530,16 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L63 — Поле «Нет бренда» на Wildberries: что это значит для селлера
 
-- **status:** new
+- **status:** written
 - **priority:** P2
 - **site:** lireate
 - **lireate_category_id:** 13
 - **lireate_category_name:** Бренд
 - **slug:** net-brenda-na-wildberries-seller
-- **h1:** Что значит «Нет бренда» на Wildberries: карточка, модерация и связь с товарным знаком
-- **primary_query:** что значит нет бренда в валберис
+- **h1:** Как разобраться с полем «Нет бренда» на Wildberries: карточка, модерация и товарный знак
+- **primary_query:** как разобраться нет бренда в wildberries
 - **secondary_queries:** продавать без бренда на WB; создать бренд в ЛК; отличие от товарного знака
-- **search_intent:** explainer
+- **search_intent:** how_to
 - **article_mode:** B
 - **angle:** справочник WB vs Роспатент; L03, L59; без обещаний «Оригинала»
 - **target_service:** reg-tz-main

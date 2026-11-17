@@ -1,0 +1,75 @@
+{
+  "topic_id": "L63",
+  "slug": "net-brenda-na-wildberries-seller",
+  "h1": "Как разобраться с полем \"Нет бренда\" на Wildberries: карточка, модерация и товарный знак",
+  "title": "Нет бренда на Wildberries: что значит поле, модерация и товарный знак",
+  "description": "Что значит \"Нет бренда\" в карточке WB: когда выбирать, запреты поля, отличие от ТЗ, модерация vs пустое поле, мосты к L59, L18 и L03.",
+  "keywords": [
+    "как разобраться нет бренда в wildberries",
+    "что значит нет бренда в валберис",
+    "продавать без бренда на WB",
+    "создать бренд в ЛК",
+    "отличие от товарного знака",
+    "поле бренд wildberries правила",
+    "нет бренда wildberries карточка"
+  ],
+  "primary_query": "как разобраться нет бренда в wildberries",
+  "secondary_queries": [
+    "что значит нет бренда в валберис",
+    "продавать без бренда на WB",
+    "создать бренд в ЛК",
+    "отличие от товарного знака"
+  ],
+  "char_count": 8507,
+  "article_mode": "B",
+  "site": "lireate",
+  "lireate_category_id": 13,
+  "lireate_category_name": "Бренд",
+  "canonical_path": "/net-brenda-na-wildberries-seller",
+  "seo_url": "net_brenda_na_wildberries_seller",
+  "lireate_seo_url": "net_brenda_na_wildberries_seller",
+  "news_list_url": "/news?num=2&category=13",
+  "anchor_variants": [
+    "что значит нет бренда в карточке wildberries для селлера",
+    "продавать без бренда на вайлдберриз: когда это нормально",
+    "нет бренда на wb vs товарный знак в роспатенте"
+  ],
+  "meta_ab": {
+    "title_seo": "Как разобраться: нет бренда на Wildberries и поле в карточке",
+    "title_ctr": "❓ \"Нет бренда\" на WB: ошибка модерации или можно продавать?",
+    "title_aeo": "Что значит \"Нет бренда\" в карточке Wildberries селлера?",
+    "description_seo": "Разберите поле \"Бренд\": когда выбрать \"Нет бренда\", запреты ИП и SEO, отличие от ТЗ, пустое поле после модерации и переход к своему имени.",
+    "description_ctr": "Таблица ситуаций, 7 шагов в ЛК и FAQ: без обещаний \"Оригинала\" без свидетельства.",
+    "description_aeo": "\"Нет бренда\" - значение справочника WB для товара без марки; не заменяет товарный знак и не даёт исключительных прав на обозначение."
+  },
+  "cover_family": "lireate_collage_v1",
+  "cover_scene_hint": "карточка WB, выпадающий список брендов, значок ®",
+  "cover_headline": "Нет бренда на Wildberries: справочник",
+  "cover_stage_background": "#ffffff",
+  "cover_highlight": "Wildberries",
+  "cover_sticky": "поле без марки",
+  "cover_sticky_underline": "поле",
+  "cover_label_chips": [
+    [
+      "Нет бренда",
+      "black"
+    ],
+    [
+      "список WB",
+      "white"
+    ],
+    [
+      "модерация",
+      "pink"
+    ]
+  ],
+  "cover_ui_title": "Поле «Бренд»",
+  "cover_ui_rows": [
+    "Список → Нет бренда",
+    "Мои бренды",
+    "модерация до 2 р.д."
+  ],
+  "cover_left_memo": "WB · no-name · 2 р.д.",
+  "cover_style": "collage-v1",
+  "cover_renderer": "html_chromium"
+}

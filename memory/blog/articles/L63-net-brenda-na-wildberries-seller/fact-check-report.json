@@ -1,0 +1,73 @@
+{
+  "article": "memory/blog/articles/L63-net-brenda-na-wildberries-seller/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "warning",
+  "total_extracted_facts": 9,
+  "verified_facts_count": 7,
+  "unverified_facts_count": 2,
+  "facts": [
+    {
+      "fact": "2 р.",
+      "kind": "price_or_currency",
+      "context": "ойте Заявки , исправьте имя или логотип ( WB , до 2 р.д.) или временно выберите \"Нет бренда\", пока товар",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "46 200 руб",
+      "kind": "price_or_currency",
+      "context": "сходных знаков, при необходимости оценка в ФИПС (46 200 руб. за класс, 15 р.д. по сводке тарифов ) или сопров",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "15 р.",
+      "kind": "price_or_currency",
+      "context": "еобходимости оценка в ФИПС (46 200 руб. за класс, 15 р.д. по сводке тарифов ) или сопровождение на Лирейт",
+      "verified": true,
+      "reason": "Numerical value '15' matched in fact-bank context"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "ли регистрировать ТЗ. Правила WB и ГК РФ на 17.11.2026; не юридическая консультация. TL;DR / Быстрый инс",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2023",
+      "kind": "date_or_year",
+      "context": "знака - в Поисковой платформе (бесплатно с 11.12.2023). Итоговый вердикт: \"Нет бренда\" - для честной пр",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2026 года",
+      "kind": "date_or_year",
+      "context": "х знаках - с актуальной редакцией ГК РФ на ноябрь 2026 года. Частые вопросы Что означает \"Нет бренда\" в карто",
+      "verified": true,
+      "reason": "Numerical value '2026' matched in fact-bank context"
+    },
+    {
+      "fact": "1484",
+      "kind": "large_number",
+      "context": "и покупатель может перепутать источник ( п. 3 ст. 1484 ГК РФ ). Запись в \"Мои бренды\" сама по себе не зам",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "в WB не гарантирует регистрацию в ФИПС ( п. 6 ст. 1483 ГК РФ ). Поиск знака - в Поисковой платформе (бесп",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "46 200",
+      "kind": "large_number",
+      "context": "сходных знаков, при необходимости оценка в ФИПС (46 200 руб. за класс, 15 р.д. по сводке тарифов ) или соп",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    }
+  ]
+}
