@@ -1,0 +1,94 @@
+{
+  "article": "memory/blog/articles/L62-izmenenie-tovarnogo-znaka-novaya-registraciya/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 12,
+  "verified_facts_count": 3,
+  "unverified_facts_count": 9,
+  "facts": [
+    {
+      "fact": "2024",
+      "kind": "date_or_year",
+      "context": "- п. 69 Правил № 482 и обзор СИП СП-22/15 (26.07.2024). Материал для заявителя и правообладателя: ИП, О",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "а. Пошлины сверены с таблицей Роспатента на 17.11.2026; нормы - с ред. ГК РФ 2026. Это не индивидуальная",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "18 мес",
+      "kind": "metric_or_duration",
+      "context": "значение 2.1 + 2.4 + 2.11 (полный пакет) часто 12-18 мес. экспертизы Новая дата Схема решения: Сверить мак",
+      "verified": true,
+      "reason": "Numerical value '18' matched in fact-bank context"
+    },
+    {
+      "fact": "1497",
+      "kind": "large_number",
+      "context": "азные ситуации: правки на экспертизе заявки ( ст. 1497 ГК РФ), запись в реестр после регистрации ( ст. 15",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1505",
+      "kind": "large_number",
+      "context": "7 ГК РФ), запись в реестр после регистрации ( ст. 1505 ) и фактическое использование на упаковке ( ст. 1",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1486",
+      "kind": "large_number",
+      "context": "5 ) и фактическое использование на упаковке ( ст. 1486 п. 2). Существенные изменения (новое доминирующее",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "3 000",
+      "kind": "large_number",
+      "context": "чня, техошибки) - к заявлению с пошлиной п. 2.16 (3 000 ₽) и при смене свидетельства п. 2.17 (2 000 ₽). К",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2 000",
+      "kind": "large_number",
+      "context": "2.16 (3 000 ₽) и при смене свидетельства п. 2.17 (2 000 ₽). Критерии существенности - п. 69 Правил № 482",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "482",
+      "kind": "large_number",
+      "context": "000 ₽). Критерии существенности - п. 69 Правил № 482 и обзор СИП СП-22/15 (26.07.2024). Материал для за",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1499",
+      "kind": "large_number",
+      "context": "монополию по тексту реестра это не заменяет. Ст. 1499 и п. 2 ст. 1500 - про экспертизу и возражение на о",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1500",
+      "kind": "large_number",
+      "context": "ксту реестра это не заменяет. Ст. 1499 и п. 2 ст. 1500 - про экспертизу и возражение на отказ, не про до",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "на существенность → поиск на сходство ( п. 6 ст. 1483 ) → новая заявка → при \"Нет\" и знак в реестре → п",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    }
+  ]
+}

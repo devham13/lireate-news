@@ -1,0 +1,149 @@
+{
+  "source": "memory/blog/articles/L62-izmenenie-tovarnogo-znaka-novaya-registraciya/article.html",
+  "total_links": 15,
+  "failed_count": 0,
+  "privacy_policy_violations": [],
+  "verdict": "pass",
+  "links": [
+    {
+      "url": "/document/cons_doc_LAW_64629/61492e549b74454d23ef1957e8beb8e3097ce6b3/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/document/cons_doc_LAW_64629/a8c5a5b20e8e6d797ca30a512ccc6538ba70b6f3/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/document/cons_doc_LAW_64629/2c3f5881920b5dc53529b5bb31e782624a107abb/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/411030022/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/document/cons_doc_LAW_82755/6e4527e9675eb2bea689b9a9c7629a60fff87eef/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/trademarks",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/document/cons_doc_LAW_64629/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/document/cons_doc_LAW_64629/04d8518205401260b478eea8470dd73a41a97085/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/life/details/vnesenie_izmeneniy_v_gosudarstvennye_reestry_tovarnykh_znakov",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/kak-zaregistrirovat-tovarnyy-znak-samostoyatelno-2026/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/kak-zaregistrirovat-tovarnyy-znak-samostoyatelno-2026/"
+    },
+    {
+      "url": "/document/cons_doc_LAW_64629/2e83c7a3d54808ca80d8f0b2a034caa0f7122b57/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/registraciya_tovarnogo_znaka/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/registraciya_tovarnogo_znaka/"
+    },
+    {
+      "url": "/prodlenie_tovarnogo_znaka_gosposhlina/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/prodlenie_tovarnogo_znaka_gosposhlina/"
+    },
+    {
+      "url": "/dorabotka-logotipa-pered-registraciey-tovarnogo-znaka/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/dorabotka-logotipa-pered-registraciey-tovarnogo-znaka/"
+    },
+    {
+      "url": "/otvet_na_pretenziyu_pravoobladatelya_tovarnogo_znaka_poryadok_srok_30_dney_i_obrazec/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "/otvet_na_pretenziyu_pravoobladatelya_tovarnogo_znaka_poryadok_srok_30_dney_i_obrazec/"
+    }
+  ]
+}
