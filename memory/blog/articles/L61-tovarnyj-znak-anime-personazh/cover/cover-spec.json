@@ -1,0 +1,30 @@
+{
+  "headline_lines": [
+    "АНИМЕ-ГЕРОЙ: © ЛИЦЕНЗИЯ",
+    "НА МЕРЧ И",
+    "СВОЙ ТЗ ®"
+  ],
+  "highlight": "ЛИЦЕНЗИЯ",
+  "sticky_text": "35 000 ₽/класс",
+  "sticky_underline": "35 000",
+  "sticky_color": "yellow",
+  "badge_label": "ТЗ",
+  "label_chips": [
+    [
+      "аниме",
+      "black"
+    ],
+    [
+      "мерч",
+      "white"
+    ]
+  ],
+  "ui_card_title": "Чек-лист ТЗ",
+  "ui_card_rows": [
+    "© vs лицензия",
+    "п. 9 1483",
+    "35 000 ₽"
+  ],
+  "stage_background": "#0b1020",
+  "left_memo": ""
+}
