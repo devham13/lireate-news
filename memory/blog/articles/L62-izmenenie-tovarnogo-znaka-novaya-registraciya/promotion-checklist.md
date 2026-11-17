@@ -1,7 +1,7 @@
 # Promotion checklist — L62 izmenenie-tovarnogo-znaka-novaya-registraciya
 
 Дата публикации: 2026-11-17  
-Live URL: `{LIREATE_PUBLIC_SITE_URL}/izmenenie-tovarnogo-znaka-novaya-registraciya/` (заполнить после publish)  
+Live URL: `{LIREATE_PUBLIC_SITE_URL}/izmenenie-tovarnogo-znaka-novaya-registraciya/` (подтвердить после INSERT на хостинге)  
 Рубрика: Товарный знак (`category_id=9`) — `{LIREATE_PUBLIC_SITE_URL}/news?num=2&category=9`
 
 Excalibur создаёт этот файл после `✅ ARTICLE OK` (до или после выкладки на Lireate /news).
@@ -48,4 +48,6 @@ Excalibur создаёт этот файл после `✅ ARTICLE OK` (до и�
 
 ## Notes
 
-Indexer (2026-11-17): `excalibur_blog_interlinker.py --apply --blog-dir memory/blog/articles --site-base $LIREATE_PUBLIC_SITE_URL` (--article-dir в CLI не поддерживается) — **1** автоматическая вставка (L62→L06 по «классы МКТУ»; inbound на L62 — **0**, `anchor_variants` L62 не сматчились в чужих HTML). Outbound writer: L39, L47, L02, L30, `/registraciya_tovarnogo_znaka/`, legacy URL — уже в `article.html`. `memory/blog/interlink-suggestions.json` обновлён (67 статей, 1 opportunity). llms: `memory/blog/llms.txt` + `llms-full.txt` (67 статей, `$LIREATE_PUBLIC_SITE_URL/blog/{slug}/`); `lireate_llms_site_generate.py` → **62** L-записей в `memory/blog/lireate-site/llms.txt` (добавлен L62 `/izmenenie-tovarnogo-znaka-novaya-registraciya`); копия `llms.txt` в каталоге L62 (полный `llms-full.txt` — только в `memory/blog/`). Live publish не выполнялся.
+Indexer (2026-11-17): `excalibur_blog_interlinker.py --apply --blog-dir memory/blog/articles --site-base $LIREATE_PUBLIC_SITE_URL` (--article-dir в CLI не поддерживается) — **1** автоматическая вставка (L62→L06 по «классы МКТУ»; inbound на L62 — **0**, `anchor_variants` L62 не сматчились в чужих HTML). Outbound writer: L39, L47, L02, L30, `/registraciya_tovarnogo_znaka/`, legacy URL — уже в `article.html`. `memory/blog/interlink-suggestions.json` обновлён (67 статей, 1 opportunity). llms: `memory/blog/llms.txt` + `llms-full.txt` (67 статей, `$LIREATE_PUBLIC_SITE_URL/blog/{slug}/`); `lireate_llms_site_generate.py` → **62** L-записей в `memory/blog/lireate-site/llms.txt` (добавлен L62 `/izmenenie-tovarnogo-znaka-novaya-registraciya`); копия `llms.txt` в каталоге L62 (полный `llms-full.txt` — только в `memory/blog/`).
+
+Hosting publish prep (2026-11-17): `link-verify.json` → **pass** (15 ссылок; `privacy_policy_violations: []`). `lireate_hosting_publish.py --dry-run --article-dir …` → **DRY_RUN** (`seo_url`: `izmenenie-tovarnogo-znaka-novaya-registraciya`, `category`: **9**, 6 image files). Артефакты: `lireate-publish-result.json`, `publish-bundle/`. **БД INSERT не выполнялся**; `shared/published-articles-lireate.md` не трогали. Live после merge → CRON / ручной `lireate_hosting_publish.py` на REG.RU (`LIREATE_ALLOW_PUBLISH=yes`).
