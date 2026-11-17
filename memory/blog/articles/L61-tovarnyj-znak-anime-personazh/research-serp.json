@@ -1,0 +1,100 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-17",
+    "today_ru": "17.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "вторник",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-19",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-17 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L61",
+    "priority": "P1",
+    "slug": "tovarnyj-znak-anime-personazh",
+    "h1": "Можно ли зарегистрировать товарный знак с персонажем аниме: чек-лист по авторским правам и мерчу",
+    "primary_query": "товарный знак на аниме персонажа",
+    "secondary_queries": [
+      "персонаж как товарный знак",
+      "авторские права на персонажа",
+      "мерч с персонажами",
+      "можно ли зарегистрировать товарный знак с персонажем аниме"
+    ],
+    "search_intent": "checklist",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "товарный знак на аниме персонажа 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-17"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "товарный знак на аниме персонажа ноябрь 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-17"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "товарный знак на аниме персонажа новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-17"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "персонаж как товарный знак 2026",
+      "purpose": "вторичный запрос: персонаж как товарный знак",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-17"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "авторские права на персонажа 2026",
+      "purpose": "вторичный запрос: авторские права на персонажа",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-17"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "мерч с персонажами 2026",
+      "purpose": "вторичный запрос: мерч с персонажами",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-17"
+    },
+    {
+      "query_id": "secondary_4",
+      "query": "можно ли зарегистрировать товарный знак с персонажем аниме 2026",
+      "purpose": "вторичный запрос: можно ли зарегистрировать товарный знак с персонажем аниме",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-17"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Можно ли зарегистрировать товарный знак с персонажем аниме: чек-лист по авторским правам и мерчу 2026",
+      "purpose": "SERP по H1",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-17"
+    }
+  ],
+  "errors": [],
+  "unique_urls": []
+}

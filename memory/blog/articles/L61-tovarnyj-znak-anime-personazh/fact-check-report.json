@@ -1,0 +1,87 @@
+{
+  "article": "memory/blog/articles/L61-tovarnyj-znak-anime-personazh/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 11,
+  "verified_facts_count": 2,
+  "unverified_facts_count": 9,
+  "facts": [
+    {
+      "fact": "2024",
+      "kind": "date_or_year",
+      "context": "та 30% на электронную подачу не действует с 05.10.2024). Материал не заменяет юридическую консультацию (",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "ериал не заменяет юридическую консультацию (17.11.2026). Товарный знак - регистрация вашего обозначения",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "проверите реестр, оцените риск отказа по п. 9 ст. 1483 ГК РФ и не запустите партию или заявку без письмен",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "1225",
+      "kind": "large_number",
+      "context": "сти - © на персонажа как часть произведения ( ст. 1225 , ст. 1259 ) и товарный знак правообладателя фран",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1259",
+      "kind": "large_number",
+      "context": "персонажа как часть произведения ( ст. 1225 , ст. 1259 ) и товарный знак правообладателя франшизы ( ст.",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1484",
+      "kind": "large_number",
+      "context": ") и товарный знак правообладателя франшизы ( ст. 1484 ). Свидетельство на свой знак в Роспатенте не даё",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "35 000",
+      "kind": "large_number",
+      "context": "© и ТЗ. Бюджет на новую заявку за 1 класс МКТУ - 35 000 ₽ по ПП РФ № 941 (льгота 30% на электронную подач",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "4 000",
+      "kind": "large_number",
+      "context": "10 позиций), электронное свидетельство: 35 000 ₽ (4 000 + 13 000 + 18 000 по пп. 2.1, 2.4, 2.11 ПП РФ № 9",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "13 000",
+      "kind": "large_number",
+      "context": "ий), электронное свидетельство: 35 000 ₽ (4 000 + 13 000 + 18 000 по пп. 2.1, 2.4, 2.11 ПП РФ № 941 ). Таб",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "18 000",
+      "kind": "large_number",
+      "context": "тронное свидетельство: 35 000 ₽ (4 000 + 13 000 + 18 000 по пп. 2.1, 2.4, 2.11 ПП РФ № 941 ). Таблица пошли",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "941",
+      "kind": "large_number",
+      "context": "1225, 1259, 1483, 1484 ГК РФ, пошлины по ПП РФ № 941 и таблица Роспатента сверены на 17.11.2026; отрасл",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
