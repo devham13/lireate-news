@@ -1,6 +1,28 @@
 {
   "site_base": "https://example.com",
   "total_articles": 66,
-  "opportunities_found": 0,
-  "suggestions": []
+  "opportunities_found": 3,
+  "suggestions": [
+    {
+      "source": "L54-graficheskiy-tovarnyy-znak-smeshchenie",
+      "target": "L06-kak-opredelit-klass-mktu",
+      "keyword": "классы мкту",
+      "context": "ально разные картинки не конфликтуют по п. 6 ст. 1483, если классы МКТУ не пересекаются по смыслу. <b>Однородность</b> - совокупнос",
+      "link_replacement": "<a href=\"/blog/kak-opredelit-klass-mktu/\">классы МКТУ</a>"
+    },
+    {
+      "source": "L61-tovarnyj-znak-anime-personazh",
+      "target": "L06-kak-opredelit-klass-mktu",
+      "keyword": "классы мкту",
+      "context": "L11</a>) до коммерции.</li>  <li><b>Подготовьте заявку:</b> классы МКТУ под фактические товары; согласие при спорном элементе; опла",
+      "link_replacement": "<a href=\"/blog/kak-opredelit-klass-mktu/\">классы МКТУ</a>"
+    },
+    {
+      "source": "L53-vozrazhenie-v-pps-na-pravovuyu-ohranu-tz",
+      "target": "L06-kak-opredelit-klass-mktu",
+      "keyword": "классы мкту",
+      "context": "ратко опишите задачу: номер чужого свидетельства, ваш знак, классы МКТУ. Подскажем следующий шаг по ГК РФ.</p>  <blockquote>  <b>Ма",
+      "link_replacement": "<a href=\"/blog/kak-opredelit-klass-mktu/\">классы МКТУ</a>"
+    }
+  ]
 }
