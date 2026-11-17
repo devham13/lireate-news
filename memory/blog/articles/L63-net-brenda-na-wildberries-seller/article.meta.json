@@ -44,17 +44,32 @@
   },
   "cover_family": "lireate_collage_v1",
   "cover_scene_hint": "карточка WB, выпадающий список брендов, значок ®",
-  "cover_headline": "«НЕТ БРЕНДА» НА WILDBERRIES",
+  "cover_headline": "Нет бренда на Wildberries: справочник",
+  "cover_stage_background": "#ffffff",
   "cover_highlight": "Wildberries",
-  "cover_sticky": "справочник ≠ ТЗ",
-  "cover_sticky_underline": "справочник",
+  "cover_sticky": "поле без марки",
+  "cover_sticky_underline": "поле",
+  "cover_label_chips": [
+    [
+      "Нет бренда",
+      "black"
+    ],
+    [
+      "список WB",
+      "white"
+    ],
+    [
+      "модерация",
+      "pink"
+    ]
+  ],
   "cover_ui_title": "Поле «Бренд»",
   "cover_ui_rows": [
-    "Нет бренда",
+    "Список → Нет бренда",
     "Мои бренды",
-    "Реестр ТЗ",
-    "Модерация"
+    "модерация до 2 р.д."
   ],
+  "cover_left_memo": "WB · no-name · 2 р.д.",
   "cover_style": "collage-v1",
   "cover_renderer": "html_chromium"
 }
