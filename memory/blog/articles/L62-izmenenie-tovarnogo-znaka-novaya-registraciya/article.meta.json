@@ -40,5 +40,17 @@
     "description_aeo": "Существенное изменение товарного знака оформляют новой заявкой; несущественное - заявлением по ст. 1505 с пошлиной п. 2.16 (3 000 ₽)."
   },
   "cover_family": "lireate_collage_v1",
-  "cover_scene_hint": "макет v1/v2, стрелка «новая заявка», свидетельство ТЗ"
+  "cover_scene_hint": "макет v1/v2, стрелка «новая заявка», свидетельство ТЗ",
+  "cover_headline": "ИЗМЕНЕНИЕ ТЗ: НОВАЯ ЗАЯВКА ИЛИ П. 2.16 ПО СТ. 1505",
+  "cover_highlight": "2.16",
+  "cover_sticky": "3 000 ₽ п. 2.16",
+  "cover_sticky_underline": "3 000",
+  "cover_ui_title": "Развилка ТЗ",
+  "cover_ui_rows": [
+    "п. 69 Правил № 482",
+    "75 раб. дней",
+    "СП-22/15 СИП"
+  ],
+  "cover_style": "collage-v1",
+  "cover_renderer": "html_chromium"
 }
