@@ -1,0 +1,80 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-17",
+    "today_ru": "17.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "вторник",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-19",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-17 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L62",
+    "priority": "P2",
+    "slug": "izmenenie-tovarnogo-znaka-novaya-registraciya",
+    "h1": "Как понять, когда изменение товарного знака требует новой заявки в Роспатент",
+    "primary_query": "как понять когда изменение товарного знака требует новой регистрации",
+    "secondary_queries": [
+      "доработка логотипа для товарного знака",
+      "внесение изменений в зарегистрированный знак",
+      "существенное изменение обозначения"
+    ],
+    "search_intent": "comparison",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "L62",
+    "status": "PASS",
+    "search_intent": "comparison",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "как понять когда изменение товарного знака требует новой регистрации 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "как понять когда изменение товарного знака требует новой регистрации ноябрь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "как понять когда изменение товарного знака требует новой регистрации новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "доработка логотипа для товарного знака 2026",
+      "purpose": "вторичный запрос: доработка логотипа для товарного знака"
+    },
+    {
+      "id": "secondary_2",
+      "query": "внесение изменений в зарегистрированный знак 2026",
+      "purpose": "вторичный запрос: внесение изменений в зарегистрированный знак"
+    },
+    {
+      "id": "secondary_3",
+      "query": "существенное изменение обозначения 2026",
+      "purpose": "вторичный запрос: существенное изменение обозначения"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как понять, когда изменение товарного знака требует новой заявки в Роспатент 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/L62-izmenenie-tovarnogo-znaka-novaya-registraciya",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}

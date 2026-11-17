@@ -1509,14 +1509,14 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L62 — Изменение товарного знака: когда нужна новая регистрация
 
-- **status:** new
+- **status:** written
 - **priority:** P2
 - **site:** lireate
 - **lireate_category_id:** 9
 - **lireate_category_name:** Товарный знак
 - **slug:** izmenenie-tovarnogo-znaka-novaya-registraciya
-- **h1:** Изменение товарного знака: когда доработки требуют новой заявки в Роспатент
-- **primary_query:** изменение товарного знака когда нужна новая регистрация
+- **h1:** Как понять, когда изменение товарного знака требует новой заявки в Роспатент
+- **primary_query:** как понять когда изменение товарного знака требует новой регистрации
 - **secondary_queries:** доработка логотипа для товарного знака; внесение изменений в зарегистрированный знак; существенное изменение обозначения
 - **search_intent:** comparison
 - **article_mode:** B
