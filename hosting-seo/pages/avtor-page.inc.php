@@ -176,7 +176,7 @@ $lu_h = function_exists('lireate_uslugi_h') ? 'lireate_uslugi_h' : 'lireate_avto
         <p class="la-nav-links">
           <a href="/team/">Команда</a><span aria-hidden="true">·</span>
           <a href="/docs">Документы и реквизиты</a><span aria-hidden="true">·</span>
-          <a href="/kontaktyi">Контакты</a>
+          <a href="/contacts/">Контакты</a>
         </p>
       </div>
     </section>
