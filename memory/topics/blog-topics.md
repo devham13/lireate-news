@@ -1483,3 +1483,87 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 - **metrika_visits:** seo-report 2026-11: last28 query
 - **internal_links:** L13, L35
 - **cover_scene_hint:** репродукция в магазине, музейная табличка, календарь сроков ©
+
+---
+
+## L61 — Товарный знак на аниме-персонажа: регистрация, авторские права и мерч
+
+- **status:** written
+- **priority:** P1
+- **site:** lireate
+- **lireate_category_id:** 9
+- **lireate_category_name:** Товарный знак
+- **slug:** tovarnyj-znak-anime-personazh
+- **h1:** Можно ли зарегистрировать товарный знак с персонажем аниме: чек-лист по авторским правам и мерчу
+- **primary_query:** товарный знак на аниме персонажа
+- **secondary_queries:** персонаж как товарный знак; авторские права на персонажа; мерч с персонажами; можно ли зарегистрировать товарный знак с персонажем аниме
+- **search_intent:** checklist
+- **article_mode:** B
+- **angle:** ст. 1225, 1259, 1483, 1484 ГК РФ; п. 9 ст. 1483 (чужое произведение); лицензия vs ТЗ; мерч без согласия; пошлина 35 000 ₽/класс ПП РФ №941 (без скидки 30% с 05.10.2024)
+- **target_service:** reg-tz-main
+- **metrika_visits:** запрос из рекламных кластеров lireate (аниме/персонаж/мерч)
+- **internal_links:** L11, L17, L60, L09
+- **cover_scene_hint:** фигурка на полке, контур © vs ®, лицензионный договор
+
+---
+
+## L62 — Изменение товарного знака: когда нужна новая регистрация
+
+- **status:** new
+- **priority:** P2
+- **site:** lireate
+- **lireate_category_id:** 9
+- **lireate_category_name:** Товарный знак
+- **slug:** izmenenie-tovarnogo-znaka-novaya-registraciya
+- **h1:** Изменение товарного знака: когда доработки требуют новой заявки в Роспатент
+- **primary_query:** изменение товарного знака когда нужна новая регистрация
+- **secondary_queries:** доработка логотипа для товарного знака; внесение изменений в зарегистрированный знак; существенное изменение обозначения
+- **search_intent:** comparison
+- **article_mode:** B
+- **angle:** ст. 1499, 1500; существенное vs несущественное изменение; связка L39, L02
+- **target_service:** reg-tz-main
+- **metrika_visits:** seo-report 2026-11: izmenenie-tovarnogo-znaka (evidence_queries)
+- **internal_links:** L39, L02, L47
+- **cover_scene_hint:** макет v1/v2, стрелка «новая заявка», свидетельство ТЗ
+
+---
+
+## L63 — Поле «Нет бренда» на Wildberries: что это значит для селлера
+
+- **status:** new
+- **priority:** P2
+- **site:** lireate
+- **lireate_category_id:** 13
+- **lireate_category_name:** Бренд
+- **slug:** net-brenda-na-wildberries-seller
+- **h1:** Что значит «Нет бренда» на Wildberries: карточка, модерация и связь с товарным знаком
+- **primary_query:** что значит нет бренда в валберис
+- **secondary_queries:** продавать без бренда на WB; создать бренд в ЛК; отличие от товарного знака
+- **search_intent:** explainer
+- **article_mode:** B
+- **angle:** справочник WB vs Роспатент; L03, L59; без обещаний «Оригинала»
+- **target_service:** reg-tz-main
+- **metrika_visits:** seo-report 2026-11: «что значит нет бренда в валберис»
+- **internal_links:** L59, L03, L18
+- **cover_scene_hint:** карточка WB, выпадающий список брендов, значок ®
+
+---
+
+## L64 — Нейминг и логотип: как согласовать имя и знак до подачи в Роспатент
+
+- **status:** new
+- **priority:** P2
+- **site:** lireate
+- **lireate_category_id:** 13
+- **lireate_category_name:** Бренд
+- **slug:** nejming-i-logotip-soglasovanie
+- **h1:** Нейминг и логотип: как согласовать название и знак перед регистрацией товарного знака
+- **primary_query:** нейминг и логотип
+- **secondary_queries:** словесный и изобразительный знак в одной заявке; комбинированное обозначение; проверка имени перед дизайном
+- **search_intent:** how_to
+- **article_mode:** B
+- **angle:** комбинированный vs отдельные знаки; МКТУ; L04, L11, L39
+- **target_service:** reg-tz-main
+- **metrika_visits:** seo-report 2026-11: нейминг и логотип (9 показов)
+- **internal_links:** L04, L11, L48
+- **cover_scene_hint:** блокнот с именем, эскиз знака, чек-лист МКТУ
