@@ -24,6 +24,16 @@
     {"path": "/dogovory/", "lastmod_source": "site"},
     {"path": "/registraciya_programm_evm/", "lastmod_source": "site"},
     {"path": "/portfolio", "lastmod_source": "site"},
+    {"path": "/portfolio/svoya-kultura/", "lastmod_source": "site"},
+    {"path": "/portfolio/bentax/", "lastmod_source": "site"},
+    {"path": "/portfolio/avtopravo/", "lastmod_source": "site"},
+    {"path": "/portfolio/kingsname/", "lastmod_source": "site"},
+    {"path": "/portfolio/doza/", "lastmod_source": "site"},
+    {"path": "/portfolio/happy-mind/", "lastmod_source": "site"},
+    {"path": "/portfolio/elisa-hotels/", "lastmod_source": "site"},
+    {"path": "/portfolio/strigoon/", "lastmod_source": "site"},
+    {"path": "/portfolio/avenue-deluxe/", "lastmod_source": "site"},
+    {"path": "/portfolio/emiz/", "lastmod_source": "site"},
     {"path": "/reviews", "lastmod_source": "site"}
   ],
   "exclude_article_slugs": [
