@@ -44,16 +44,25 @@
   "cover_family": "lireate_collage_v1",
   "cover_scene_hint": "фигурка на полке, контур © vs ®, лицензионный договор",
   "cover_era": "Шумер",
-  "cover_headline": "АНИМЕ: © ЛИЦЕНЗИЯ ®",
-  "cover_highlight": "П. 9 1483",
+  "cover_headline": "АНИМЕ-ГЕРОЙ: © ЛИЦЕНЗИЯ НА МЕРЧ И СВОЙ ТЗ ®",
+  "cover_highlight": "ЛИЦЕНЗИЯ",
   "cover_sticky": "35 000 ₽/класс",
   "cover_sticky_underline": "35 000",
   "cover_ui_title": "Чек-лист ТЗ",
   "cover_ui_rows": [
     "© vs лицензия",
-    "п. 9 ст. 1483",
-    "Поиск ФИПС",
+    "п. 9 1483",
     "35 000 ₽"
+  ],
+  "cover_label_chips": [
+    [
+      "аниме",
+      "black"
+    ],
+    [
+      "мерч",
+      "white"
+    ]
   ],
   "cover_style": "collage-v1",
   "cover_renderer": "html_chromium"
