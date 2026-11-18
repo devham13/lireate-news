@@ -40,5 +40,33 @@
     "description_aeo": "Маркировка импорта в Честном знаке: ТН ВЭД, УКЭП, заказ кодов по 50 коп., нанесение до выпуска и отдельный трек для товарного знака в каталоге."
   },
   "cover_family": "lireate_collage_v1",
-  "cover_scene_hint": "коробка импорта, DataMatrix, связка с брендом ®"
+  "cover_scene_hint": "коробка импорта, DataMatrix, связка с брендом ®",
+  "cover_style": "collage-v1",
+  "cover_headline": "Честный знак при импорте: маршрут до ФТС",
+  "cover_highlight": "импорте",
+  "cover_stage_background": "#ffffff",
+  "cover_sticky": "ЧЗ и ТЗ разведите",
+  "cover_sticky_underline": "разведите",
+  "cover_label_chips": [
+    [
+      "ТН ВЭД",
+      "black"
+    ],
+    [
+      "50 коп.",
+      "white"
+    ],
+    [
+      "графа 31",
+      "pink"
+    ]
+  ],
+  "cover_ui_title": "Импорт и маркировка",
+  "cover_ui_rows": [
+    "checking_codes",
+    "УКЭП → ГИС МТ",
+    "КМ → ввод"
+  ],
+  "cover_left_memo": "НК · GTIN",
+  "cover_renderer": "html_chromium"
 }
