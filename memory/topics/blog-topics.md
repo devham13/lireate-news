@@ -1614,14 +1614,14 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L67 — Импорт и «Честный знак» простыми словами: с чего начать
 
-- **status:** new
+- **status:** written
 - **priority:** P2
 - **site:** lireate
 - **lireate_category_id:** 11
 - **lireate_category_name:** Маркировка
 - **slug:** chestnyy-znak-import-prostymi-slovami
-- **h1:** Честный знак при импорте простыми словами: маркировка, документы и товарный знак
-- **primary_query:** честный знак импорт простыми словами
+- **h1:** Как пройти маркировку «Честный знак» при импорте: документы, коды ТН ВЭД и товарный знак
+- **primary_query:** как пройти честный знак импорт простыми словами
 - **secondary_queries:** маркировка импорта честный знак; регистрация бренда для импорта; коды ТН ВЭД и маркировка
 - **search_intent:** how_to
 - **article_mode:** B

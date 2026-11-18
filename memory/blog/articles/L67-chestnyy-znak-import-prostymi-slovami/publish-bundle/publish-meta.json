@@ -1,0 +1,16 @@
+{
+  "topic_id": "L67",
+  "slug": "chestnyy-znak-import-prostymi-slovami",
+  "canonical_path": "/chestnyy-znak-import-prostymi-slovami",
+  "lireate_category_id": 11,
+  "lireate_category_name": "Маркировка",
+  "title": "Честный знак импорт простыми словами: пошаговый маршрут",
+  "description": "Как пройти маркировку при импорте: ТН ВЭД и ОКПД2, регистрация в ГИС МТ, Национальный каталог, КМ «Ввезен в РФ», графа 31, ввод в оборот и поле товарного знака.",
+  "cover_style": "collage-v1",
+  "image_map": {
+    "cover/cover.png": "/template/images/blog/l01_chestnyy_znak_import_prostymi_slovami_cover.png",
+    "cover/inline-01.png": "/template/images/blog/l01_chestnyy_znak_import_prostymi_slovami_inline_01.png",
+    "cover/inline-02.png": "/template/images/blog/l01_chestnyy_znak_import_prostymi_slovami_inline_02.png",
+    "cover/inline-03.png": "/template/images/blog/l01_chestnyy_znak_import_prostymi_slovami_inline_03.png"
+  }
+}
