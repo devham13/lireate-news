@@ -47,6 +47,7 @@ SPECIAL = {
     "/chto_delat_esli_tovarnyy_znak_zanyat": "/chto_delat_esli_tovarnyiy_znak_zanyat/",
     "/chto_delat_esli_tovarnyy-znak-zanyat": "/chto_delat_esli_tovarnyiy_znak_zanyat/",
     "/blog/kak-opredelit-klass-mktu/": "/struktura_mktu_kak_opredelit_klass_dlya_tovara_i_uslugi/",
+    "/blog/kak-zapatentovat-nazvanie-i-logotip/": "/kak-zapatentovat-nazvanie-i-logotip/",
     "/markirovka_importa-chestnyy-znak-i-tovarnyy-znak/": "/markirovka_importa-chestnyy-znak-i-tovarnyy-znak/",
 }
 
