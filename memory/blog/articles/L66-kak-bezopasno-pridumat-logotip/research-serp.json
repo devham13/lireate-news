@@ -1,0 +1,91 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-18",
+    "today_ru": "18.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-20",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-18 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L66",
+    "priority": "P2",
+    "slug": "kak-bezopasno-pridumat-logotip",
+    "h1": "Как безопасно придумать логотип: чек-лист по авторским правам и товарному знаку",
+    "primary_query": "как безопасно придумать логотип",
+    "secondary_queries": [
+      "чужие изображения в логотипе",
+      "шрифт в логотипе лицензия",
+      "проверка логотипа перед регистрацией"
+    ],
+    "search_intent": "checklist",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "как безопасно придумать логотип 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-18"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "как безопасно придумать логотип ноябрь 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-18"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "как безопасно придумать логотип новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-18"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "чужие изображения в логотипе 2026",
+      "purpose": "вторичный запрос: чужие изображения в логотипе",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-18"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "шрифт в логотипе лицензия 2026",
+      "purpose": "вторичный запрос: шрифт в логотипе лицензия",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-18"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "проверка логотипа перед регистрацией 2026",
+      "purpose": "вторичный запрос: проверка логотипа перед регистрацией",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-18"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как безопасно придумать логотип: чек-лист по авторским правам и товарному знаку 2026",
+      "purpose": "SERP по H1",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-18"
+    }
+  ],
+  "errors": [],
+  "unique_urls": []
+}

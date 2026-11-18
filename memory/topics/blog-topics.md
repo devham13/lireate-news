@@ -1593,7 +1593,7 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L66 — Как безопасно придумать логотип: правовой чек-лист до дизайна
 
-- **status:** new
+- **status:** written
 - **priority:** P2
 - **site:** lireate
 - **lireate_category_id:** 10
