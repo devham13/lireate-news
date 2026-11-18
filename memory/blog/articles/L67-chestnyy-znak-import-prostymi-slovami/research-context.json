@@ -1,0 +1,80 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-18",
+    "today_ru": "18.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-20",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-18 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L67",
+    "priority": "P2",
+    "slug": "chestnyy-znak-import-prostymi-slovami",
+    "h1": "Как пройти маркировку «Честный знак» при импорте: документы, коды ТН ВЭД и товарный знак",
+    "primary_query": "как пройти честный знак импорт простыми словами",
+    "secondary_queries": [
+      "маркировка импорта честный знак",
+      "регистрация бренда для импорта",
+      "коды ТН ВЭД и маркировка"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "L67",
+    "status": "PASS",
+    "search_intent": "how_to",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "как пройти честный знак импорт простыми словами 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "как пройти честный знак импорт простыми словами ноябрь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "как пройти честный знак импорт простыми словами новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "маркировка импорта честный знак 2026",
+      "purpose": "вторичный запрос: маркировка импорта честный знак"
+    },
+    {
+      "id": "secondary_2",
+      "query": "регистрация бренда для импорта 2026",
+      "purpose": "вторичный запрос: регистрация бренда для импорта"
+    },
+    {
+      "id": "secondary_3",
+      "query": "коды ТН ВЭД и маркировка 2026",
+      "purpose": "вторичный запрос: коды ТН ВЭД и маркировка"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как пройти маркировку «Честный знак» при импорте: документы, коды ТН ВЭД и товарный знак 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/L67-chestnyy-znak-import-prostymi-slovami",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}
