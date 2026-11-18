@@ -34,6 +34,10 @@
     {"path": "/portfolio/strigoon/", "lastmod_source": "site"},
     {"path": "/portfolio/avenue-deluxe/", "lastmod_source": "site"},
     {"path": "/portfolio/emiz/", "lastmod_source": "site"},
+    {"path": "/portfolio/nerud-grupp/", "lastmod_source": "site"},
+    {"path": "/portfolio/estetic/", "lastmod_source": "site"},
+    {"path": "/portfolio/berti/", "lastmod_source": "site"},
+    {"path": "/portfolio/vf/", "lastmod_source": "site"},
     {"path": "/reviews", "lastmod_source": "site"}
   ],
   "exclude_article_slugs": [
