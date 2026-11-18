@@ -47,7 +47,7 @@
   },
   "cover_family": "lireate_collage_v1",
   "cover_scene_hint": "CRM-таблица, робот-парсер, свидетельство Роспатента на БД, режим КТ",
-  "cover_headline": "КЛИЕНТСКАЯ БАЗА ПАРСИНГ 1334 КТ CRM",
+  "cover_headline": "Клиентская база: 1334 и КТ",
   "cover_highlight": "1334",
   "cover_sticky": "каталог ≠ только ПДн",
   "cover_sticky_underline": "каталог",
@@ -57,21 +57,18 @@
       "black"
     ],
     [
-      "ст. 1334",
+      "98-ФЗ",
       "white"
-    ],
-    [
-      "парсинг",
-      "pink"
     ]
   ],
   "cover_ui_title": "Защита клиентской БД",
   "cover_ui_rows": [
     "Каталог → 1334",
     "CRM → 98-ФЗ",
-    "72 ч → претензия",
-    "5 000 ₽ → реестр"
+    "72 ч → претензия"
   ],
+  "cover_left_memo": "ФИПС · парсинг · 5 000 ₽",
   "cover_style": "collage-v1",
-  "cover_renderer": "html_chromium"
+  "cover_renderer": "html_chromium",
+  "cover_stage_background": "#ffffff"
 }
