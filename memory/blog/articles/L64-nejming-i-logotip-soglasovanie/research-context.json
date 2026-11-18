@@ -1,0 +1,80 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-18",
+    "today_ru": "18.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-20",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-18 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L64",
+    "priority": "P2",
+    "slug": "nejming-i-logotip-soglasovanie",
+    "h1": "Нейминг и логотип: как согласовать название и знак перед регистрацией товарного знака",
+    "primary_query": "нейминг и логотип",
+    "secondary_queries": [
+      "словесный и изобразительный знак в одной заявке",
+      "комбинированное обозначение",
+      "проверка имени перед дизайном"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "L64",
+    "status": "PASS",
+    "search_intent": "how_to",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "нейминг и логотип 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "нейминг и логотип ноябрь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "нейминг и логотип новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "словесный и изобразительный знак в одной заявке 2026",
+      "purpose": "вторичный запрос: словесный и изобразительный знак в одной заявке"
+    },
+    {
+      "id": "secondary_2",
+      "query": "комбинированное обозначение 2026",
+      "purpose": "вторичный запрос: комбинированное обозначение"
+    },
+    {
+      "id": "secondary_3",
+      "query": "проверка имени перед дизайном 2026",
+      "purpose": "вторичный запрос: проверка имени перед дизайном"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Нейминг и логотип: как согласовать название и знак перед регистрацией товарного знака 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/L64-nejming-i-logotip-soglasovanie",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}
