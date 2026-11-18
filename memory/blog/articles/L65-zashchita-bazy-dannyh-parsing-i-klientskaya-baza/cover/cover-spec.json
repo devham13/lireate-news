@@ -1,0 +1,29 @@
+{
+  "headline_lines": [
+    "Клиентская база:",
+    "1334 и КТ"
+  ],
+  "highlight": "1334",
+  "sticky_text": "каталог ≠ только ПДн",
+  "sticky_underline": "каталог",
+  "sticky_color": "yellow",
+  "badge_label": "©",
+  "label_chips": [
+    [
+      "CRM",
+      "black"
+    ],
+    [
+      "98-ФЗ",
+      "white"
+    ]
+  ],
+  "ui_card_title": "Защита клиентской БД",
+  "ui_card_rows": [
+    "Каталог → 1334",
+    "CRM → 98-ФЗ",
+    "72 ч → претензия"
+  ],
+  "stage_background": "#ffffff",
+  "left_memo": "ФИПС · парсинг · 5 000 ₽"
+}

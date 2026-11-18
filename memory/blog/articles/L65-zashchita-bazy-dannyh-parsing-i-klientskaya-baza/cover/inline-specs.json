@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "style": "collage-v1",
+  "illustrations": [
+    {
+      "slot": "inline_1",
+      "template": "bad_good",
+      "headline": "Три контура: каталог, CRM, ПДн",
+      "chips": [
+        {"icon": "layers", "text": "1334"},
+        {"icon": "shield", "text": "98-ФЗ"},
+        {"icon": "doc", "text": "152-ФЗ"}
+      ],
+      "sticky": {"text": "каталог ≠ только ПДн", "color": "pink"},
+      "bad": {
+        "header": "BAD",
+        "lines": [
+          "Вся защита через РКН",
+          "Конкурент копирует каталог",
+          "Претензия только по ПДн"
+        ]
+      },
+      "good": {
+        "header": "GOOD",
+        "lines": [
+          "Каталог → ст. 1334",
+          "Закрытая CRM → КТ",
+          "Поля с ФИО → 152-ФЗ"
+        ]
+      },
+      "side_checklist": ["БД", "КТ", "ПДн"],
+      "conclusion": {
+        "box_lines": ["режим", "актив"],
+        "highlight_word": "режим",
+        "chip": "1260"
+      },
+      "alt": "Три контура защиты: публичный каталог по ст. 1334, закрытая CRM по 98-ФЗ, персональные данные по 152-ФЗ",
+      "figcaption": "Публичный каталог спорят по извлечению по ст. 1334; утечка ФИО из CRM — отдельно по 152-ФЗ и мерам ст. 19."
+    },
+    {
+      "slot": "inline_2",
+      "template": "process",
+      "headline": "Парсинг = извлечение",
+      "chips": [
+        {"icon": "warning", "text": "1334"},
+        {"icon": "globe", "text": "оферта"},
+        {"icon": "layers", "text": "СИП"}
+      ],
+      "sticky": {"text": "не robots.txt", "color": "yellow"},
+      "steps": [
+        {"title": "Робот", "subtitle": "автосбор карточек", "chip": "логи", "variant": "icon"},
+        {"title": "Объём", "subtitle": "поля и структура", "chip": "доля", "variant": "toggles"},
+        {"title": "Право", "subtitle": "изготовитель", "chip": "1333", "variant": "lines"},
+        {"title": "Претензия", "subtitle": "прекратить", "chip": "1311", "variant": "checklist"}
+      ],
+      "conclusion": {
+        "box_lines": ["извлечение", "существенная"],
+        "highlight_word": "извлечение",
+        "chip": "1334"
+      },
+      "alt": "Парсинг каталога как извлечение по ст. 1334 ГК РФ: объём полей, существенная часть, практика СИП",
+      "figcaption": "Суд смотрит на структуру и объём выгрузки, а не на формулировку «мы просто смотрели сайт»."
+    },
+    {
+      "slot": "inline_3",
+      "template": "checklist",
+      "headline": "Первые 72 часа",
+      "chips": [
+        {"icon": "clock", "text": "72 ч"},
+        {"icon": "doc", "text": "1311"},
+        {"icon": "shield", "text": "логи"}
+      ],
+      "sticky": {"text": "не удалять логи", "color": "pink"},
+      "checklist_title": "При парсинге",
+      "checklist_rows": [
+        {"text": "IP, user-agent, API-токены", "icon": "layers"},
+        {"text": "Дамп своей БД с датой", "icon": "doc"},
+        {"text": "Скрин чужой витрины", "icon": "globe"},
+        {"text": "Таблица совпадений полей", "icon": "warning"},
+        {"text": "Претензия по ст. 1311", "icon": "shield"}
+      ],
+      "conclusion": {
+        "box_lines": ["хронология", "юрист"],
+        "highlight_word": "хронология",
+        "chip": "72 ч"
+      },
+      "alt": "Чек-лист 72 часа: логи парсинга, сравнение полей каталога, претензия по ст. 1311 ГК РФ",
+      "figcaption": "Фиксация логов и сравнение структуры полей — основа претензии по извлечению существенной части."
+    }
+  ]
+}

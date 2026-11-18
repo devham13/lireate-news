@@ -1567,3 +1567,108 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 - **metrika_visits:** seo-report 2026-11: нейминг и логотип (9 показов)
 - **internal_links:** L04, L11, L48
 - **cover_scene_hint:** блокнот с именем, эскиз знака, чек-лист МКТУ
+
+---
+
+## L65 — Клиентская база, каталог и парсинг: защита базы данных
+
+- **status:** written
+- **priority:** P1
+- **site:** lireate
+- **lireate_category_id:** 17
+- **lireate_category_name:** Авторское право
+- **slug:** zashchita-bazy-dannyh-parsing-i-klientskaya-baza
+- **h1:** Клиентская база, каталог и парсинг: как защитить базу данных по ГК РФ
+- **primary_query:** защита клиентской базы данных
+- **secondary_queries:** защита прав на базу данных; парсинг сайта законно ли; охрана базы данных авторским правом; смежные права изготовителя базы данных; регистрация базы данных в Роспатенте
+- **search_intent:** how_to
+- **article_mode:** B
+- **angle:** ст. 1260 составительский характер; ст. 1333–1334 изготовитель; ст. 1262 регистрация в Роспатенте; 98-ФЗ КТ; действия при копировании/парсинге; связка L23, L14, L32
+- **target_service:** —
+- **metrika_visits:** seo-report 2026-11: защита прав на базу данных (17 показов, 0 кликов)
+- **internal_links:** L23, L14, L32, L20, L45
+- **cover_scene_hint:** CRM-таблица, робот-парсер, свидетельство Роспатента на БД, режим КТ
+
+---
+
+## L66 — Как безопасно придумать логотип: правовой чек-лист до дизайна
+
+- **status:** new
+- **priority:** P2
+- **site:** lireate
+- **lireate_category_id:** 10
+- **lireate_category_name:** Логотип
+- **slug:** kak-bezopasno-pridumat-logotip
+- **h1:** Как безопасно придумать логотип: чек-лист по авторским правам и товарному знаку
+- **primary_query:** как безопасно придумать логотип
+- **secondary_queries:** чужие изображения в логотипе; шрифт в логотипе лицензия; проверка логотипа перед регистрацией
+- **search_intent:** checklist
+- **article_mode:** B
+- **angle:** ст. 1225, 1483; договор с дизайнером; L11, L39
+- **target_service:** —
+- **metrika_visits:** seo-report 2026-11: как безопасно придумать логотип (16 показов)
+- **internal_links:** L11, L39, L64
+- **cover_scene_hint:** эскиз логотипа, лицензия на шрифт, стикер © vs ®
+
+---
+
+## L67 — Импорт и «Честный знак» простыми словами: с чего начать
+
+- **status:** new
+- **priority:** P2
+- **site:** lireate
+- **lireate_category_id:** 11
+- **lireate_category_name:** Маркировка
+- **slug:** chestnyy-znak-import-prostymi-slovami
+- **h1:** Честный знак при импорте простыми словами: маркировка, документы и товарный знак
+- **primary_query:** честный знак импорт простыми словами
+- **secondary_queries:** маркировка импорта честный знак; регистрация бренда для импорта; коды ТН ВЭД и маркировка
+- **search_intent:** how_to
+- **article_mode:** B
+- **angle:** отличие от L36 (сниппет); базовый маршрут импортёра; L22, L36
+- **target_service:** reg-tz
+- **metrika_visits:** seo-report 2026-11: честный знак импорт простыми словами (17 показов)
+- **internal_links:** L22, L36, L03
+- **cover_scene_hint:** коробка импорта, DataMatrix, связка с брендом ®
+
+---
+
+## L68 — Доменное имя как нематериальный актив: учёт и риски
+
+- **status:** new
+- **priority:** P2
+- **site:** lireate
+- **lireate_category_id:** 13
+- **lireate_category_name:** Бренд
+- **slug:** domennoe-imya-nematerialnyy-aktiv
+- **h1:** Доменное имя как нематериальный актив: учёт, договор и связь с товарным знаком
+- **primary_query:** доменное имя как нематериальный актив
+- **secondary_queries:** домен и товарный знак расхождение; продажа домена юридически; ФСБУ нематериальные активы домен
+- **search_intent:** how_to
+- **article_mode:** B
+- **angle:** НМА vs регистрация ТЗ; L24, L17
+- **target_service:** —
+- **metrika_visits:** seo-report 2026-11: доменное имя как нематериальный актив (16 показов)
+- **internal_links:** L24, L17, L38
+- **cover_scene_hint:** договор на домен, баланс НМА, логотип и URL
+
+---
+
+## L69 — «ТРАВА» и родовые слова в названии бренда: как доработать имя
+
+- **status:** new
+- **priority:** P2
+- **site:** lireate
+- **lireate_category_id:** 13
+- **lireate_category_name:** Бренд
+- **slug:** dorabotka-nazvaniya-brenda-rodivye-slova
+- **h1:** Доработка названия бренда с родовым словом: как пройти экспертизу товарного знака
+- **primary_query:** доработка названия бренда
+- **secondary_queries:** родовое название в товарном знаке; TRAВA обобщение; описательное обозначение ст 1483
+- **search_intent:** troubleshooting
+- **article_mode:** B
+- **angle:** п. 1, 6 ст. 1483; кейс «трава»; L64, L06
+- **target_service:** reg-tz-main
+- **metrika_visits:** seo-report 2026-11: доработка названия бренда трава (16 показов)
+- **internal_links:** L64, L06, L48
+- **cover_scene_hint:** зелёный логотип с растением, красная пометка «описательно», правка имени
