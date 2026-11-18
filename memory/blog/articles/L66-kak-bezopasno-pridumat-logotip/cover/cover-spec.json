@@ -1,0 +1,33 @@
+{
+  "headline_lines": [
+    "Безопасно придумать логотип:",
+    "© vs ®"
+  ],
+  "highlight": "логотип",
+  "sticky_text": "чек-лист до тиража",
+  "sticky_underline": "тиража",
+  "sticky_color": "yellow",
+  "badge_label": "ИС",
+  "label_chips": [
+    [
+      "договор",
+      "black"
+    ],
+    [
+      "шрифт",
+      "white"
+    ],
+    [
+      "ТЗ",
+      "pink"
+    ]
+  ],
+  "ui_card_title": "До первого тиража",
+  "ui_card_rows": [
+    "Автор → 1234",
+    "Реестр слоёв",
+    "ФИПС → скрин"
+  ],
+  "stage_background": "#ffffff",
+  "left_memo": "1483 · 11.12.2023"
+}
