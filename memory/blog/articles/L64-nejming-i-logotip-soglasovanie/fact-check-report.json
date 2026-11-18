@@ -1,0 +1,66 @@
+{
+  "article": "memory/blog/articles/L64-nejming-i-logotip-soglasovanie/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 8,
+  "verified_facts_count": 5,
+  "unverified_facts_count": 3,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "лько отдельных. Нормы ГК РФ и Роспатента на 18.11.2026; не индивидуальная юридическая консультация. TL;D",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2023",
+      "kind": "date_or_year",
+      "context": "и откройте Поисковую платформу (бесплатно с 11.12.2023, ГАРАНТ ) и открытые реестры ФИПС : смотрите заре",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2026 года",
+      "kind": "date_or_year",
+      "context": "атериалами Роспатента и КонсультантПлюс на ноябрь 2026 года. Частые вопросы Можно ли подать название и логоти",
+      "verified": true,
+      "reason": "Numerical value '2026' matched in fact-bank context"
+    },
+    {
+      "fact": "5 лет",
+      "kind": "metric_or_duration",
+      "context": "ке должен совпадать с реальным ассортиментом на 3-5 лет вперёд, иначе охрана будет \"не там\", где вы торгу",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1492",
+      "kind": "large_number",
+      "context": "ская консультация. TL;DR / Быстрый инсайт: По ст. 1492 ГК РФ в одной заявке - один товарный знак; связка",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "ип, пока имя не проверено на сходство по п. 6 ст. 1483 . Товарный знак - регистрация обозначения на рынк",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "571",
+      "kind": "large_number",
+      "context": "ый знак - текст + графика в одном макете; в графе 571 указывают вид и состав ( Роспатент ). Смежные темы",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "46 200",
+      "kind": "large_number",
+      "context": "может сделать платную оценку охраноспособности ( 46 200 ₽ за класс, тариф ) после самопроверки. Проведите",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    }
+  ]
+}
