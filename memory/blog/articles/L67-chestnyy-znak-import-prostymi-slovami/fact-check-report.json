@@ -1,0 +1,31 @@
+{
+  "article": "memory/blog/articles/L67-chestnyy-znak-import-prostymi-slovami/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 3,
+  "verified_facts_count": 2,
+  "unverified_facts_count": 1,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "о писать в поле \"товарный знак\" в каталоге. 18.11.2026; не заменяет таможенную или патентную консультаци",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "Не делайте: чужой ® в карточке НК - риск п. 6 ст. 1483 ГК РФ . Маршрут: ТН ВЭД → ГИС МТ → НК (GTIN + ТЗ)",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "469",
+      "kind": "large_number",
+      "context": "нет для глобального импортного кода; префиксы 460-469 уточняйте в инструкции. Когда наносить коды из Кит",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
