@@ -1,21 +1,21 @@
 {
   "site_base": "https://example.com",
-  "total_articles": 71,
+  "total_articles": 72,
   "opportunities_found": 2,
   "suggestions": [
     {
-      "source": "L64-nejming-i-logotip-soglasovanie",
-      "target": "L06-kak-opredelit-klass-mktu",
-      "keyword": "классы мкту",
-      "context": "quote>  <b>Схема согласования:</b>  <br>  Бизнес-контекст и классы МКТУ → короткий список имён → поиск в реестрах → утверждённое сл",
-      "link_replacement": "<a href=\"/kak-opredelit-klass-mktu/\">классы МКТУ</a>"
+      "source": "L67-chestnyy-znak-import-prostymi-slovami",
+      "target": "L31-mozhno-li-zapretit-vvoz-analoga-zapatentovannogo-tovara",
+      "keyword": "таможенный реестр объектов интеллектуальной собственности",
+      "context": "альном каталоге <b>не</b> равно регистрации. <b>ТРОИС</b> - таможенный реестр объектов интеллектуальной собственности: правообладатель может добиваться остановки партии с <b>под",
+      "link_replacement": "<a href=\"/mozhno-li-zapretit-vvoz-analoga-zapatentovannogo-tovara/\">таможенный реестр объектов интеллектуальной собственности</a>"
     },
     {
-      "source": "L54-graficheskiy-tovarnyy-znak-smeshchenie",
-      "target": "L06-kak-opredelit-klass-mktu",
-      "keyword": "классы мкту",
-      "context": "шите кратко: ваш макет, номера похожих знаков из платформы, классы МКТУ. Подскажем, уместна ли правка или согласие.</p>  <blockquot",
-      "link_replacement": "<a href=\"/kak-opredelit-klass-mktu/\">классы МКТУ</a>"
+      "source": "L67-chestnyy-znak-import-prostymi-slovami",
+      "target": "L56-tamozhennyy-reestr-tovarnogo-znaka-fts",
+      "keyword": "таможенный реестр объектов интеллектуальной собственности",
+      "context": "альном каталоге <b>не</b> равно регистрации. <b>ТРОИС</b> - таможенный реестр объектов интеллектуальной собственности: правообладатель может добиваться остановки партии с <b>под",
+      "link_replacement": "<a href=\"/tamozhennyy-reestr-tovarnogo-znaka-fts/\">таможенный реестр объектов интеллектуальной собственности</a>"
     }
   ]
 }
