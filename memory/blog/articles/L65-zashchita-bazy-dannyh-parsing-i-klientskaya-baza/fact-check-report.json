@@ -1,0 +1,122 @@
+{
+  "article": "memory/blog/articles/L65-zashchita-bazy-dannyh-parsing-i-klientskaya-baza/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 16,
+  "verified_facts_count": 3,
+  "unverified_facts_count": 13,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "на первые 72 часа после парсинга; нормы на 18.11.2026, не индивидуальная консультация. TL;DR / Быстрый",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2022",
+      "kind": "date_or_year",
+      "context": "вторный сбор может быть запрещён. Дело А56-128791/2022 ( Gardium ): публичность не снимает смежное право",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2026 года",
+      "kind": "date_or_year",
+      "context": "сультантПлюс, ГАРАНТ и rospatent.gov.ru на ноябрь 2026 года; кейс СИП - по открытому обзору Gardium. Частые в",
+      "verified": true,
+      "reason": "Numerical value '2026' matched in fact-bank context"
+    },
+    {
+      "fact": "72 часов",
+      "kind": "metric_or_duration",
+      "context": "жно / не нужно сейчас\". Выполните чек-лист первых 72 часов при парсинге или утечке Фиксация логов и сравнени",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1260",
+      "kind": "large_number",
+      "context": "Публичный каталог и CRM - это база данных по ст. 1260 ГК РФ ; изготовитель ( ст. 1333 ) может требовать",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1333",
+      "kind": "large_number",
+      "context": "аза данных по ст. 1260 ГК РФ ; изготовитель ( ст. 1333 ) может требовать прекращения извлечения существе",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1334",
+      "kind": "large_number",
+      "context": "ь прекращения извлечения существенной части ( ст. 1334 ) - сюда же относится типичный парсинг. Закрытые",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 98",
+      "kind": "large_number",
+      "context": "ы, внутренняя аналитика Коммерческая тайна по ст. 10 98-ФЗ (подробный ввод режима - L14 ) NDA без перечня",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "19 152",
+      "kind": "large_number",
+      "context": "ов ФИО, телефоны, адреса клиентов в полях CRM ст. 19 152-ФЗ (меры от неправомерного доступа и копирования)",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 000",
+      "kind": "large_number",
+      "context": "ло существенных затрат ; закон презюмирует их при 10 000 и более самостоятельных элементах ( п. 1 ст. 1334",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1335",
+      "kind": "large_number",
+      "context": "ничный просмотр страницы покупателем. По п. 3 ст. 1335.1 несущественную часть иногда можно, но повторный",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "128791",
+      "kind": "large_number",
+      "context": ", но повторный сбор может быть запрещён. Дело А56-128791/2022 ( Gardium ): публичность не снимает смежное",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1262",
+      "kind": "large_number",
+      "context": "бъект и дату для суда. Добровольная подача по ст. 1262 : депозит, реферат, 5 000 ₽ пошлина ( ст. 333.30",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "5 000",
+      "kind": "large_number",
+      "context": "бровольная подача по ст. 1262 : депозит, реферат, 5 000 ₽ пошлина ( ст. 333.30 НК РФ ), срок услуги 62 ра",
+      "verified": true,
+      "reason": "Numerical value '5000' matched in fact-bank context"
+    },
+    {
+      "fact": "1311",
+      "kind": "large_number",
+      "context": "ование, удалить копии, указать компенсацию по ст. 1311 (от 10 000 до 10 000 000 ₽ либо двукратная стоимо",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 000 000",
+      "kind": "large_number",
+      "context": "ии, указать компенсацию по ст. 1311 (от 10 000 до 10 000 000 ₽ либо двукратная стоимость правомерного использо",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

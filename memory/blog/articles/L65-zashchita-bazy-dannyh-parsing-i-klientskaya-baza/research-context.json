@@ -1,0 +1,92 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-18",
+    "today_ru": "18.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-20",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-18 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L65",
+    "priority": "P1",
+    "slug": "zashchita-bazy-dannyh-parsing-i-klientskaya-baza",
+    "h1": "Клиентская база, каталог и парсинг: как защитить базу данных по ГК РФ",
+    "primary_query": "защита клиентской базы данных",
+    "secondary_queries": [
+      "защита прав на базу данных",
+      "парсинг сайта законно ли",
+      "охрана базы данных авторским правом",
+      "смежные права изготовителя базы данных",
+      "регистрация базы данных в Роспатенте"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "L65",
+    "status": "PASS",
+    "search_intent": "how_to",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "защита клиентской базы данных 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "защита клиентской базы данных ноябрь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "защита клиентской базы данных новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "защита прав на базу данных 2026",
+      "purpose": "вторичный запрос: защита прав на базу данных"
+    },
+    {
+      "id": "secondary_2",
+      "query": "парсинг сайта законно ли 2026",
+      "purpose": "вторичный запрос: парсинг сайта законно ли"
+    },
+    {
+      "id": "secondary_3",
+      "query": "охрана базы данных авторским правом 2026",
+      "purpose": "вторичный запрос: охрана базы данных авторским правом"
+    },
+    {
+      "id": "secondary_4",
+      "query": "смежные права изготовителя базы данных 2026",
+      "purpose": "вторичный запрос: смежные права изготовителя базы данных"
+    },
+    {
+      "id": "secondary_5",
+      "query": "регистрация базы данных в Роспатенте 2026",
+      "purpose": "вторичный запрос: регистрация базы данных в Роспатенте"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Клиентская база, каталог и парсинг: как защитить базу данных по ГК РФ 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/L65-zashchita-bazy-dannyh-parsing-i-klientskaya-baza",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}
