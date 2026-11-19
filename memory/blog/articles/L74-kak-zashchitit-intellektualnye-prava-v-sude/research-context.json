@@ -1,0 +1,27 @@
+{
+  "run_date": "2026-11-19",
+  "freshness_year": 2026,
+  "topic_id": "L74",
+  "cluster": "A01",
+  "slug": "kak-zashchitit-intellektualnye-prava-v-sude",
+  "h1": "Как защитить интеллектуальные права в суде",
+  "primary_query": "как защитить интеллектуальные права в суде",
+  "search_intent": "how_to",
+  "article_mode": "B",
+  "reader_task": "какие права нарушены, что доказать, выбрать требование, подготовка к судебной защите, частые ошибки",
+  "h2_plan": [
+    "Определить объект и правообладателя",
+    "Выбрать способ защиты",
+    "Зафиксировать нарушение",
+    "Подготовить документы",
+    "Оценить расходы и риски"
+  ],
+  "faq_seed": [
+    "Как защитить в суде?",
+    "Как подать в суд за нарушение ИП?",
+    "Что делать при нарушении ИП?"
+  ],
+  "cta": "Обсудить документы и действия по спору",
+  "output_dir": "memory/blog/articles/L74-kak-zashchitit-intellektualnye-prava-v-sude",
+  "research_start_note": "excalibur_blog_research_start.py --topic-id L74: BLOCKER (карточка L74 отсутствует в blog-topics.md); контекст собран по брифу semantics sheet"
+}

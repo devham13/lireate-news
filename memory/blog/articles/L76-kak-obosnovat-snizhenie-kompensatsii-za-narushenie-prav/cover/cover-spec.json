@@ -1,0 +1,33 @@
+{
+  "headline_lines": [
+    "Снижение компенсации:",
+    "контррасчёт и 1252.1"
+  ],
+  "highlight": "контррасчёт",
+  "sticky_text": "суд ≠ снизит сам",
+  "sticky_underline": "суд",
+  "sticky_color": "yellow",
+  "badge_label": "ИС",
+  "label_chips": [
+    [
+      "ст. 1252.1",
+      "black"
+    ],
+    [
+      "ППВС № 10",
+      "white"
+    ],
+    [
+      "1515",
+      "pink"
+    ]
+  ],
+  "ui_card_title": "Соразмерность",
+  "ui_card_rows": [
+    "способ",
+    "п. 62",
+    "ходатайство"
+  ],
+  "stage_background": "#ffffff",
+  "left_memo": ""
+}
