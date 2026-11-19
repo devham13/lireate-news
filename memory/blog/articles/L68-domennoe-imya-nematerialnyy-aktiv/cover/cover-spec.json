@@ -1,0 +1,33 @@
+{
+  "headline_lines": [
+    "Домен, НМА и",
+    "товарный знак: три слоя"
+  ],
+  "highlight": "НМА",
+  "sticky_text": "Уступка, не купля",
+  "sticky_underline": "Уступка",
+  "sticky_color": "yellow",
+  "badge_label": "ТЗ",
+  "label_chips": [
+    [
+      "ФСБУ 14",
+      "black"
+    ],
+    [
+      "08/26",
+      "white"
+    ],
+    [
+      "ТЗ",
+      "pink"
+    ]
+  ],
+  "ui_card_title": "Учёт и договор",
+  "ui_card_rows": [
+    "WHOIS → 08",
+    "уступка DNS",
+    "сверка ТЗ"
+  ],
+  "stage_background": "#ffffff",
+  "left_memo": "SLD · МКТУ"
+}
