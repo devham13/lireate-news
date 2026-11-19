@@ -1,0 +1,87 @@
+{
+  "article": "memory/blog/articles/L70-registraciya-tovarnogo-znaka-s-oplatoy-za-rezultat/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "warning",
+  "total_extracted_facts": 11,
+  "verified_facts_count": 2,
+  "unverified_facts_count": 9,
+  "facts": [
+    {
+      "fact": "35 000 руб",
+      "kind": "price_or_currency",
+      "context": "ным свидетельством (ноябрь 2026) типичный минимум 35 000 руб. : п. 2.1 4 000 , п. 2.4 13 000 , п. 2.11 18 000",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "9 000 руб",
+      "kind": "price_or_currency",
+      "context": "услуга и пошлина (в сводках 2026 часто указывают 9 000 руб. по п. 2.28.2). Возражение третьего лица - иной п",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "ны от услуг и проверите договор до подписи. 19.11.2026; не индивидуальная юридическая консультация. TL;D",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "1499",
+      "kind": "large_number",
+      "context": "поверенного, пока решение выносит Роспатент ( ст. 1499 ГК РФ ). Дальше вы сравните схемы оплаты, отделите",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "35 000",
+      "kind": "large_number",
+      "context": "ным свидетельством (ноябрь 2026) типичный минимум 35 000 руб. : п. 2.1 4 000 , п. 2.4 13 000 , п. 2.11 18 0",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1 4 000",
+      "kind": "large_number",
+      "context": "(ноябрь 2026) типичный минимум 35 000 руб. : п. 2.1 4 000 , п. 2.4 13 000 , п. 2.11 18 000 . Лишние классы",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "4 13 000",
+      "kind": "large_number",
+      "context": "ипичный минимум 35 000 руб. : п. 2.1 4 000 , п. 2.4 13 000 , п. 2.11 18 000 . Лишние классы и бумажное свиде",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "11 18 000",
+      "kind": "large_number",
+      "context": "35 000 руб. : п. 2.1 4 000 , п. 2.4 13 000 , п. 2.11 18 000 . Лишние классы и бумажное свидетельство (п. 2.14",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1500",
+      "kind": "large_number",
+      "context": "сти, повторная заявка. Возражение на отказ по ст. 1500 : отдельная ли услуга и пошлина (в сводках 2026 ч",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "9 000",
+      "kind": "large_number",
+      "context": "услуга и пошлина (в сводках 2026 часто указывают 9 000 руб. по п. 2.28.2). Возражение третьего лица - ино",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "егистрации\" Отказ возможен при несоответствии ст. 1483 , в том числе из-за сходства с ранним знаком (п.",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    }
+  ]
+}

@@ -1677,13 +1677,13 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L70 — Регистрация товарного знака с оплатой за результат: договор и риски
 
-- **status:** new
+- **status:** written
 - **priority:** P2
 - **site:** lireate
 - **lireate_category_id:** 9
 - **lireate_category_name:** Товарный знак
 - **slug:** registraciya-tovarnogo-znaka-s-oplatoy-za-rezultat
-- **h1:** Регистрация товарного знака с оплатой за результат: на что смотреть в договоре
+- **h1:** Сравнение и чек-лист: регистрация товарного знака с оплатой за результат — на что смотреть в договоре
 - **primary_query:** регистрация товарного знака с оплатой за результат
 - **secondary_queries:** оплата за результат товарный знак; гарантированная регистрация ТЗ; success fee патентное бюро
 - **search_intent:** comparison
