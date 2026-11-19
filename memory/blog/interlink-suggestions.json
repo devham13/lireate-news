@@ -1,14 +1,6 @@
 {
   "site_base": "https://example.com",
-  "total_articles": 78,
-  "opportunities_found": 1,
-  "suggestions": [
-    {
-      "source": "L70-registraciya-tovarnogo-znaka-s-oplatoy-za-rezultat",
-      "target": "L06-kak-opredelit-klass-mktu",
-      "keyword": "классы мкту",
-      "context": "→ допработы (ответ на запрос, возражение по отказу, лишние классы МКТУ) </blockquote>  <h2>Отделите госпошлины от гонорара: кто за",
-      "link_replacement": "<a href=\"/kak-opredelit-klass-mktu/\">классы МКТУ</a>"
-    }
-  ]
+  "total_articles": 79,
+  "opportunities_found": 0,
+  "suggestions": []
 }
