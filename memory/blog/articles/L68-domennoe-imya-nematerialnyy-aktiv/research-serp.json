@@ -1,0 +1,91 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-19",
+    "today_ru": "19.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "четверг",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-21",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-19 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L68",
+    "priority": "P2",
+    "slug": "domennoe-imya-nematerialnyy-aktiv",
+    "h1": "Доменное имя как нематериальный актив: учёт, договор и связь с товарным знаком",
+    "primary_query": "доменное имя как нематериальный актив",
+    "secondary_queries": [
+      "домен и товарный знак расхождение",
+      "продажа домена юридически",
+      "ФСБУ нематериальные активы домен"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "доменное имя как нематериальный актив 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-19"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "доменное имя как нематериальный актив ноябрь 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-19"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "доменное имя как нематериальный актив новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-19"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "домен и товарный знак расхождение 2026",
+      "purpose": "вторичный запрос: домен и товарный знак расхождение",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-19"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "продажа домена юридически 2026",
+      "purpose": "вторичный запрос: продажа домена юридически",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-19"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "ФСБУ нематериальные активы домен 2026",
+      "purpose": "вторичный запрос: ФСБУ нематериальные активы домен",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-19"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Доменное имя как нематериальный актив: учёт, договор и связь с товарным знаком 2026",
+      "purpose": "SERP по H1",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-19"
+    }
+  ],
+  "errors": [],
+  "unique_urls": []
+}

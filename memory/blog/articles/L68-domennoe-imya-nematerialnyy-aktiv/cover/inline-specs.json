@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "style": "collage-v1",
+  "illustrations": [
+    {
+      "slot": "inline_1",
+      "template": "bad_good",
+      "headline": "Домен, НМА и товарный знак",
+      "chips": [
+        {"icon": "globe", "text": "WHOIS"},
+        {"icon": "layers", "text": "08/26"},
+        {"icon": "shield", "text": "Роспатент"}
+      ],
+      "sticky": {"text": "три слоя, не один", "color": "pink"},
+      "bad": {
+        "header": "BAD",
+        "lines": [
+          "Купил домен — бренд мой",
+          "Продление снова на 08",
+          "Один договор «на всё»"
+        ]
+      },
+      "good": {
+        "header": "GOOD",
+        "lines": [
+          "Администрирование у регистратора",
+          "Учёт по ФСБУ и политике",
+          "SLD сверяют с ТЗ в реестре"
+        ]
+      },
+      "side_checklist": ["DNS", "НМА", "ТЗ"],
+      "conclusion": {
+        "box_lines": ["слои", "разведены"],
+        "highlight_word": "слои",
+        "chip": "МКТУ"
+      },
+      "alt": "Разделение права на домен, учёта НМА по ФСБУ и товарного знака: WHOIS, счета 08/26 и реестр Роспатента",
+      "figcaption": "Право администрирования, бухучёт и исключительное право на обозначение живут в разных документах."
+    },
+    {
+      "slot": "inline_2",
+      "template": "checklist",
+      "headline": "Инвентаризация домена",
+      "chips": [
+        {"icon": "doc", "text": "договор"},
+        {"icon": "globe", "text": "WHOIS"},
+        {"icon": "layers", "text": "08"}
+      ],
+      "sticky": {"text": "до аудита", "color": "yellow"},
+      "checklist_title": "Первичный пакет",
+      "checklist_rows": [
+        {"text": "Договор с регистратором", "icon": "doc"},
+        {"text": "WHOIS совпадает с ЕГРЮЛ", "icon": "globe"},
+        {"text": "Счета на регистрацию и продления", "icon": "layers"},
+        {"text": "Отметка: сайт на 08 или нет", "icon": "shield"},
+        {"text": "PDF-пакет на один домен", "icon": "doc"}
+      ],
+      "conclusion": {
+        "box_lines": ["пакет", "собран"],
+        "highlight_word": "пакет",
+        "chip": "WHOIS"
+      },
+      "alt": "Инвентаризация домена: договор регистратора, WHOIS, счета, счёт 08 и PDF-пакет документов",
+      "figcaption": "Без совпадения администратора в WHOIS и юрлица в ЕГРЮЛ рискуете продлением и уступкой."
+    },
+    {
+      "slot": "inline_3",
+      "template": "process",
+      "headline": "Классификация по ФСБУ",
+      "chips": [
+        {"icon": "doc", "text": "ФСБУ"},
+        {"icon": "layers", "text": "08"},
+        {"icon": "warning", "text": "26/44"}
+      ],
+      "sticky": {"text": "пять признаков", "color": "pink"},
+      "steps": [
+        {"title": "Признаки", "subtitle": "п. 4 ФСБУ вместе", "chip": "ФСБУ", "variant": "icon"},
+        {"title": "Сайт-НМА", "subtitle": "первичка в 08 с сайтом", "chip": "08", "variant": "lines"},
+        {"title": "Продление", "subtitle": "платёж в 26/44", "chip": "26", "variant": "toggles"},
+        {"title": "Уступка", "subtitle": "не купля-продажа", "chip": "DNS", "variant": "checklist"}
+      ],
+      "conclusion": {
+        "box_lines": ["учёт", "зафиксирован"],
+        "highlight_word": "учёт",
+        "chip": "26/44"
+      },
+      "alt": "Классификация домена по ФСБУ: пять признаков, капитализация сайта на 08, продление на 26/44, уступка DNS",
+      "figcaption": "Отдельный домен без сайта редко проходит как самостоятельное НМА; продление не наращивает первоначальную стоимость."
+    }
+  ]
+}
