@@ -1,0 +1,80 @@
+{
+  "article": "memory/blog/articles/L68-domennoe-imya-nematerialnyy-aktiv/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 10,
+  "verified_facts_count": 3,
+  "unverified_facts_count": 7,
+  "facts": [
+    {
+      "fact": "2022",
+      "kind": "date_or_year",
+      "context": "азных слоя: право у регистратора, учёт по ФСБУ 14/2022 и исключительное право в Роспатенте. За один прохо",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "мите уступку и сверите адрес с реестром ТЗ. 19.11.2026; не заменяет аудит и юридическую консультацию. TL",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2024 года",
+      "kind": "date_or_year",
+      "context": "вание ТЗ ( реестры Роспатента ). Ориентир учёта с 2024 года - эволюция от письма Минфина 2002 к ФСБУ 14/2022",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2002",
+      "kind": "date_or_year",
+      "context": "ир учёта с 2024 года - эволюция от письма Минфина 2002 к ФСБУ 14/2022 и вашей учётной политике. Слой Что",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1943",
+      "kind": "date_or_year",
+      "context": "няя дата домена не бьёт приоритет чужого ТЗ ( С01-1943/2023 ). В спорах смотрят сходство, интерес правоо",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2023",
+      "kind": "date_or_year",
+      "context": "ата домена не бьёт приоритет чужого ТЗ ( С01-1943/2023 ). В спорах смотрят сходство, интерес правооблада",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2024",
+      "kind": "date_or_year",
+      "context": "и однородности суды признают нарушение ( С01-571/2024 ): претензия, фиксация (см. логотипы в медиа ), п",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "60 дней",
+      "kind": "metric_or_duration",
+      "context": "вания, ТЗ, ответственный. Делайте: напоминание за 60 дней до продления. Не делайте: смену администратора бе",
+      "verified": true,
+      "reason": "Numerical value '60' matched in fact-bank context"
+    },
+    {
+      "fact": "2 149",
+      "kind": "large_number",
+      "context": "сайт: Домен - символьный адрес в сети ( п. 15 ст. 2 149-ФЗ ), не объект интеллектуальной собственности. О",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1484",
+      "kind": "large_number",
+      "context": "рным знаком в Поисковой платформе ( п. 5 п. 2 ст. 1484 ГК ). Детальный чек-лист признаков ФСБУ - в матери",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
