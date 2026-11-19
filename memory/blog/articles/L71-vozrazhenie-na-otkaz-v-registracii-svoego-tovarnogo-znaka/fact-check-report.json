@@ -1,0 +1,164 @@
+{
+  "article": "memory/blog/articles/L71-vozrazhenie-na-otkaz-v-registracii-svoego-tovarnogo-znaka/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "warning",
+  "total_extracted_facts": 22,
+  "verified_facts_count": 4,
+  "unverified_facts_count": 18,
+  "facts": [
+    {
+      "fact": "9 000 руб",
+      "kind": "price_or_currency",
+      "context": ", уложиться в 4 месяца, запросить копии, уплатить 9 000 руб. и не перепутать процедуру с оспариванием чужой р",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2 9 000 руб",
+      "kind": "price_or_currency",
+      "context": "вления (ст. 1500) Возражение в ППС + пошлина 2.28.2 9 000 руб. (отказ по экспертизе обозначения) Решение об отк",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "6 000 руб",
+      "kind": "price_or_currency",
+      "context": "инять заявку 4 месяца (ст. 1500) Возражение в ППС 6 000 руб. (п. 2.28.1, сверить в таблице) Решение о признан",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "5 000 руб",
+      "kind": "price_or_currency",
+      "context": "и отозванной 4 месяца (ст. 1500) Возражение в ППС 5 000 руб. (п. 2.28.3) Посчитайте срок возражения: 4 месяца",
+      "verified": true,
+      "reason": "Numerical value '5000' matched in fact-bank context"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "ила ППС 644/261 и таблица пошлин сверены на 19.11.2026 Частые вопросы Чем отличается уведомление эксперти",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "6 мес",
+      "kind": "metric_or_duration",
+      "context": "отозвании), а не ответ на уведомление экспертизы (6 мес. по п. 3 ст. 1499 ). Срок по ст. 1500 - 4 месяца",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "4 месяцев",
+      "kind": "metric_or_duration",
+      "context": "просе копий противопоставлений за 2 месяца отсчёт 4 месяцев начнётся с даты выдачи копий. Пошлина за отказ по",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "6 месяцев",
+      "kind": "metric_or_duration",
+      "context": "рки - сначала откройте гайд по ответу экспертизе (6 месяцев). Как отличить стадии экспертизы - в обзоре форма",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2 мес",
+      "kind": "metric_or_duration",
+      "context": "арь заявителя: День 0 (направление решения) → до +2 мес. (запрос копий, по желанию) → +4 мес. от решения",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "4 мес",
+      "kind": "metric_or_duration",
+      "context": "шения) → до +2 мес. (запрос копий, по желанию) → +4 мес. от решения или от направления копий → подача воз",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "3 мес",
+      "kind": "metric_or_duration",
+      "context": "летворения. После пошлины заседание - обычно до 1–3 мес. ( Правила , п. 26). Пройдите пошагово: возражени",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2 месяцев",
+      "kind": "metric_or_duration",
+      "context": "решения в календаре и номер заявки в реестре. До 2 месяцев: при необходимости направьте запрос копий противо",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1500",
+      "kind": "large_number",
+      "context": "ашего товарного знака не закрывает заявку: по ст. 1500 ГК РФ вы подаёте возражение в ППС Роспатента, но с",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "9 000",
+      "kind": "large_number",
+      "context": ", уложиться в 4 месяца, запросить копии, уплатить 9 000 руб. и не перепутать процедуру с оспариванием чужо",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1499",
+      "kind": "large_number",
+      "context": "вет на уведомление экспертизы (6 мес. по п. 3 ст. 1499 ). Срок по ст. 1500 - 4 месяца ; при запросе копи",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2 9 000",
+      "kind": "large_number",
+      "context": "вления (ст. 1500) Возражение в ППС + пошлина 2.28.2 9 000 руб. (отказ по экспертизе обозначения) Решение об",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "6 000",
+      "kind": "large_number",
+      "context": "инять заявку 4 месяца (ст. 1500) Возражение в ППС 6 000 руб. (п. 2.28.1, сверить в таблице) Решение о приз",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "5 000",
+      "kind": "large_number",
+      "context": "и отозванной 4 месяца (ст. 1500) Возражение в ППС 5 000 руб. (п. 2.28.3) Посчитайте срок возражения: 4 мес",
+      "verified": true,
+      "reason": "Numerical value '5000' matched in fact-bank context"
+    },
+    {
+      "fact": "1501",
+      "kind": "large_number",
+      "context": "- копия платёжки ; за восстановление срока ( ст. 1501 ) - отдельная строка в таблице . Не делайте: умно",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "261",
+      "kind": "large_number",
+      "context": "ивает спорные решения по заявкам. По Правилам 644/261 нужны: заявитель, номер заявки , оспариваемое реше",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1497",
+      "kind": "large_number",
+      "context": "внести в материалы заявки изменения по п. 2–3 ст. 1497 , если они устраняют единственную причину отказа",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "олучения копий. Разберите мотивы отказа (п. 6 ст. 1483 и др.); соберите сравнительный анализ и согласия.",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    }
+  ]
+}

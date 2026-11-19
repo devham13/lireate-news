@@ -1,0 +1,91 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-19",
+    "today_ru": "19.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "четверг",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-21",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-19 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L71",
+    "priority": "P2",
+    "slug": "vozrazhenie-na-otkaz-v-registracii-svoego-tovarnogo-znaka",
+    "h1": "Как подать возражение на отказ в регистрации товарного знака: сроки, документы и типичные ошибки",
+    "primary_query": "как подать возражение на отказ в регистрации товарного знака",
+    "secondary_queries": [
+      "что делать после отказа роспатента в регистрации",
+      "уведомление об отказе товарный знак",
+      "п. 2 ст. 1500 ГК РФ"
+    ],
+    "search_intent": "workflow",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "как подать возражение на отказ в регистрации товарного знака 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-19"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "как подать возражение на отказ в регистрации товарного знака ноябрь 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-19"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "как подать возражение на отказ в регистрации товарного знака новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-19"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "что делать после отказа роспатента в регистрации 2026",
+      "purpose": "вторичный запрос: что делать после отказа роспатента в регистрации",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-19"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "уведомление об отказе товарный знак 2026",
+      "purpose": "вторичный запрос: уведомление об отказе товарный знак",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-19"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "п. 2 ст. 1500 ГК РФ 2026",
+      "purpose": "вторичный запрос: п. 2 ст. 1500 ГК РФ",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-19"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как подать возражение на отказ в регистрации товарного знака: сроки, документы и типичные ошибки 2026",
+      "purpose": "SERP по H1",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-19"
+    }
+  ],
+  "errors": [],
+  "unique_urls": []
+}
