@@ -1,21 +1,6 @@
 {
   "site_base": "https://example.com",
-  "total_articles": 72,
-  "opportunities_found": 2,
-  "suggestions": [
-    {
-      "source": "L67-chestnyy-znak-import-prostymi-slovami",
-      "target": "L31-mozhno-li-zapretit-vvoz-analoga-zapatentovannogo-tovara",
-      "keyword": "таможенный реестр объектов интеллектуальной собственности",
-      "context": "альном каталоге <b>не</b> равно регистрации. <b>ТРОИС</b> - таможенный реестр объектов интеллектуальной собственности: правообладатель может добиваться остановки партии с <b>под",
-      "link_replacement": "<a href=\"/mozhno-li-zapretit-vvoz-analoga-zapatentovannogo-tovara/\">таможенный реестр объектов интеллектуальной собственности</a>"
-    },
-    {
-      "source": "L67-chestnyy-znak-import-prostymi-slovami",
-      "target": "L56-tamozhennyy-reestr-tovarnogo-znaka-fts",
-      "keyword": "таможенный реестр объектов интеллектуальной собственности",
-      "context": "альном каталоге <b>не</b> равно регистрации. <b>ТРОИС</b> - таможенный реестр объектов интеллектуальной собственности: правообладатель может добиваться остановки партии с <b>под",
-      "link_replacement": "<a href=\"/tamozhennyy-reestr-tovarnogo-znaka-fts/\">таможенный реестр объектов интеллектуальной собственности</a>"
-    }
-  ]
+  "total_articles": 73,
+  "opportunities_found": 0,
+  "suggestions": []
 }
