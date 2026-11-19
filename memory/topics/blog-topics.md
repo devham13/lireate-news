@@ -1635,7 +1635,7 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L68 — Доменное имя как нематериальный актив: учёт и риски
 
-- **status:** new
+- **status:** written
 - **priority:** P2
 - **site:** lireate
 - **lireate_category_id:** 13
