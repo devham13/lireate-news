@@ -46,8 +46,8 @@
   "cover_family": "lireate_collage_v1",
   "cover_style": "collage-v1",
   "cover_scene_hint": "весы, папка иска, хронология спора, ст. 1252",
-  "cover_headline": "ИС в суде: объект и иск",
-  "cover_highlight": "1252",
+  "cover_headline": "ИС в суде: объект, претензия и иск",
+  "cover_highlight": "иск",
   "cover_stage_background": "#ffffff",
   "cover_sticky": "30 дней претензии",
   "cover_sticky_underline": "30",
@@ -61,17 +61,16 @@
       "white"
     ],
     [
-      "АПК",
+      "иск",
       "pink"
     ]
   ],
-  "cover_ui_title": "Маршрут правообладателя",
+  "cover_ui_title": "Маршрут",
   "cover_ui_rows": [
-    "объект → право",
-    "фиксация п. 55",
-    "претензия 30 дн.",
-    "иск в арбитраж"
+    "объект и право",
+    "фиксация",
+    "претензия"
   ],
-  "cover_left_memo": "1515 · 1301 · 1311",
+  "cover_left_memo": "",
   "cover_renderer": "html_chromium"
 }

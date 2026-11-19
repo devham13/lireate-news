@@ -43,9 +43,8 @@
   },
   "cover_family": "lireate_collage_v1",
   "cover_scene_hint": "калькулятор компенсации, шкала соразмерности, возражение в суд",
-  "cover_era": "Шумер",
-  "cover_headline": "СНИЖЕНИЕ КОМПЕНСАЦИИ 1252.1 ППВС 61 62 КОНТРРАСЧЁТ",
-  "cover_highlight": "КОНТРРАСЧЁТ",
+  "cover_headline": "Снижение компенсации: контррасчёт и 1252.1",
+  "cover_highlight": "контррасчёт",
   "cover_sticky": "суд ≠ снизит сам",
   "cover_sticky_underline": "суд",
   "cover_label_chips": [
@@ -58,17 +57,17 @@
       "white"
     ],
     [
-      "п. 1515",
+      "1515",
       "pink"
     ]
   ],
   "cover_ui_title": "Соразмерность",
   "cover_ui_rows": [
-    "способ расчёта",
-    "п. 62 ППВС",
-    "контррасчёт",
+    "способ",
+    "п. 62",
     "ходатайство"
   ],
   "cover_style": "collage-v1",
-  "cover_renderer": "html_chromium"
+  "cover_renderer": "html_chromium",
+  "cover_stage_background": "#ffffff"
 }
