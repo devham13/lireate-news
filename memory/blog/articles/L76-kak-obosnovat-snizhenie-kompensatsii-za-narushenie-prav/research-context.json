@@ -1,0 +1,67 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-19",
+    "today_ru": "19.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "четверг",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-21",
+      "note": "Предпочитай источники не старше ~90 дней; нормы ГК — редакция с 04.01.2026 (ФЗ № 214-ФЗ)."
+    },
+    "research_disclaimer": "Нормы ГК, разъяснения ВС и позиции КС проверены на 2026-11-19. Не индивидуальная юрконсультация."
+  },
+  "topic": {
+    "topic_id": "L76",
+    "cluster": "A04",
+    "priority": "P1",
+    "slug": "kak-obosnovat-snizhenie-kompensatsii-za-narushenie-prav",
+    "h1": "Как обосновать снижение компенсации за нарушение прав",
+    "primary_query": "снижение компенсации за нарушение исключительных прав",
+    "secondary_queries": [
+      "снизить компенсацию за товарный знак",
+      "ходатайство о снижении компенсации гк рф",
+      "контррасчет компенсации ст 1515",
+      "ст 1252.1 компенсация с 2026"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B",
+    "h2_outline": "1 Проверить способ расчета; 2 Разобрать обстоятельства нарушения; 3 Подтвердить доводы документами; 4 Подать мотивированные возражения; 5 Разобрать практику по сходным делам",
+    "cta": "Передать претензию или иск на анализ",
+    "note": "Карточка L76 в blog-topics.md на момент research отсутствует — бриф от Директора (cluster A04)."
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "L76",
+    "status": "PASS",
+    "search_intent": "how_to",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": [
+      "Карточка L76 не найдена в blog-topics.md — utility подтверждён по брифу (глагол действия, outline из 5 H2)."
+    ]
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "снижение компенсации за нарушение исключительных прав 2026",
+      "purpose": "актуальный SERP"
+    },
+    {
+      "id": "legal_reform",
+      "query": "статья 1252.1 гк рф компенсация 214-фз",
+      "purpose": "реформа с 04.01.2026"
+    },
+    {
+      "id": "pretension",
+      "query": "ответ на претензию снизить компенсацию товарный знак",
+      "purpose": "досудебный контур (связка L02)"
+    }
+  ],
+  "output_dir": "memory/blog/articles/L76-kak-obosnovat-snizhenie-kompensatsii-za-narushenie-prav",
+  "next_step": "research-notes.md — PASS; writer без article.html"
+}
