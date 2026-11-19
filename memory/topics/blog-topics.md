@@ -1656,7 +1656,7 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L69 — «ТРАВА» и родовые слова в названии бренда: как доработать имя
 
-- **status:** new
+- **status:** written
 - **priority:** P2
 - **site:** lireate
 - **lireate_category_id:** 13
@@ -1672,3 +1672,87 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 - **metrika_visits:** seo-report 2026-11: доработка названия бренда трава (16 показов)
 - **internal_links:** L64, L06, L48
 - **cover_scene_hint:** зелёный логотип с растением, красная пометка «описательно», правка имени
+
+---
+
+## L70 — Регистрация товарного знака с оплатой за результат: договор и риски
+
+- **status:** new
+- **priority:** P2
+- **site:** lireate
+- **lireate_category_id:** 9
+- **lireate_category_name:** Товарный знак
+- **slug:** registraciya-tovarnogo-znaka-s-oplatoy-za-rezultat
+- **h1:** Регистрация товарного знака с оплатой за результат: на что смотреть в договоре
+- **primary_query:** регистрация товарного знака с оплатой за результат
+- **secondary_queries:** оплата за результат товарный знак; гарантированная регистрация ТЗ; success fee патентное бюро
+- **search_intent:** comparison
+- **article_mode:** B
+- **angle:** отличие от пошлины и абонплаты; предмет и критерий «результата»; без обещаний 100% регистрации; L01, L48
+- **target_service:** reg-tz-main
+- **metrika_visits:** seo-report 2026-11: регистрация товарного знака с оплатой за результат (22 показа, Вебмастер)
+- **internal_links:** L01, L48, L08
+- **cover_scene_hint:** договор с галочкой «только при регистрации», сравнение с пошлиной ФИПС
+
+---
+
+## L71 — Возражение на отказ в регистрации своего товарного знака: сроки и порядок
+
+- **status:** new
+- **priority:** P2
+- **site:** lireate
+- **lireate_category_id:** 9
+- **lireate_category_name:** Товарный знак
+- **slug:** vozrazhenie-na-otkaz-v-registracii-svoego-tovarnogo-znaka
+- **h1:** Возражение на отказ в регистрации товарного знака: сроки, документы и типичные ошибки
+- **primary_query:** возражение на отказ в регистрации товарного знака
+- **secondary_queries:** что делать после отказа роспатента в регистрации; уведомление об отказе товарный знак; п. 2 ст. 1500 ГК РФ
+- **search_intent:** workflow
+- **article_mode:** B
+- **angle:** заявитель после отказа по своей заявке; не путать с L21 и L53; ст. 1499–1500; L07, L48
+- **target_service:** reg-tz-main
+- **metrika_visits:** seo-report 2026-11: возражение на отказ в регистрации товарного знака (12 показов, Вебмастер)
+- **internal_links:** L07, L48, L39
+- **cover_scene_hint:** уведомление об отказе, календарь 6 месяцев, папка возражения
+
+---
+
+## L72 — Доработка логотипа под требования Роспатента: форматы и макет заявки
+
+- **status:** new
+- **priority:** P2
+- **site:** lireate
+- **lireate_category_id:** 9
+- **lireate_category_name:** Товарный знак
+- **slug:** dorabotka-logotipa-pod-trebovaniya-rospatenta
+- **h1:** Доработка логотипа под требования Роспатента: формат, размеры и чек-лист макета
+- **primary_query:** доработка логотипа под требования роспатента
+- **secondary_queries:** доработка логотипа для регистрации в роспатенте; требования к изображению товарного знака; чёрно-белая версия для заявки
+- **search_intent:** how_to
+- **article_mode:** B
+- **angle:** техническая формальная сторона vs смысловая доработка L39; инструкции ФИПС; L39, L54
+- **target_service:** reg-tz-main
+- **metrika_visits:** seo-report 2026-11: доработка логотипа под требования роспатента (25 показов); доработка логотипа для регистрации в роспатенте (33)
+- **internal_links:** L39, L54, L01
+- **cover_scene_hint:** PDF макет, линейки dpi, ч/б и цветная версия
+
+---
+
+## L73 — Честный знак и импорт для менеджера ВЭД: краткий маршрут обучения
+
+- **status:** new
+- **priority:** P2
+- **site:** lireate
+- **lireate_category_id:** 11
+- **lireate_category_name:** Маркировка
+- **slug:** chestnyy-znak-import-ved-obuchenie
+- **h1:** Честный знак при импорте: что знать менеджеру ВЭД до подачи документов
+- **primary_query:** честный знак импорт ved обучение
+- **secondary_queries:** честный знак импорт для менеджера вэд; маркировка импорта честный знак; транспортные документы честный знак импорт
+- **search_intent:** how_to
+- **article_mode:** B
+- **angle:** роль ВЭД vs юрист/бренд; без повтора L67; связка ТН ВЭД, коды, L22, L36
+- **target_service:** reg-tz
+- **metrika_visits:** seo-report 2026-11: честный знак импорт ved обучение (34 показа); честный знак импорт для менеджера вэд (11)
+- **internal_links:** L67, L22, L36
+- **cover_scene_hint:** менеджер ВЭД, контейнер, DataMatrix, чек-лист документов

@@ -1,0 +1,91 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-19",
+    "today_ru": "19.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "четверг",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-21",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-19 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L69",
+    "priority": "P2",
+    "slug": "dorabotka-nazvaniya-brenda-rodivye-slova",
+    "h1": "Доработка названия бренда с родовым словом: как пройти экспертизу товарного знака",
+    "primary_query": "доработка названия бренда",
+    "secondary_queries": [
+      "родовое название в товарном знаке",
+      "TRAВA обобщение",
+      "описательное обозначение ст 1483"
+    ],
+    "search_intent": "troubleshooting",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "доработка названия бренда 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-19"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "доработка названия бренда ноябрь 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-19"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "доработка названия бренда новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-19"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "родовое название в товарном знаке 2026",
+      "purpose": "вторичный запрос: родовое название в товарном знаке",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-19"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "TRAВA обобщение 2026",
+      "purpose": "вторичный запрос: TRAВA обобщение",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-19"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "описательное обозначение ст 1483 2026",
+      "purpose": "вторичный запрос: описательное обозначение ст 1483",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-19"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Доработка названия бренда с родовым словом: как пройти экспертизу товарного знака 2026",
+      "purpose": "SERP по H1",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-19"
+    }
+  ],
+  "errors": [],
+  "unique_urls": []
+}

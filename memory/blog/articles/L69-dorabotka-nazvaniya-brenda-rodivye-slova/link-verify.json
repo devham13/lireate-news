@@ -1,0 +1,158 @@
+{
+  "source": "memory/blog/articles/L69-dorabotka-nazvaniya-brenda-rodivye-slova/article.html",
+  "total_links": 16,
+  "failed_count": 0,
+  "privacy_policy_violations": [],
+  "verdict": "pass",
+  "links": [
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/2e83c7a3d54808ca80d8f0b2a034caa0f7122b57/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://example.com/struktura_mktu_kak_opredelit_klass_dlya_tovara_i_uslugi/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://example.com/struktura_mktu_kak_opredelit_klass_dlya_tovara_i_uslugi/"
+    },
+    {
+      "url": "https://searchplatform.rospatent.gov.ru/trademarks",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://example.com/nejming_i_logotip_soglasovanie/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://example.com/nejming_i_logotip_soglasovanie/"
+    },
+    {
+      "url": "https://example.com/ekspertiza-tovarnyh-znakov-formalnaya-po-suschestvu/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://example.com/ekspertiza-tovarnyh-znakov-formalnaya-po-suschestvu/"
+    },
+    {
+      "url": "https://www.tm-patent.ru/analitika/opisatelnost-tovarnogo-znaka.html",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_304256/135180ec1c293d514ad271923b54e843f8d8c173/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://onlinepatent.ru/journal/trademarkswords/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://saenko-group.ru/press-center/articles/povtornaya-zayavka-posle-otkaza/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://ipbot.ru/articles/nejming-i-tovarnyj-znak/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://pravo163.ru/uslugi/biznes-advokat/intellektualnaya-sobstvennost/tovarnye-znaki/pererabotka-brenda/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://ezybrand.ru/blog/metodika-rospatenta-oczenka-shodstva-tovarnyh-znakov/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://example.com/rospatent-fips-proverit-tovarnyy-znak-onlayn-besplatno/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://example.com/rospatent-fips-proverit-tovarnyy-znak-onlayn-besplatno/"
+    },
+    {
+      "url": "https://licensingrussia.ru/article/14579-kak-proverit-registriruemyi-tovarnyi-znak-pered-podachei-zaiavki-v-rospatent/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://base.garant.ru/408182169/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://example.com/reg-tz-main",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://example.com/reg-tz-main"
+    }
+  ]
+}

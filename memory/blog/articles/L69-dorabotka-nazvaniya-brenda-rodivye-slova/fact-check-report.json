@@ -1,0 +1,45 @@
+{
+  "article": "memory/blog/articles/L69-dorabotka-nazvaniya-brenda-rodivye-slova/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 5,
+  "verified_facts_count": 5,
+  "unverified_facts_count": 0,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "лемент имени и пройти экспертизу осознанно. 19.11.2026; не индивидуальная юридическая консультация. TL;D",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2026 год",
+      "kind": "date_or_year",
+      "context": "ТУ, 15 рабочих дней - 46 200 ₽ по тарифам ФИПС на 2026 год). Подайте заявку на новое обозначение, а не \"испр",
+      "verified": true,
+      "reason": "Numerical value '2026' matched in fact-bank context"
+    },
+    {
+      "fact": "2025",
+      "kind": "date_or_year",
+      "context": "6 ст. 1483 ГК РФ - по КонсультантПлюс (ред. 23.07.2025), процедура и тариф ФИПС - на 19.11.2026. Семанти",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "суть снова. Ниже - как отделить риск по п. 1 ст. 1483 ГК РФ (описательность) от риска по п. 6 (сходство",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "46 200",
+      "kind": "large_number",
+      "context": "ного обозначения (1 класс МКТУ, 15 рабочих дней - 46 200 ₽ по тарифам ФИПС на 2026 год). Подайте заявку на",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    }
+  ]
+}
