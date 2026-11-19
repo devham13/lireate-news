@@ -1,0 +1,80 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-19",
+    "today_ru": "19.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "четверг",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-21",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-19 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L70",
+    "priority": "P2",
+    "slug": "registraciya-tovarnogo-znaka-s-oplatoy-za-rezultat",
+    "h1": "Сравнение и чек-лист: регистрация товарного знака с оплатой за результат — на что смотреть в договоре",
+    "primary_query": "регистрация товарного знака с оплатой за результат",
+    "secondary_queries": [
+      "оплата за результат товарный знак",
+      "гарантированная регистрация ТЗ",
+      "success fee патентное бюро"
+    ],
+    "search_intent": "comparison",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "L70",
+    "status": "PASS",
+    "search_intent": "comparison",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "регистрация товарного знака с оплатой за результат 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "регистрация товарного знака с оплатой за результат ноябрь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "регистрация товарного знака с оплатой за результат новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "оплата за результат товарный знак 2026",
+      "purpose": "вторичный запрос: оплата за результат товарный знак"
+    },
+    {
+      "id": "secondary_2",
+      "query": "гарантированная регистрация ТЗ 2026",
+      "purpose": "вторичный запрос: гарантированная регистрация ТЗ"
+    },
+    {
+      "id": "secondary_3",
+      "query": "success fee патентное бюро 2026",
+      "purpose": "вторичный запрос: success fee патентное бюро"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Сравнение и чек-лист: регистрация товарного знака с оплатой за результат — на что смотреть в договоре 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/L70-registraciya-tovarnogo-znaka-s-oplatoy-za-rezultat",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}
