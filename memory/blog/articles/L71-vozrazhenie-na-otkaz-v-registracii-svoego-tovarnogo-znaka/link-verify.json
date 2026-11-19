@@ -1,0 +1,140 @@
+{
+  "source": "memory/blog/articles/L71-vozrazhenie-na-otkaz-v-registracii-svoego-tovarnogo-znaka/article.html",
+  "total_links": 14,
+  "failed_count": 0,
+  "privacy_policy_violations": [],
+  "verdict": "pass",
+  "links": [
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/04d8518205401260b478eea8470dd73a41a97085/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/42114f8819a5a871c211331ca2b2d5ae1ebda818/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://patent-family.ru/journal/patenty/palata-po-patentnym-sporam/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://example.com/otnositelnyie_osnovaniya_otkaza_v_registracii_tz_otvet_ekspertize/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://example.com/otnositelnyie_osnovaniya_otkaza_v_registracii_tz_otvet_ekspertize/"
+    },
+    {
+      "url": "https://example.com/ekspertiza-tovarnyh-znakov-formalnaya-po-suschestvu/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://example.com/ekspertiza-tovarnyh-znakov-formalnaya-po-suschestvu/"
+    },
+    {
+      "url": "https://www.klerk.ru/blogs/patent24/683176/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://online.rospatent.gov.ru/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/4449f675598ad6e772756abac9cdf2acae5c10e0/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://base.garant.ru/74563620/53f89421bbdaf741eb2d1ecc4ddb4c33/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://example.com/dorabotka-logotipa-pered-registraciey-tovarnogo-znaka/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://example.com/dorabotka-logotipa-pered-registraciey-tovarnogo-znaka/"
+    },
+    {
+      "url": "https://example.com/vozrazhenie_protiv_registracii_chuzhogo_tovarnogo_znaka_sroki_i_poryadok/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://example.com/vozrazhenie_protiv_registracii_chuzhogo_tovarnogo_znaka_sroki_i_poryadok/"
+    },
+    {
+      "url": "https://searchplatform.rospatent.gov.ru/trademarks",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/2e83c7a3d54808ca80d8f0b2a034caa0f7122b57/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://example.com/registraciya_tovarnogo_znaka/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://example.com/registraciya_tovarnogo_znaka/"
+    }
+  ]
+}
