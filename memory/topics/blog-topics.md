@@ -1698,14 +1698,14 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L71 — Возражение на отказ в регистрации своего товарного знака: сроки и порядок
 
-- **status:** new
+- **status:** written
 - **priority:** P2
 - **site:** lireate
 - **lireate_category_id:** 9
 - **lireate_category_name:** Товарный знак
 - **slug:** vozrazhenie-na-otkaz-v-registracii-svoego-tovarnogo-znaka
-- **h1:** Возражение на отказ в регистрации товарного знака: сроки, документы и типичные ошибки
-- **primary_query:** возражение на отказ в регистрации товарного знака
+- **h1:** Как подать возражение на отказ в регистрации товарного знака: сроки, документы и типичные ошибки
+- **primary_query:** как подать возражение на отказ в регистрации товарного знака
 - **secondary_queries:** что делать после отказа роспатента в регистрации; уведомление об отказе товарный знак; п. 2 ст. 1500 ГК РФ
 - **search_intent:** workflow
 - **article_mode:** B
