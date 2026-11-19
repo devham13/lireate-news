@@ -1783,7 +1783,7 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L75 — Получили претензию от правообладателя: что проверить
 
-- **status:** new
+- **status:** written
 - **priority:** P2
 - **site:** lireate
 - **lireate_category_id:** 15
