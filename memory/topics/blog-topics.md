@@ -1812,7 +1812,7 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L76 — Как обосновать снижение компенсации за нарушение прав
 
-- **status:** new
+- **status:** written
 - **priority:** P1
 - **site:** lireate
 - **lireate_category_id:** 15
