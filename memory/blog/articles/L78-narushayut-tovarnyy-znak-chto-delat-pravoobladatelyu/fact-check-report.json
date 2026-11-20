@@ -1,0 +1,101 @@
+{
+  "article": "memory/blog/articles/L78-narushayut-tovarnyy-znak-chto-delat-pravoobladatelyu/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 13,
+  "verified_facts_count": 2,
+  "unverified_facts_count": 11,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "ёте доказательства и выберете канал защиты. 20.11.2026; не индивидуальная юридическая консультация. TL;D",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2019",
+      "kind": "date_or_year",
+      "context": "EO). Достоверность данных: нормы ГК РФ, ППВС № 10/2019 и судебная практика сверены на 20.11.2026; ключевы",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "30 дней",
+      "kind": "metric_or_duration",
+      "context": "тельна перед иском о деньгах ( п. 5.1 ст. 1252 ), 30 дней молчания. Компенсация: 10 000 - 10 000 000 ₽ с 04",
+      "verified": true,
+      "reason": "Numerical value '30' matched in fact-bank context"
+    },
+    {
+      "fact": "1484",
+      "kind": "large_number",
+      "context": "сация → претензия или иск. Ниже пять шагов по ст. 1484, 1515 и 1252 ГК РФ. Вы проверите охрану, соберёте",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1515",
+      "kind": "large_number",
+      "context": "→ претензия или иск. Ниже пять шагов по ст. 1484, 1515 и 1252 ГК РФ. Вы проверите охрану, соберёте доказа",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1252",
+      "kind": "large_number",
+      "context": "нзия или иск. Ниже пять шагов по ст. 1484, 1515 и 1252 ГК РФ. Вы проверите охрану, соберёте доказательств",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1487",
+      "kind": "large_number",
+      "context": "перечень товаров, залог, лицензии. Исключите ст. 1487 (исчерпание). Сравните графику, звук, смысл и одн",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 000",
+      "kind": "large_number",
+      "context": "п. 5.1 ст. 1252 ), 30 дней молчания. Компенсация: 10 000 - 10 000 000 ₽ с 04.01.2026 ( п. 4 ст. 1515 ). Дл",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 000 000",
+      "kind": "large_number",
+      "context": ". 1252 ), 30 дней молчания. Компенсация: 10 000 - 10 000 000 ₽ с 04.01.2026 ( п. 4 ст. 1515 ). Для пресечения",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1491",
+      "kind": "large_number",
+      "context": "атформе Роспатента. Выпишите дату истечения ( ст. 1491 ), точный перечень товаров и услуг (не только ном",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "162",
+      "kind": "large_number",
+      "context": "ое сходство и на однородность в совокупности ( п. 162 ППВС № 10 ). Достаточно вероятности смешения, не ф",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1253",
+      "kind": "large_number",
+      "context": "1252 ). Жалоба оператору площадки по 289-ФЗ и ст. 1253.1 - параллельно с накоплением пакета, не вместо ф",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1250",
+      "kind": "large_number",
+      "context": "х спорах не зависит от вины нарушителя ( п. 3 ст. 1250 ), но вам всё равно нужно доказать факт использов",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

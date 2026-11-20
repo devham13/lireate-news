@@ -1,0 +1,33 @@
+{
+  "headline_lines": [
+    "Претензия по ТЗ:",
+    "реестр и ответ"
+  ],
+  "highlight": "реестр",
+  "sticky_text": "30 дней до иска",
+  "sticky_underline": "30",
+  "sticky_color": "yellow",
+  "badge_label": "ТЗ",
+  "label_chips": [
+    [
+      "1515",
+      "black"
+    ],
+    [
+      "МКТУ",
+      "white"
+    ],
+    [
+      "ответ",
+      "pink"
+    ]
+  ],
+  "ui_card_title": "Алгоритм",
+  "ui_card_rows": [
+    "реестр",
+    "способ",
+    "сумма"
+  ],
+  "stage_background": "#ffffff",
+  "left_memo": ""
+}

@@ -1,0 +1,150 @@
+{
+  "article": "memory/blog/articles/L77-patentnyy-trolling-kak-proverit-pretenziyu-i-zashchititsya/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 20,
+  "verified_facts_count": 4,
+  "unverified_facts_count": 16,
+  "facts": [
+    {
+      "fact": "2023",
+      "kind": "date_or_year",
+      "context": "уде, опираясь на ст. 10 ГК РФ и Обзор ВС от 15.11.2023 . 20.11.2026; не индивидуальная юридическая консу",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "на ст. 10 ГК РФ и Обзор ВС от 15.11.2023 . 20.11.2026; не индивидуальная юридическая консультация. TL;D",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2024",
+      "kind": "date_or_year",
+      "context": "деле № А84-1059/2023 (постановление СИП С01-1285/2024 ) довод о злоупотреблении не сработал, потому что",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2025",
+      "kind": "date_or_year",
+      "context": "ое поведение ( ГАРАНТ ). Зато в деле № А40-271304/2025 апелляция отменила взыскание, квалифицировав актив",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2019",
+      "kind": "date_or_year",
+      "context": "храны ( подп. 6 п. 2 ст. 1512 ). В деле № А11-417/2019 (определение ВС 301-ЭС23-2808 ) учли неоднороднос",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "30 дней",
+      "kind": "metric_or_duration",
+      "context": "ИП компенсацию в арбитраже ищут после претензии и 30 дней молчания ( п. 5.1 ст. 1252 ). Кто такие тролли -",
+      "verified": true,
+      "reason": "Numerical value '30' matched in fact-bank context"
+    },
+    {
+      "fact": "1486",
+      "kind": "large_number",
+      "context": "без признания вины → встречные инструменты ( ст. 1486 , ст. 1512–1513 ). Между юрлицами и ИП компенсаци",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1512",
+      "kind": "large_number",
+      "context": "ния вины → встречные инструменты ( ст. 1486 , ст. 1512–1513 ). Между юрлицами и ИП компенсацию в арбитра",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1513",
+      "kind": "large_number",
+      "context": "ины → встречные инструменты ( ст. 1486 , ст. 1512–1513 ). Между юрлицами и ИП компенсацию в арбитраже ищ",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1252",
+      "kind": "large_number",
+      "context": "т после претензии и 30 дней молчания ( п. 5.1 ст. 1252 ). Кто такие тролли - коротко на Лирейт ; контрра",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1059",
+      "kind": "large_number",
+      "context": "не обещаем \"автоматическую победу\": в деле № А84-1059/2023 (постановление СИП С01-1285/2024 ) довод о з",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1285",
+      "kind": "large_number",
+      "context": "у\": в деле № А84-1059/2023 (постановление СИП С01-1285/2024 ) довод о злоупотреблении не сработал, потом",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "271304",
+      "kind": "large_number",
+      "context": "совестное поведение ( ГАРАНТ ). Зато в деле № А40-271304/2025 апелляция отменила взыскание, квалифицировав",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "52119",
+      "kind": "large_number",
+      "context": "ировав активность как \"патентный троллинг\" ( 09АП-52119/26 ). Разберите, что называют троллингом, без пан",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1169",
+      "kind": "large_number",
+      "context": "еального товара или услуги под знаком. В акте СИП-1169/2025 (постановление С01-1111/2026 ) термин раскры",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1111",
+      "kind": "large_number",
+      "context": "д знаком. В акте СИП-1169/2025 (постановление С01-1111/2026 ) термин раскрывают в связи с массовой прете",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1484",
+      "kind": "large_number",
+      "context": "однородность с вашим ассортиментом по п. 2–3 ст. 1484 . Зафиксируйте скриншоты карточки реестра и своих",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1301",
+      "kind": "large_number",
+      "context": "ы на объект и конкретный фрагмент нарушения ( ст. 1301 ). Делайте: таблицу \"что вменяют - что у нас реал",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2808",
+      "kind": "large_number",
+      "context": "). В деле № А11-417/2019 (определение ВС 301-ЭС23-2808 ) учли неоднородность услуг и признаки злоупотреб",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1515",
+      "kind": "large_number",
+      "context": "ите к проекту ответа. Разберите сумму по п. 4 ст. 1515 (контррасчёт - L76). Направьте ответ с оговоркой",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "article": "memory/blog/articles/L79-pretenziya-za-ispolzovanie-tovarnogo-znaka-kak-otvetit/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 21,
+  "verified_facts_count": 3,
+  "unverified_facts_count": 18,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "ответа без необоснованного признания вины. 20.11.2026; не индивидуальная юридическая консультация. TL;D",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2016",
+      "kind": "date_or_year",
+      "context": "иума ВАС № 2979/06 ( ГАРАНТ ). В деле № А40-19203/2016 (СИП С01-1069/2016 ) разные классы МКТУ не освобо",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2012",
+      "kind": "date_or_year",
+      "context": "ст. 333 ГК к ней не применяется (дело № А51-22505/2012 , ВАС 9189/13 ). Суд вправе снизить заявленное, н",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "30 дней",
+      "kind": "metric_or_duration",
+      "context": "нтррасчёт и снижение - L76 . Иск в арбитраж после 30 дней молчания - п. 5.1 ст. 1252 . Материал для ИП, ООО",
+      "verified": true,
+      "reason": "Numerical value '30' matched in fact-bank context"
+    },
+    {
+      "fact": "7 дней",
+      "kind": "metric_or_duration",
+      "context": "омпенсации ( п. 5.1 ст. 1252 ). Срок \"ответить за 7 дней\" из шаблона истца законом для всех не установлен,",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1484",
+      "kind": "large_number",
+      "context": "суда: прекратить способ использования из п. 2 ст. 1484 и иногда выплатить компенсацию по п. 4 ст. 1515 .",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1515",
+      "kind": "large_number",
+      "context": ". 1484 и иногда выплатить компенсацию по п. 4 ст. 1515 . Ниже - проверить реестр, сопоставить перечень М",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1252",
+      "kind": "large_number",
+      "context": "ск в арбитраж после 30 дней молчания - п. 5.1 ст. 1252 . Материал для ИП, ООО и селлеров, когда в претен",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1250",
+      "kind": "large_number",
+      "context": "их спорах наступает независимо от вины ( п. 3 ст. 1250 ), поэтому \"мы не знали\" редко снимает требование",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2979",
+      "kind": "large_number",
+      "context": ", аудитория) - см. постановление Президиума ВАС № 2979/06 ( ГАРАНТ ). В деле № А40-19203/2016 (СИП С01-1",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "19203",
+      "kind": "large_number",
+      "context": "Президиума ВАС № 2979/06 ( ГАРАНТ ). В деле № А40-19203/2016 (СИП С01-1069/2016 ) разные классы МКТУ не о",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1069",
+      "kind": "large_number",
+      "context": "9/06 ( ГАРАНТ ). В деле № А40-19203/2016 (СИП С01-1069/2016 ) разные классы МКТУ не освобождали от анали",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1487",
+      "kind": "large_number",
+      "context": "лера готовьте документы под исчерпание прав ( ст. 1487 ). Если ваше обозначение зарегистрировано отдельн",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "сходство и вероятность смешения. Рамка - п. 6 ст. 1483 (сходство до смешения для однородных товаров). Ес",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "157",
+      "kind": "large_number",
+      "context": "е ли вы его как бренд или как характеристику ( п. 157 ПП ВС № 10 ). Делайте: таблицу \"их перечень - наш",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 000",
+      "kind": "large_number",
+      "context": "трёх методов п. 4 ст. 1515 : фиксированная вилка 10 000 – 10 000 000 ₽ (с 04.01.2026), либо 2× стоимость",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 000 000",
+      "kind": "large_number",
+      "context": "одов п. 4 ст. 1515 : фиксированная вилка 10 000 – 10 000 000 ₽ (с 04.01.2026), либо 2× стоимость контрафакта,",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "333",
+      "kind": "large_number",
+      "context": "ериод, документы. Компенсация - не неустойка: ст. 333 ГК к ней не применяется (дело № А51-22505/2012 , В",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "22505",
+      "kind": "large_number",
+      "context": "ойка: ст. 333 ГК к ней не применяется (дело № А51-22505/2012 , ВАС 9189/13 ). Суд вправе снизить заявленн",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "9189",
+      "kind": "large_number",
+      "context": "к ней не применяется (дело № А51-22505/2012 , ВАС 9189/13 ). Суд вправе снизить заявленное, но не ниже н",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "16449",
+      "kind": "large_number",
+      "context": "изить заявленное, но не ниже нижнего предела (ВАС 16449/12 , ГАРАНТ ). Аргументы соразмерности и ходатайс",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
