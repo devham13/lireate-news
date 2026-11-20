@@ -138,6 +138,16 @@ def verify_article(
     except Exception as e:  # noqa: BLE001
         privacy_violations = [f"privacy link policy check failed: {e}"]
     links = extract_links(html)
+    normalize_internal_path = None
+    try:
+        import sys as _sys
+
+        _scripts = Path(__file__).resolve().parent
+        if str(_scripts) not in _sys.path:
+            _sys.path.insert(0, str(_scripts))
+        from lireate_normalize_internal_links import normalize_path as normalize_internal_path
+    except Exception:  # noqa: BLE001
+        normalize_internal_path = None
     user_agent = "ExcaliburBlogLinkVerify/1.0"
     results: list[dict[str, Any]] = []
     for href in links:
@@ -158,7 +168,8 @@ def verify_article(
         check_target = href
         if kind == "internal_relative" and site_base:
             base = site_base.rstrip("/")
-            check_target = f"{base}{href if href.startswith('/') else '/' + href}"
+            rel = href if href.startswith("/") else "/" + href
+            check_target = f"{base}{rel}"
         elif kind == "internal_relative":
             results.append(
                 {
@@ -173,6 +184,23 @@ def verify_article(
             )
             continue
         r = check_url(check_target, timeout, user_agent)
+        if (
+            not r.get("ok")
+            and kind == "internal_relative"
+            and normalize_internal_path is not None
+        ):
+            rel = href if href.startswith("/") else "/" + href
+            alias = normalize_internal_path(rel)
+            if alias != rel and site_base:
+                base = site_base.rstrip("/")
+                alias_url = f"{base}{alias}"
+                alias_r = check_url(alias_url, timeout, user_agent)
+                if alias_r.get("ok"):
+                    r["ok"] = False
+                    hint = f"live URL is {alias} (HTTP {alias_r.get('status')})"
+                    r["error"] = f"{r.get('error') or 'failed'}; {hint}"
+                    r["live_alias"] = alias
+                    r["checked_alias_url"] = alias_url
         r["kind"] = kind
         r["skipped"] = False
         if kind == "internal_relative":

@@ -10,7 +10,7 @@ Excalibur создаёт этот файл после `✅ ARTICLE OK` (до и�
 
 - [ ] Открыть live URL — title, excerpt, featured image, FAQ
 - [ ] View source — JSON-LD BlogPosting + FAQPage (`schema.jsonld`)
-- [ ] Проверить internal links из статьи (200): `/poluchili_pretenziyu_ot_pravoobladatelya_chto_proverit/` (×2), `/patentnyie_trolli_kto_oni/` (×2), `/kak_obosnovat_snizhenie_kompensatsii_za_narushenie_prav/`, `/kak_zashchitit_intellektualnye_prava_v_sude/`, `/kak-opredelit-klass-mktu/` (interlinker)
+- [ ] Проверить internal links из статьи (200): `/poluchili_pretenziyu_ot_pravoobladatelya_chto_proverit/` (×2), `/patentnyie_trolli_kto_oni/` (×2), `/kak_obosnovat_snizhenie_kompensatsii_za_narushenie_prav/`, `/kak_zashchitit_intellektualnye_prava_v_sude/`, `/struktura_mktu_kak_opredelit_klass_dlya_tovara_i_uslugi/`
 - [ ] Яндекс.Вебмастер / GSC — URL отправлен (если настроено)
 - [ ] Выложить `llms.txt` / `llms-full.txt` в корень сайта (артефакты в `memory/blog/` и `memory/blog/lireate-site/`)
 

@@ -10,7 +10,7 @@ Excalibur создаёт этот файл после `✅ ARTICLE OK` (до и�
 
 - [ ] Открыть live URL — title, excerpt, featured image, FAQ
 - [ ] View source — JSON-LD BlogPosting + FAQPage (`schema.jsonld`)
-- [ ] Проверить internal links из статьи (200): `/narushayut_tovarnyy_znak_chto_delat_pravoobladatelyu/` (L78), `/poluchili_pretenziyu_ot_pravoobladatelya_chto_proverit/`, `/kak-opredelit-klass-mktu/` (interlinker), `/otvet_na_pretenziyu_pravoobladatelya_tovarnogo_znaka_poryadok_srok_30_dney_i_obrazec/` (L02), `/kak_obosnovat_snizhenie_kompensatsii_za_narushenie_prav/` (×2), `/kak_zashchitit_intellektualnye_prava_v_sude/`
+- [ ] Проверить internal links из статьи (200): `/narushayut_tovarnyy_znak_chto_delat_pravoobladatelyu/` (L78), `/poluchili_pretenziyu_ot_pravoobladatelya_chto_proverit/`, `/struktura_mktu_kak_opredelit_klass_dlya_tovara_i_uslugi/`, `/otvet_na_pretenziyu_pravoobladatelya_tovarnogo_znaka_poryadok_srok_30_dney_i_obrazec/` (L02), `/kak_obosnovat_snizhenie_kompensatsii_za_narushenie_prav/` (×2), `/kak_zashchitit_intellektualnye_prava_v_sude/`
 - [ ] Яндекс.Вебмастер / GSC — URL отправлен (если настроено)
 - [ ] Выложить `llms.txt` / `llms-full.txt` в корень сайта (артефакты в `memory/blog/` и `memory/blog/lireate-site/`)
 

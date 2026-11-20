@@ -1,6 +1,6 @@
 {
   "verdict": "warning",
-  "total_issues": 12,
+  "total_issues": 11,
   "issues": [
     {
       "severity": "warning",
@@ -111,18 +111,6 @@
       "primary_query": "честный знак импорт",
       "secondary_query": "маркировка импорта честный знак",
       "similarity": 0.75
-    },
-    {
-      "severity": "warning",
-      "type": "primary_secondary_cannibalization",
-      "message": "WARNING: Primary query of 'L75-poluchili-pretenziyu-pravoobladatelya-chto-proverit' ('получил претензию от правообладателя что делать') highly overlaps with secondary query of 'L77-patentnyy-trolling-kak-proverit-pretenziyu-i-zashchititsya' ('претензия от правообладателя что делать'). Similarity: 80%",
-      "articles": [
-        "L75-poluchili-pretenziyu-pravoobladatelya-chto-proverit",
-        "L77-patentnyy-trolling-kak-proverit-pretenziyu-i-zashchititsya"
-      ],
-      "primary_query": "получил претензию от правообладателя что делать",
-      "secondary_query": "претензия от правообладателя что делать",
-      "similarity": 0.8
     },
     {
       "severity": "warning",
