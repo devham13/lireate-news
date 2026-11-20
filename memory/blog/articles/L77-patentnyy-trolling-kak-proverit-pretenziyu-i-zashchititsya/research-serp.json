@@ -1,0 +1,136 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-20",
+    "today_ru": "20.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "пятница",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-22",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-20 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L77",
+    "priority": "P1",
+    "slug": "patentnyy-trolling-kak-proverit-pretenziyu-i-zashchititsya",
+    "h1": "Патентный троллинг: как проверить претензию и защититься",
+    "primary_query": "патентный троллинг как защититься",
+    "secondary_queries": [
+      "патентные тролли",
+      "товарный троллинг",
+      "авторский троллинг",
+      "защита от товарного троллинга",
+      "недобросовестный правообладатель",
+      "массовые иски правообладателей",
+      "злоупотребление правом товарный знак",
+      "как отбиться от патентного тролля"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "патентный троллинг как защититься 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-20"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "патентный троллинг как защититься ноябрь 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-20"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "патентный троллинг как защититься новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-20"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "патентные тролли 2026",
+      "purpose": "вторичный запрос: патентные тролли",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-20"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "товарный троллинг 2026",
+      "purpose": "вторичный запрос: товарный троллинг",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-20"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "авторский троллинг 2026",
+      "purpose": "вторичный запрос: авторский троллинг",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-20"
+    },
+    {
+      "query_id": "secondary_4",
+      "query": "защита от товарного троллинга 2026",
+      "purpose": "вторичный запрос: защита от товарного троллинга",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-20"
+    },
+    {
+      "query_id": "secondary_5",
+      "query": "недобросовестный правообладатель 2026",
+      "purpose": "вторичный запрос: недобросовестный правообладатель",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-20"
+    },
+    {
+      "query_id": "secondary_6",
+      "query": "массовые иски правообладателей 2026",
+      "purpose": "вторичный запрос: массовые иски правообладателей",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-20"
+    },
+    {
+      "query_id": "secondary_7",
+      "query": "злоупотребление правом товарный знак 2026",
+      "purpose": "вторичный запрос: злоупотребление правом товарный знак",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-20"
+    },
+    {
+      "query_id": "secondary_8",
+      "query": "как отбиться от патентного тролля 2026",
+      "purpose": "вторичный запрос: как отбиться от патентного тролля",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-20"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Патентный троллинг: как проверить претензию и защититься 2026",
+      "purpose": "SERP по H1",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-20"
+    }
+  ],
+  "errors": [],
+  "unique_urls": []
+}
