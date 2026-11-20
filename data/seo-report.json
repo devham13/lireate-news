@@ -1,146 +1,150 @@
 {
-  "generated_at": "2026-11-19T08:37:59+03:00",
+  "generated_at": "2026-11-20T08:24:33+03:00",
   "site": "lireate.ru",
   "counter_id": 52622734,
   "period": {
     "last7": [
-      "2026-11-12",
-      "2026-11-18"
+      "2026-11-13",
+      "2026-11-19"
     ],
     "prev7": [
-      "2026-11-05",
-      "2026-11-11"
+      "2026-11-06",
+      "2026-11-12"
     ],
     "last28": [
-      "2026-10-22",
-      "2026-11-18"
+      "2026-10-23",
+      "2026-11-19"
     ]
   },
   "totals": {
     "last7": {
-      "visits": 784.0,
-      "users": 752.0,
-      "bounce_rate": 51.4,
-      "page_depth": 1.98,
-      "avg_duration_sec": 44.73
+      "visits": 997.0,
+      "users": 971.0,
+      "bounce_rate": 44.23,
+      "page_depth": 1.75,
+      "avg_duration_sec": 40.7
     },
     "prev7": {
-      "visits": 1642.0,
-      "users": 1552.0,
-      "bounce_rate": 60.54,
-      "page_depth": 1.53,
-      "avg_duration_sec": 36.64
+      "visits": 1488.0,
+      "users": 1412.0,
+      "bounce_rate": 60.82,
+      "page_depth": 1.59,
+      "avg_duration_sec": 38.82
     },
     "last28": {
-      "visits": 3925.0,
-      "users": 3651.0,
-      "bounce_rate": 51.67,
-      "page_depth": 1.57,
-      "avg_duration_sec": 41.64
+      "visits": 4130.0,
+      "users": 3854.0,
+      "bounce_rate": 50.1,
+      "page_depth": 1.54,
+      "avg_duration_sec": 41.25
     },
     "wow_delta": {
       "visits": {
-        "abs": -858.0,
-        "pct": -52.3
+        "abs": -491.0,
+        "pct": -33.0
       },
       "users": {
-        "abs": -800.0,
-        "pct": -51.5
+        "abs": -441.0,
+        "pct": -31.2
       },
       "bounce_rate": {
-        "abs": -9.14,
-        "pct": -15.1
+        "abs": -16.59,
+        "pct": -27.3
       },
       "page_depth": {
-        "abs": 0.45,
-        "pct": 29.4
+        "abs": 0.16,
+        "pct": 10.1
       },
       "avg_duration_sec": {
-        "abs": 8.09,
-        "pct": 22.1
+        "abs": 1.88,
+        "pct": 4.8
       }
     }
   },
   "sources": [
     {
       "source": "Прямые заходы",
-      "visits": 563.0,
-      "prev7_visits": 1035.0,
-      "bounce_rate": 65.36,
-      "page_depth": 1.2
+      "visits": 777.0,
+      "prev7_visits": 1034.0,
+      "bounce_rate": 52.51,
+      "page_depth": 1.13
     },
     {
       "source": "Переходы из поисковых систем",
-      "visits": 126.0,
-      "prev7_visits": 120.0,
-      "bounce_rate": 14.29,
-      "page_depth": 1.79
+      "visits": 130.0,
+      "prev7_visits": 116.0,
+      "bounce_rate": 15.38,
+      "page_depth": 1.77
     },
     {
       "source": "Переходы с сохранённых страниц",
-      "visits": 33.0,
+      "visits": 35.0,
       "prev7_visits": 2.0,
-      "bounce_rate": 12.12,
-      "page_depth": 15.79
+      "bounce_rate": 11.43,
+      "page_depth": 15.03
     },
     {
       "source": "Переходы по ссылкам на сайтах",
       "visits": 22.0,
-      "prev7_visits": 27.0,
+      "prev7_visits": 24.0,
       "bounce_rate": 13.64,
-      "page_depth": 2.09
-    },
-    {
-      "source": "Внутренние переходы",
-      "visits": 18.0,
-      "prev7_visits": 20.0,
-      "bounce_rate": 27.78,
-      "page_depth": 2.56
+      "page_depth": 2.0
     },
     {
       "source": "Переходы из рекомендательных систем",
       "visits": 14.0,
-      "prev7_visits": 12.0,
+      "prev7_visits": 13.0,
       "bounce_rate": 7.14,
-      "page_depth": 1.79
+      "page_depth": 1.93
     },
     {
-      "source": "Переходы по рекламе",
-      "visits": 6.0,
-      "prev7_visits": 420.0,
-      "bounce_rate": 50.0,
-      "page_depth": 1.0
+      "source": "Внутренние переходы",
+      "visits": 12.0,
+      "prev7_visits": 24.0,
+      "bounce_rate": 16.67,
+      "page_depth": 2.75
     },
     {
       "source": "Переходы из социальных сетей",
-      "visits": 1.0,
-      "prev7_visits": 4.0,
+      "visits": 3.0,
+      "prev7_visits": 2.0,
       "bounce_rate": 0.0,
-      "page_depth": 2.0
+      "page_depth": 1.33
+    },
+    {
+      "source": "Переходы по рекламе",
+      "visits": 2.0,
+      "prev7_visits": 272.0,
+      "bounce_rate": 50.0,
+      "page_depth": 1.0
     }
   ],
   "search_engines": [
     {
       "engine": "Google",
-      "visits": 71.0
+      "visits": 73.0
     },
     {
       "engine": "Яндекс",
-      "visits": 53.0
+      "visits": 54.0
     },
     {
       "engine": "Bing",
       "visits": 2.0
+    },
+    {
+      "engine": "Mail.ru",
+      "visits": 1.0
     }
   ],
   "top_queries": {
     "last7": [
       {
         "phrase": "лирейт",
-        "visits": 6.0,
+        "visits": 7.0,
         "bounce_rate": 0.0,
-        "page_depth": 2.5,
-        "avg_duration_sec": 189.0
+        "page_depth": 2.57,
+        "avg_duration_sec": 169.0
       },
       {
         "phrase": "ооо лирейт",
@@ -148,6 +152,13 @@
         "bounce_rate": 0.0,
         "page_depth": 3.0,
         "avg_duration_sec": 42.0
+      },
+      {
+        "phrase": "31 класс мгту",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 15.0
       },
       {
         "phrase": "40702810407500006834",
@@ -169,6 +180,13 @@
         "bounce_rate": 0.0,
         "page_depth": 2.0,
         "avg_duration_sec": 34.0
+      },
+      {
+        "phrase": "ведущий производитель можно использовать в рекламе",
+        "visits": 1.0,
+        "bounce_rate": 100.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 0.0
       },
       {
         "phrase": "домен как нематериальный актив",
@@ -218,6 +236,13 @@
         "bounce_rate": 0.0,
         "page_depth": 1.0,
         "avg_duration_sec": 15.0
+      },
+      {
+        "phrase": "лирейт регистрация товарного знака",
+        "visits": 1.0,
+        "bounce_rate": 100.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 1.0
       },
       {
         "phrase": "логотип происхождение",
@@ -293,10 +318,17 @@
     "last28": [
       {
         "phrase": "лирейт",
-        "visits": 25.0,
-        "bounce_rate": 8.0,
-        "page_depth": 3.8,
-        "avg_duration_sec": 174.44
+        "visits": 23.0,
+        "bounce_rate": 0.0,
+        "page_depth": 4.04,
+        "avg_duration_sec": 187.74
+      },
+      {
+        "phrase": "лирейт регистрация товарного знака",
+        "visits": 4.0,
+        "bounce_rate": 25.0,
+        "page_depth": 1.25,
+        "avg_duration_sec": 12.5
       },
       {
         "phrase": "лирейт патентное бюро",
@@ -306,13 +338,6 @@
         "avg_duration_sec": 150.0
       },
       {
-        "phrase": "лирейт регистрация товарного знака",
-        "visits": 3.0,
-        "bounce_rate": 0.0,
-        "page_depth": 1.33,
-        "avg_duration_sec": 16.33
-      },
-      {
         "phrase": "ооо лирейт",
         "visits": 3.0,
         "bounce_rate": 33.33,
@@ -320,11 +345,11 @@
         "avg_duration_sec": 28.0
       },
       {
-        "phrase": "как проверить есть ли такой бренд на вайлдберриз",
-        "visits": 2.0,
-        "bounce_rate": 100.0,
+        "phrase": "31 класс мгту",
+        "visits": 1.0,
+        "bounce_rate": 0.0,
         "page_depth": 1.0,
-        "avg_duration_sec": 0.5
+        "avg_duration_sec": 15.0
       },
       {
         "phrase": "40702810407500006834",
@@ -388,6 +413,13 @@
         "bounce_rate": 0.0,
         "page_depth": 1.0,
         "avg_duration_sec": 16.0
+      },
+      {
+        "phrase": "ведущий производитель можно использовать в рекламе",
+        "visits": 1.0,
+        "bounce_rate": 100.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 0.0
       },
       {
         "phrase": "возражение в ппс на предоставление правовой охраны",
@@ -458,6 +490,13 @@
         "bounce_rate": 0.0,
         "page_depth": 11.0,
         "avg_duration_sec": 44.0
+      },
+      {
+        "phrase": "как проверить есть ли такой бренд на вайлдберриз",
+        "visits": 1.0,
+        "bounce_rate": 100.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 0.0
       },
       {
         "phrase": "как проверить есть ци бренд на вайлдберриз для начинающих",
@@ -579,13 +618,6 @@
         "avg_duration_sec": 28.0
       },
       {
-        "phrase": "образец возражение в патентную палату о против предоставления правовой охраны товарному знаку по пп 2 п 6 ст 1483 гкрф",
-        "visits": 1.0,
-        "bounce_rate": 100.0,
-        "page_depth": 1.0,
-        "avg_duration_sec": 0.0
-      },
-      {
         "phrase": "ооо \"лирейт\"",
         "visits": 1.0,
         "bounce_rate": 0.0,
@@ -657,65 +689,107 @@
       }
     ],
     "note": "Метрика: ym:s:lastSearchPhrase (большая часть фраз скрыта поисковиками)",
-    "brand_share_pct_28d": 59.0
+    "brand_share_pct_28d": 58.5
   },
   "top_landing_pages": {
     "last7": [
       {
         "url": "https://lireate.ru/",
-        "visits": 244.0,
-        "bounce_rate": 53.69,
-        "page_depth": 1.32,
-        "avg_duration_sec": 49.75
+        "visits": 273.0,
+        "bounce_rate": 51.65,
+        "page_depth": 1.24,
+        "avg_duration_sec": 38.56
+      },
+      {
+        "url": "https://lireate.ru/mktu",
+        "visits": 48.0,
+        "bounce_rate": 25.0,
+        "page_depth": 1.08,
+        "avg_duration_sec": 18.27
+      },
+      {
+        "url": "https://lireate.ru/news",
+        "visits": 46.0,
+        "bounce_rate": 28.26,
+        "page_depth": 1.0,
+        "avg_duration_sec": 17.26
+      },
+      {
+        "url": "https://lireate.ru/registraciya_tovarnogo_znaka/",
+        "visits": 38.0,
+        "bounce_rate": 76.32,
+        "page_depth": 1.61,
+        "avg_duration_sec": 83.34
       },
       {
         "url": "https://lireate.ru/sroki_deystviya_avtorskix_prav_na_kakoy_srok_predostavlyayutsya_avtorskie_prava_i_chto_proisxodit_posle_ix_istecheniya/",
         "visits": 38.0,
-        "bounce_rate": 10.53,
-        "page_depth": 1.89,
-        "avg_duration_sec": 111.08
+        "bounce_rate": 13.16,
+        "page_depth": 2.0,
+        "avg_duration_sec": 113.68
+      },
+      {
+        "url": "https://lireate.ru/uslugi/",
+        "visits": 34.0,
+        "bounce_rate": 29.41,
+        "page_depth": 1.0,
+        "avg_duration_sec": 17.21
+      },
+      {
+        "url": "https://lireate.ru/poisk_tovarnyh_znakov/",
+        "visits": 33.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 24.64
+      },
+      {
+        "url": "https://lireate.ru/portfolio",
+        "visits": 32.0,
+        "bounce_rate": 34.38,
+        "page_depth": 1.12,
+        "avg_duration_sec": 19.41
+      },
+      {
+        "url": "https://lireate.ru/reviews",
+        "visits": 30.0,
+        "bounce_rate": 10.0,
+        "page_depth": 1.1,
+        "avg_duration_sec": 27.73
       },
       {
         "url": "https://lireate.ru/vsyo_chto_nuzhno_znat_o_dogovore_franchayzinga_/",
-        "visits": 31.0,
-        "bounce_rate": 12.9,
-        "page_depth": 1.81,
-        "avg_duration_sec": 100.87
-      },
-      {
-        "url": "https://lireate.ru/mktu",
-        "visits": 29.0,
-        "bounce_rate": 34.48,
-        "page_depth": 1.21,
-        "avg_duration_sec": 17.17
-      },
-      {
-        "url": "https://lireate.ru/registraciya_tovarnogo_znaka/",
-        "visits": 29.0,
-        "bounce_rate": 82.76,
-        "page_depth": 1.59,
-        "avg_duration_sec": 29.1
-      },
-      {
-        "url": "https://lireate.ru/news",
-        "visits": 25.0,
-        "bounce_rate": 48.0,
-        "page_depth": 1.0,
-        "avg_duration_sec": 12.6
-      },
-      {
-        "url": "https://lireate.ru/contacts/",
-        "visits": 21.0,
-        "bounce_rate": 90.48,
-        "page_depth": 1.33,
-        "avg_duration_sec": 11.48
+        "visits": 28.0,
+        "bounce_rate": 10.71,
+        "page_depth": 1.82,
+        "avg_duration_sec": 106.54
       },
       {
         "url": "https://lireate.ru/findtz/",
+        "visits": 24.0,
+        "bounce_rate": 100.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 0.0
+      },
+      {
+        "url": "https://lireate.ru/contacts/",
+        "visits": 22.0,
+        "bounce_rate": 86.36,
+        "page_depth": 1.32,
+        "avg_duration_sec": 11.64
+      },
+      {
+        "url": "https://lireate.ru/patent",
+        "visits": 21.0,
+        "bounce_rate": 52.38,
+        "page_depth": 1.0,
+        "avg_duration_sec": 11.52
+      },
+      {
+        "url": "https://lireate.ru/patent_prom_obr",
         "visits": 20.0,
-        "bounce_rate": 95.0,
-        "page_depth": 1.25,
-        "avg_duration_sec": 0.35
+        "bounce_rate": 10.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 22.2
       },
       {
         "url": "http://127.0.0.1:8891/patentnye-zadachi/oplata-patentnyh-poshlin/",
@@ -725,32 +799,11 @@
         "avg_duration_sec": 38.11
       },
       {
-        "url": "https://lireate.ru/portfolio",
-        "visits": 17.0,
-        "bounce_rate": 58.82,
-        "page_depth": 1.18,
-        "avg_duration_sec": 10.59
-      },
-      {
-        "url": "https://lireate.ru/poisk_tovarnyh_znakov/",
-        "visits": 14.0,
+        "url": "https://lireate.ru/proverka_tovarnogo_znaka_na_unikalnost/",
+        "visits": 12.0,
         "bounce_rate": 0.0,
         "page_depth": 1.0,
-        "avg_duration_sec": 25.14
-      },
-      {
-        "url": "https://lireate.ru/uslugi/",
-        "visits": 14.0,
-        "bounce_rate": 71.43,
-        "page_depth": 1.0,
-        "avg_duration_sec": 7.14
-      },
-      {
-        "url": "https://lireate.ru/patent",
-        "visits": 12.0,
-        "bounce_rate": 91.67,
-        "page_depth": 1.0,
-        "avg_duration_sec": 1.25
+        "avg_duration_sec": 24.33
       },
       {
         "url": "https://lireate.ru/team",
@@ -760,11 +813,18 @@
         "avg_duration_sec": 0.0
       },
       {
-        "url": "https://lireate.ru/12/",
+        "url": "https://lireate.ru/prodlenie_tovarnogo_znaka/",
         "visits": 11.0,
-        "bounce_rate": 54.55,
-        "page_depth": 2.0,
-        "avg_duration_sec": 50.09
+        "bounce_rate": 100.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 0.0
+      },
+      {
+        "url": "https://lireate.ru/12/",
+        "visits": 10.0,
+        "bounce_rate": 60.0,
+        "page_depth": 1.7,
+        "avg_duration_sec": 44.0
       },
       {
         "url": "https://lireate.ru/lichnaya-perepiska-avtorskoe-pravo/",
@@ -788,20 +848,6 @@
         "avg_duration_sec": 1.5
       },
       {
-        "url": "https://lireate.ru/brendyi_stavshie_naricatelnyimi/",
-        "visits": 9.0,
-        "bounce_rate": 33.33,
-        "page_depth": 1.11,
-        "avg_duration_sec": 146.67
-      },
-      {
-        "url": "https://lireate.ru/patent_prom_obr",
-        "visits": 9.0,
-        "bounce_rate": 22.22,
-        "page_depth": 1.0,
-        "avg_duration_sec": 19.44
-      },
-      {
         "url": "https://lireate.ru/patentnye-zadachi/",
         "visits": 9.0,
         "bounce_rate": 88.89,
@@ -809,46 +855,46 @@
         "avg_duration_sec": 92.11
       },
       {
-        "url": "https://lireate.ru/prodlenie_tovarnogo_znaka/",
-        "visits": 9.0,
+        "url": "https://lireate.ru/brendyi_stavshie_naricatelnyimi/",
+        "visits": 7.0,
+        "bounce_rate": 14.29,
+        "page_depth": 1.29,
+        "avg_duration_sec": 176.57
+      },
+      {
+        "url": "https://lireate.ru/dogovor_na_razrabotku_logotipa_kak_poluchit_prava_ot_dizaynera/",
+        "visits": 7.0,
+        "bounce_rate": 28.57,
+        "page_depth": 1.0,
+        "avg_duration_sec": 16.57
+      },
+      {
+        "url": "https://lireate.ru/mozhno_li_pokazyivat_chuzhie_logotipyi_i_emblemyi_v_video_i_na_oblozhkax/",
+        "visits": 7.0,
+        "bounce_rate": 42.86,
+        "page_depth": 1.14,
+        "avg_duration_sec": 17.71
+      },
+      {
+        "url": "https://lireate.ru/27/",
+        "visits": 6.0,
+        "bounce_rate": 66.67,
+        "page_depth": 1.0,
+        "avg_duration_sec": 5.0
+      },
+      {
+        "url": "https://lireate.ru/dogovory/",
+        "visits": 6.0,
         "bounce_rate": 100.0,
         "page_depth": 1.0,
         "avg_duration_sec": 0.0
       },
       {
-        "url": "https://lireate.ru/reviews",
-        "visits": 8.0,
-        "bounce_rate": 12.5,
-        "page_depth": 1.38,
-        "avg_duration_sec": 43.88
-      },
-      {
-        "url": "https://lireate.ru/27/",
-        "visits": 7.0,
-        "bounce_rate": 71.43,
-        "page_depth": 1.0,
-        "avg_duration_sec": 4.29
-      },
-      {
         "url": "https://msk.lireate.ru/",
-        "visits": 7.0,
-        "bounce_rate": 85.71,
-        "page_depth": 1.0,
-        "avg_duration_sec": 2.29
-      },
-      {
-        "url": "https://lireate.ru/kontekstnaya_reklama_i_tovarnyiy_znak_kak_ne_narushit_zakon_i_borotsya_s_narushitelyami/",
         "visits": 6.0,
-        "bounce_rate": 33.33,
+        "bounce_rate": 83.33,
         "page_depth": 1.0,
-        "avg_duration_sec": 14.33
-      },
-      {
-        "url": "https://lireate.ru/mozhno_li_pokazyivat_chuzhie_logotipyi_i_emblemyi_v_video_i_na_oblozhkax/",
-        "visits": 6.0,
-        "bounce_rate": 50.0,
-        "page_depth": 1.17,
-        "avg_duration_sec": 18.17
+        "avg_duration_sec": 2.67
       },
       {
         "url": "https://lireate.ru/ekspertiza_tovarnogo_znaka/",
@@ -856,127 +902,134 @@
         "bounce_rate": 0.0,
         "page_depth": 1.0,
         "avg_duration_sec": 23.8
-      },
-      {
-        "url": "https://lireate.ru/markirovka_importnyix_tovarov_chestnyiy_znak/",
-        "visits": 5.0,
-        "bounce_rate": 20.0,
-        "page_depth": 2.2,
-        "avg_duration_sec": 88.8
-      },
-      {
-        "url": "https://lireate.ru/vyiplata_avtorskogo_voznagrazhdeniya_avtoru_komu_polozheno_i_kak_rasschitat_/",
-        "visits": 5.0,
-        "bounce_rate": 20.0,
-        "page_depth": 2.4,
-        "avg_duration_sec": 152.0
       }
     ],
     "last28": [
       {
         "url": "https://lireate.ru/",
-        "visits": 852.0,
-        "bounce_rate": 42.49,
-        "page_depth": 1.62,
-        "avg_duration_sec": 43.51
+        "visits": 864.0,
+        "bounce_rate": 42.82,
+        "page_depth": 1.61,
+        "avg_duration_sec": 42.76
       },
       {
         "url": "https://lireate.ru/registraciya_tovarnogo_znaka/",
-        "visits": 137.0,
-        "bounce_rate": 64.23,
-        "page_depth": 1.88,
-        "avg_duration_sec": 75.56
+        "visits": 146.0,
+        "bounce_rate": 63.7,
+        "page_depth": 1.87,
+        "avg_duration_sec": 86.82
       },
       {
         "url": "https://lireate.ru/vsyo_chto_nuzhno_znat_o_dogovore_franchayzinga_",
-        "visits": 98.0,
-        "bounce_rate": 5.1,
-        "page_depth": 1.72,
-        "avg_duration_sec": 85.8
-      },
-      {
-        "url": "https://lireate.ru/sroki_deystviya_avtorskix_prav_na_kakoy_srok_predostavlyayutsya_avtorskie_prava_i_chto_proisxodit_posle_ix_istecheniya",
-        "visits": 76.0,
-        "bounce_rate": 13.16,
-        "page_depth": 1.84,
-        "avg_duration_sec": 101.32
+        "visits": 91.0,
+        "bounce_rate": 5.49,
+        "page_depth": 1.75,
+        "avg_duration_sec": 88.25
       },
       {
         "url": "https://lireate.ru/uslugi/",
-        "visits": 62.0,
-        "bounce_rate": 88.71,
-        "page_depth": 1.03,
-        "avg_duration_sec": 2.23
+        "visits": 82.0,
+        "bounce_rate": 67.07,
+        "page_depth": 1.02,
+        "avg_duration_sec": 7.6
+      },
+      {
+        "url": "https://lireate.ru/sroki_deystviya_avtorskix_prav_na_kakoy_srok_predostavlyayutsya_avtorskie_prava_i_chto_proisxodit_posle_ix_istecheniya",
+        "visits": 74.0,
+        "bounce_rate": 13.51,
+        "page_depth": 1.82,
+        "avg_duration_sec": 99.26
       },
       {
         "url": "https://lireate.ru/findtz/",
-        "visits": 59.0,
-        "bounce_rate": 66.1,
-        "page_depth": 4.37,
-        "avg_duration_sec": 191.49
-      },
-      {
-        "url": "https://lireate.ru/brendyi_stavshie_naricatelnyimi",
-        "visits": 42.0,
-        "bounce_rate": 7.14,
-        "page_depth": 1.17,
-        "avg_duration_sec": 52.48
+        "visits": 65.0,
+        "bounce_rate": 69.23,
+        "page_depth": 4.06,
+        "avg_duration_sec": 173.82
       },
       {
         "url": "https://lireate.ru/mktu",
-        "visits": 42.0,
-        "bounce_rate": 42.86,
-        "page_depth": 1.55,
-        "avg_duration_sec": 14.02
-      },
-      {
-        "url": "https://lireate.ru/sroki_deystviya_avtorskix_prav_na_kakoy_srok_predostavlyayutsya_avtorskie_prava_i_chto_proisxodit_posle_ix_istecheniya/",
-        "visits": 42.0,
-        "bounce_rate": 9.52,
-        "page_depth": 1.95,
-        "avg_duration_sec": 116.57
+        "visits": 62.0,
+        "bounce_rate": 32.26,
+        "page_depth": 1.37,
+        "avg_duration_sec": 16.55
       },
       {
         "url": "https://lireate.ru/news",
-        "visits": 40.0,
-        "bounce_rate": 55.0,
-        "page_depth": 1.18,
-        "avg_duration_sec": 12.0
+        "visits": 61.0,
+        "bounce_rate": 37.7,
+        "page_depth": 1.11,
+        "avg_duration_sec": 15.72
+      },
+      {
+        "url": "https://lireate.ru/sroki_deystviya_avtorskix_prav_na_kakoy_srok_predostavlyayutsya_avtorskie_prava_i_chto_proisxodit_posle_ix_istecheniya/",
+        "visits": 47.0,
+        "bounce_rate": 10.64,
+        "page_depth": 1.98,
+        "avg_duration_sec": 118.98
       },
       {
         "url": "https://lireate.ru/vsyo_chto_nuzhno_znat_o_dogovore_franchayzinga_/",
-        "visits": 37.0,
-        "bounce_rate": 18.92,
+        "visits": 40.0,
+        "bounce_rate": 17.5,
         "page_depth": 1.7,
-        "avg_duration_sec": 89.35
+        "avg_duration_sec": 86.92
       },
       {
-        "url": "https://msk.lireate.ru/",
-        "visits": 33.0,
-        "bounce_rate": 90.91,
-        "page_depth": 1.03,
-        "avg_duration_sec": 38.33
+        "url": "https://lireate.ru/brendyi_stavshie_naricatelnyimi",
+        "visits": 38.0,
+        "bounce_rate": 5.26,
+        "page_depth": 1.16,
+        "avg_duration_sec": 56.21
+      },
+      {
+        "url": "https://lireate.ru/poisk_tovarnyh_znakov/",
+        "visits": 36.0,
+        "bounce_rate": 8.33,
+        "page_depth": 1.0,
+        "avg_duration_sec": 22.58
       },
       {
         "url": "https://lireate.ru/patent",
-        "visits": 26.0,
-        "bounce_rate": 84.62,
-        "page_depth": 1.04,
-        "avg_duration_sec": 43.81
+        "visits": 35.0,
+        "bounce_rate": 62.86,
+        "page_depth": 1.03,
+        "avg_duration_sec": 39.03
+      },
+      {
+        "url": "https://lireate.ru/portfolio",
+        "visits": 32.0,
+        "bounce_rate": 34.38,
+        "page_depth": 1.12,
+        "avg_duration_sec": 19.41
+      },
+      {
+        "url": "https://msk.lireate.ru/",
+        "visits": 32.0,
+        "bounce_rate": 90.62,
+        "page_depth": 1.03,
+        "avg_duration_sec": 39.53
+      },
+      {
+        "url": "https://lireate.ru/reviews",
+        "visits": 30.0,
+        "bounce_rate": 10.0,
+        "page_depth": 1.1,
+        "avg_duration_sec": 27.73
       },
       {
         "url": "https://lireate.ru/vyiplata_avtorskogo_voznagrazhdeniya_avtoru_komu_polozheno_i_kak_rasschitat_",
-        "visits": 26.0,
+        "visits": 25.0,
         "bounce_rate": 0.0,
         "page_depth": 1.88,
-        "avg_duration_sec": 107.42
+        "avg_duration_sec": 109.28
       },
       {
-        "url": "https://lireate.ru/kuda_podat_vozrazhenie_protiv_registracii_tovarnogo_znaka",
-        "visits": 25.0,
-        "bounce_rate": 8.0,
-        "page_depth": 2.16,
-        "avg_duration_sec": 81.44
+        "url": "https://lireate.ru/patent_prom_obr",
+        "visits": 24.0,
+        "bounce_rate": 20.83,
+        "page_depth": 1.62,
+        "avg_duration_sec": 114.75
       },
       {
         "url": "https://lireate.ru/kontaktyi",
@@ -986,11 +1039,11 @@
         "avg_duration_sec": 38.65
       },
       {
-        "url": "https://lireate.ru/kontekstnaya_reklama_i_tovarnyiy_znak_kak_ne_narushit_zakon_i_borotsya_s_narushitelyami",
+        "url": "https://lireate.ru/kuda_podat_vozrazhenie_protiv_registracii_tovarnogo_znaka",
         "visits": 23.0,
-        "bounce_rate": 30.43,
-        "page_depth": 1.0,
-        "avg_duration_sec": 12.43
+        "bounce_rate": 8.7,
+        "page_depth": 2.22,
+        "avg_duration_sec": 86.91
       },
       {
         "url": "https://lireate.ru/19",
@@ -1008,10 +1061,17 @@
       },
       {
         "url": "https://lireate.ru/contacts/",
-        "visits": 21.0,
-        "bounce_rate": 90.48,
-        "page_depth": 1.33,
-        "avg_duration_sec": 11.48
+        "visits": 22.0,
+        "bounce_rate": 86.36,
+        "page_depth": 1.32,
+        "avg_duration_sec": 11.64
+      },
+      {
+        "url": "https://lireate.ru/kontekstnaya_reklama_i_tovarnyiy_znak_kak_ne_narushit_zakon_i_borotsya_s_narushitelyami",
+        "visits": 22.0,
+        "bounce_rate": 31.82,
+        "page_depth": 1.0,
+        "avg_duration_sec": 12.32
       },
       {
         "url": "http://127.0.0.1:8891/patentnye-zadachi/oplata-patentnyh-poshlin/",
@@ -1035,20 +1095,6 @@
         "avg_duration_sec": 133.74
       },
       {
-        "url": "https://lireate.ru/poisk_tovarnyh_znakov/",
-        "visits": 17.0,
-        "bounce_rate": 17.65,
-        "page_depth": 1.0,
-        "avg_duration_sec": 20.71
-      },
-      {
-        "url": "https://lireate.ru/portfolio",
-        "visits": 17.0,
-        "bounce_rate": 58.82,
-        "page_depth": 1.18,
-        "avg_duration_sec": 10.59
-      },
-      {
         "url": "http://127.0.0.1:8799/pages/partners/_preview/rendered-preview.html",
         "visits": 16.0,
         "bounce_rate": 100.0,
@@ -1056,18 +1102,18 @@
         "avg_duration_sec": 0.0
       },
       {
+        "url": "https://lireate.ru/brendyi_stavshie_naricatelnyimi/",
+        "visits": 15.0,
+        "bounce_rate": 33.33,
+        "page_depth": 1.2,
+        "avg_duration_sec": 95.73
+      },
+      {
         "url": "https://lireate.ru/markirovka_importnyix_tovarov_chestnyiy_znak",
         "visits": 15.0,
         "bounce_rate": 6.67,
         "page_depth": 1.6,
         "avg_duration_sec": 129.27
-      },
-      {
-        "url": "https://lireate.ru/registraciya_tovarnogo_znaka",
-        "visits": 14.0,
-        "bounce_rate": 42.86,
-        "page_depth": 1.07,
-        "avg_duration_sec": 57.71
       },
       {
         "url": "https://lireate.ru/team",
@@ -1084,18 +1130,11 @@
         "avg_duration_sec": 49.54
       },
       {
-        "url": "https://lireate.ru/patent_prom_obr",
+        "url": "https://lireate.ru/prodlenie_tovarnogo_znaka/",
         "visits": 13.0,
-        "bounce_rate": 38.46,
-        "page_depth": 2.15,
-        "avg_duration_sec": 191.15
-      },
-      {
-        "url": "https://lireate.ru/brendyi_stavshie_naricatelnyimi/",
-        "visits": 12.0,
-        "bounce_rate": 41.67,
-        "page_depth": 1.17,
-        "avg_duration_sec": 113.42
+        "bounce_rate": 92.31,
+        "page_depth": 1.0,
+        "avg_duration_sec": 0.0
       },
       {
         "url": "https://lireate.ru/poisk_tovarnyh_znakov/?nc=1",
@@ -1105,6 +1144,13 @@
         "avg_duration_sec": 8.33
       },
       {
+        "url": "https://lireate.ru/proverka_tovarnogo_znaka_na_unikalnost/",
+        "visits": 12.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 24.33
+      },
+      {
         "url": "https://lireate.ru/o_kompanii",
         "visits": 11.0,
         "bounce_rate": 90.91,
@@ -1112,11 +1158,11 @@
         "avg_duration_sec": 4.18
       },
       {
-        "url": "https://lireate.ru/prodlenie_tovarnogo_znaka/",
+        "url": "https://lireate.ru/registraciya_tovarnogo_znaka",
         "visits": 11.0,
-        "bounce_rate": 90.91,
+        "bounce_rate": 45.45,
         "page_depth": 1.0,
-        "avg_duration_sec": 0.0
+        "avg_duration_sec": 22.64
       },
       {
         "url": "https://lireate.ru/lichnaya-perepiska-avtorskoe-pravo/",
@@ -1138,6 +1184,20 @@
         "bounce_rate": 33.33,
         "page_depth": 2.67,
         "avg_duration_sec": 4.11
+      },
+      {
+        "url": "https://lireate.ru/kak-zaregistrirovat-tovarnyy-znak-samostoyatelno-2026/",
+        "visits": 9.0,
+        "bounce_rate": 66.67,
+        "page_depth": 2.11,
+        "avg_duration_sec": 49.67
+      },
+      {
+        "url": "https://lireate.ru/kontekstnaya_reklama_i_tovarnyiy_znak_kak_ne_narushit_zakon_i_borotsya_s_narushitelyami/",
+        "visits": 9.0,
+        "bounce_rate": 22.22,
+        "page_depth": 1.0,
+        "avg_duration_sec": 17.0
       },
       {
         "url": "https://lireate.ru/patentnye-zadachi/",
@@ -1175,6 +1235,13 @@
         "avg_duration_sec": 132.38
       },
       {
+        "url": "https://lireate.ru/dogovory/",
+        "visits": 8.0,
+        "bounce_rate": 100.0,
+        "page_depth": 1.0,
+        "avg_duration_sec": 0.0
+      },
+      {
         "url": "https://lireate.ru/ekspertiza_tovarnogo_znaka/",
         "visits": 8.0,
         "bounce_rate": 37.5,
@@ -1182,97 +1249,62 @@
         "avg_duration_sec": 14.88
       },
       {
-        "url": "https://lireate.ru/kak-zaregistrirovat-tovarnyy-znak-samostoyatelno-2026/",
-        "visits": 8.0,
-        "bounce_rate": 62.5,
-        "page_depth": 2.25,
-        "avg_duration_sec": 55.88
-      },
-      {
         "url": "https://lireate.ru/mogu_li_ya_vyikladyivat_sobstvennyiy_perevod_zarubezhnogo_proizvedeniya",
         "visits": 8.0,
         "bounce_rate": 37.5,
         "page_depth": 1.0,
         "avg_duration_sec": 8.88
-      },
-      {
-        "url": "https://lireate.ru/mozhno_li_pokazyivat_chuzhie_logotipyi_i_emblemyi_v_video_i_na_oblozhkax",
-        "visits": 8.0,
-        "bounce_rate": 12.5,
-        "page_depth": 1.12,
-        "avg_duration_sec": 11.5
-      },
-      {
-        "url": "https://lireate.ru/reviews",
-        "visits": 8.0,
-        "bounce_rate": 12.5,
-        "page_depth": 1.38,
-        "avg_duration_sec": 43.88
-      },
-      {
-        "url": "https://lireate.ru/?v=design2",
-        "visits": 7.0,
-        "bounce_rate": 100.0,
-        "page_depth": 1.0,
-        "avg_duration_sec": 0.0
-      },
-      {
-        "url": "https://lireate.ru/?v=design3",
-        "visits": 7.0,
-        "bounce_rate": 100.0,
-        "page_depth": 1.0,
-        "avg_duration_sec": 0.0
       }
     ],
     "organic_last28": [
       {
         "url": "https://lireate.ru/",
-        "visits": 102.0,
-        "bounce_rate": 15.69,
-        "page_depth": 2.81,
-        "avg_duration_sec": 139.32
+        "visits": 101.0,
+        "bounce_rate": 14.85,
+        "page_depth": 2.82,
+        "avg_duration_sec": 140.17
       },
       {
         "url": "https://lireate.ru/vsyo_chto_nuzhno_znat_o_dogovore_franchayzinga_",
-        "visits": 53.0,
-        "bounce_rate": 3.77,
-        "page_depth": 1.66,
-        "avg_duration_sec": 89.04
+        "visits": 48.0,
+        "bounce_rate": 4.17,
+        "page_depth": 1.67,
+        "avg_duration_sec": 91.1
       },
       {
         "url": "https://lireate.ru/sroki_deystviya_avtorskix_prav_na_kakoy_srok_predostavlyayutsya_avtorskie_prava_i_chto_proisxodit_posle_ix_istecheniya",
-        "visits": 44.0,
-        "bounce_rate": 2.27,
-        "page_depth": 1.98,
-        "avg_duration_sec": 120.73
-      },
-      {
-        "url": "https://lireate.ru/brendyi_stavshie_naricatelnyimi",
-        "visits": 24.0,
-        "bounce_rate": 4.17,
-        "page_depth": 1.25,
-        "avg_duration_sec": 26.71
+        "visits": 42.0,
+        "bounce_rate": 2.38,
+        "page_depth": 1.95,
+        "avg_duration_sec": 118.02
       },
       {
         "url": "https://lireate.ru/sroki_deystviya_avtorskix_prav_na_kakoy_srok_predostavlyayutsya_avtorskie_prava_i_chto_proisxodit_posle_ix_istecheniya/",
-        "visits": 21.0,
-        "bounce_rate": 0.0,
-        "page_depth": 2.05,
-        "avg_duration_sec": 134.0
+        "visits": 24.0,
+        "bounce_rate": 4.17,
+        "page_depth": 2.04,
+        "avg_duration_sec": 128.96
       },
       {
-        "url": "https://lireate.ru/kuda_podat_vozrazhenie_protiv_registracii_tovarnogo_znaka",
-        "visits": 18.0,
-        "bounce_rate": 11.11,
-        "page_depth": 2.11,
-        "avg_duration_sec": 81.39
+        "url": "https://lireate.ru/brendyi_stavshie_naricatelnyimi",
+        "visits": 20.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.25,
+        "avg_duration_sec": 28.65
       },
       {
         "url": "https://lireate.ru/vsyo_chto_nuzhno_znat_o_dogovore_franchayzinga_/",
+        "visits": 19.0,
+        "bounce_rate": 5.26,
+        "page_depth": 1.79,
+        "avg_duration_sec": 95.89
+      },
+      {
+        "url": "https://lireate.ru/kuda_podat_vozrazhenie_protiv_registracii_tovarnogo_znaka",
         "visits": 17.0,
-        "bounce_rate": 5.88,
-        "page_depth": 1.76,
-        "avg_duration_sec": 98.53
+        "bounce_rate": 11.76,
+        "page_depth": 2.12,
+        "avg_duration_sec": 84.88
       },
       {
         "url": "https://lireate.ru/vyiplata_avtorskogo_voznagrazhdeniya_avtoru_komu_polozheno_i_kak_rasschitat_",
@@ -1282,18 +1314,18 @@
         "avg_duration_sec": 125.44
       },
       {
+        "url": "https://lireate.ru/brendyi_stavshie_naricatelnyimi/",
+        "visits": 12.0,
+        "bounce_rate": 25.0,
+        "page_depth": 1.17,
+        "avg_duration_sec": 25.58
+      },
+      {
         "url": "https://lireate.ru/markirovka_importnyix_tovarov_chestnyiy_znak",
         "visits": 12.0,
         "bounce_rate": 0.0,
         "page_depth": 1.75,
         "avg_duration_sec": 159.08
-      },
-      {
-        "url": "https://lireate.ru/brendyi_stavshie_naricatelnyimi/",
-        "visits": 9.0,
-        "bounce_rate": 33.33,
-        "page_depth": 1.11,
-        "avg_duration_sec": 25.78
       },
       {
         "url": "https://lireate.ru/mogu_li_ya_vyikladyivat_sobstvennyiy_perevod_zarubezhnogo_proizvedeniya",
@@ -1324,6 +1356,20 @@
         "avg_duration_sec": 192.8
       },
       {
+        "url": "https://lireate.ru/mogu_li_ya_vyikladyivat_sobstvennyiy_perevod_zarubezhnogo_proizvedeniya/",
+        "visits": 5.0,
+        "bounce_rate": 0.0,
+        "page_depth": 1.2,
+        "avg_duration_sec": 206.0
+      },
+      {
+        "url": "https://lireate.ru/mozhno_li_pokazyivat_chuzhie_logotipyi_i_emblemyi_v_video_i_na_oblozhkax/",
+        "visits": 5.0,
+        "bounce_rate": 20.0,
+        "page_depth": 1.2,
+        "avg_duration_sec": 24.8
+      },
+      {
         "url": "https://lireate.ru/opredelyam_raznicu_mezhdu_patentom_tovarnyim_znakom_i_avtorskim_pravom",
         "visits": 5.0,
         "bounce_rate": 0.0,
@@ -1352,27 +1398,6 @@
         "avg_duration_sec": 15.0
       },
       {
-        "url": "https://lireate.ru/mogu_li_ya_vyikladyivat_sobstvennyiy_perevod_zarubezhnogo_proizvedeniya/",
-        "visits": 4.0,
-        "bounce_rate": 0.0,
-        "page_depth": 1.25,
-        "avg_duration_sec": 253.75
-      },
-      {
-        "url": "https://lireate.ru/mozhno_li_pokazyivat_chuzhie_logotipyi_i_emblemyi_v_video_i_na_oblozhkax/",
-        "visits": 4.0,
-        "bounce_rate": 25.0,
-        "page_depth": 1.25,
-        "avg_duration_sec": 27.25
-      },
-      {
-        "url": "https://lireate.ru/nuzhno_li_registrirovat_brend_dlya_vayldberriz",
-        "visits": 4.0,
-        "bounce_rate": 75.0,
-        "page_depth": 1.25,
-        "avg_duration_sec": 145.0
-      },
-      {
         "url": "https://lireate.ru/vyiplata_avtorskogo_voznagrazhdeniya_avtoru_komu_polozheno_i_kak_rasschitat_/",
         "visits": 4.0,
         "bounce_rate": 25.0,
@@ -1394,6 +1419,13 @@
         "avg_duration_sec": 24.33
       },
       {
+        "url": "https://lireate.ru/istoriya_proisxozhdeniya_logotipa/",
+        "visits": 3.0,
+        "bounce_rate": 66.67,
+        "page_depth": 1.0,
+        "avg_duration_sec": 4.67
+      },
+      {
         "url": "https://lireate.ru/konkurentyi_zaregistrirovali_tovarnyiy_znak_ranshe_kak_deystvovat_chtobyi_vernut_brend",
         "visits": 3.0,
         "bounce_rate": 0.0,
@@ -1408,6 +1440,20 @@
         "avg_duration_sec": 103.0
       },
       {
+        "url": "https://lireate.ru/kuda_podat_vozrazhenie_protiv_registracii_tovarnogo_znaka/",
+        "visits": 3.0,
+        "bounce_rate": 0.0,
+        "page_depth": 2.0,
+        "avg_duration_sec": 100.0
+      },
+      {
+        "url": "https://lireate.ru/nuzhno_li_registrirovat_brend_dlya_vayldberriz",
+        "visits": 3.0,
+        "bounce_rate": 66.67,
+        "page_depth": 1.33,
+        "avg_duration_sec": 193.0
+      },
+      {
         "url": "https://lireate.ru/partners",
         "visits": 3.0,
         "bounce_rate": 33.33,
@@ -1420,20 +1466,6 @@
         "bounce_rate": 0.0,
         "page_depth": 1.0,
         "avg_duration_sec": 40.0
-      },
-      {
-        "url": "https://lireate.ru/chto_delat_esli_tovarnyiy_znak_zanyat",
-        "visits": 2.0,
-        "bounce_rate": 0.0,
-        "page_depth": 1.0,
-        "avg_duration_sec": 15.0
-      },
-      {
-        "url": "https://lireate.ru/dorabotka_tovarnogo_znaka_kak_dorabotat_logotip_i_naimenovanie/",
-        "visits": 2.0,
-        "bounce_rate": 0.0,
-        "page_depth": 2.5,
-        "avg_duration_sec": 446.0
       }
     ]
   },
@@ -1443,19 +1475,19 @@
       "name": "Заявка",
       "type": "url",
       "last7": {
-        "reaches": 2.0,
-        "conversion_rate": 0.26,
-        "visits": 2.0
+        "reaches": 1.0,
+        "conversion_rate": 0.1,
+        "visits": 1.0
       },
       "prev7": {
-        "reaches": 16.0,
-        "conversion_rate": 0.97,
-        "visits": 16.0
+        "reaches": 17.0,
+        "conversion_rate": 1.14,
+        "visits": 17.0
       },
       "last28": {
-        "reaches": 28.0,
-        "conversion_rate": 0.66,
-        "visits": 26.0
+        "reaches": 29.0,
+        "conversion_rate": 0.65,
+        "visits": 27.0
       }
     },
     {
@@ -1464,18 +1496,18 @@
       "type": "form",
       "last7": {
         "reaches": 5.0,
-        "conversion_rate": 0.64,
+        "conversion_rate": 0.5,
         "visits": 5.0
       },
       "prev7": {
-        "reaches": 8.0,
-        "conversion_rate": 0.3,
-        "visits": 5.0
+        "reaches": 6.0,
+        "conversion_rate": 0.2,
+        "visits": 3.0
       },
       "last28": {
-        "reaches": 30.0,
+        "reaches": 31.0,
         "conversion_rate": 0.51,
-        "visits": 20.0
+        "visits": 21.0
       }
     },
     {
@@ -1484,12 +1516,12 @@
       "type": "social",
       "last7": {
         "reaches": 2.0,
-        "conversion_rate": 0.26,
+        "conversion_rate": 0.2,
         "visits": 2.0
       },
       "prev7": {
         "reaches": 2.0,
-        "conversion_rate": 0.12,
+        "conversion_rate": 0.13,
         "visits": 2.0
       },
       "last28": {
@@ -1509,7 +1541,7 @@
       },
       "prev7": {
         "reaches": 1.0,
-        "conversion_rate": 0.06,
+        "conversion_rate": 0.07,
         "visits": 1.0
       },
       "last28": {
@@ -1523,19 +1555,19 @@
       "name": "Автоцель: клик по номеру телефона",
       "type": "phone",
       "last7": {
-        "reaches": 1.0,
-        "conversion_rate": 0.13,
-        "visits": 1.0
+        "reaches": 3.0,
+        "conversion_rate": 0.3,
+        "visits": 3.0
       },
       "prev7": {
         "reaches": 10.0,
-        "conversion_rate": 0.37,
+        "conversion_rate": 0.4,
         "visits": 6.0
       },
       "last28": {
-        "reaches": 28.0,
-        "conversion_rate": 0.41,
-        "visits": 16.0
+        "reaches": 30.0,
+        "conversion_rate": 0.44,
+        "visits": 18.0
       }
     },
     {
@@ -1544,7 +1576,7 @@
       "type": "email",
       "last7": {
         "reaches": 1.0,
-        "conversion_rate": 0.13,
+        "conversion_rate": 0.1,
         "visits": 1.0
       },
       "prev7": {
@@ -1563,19 +1595,19 @@
       "name": "Автоцель: переход в мессенджер",
       "type": "messenger",
       "last7": {
-        "reaches": 8.0,
-        "conversion_rate": 0.89,
-        "visits": 7.0
+        "reaches": 7.0,
+        "conversion_rate": 0.6,
+        "visits": 6.0
       },
       "prev7": {
-        "reaches": 29.0,
-        "conversion_rate": 1.04,
-        "visits": 17.0
+        "reaches": 28.0,
+        "conversion_rate": 1.08,
+        "visits": 16.0
       },
       "last28": {
-        "reaches": 72.0,
-        "conversion_rate": 1.4,
-        "visits": 55.0
+        "reaches": 71.0,
+        "conversion_rate": 1.31,
+        "visits": 54.0
       }
     },
     {
@@ -1584,12 +1616,12 @@
       "type": "search",
       "last7": {
         "reaches": 1.0,
-        "conversion_rate": 0.13,
+        "conversion_rate": 0.1,
         "visits": 1.0
       },
       "prev7": {
         "reaches": 3.0,
-        "conversion_rate": 0.18,
+        "conversion_rate": 0.2,
         "visits": 3.0
       },
       "last28": {
@@ -1603,19 +1635,19 @@
       "name": "Автоцель: заполнил контактные данные",
       "type": "contact_data",
       "last7": {
-        "reaches": 5.0,
-        "conversion_rate": 0.64,
-        "visits": 5.0
+        "reaches": 4.0,
+        "conversion_rate": 0.4,
+        "visits": 4.0
       },
       "prev7": {
         "reaches": 5.0,
-        "conversion_rate": 0.3,
+        "conversion_rate": 0.34,
         "visits": 5.0
       },
       "last28": {
-        "reaches": 16.0,
+        "reaches": 17.0,
         "conversion_rate": 0.41,
-        "visits": 16.0
+        "visits": 17.0
       }
     },
     {
@@ -1624,17 +1656,17 @@
       "type": "messenger",
       "last7": {
         "reaches": 3.0,
-        "conversion_rate": 0.38,
+        "conversion_rate": 0.3,
         "visits": 3.0
       },
       "prev7": {
-        "reaches": 15.0,
-        "conversion_rate": 0.73,
-        "visits": 12.0
+        "reaches": 14.0,
+        "conversion_rate": 0.74,
+        "visits": 11.0
       },
       "last28": {
         "reaches": 25.0,
-        "conversion_rate": 0.56,
+        "conversion_rate": 0.53,
         "visits": 22.0
       }
     },
@@ -1644,18 +1676,18 @@
       "type": "contact_data_sent",
       "last7": {
         "reaches": 3.0,
-        "conversion_rate": 0.38,
+        "conversion_rate": 0.3,
         "visits": 3.0
       },
       "prev7": {
-        "reaches": 4.0,
-        "conversion_rate": 0.24,
-        "visits": 4.0
+        "reaches": 3.0,
+        "conversion_rate": 0.2,
+        "visits": 3.0
       },
       "last28": {
-        "reaches": 13.0,
-        "conversion_rate": 0.33,
-        "visits": 13.0
+        "reaches": 14.0,
+        "conversion_rate": 0.34,
+        "visits": 14.0
       }
     },
     {
@@ -1663,9 +1695,9 @@
       "name": "Заявка с сайта (JS)",
       "type": "action",
       "last7": {
-        "reaches": 2.0,
-        "conversion_rate": 0.26,
-        "visits": 2.0
+        "reaches": 3.0,
+        "conversion_rate": 0.3,
+        "visits": 3.0
       },
       "prev7": {
         "reaches": 0.0,
@@ -1673,9 +1705,9 @@
         "visits": 0.0
       },
       "last28": {
-        "reaches": 2.0,
-        "conversion_rate": 0.05,
-        "visits": 2.0
+        "reaches": 3.0,
+        "conversion_rate": 0.07,
+        "visits": 3.0
       }
     },
     {
@@ -1689,12 +1721,12 @@
       },
       "prev7": {
         "reaches": 1.0,
-        "conversion_rate": 0.06,
+        "conversion_rate": 0.07,
         "visits": 1.0
       },
       "last28": {
         "reaches": 1.0,
-        "conversion_rate": 0.03,
+        "conversion_rate": 0.02,
         "visits": 1.0
       }
     },
@@ -1704,7 +1736,7 @@
       "type": "action",
       "last7": {
         "reaches": 2.0,
-        "conversion_rate": 0.13,
+        "conversion_rate": 0.1,
         "visits": 1.0
       },
       "prev7": {
@@ -1714,7 +1746,7 @@
       },
       "last28": {
         "reaches": 2.0,
-        "conversion_rate": 0.03,
+        "conversion_rate": 0.02,
         "visits": 1.0
       }
     }
@@ -1724,14 +1756,14 @@
     "goal_name": "Заявка",
     "note": "Цель «Заявка» срабатывает на URL со «spasibo». Исключены прямые заходы на /spasibo и служебные проверки форм (?nc=, ?qa=).",
     "raw_reaches": {
-      "last7": 2.0,
-      "prev7": 16.0,
-      "last28": 28.0
+      "last7": 1.0,
+      "prev7": 17.0,
+      "last28": 29.0
     },
     "real_reaches": {
-      "last7": 2.0,
-      "prev7": 1.0,
-      "last28": 11.0
+      "last7": 1.0,
+      "prev7": 2.0,
+      "last28": 12.0
     },
     "excluded_tests": {
       "last7": 0,
@@ -1741,20 +1773,20 @@
     "real_events": {
       "last7": [
         {
+          "date": "2026-11-19",
+          "start_url": "https://lireate.ru/",
+          "city": "Санкт-Петербург",
+          "source": "Переходы из поисковых систем",
+          "reaches": 1.0
+        }
+      ],
+      "prev7": [
+        {
           "date": "2026-11-12",
           "start_url": "https://lireate.ru/",
           "city": "Подольск",
           "source": "Прямые заходы",
           "reaches": 2.0
-        }
-      ],
-      "prev7": [
-        {
-          "date": "2026-11-05",
-          "start_url": "https://lireate.ru/registraciya_tovarnogo_znaka/?etext=2202.geBS8KaiObTS6hxdmf7j8RLWLH15nOurjsazlmAMRaq9D4mvRra8k4Ys5NhLZQQe8q3tA6UW5m-_AZ7lNxse8-3H2pee8r_iQWKxRwl-CBprvhHernl6PmnF1a5a5NxwZXhjaWNtaXhtcnp5dXpmdQ.cf178f7e0aafe2a0dd129fbb076214a6c12744ba",
-          "city": "Лыткарино",
-          "source": "Переходы по рекламе",
-          "reaches": 1.0
         }
       ],
       "last28": [
@@ -1801,6 +1833,13 @@
           "reaches": 1.0
         },
         {
+          "date": "2026-11-05",
+          "start_url": "https://lireate.ru/registraciya_tovarnogo_znaka/?etext=2202.geBS8KaiObTS6hxdmf7j8RLWLH15nOurjsazlmAMRaq9D4mvRra8k4Ys5NhLZQQe8q3tA6UW5m-_AZ7lNxse8-3H2pee8r_iQWKxRwl-CBprvhHernl6PmnF1a5a5NxwZXhjaWNtaXhtcnp5dXpmdQ.cf178f7e0aafe2a0dd129fbb076214a6c12744ba",
+          "city": "Лыткарино",
+          "source": "Переходы по рекламе",
+          "reaches": 1.0
+        },
+        {
           "date": "2026-11-12",
           "start_url": "https://lireate.ru/",
           "city": "Подольск",
@@ -1808,10 +1847,10 @@
           "reaches": 2.0
         },
         {
-          "date": "2026-11-05",
-          "start_url": "https://lireate.ru/registraciya_tovarnogo_znaka/?etext=2202.geBS8KaiObTS6hxdmf7j8RLWLH15nOurjsazlmAMRaq9D4mvRra8k4Ys5NhLZQQe8q3tA6UW5m-_AZ7lNxse8-3H2pee8r_iQWKxRwl-CBprvhHernl6PmnF1a5a5NxwZXhjaWNtaXhtcnp5dXpmdQ.cf178f7e0aafe2a0dd129fbb076214a6c12744ba",
-          "city": "Лыткарино",
-          "source": "Переходы по рекламе",
+          "date": "2026-11-19",
+          "start_url": "https://lireate.ru/",
+          "city": "Санкт-Петербург",
+          "source": "Переходы из поисковых систем",
           "reaches": 1.0
         }
       ]
@@ -1908,8 +1947,8 @@
       ]
     },
     "real_wow": {
-      "abs": 1.0,
-      "pct": 100.0
+      "abs": -1.0,
+      "pct": -50.0
     }
   },
   "webmaster": {
@@ -3535,8 +3574,23 @@
         "indicators": {}
       },
       "search_urls_in_search": {
-        "count": 376,
+        "count": 379,
         "samples": [
+          {
+            "url": "https://lireate.ru/materialnaya_kompensaciya_za_krazhu_kontenta/",
+            "last_access": "2026-11-18T15:08:54.000+03:00",
+            "title": "Материальная компенсация за кражу контента"
+          },
+          {
+            "url": "https://lireate.ru/o_kompanii",
+            "last_access": "2026-11-18T11:40:46.000+03:00",
+            "title": "О компании Lireate"
+          },
+          {
+            "url": "https://lireate.ru/portfolio",
+            "last_access": "2026-11-18T11:40:29.000+03:00",
+            "title": "Портфолио компании Lireate"
+          },
           {
             "url": "https://lireate.ru/",
             "last_access": "2026-11-12T06:59:21.000+03:00",
@@ -4021,34 +4075,29 @@
             "url": "https://lireate.ru/dogovoryi_ob_otchuzhdeniilicenzii_tovarnyix_znakov_obyazatelnaya_gosregistraciya_v_rospatente__inache_prava_ne_perexodyat",
             "last_access": "2026-09-24T11:34:07.000+03:00",
             "title": "Договоры об отчуждении/лицензии товарных знаков: обязательная госрегистрация в Роспатенте — иначе права не переходят"
-          },
-          {
-            "url": "https://lireate.ru/avtorskoe_pravo_na_kontent_v_socsetyax_vozmozhnosti_i_problemyi_zaschityi_polzovatelskogo_kontenta",
-            "last_access": "2026-09-24T11:28:27.000+03:00",
-            "title": "Авторское право на контент в соцсетях: Возможности и проблемы защиты пользовательского контента"
-          },
-          {
-            "url": "https://lireate.ru/registraciya_tovarnogo_znaka_na_fizicheskoe_lico",
-            "last_access": "2026-09-24T08:37:32.000+03:00",
-            "title": "Регистрация товарного знака на физическое лицо"
-          },
-          {
-            "url": "https://lireate.ru/osnovaniya_dlya_otkaza_v_registracii_tovarnogo_znaka",
-            "last_access": "2026-09-24T01:56:41.000+03:00",
-            "title": "Основания для отказа в регистрации товарного знака"
           }
         ]
       }
     },
     "errors": {
       "problems": {
+        "URL_ALERT_5XX": {
+          "severity": "CRITICAL",
+          "state": "ABSENT",
+          "last_state_update": null
+        },
         "NO_REGIONS": {
           "severity": "RECOMMENDATION",
           "state": "ABSENT",
           "last_state_update": null
         },
-        "NOT_IN_SPRAV": {
-          "severity": "RECOMMENDATION",
+        "DOCUMENTS_MISSING_TITLE": {
+          "severity": "POSSIBLE_PROBLEM",
+          "state": "ABSENT",
+          "last_state_update": null
+        },
+        "MAIN_MIRROR_IS_NOT_HTTPS": {
+          "severity": "POSSIBLE_PROBLEM",
           "state": "ABSENT",
           "last_state_update": null
         },
@@ -4057,47 +4106,12 @@
           "state": "ABSENT",
           "last_state_update": null
         },
-        "DUPLICATE_CONTENT_ATTRS": {
+        "ERROR_IN_ROBOTS_TXT": {
           "severity": "POSSIBLE_PROBLEM",
           "state": "PRESENT",
-          "last_state_update": "2026-09-30T07:41:42.815+03:00"
-        },
-        "NO_ROBOTS_TXT": {
-          "severity": "POSSIBLE_PROBLEM",
-          "state": "ABSENT",
           "last_state_update": "2026-10-07T20:13:12.000+03:00"
         },
-        "NO_METRIKA_COUNTER_BINDING": {
-          "severity": "POSSIBLE_PROBLEM",
-          "state": "ABSENT",
-          "last_state_update": null
-        },
-        "VIDEOHOST_OFFER_FAILED": {
-          "severity": "POSSIBLE_PROBLEM",
-          "state": "ABSENT",
-          "last_state_update": null
-        },
-        "FAVICON_PROBLEM": {
-          "severity": "RECOMMENDATION",
-          "state": "ABSENT",
-          "last_state_update": null
-        },
-        "NOT_MOBILE_FRIENDLY": {
-          "severity": "RECOMMENDATION",
-          "state": "ABSENT",
-          "last_state_update": "2026-10-07T00:10:46.000+03:00"
-        },
-        "NO_SITEMAP_MODIFICATIONS": {
-          "severity": "POSSIBLE_PROBLEM",
-          "state": "ABSENT",
-          "last_state_update": null
-        },
-        "URL_ALERT_5XX": {
-          "severity": "CRITICAL",
-          "state": "ABSENT",
-          "last_state_update": null
-        },
-        "DOCUMENTS_MISSING_DESCRIPTION": {
+        "DUPLICATE_CONTENT_ATTRS": {
           "severity": "POSSIBLE_PROBLEM",
           "state": "PRESENT",
           "last_state_update": "2026-09-30T07:41:42.815+03:00"
@@ -4107,78 +4121,23 @@
           "state": "ABSENT",
           "last_state_update": null
         },
-        "DOCUMENTS_MISSING_TITLE": {
-          "severity": "POSSIBLE_PROBLEM",
-          "state": "ABSENT",
-          "last_state_update": null
-        },
-        "ERROR_IN_ROBOTS_TXT": {
-          "severity": "POSSIBLE_PROBLEM",
-          "state": "PRESENT",
-          "last_state_update": "2026-10-07T20:13:12.000+03:00"
-        },
         "TOO_MANY_DOMAINS_ON_SEARCH": {
           "severity": "POSSIBLE_PROBLEM",
           "state": "PRESENT",
           "last_state_update": "2026-10-07T13:03:14.448+03:00"
         },
-        "INSIGNIFICANT_CGI_PARAMETER": {
-          "severity": "RECOMMENDATION",
-          "state": "ABSENT",
-          "last_state_update": null
-        },
-        "SLOW_AVG_RESPONSE_TIME": {
-          "severity": "CRITICAL",
-          "state": "ABSENT",
-          "last_state_update": null
-        },
-        "NO_METRIKA_COUNTER_CRAWL_ENABLED": {
+        "ERRORS_IN_SITEMAPS": {
           "severity": "POSSIBLE_PROBLEM",
           "state": "ABSENT",
           "last_state_update": null
         },
-        "CONNECT_FAILED": {
-          "severity": "FATAL",
-          "state": "ABSENT",
-          "last_state_update": null
-        },
-        "NO_SITEMAPS": {
-          "severity": "POSSIBLE_PROBLEM",
-          "state": "ABSENT",
-          "last_state_update": null
-        },
-        "BIG_FAVICON_ABSENT": {
-          "severity": "RECOMMENDATION",
-          "state": "ABSENT",
-          "last_state_update": null
-        },
-        "THREATS": {
-          "severity": "FATAL",
-          "state": "ABSENT",
-          "last_state_update": null
-        },
-        "DUPLICATE_PAGES": {
+        "DOCUMENTS_MISSING_DESCRIPTION": {
           "severity": "POSSIBLE_PROBLEM",
           "state": "PRESENT",
           "last_state_update": "2026-09-30T07:41:42.815+03:00"
         },
-        "MAIN_PAGE_ERROR": {
-          "severity": "FATAL",
-          "state": "ABSENT",
-          "last_state_update": null
-        },
-        "MAIN_MIRROR_IS_NOT_HTTPS": {
+        "NO_METRIKA_COUNTER_BINDING": {
           "severity": "POSSIBLE_PROBLEM",
-          "state": "ABSENT",
-          "last_state_update": null
-        },
-        "URL_ALERT_4XX": {
-          "severity": "RECOMMENDATION",
-          "state": "ABSENT",
-          "last_state_update": null
-        },
-        "DNS_ERROR": {
-          "severity": "FATAL",
           "state": "ABSENT",
           "last_state_update": null
         },
@@ -4187,13 +4146,73 @@
           "state": "ABSENT",
           "last_state_update": null
         },
+        "NOT_IN_SPRAV": {
+          "severity": "RECOMMENDATION",
+          "state": "ABSENT",
+          "last_state_update": null
+        },
+        "FAVICON_PROBLEM": {
+          "severity": "RECOMMENDATION",
+          "state": "ABSENT",
+          "last_state_update": null
+        },
         "MAIN_PAGE_REDIRECTS": {
           "severity": "POSSIBLE_PROBLEM",
           "state": "ABSENT",
           "last_state_update": null
         },
-        "ERRORS_IN_SITEMAPS": {
+        "THREATS": {
+          "severity": "FATAL",
+          "state": "ABSENT",
+          "last_state_update": null
+        },
+        "VIDEOHOST_OFFER_FAILED": {
           "severity": "POSSIBLE_PROBLEM",
+          "state": "ABSENT",
+          "last_state_update": null
+        },
+        "NO_METRIKA_COUNTER_CRAWL_ENABLED": {
+          "severity": "POSSIBLE_PROBLEM",
+          "state": "ABSENT",
+          "last_state_update": null
+        },
+        "NO_SITEMAPS": {
+          "severity": "POSSIBLE_PROBLEM",
+          "state": "ABSENT",
+          "last_state_update": null
+        },
+        "NO_SITEMAP_MODIFICATIONS": {
+          "severity": "POSSIBLE_PROBLEM",
+          "state": "ABSENT",
+          "last_state_update": null
+        },
+        "SLOW_AVG_RESPONSE_TIME": {
+          "severity": "CRITICAL",
+          "state": "ABSENT",
+          "last_state_update": null
+        },
+        "BIG_FAVICON_ABSENT": {
+          "severity": "RECOMMENDATION",
+          "state": "ABSENT",
+          "last_state_update": null
+        },
+        "URL_ALERT_4XX": {
+          "severity": "RECOMMENDATION",
+          "state": "ABSENT",
+          "last_state_update": null
+        },
+        "INSIGNIFICANT_CGI_PARAMETER": {
+          "severity": "RECOMMENDATION",
+          "state": "ABSENT",
+          "last_state_update": null
+        },
+        "NOT_MOBILE_FRIENDLY": {
+          "severity": "RECOMMENDATION",
+          "state": "ABSENT",
+          "last_state_update": "2026-10-07T00:10:46.000+03:00"
+        },
+        "DNS_ERROR": {
+          "severity": "FATAL",
           "state": "ABSENT",
           "last_state_update": null
         },
@@ -4201,6 +4220,26 @@
           "severity": "POSSIBLE_PROBLEM",
           "state": "ABSENT",
           "last_state_update": "2026-10-06T08:07:54.295+03:00"
+        },
+        "DUPLICATE_PAGES": {
+          "severity": "POSSIBLE_PROBLEM",
+          "state": "PRESENT",
+          "last_state_update": "2026-09-30T07:41:42.815+03:00"
+        },
+        "CONNECT_FAILED": {
+          "severity": "FATAL",
+          "state": "ABSENT",
+          "last_state_update": null
+        },
+        "NO_ROBOTS_TXT": {
+          "severity": "POSSIBLE_PROBLEM",
+          "state": "ABSENT",
+          "last_state_update": "2026-10-07T20:13:12.000+03:00"
+        },
+        "MAIN_PAGE_ERROR": {
+          "severity": "FATAL",
+          "state": "ABSENT",
+          "last_state_update": null
         }
       }
     },
@@ -4623,12 +4662,12 @@
         "reason": "много показов, низкий CTR/позиция — доработать сниппет/контент"
       },
       {
-        "query": "как проверить есть ли такой бренд на вайлдберриз",
+        "query": "31 класс мгту",
         "source": "metrika",
-        "visits_28d": 2.0,
-        "bounce_rate": 100.0,
+        "visits_28d": 1.0,
+        "bounce_rate": 0.0,
         "landing": null,
-        "reason": "высокий отказ — страница не отвечает на запрос; короткий визит"
+        "reason": "короткий визит"
       },
       {
         "query": "40702810407500006834",
@@ -4669,6 +4708,14 @@
         "bounce_rate": 0.0,
         "landing": null,
         "reason": "короткий визит"
+      },
+      {
+        "query": "ведущий производитель можно использовать в рекламе",
+        "source": "metrika",
+        "visits_28d": 1.0,
+        "bounce_rate": 100.0,
+        "landing": null,
+        "reason": "высокий отказ — страница не отвечает на запрос; короткий визит"
       },
       {
         "query": "возражение в ппс на предоставление правовой охраны",
@@ -4725,44 +4772,22 @@
         "bounce_rate": 0.0,
         "landing": null,
         "reason": "небрендовый информационный запрос с единичными визитами — потенциал роста позиций"
-      },
-      {
-        "query": "как зарегистрировать свой бренд на озон селлер",
-        "source": "metrika",
-        "visits_28d": 1.0,
-        "bounce_rate": 0.0,
-        "landing": null,
-        "reason": "короткий визит"
       }
     ],
     "article_topic_candidates": [
       {
         "topic": "Товарные знаки: регистрация, возражения, споры",
         "evidence_queries": [
-          "как проверить есть ли такой бренд на вайлдберриз",
           "бренд на вайлдберриз как добавить предположительно",
           "бренды которые стали нарицательными аспирин",
           "возражение в ппс на предоставление правовой охраны",
           "графический товарный знак до степени смешения что можно сделать чтобы убрать смешение",
           "дмотстация товарного знака в видеоролике это нарушение?",
           "как добавить бренд на озон селлер",
-          "как зарегистрировать свой бренд на озон селлер"
+          "как зарегистрировать свой бренд на озон селлер",
+          "как проверить есть ли такой бренд на вайлдберриз"
         ],
-        "query_count": 211
-      },
-      {
-        "topic": "Промышленный дизайн и патенты",
-        "evidence_queries": [
-          "как защитить дизайн упаковки от копий на маркетплейсах",
-          "образец возражение в патентную палату о против предоставления правовой охраны товарному знаку по пп 2 п 6 ст 1483 гкрф",
-          "юрий горбачёв патентное бюро",
-          "регистрация мобильного приложения в роспатенте",
-          "доработка логотипа для регистрации в роспатенте",
-          "патентование дизайна",
-          "доработка логотипа под требования роспатента",
-          "оспаривание товарного знака в роспатенте"
-        ],
-        "query_count": 55
+        "query_count": 210
       },
       {
         "topic": "Логотипы и чужие эмблемы в контенте/видео",
@@ -4775,6 +4800,20 @@
           "доработка логотипа под требования роспатента",
           "защитить логотип",
           "доработка логотипа для товарного знака"
+        ],
+        "query_count": 54
+      },
+      {
+        "topic": "Промышленный дизайн и патенты",
+        "evidence_queries": [
+          "как защитить дизайн упаковки от копий на маркетплейсах",
+          "юрий горбачёв патентное бюро",
+          "регистрация мобильного приложения в роспатенте",
+          "доработка логотипа для регистрации в роспатенте",
+          "патентование дизайна",
+          "доработка логотипа под требования роспатента",
+          "оспаривание товарного знака в роспатенте",
+          "лирейт патентное бюро"
         ],
         "query_count": 54
       },
@@ -4829,9 +4868,9 @@
   "new_topics_status": "есть новые темы",
   "new_topics": [
     {
-      "topic": "Логотипы и чужие эмблемы в контенте/видео",
+      "topic": "Промышленный дизайн и патенты",
       "new_queries": [
-        "на практике логотип йа видео что этэ"
+        "лирейт патентное бюро"
       ]
     }
   ],
@@ -4840,31 +4879,31 @@
     "lireate.com": {
       "totals": {
         "last7": {
-          "visits": 64.0,
-          "users": 58.0,
+          "visits": 54.0,
+          "users": 48.0,
           "bounce_rate": 50.0,
-          "page_depth": 1.03,
-          "avg_duration_sec": 9.22
+          "page_depth": 1.02,
+          "avg_duration_sec": 8.61
         },
         "prev7": {
-          "visits": 146.0,
-          "users": 122.0,
-          "bounce_rate": 47.95,
+          "visits": 150.0,
+          "users": 125.0,
+          "bounce_rate": 48.67,
           "page_depth": 1.07,
-          "avg_duration_sec": 43.64
+          "avg_duration_sec": 37.51
         },
         "last28": {
-          "visits": 1293.0,
-          "users": 1189.0,
-          "bounce_rate": 61.33,
+          "visits": 1288.0,
+          "users": 1185.0,
+          "bounce_rate": 61.34,
           "page_depth": 1.02,
-          "avg_duration_sec": 19.11
+          "avg_duration_sec": 17.91
         }
       },
       "sources_last7": [
         {
           "source": "Прямые заходы",
-          "visits": 36.0
+          "visits": 30.0
         },
         {
           "source": "Переходы по рекламе",
@@ -4872,15 +4911,15 @@
         },
         {
           "source": "Переходы из поисковых систем",
-          "visits": 7.0
-        },
-        {
-          "source": "Внутренние переходы",
-          "visits": 2.0
+          "visits": 5.0
         },
         {
           "source": "Переходы из социальных сетей",
           "visits": 2.0
+        },
+        {
+          "source": "Внутренние переходы",
+          "visits": 1.0
         },
         {
           "source": "Переходы по ссылкам на сайтах",
