@@ -1740,13 +1740,13 @@ python scripts/excalibur_blog_utility_gate.py --topic-id <ID>
 
 ## L73 — Честный знак и импорт для менеджера ВЭД: краткий маршрут обучения
 
-- **status:** new
+- **status:** written
 - **priority:** P2
 - **site:** lireate
 - **lireate_category_id:** 11
 - **lireate_category_name:** Маркировка
 - **slug:** chestnyy-znak-import-ved-obuchenie
-- **h1:** Честный знак при импорте: что знать менеджеру ВЭД до подачи документов
+- **h1:** Честный знак при импорте: как подготовить менеджера ВЭД до подачи документов
 - **primary_query:** честный знак импорт ved обучение
 - **secondary_queries:** честный знак импорт для менеджера вэд; маркировка импорта честный знак; транспортные документы честный знак импорт
 - **search_intent:** how_to
