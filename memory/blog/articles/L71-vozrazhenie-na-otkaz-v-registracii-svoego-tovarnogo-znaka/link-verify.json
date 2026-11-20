@@ -39,8 +39,7 @@
       "method": "HEAD",
       "error": null,
       "kind": "internal_relative",
-      "skipped": false,
-      "checked_url": "https://example.com/otnositelnyie_osnovaniya_otkaza_v_registracii_tz_otvet_ekspertize/"
+      "skipped": false
     },
     {
       "url": "https://example.com/ekspertiza-tovarnyh-znakov-formalnaya-po-suschestvu/",
@@ -49,8 +48,7 @@
       "method": "HEAD",
       "error": null,
       "kind": "internal_relative",
-      "skipped": false,
-      "checked_url": "https://example.com/ekspertiza-tovarnyh-znakov-formalnaya-po-suschestvu/"
+      "skipped": false
     },
     {
       "url": "https://www.klerk.ru/blogs/patent24/683176/",
@@ -95,8 +93,7 @@
       "method": "HEAD",
       "error": null,
       "kind": "internal_relative",
-      "skipped": false,
-      "checked_url": "https://example.com/dorabotka-logotipa-pered-registraciey-tovarnogo-znaka/"
+      "skipped": false
     },
     {
       "url": "https://example.com/vozrazhenie_protiv_registracii_chuzhogo_tovarnogo_znaka_sroki_i_poryadok/",
@@ -105,8 +102,7 @@
       "method": "HEAD",
       "error": null,
       "kind": "internal_relative",
-      "skipped": false,
-      "checked_url": "https://example.com/vozrazhenie_protiv_registracii_chuzhogo_tovarnogo_znaka_sroki_i_poryadok/"
+      "skipped": false
     },
     {
       "url": "https://searchplatform.rospatent.gov.ru/trademarks",
@@ -133,8 +129,7 @@
       "method": "HEAD",
       "error": null,
       "kind": "internal_relative",
-      "skipped": false,
-      "checked_url": "https://example.com/registraciya_tovarnogo_znaka/"
+      "skipped": false
     }
   ]
 }

@@ -1,0 +1,152 @@
+{
+  "verdict": "warning",
+  "total_issues": 12,
+  "issues": [
+    {
+      "severity": "warning",
+      "type": "primary_secondary_cannibalization",
+      "message": "WARNING: Primary query of 'L72-dorabotka-logotipa-pod-trebovaniya-rospatenta' ('доработка логотипа под требования роспатента') highly overlaps with secondary query of 'L39-dorabotka-logotipa-pered-registraciey-tovarnogo-znaka' ('доработка логотипа под требования роспатента'). Similarity: 100%",
+      "articles": [
+        "L72-dorabotka-logotipa-pod-trebovaniya-rospatenta",
+        "L39-dorabotka-logotipa-pered-registraciey-tovarnogo-znaka"
+      ],
+      "primary_query": "доработка логотипа под требования роспатента",
+      "secondary_query": "доработка логотипа под требования роспатента",
+      "similarity": 1.0
+    },
+    {
+      "severity": "warning",
+      "type": "primary_secondary_cannibalization",
+      "message": "WARNING: Primary query of 'L03-kak-zaregistrirovat-brend-na-ozon-i-wildberries' ('как проверить есть ли такой бренд на вайлдберриз') highly overlaps with secondary query of 'L59-kak-dobavit-brend-na-wildberries-seller' ('как проверить есть ли такой бренд на вайлдберриз'). Similarity: 100%",
+      "articles": [
+        "L59-kak-dobavit-brend-na-wildberries-seller",
+        "L03-kak-zaregistrirovat-brend-na-ozon-i-wildberries"
+      ],
+      "primary_query": "как проверить есть ли такой бренд на вайлдберриз",
+      "secondary_query": "как проверить есть ли такой бренд на вайлдберриз",
+      "similarity": 1.0
+    },
+    {
+      "severity": "warning",
+      "type": "primary_secondary_cannibalization",
+      "message": "WARNING: Primary query of 'L59-kak-dobavit-brend-na-wildberries-seller' ('бренд на вайлдберриз как добавить') highly overlaps with secondary query of 'L18-kak-proverit-brend-na-wildberries-svoboden-li-tovarnyy-znak' ('бренд на вайлдберриз как добавить предположительно'). Similarity: 75%",
+      "articles": [
+        "L59-kak-dobavit-brend-na-wildberries-seller",
+        "L18-kak-proverit-brend-na-wildberries-svoboden-li-tovarnyy-znak"
+      ],
+      "primary_query": "бренд на вайлдберриз как добавить",
+      "secondary_query": "бренд на вайлдберриз как добавить предположительно",
+      "similarity": 0.75
+    },
+    {
+      "severity": "warning",
+      "type": "primary_secondary_cannibalization",
+      "message": "WARNING: Primary query of 'L38-proverit-brend-onlayn-unikalnost' ('проверить бренд на уникальность онлайн') highly overlaps with secondary query of 'L34-kak-zapatentovat-nazvanie-i-logotip' ('проверить бренд на уникальность онлайн'). Similarity: 100%",
+      "articles": [
+        "L34-kak-zapatentovat-nazvanie-i-logotip",
+        "L38-proverit-brend-onlayn-unikalnost"
+      ],
+      "primary_query": "проверить бренд на уникальность онлайн",
+      "secondary_query": "проверить бренд на уникальность онлайн",
+      "similarity": 1.0
+    },
+    {
+      "severity": "warning",
+      "type": "high_primary_overlap",
+      "message": "WARNING: High primary query overlap (71%) between 'L71-vozrazhenie-na-otkaz-v-registracii-svoego-tovarnogo-znaka' and 'L08-vozrazhenie-protiv-registracii-tovarnogo-znaka-sroki-poryadok'. Queries: 'как подать возражение на отказ в регистрации товарного знака' vs 'как подать возражение против регистрации товарного знака'",
+      "articles": [
+        "L71-vozrazhenie-na-otkaz-v-registracii-svoego-tovarnogo-znaka",
+        "L08-vozrazhenie-protiv-registracii-tovarnogo-znaka-sroki-poryadok"
+      ],
+      "queries": [
+        "как подать возражение на отказ в регистрации товарного знака",
+        "как подать возражение против регистрации товарного знака"
+      ],
+      "similarity": 0.71
+    },
+    {
+      "severity": "warning",
+      "type": "primary_secondary_cannibalization",
+      "message": "WARNING: Primary query of 'L08-vozrazhenie-protiv-registracii-tovarnogo-znaka-sroki-poryadok' ('как подать возражение против регистрации товарного знака') highly overlaps with secondary query of 'L21-osparivanie-tovarnogo-znaka-v-rospatente' ('возражение против регистрации товарного знака'). Similarity: 83%",
+      "articles": [
+        "L21-osparivanie-tovarnogo-znaka-v-rospatente",
+        "L08-vozrazhenie-protiv-registracii-tovarnogo-znaka-sroki-poryadok"
+      ],
+      "primary_query": "как подать возражение против регистрации товарного знака",
+      "secondary_query": "возражение против регистрации товарного знака",
+      "similarity": 0.83
+    },
+    {
+      "severity": "warning",
+      "type": "primary_secondary_cannibalization",
+      "message": "WARNING: Primary query of 'L22-markirovka-importa-chestnyy-znak-i-tovarnyy-znak' ('честный знак импорт') highly overlaps with secondary query of 'L67-chestnyy-znak-import-prostymi-slovami' ('маркировка импорта честный знак'). Similarity: 75%",
+      "articles": [
+        "L22-markirovka-importa-chestnyy-znak-i-tovarnyy-znak",
+        "L67-chestnyy-znak-import-prostymi-slovami"
+      ],
+      "primary_query": "честный знак импорт",
+      "secondary_query": "маркировка импорта честный знак",
+      "similarity": 0.75
+    },
+    {
+      "severity": "warning",
+      "type": "primary_secondary_cannibalization",
+      "message": "WARNING: Primary query of 'L22-markirovka-importa-chestnyy-znak-i-tovarnyy-znak' ('честный знак импорт') highly overlaps with secondary query of 'L36-chestnyy-znak-import-snippet-dokumenty' ('честный знак импорт с чек-листами'). Similarity: 75%",
+      "articles": [
+        "L22-markirovka-importa-chestnyy-znak-i-tovarnyy-znak",
+        "L36-chestnyy-znak-import-snippet-dokumenty"
+      ],
+      "primary_query": "честный знак импорт",
+      "secondary_query": "честный знак импорт с чек-листами",
+      "similarity": 0.75
+    },
+    {
+      "severity": "warning",
+      "type": "primary_secondary_cannibalization",
+      "message": "WARNING: Primary query of 'L22-markirovka-importa-chestnyy-znak-i-tovarnyy-znak' ('честный знак импорт') highly overlaps with secondary query of 'L36-chestnyy-znak-import-snippet-dokumenty' ('маркировка импорта честный знак'). Similarity: 75%",
+      "articles": [
+        "L22-markirovka-importa-chestnyy-znak-i-tovarnyy-znak",
+        "L36-chestnyy-znak-import-snippet-dokumenty"
+      ],
+      "primary_query": "честный знак импорт",
+      "secondary_query": "маркировка импорта честный знак",
+      "similarity": 0.75
+    },
+    {
+      "severity": "warning",
+      "type": "primary_secondary_cannibalization",
+      "message": "WARNING: Primary query of 'L75-poluchili-pretenziyu-pravoobladatelya-chto-proverit' ('получил претензию от правообладателя что делать') highly overlaps with secondary query of 'L77-patentnyy-trolling-kak-proverit-pretenziyu-i-zashchititsya' ('претензия от правообладателя что делать'). Similarity: 80%",
+      "articles": [
+        "L75-poluchili-pretenziyu-pravoobladatelya-chto-proverit",
+        "L77-patentnyy-trolling-kak-proverit-pretenziyu-i-zashchititsya"
+      ],
+      "primary_query": "получил претензию от правообладателя что делать",
+      "secondary_query": "претензия от правообладателя что делать",
+      "similarity": 0.8
+    },
+    {
+      "severity": "warning",
+      "type": "primary_secondary_cannibalization",
+      "message": "WARNING: Primary query of 'L08-vozrazhenie-protiv-registracii-tovarnogo-znaka-sroki-poryadok' ('как подать возражение против регистрации товарного знака') highly overlaps with secondary query of 'L53-vozrazhenie-v-pps-na-pravovuyu-ohranu-tz' ('возражение против регистрации товарного знака'). Similarity: 83%",
+      "articles": [
+        "L08-vozrazhenie-protiv-registracii-tovarnogo-znaka-sroki-poryadok",
+        "L53-vozrazhenie-v-pps-na-pravovuyu-ohranu-tz"
+      ],
+      "primary_query": "как подать возражение против регистрации товарного знака",
+      "secondary_query": "возражение против регистрации товарного знака",
+      "similarity": 0.83
+    },
+    {
+      "severity": "warning",
+      "type": "primary_secondary_cannibalization",
+      "message": "WARNING: Primary query of 'L67-chestnyy-znak-import-prostymi-slovami' ('как пройти честный знак импорт простыми словами') highly overlaps with secondary query of 'L36-chestnyy-znak-import-snippet-dokumenty' ('честный знак импорт простыми словами'). Similarity: 83%",
+      "articles": [
+        "L67-chestnyy-znak-import-prostymi-slovami",
+        "L36-chestnyy-znak-import-snippet-dokumenty"
+      ],
+      "primary_query": "как пройти честный знак импорт простыми словами",
+      "secondary_query": "честный знак импорт простыми словами",
+      "similarity": 0.83
+    }
+  ]
+}

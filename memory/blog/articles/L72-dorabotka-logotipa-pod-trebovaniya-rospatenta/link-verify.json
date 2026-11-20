@@ -21,8 +21,7 @@
       "method": "HEAD",
       "error": null,
       "kind": "internal_relative",
-      "skipped": false,
-      "checked_url": "https://example.com/dorabotka-logotipa-pered-registraciey-tovarnogo-znaka/"
+      "skipped": false
     },
     {
       "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/ba40f188a9dca425520a1e3a935f95845df06ca8/",
@@ -58,8 +57,7 @@
       "method": "HEAD",
       "error": null,
       "kind": "internal_relative",
-      "skipped": false,
-      "checked_url": "https://example.com/graficheskiy_tovarnyy_znak_smeshchenie_do_podachi/"
+      "skipped": false
     },
     {
       "url": "/dogovor_na_razrabotku_logotipa_kak_poluchit_prava_ot_dizaynera/",
@@ -68,8 +66,7 @@
       "method": "HEAD",
       "error": null,
       "kind": "internal_relative",
-      "skipped": false,
-      "checked_url": "https://example.com/dogovor_na_razrabotku_logotipa_kak_poluchit_prava_ot_dizaynera/"
+      "skipped": false
     },
     {
       "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/69c22eee8fabf0140425864b7a19e42a7b3286b1/",
@@ -96,8 +93,7 @@
       "method": "HEAD",
       "error": null,
       "kind": "internal_relative",
-      "skipped": false,
-      "checked_url": "https://example.com/proverka_tovarnogo_znaka_pered_registraciey_chek_list_po_reestram_rospatenta/"
+      "skipped": false
     },
     {
       "url": "https://searchplatform.rospatent.gov.ru/trademarks",
@@ -115,8 +111,7 @@
       "method": "HEAD",
       "error": null,
       "kind": "internal_relative",
-      "skipped": false,
-      "checked_url": "https://example.com/reg-tz-main"
+      "skipped": false
     }
   ]
 }
