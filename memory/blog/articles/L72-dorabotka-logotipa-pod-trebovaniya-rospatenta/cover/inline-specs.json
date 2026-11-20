@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "style": "collage-v1",
+  "illustrations": [
+    {
+      "slot": "inline_1",
+      "template": "bad_good",
+      "headline": "Один знак в графе 540",
+      "chips": [
+        {"icon": "doc", "text": "540"},
+        {"icon": "layers", "text": "1492"},
+        {"icon": "warning", "text": "2 в 1"}
+      ],
+      "sticky": {"text": "1 заявка = 1 знак", "color": "pink"},
+      "bad": {
+        "header": "BAD",
+        "lines": [
+          "Цветной + ч/б в одном файле",
+          "Коллаж вариантов в 540",
+          "Водяной знак «draft»"
+        ]
+      },
+      "good": {
+        "header": "GOOD",
+        "lines": [
+          "Один финальный кадр",
+          "Второй режим — другая заявка",
+          "Чистый макет без сетки"
+        ]
+      },
+      "side_checklist": ["540", "один", "версия"],
+      "conclusion": {
+        "box_lines": ["1", "знак"],
+        "highlight_word": "1",
+        "chip": "ФИПС"
+      },
+      "alt": "Одна заявка - один товарный знак: нельзя подавать цветной и чёрно-белый логотип вместе в графе 540",
+      "figcaption": "В одном файле для 540 - только тот вариант, который испрашиваете; второй режим - отдельная заявка или приоритетная стратегия."
+    },
+    {
+      "slot": "inline_2",
+      "template": "process",
+      "headline": "Размер 8×8 см на бумаге",
+      "chips": [
+        {"icon": "doc", "text": "540"},
+        {"icon": "layers", "text": "8×8"},
+        {"icon": "globe", "text": "п. 27"}
+      ],
+      "sticky": {"text": "линейка перед печатью", "color": "yellow"},
+      "steps": [
+        {"title": "Холст", "subtitle": "макет под поле 540", "chip": "мм/см", "variant": "icon"},
+        {"title": "8×8 см", "subtitle": "плотная бумага", "chip": "оттиск", "variant": "lines"},
+        {"title": "Контур", "subtitle": "тонкие линии читаются", "chip": "TIFF", "variant": "toggles"}
+      ],
+      "conclusion": {
+        "box_lines": ["8×8", "см"],
+        "highlight_word": "8×8",
+        "chip": "482"
+      },
+      "alt": "Размер изображения товарного знака 8 на 8 сантиметров на плотной бумаге в графе 540",
+      "figcaption": "Линейка 8×8 см при печати - контроль, что контуры читаются, а не \"съедаются\" при уменьшении."
+    },
+    {
+      "slot": "inline_3",
+      "template": "checklist",
+      "headline": "Перед загрузкой в кабинет",
+      "chips": [
+        {"icon": "doc", "text": "TIFF"},
+        {"icon": "shield", "text": "300 dpi"},
+        {"icon": "layers", "text": "591"}
+      ],
+      "sticky": {"text": "финальный проход", "color": "pink"},
+      "checklist_title": "Чек-лист макета",
+      "checklist_rows": [
+        {"text": "Один знак в 540", "icon": "doc"},
+        {"text": "TIFF ≥300 dpi, ≤5 МБ", "icon": "shield"},
+        {"text": "Фон непрозрачный", "icon": "layers"},
+        {"text": "591 согласована с цветом", "icon": "warning"}
+      ],
+      "conclusion": {
+        "box_lines": ["571", "сверка"],
+        "highlight_word": "571",
+        "chip": "ФИПС"
+      },
+      "alt": "Чек-лист доработки логотипа под требования Роспатента: 540, 591, 571, TIFF и чёткость контура",
+      "figcaption": "Отметьте каждый пункт до нажатия \"отправить\" в личном кабинете или до визита в МФЦ с бумажным комплектом."
+    }
+  ]
+}
