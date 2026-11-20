@@ -1,0 +1,87 @@
+{
+  "article": "memory/blog/articles/L72-dorabotka-logotipa-pod-trebovaniya-rospatenta/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 11,
+  "verified_facts_count": 3,
+  "unverified_facts_count": 8,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "Приказа № 482 и полям 540 , 591 , 571 . На 20.11.2026; не юрконсультация. Вы зафиксируете версию, экспо",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2003 года",
+      "kind": "date_or_year",
+      "context": "сайте Роспатента , а не только из архивных правил 2003 года. Делайте: печатать оба листа с одного PDF. Не дел",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2026 года",
+      "kind": "date_or_year",
+      "context": "ия Роспатента сверены с КонсультантПлюс на ноябрь 2026 года; объёмы поискового спроса в текст не включались и",
+      "verified": true,
+      "reason": "Numerical value '2026' matched in fact-bank context"
+    },
+    {
+      "fact": "482",
+      "kind": "large_number",
+      "context": "оспатента - привести один макет к п. 27 Приказа № 482 и полям 540 , 591 , 571 . На 20.11.2026; не юрконс",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "лист перед загрузкой. Смысл знака и отказы по ст. 1483 - в гайде L39 ; здесь только техника файла. TL;DR",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "1492",
+      "kind": "large_number",
+      "context": "т: В одной заявке - один вариант знака ( п. 2 ст. 1492 ГК РФ ), нельзя класть цветной и ч/б макет в графу",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "540",
+      "kind": "large_number",
+      "context": "К РФ ), нельзя класть цветной и ч/б макет в графу 540 вместе. Для e-заявки: TIFF без сжатия (или DOC по",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "300",
+      "kind": "large_number",
+      "context": "Для e-заявки: TIFF без сжатия (или DOC по НПА), ≥ 300 dpi , ≤ 5 МБ , непрозрачный фон , печать 8×8 см (и",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "591",
+      "kind": "large_number",
+      "context": "я регистрация - заполняете графу 591; ч/б - графу 591 не заполняете. Описание по коду 571 должно совпада",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "571",
+      "kind": "large_number",
+      "context": "; ч/б - графу 591 не заполняете. Описание по коду 571 должно совпадать с картинкой в 540. ФИПС - институ",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2003",
+      "kind": "large_number",
+      "context": "сайте Роспатента , а не только из архивных правил 2003 года. Делайте: печатать оба листа с одного PDF. Не",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}
