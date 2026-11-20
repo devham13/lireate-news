@@ -1,0 +1,122 @@
+{
+  "source": "memory/blog/articles/L72-dorabotka-logotipa-pod-trebovaniya-rospatenta/article.html",
+  "total_links": 12,
+  "failed_count": 0,
+  "privacy_policy_violations": [],
+  "verdict": "pass",
+  "links": [
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_184868/402f27fe358bde8949b7cbcb3a4a3596a87bb625/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/dorabotka-logotipa-pered-registraciey-tovarnogo-znaka/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://example.com/dorabotka-logotipa-pered-registraciey-tovarnogo-znaka/"
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/ba40f188a9dca425520a1e3a935f95845df06ca8/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "http://www.ippro.ru/v-i-o/trebovaniya-k-izobrazheniyu-tovarnogo-znaka-v-podavaemoj-na-registratsiyu-zayavke/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/2e83c7a3d54808ca80d8f0b2a034caa0f7122b57/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/graficheskiy_tovarnyy_znak_smeshchenie_do_podachi/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://example.com/graficheskiy_tovarnyy_znak_smeshchenie_do_podachi/"
+    },
+    {
+      "url": "/dogovor_na_razrabotku_logotipa_kak_poluchit_prava_ot_dizaynera/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://example.com/dogovor_na_razrabotku_logotipa_kak_poluchit_prava_ot_dizaynera/"
+    },
+    {
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/69c22eee8fabf0140425864b7a19e42a7b3286b1/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://online.rospatent.gov.ru/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/proverka_tovarnogo_znaka_pered_registraciey_chek_list_po_reestram_rospatenta/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://example.com/proverka_tovarnogo_znaka_pered_registraciey_chek_list_po_reestram_rospatenta/"
+    },
+    {
+      "url": "https://searchplatform.rospatent.gov.ru/trademarks",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "/reg-tz-main",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://example.com/reg-tz-main"
+    }
+  ]
+}

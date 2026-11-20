@@ -1,0 +1,91 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-20",
+    "today_ru": "20.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "пятница",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-22",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-20 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L72",
+    "priority": "P2",
+    "slug": "dorabotka-logotipa-pod-trebovaniya-rospatenta",
+    "h1": "Доработка логотипа под требования Роспатента: формат, размеры и чек-лист макета",
+    "primary_query": "доработка логотипа под требования роспатента",
+    "secondary_queries": [
+      "доработка логотипа для регистрации в роспатенте",
+      "требования к изображению товарного знака",
+      "чёрно-белая версия для заявки"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "доработка логотипа под требования роспатента 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-20"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "доработка логотипа под требования роспатента ноябрь 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-20"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "доработка логотипа под требования роспатента новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-20"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "доработка логотипа для регистрации в роспатенте 2026",
+      "purpose": "вторичный запрос: доработка логотипа для регистрации в роспатенте",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-20"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "требования к изображению товарного знака 2026",
+      "purpose": "вторичный запрос: требования к изображению товарного знака",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-20"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "чёрно-белая версия для заявки 2026",
+      "purpose": "вторичный запрос: чёрно-белая версия для заявки",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-20"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Доработка логотипа под требования Роспатента: формат, размеры и чек-лист макета 2026",
+      "purpose": "SERP по H1",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-20"
+    }
+  ],
+  "errors": [],
+  "unique_urls": []
+}

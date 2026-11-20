@@ -1,0 +1,33 @@
+{
+  "headline_lines": [
+    "ЛОГОТИП ДЛЯ",
+    "РОСПАТЕНТА: НЕ PNG"
+  ],
+  "highlight": "PNG",
+  "sticky_text": "1 знак = 1 заявка",
+  "sticky_underline": "заявка",
+  "sticky_color": "yellow",
+  "badge_label": "ТЗ",
+  "label_chips": [
+    [
+      "540",
+      "black"
+    ],
+    [
+      "8×8",
+      "white"
+    ],
+    [
+      "591",
+      "pink"
+    ]
+  ],
+  "ui_card_title": "Макет заявки",
+  "ui_card_rows": [
+    "TIFF dpi",
+    "Фон",
+    "571"
+  ],
+  "stage_background": "#0b1020",
+  "left_memo": ""
+}

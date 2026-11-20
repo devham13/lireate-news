@@ -1,6 +1,14 @@
 {
   "site_base": "https://example.com",
-  "total_articles": 79,
-  "opportunities_found": 0,
-  "suggestions": []
+  "total_articles": 80,
+  "opportunities_found": 1,
+  "suggestions": [
+    {
+      "source": "L39-dorabotka-logotipa-pered-registraciey-tovarnogo-znaka",
+      "target": "L72-dorabotka-logotipa-pod-trebovaniya-rospatenta",
+      "keyword": "доработка логотипа под требования роспатента",
+      "context": "впечатление</b> сходства с расстояния вывески. Практическая доработка логотипа под требования Роспатента - менять то, что считывается за секунду.</p>  <ol>  <li>Изм",
+      "link_replacement": "<a href=\"/dorabotka-logotipa-pod-trebovaniya-rospatenta/\">доработка логотипа под требования Роспатента</a>"
+    }
+  ]
 }
