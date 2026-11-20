@@ -1,35 +1,14 @@
 {
   "site_base": "https://example.com",
-  "total_articles": 83,
-  "opportunities_found": 4,
+  "total_articles": 84,
+  "opportunities_found": 1,
   "suggestions": [
     {
-      "source": "L79-pretenziya-za-ispolzovanie-tovarnogo-znaka-kak-otvetit",
-      "target": "L78-narushayut-tovarnyy-znak-chto-delat-pravoobladatelyu",
-      "keyword": "незаконное использование товарного знака",
-      "context": "<p>Во входящих - \"незаконное использование товарного знака\", приложено свидетельство, скрин вашей карточки и расчёт на",
-      "link_replacement": "<a href=\"/narushayut-tovarnyy-znak-chto-delat-pravoobladatelyu/\">незаконное использование товарного знака</a>"
-    },
-    {
-      "source": "L79-pretenziya-za-ispolzovanie-tovarnogo-znaka-kak-otvetit",
-      "target": "L06-kak-opredelit-klass-mktu",
-      "keyword": "классы мкту",
-      "context": "е <b>№ А40-19203/2016</b> (СИП <b>С01-1069/2016</b>) разные классы МКТУ не освобождали от анализа однородности (<a href=\"https://ip",
-      "link_replacement": "<a href=\"/struktura_mktu_kak_opredelit_klass_dlya_tovara_i_uslugi/\">классы МКТУ</a>"
-    },
-    {
-      "source": "L77-patentnyy-trolling-kak-proverit-pretenziyu-i-zashchititsya",
-      "target": "L06-kak-opredelit-klass-mktu",
-      "keyword": "классы мкту",
-      "context": "а посмотрите, сколько знаков на имя правообладателя и какие классы МКТУ повторяются.</p>  <p>В <a href=\"https://kad.arbitr.ru/\" tar",
-      "link_replacement": "<a href=\"/struktura_mktu_kak_opredelit_klass_dlya_tovara_i_uslugi/\">классы МКТУ</a>"
-    },
-    {
-      "source": "L76-kak-obosnovat-snizhenie-kompensatsii-za-narushenie-prav",
-      "target": "L79-pretenziya-za-ispolzovanie-tovarnogo-znaka-kak-otvetit",
-      "keyword": "ответ на претензию по товарному знаку",
-      "context": "отличается от гайда про ответ на претензию?</h3> <p>Полный ответ на претензию по товарному знаку и сроки — в <a href=\"/otvet_na_pretenziyu_pravoobladatelya_",
-      "link_replacement": "<a href=\"/pretenziya-za-ispolzovanie-tovarnogo-znaka-kak-otvetit/\">ответ на претензию по товарному знаку</a>"
+      "source": "L73-chestnyy-znak-import-ved-obuchenie",
+      "target": "L22-markirovka-importa-chestnyy-znak-i-tovarnyy-znak",
+      "keyword": "честный знак импорт",
+      "context": "(см. также L67 в кластере).</blockquote>  <p>По запросу <b>честный знак импорт для менеджера вэд</b> в выдаче доминируют платные ПК и веби",
+      "link_replacement": "<a href=\"/markirovka-importa-chestnyy-znak-i-tovarnyy-znak/\">честный знак импорт</a>"
     }
   ]
 }

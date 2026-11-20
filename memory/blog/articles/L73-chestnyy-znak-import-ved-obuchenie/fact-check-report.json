@@ -1,0 +1,59 @@
+{
+  "article": "memory/blog/articles/L73-chestnyy-znak-import-ved-obuchenie/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "warning",
+  "total_extracted_facts": 7,
+  "verified_facts_count": 3,
+  "unverified_facts_count": 4,
+  "facts": [
+    {
+      "fact": "100 000 руб",
+      "kind": "price_or_currency",
+      "context": "н. Штраф за оборот без маркировки для ЮЛ - 50 000-100 000 руб. по ч. 1 ст. 15.12 КоАП . Делайте: лист \"коды пар",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "ристу по товарному знаку и сертификации. На 20.11.2026; не заменяет таможенную консультацию. Вы соберёте",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "60 минут",
+      "kind": "metric_or_duration",
+      "context": "ает КМ без сверки packing list. Модуль 0 - это 45-60 минут с блокнотом: кто вносит данные в документ импорта",
+      "verified": true,
+      "reason": "Numerical value '60' matched in fact-bank context"
+    },
+    {
+      "fact": "72 ч",
+      "kind": "metric_or_duration",
+      "context": "чения Срок Что даёт компании Платное ПК (типично ~72 ч.) Недели Удостоверение ФИС ФРДО, общая теория ГИС",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1483",
+      "kind": "large_number",
+      "context": "оль статуса \"Нанесён\" Регистрация ТЗ, споры по п. 1483 ГК РФ Юрист / комплаенс Контракт, ДС/СС для гр. 44",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "50 000",
+      "kind": "large_number",
+      "context": "запрещён. Штраф за оборот без маркировки для ЮЛ - 50 000-100 000 руб. по ч. 1 ст. 15.12 КоАП . Делайте: ли",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "100 000",
+      "kind": "large_number",
+      "context": "н. Штраф за оборот без маркировки для ЮЛ - 50 000-100 000 руб. по ч. 1 ст. 15.12 КоАП . Делайте: лист \"коды",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-20",
+    "today_ru": "20.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "пятница",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-22",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-20 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L73",
+    "priority": "P2",
+    "slug": "chestnyy-znak-import-ved-obuchenie",
+    "h1": "Честный знак при импорте: как подготовить менеджера ВЭД до подачи документов",
+    "primary_query": "честный знак импорт ved обучение",
+    "secondary_queries": [
+      "честный знак импорт для менеджера вэд",
+      "маркировка импорта честный знак",
+      "транспортные документы честный знак импорт"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "честный знак импорт ved обучение 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-20"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "честный знак импорт ved обучение ноябрь 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-20"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "честный знак импорт ved обучение новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-20"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "честный знак импорт для менеджера вэд 2026",
+      "purpose": "вторичный запрос: честный знак импорт для менеджера вэд",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-20"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "маркировка импорта честный знак 2026",
+      "purpose": "вторичный запрос: маркировка импорта честный знак",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-20"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "транспортные документы честный знак импорт 2026",
+      "purpose": "вторичный запрос: транспортные документы честный знак импорт",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-20"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Честный знак при импорте: как подготовить менеджера ВЭД до подачи документов 2026",
+      "purpose": "SERP по H1",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-11-20"
+    }
+  ],
+  "errors": [],
+  "unique_urls": []
+}
