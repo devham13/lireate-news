@@ -127,10 +127,20 @@ def build_sitemap_xml(site_url, entries, static_config=None, news_list_path="/ne
             news_in_static = True
         loc = escape(_static_loc(base, p))
         src = item.get("lastmod_source") if isinstance(item, dict) else "site"
-        lm = site_lastmod if src == "articles_max" and max_ts else site_lastmod
-        static_nodes.append(
-            "  <url>\n    <loc>{0}</loc>\n    <lastmod>{1}</lastmod>\n  </url>".format(loc, lm)
-        )
+        # audit08: only list-type pages (/, /news) take the newest-article date.
+        # Static pages get an explicit "lastmod" from config or no <lastmod> at all
+        # (previously every static URL got the newest article date = artificial lastmod).
+        lm = None
+        if src == "articles_max":
+            lm = site_lastmod
+        elif isinstance(item, dict) and item.get("lastmod"):
+            lm = str(item.get("lastmod"))
+        if lm:
+            static_nodes.append(
+                "  <url>\n    <loc>{0}</loc>\n    <lastmod>{1}</lastmod>\n  </url>".format(loc, lm)
+            )
+        else:
+            static_nodes.append("  <url>\n    <loc>{0}</loc>\n  </url>".format(loc))
 
     if not news_in_static:
         news_path = news_list_path if news_list_path.startswith("/") else "/" + news_list_path

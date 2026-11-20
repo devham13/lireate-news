@@ -38,7 +38,22 @@
     {"path": "/portfolio/estetic/", "lastmod_source": "site"},
     {"path": "/portfolio/berti/", "lastmod_source": "site"},
     {"path": "/portfolio/vf/", "lastmod_source": "site"},
-    {"path": "/reviews", "lastmod_source": "site"}
+    {"path": "/reviews", "lastmod_source": "site"},
+    {"path": "/partners", "lastmod_source": "none"},
+    {"path": "/o_kompanii", "lastmod_source": "none"},
+    {"path": "/patentnye-zadachi/", "lastmod_source": "none"},
+    {"path": "/patentnye-zadachi/adres-zayavitelya/", "lastmod_source": "none"},
+    {"path": "/patentnye-zadachi/fail-slovesnogo-znaka/", "lastmod_source": "none"},
+    {"path": "/patentnye-zadachi/kontakty-fips/", "lastmod_source": "none"},
+    {"path": "/patentnye-zadachi/oplata-patentnyh-poshlin/", "lastmod_source": "none"},
+    {"path": "/patentnye-zadachi/oplata-uslug-fips/", "lastmod_source": "none"},
+    {"path": "/patentnye-zadachi/poisk-platezha-evm/", "lastmod_source": "none"},
+    {"path": "/patentnye-zadachi/poshliny-izmeneniya/", "lastmod_source": "none"},
+    {"path": "/patentnye-zadachi/poshliny-prodlenie/", "lastmod_source": "none"},
+    {"path": "/patentnye-zadachi/poshliny-registraciya/", "lastmod_source": "none"},
+    {"path": "/patentnye-zadachi/redaktor-mktu/", "lastmod_source": "none"},
+    {"path": "/patentnye-zadachi/sokrashchenie-mktu/", "lastmod_source": "none"},
+    {"path": "/patentnye-zadachi/starye-zayavki/", "lastmod_source": "none"}
   ],
   "exclude_article_slugs": [
     "chto_delat_esli_tovarnyy_znak_zanyat",
