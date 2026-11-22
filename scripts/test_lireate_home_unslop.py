@@ -49,6 +49,23 @@ class HomePolishTest(unittest.TestCase):
                                               env=dict(os.environ, TEST_PAGE=page))
             self.assertEqual(home.ASSET.encode() in output, page == 'home')
 
+    def test_request_path_wins_over_mutated_cms_page_variable(self):
+        self.main.write_bytes(home.patch_main(FIXTURE))
+        cases = [('/', 'overwritten', True), ('/?qa=1', 'contacts', True),
+                 ('/contacts/', 'home', False), ('/news/', 'home', False),
+                 ('/patent?from=home', 'home', False)]
+        for uri, page, expected in cases:
+            output = subprocess.check_output([home.pick_php_executable(), str(self.main)],
+                                              env=dict(os.environ, TEST_PAGE=page, REQUEST_URI=uri))
+            self.assertEqual(home.ASSET.encode() in output, expected, uri)
+
+    def test_upgrade_known_previous_link_preserves_template(self):
+        previous = FIXTURE.replace(b'</head>',home.LEGACY_LINK.encode()+b'</head>')
+        upgraded = home.patch_main(previous)
+        self.assertEqual(upgraded.replace(home.LINK.encode(),b'',1),FIXTURE)
+        self.assertEqual(upgraded.count(home.MARKER.encode()),1)
+        self.assertEqual(home.patch_main(upgraded),upgraded)
+
     def test_apply_repeat_and_restore_original_files(self):
         backup = self.apply()
         self.assertEqual(self.main.stat().st_mode & 0o777, 0o640)
