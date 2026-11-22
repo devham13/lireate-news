@@ -1,0 +1,51 @@
+name: Lireate home polish
+on:
+  pull_request:
+    paths:
+      - hosting-design/template/css/lireate-home-unslop.css
+      - scripts/lireate_home_unslop*
+      - scripts/test_lireate_home_unslop.py
+      - scripts/lireate_hosting_cron.sh
+      - .github/workflows/lireate-home-unslop.yml
+permissions:
+  contents: read
+jobs:
+  safe-deployment:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php: ['5.6', '8.3']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          coverage: none
+      - name: Validate guarded deployment and rollback
+        run: |
+          python3 scripts/test_lireate_home_unslop.py
+          python3 -m py_compile scripts/lireate_home_unslop.py
+          bash -n scripts/lireate_hosting_cron.sh
+          git diff --check
+  responsive-seo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install browser for the review
+        run: |
+          npm install --prefix "$RUNNER_TEMP/home-browser" --no-audit --no-fund playwright@1.62.1
+          "$RUNNER_TEMP/home-browser/node_modules/.bin/playwright" install --with-deps chromium
+      - name: Check actual home at six widths and preserve SEO and forms
+        env:
+          NODE_PATH: ${{ runner.temp }}/home-browser/node_modules
+        run: node scripts/lireate_home_unslop_qa.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: home-polish-before-after
+          path: output/home-unslop/
+          retention-days: 14

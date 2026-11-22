@@ -33,6 +33,11 @@ if ! "$PY" "$REPO_DIR/scripts/lireate_visibility_maintenance.py" --apply; then
   echo "STATUS: WARN — visibility maintenance failed; inspect this log before retrying"
 fi
 
+# Reviewed home polish: one scoped CSS asset, a guarded head link, private backup.
+if ! "$PY" "$REPO_DIR/scripts/lireate_home_unslop.py" --apply; then
+  echo "STATUS: WARN — home polish failed; inspect this log before retrying"
+fi
+
 # Publish only the newest not-yet-published article; prints NO_NEW_ARTICLE and exits 0 otherwise.
 # Never --update here: old articles are not rewritten by CRON.
 exec "$PY" "$REPO_DIR/scripts/lireate_hosting_publish.py" "$@"
