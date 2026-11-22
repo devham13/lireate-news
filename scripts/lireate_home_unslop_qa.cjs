@@ -45,6 +45,7 @@ async function snapshot(page) {
       assert.equal(original.headings.filter(x=>x[0]==='H1').length,1);
       if([375,1366].includes(width))await page.screenshot({path:path.join(dir,`before-${width}.png`),fullPage:true});
       await page.addStyleTag({content:css});
+      await page.waitForFunction(()=>getComputedStyle(document.querySelector('.lireate-hero-v4__btn--primary')).backgroundColor==='rgb(49, 93, 221)',{},{timeout:5000});
       assert.deepEqual(await snapshot(page),original,'SEO, links, forms and navigation must be preserved');
       const metrics=await page.evaluate(()=>{
         const box=e=>{const r=e.getBoundingClientRect();return{x:r.x,y:r.y,w:r.width,h:r.height,right:r.right,bottom:r.bottom};};
@@ -68,6 +69,7 @@ async function snapshot(page) {
       for(const card of metrics.cards)assert.ok(card.x>=0&&card.right<=width+1,'Clipped card');
       assert.ok(Number(metrics.h1Weight)<=600);
       assert.ok(!metrics.primary.background.includes('gradient'));
+      assert.ok(metrics.primary.background.includes('49, 93, 221'),'Primary accent must remain visible');
       assert.equal(metrics.primary.shadow,'none');
       assert.ok(metrics.primary.h>=44,'Touch target too small');
       if(width===375)assert.ok(metrics.primary.bottom<=900,'Consultation should be visible in the first phone screen');
