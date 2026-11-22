@@ -26,6 +26,13 @@ if [[ -d "$REPO_DIR/.git" ]]; then
   fi
 fi
 
+# Apply the reviewed SEO maintenance once, even when there is no new article.
+# The helper checks the existing publish opt-in, preserves concurrent edits and
+# creates backups outside docroot. A failure is visible without blocking news.
+if ! "$PY" "$REPO_DIR/scripts/lireate_visibility_maintenance.py" --apply; then
+  echo "STATUS: WARN — visibility maintenance failed; inspect this log before retrying"
+fi
+
 # Publish only the newest not-yet-published article; prints NO_NEW_ARTICLE and exits 0 otherwise.
 # Never --update here: old articles are not rewritten by CRON.
 exec "$PY" "$REPO_DIR/scripts/lireate_hosting_publish.py" "$@"

@@ -14,7 +14,6 @@ Disallow: /testPage
 Disallow: /new_lending
 Disallow: /new_rewiev
 Disallow: /new_port
-Disallow: /contacts
 Clean-param: cat&design /
 Clean-param: category&num&view&page /news
 Clean-param: utm_source&utm_medium&utm_campaign&utm_content&utm_term /
