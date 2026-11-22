@@ -2,7 +2,7 @@
   "topic_id": "L20",
   "slug": "registraciya-mobilnogo-prilozheniya-v-rospatente",
   "h1": "Регистрация мобильного приложения в Роспатенте: программа для ЭВМ, свидетельство и защита",
-  "title": "Регистрация мобильного приложения в Роспатенте: программа для ЭВМ, св…",
+  "title": "Регистрация приложения: программа для ЭВМ или товарный знак",
   "description": "Регистрация мобильного приложения в Роспатенте: отдельно программа для ЭВМ (свидетельство, пошлина 5 000 ₽) и товарный знак. Сравнение, чек-лист, стоимость и ответы по защите приложения.",
   "keywords": [
     "регистрация мобильного приложения в роспатенте",
@@ -54,5 +54,6 @@
   ],
   "cover_style": "collage-v1",
   "cover_renderer": "html_chromium",
-  "lireate_seo_url": "registraciya_mobilnogo_prilozheniya_programma_dlya_evm_ili_tovarnyy_znak"
+  "lireate_seo_url": "registraciya_mobilnogo_prilozheniya_programma_dlya_evm_ili_tovarnyy_znak",
+  "seo_title": "Регистрация приложения: программа для ЭВМ или товарный знак"
 }

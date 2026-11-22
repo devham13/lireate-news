@@ -87,6 +87,7 @@ def build_sitemap_xml(site_url, entries, static_config=None, news_list_path="/ne
     dedupe_once = cfg.get("dedupe_article_slugs") or set()
     seen_dedupe = set()
     url_nodes = []
+    seen_urls = set()
     max_ts = 0
 
     for row in entries or []:
@@ -105,6 +106,9 @@ def build_sitemap_xml(site_url, entries, static_config=None, news_list_path="/ne
         if ts > max_ts:
             max_ts = ts
         loc_raw = "{0}/{1}/".format(base, seo)
+        if loc_raw in seen_urls:
+            continue
+        seen_urls.add(loc_raw)
         loc = escape(loc_raw)
         lastmod = datetime_to_lastmod(ts)
         if lastmod:
@@ -116,7 +120,7 @@ def build_sitemap_xml(site_url, entries, static_config=None, news_list_path="/ne
         else:
             url_nodes.append("  <url>\n    <loc>{0}</loc>\n  </url>".format(loc))
 
-    site_lastmod = datetime_to_lastmod(max_ts) if max_ts else datetime.now(tz=timezone.utc).strftime("%Y-%m-%d")
+    site_lastmod = datetime_to_lastmod(max_ts) if max_ts else None
     static_nodes = []
     news_in_static = False
     for item in cfg.get("paths") or []:
@@ -125,20 +129,25 @@ def build_sitemap_xml(site_url, entries, static_config=None, news_list_path="/ne
             continue
         if p.rstrip("/") == "/news" or p == "/news/":
             news_in_static = True
-        loc = escape(_static_loc(base, p))
+        raw_loc = _static_loc(base, p)
+        if raw_loc in seen_urls:
+            continue
+        seen_urls.add(raw_loc)
+        loc = escape(raw_loc)
         src = item.get("lastmod_source") if isinstance(item, dict) else "site"
-        lm = site_lastmod if src == "articles_max" and max_ts else site_lastmod
-        static_nodes.append(
-            "  <url>\n    <loc>{0}</loc>\n    <lastmod>{1}</lastmod>\n  </url>".format(loc, lm)
-        )
+        # A new article does not change every service, case and MKTU page.
+        lm = site_lastmod if src == "articles_max" else None
+        if lm:
+            static_nodes.append("  <url>\n    <loc>{0}</loc>\n    <lastmod>{1}</lastmod>\n  </url>".format(loc, lm))
+        else:
+            static_nodes.append("  <url>\n    <loc>{0}</loc>\n  </url>".format(loc))
 
     if not news_in_static:
         news_path = news_list_path if news_list_path.startswith("/") else "/" + news_list_path
         static_nodes.insert(
             0,
-            "  <url>\n    <loc>{0}</loc>\n    <lastmod>{1}</lastmod>\n  </url>".format(
-                escape(_static_loc(base, news_path)), site_lastmod
-            ),
+            ("  <url>\n    <loc>{0}</loc>\n".format(escape(_static_loc(base, news_path)))
+             + ("    <lastmod>{0}</lastmod>\n".format(site_lastmod) if site_lastmod else "") + "  </url>"),
         )
 
     body = "\n".join(static_nodes + url_nodes)

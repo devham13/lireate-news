@@ -1,0 +1,40 @@
+{
+  "version": "seo-visibility-20261122-v1",
+  "titles": [
+    {
+      "slug": "registraciya_mobilnogo_prilozheniya_programma_dlya_evm_ili_tovarnyy_znak",
+      "expected_old": "Регистрация мобильного приложения в Роспатенте: программа для ЭВМ, св…",
+      "name": "Регистрация мобильного приложения в Роспатенте: программа для ЭВМ, свидетельство и защита",
+      "seo_title": "Регистрация приложения: программа для ЭВМ или товарный знак"
+    },
+    {
+      "slug": "rospatent-fips-proverit-tovarnyy-znak-onlayn-besplatno",
+      "expected_old": "Роспатент и ФИПС: как проверить товарный знак по названию онлайн бесп…",
+      "name": "Роспатент и ФИПС: официальные сайты, открытые реестры и как проверить товарный знак по названию онлайн бесплатно",
+      "seo_title": "Роспатент и ФИПС: проверка товарного знака онлайн бесплатно"
+    },
+    {
+      "slug": "zashchita_dizayna_upakovki_marketpleysy",
+      "expected_old": "Как защитить дизайн упаковки на маркетплейсах: ©, промышленный образе…",
+      "name": "Как защитить дизайн упаковки на маркетплейсах: ©, промышленный образец и товарный знак",
+      "seo_title": "Защита дизайна упаковки на маркетплейсах: способы и документы"
+    }
+  ],
+  "links": [
+    {
+      "slug": "chestnyiy_znak_import_prostyimi_slovami_poshagovyiy_marshrut",
+      "old": "/mozhno-li-zapretit-vvoz-analoga-zapatentovannogo-tovara/",
+      "new": "/mozhno_li_zapretit_vvoz_analoga_zapatentovannogo_tovara/"
+    },
+    {
+      "slug": "domennoe-imya-nematerialnyy-aktiv",
+      "old": "/kak-opredelit-klass-mktu/",
+      "new": "/struktura_mktu_kak_opredelit_klass_dlya_tovara_i_uslugi/"
+    },
+    {
+      "slug": "dorabotka_nazvaniya_brenda_s_rodovyim_slovom_kak_proyti_ekspertizu_tovarnogo_znaka",
+      "old": "/kak-opredelit-klass-mktu/",
+      "new": "/struktura_mktu_kak_opredelit_klass_dlya_tovara_i_uslugi/"
+    }
+  ]
+}

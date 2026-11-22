@@ -1,0 +1,56 @@
+name: Lireate visibility fixes
+on:
+  pull_request:
+    paths:
+      - scripts/lireate_visibility_*
+      - scripts/test_lireate_visibility_*
+      - scripts/lireate_fast_indexing.py
+      - scripts/lireate_news_format.py
+      - scripts/lireate_shorten_l_seo_titles.py
+      - scripts/lireate_hosting_cron.sh
+      - shared/lireate-visibility-*.json
+      - shared/lireate-sitemap-static.json
+      - .github/workflows/lireate-visibility-fixes.yml
+  push:
+    branches: [main]
+    paths:
+      - scripts/lireate_visibility_*
+      - scripts/test_lireate_visibility_*
+      - shared/lireate-visibility-*.json
+permissions:
+  contents: read
+jobs:
+  maintenance:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php: ['5.6', '8.3']
+    services:
+      mariadb:
+        image: mariadb:10.11
+        env:
+          MARIADB_ROOT_PASSWORD: ci-disposable-password
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd="healthcheck.sh --connect --innodb_initialized"
+          --health-interval=10s --health-timeout=5s --health-retries=10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: mysqli, mbstring
+      - name: PHP and shell syntax
+        run: |
+          php -l scripts/lireate_visibility_db.php
+          bash -n scripts/lireate_hosting_cron.sh
+      - name: File rollback, publishing, sitemap and UTF-8 tests
+        run: |
+          python3 scripts/test_lireate_visibility_maintenance.py
+          python3 scripts/test_lireate_fast_indexing.py
+      - name: Disposable database apply, repeat, restore and failure tests
+        env:
+          LIREATE_RUN_DB_TESTS: '1'
+          LIREATE_TEST_DB_PASSWORD: ci-disposable-password
+        run: python3 scripts/test_lireate_visibility_db_integration.py

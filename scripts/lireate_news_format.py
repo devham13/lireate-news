@@ -37,9 +37,11 @@ def build_full_story(name, seo_url, body_html, lead_style="template"):
 
 
 def build_news_row(meta, body_html, lead_style="template"):
-    default_name = meta.get("title") or meta.get("h1") or meta.get("slug") or ""
+    default_name = meta.get("h1") or meta.get("title") or meta.get("slug") or ""
     name = (meta.get("lireate_display_name") or default_name).strip()
-    seo_url = translit_seo_url(name)
+    # Preserve the legacy URL fallback while keeping the full H1 independent
+    # of a shorter search title. Explicit lireate_seo_url still wins below.
+    seo_url = translit_seo_url(meta.get("title") or name)
     explicit = (meta.get("lireate_seo_url") or "").strip()
     if explicit:
         seo_url = explicit.strip("/").replace("/", "_")
@@ -54,7 +56,7 @@ def build_news_row(meta, body_html, lead_style="template"):
     return {
         "name": name,
         "title": 1,
-        "seo_title": meta.get("title") or name,
+        "seo_title": meta.get("seo_title") or meta.get("title") or name,
         "seo_keywords": seo_keywords,
         "seo_description": truncate_utf8(description, 200),
         "seo_url": seo_url,
