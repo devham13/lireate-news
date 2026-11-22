@@ -18,8 +18,15 @@ ASSET = 'template/css/lireate-home-unslop.css'
 MAIN = 'template/main.php'
 VERSION = '20261122u1'
 MARKER = 'lireate_home_unslop_' + VERSION
-LINK = ('<?php /* ' + MARKER + ' */ '
+LEGACY_LINK = ('<?php /* ' + MARKER + ' */ '
         "if (isset($temp['page']) && $temp['page'] === 'home') { ?>\n"
+        '<link rel="stylesheet" href="/' + ASSET + '?v=' + VERSION + '">\n'
+        '<?php } ?>\n')
+LINK = ('<?php /* ' + MARKER + ' */ '
+        "$_lireate_home_unslop_path = isset($_SERVER['REQUEST_URI']) ? "
+        "parse_url((string) $_SERVER['REQUEST_URI'], PHP_URL_PATH) : null; "
+        "if ($_lireate_home_unslop_path === '/' || "
+        "($_lireate_home_unslop_path === null && isset($temp['page']) && $temp['page'] === 'home')) { ?>\n"
         '<link rel="stylesheet" href="/' + ASSET + '?v=' + VERSION + '">\n'
         '<?php } ?>\n')
 
@@ -27,9 +34,11 @@ LINK = ('<?php /* ' + MARKER + ' */ '
 def patch_main(data):
     text = data.decode('utf-8')
     if MARKER in text:
-        if text.count(LINK) != 1:
-            raise ValueError('Existing home style marker was edited; update refused')
-        return data
+        if text.count(MARKER) == 1 and text.count(LINK) == 1:
+            return data
+        if text.count(MARKER) == 1 and text.count(LEGACY_LINK) == 1:
+            return text.replace(LEGACY_LINK, LINK, 1).encode('utf-8')
+        raise ValueError('Existing home style marker was edited; update refused')
     if 'lireate-home-hero.css' not in text or 'lireate-home-dark' not in text:
         raise ValueError('Expected the existing Lireate home template')
     ends = list(re.finditer(r'</head\s*>', text, re.I))
