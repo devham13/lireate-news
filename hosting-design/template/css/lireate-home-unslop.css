@@ -154,6 +154,12 @@ body.lireate-home-dark #lireate-home #modals.lh-modals {
   gap: 24px;
   margin: 0 0 48px !important;
 }
+/* Bootstrap clearfix pseudo-elements would otherwise consume grid cells. */
+body.lireate-home-dark #lireate-home #modals.lh-modals::before,
+body.lireate-home-dark #lireate-home #modals.lh-modals::after {
+  content: none !important;
+  display: none !important;
+}
 body.lireate-home-dark #lireate-home #modals.lh-modals > .advant {
   grid-column: auto !important;
   width: 100% !important;
