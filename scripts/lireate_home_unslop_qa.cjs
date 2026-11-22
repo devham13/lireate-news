@@ -52,8 +52,10 @@ async function snapshot(page) {
         const cards=[...document.querySelectorAll('#modals > .advant')].map(box);
         const primary=document.querySelector('.lireate-hero-v4__btn--primary');
         const s=getComputedStyle(primary);
-        return {width:innerWidth,scrollWidth:document.documentElement.scrollWidth,root:box(root),cards,primary:{...box(primary),background:s.background,color:s.color,shadow:s.boxShadow},h1Weight:getComputedStyle(root.querySelector('h1')).fontWeight};
+        const grid=document.querySelector('#modals');
+        return {width:innerWidth,scrollWidth:document.documentElement.scrollWidth,root:box(root),cards,grid:{display:getComputedStyle(grid).display,columns:getComputedStyle(grid).gridTemplateColumns,items:[...grid.children].slice(0,4).map(e=>({column:getComputedStyle(e).gridColumn,row:getComputedStyle(e).gridRow}))},primary:{...box(primary),background:s.background,color:s.color,shadow:s.boxShadow},h1Weight:getComputedStyle(root.querySelector('h1')).fontWeight};
       });
+      console.log('LAYOUT '+JSON.stringify(metrics));
       assert.ok(metrics.scrollWidth<=width+1,'Horizontal overflow at '+width);
       assert.equal(metrics.cards.length,4);
       const columns=width<768?1:2;
