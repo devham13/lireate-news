@@ -1,0 +1,33 @@
+{
+  "headline_lines": [
+    "Иск по ТЗ:",
+    "ответчик и суд"
+  ],
+  "highlight": "ответчик",
+  "sticky_text": "ст. 125 АПК",
+  "sticky_underline": "125",
+  "sticky_color": "yellow",
+  "badge_label": "ТЗ",
+  "label_chips": [
+    [
+      "35 АПК",
+      "black"
+    ],
+    [
+      "1252",
+      "white"
+    ],
+    [
+      "1515",
+      "pink"
+    ]
+  ],
+  "ui_card_title": "Иск",
+  "ui_card_rows": [
+    "ответчик",
+    "приложения",
+    "пошлина"
+  ],
+  "stage_background": "#ffffff",
+  "left_memo": ""
+}
