@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "style": "collage-v1",
+  "illustrations": [
+    {
+      "slot": "inline_1",
+      "template": "bad_good",
+      "headline": "ППС или сразу СИП?",
+      "chips": [
+        {"icon": "doc", "text": "1500"},
+        {"icon": "warning", "text": "С01-196"},
+        {"icon": "shield", "text": "1248"}
+      ],
+      "sticky": {"text": "досудебка", "color": "pink"},
+      "bad": {
+        "header": "BAD",
+        "lines": [
+          "Иск в СИП без возражения",
+          "Путают ППС и акт Роспатента",
+          "Ждут 4 мес. после суда"
+        ]
+      },
+      "good": {
+        "header": "GOOD",
+        "lines": [
+          "Возражение по ст. 1500 (L71)",
+          "Оспаривают акт ведомства",
+          "3 мес. с осведомлённости"
+        ]
+      },
+      "side_checklist": ["ППС", "акт", "199 АПК"],
+      "conclusion": {
+        "box_lines": ["3", "месяца"],
+        "highlight_word": "3",
+        "chip": "СИП"
+      },
+      "alt": "Обжалование решения Роспатента в СИП после ППС: обязательность возражения и срок три месяца",
+      "figcaption": "Преждевременное заявление в суд без административной стадии часто возвращают."
+    },
+    {
+      "slot": "inline_2",
+      "template": "process",
+      "headline": "Срок и пошлина",
+      "chips": [
+        {"icon": "calendar", "text": "198 АПК"},
+        {"icon": "doc", "text": "333.21"},
+        {"icon": "clock", "text": "3 мес."}
+      ],
+      "sticky": {"text": "календарь", "color": "yellow"},
+      "steps": [
+        {"title": "Вручение", "subtitle": "дата на конверте", "chip": "доказ", "variant": "icon"},
+        {"title": "10/50 тыс.", "subtitle": "пп. 7 п. 1 НК", "chip": "пошлина", "variant": "lines"},
+        {"title": "Мой арбитр", "subtitle": "подача в СИП", "chip": "заявление", "variant": "toggles"}
+      ],
+      "conclusion": {
+        "box_lines": ["10 000", "ИП"],
+        "highlight_word": "10 000",
+        "chip": "50 000 ООО"
+      },
+      "alt": "Срок обжалования решения Роспатента в СИП и госпошлина 10 000 или 50 000 рублей",
+      "figcaption": "Отсчёт трёх месяцев привязан к моменту, когда стало известно о нарушении прав."
+    },
+    {
+      "slot": "inline_3",
+      "template": "checklist",
+      "headline": "Материалы дела",
+      "chips": [
+        {"icon": "doc", "text": "решение"},
+        {"icon": "layers", "text": "ППС"},
+        {"icon": "shield", "text": "200 АПК"}
+      ],
+      "sticky": {"text": "пакет", "color": "pink"},
+      "checklist_title": "К заявлению",
+      "checklist_rows": [
+        {"text": "Решение + заключение", "icon": "doc"},
+        {"text": "Копия возражения", "icon": "layers"},
+        {"text": "Материалы с fips.ru", "icon": "shield"},
+        {"text": "Копия для Роспатента", "icon": "warning"}
+      ],
+      "conclusion": {
+        "box_lines": ["ст.", "199"],
+        "highlight_word": "199",
+        "chip": "АПК"
+      },
+      "alt": "Документы административного дела для оспаривания решения Роспатента в Суде по интеллектуальным правам",
+      "figcaption": "Суд проверяет законность акта по материалам спора в ведомстве, а не с нуля."
+    }
+  ]
+}
