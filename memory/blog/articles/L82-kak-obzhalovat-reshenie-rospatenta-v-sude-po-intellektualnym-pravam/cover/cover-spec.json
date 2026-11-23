@@ -1,0 +1,33 @@
+{
+  "headline_lines": [
+    "Роспатент →",
+    "СИП: гл. 24"
+  ],
+  "highlight": "СИП",
+  "sticky_text": "3 мес. ч. 4 ст. 198",
+  "sticky_underline": "3",
+  "sticky_color": "yellow",
+  "badge_label": "ТЗ",
+  "label_chips": [
+    [
+      "гл. 24",
+      "black"
+    ],
+    [
+      "199 АПК",
+      "white"
+    ],
+    [
+      "1500",
+      "pink"
+    ]
+  ],
+  "ui_card_title": "СИП",
+  "ui_card_rows": [
+    "ППС",
+    "материалы",
+    "пошлина"
+  ],
+  "stage_background": "#ffffff",
+  "left_memo": ""
+}
