@@ -1,0 +1,34 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-26",
+    "today_ru": "26.11.2026",
+    "year": 2026,
+    "month": 11,
+    "research_disclaimer": "Все даты и нормы проверены на 2026-11-26."
+  },
+  "topic_id": "L83",
+  "cluster": "A21",
+  "h1": "Конкурент зарегистрировал ваш бренд: какие есть варианты",
+  "primary_query": "конкурент зарегистрировал мой товарный знак",
+  "secondary_queries": [
+    "конкурент зарегистрировал мой бренд",
+    "оспаривание товарного знака конкурента",
+    "недобросовестная регистрация товарного знака",
+    "приоритет использования коммерческое обозначение",
+    "возражение в палату по патентным спорам",
+    "претензия правообладателю товарного знака 30 дней"
+  ],
+  "slug": "konkurent-zaregistriroval-vash-brend-kakie-est-varianty",
+  "timezone": "Europe/Moscow",
+  "today_iso": "2026-11-26",
+  "today_ru": "26.11.2026",
+  "year": 2026,
+  "month": 11,
+  "freshness_window": {
+    "prefer_sources_after": "2026-08-28"
+  },
+  "note": "Topic card L83 pending in blog-topics.md; assigned from cluster A21 queue."
+}
