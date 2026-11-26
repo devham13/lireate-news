@@ -1,0 +1,46 @@
+{
+  "note": "Сырой SERP из research_start не собран (нет карточки L84). Ниже — опорные URL из WebSearch Cursor 2026-11-26.",
+  "primary_query": "исчерпание права на товарный знак",
+  "results": [
+    {
+      "rank": 1,
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_64629/d385de69e4ce009809fb698159d15e2abc56ba1c/",
+      "title": "ГК РФ ст. 1487"
+    },
+    {
+      "rank": 2,
+      "url": "https://totolaw.ru/blog/parallelnyj-import/",
+      "title": "Параллельный импорт в 2026"
+    },
+    {
+      "rank": 3,
+      "url": "https://trustyone.pro/ru/materials/guides/prodazha-brendovyh-tovarov-dokumenty/",
+      "title": "Документы на бренд Ozon, WB и Маркет"
+    },
+    {
+      "rank": 4,
+      "url": "https://etopravo.ru/marketplace-pravo/pretenziya-pravoobladatelya-ozon",
+      "title": "Претензия на Ozon — ответ селлера"
+    },
+    {
+      "rank": 5,
+      "url": "https://civius.ru/knowledge-base/news/originalnyy-tovar-kak-dokazat-tsepochku-postavok/",
+      "title": "Оригинал: цепочка поставок (дело De'Longhi)"
+    },
+    {
+      "rank": 6,
+      "url": "https://ppt.ru/columns/o-prave-v-onlayne/kak-rabotaet-printsip-ischerpaniya-prava-pri-parallelnom-importe",
+      "title": "Исчерпание и параллельный импорт — практика"
+    },
+    {
+      "rank": 7,
+      "url": "https://yandex.ru/support/marketplace/ru/quality/violations",
+      "title": "Яндекс Маркет: документы на оригинальность"
+    },
+    {
+      "rank": 8,
+      "url": "https://totolaw.ru/blog/pretenziya-pravoobladatelya/",
+      "title": "Претензия правообладателя на МП"
+    }
+  ]
+}
