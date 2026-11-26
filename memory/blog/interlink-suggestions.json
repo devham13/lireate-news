@@ -1,14 +1,6 @@
 {
   "site_base": "https://example.com",
-  "total_articles": 84,
-  "opportunities_found": 1,
-  "suggestions": [
-    {
-      "source": "L73-chestnyy-znak-import-ved-obuchenie",
-      "target": "L22-markirovka-importa-chestnyy-znak-i-tovarnyy-znak",
-      "keyword": "честный знак импорт",
-      "context": "(см. также L67 в кластере).</blockquote>  <p>По запросу <b>честный знак импорт для менеджера вэд</b> в выдаче доминируют платные ПК и веби",
-      "link_replacement": "<a href=\"/markirovka-importa-chestnyy-znak-i-tovarnyy-znak/\">честный знак импорт</a>"
-    }
-  ]
+  "total_articles": 88,
+  "opportunities_found": 0,
+  "suggestions": []
 }
