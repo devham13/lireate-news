@@ -59,8 +59,23 @@
   "cover_ui_rows": [
     "ст. 1487",
     "перечень ПИ",
-    "ст. 1484",
-    "цепочка УПД"
+    "ст. 1484"
   ],
-  "cover_renderer": "html_chromium"
+  "cover_label_chips": [
+    [
+      "1487",
+      "black"
+    ],
+    [
+      "1252",
+      "white"
+    ],
+    [
+      "УПД",
+      "pink"
+    ]
+  ],
+  "cover_left_memo": "",
+  "cover_renderer": "html_chromium",
+  "cover_stage_background": "#ffffff"
 }

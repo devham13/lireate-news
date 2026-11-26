@@ -1,0 +1,33 @@
+{
+  "headline_lines": [
+    "Украли фото: фиксация",
+    "и ст. 1301"
+  ],
+  "highlight": "фиксация",
+  "sticky_text": "до письма - скрин",
+  "sticky_underline": "скрин",
+  "sticky_color": "yellow",
+  "badge_label": "©",
+  "label_chips": [
+    [
+      "1301",
+      "black"
+    ],
+    [
+      "ППВС 10",
+      "white"
+    ],
+    [
+      "претензия",
+      "pink"
+    ]
+  ],
+  "ui_card_title": "Маршрут",
+  "ui_card_rows": [
+    "URL и время",
+    "авторство",
+    "30 дней"
+  ],
+  "stage_background": "#ffffff",
+  "left_memo": ""
+}
