@@ -1,0 +1,66 @@
+{
+  "note": "DuckDuckGo step skipped (topic card missing at research_start). SERP собран агентом через WebSearch, 26.11.2026.",
+  "primary_query": "украли фотографии что делать",
+  "results": [
+    {
+      "title": "Использовали фото без разрешения, как взыскать компенсацию — TOTOLAW",
+      "url": "https://totolaw.ru/blog/ispolzovali-foto-bez-razresheniya/",
+      "relevance": "high"
+    },
+    {
+      "title": "Украли фото: компенсация — ЮК «ЗАЩИТА»",
+      "url": "https://zashita.moscow/kompensaciya-za-foto/",
+      "relevance": "high"
+    },
+    {
+      "title": "Авторские права на фото — защита при краже | MARQA",
+      "url": "https://marqatm.ru/analytics/ap-fotografii-zaschita.html",
+      "relevance": "high"
+    },
+    {
+      "title": "Нашли свою фотографию на чужом сайте — klerk.ru",
+      "url": "https://www.klerk.ru/blogs/doslano/700752/",
+      "relevance": "high"
+    },
+    {
+      "title": "Украли фото с сайта — ФотоДозор",
+      "url": "https://photo-hunter.smittmediagroup.ru/ukrali-foto/",
+      "relevance": "high"
+    },
+    {
+      "title": "Компенсация за нарушение авторских прав — TOTOLAW",
+      "url": "https://totolaw.ru/blog/kompensaciya-za-narushenie-avtorskih-prav/",
+      "relevance": "medium"
+    },
+    {
+      "title": "Претензия о нарушении AP на фото — advokat-buklova.ru",
+      "url": "https://advokat-buklova.ru/blog/pretenziya-o-narushenii-avtorskih-prav-na-foto/",
+      "relevance": "medium"
+    },
+    {
+      "title": "Нотариальный осмотр или КТЭ — iaexperts.com",
+      "url": "https://iaexperts.com/ru/articles/wayback-machine-screenshots-admissible-evidence",
+      "relevance": "medium"
+    },
+    {
+      "title": "Wayback Machine в российских судах — zakon.ru",
+      "url": "https://zakon.ru/blog/2026/06/17/wayback_machine_v_rossijskih_sudah_kogda_internet-arhiv_pomogaet_dokazat_narushenie",
+      "relevance": "medium"
+    },
+    {
+      "title": "Фиксация нарушений AP — web-revenue.ru",
+      "url": "https://web-revenue.ru/internet-pravo/fiksatsiya-narusheniy-avtorskih-prav-v-internete",
+      "relevance": "medium"
+    },
+    {
+      "title": "Обзор ВС РФ 29.05.2024 — AP в интернете",
+      "url": "https://vsrf.ru/documents/all/33621/",
+      "relevance": "high"
+    },
+    {
+      "title": "ППВС № 10 от 23.04.2019",
+      "url": "https://www.vsrf.ru/files/27771/",
+      "relevance": "high"
+    }
+  ]
+}
