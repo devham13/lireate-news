@@ -1,0 +1,64 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-11-26",
+    "today_ru": "26.11.2026",
+    "year": 2026,
+    "month": 11,
+    "month_name_ru": "ноябрь",
+    "weekday_ru": "четверг",
+    "freshness_window": {
+      "prefer_sources_after": "2026-08-28",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-11-26 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "L84",
+    "cluster": "A22",
+    "priority": null,
+    "slug": "prodazha-originalnogo-tovara-kogda-sporyat-ob-ischerpanii-prava",
+    "h1": "Продажа оригинального товара: когда спорят об исчерпании права",
+    "primary_query": "исчерпание права на товарный знак",
+    "secondary_queries": [
+      "продажа оригинального товара товарный знак",
+      "документы цепочка поставок маркетплейс",
+      "параллельный импорт исчерпание права ст 1487",
+      "карточка товара бренд озон документы"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "L84",
+    "status": "PASS",
+    "search_intent": "how_to",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": [
+      "Карточка L84 отсутствует в memory/topics/blog-topics.md — research по заданию директора; добавить карточку в PR writer."
+    ]
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "исчерпание права на товарный знак 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "secondary_marketplace",
+      "query": "продажа оригинального товара маркетплейс документы цепочка поставок",
+      "purpose": "практика селлера"
+    },
+    {
+      "id": "secondary_parallel",
+      "query": "параллельный импорт ст 1487 ГК РФ перечень Минпромторга 2026",
+      "purpose": "лимиты параллельного импорта"
+    }
+  ],
+  "output_dir": "memory/blog/articles/L84-prodazha-originalnogo-tovara-kogda-sporyat-ob-ischerpanii-prava",
+  "next_step": "research-notes.md завершён Cloud Agent research; writer → article.html"
+}
