@@ -1,0 +1,33 @@
+{
+  "headline_lines": [
+    "Логотип: AP",
+    "и товарный знак"
+  ],
+  "highlight": "Логотип",
+  "sticky_text": "ст. 1477",
+  "sticky_underline": "1477",
+  "sticky_color": "yellow",
+  "badge_label": "©",
+  "label_chips": [
+    [
+      "1257",
+      "black"
+    ],
+    [
+      "1484",
+      "white"
+    ],
+    [
+      "1295",
+      "pink"
+    ]
+  ],
+  "ui_card_title": "Два режима",
+  "ui_card_rows": [
+    "дизайнер",
+    "реестр",
+    "договор"
+  ],
+  "stage_background": "#ffffff",
+  "left_memo": ""
+}
