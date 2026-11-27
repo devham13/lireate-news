@@ -235,6 +235,18 @@ def main():
     from lireate_topic_queue import merge_lireate_category_from_topic_card
 
     meta = merge_lireate_category_from_topic_card(REPO_ROOT, meta)
+    from lireate_publish_meta_validate import find_similar_published_titles, validate_article_meta
+
+    meta_errors = validate_article_meta(meta, html)
+    if not args.update:
+        arts = REPO_ROOT / "memory" / "blog" / "articles"
+        meta_errors.extend(find_similar_published_titles(meta, arts, state_file))
+    if meta_errors:
+        result["meta_validate"] = meta_errors
+        result["error"] = "meta validation: " + "; ".join(meta_errors[:5])
+        result_path.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        _print_status("BLOCKER", result["error"])
+        return 2
     if meta.get("lireate_category_id") is None:
         result["error"] = (
             "missing lireate_category_id in article.meta.json and in topic card "

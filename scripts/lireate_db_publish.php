@@ -445,6 +445,10 @@ function lireate_cmd_publish($docroot)
     ), 0);
 }
 
+if (!empty($GLOBALS['lireate_db_publish_embedded'])) {
+    return;
+}
+
 $argc = $_SERVER['argc'];
 $argv = $_SERVER['argv'];
 if ($argc < 3) {

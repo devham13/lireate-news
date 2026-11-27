@@ -58,7 +58,6 @@ def translit_seo_url(name):
 
 
 def truncate_utf8(text, max_len):
-    text = text or ""
-    if len(text) <= max_len:
-        return text
-    return text[:max_len]
+    from lireate_meta_text import truncate_utf8 as _tw
+
+    return _tw(text, max_len, ellipsis="")
