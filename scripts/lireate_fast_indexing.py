@@ -61,6 +61,7 @@ def load_sitemap_static_config(path=None):
         "paths": data.get("paths") or [],
         "exclude_article_slugs": set(data.get("exclude_article_slugs") or []),
         "dedupe_article_slugs": set(data.get("dedupe_article_slugs") or []),
+        "sitemap_index": data.get("sitemap_index") or {},
     }
 
 
@@ -176,6 +177,34 @@ def write_sitemap_atomic(docroot, xml_text):
     return str(target)
 
 
+def write_sitemap_bundle_atomic(docroot, bundle):
+    """bundle: filename -> xml str (includes sitemap.xml index)."""
+    docroot = Path(docroot)
+    written = []
+    for fname, xml_text in sorted(bundle.items()):
+        target = docroot / fname
+        fd, tmp_name = tempfile.mkstemp(
+            prefix="sitemap.", suffix=".xml", dir=str(docroot)
+        )
+        try:
+            with os.fdopen(fd, "w", encoding="utf-8") as fh:
+                fh.write(xml_text)
+            os.replace(tmp_name, str(target))
+            written.append(str(target))
+        except Exception:
+            try:
+                os.unlink(tmp_name)
+            except OSError:
+                pass
+            raise
+    return written
+
+
+def _sitemap_index_enabled(static_config):
+    block = static_config.get("sitemap_index") if isinstance(static_config, dict) else None
+    return bool(isinstance(block, dict) and block.get("enabled"))
+
+
 def deploy_indexnow_key_file(docroot, key):
     key = (key or "").strip()
     if not key or not re.match(r"^[a-fA-F0-9]{32,128}$", key):
@@ -259,14 +288,41 @@ def run_after_publish(docroot, site_url, article_url, log=None):
             }
         else:
             rows = db_res.get("rows") or []
-            xml = build_sitemap_xml(site_url, rows)
-            path = write_sitemap_atomic(docroot_path, xml)
-            summary["sitemap"] = {
-                "ok": True,
-                "path": path,
-                "url_count": len(rows) + 1,
-            }
-            log("fast_indexing: sitemap written {0} ({1} article URLs + /news/)".format(path, len(rows)))
+            static_cfg = load_sitemap_static_config()
+            if _sitemap_index_enabled(static_cfg):
+                try:
+                    from lireate_sitemap_index_lib import build_sitemap_bundle, url_count
+
+                    bundle = build_sitemap_bundle(site_url, rows, static_cfg)
+                    paths = write_sitemap_bundle_atomic(docroot_path, bundle)
+                    summary["sitemap"] = {
+                        "ok": True,
+                        "path": str(docroot_path / "sitemap.xml"),
+                        "mode": "index",
+                        "paths": paths,
+                        "url_count": url_count(bundle),
+                    }
+                    log(
+                        "fast_indexing: sitemap index written ({0} URLs, {1} files)".format(
+                            url_count(bundle), len(paths)
+                        )
+                    )
+                except Exception as index_exc:
+                    summary["sitemap"] = {
+                        "ok": False,
+                        "error": "{0}: {1}".format(type(index_exc).__name__, index_exc),
+                    }
+                    log("fast_indexing: sitemap index error: {0}".format(summary["sitemap"]["error"]))
+            else:
+                xml = build_sitemap_xml(site_url, rows)
+                path = write_sitemap_atomic(docroot_path, xml)
+                summary["sitemap"] = {
+                    "ok": True,
+                    "path": path,
+                    "mode": "urlset",
+                    "url_count": len(rows) + 1,
+                }
+                log("fast_indexing: sitemap written {0} ({1} article URLs + /news/)".format(path, len(rows)))
     except Exception as e:
         summary["sitemap"] = {"ok": False, "error": "{0}: {1}".format(type(e).__name__, e)}
         log("fast_indexing: sitemap error (non-fatal): {0}".format(summary["sitemap"]["error"]))
