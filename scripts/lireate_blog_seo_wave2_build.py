@@ -15,6 +15,14 @@ import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from lireate_meta_text import normalize_seo_description, normalize_seo_title
 
+_PROPER_END = re.compile(r'[.!?:»"\u201d\u2026…)\]]$')
+
+
+def has_proper_ending(text: str) -> bool:
+    s = (text or "").rstrip()
+    return bool(s and _PROPER_END.search(s))
+
+
 _MANUAL = {
     "ekspertiza-tovarnyh-znakov-formalnaya-po-suschestvu": {
         "seo_description": (
@@ -65,7 +73,7 @@ def _needs_fix(row: dict) -> bool:
         return True
     if dlen < 120 or dlen > 160:
         return True
-    if dlen and not re.search(r'[.!?:»"\u201d\u2026…)\]$', row["seo_description"].rstrip()):
+    if dlen and not has_proper_ending(row["seo_description"]):
         return True
     return False
 
