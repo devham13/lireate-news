@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Build wave2 SEO plan from MySQL export + optional live audit CSV."""
+"""DEPRECATED: mechanical truncate plan. Use editorial batches + meta_plan_validate instead.
+
+Build wave2 SEO plan from MySQL export + optional live audit CSV.
+"""
 
 from __future__ import annotations
 

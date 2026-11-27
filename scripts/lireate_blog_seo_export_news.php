@@ -18,12 +18,19 @@ if ($docroot === '' || !is_dir($docroot)) {
 }
 
 $mysqli = lireate_mysqli($docroot);
-$sql = 'SELECT `id`,`seo_url`,`name`,`seo_title`,`seo_description`,`category`,`datetime`'
+$sql = 'SELECT `id`,`seo_url`,`name`,`seo_title`,`seo_description`,`category`,`datetime`,`full_story`'
     . ' FROM `news` WHERE `active`=1 ORDER BY `datetime` DESC';
 $res = $mysqli->query($sql);
 $rows = array();
 if ($res) {
     while ($row = $res->fetch_assoc()) {
+        $full = isset($row['full_story']) ? (string) $row['full_story'] : '';
+        $plain = trim(preg_replace('/\s+/u', ' ', strip_tags($full)));
+        if (function_exists('mb_substr')) {
+            $plain = mb_substr($plain, 0, 20000, 'UTF-8');
+        } else {
+            $plain = substr($plain, 0, 20000);
+        }
         $rows[] = array(
             'id' => (int) $row['id'],
             'seo_url' => (string) $row['seo_url'],
@@ -34,6 +41,7 @@ if ($res) {
             'datetime' => (int) $row['datetime'],
             'seo_title_len' => strlen((string) $row['seo_title']),
             'seo_description_len' => strlen((string) $row['seo_description']),
+            'body_plain' => $plain,
         );
     }
     $res->free();
