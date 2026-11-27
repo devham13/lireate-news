@@ -49,13 +49,22 @@
   "cover_style": "collage-v1",
   "cover_scene_hint": "логотип, реестр ТЗ, договор с дизайнером",
   "cover_headline": "Логотип: AP и товарный знак",
-  "cover_highlight": "логотип",
+  "cover_highlight": "Логотип",
   "cover_sticky": "ст. 1477",
   "cover_sticky_underline": "1477",
   "cover_label_chips": [
-    ["1257", "black"],
-    ["1484", "white"],
-    ["1295", "pink"]
+    [
+      "1257",
+      "black"
+    ],
+    [
+      "1484",
+      "white"
+    ],
+    [
+      "1295",
+      "pink"
+    ]
   ],
   "cover_ui_title": "Два режима",
   "cover_ui_rows": [

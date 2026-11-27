@@ -55,9 +55,18 @@
   "cover_sticky": "п. 5.1 ст. 1252",
   "cover_sticky_underline": "1252",
   "cover_label_chips": [
-    ["1301", "black"],
-    ["лицензия", "white"],
-    ["1300", "pink"]
+    [
+      "1301",
+      "black"
+    ],
+    [
+      "лицензия",
+      "white"
+    ],
+    [
+      "1300",
+      "pink"
+    ]
   ],
   "cover_ui_title": "Чек-лист",
   "cover_ui_rows": [

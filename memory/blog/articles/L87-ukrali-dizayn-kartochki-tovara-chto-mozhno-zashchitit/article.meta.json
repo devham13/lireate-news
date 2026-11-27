@@ -53,9 +53,18 @@
   "cover_sticky": "ст. 1274",
   "cover_sticky_underline": "1274",
   "cover_label_chips": [
-    ["1257", "black"],
-    ["инфографика", "white"],
-    ["1301", "pink"]
+    [
+      "1257",
+      "black"
+    ],
+    [
+      "инфографика",
+      "white"
+    ],
+    [
+      "1301",
+      "pink"
+    ]
   ],
   "cover_ui_title": "Состав",
   "cover_ui_rows": [
