@@ -1,6 +1,7 @@
 """Build news row payload for lireate DB (Py3.6+)."""
 
-from lireate_translit import translit_seo_url, truncate_utf8
+from lireate_meta_text import normalize_seo_description, normalize_seo_title
+from lireate_translit import translit_seo_url
 
 
 def build_cover_paragraph(name, seo_url, lead_style="template"):
@@ -53,12 +54,13 @@ def build_news_row(meta, body_html, lead_style="template"):
         seo_keywords = str(keywords)
 
     description = meta.get("description") or ""
+    raw_seo_title = meta.get("seo_title") or meta.get("title") or name
     return {
         "name": name,
         "title": 1,
-        "seo_title": meta.get("seo_title") or meta.get("title") or name,
+        "seo_title": normalize_seo_title(raw_seo_title, 255),
         "seo_keywords": seo_keywords,
-        "seo_description": truncate_utf8(description, 200),
+        "seo_description": normalize_seo_description(description, 200),
         "seo_url": seo_url,
         "category": int(meta["lireate_category_id"]),
         "short_story": "",

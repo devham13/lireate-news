@@ -37,6 +37,22 @@ if ($mysqli->connect_errno) {
 $mysqli->set_charset('utf8mb4');
 
 $max = 70;
+
+function lireate_shorten_title_words($title, $max)
+{
+    $title = trim((string) $title);
+  $len = function_exists('mb_strlen') ? mb_strlen($title, 'UTF-8') : strlen($title);
+    if ($len <= $max) {
+        return $title;
+    }
+    $chunk = function_exists('mb_substr') ? mb_substr($title, 0, $max, 'UTF-8') : substr($title, 0, $max);
+    $sp = function_exists('mb_strrpos') ? mb_strrpos($chunk, ' ', 0, 'UTF-8') : strrpos($chunk, ' ');
+    if ($sp !== false && $sp > (int) ($max / 2)) {
+        $chunk = function_exists('mb_substr') ? mb_substr($chunk, 0, $sp, 'UTF-8') : substr($chunk, 0, $sp);
+    }
+    return rtrim($chunk, " ,.-:;");
+}
+
 $res = $mysqli->query('SELECT `id`,`seo_url`,`seo_title` FROM `news` WHERE `active`=1');
 $updated = 0;
 while ($row = $res->fetch_assoc()) {
@@ -45,8 +61,7 @@ while ($row = $res->fetch_assoc()) {
     if ($len <= $max) {
         continue;
     }
-    $new = function_exists('mb_substr') ? mb_substr($title, 0, $max - 1, 'UTF-8') : substr($title, 0, $max - 1);
-    $new = rtrim($new, " ,.-:;");
+    $new = lireate_shorten_title_words($title, $max);
     if ($new === $title) {
         continue;
     }
