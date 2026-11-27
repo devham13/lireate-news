@@ -48,7 +48,13 @@ def articles_from_db(docroot):
         if not seo or seo in seen:
             continue
         seen.add(seo)
-        rows.append({"seo_url": seo, "title": seo.replace("_", " ")[:80], "description": ""})
+        title = (row.get("seo_title") or row.get("title") or "").strip()
+        if not title:
+            title = seo.replace("_", " ")
+        desc = (row.get("seo_description") or "").strip()
+        if desc.lower() == "workflow":
+            desc = ""
+        rows.append({"seo_url": seo, "title": title[:160], "description": desc[:220]})
     return rows
 
 

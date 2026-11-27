@@ -63,9 +63,8 @@ write_sitemap_atomic(doc, xml)
 print('sitemap ok', len(rows))
 "
 
-# llms.txt
-"$PY" "$REPO/scripts/lireate_llms_site_generate.py" --docroot "$DOCROOT" --out "$REPO/memory/blog/lireate-site/llms.txt"
-cp -a "$REPO/memory/blog/lireate-site/llms.txt" "$DOCROOT/llms.txt"
+# Blog-only llms artifact (site root llms.txt — office-repo lireate_seo_build_llms_txt.py)
+"$PY" "$REPO/scripts/lireate_llms_site_generate.py" --docroot "$DOCROOT" --out "$REPO/memory/blog/lireate-site/llms-blog-only.txt"
 
 # Legacy title shorten
 php "$REPO/scripts/lireate_db_shorten_seo_titles.php" "$DOCROOT"
