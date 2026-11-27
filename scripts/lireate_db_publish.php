@@ -235,7 +235,7 @@ function lireate_cmd_sitemap_urls($docroot)
     $mysqli = lireate_mysqli($docroot);
     $cols = lireate_table_columns($mysqli, 'news');
     $hasActive = in_array('active', $cols, true);
-    $sql = 'SELECT `seo_url`, `datetime` FROM `news`';
+    $sql = 'SELECT `seo_url`, `datetime`, `title`, `seo_title`, `seo_description` FROM `news`';
     if ($hasActive) {
         $sql .= ' WHERE `active` = 1';
     }
@@ -258,6 +258,9 @@ function lireate_cmd_sitemap_urls($docroot)
         $rows[] = array(
             'seo_url' => $seo,
             'datetime' => isset($row['datetime']) ? (int) $row['datetime'] : 0,
+            'title' => isset($row['title']) ? trim((string) $row['title']) : '',
+            'seo_title' => isset($row['seo_title']) ? trim((string) $row['seo_title']) : '',
+            'seo_description' => isset($row['seo_description']) ? trim((string) $row['seo_description']) : '',
         );
     }
     $res->free();
