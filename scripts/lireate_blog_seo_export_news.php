@@ -12,14 +12,21 @@ $GLOBALS['lireate_db_publish_embedded'] = true;
 require_once __DIR__ . '/lireate_db_publish.php';
 
 $docroot = isset($argv[1]) ? $argv[1] : '';
+$activeOnly = true;
+foreach (array_slice($argv, 2) as $arg) {
+    if ($arg === '--include-inactive') {
+        $activeOnly = false;
+    }
+}
 if ($docroot === '' || !is_dir($docroot)) {
-    fwrite(STDERR, "usage: php lireate_blog_seo_export_news.php DOCROOT\n");
+    fwrite(STDERR, "usage: php lireate_blog_seo_export_news.php DOCROOT [--include-inactive]\n");
     exit(2);
 }
 
 $mysqli = lireate_mysqli($docroot);
-$sql = 'SELECT `id`,`seo_url`,`name`,`seo_title`,`seo_description`,`category`,`datetime`,`full_story`'
-    . ' FROM `news` WHERE `active`=1 ORDER BY `datetime` DESC';
+$where = $activeOnly ? ' WHERE `active`=1' : '';
+$sql = 'SELECT `id`,`seo_url`,`name`,`seo_title`,`seo_description`,`category`,`datetime`,`active`,`full_story`'
+    . ' FROM `news`' . $where . ' ORDER BY `datetime` DESC';
 $res = $mysqli->query($sql);
 $rows = array();
 if ($res) {
@@ -38,6 +45,7 @@ if ($res) {
             'seo_title' => (string) $row['seo_title'],
             'seo_description' => (string) $row['seo_description'],
             'category' => (int) $row['category'],
+            'active' => (int) (isset($row['active']) ? $row['active'] : 1),
             'datetime' => (int) $row['datetime'],
             'seo_title_len' => strlen((string) $row['seo_title']),
             'seo_description_len' => strlen((string) $row['seo_description']),

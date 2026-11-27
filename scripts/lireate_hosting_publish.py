@@ -247,6 +247,21 @@ def main():
         result_path.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         _print_status("BLOCKER", result["error"])
         return 2
+    try:
+        title = (meta.get("seo_title") or meta.get("title") or "").strip()
+        desc = (meta.get("description") or "").strip()
+        if len(title) > 60:
+            meta_errors.append("seo_title over 60 chars (SERP)")
+        if len(desc) < 120 or len(desc) > 160:
+            meta_errors.append("description must be 120-160 chars for live blog")
+    except Exception:
+        pass
+    if meta_errors:
+        result["meta_validate"] = meta_errors
+        result["error"] = "meta validation: " + "; ".join(meta_errors[:5])
+        result_path.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        _print_status("BLOCKER", result["error"])
+        return 2
     if meta.get("lireate_category_id") is None:
         result["error"] = (
             "missing lireate_category_id in article.meta.json and in topic card "
