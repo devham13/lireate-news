@@ -9,7 +9,9 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
 
 from lireate_fast_indexing import (  # noqa: E402
+    _sitemap_index_enabled,
     build_sitemap_xml,
+    load_sitemap_static_config,
     normalize_article_url,
 )
 
@@ -25,6 +27,10 @@ class TestFastIndexing(unittest.TestCase):
             normalize_article_url(site, "/bar"),
             "https://example.test/bar/",
         )
+
+    def test_sitemap_index_disabled_by_default(self):
+        cfg = load_sitemap_static_config()
+        self.assertFalse(_sitemap_index_enabled(cfg))
 
     def test_sitemap_xml_shape(self):
         xml = build_sitemap_xml(
